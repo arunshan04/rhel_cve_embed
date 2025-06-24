@@ -1,0 +1,8 @@
+pkg_info,cve_description
+glibc 2.28 core GNU libraries,glibc buffer overflow in memory allocation routines
+openssl-1.1.1k TLS module,OpenSSL heap overflow during TLS handshake
+kernel 4.18 security patch,Use-after-free vulnerability in netfilter module
+python3.6 security fix,Python3.6 XML parsing leads to DoS via crafted entity
+libxml2 2.9.10 patch,XML external entity injection in libxml2 parser
+bash 4.4 update,Bash command injection vulnerability via improper input sanitization
+systemd 239-41.el8 package,Systemd memory leak due to unresolved cgroup references

@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    /*
+    @licstart The following is the license notice for the JavaScript and CSS included in <script> and
+              <style> respectively on this page.
+
+    Copyright (C) 2014 Glen Cheney
+
+    This file is licensed under The MIT License (MIT).
+    A copy of this license may be found at https://github.com/Vestride/fancy-index/blob/main/LICENSE
+
+    @licend
+     */
+    document.addEventListener("DOMContentLoaded", function () {
+      const addSearch = function () {
+        const nameColumns = Array.from(document.querySelectorAll('tbody .indexcolname'));
+        const rows = nameColumns.map(({ parentNode }) => parentNode);
+        const fileNames = nameColumns.map(({ textContent }) => textContent);
+
+        function filter(value) {
+          // Test the input against the file/folder name.
+          let even = false;
+          fileNames.forEach((name, i) => {
+            if (!value || name.toLowerCase().includes(value.toLowerCase())) {
+                rows[i].className = even ? 'even' : '';
+              even = !even;
+            } else {
+              rows[i].className = 'hidden';
+            }
+          });
+        }
+
+        document.getElementById('search').addEventListener('input', ({ target }) => {
+          filter(target.value);
+        });
+
+        filter('');
+      }
+      addSearch();
+
+      const table = document.getElementById('table');
+      const tableHeaders = table.querySelectorAll('th');
+      const tableBody = table.querySelector('tbody');
+      const tableRows = tableBody.querySelectorAll('tr');
+      const directions = Array(tableHeaders.length).fill('asc')
+
+      const sortColumn = function (colNumber) {
+        const newRows = Array.from(tableRows);
+        // Determine sort direction
+        const direction = directions[colNumber]
+        const multiplier = (direction === 'asc') ? 1 : -1;
+
+        newRows.sort(function (rowA, rowB) {
+            let a = "";
+            let b = "";
+            switch (colNumber) {
+                // Sort Name column alphabetically
+                case 0:
+                  a = rowA.querySelectorAll('td')[colNumber].innerHTML;
+                  b = rowB.querySelectorAll('td')[colNumber].innerHTML;
+                  if (a < b) {
+                    return -1 * multiplier;
+                  }
+                  if (a > b) {
+                    return 1 * multiplier;
+                  }
+                  return 0;
+
+                // Sort Last Modified column by timestamp (seconds since epoch)
+                case 1:
+                  a = rowA.querySelectorAll('td')[colNumber].getAttribute('data-timestamp');
+                  b = rowB.querySelectorAll('td')[colNumber].getAttribute('data-timestamp');
+                  return (a - b) * multiplier;
+
+                // Sort file size by bytes
+                case 2:
+                  a = rowA.querySelectorAll('td')[colNumber].getAttribute('data-filesize');
+                  b = rowB.querySelectorAll('td')[colNumber].getAttribute('data-filesize');
+                  return (a - b) * multiplier;
+            }
+        });
+
+        // Remove old rows
+        [].forEach.call(tableRows, function (row) {
+            tableBody.removeChild(row);
+        });
+
+        // Append new row
+        newRows.forEach(function (newRow) {
+            tableBody.appendChild(newRow);
+        });
+
+        // Reverse sort direction
+        directions[colNumber] = direction === 'asc' ? 'desc' : 'asc';
+      };
+
+      [].forEach.call(tableHeaders, function (header, index) {
+          header.addEventListener('click', function () {
+              sortColumn(index);
+          });
+      });
+
+    });
+  </script>
+  <style>
+    :root {
+      --color-bg: white;
+      --color-text: #40404091;
+      --color-table-bg: white;
+      --color-table-bg--head: #efefef96;
+      --color-table-bg--even: whitesmoke;
+      --color-table-text: #222222;
+      --color-link-text: #1ca4ff;
+      --color-link-text--visited: #8d44ad;
+      --color-search-text: #8d44adbb;
+      --color-search-bg: white;
+      --color-search-border: rgba(0, 0, 0, .15);
+      --color-search-border--focus: #8e44ad;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-bg: #222222;
+        --color-text: #bbb;
+        --color-table-bg: #222222;
+        --color-table-bg--head: #181818;
+        --color-table-bg--even: #333;
+        --color-table-text: #ccc;
+        --color-link-text: #3096d5;
+        --color-link-text--visited: #9e4ebf;
+        --color-search-text: #9e4ebf;
+        --color-search-bg: #181818;
+        --color-search-border: rgba(255, 255, 255, .15);
+        --color-search-border--focus: #9e4ebf;
+      }
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      color: var(--color-text);
+      background-color: var(--color-bg);
+    }
+
+    table {
+      width: 100%;
+      background: var(--color-table-bg);
+      border: 0;
+      table-layout: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    table thead {
+      background: var(--color-table-bg--head);
+    }
+
+    table tr th,
+    table tr td {
+      padding: 0.5625rem 0.625rem;
+      font-size: 0.875rem;
+      color: var(--color-table-text);
+      text-align: left;
+      line-height: 1.125rem;
+    }
+
+    table thead tr th {
+      padding: 0.5rem 0.625rem 0.625rem;
+      font-weight: bold;
+    }
+
+    table tr:nth-child(even) {
+      background: var(--color-table-bg--even);
+    }
+
+    table th {
+      cursor: pointer;
+    }
+
+    .sort-arrows {
+      opacity: 0;
+      transition: opacity 200ms;
+      padding-left: 10px;
+    }
+
+    th:hover .sort-arrows {
+      opacity: 1.0;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--color-link-text);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    a:visited {
+      color: var(--color-link-text--visited);
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    #page-header {
+      display: flex;
+      align-items: center;
+      margin-left: 0.625rem;
+      margin-right: 0.625rem;
+    }
+
+    #search {
+      display: block;
+      padding: 0.5rem 0.75rem;
+      font-size: 1rem;
+      line-height: 1.25;
+      color: var(--color-search-text);
+      background-color: var(--color-search-bg);
+      background-image: none;
+      background-clip: padding-box;
+      border: 1px solid var(--color-search-border);
+      border-radius: 0.25rem;
+      margin-left: 1rem;
+      -webkit-appearance: textfield;
+    }
+
+    #search:focus {
+      border-color: var(--color-search-border--focus);
+      outline: 0;
+    }
+
+    /* Hide extra columns so they don't squash file names */
+    @media (max-width: 600px) {
+
+      .indexcollastmod,
+      .indexcolsize {
+        display: none;
+      }
+
+      h1 {
+        font-size: 1.5em;
+      }
+
+      #page-header {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-bottom: 1em
+      }
+
+      #search {
+        margin-left: 0;
+      }
+    }
+
+    @media (max-width: 400px) {
+      h1 {
+        font-size: 1.375em;
+      }
+    }
+  </style>
+  <title>Security Data - /csaf/v2/advisories/</title>
+</head>
+
+<body>
+  <div id="page-header">
+    <h1>
+      Index of /<a href="./../../">csaf</a>/<a href="./../">v2</a>/<a href="./">advisories</a>/
+    </h1>
+    <input type="search" id="search" placeholder="Search">
+  </div>
+
+  <table id="table">
+    <thead>
+      <tr>
+        <th class="indexcolname"><span>Name</span><span class="sort-arrows">▲▼</span></th>
+        <th class="indexcollastmod"><span>Last Modified</span><span class="sort-arrows">▲▼</span></th>
+        <th class="indexcolsize"><span>Size</span><span class="sort-arrows">▲▼</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="2001/">2001/</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="">
+          -
+        </td>
+        <td class="indexcolsize" data-filesize="0">
+          -
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="2002/">2002/</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="">
+          -
+        </td>
+        <td class="indexcolsize" data-filesize="0">
+          -
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="2003/">2003/</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="">
+          -
+        </td>
+        <td class="indexcolsize" data-filesize="0">
+          -
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="2004/">2004/</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="">
+          -
+        </td>
+        <td class="indexcolsize" data-filesize="0">
+          -
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="2005/">2005/</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="">
+          -
+        </td>
+        <td class="indexcolsize" data-filesize="0">
+          -
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="2006/">2006/</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="">
+          -
+        </td>
+        <td class="indexcolsize" data-filesize="0">
+          -
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="2007/">2007/</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="">
+          -
+        </td>
+        <td class="indexcolsize" data-filesize="0">
+          -
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="2008/">2008/</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="">
+          -
+        </td>
+        <td class="indexcolsize" data-filesize="0">
+          -
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="2009/">2009/</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="">
+          -
+        </td>
+        <td class="indexcolsize" data-filesize="0">
+          -
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="2010/">2010/</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="">
+          -
+        </td>
+        <td class="indexcolsize" data-filesize="0">
+          -
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="2011/">2011/</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="">
+          -
+        </td>
+        <td class="indexcolsize" data-filesize="0">
+          -
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="2012/">2012/</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="">
+          -
+        </td>
+        <td class="indexcolsize" data-filesize="0">
+          -
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="2013/">2013/</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="">
+          -
+        </td>
+        <td class="indexcolsize" data-filesize="0">
+          -
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="2014/">2014/</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="">
+          -
+        </td>
+        <td class="indexcolsize" data-filesize="0">
+          -
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="2015/">2015/</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="">
+          -
+        </td>
+        <td class="indexcolsize" data-filesize="0">
+          -
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="2016/">2016/</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="">
+          -
+        </td>
+        <td class="indexcolsize" data-filesize="0">
+          -
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="2017/">2017/</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="">
+          -
+        </td>
+        <td class="indexcolsize" data-filesize="0">
+          -
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="2018/">2018/</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="">
+          -
+        </td>
+        <td class="indexcolsize" data-filesize="0">
+          -
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="2019/">2019/</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="">
+          -
+        </td>
+        <td class="indexcolsize" data-filesize="0">
+          -
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="2020/">2020/</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="">
+          -
+        </td>
+        <td class="indexcolsize" data-filesize="0">
+          -
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="2021/">2021/</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="">
+          -
+        </td>
+        <td class="indexcolsize" data-filesize="0">
+          -
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="2022/">2022/</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="">
+          -
+        </td>
+        <td class="indexcolsize" data-filesize="0">
+          -
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="2023/">2023/</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="">
+          -
+        </td>
+        <td class="indexcolsize" data-filesize="0">
+          -
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="2024/">2024/</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="">
+          -
+        </td>
+        <td class="indexcolsize" data-filesize="0">
+          -
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="2025/">2025/</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="">
+          -
+        </td>
+        <td class="indexcolsize" data-filesize="0">
+          -
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="archive_latest.txt">archive_latest.txt</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="1750503978">
+          Sat, 21 Jun 2025 11:06:18 +0000
+        </td>
+        <td class="indexcolsize" data-filesize="34">
+          34 bytes
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="changes.csv">changes.csv</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="1750727260">
+          Tue, 24 Jun 2025 01:07:40 +0000
+        </td>
+        <td class="indexcolsize" data-filesize="1088849">
+          1.0 MB
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="csaf_advisories_2025-06-21.tar.zst">csaf_advisories_2025-06-21.tar.zst</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="1750503961">
+          Sat, 21 Jun 2025 11:06:01 +0000
+        </td>
+        <td class="indexcolsize" data-filesize="79503593">
+          75.8 MB
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="csaf_advisories_2025-06-21.tar.zst.asc">csaf_advisories_2025-06-21.tar.zst.asc</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="1750503966">
+          Sat, 21 Jun 2025 11:06:06 +0000
+        </td>
+        <td class="indexcolsize" data-filesize="819">
+          819 bytes
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="csaf_advisories_2025-06-21.tar.zst.sha256">csaf_advisories_2025-06-21.tar.zst.sha256</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="1750503963">
+          Sat, 21 Jun 2025 11:06:03 +0000
+        </td>
+        <td class="indexcolsize" data-filesize="100">
+          100 bytes
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="deletions.csv">deletions.csv</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="1749043558">
+          Wed, 04 Jun 2025 13:25:58 +0000
+        </td>
+        <td class="indexcolsize" data-filesize="3794">
+          3.7 KB
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="index.txt">index.txt</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="1750703973">
+          Mon, 23 Jun 2025 18:39:33 +0000
+        </td>
+        <td class="indexcolsize" data-filesize="494639">
+          483.0 KB
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="indexcolname">
+          <a href="releases.csv">releases.csv</a>
+        </td>
+        <td class="indexcollastmod" data-timestamp="1750704007">
+          Mon, 23 Jun 2025 18:40:07 +0000
+        </td>
+        <td class="indexcolsize" data-filesize="1088739">
+          1.0 MB
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
+</body>
+
+</html>
