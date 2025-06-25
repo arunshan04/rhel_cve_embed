@@ -228,7 +228,6 @@ class RedHatAdvisoriesDownloader:
             for file in files:
                 if file.endswith('.json'):
                     json_files.append(os.path.join(root, file))
-        json_files=json_files[:1]
         
         logger.info(f"Processing {len(json_files)} advisory files")
         
@@ -238,7 +237,6 @@ class RedHatAdvisoriesDownloader:
             
             packages = self.extract_package_info(json_file)
             all_packages.extend(packages)
-        print(all_packages)
         
         # Write to CSV
         if all_packages:
@@ -257,3 +255,62 @@ class RedHatAdvisoriesDownloader:
             logger.info(f"Exported {len(all_packages)} package records to {output_file}")
         
         return all_packages
+
+def main():
+    """Main execution function"""
+    downloader = RedHatAdvisoriesDownloader()
+    
+    print("Red Hat CSAF Advisories Downloader")
+    print("=" * 40)
+    
+    choice = input("\nChoose download method:\n1. Download latest complete archive (recommended)\n2. Download specific years\n3. Download all years individually\nEnter choice (1-3): ")
+    
+    if choice == "1":
+        # Download latest archive
+        archive_path = downloader.download_latest_archive()
+        if archive_path:
+            extract_dir = "redhat_advisories_extracted"
+            if downloader.extract_archive(archive_path, extract_dir):
+                downloader.process_all_advisories(extract_dir)
+            else:
+                print("Failed to extract archive")
+        else:
+            print("Failed to download archive")
+    
+    elif choice == "2":
+        # Download specific years
+        years_input = input("Enter years separated by commas (e.g., 2023,2024): ")
+        years = [year.strip() for year in years_input.split(',')]
+        
+        download_dir = "redhat_advisories_years"
+        all_files = []
+        
+        for year in years:
+            print(f"\nDownloading advisories for {year}...")
+            files = downloader.download_year_advisories(year, download_dir)
+            all_files.extend(files)
+            print(f"Downloaded {len(files)} files for {year}")
+        
+        if all_files:
+            downloader.process_all_advisories(download_dir)
+    
+    elif choice == "3":
+        # Download all years
+        download_dir = "redhat_advisories_all"
+        years = [str(year) for year in range(2001, 2026)]  # 2001 to 2025
+        
+        all_files = []
+        for year in years:
+            print(f"\nDownloading advisories for {year}...")
+            files = downloader.download_year_advisories(year, download_dir)
+            all_files.extend(files)
+            print(f"Downloaded {len(files)} files for {year}")
+        
+        if all_files:
+            downloader.process_all_advisories(download_dir)
+    
+    else:
+        print("Invalid choice")
+
+if __name__ == "__main__":
+    main()
