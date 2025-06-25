@@ -271,7 +271,7 @@ def main():
         if archive_path:
             extract_dir = "redhat_advisories_extracted"
             if downloader.extract_archive(archive_path, extract_dir):
-                downloader.process_all_advisories(extract_dir)
+                #downloader.process_all_advisories(extract_dir)
             else:
                 print("Failed to extract archive")
         else:
