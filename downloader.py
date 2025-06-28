@@ -344,12 +344,12 @@ class RedHatAdvisoriesDownloader:
                     json_files.append(os.path.join(root, file))
         
         # Remove the test limit from original code
-        json_files = json_files[:1000]  # Remove this line for full processing
+        # json_files = json_files[:10000]  # Remove this line for full processing
         
         logger.info(f"Processing {len(json_files)} advisory files")
         
         for i, json_file in enumerate(json_files):
-            if i % 100 == 0:
+            if i % 1000 == 0:
                 logger.info(f"Processed {i}/{len(json_files)} files")
             
             packages = self.extract_package_info(json_file)
