@@ -1,0 +1,1454 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "namespace": "https://access.redhat.com/security/updates/classification/",
+      "text": "Important"
+    },
+    "category": "csaf_security_advisory",
+    "csaf_version": "2.0",
+    "distribution": {
+      "text": "Copyright \u00a9 Red Hat, Inc. All rights reserved.",
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "en",
+    "notes": [
+      {
+        "category": "summary",
+        "text": "A new container image for Red Hat Ceph Storage 6.1 is now available in the  Red Hat Ecosystem Catalog.",
+        "title": "Topic"
+      },
+      {
+        "category": "general",
+        "text": "Red Hat Ceph Storage is a scalable, open, software-defined storage platform that combines the most stable version of the Ceph storage system with a Ceph management platform, deployment utilities, and support services.\n \nThis new container image is based on Red Hat Ceph Storage 6.1 and Red Hat Enterprise Linux 8.9, 8.10, 9.2 EUS, 9.2, 9.3, 9.4, 9.5.\n \nSpace precludes documenting all of these changes in this advisory. Users are directed to the Red Hat Ceph Storage Release Notes for information on the most significant of these changes:\n \nhttps://docs.redhat.com/en/documentation/red_hat_ceph_storage/6/html/6.1_release_notes/index\n \nAll users of Red Hat Ceph Storage are advised to pull these new images from the Red Hat Ecosystem catalog, which provides numerous enhancements and bug fixes.",
+        "title": "Details"
+      },
+      {
+        "category": "legal_disclaimer",
+        "text": "This content is licensed under the Creative Commons Attribution 4.0 International License (https://creativecommons.org/licenses/by/4.0/). If you distribute this content, or a modified version of it, you must provide attribution to Red Hat Inc. and provide a link to the original.",
+        "title": "Terms of Use"
+      }
+    ],
+    "publisher": {
+      "category": "vendor",
+      "contact_details": "https://access.redhat.com/security/team/contact/",
+      "issuing_authority": "Red Hat Product Security is responsible for vulnerability handling across all Red Hat products and services.",
+      "name": "Red Hat Product Security",
+      "namespace": "https://www.redhat.com"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "https://access.redhat.com/errata/RHSA-2025:4240",
+        "url": "https://access.redhat.com/errata/RHSA-2025:4240"
+      },
+      {
+        "category": "external",
+        "summary": "https://access.redhat.com/security/updates/classification/#important",
+        "url": "https://access.redhat.com/security/updates/classification/#important"
+      },
+      {
+        "category": "external",
+        "summary": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003",
+        "url": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003"
+      },
+      {
+        "category": "self",
+        "summary": "Canonical URL",
+        "url": "https://security.access.redhat.com/data/csaf/v2/advisories/2025/rhsa-2025_4240.json"
+      }
+    ],
+    "title": "Red Hat Security Advisory: Updated 6.1 container image is now available in the Red Hat Ecosystem Catalog.",
+    "tracking": {
+      "current_release_date": "2025-07-01T14:23:47+00:00",
+      "generator": {
+        "date": "2025-07-01T14:23:47+00:00",
+        "engine": {
+          "name": "Red Hat SDEngine",
+          "version": "4.6.3"
+        }
+      },
+      "id": "RHSA-2025:4240",
+      "initial_release_date": "2025-04-28T05:29:21+00:00",
+      "revision_history": [
+        {
+          "date": "2025-04-28T05:29:21+00:00",
+          "number": "1",
+          "summary": "Initial version"
+        },
+        {
+          "date": "2025-04-28T05:29:21+00:00",
+          "number": "2",
+          "summary": "Last updated version"
+        },
+        {
+          "date": "2025-07-01T14:23:47+00:00",
+          "number": "3",
+          "summary": "Last generated version"
+        }
+      ],
+      "status": "final",
+      "version": "3"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_name",
+                "name": "Red Hat Ceph Storage 6.1 Tools",
+                "product": {
+                  "name": "Red Hat Ceph Storage 6.1 Tools",
+                  "product_id": "9Base-RHCEPH-6.1-Tools",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:ceph_storage:6.1::el9"
+                  }
+                }
+              }
+            ],
+            "category": "product_family",
+            "name": "Red Hat Ceph Storage"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "rhceph/rhceph-6-dashboard-rhel9@sha256:7c48e5f5655db34fa346aed3a7a7e8e109c0d4f40c820f109494daf81046d791_amd64",
+                "product": {
+                  "name": "rhceph/rhceph-6-dashboard-rhel9@sha256:7c48e5f5655db34fa346aed3a7a7e8e109c0d4f40c820f109494daf81046d791_amd64",
+                  "product_id": "rhceph/rhceph-6-dashboard-rhel9@sha256:7c48e5f5655db34fa346aed3a7a7e8e109c0d4f40c820f109494daf81046d791_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhceph-6-dashboard-rhel9@sha256:7c48e5f5655db34fa346aed3a7a7e8e109c0d4f40c820f109494daf81046d791?arch=amd64&repository_url=registry.redhat.io/rhceph/rhceph-6-dashboard-rhel9&tag=latest"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "rhceph/keepalived-rhel9@sha256:54cc52c368304c72657c43fb82142a7a9a5160cc3a6f244052bfdd5261ea99fd_amd64",
+                "product": {
+                  "name": "rhceph/keepalived-rhel9@sha256:54cc52c368304c72657c43fb82142a7a9a5160cc3a6f244052bfdd5261ea99fd_amd64",
+                  "product_id": "rhceph/keepalived-rhel9@sha256:54cc52c368304c72657c43fb82142a7a9a5160cc3a6f244052bfdd5261ea99fd_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/keepalived-rhel9@sha256:54cc52c368304c72657c43fb82142a7a9a5160cc3a6f244052bfdd5261ea99fd?arch=amd64&repository_url=registry.redhat.io/rhceph/keepalived-rhel9&tag=2.2.8-1745816949"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "rhceph/rhceph-promtail-rhel9@sha256:c9cb503a6216553906461e897adbd3410b1cdf1876b56b0d6ce179f6851cfbbc_amd64",
+                "product": {
+                  "name": "rhceph/rhceph-promtail-rhel9@sha256:c9cb503a6216553906461e897adbd3410b1cdf1876b56b0d6ce179f6851cfbbc_amd64",
+                  "product_id": "rhceph/rhceph-promtail-rhel9@sha256:c9cb503a6216553906461e897adbd3410b1cdf1876b56b0d6ce179f6851cfbbc_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhceph-promtail-rhel9@sha256:c9cb503a6216553906461e897adbd3410b1cdf1876b56b0d6ce179f6851cfbbc?arch=amd64&repository_url=registry.redhat.io/rhceph/rhceph-promtail-rhel9&tag=v2.4.0-40"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "rhceph/rhceph-6-rhel9@sha256:6158d287db74defd81c382f5f2c3304ee730064bdc9823dee440dbb325b2e5c8_amd64",
+                "product": {
+                  "name": "rhceph/rhceph-6-rhel9@sha256:6158d287db74defd81c382f5f2c3304ee730064bdc9823dee440dbb325b2e5c8_amd64",
+                  "product_id": "rhceph/rhceph-6-rhel9@sha256:6158d287db74defd81c382f5f2c3304ee730064bdc9823dee440dbb325b2e5c8_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhceph-6-rhel9@sha256:6158d287db74defd81c382f5f2c3304ee730064bdc9823dee440dbb325b2e5c8?arch=amd64&repository_url=registry.redhat.io/rhceph/rhceph-6-rhel9&tag=latest"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "rhceph/rhceph-haproxy-rhel9@sha256:63db781d5e639ea19a72f2cde5d47dea7fe0afe5206e6ebe476052563eb6a3cd_amd64",
+                "product": {
+                  "name": "rhceph/rhceph-haproxy-rhel9@sha256:63db781d5e639ea19a72f2cde5d47dea7fe0afe5206e6ebe476052563eb6a3cd_amd64",
+                  "product_id": "rhceph/rhceph-haproxy-rhel9@sha256:63db781d5e639ea19a72f2cde5d47dea7fe0afe5206e6ebe476052563eb6a3cd_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhceph-haproxy-rhel9@sha256:63db781d5e639ea19a72f2cde5d47dea7fe0afe5206e6ebe476052563eb6a3cd?arch=amd64&repository_url=registry.redhat.io/rhceph/rhceph-haproxy-rhel9&tag=2.4.22-1745816965"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "rhceph/snmp-notifier-rhel9@sha256:14dc3601abdef2e5334372ab553abb47300ca61245fc50193e48213a82211a45_amd64",
+                "product": {
+                  "name": "rhceph/snmp-notifier-rhel9@sha256:14dc3601abdef2e5334372ab553abb47300ca61245fc50193e48213a82211a45_amd64",
+                  "product_id": "rhceph/snmp-notifier-rhel9@sha256:14dc3601abdef2e5334372ab553abb47300ca61245fc50193e48213a82211a45_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/snmp-notifier-rhel9@sha256:14dc3601abdef2e5334372ab553abb47300ca61245fc50193e48213a82211a45?arch=amd64&repository_url=registry.redhat.io/rhceph/snmp-notifier-rhel9&tag=1.2.1-1745816915"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "amd64"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "rhceph/rhceph-6-dashboard-rhel9@sha256:5ecf105bc936d0c37346e1091af73bca69f9c07e226ccd87290a22ec1d37d1a3_ppc64le",
+                "product": {
+                  "name": "rhceph/rhceph-6-dashboard-rhel9@sha256:5ecf105bc936d0c37346e1091af73bca69f9c07e226ccd87290a22ec1d37d1a3_ppc64le",
+                  "product_id": "rhceph/rhceph-6-dashboard-rhel9@sha256:5ecf105bc936d0c37346e1091af73bca69f9c07e226ccd87290a22ec1d37d1a3_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhceph-6-dashboard-rhel9@sha256:5ecf105bc936d0c37346e1091af73bca69f9c07e226ccd87290a22ec1d37d1a3?arch=ppc64le&repository_url=registry.redhat.io/rhceph/rhceph-6-dashboard-rhel9&tag=latest"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "rhceph/keepalived-rhel9@sha256:1c95dcc53d4cc7c694e5a11f7b39b6476d90cf3708358a1cc65f72ec0d38c46c_ppc64le",
+                "product": {
+                  "name": "rhceph/keepalived-rhel9@sha256:1c95dcc53d4cc7c694e5a11f7b39b6476d90cf3708358a1cc65f72ec0d38c46c_ppc64le",
+                  "product_id": "rhceph/keepalived-rhel9@sha256:1c95dcc53d4cc7c694e5a11f7b39b6476d90cf3708358a1cc65f72ec0d38c46c_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/keepalived-rhel9@sha256:1c95dcc53d4cc7c694e5a11f7b39b6476d90cf3708358a1cc65f72ec0d38c46c?arch=ppc64le&repository_url=registry.redhat.io/rhceph/keepalived-rhel9&tag=2.2.8-1745816949"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "rhceph/rhceph-promtail-rhel9@sha256:5f55baba4c52c19c4d28faf0cf5dee64720d6e49c8081ccd38574d7c2960a98b_ppc64le",
+                "product": {
+                  "name": "rhceph/rhceph-promtail-rhel9@sha256:5f55baba4c52c19c4d28faf0cf5dee64720d6e49c8081ccd38574d7c2960a98b_ppc64le",
+                  "product_id": "rhceph/rhceph-promtail-rhel9@sha256:5f55baba4c52c19c4d28faf0cf5dee64720d6e49c8081ccd38574d7c2960a98b_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhceph-promtail-rhel9@sha256:5f55baba4c52c19c4d28faf0cf5dee64720d6e49c8081ccd38574d7c2960a98b?arch=ppc64le&repository_url=registry.redhat.io/rhceph/rhceph-promtail-rhel9&tag=v2.4.0-40"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "rhceph/rhceph-6-rhel9@sha256:5e300275660b37e5017b2fd3f614adb2ae96d59e434ea931ce2778aa5f51fd06_ppc64le",
+                "product": {
+                  "name": "rhceph/rhceph-6-rhel9@sha256:5e300275660b37e5017b2fd3f614adb2ae96d59e434ea931ce2778aa5f51fd06_ppc64le",
+                  "product_id": "rhceph/rhceph-6-rhel9@sha256:5e300275660b37e5017b2fd3f614adb2ae96d59e434ea931ce2778aa5f51fd06_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhceph-6-rhel9@sha256:5e300275660b37e5017b2fd3f614adb2ae96d59e434ea931ce2778aa5f51fd06?arch=ppc64le&repository_url=registry.redhat.io/rhceph/rhceph-6-rhel9&tag=latest"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "rhceph/rhceph-haproxy-rhel9@sha256:615a46aeac92682b400010a81afcc7b69cb506bee102c69dfd94d43423db1853_ppc64le",
+                "product": {
+                  "name": "rhceph/rhceph-haproxy-rhel9@sha256:615a46aeac92682b400010a81afcc7b69cb506bee102c69dfd94d43423db1853_ppc64le",
+                  "product_id": "rhceph/rhceph-haproxy-rhel9@sha256:615a46aeac92682b400010a81afcc7b69cb506bee102c69dfd94d43423db1853_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhceph-haproxy-rhel9@sha256:615a46aeac92682b400010a81afcc7b69cb506bee102c69dfd94d43423db1853?arch=ppc64le&repository_url=registry.redhat.io/rhceph/rhceph-haproxy-rhel9&tag=2.4.22-1745816965"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "rhceph/snmp-notifier-rhel9@sha256:4fbb6836a47696dde61e2235666f4d0d8b32ed63772958407c30385b741626da_ppc64le",
+                "product": {
+                  "name": "rhceph/snmp-notifier-rhel9@sha256:4fbb6836a47696dde61e2235666f4d0d8b32ed63772958407c30385b741626da_ppc64le",
+                  "product_id": "rhceph/snmp-notifier-rhel9@sha256:4fbb6836a47696dde61e2235666f4d0d8b32ed63772958407c30385b741626da_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/snmp-notifier-rhel9@sha256:4fbb6836a47696dde61e2235666f4d0d8b32ed63772958407c30385b741626da?arch=ppc64le&repository_url=registry.redhat.io/rhceph/snmp-notifier-rhel9&tag=1.2.1-1745816915"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "ppc64le"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "rhceph/rhceph-6-dashboard-rhel9@sha256:6556cb524258d4066898583912e167c311d3f4224e002eda0d78c061addb4aa5_s390x",
+                "product": {
+                  "name": "rhceph/rhceph-6-dashboard-rhel9@sha256:6556cb524258d4066898583912e167c311d3f4224e002eda0d78c061addb4aa5_s390x",
+                  "product_id": "rhceph/rhceph-6-dashboard-rhel9@sha256:6556cb524258d4066898583912e167c311d3f4224e002eda0d78c061addb4aa5_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhceph-6-dashboard-rhel9@sha256:6556cb524258d4066898583912e167c311d3f4224e002eda0d78c061addb4aa5?arch=s390x&repository_url=registry.redhat.io/rhceph/rhceph-6-dashboard-rhel9&tag=latest"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "rhceph/keepalived-rhel9@sha256:c3b6856a4d946ec48d8c60d15faf95123268b1b73bc1a01510fc40a04274ec06_s390x",
+                "product": {
+                  "name": "rhceph/keepalived-rhel9@sha256:c3b6856a4d946ec48d8c60d15faf95123268b1b73bc1a01510fc40a04274ec06_s390x",
+                  "product_id": "rhceph/keepalived-rhel9@sha256:c3b6856a4d946ec48d8c60d15faf95123268b1b73bc1a01510fc40a04274ec06_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/keepalived-rhel9@sha256:c3b6856a4d946ec48d8c60d15faf95123268b1b73bc1a01510fc40a04274ec06?arch=s390x&repository_url=registry.redhat.io/rhceph/keepalived-rhel9&tag=2.2.8-1745816949"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "rhceph/rhceph-promtail-rhel9@sha256:b0d41dceb48071c537314247409226329f55cc2bd9b902066ca065f73e017b8f_s390x",
+                "product": {
+                  "name": "rhceph/rhceph-promtail-rhel9@sha256:b0d41dceb48071c537314247409226329f55cc2bd9b902066ca065f73e017b8f_s390x",
+                  "product_id": "rhceph/rhceph-promtail-rhel9@sha256:b0d41dceb48071c537314247409226329f55cc2bd9b902066ca065f73e017b8f_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhceph-promtail-rhel9@sha256:b0d41dceb48071c537314247409226329f55cc2bd9b902066ca065f73e017b8f?arch=s390x&repository_url=registry.redhat.io/rhceph/rhceph-promtail-rhel9&tag=v2.4.0-40"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "rhceph/rhceph-6-rhel9@sha256:c7194cc27e4be27a21369eaf28b7481f0133db221a6f0781ffcb2d9ca947e0db_s390x",
+                "product": {
+                  "name": "rhceph/rhceph-6-rhel9@sha256:c7194cc27e4be27a21369eaf28b7481f0133db221a6f0781ffcb2d9ca947e0db_s390x",
+                  "product_id": "rhceph/rhceph-6-rhel9@sha256:c7194cc27e4be27a21369eaf28b7481f0133db221a6f0781ffcb2d9ca947e0db_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhceph-6-rhel9@sha256:c7194cc27e4be27a21369eaf28b7481f0133db221a6f0781ffcb2d9ca947e0db?arch=s390x&repository_url=registry.redhat.io/rhceph/rhceph-6-rhel9&tag=latest"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "rhceph/rhceph-haproxy-rhel9@sha256:862fed90f9699602ebd5858fc04377d87c3f30c826847f3e0a61d48c49e162f1_s390x",
+                "product": {
+                  "name": "rhceph/rhceph-haproxy-rhel9@sha256:862fed90f9699602ebd5858fc04377d87c3f30c826847f3e0a61d48c49e162f1_s390x",
+                  "product_id": "rhceph/rhceph-haproxy-rhel9@sha256:862fed90f9699602ebd5858fc04377d87c3f30c826847f3e0a61d48c49e162f1_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhceph-haproxy-rhel9@sha256:862fed90f9699602ebd5858fc04377d87c3f30c826847f3e0a61d48c49e162f1?arch=s390x&repository_url=registry.redhat.io/rhceph/rhceph-haproxy-rhel9&tag=2.4.22-1745816965"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "rhceph/snmp-notifier-rhel9@sha256:e3a49a1c07604fa64a5970403841ea9cddec05e5d9b558c5681e3ade60ab38ea_s390x",
+                "product": {
+                  "name": "rhceph/snmp-notifier-rhel9@sha256:e3a49a1c07604fa64a5970403841ea9cddec05e5d9b558c5681e3ade60ab38ea_s390x",
+                  "product_id": "rhceph/snmp-notifier-rhel9@sha256:e3a49a1c07604fa64a5970403841ea9cddec05e5d9b558c5681e3ade60ab38ea_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/snmp-notifier-rhel9@sha256:e3a49a1c07604fa64a5970403841ea9cddec05e5d9b558c5681e3ade60ab38ea?arch=s390x&repository_url=registry.redhat.io/rhceph/snmp-notifier-rhel9&tag=1.2.1-1745816915"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "s390x"
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      }
+    ],
+    "relationships": [
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "rhceph/keepalived-rhel9@sha256:1c95dcc53d4cc7c694e5a11f7b39b6476d90cf3708358a1cc65f72ec0d38c46c_ppc64le as a component of Red Hat Ceph Storage 6.1 Tools",
+          "product_id": "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:1c95dcc53d4cc7c694e5a11f7b39b6476d90cf3708358a1cc65f72ec0d38c46c_ppc64le"
+        },
+        "product_reference": "rhceph/keepalived-rhel9@sha256:1c95dcc53d4cc7c694e5a11f7b39b6476d90cf3708358a1cc65f72ec0d38c46c_ppc64le",
+        "relates_to_product_reference": "9Base-RHCEPH-6.1-Tools"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "rhceph/keepalived-rhel9@sha256:54cc52c368304c72657c43fb82142a7a9a5160cc3a6f244052bfdd5261ea99fd_amd64 as a component of Red Hat Ceph Storage 6.1 Tools",
+          "product_id": "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:54cc52c368304c72657c43fb82142a7a9a5160cc3a6f244052bfdd5261ea99fd_amd64"
+        },
+        "product_reference": "rhceph/keepalived-rhel9@sha256:54cc52c368304c72657c43fb82142a7a9a5160cc3a6f244052bfdd5261ea99fd_amd64",
+        "relates_to_product_reference": "9Base-RHCEPH-6.1-Tools"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "rhceph/keepalived-rhel9@sha256:c3b6856a4d946ec48d8c60d15faf95123268b1b73bc1a01510fc40a04274ec06_s390x as a component of Red Hat Ceph Storage 6.1 Tools",
+          "product_id": "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:c3b6856a4d946ec48d8c60d15faf95123268b1b73bc1a01510fc40a04274ec06_s390x"
+        },
+        "product_reference": "rhceph/keepalived-rhel9@sha256:c3b6856a4d946ec48d8c60d15faf95123268b1b73bc1a01510fc40a04274ec06_s390x",
+        "relates_to_product_reference": "9Base-RHCEPH-6.1-Tools"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "rhceph/rhceph-6-dashboard-rhel9@sha256:5ecf105bc936d0c37346e1091af73bca69f9c07e226ccd87290a22ec1d37d1a3_ppc64le as a component of Red Hat Ceph Storage 6.1 Tools",
+          "product_id": "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:5ecf105bc936d0c37346e1091af73bca69f9c07e226ccd87290a22ec1d37d1a3_ppc64le"
+        },
+        "product_reference": "rhceph/rhceph-6-dashboard-rhel9@sha256:5ecf105bc936d0c37346e1091af73bca69f9c07e226ccd87290a22ec1d37d1a3_ppc64le",
+        "relates_to_product_reference": "9Base-RHCEPH-6.1-Tools"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "rhceph/rhceph-6-dashboard-rhel9@sha256:6556cb524258d4066898583912e167c311d3f4224e002eda0d78c061addb4aa5_s390x as a component of Red Hat Ceph Storage 6.1 Tools",
+          "product_id": "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:6556cb524258d4066898583912e167c311d3f4224e002eda0d78c061addb4aa5_s390x"
+        },
+        "product_reference": "rhceph/rhceph-6-dashboard-rhel9@sha256:6556cb524258d4066898583912e167c311d3f4224e002eda0d78c061addb4aa5_s390x",
+        "relates_to_product_reference": "9Base-RHCEPH-6.1-Tools"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "rhceph/rhceph-6-dashboard-rhel9@sha256:7c48e5f5655db34fa346aed3a7a7e8e109c0d4f40c820f109494daf81046d791_amd64 as a component of Red Hat Ceph Storage 6.1 Tools",
+          "product_id": "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:7c48e5f5655db34fa346aed3a7a7e8e109c0d4f40c820f109494daf81046d791_amd64"
+        },
+        "product_reference": "rhceph/rhceph-6-dashboard-rhel9@sha256:7c48e5f5655db34fa346aed3a7a7e8e109c0d4f40c820f109494daf81046d791_amd64",
+        "relates_to_product_reference": "9Base-RHCEPH-6.1-Tools"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "rhceph/rhceph-6-rhel9@sha256:5e300275660b37e5017b2fd3f614adb2ae96d59e434ea931ce2778aa5f51fd06_ppc64le as a component of Red Hat Ceph Storage 6.1 Tools",
+          "product_id": "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:5e300275660b37e5017b2fd3f614adb2ae96d59e434ea931ce2778aa5f51fd06_ppc64le"
+        },
+        "product_reference": "rhceph/rhceph-6-rhel9@sha256:5e300275660b37e5017b2fd3f614adb2ae96d59e434ea931ce2778aa5f51fd06_ppc64le",
+        "relates_to_product_reference": "9Base-RHCEPH-6.1-Tools"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "rhceph/rhceph-6-rhel9@sha256:6158d287db74defd81c382f5f2c3304ee730064bdc9823dee440dbb325b2e5c8_amd64 as a component of Red Hat Ceph Storage 6.1 Tools",
+          "product_id": "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:6158d287db74defd81c382f5f2c3304ee730064bdc9823dee440dbb325b2e5c8_amd64"
+        },
+        "product_reference": "rhceph/rhceph-6-rhel9@sha256:6158d287db74defd81c382f5f2c3304ee730064bdc9823dee440dbb325b2e5c8_amd64",
+        "relates_to_product_reference": "9Base-RHCEPH-6.1-Tools"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "rhceph/rhceph-6-rhel9@sha256:c7194cc27e4be27a21369eaf28b7481f0133db221a6f0781ffcb2d9ca947e0db_s390x as a component of Red Hat Ceph Storage 6.1 Tools",
+          "product_id": "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:c7194cc27e4be27a21369eaf28b7481f0133db221a6f0781ffcb2d9ca947e0db_s390x"
+        },
+        "product_reference": "rhceph/rhceph-6-rhel9@sha256:c7194cc27e4be27a21369eaf28b7481f0133db221a6f0781ffcb2d9ca947e0db_s390x",
+        "relates_to_product_reference": "9Base-RHCEPH-6.1-Tools"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "rhceph/rhceph-haproxy-rhel9@sha256:615a46aeac92682b400010a81afcc7b69cb506bee102c69dfd94d43423db1853_ppc64le as a component of Red Hat Ceph Storage 6.1 Tools",
+          "product_id": "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:615a46aeac92682b400010a81afcc7b69cb506bee102c69dfd94d43423db1853_ppc64le"
+        },
+        "product_reference": "rhceph/rhceph-haproxy-rhel9@sha256:615a46aeac92682b400010a81afcc7b69cb506bee102c69dfd94d43423db1853_ppc64le",
+        "relates_to_product_reference": "9Base-RHCEPH-6.1-Tools"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "rhceph/rhceph-haproxy-rhel9@sha256:63db781d5e639ea19a72f2cde5d47dea7fe0afe5206e6ebe476052563eb6a3cd_amd64 as a component of Red Hat Ceph Storage 6.1 Tools",
+          "product_id": "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:63db781d5e639ea19a72f2cde5d47dea7fe0afe5206e6ebe476052563eb6a3cd_amd64"
+        },
+        "product_reference": "rhceph/rhceph-haproxy-rhel9@sha256:63db781d5e639ea19a72f2cde5d47dea7fe0afe5206e6ebe476052563eb6a3cd_amd64",
+        "relates_to_product_reference": "9Base-RHCEPH-6.1-Tools"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "rhceph/rhceph-haproxy-rhel9@sha256:862fed90f9699602ebd5858fc04377d87c3f30c826847f3e0a61d48c49e162f1_s390x as a component of Red Hat Ceph Storage 6.1 Tools",
+          "product_id": "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:862fed90f9699602ebd5858fc04377d87c3f30c826847f3e0a61d48c49e162f1_s390x"
+        },
+        "product_reference": "rhceph/rhceph-haproxy-rhel9@sha256:862fed90f9699602ebd5858fc04377d87c3f30c826847f3e0a61d48c49e162f1_s390x",
+        "relates_to_product_reference": "9Base-RHCEPH-6.1-Tools"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "rhceph/rhceph-promtail-rhel9@sha256:5f55baba4c52c19c4d28faf0cf5dee64720d6e49c8081ccd38574d7c2960a98b_ppc64le as a component of Red Hat Ceph Storage 6.1 Tools",
+          "product_id": "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:5f55baba4c52c19c4d28faf0cf5dee64720d6e49c8081ccd38574d7c2960a98b_ppc64le"
+        },
+        "product_reference": "rhceph/rhceph-promtail-rhel9@sha256:5f55baba4c52c19c4d28faf0cf5dee64720d6e49c8081ccd38574d7c2960a98b_ppc64le",
+        "relates_to_product_reference": "9Base-RHCEPH-6.1-Tools"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "rhceph/rhceph-promtail-rhel9@sha256:b0d41dceb48071c537314247409226329f55cc2bd9b902066ca065f73e017b8f_s390x as a component of Red Hat Ceph Storage 6.1 Tools",
+          "product_id": "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:b0d41dceb48071c537314247409226329f55cc2bd9b902066ca065f73e017b8f_s390x"
+        },
+        "product_reference": "rhceph/rhceph-promtail-rhel9@sha256:b0d41dceb48071c537314247409226329f55cc2bd9b902066ca065f73e017b8f_s390x",
+        "relates_to_product_reference": "9Base-RHCEPH-6.1-Tools"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "rhceph/rhceph-promtail-rhel9@sha256:c9cb503a6216553906461e897adbd3410b1cdf1876b56b0d6ce179f6851cfbbc_amd64 as a component of Red Hat Ceph Storage 6.1 Tools",
+          "product_id": "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:c9cb503a6216553906461e897adbd3410b1cdf1876b56b0d6ce179f6851cfbbc_amd64"
+        },
+        "product_reference": "rhceph/rhceph-promtail-rhel9@sha256:c9cb503a6216553906461e897adbd3410b1cdf1876b56b0d6ce179f6851cfbbc_amd64",
+        "relates_to_product_reference": "9Base-RHCEPH-6.1-Tools"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "rhceph/snmp-notifier-rhel9@sha256:14dc3601abdef2e5334372ab553abb47300ca61245fc50193e48213a82211a45_amd64 as a component of Red Hat Ceph Storage 6.1 Tools",
+          "product_id": "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:14dc3601abdef2e5334372ab553abb47300ca61245fc50193e48213a82211a45_amd64"
+        },
+        "product_reference": "rhceph/snmp-notifier-rhel9@sha256:14dc3601abdef2e5334372ab553abb47300ca61245fc50193e48213a82211a45_amd64",
+        "relates_to_product_reference": "9Base-RHCEPH-6.1-Tools"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "rhceph/snmp-notifier-rhel9@sha256:4fbb6836a47696dde61e2235666f4d0d8b32ed63772958407c30385b741626da_ppc64le as a component of Red Hat Ceph Storage 6.1 Tools",
+          "product_id": "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:4fbb6836a47696dde61e2235666f4d0d8b32ed63772958407c30385b741626da_ppc64le"
+        },
+        "product_reference": "rhceph/snmp-notifier-rhel9@sha256:4fbb6836a47696dde61e2235666f4d0d8b32ed63772958407c30385b741626da_ppc64le",
+        "relates_to_product_reference": "9Base-RHCEPH-6.1-Tools"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "rhceph/snmp-notifier-rhel9@sha256:e3a49a1c07604fa64a5970403841ea9cddec05e5d9b558c5681e3ade60ab38ea_s390x as a component of Red Hat Ceph Storage 6.1 Tools",
+          "product_id": "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:e3a49a1c07604fa64a5970403841ea9cddec05e5d9b558c5681e3ade60ab38ea_s390x"
+        },
+        "product_reference": "rhceph/snmp-notifier-rhel9@sha256:e3a49a1c07604fa64a5970403841ea9cddec05e5d9b558c5681e3ade60ab38ea_s390x",
+        "relates_to_product_reference": "9Base-RHCEPH-6.1-Tools"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2023-39325",
+      "cwe": {
+        "id": "CWE-400",
+        "name": "Uncontrolled Resource Consumption"
+      },
+      "discovery_date": "2023-10-10T00:00:00+00:00",
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2243296"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A flaw was found in handling multiplexed streams in the HTTP/2 protocol. A client can repeatedly make a request for a new multiplex stream and immediately send an RST_STREAM frame to cancel it. This creates extra work for the server setting up and tearing down the streams while not hitting any server-side limit for the maximum number of active streams per connection, resulting in a denial of service due to server resource consumption. Red Hat has rated the severity of this flaw as 'Important' as the US Cybersecurity and Infrastructure Security Agency (CISA) declared this vulnerability an active exploit.\r\n\r\nCVE-2023-39325 was assigned for the `Rapid Reset Attack` in the Go language packages.",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "golang: net/http, x/net/http2: rapid stream resets can cause excessive work (CVE-2023-44487)",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "other",
+          "text": "This CVE is related to CVE-2023-44487.\n\nThe majority of RHEL utilities are not long-running applications; instead, they are command-line tools. These tools utilize Golang package as build-time dependency, which is why they are classified as having a \"Moderate\" level of impact.",
+          "title": "Statement"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:1c95dcc53d4cc7c694e5a11f7b39b6476d90cf3708358a1cc65f72ec0d38c46c_ppc64le",
+          "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:54cc52c368304c72657c43fb82142a7a9a5160cc3a6f244052bfdd5261ea99fd_amd64",
+          "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:c3b6856a4d946ec48d8c60d15faf95123268b1b73bc1a01510fc40a04274ec06_s390x",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:5ecf105bc936d0c37346e1091af73bca69f9c07e226ccd87290a22ec1d37d1a3_ppc64le",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:6556cb524258d4066898583912e167c311d3f4224e002eda0d78c061addb4aa5_s390x",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:7c48e5f5655db34fa346aed3a7a7e8e109c0d4f40c820f109494daf81046d791_amd64",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:5e300275660b37e5017b2fd3f614adb2ae96d59e434ea931ce2778aa5f51fd06_ppc64le",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:6158d287db74defd81c382f5f2c3304ee730064bdc9823dee440dbb325b2e5c8_amd64",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:c7194cc27e4be27a21369eaf28b7481f0133db221a6f0781ffcb2d9ca947e0db_s390x",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:615a46aeac92682b400010a81afcc7b69cb506bee102c69dfd94d43423db1853_ppc64le",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:63db781d5e639ea19a72f2cde5d47dea7fe0afe5206e6ebe476052563eb6a3cd_amd64",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:862fed90f9699602ebd5858fc04377d87c3f30c826847f3e0a61d48c49e162f1_s390x",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:5f55baba4c52c19c4d28faf0cf5dee64720d6e49c8081ccd38574d7c2960a98b_ppc64le",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:b0d41dceb48071c537314247409226329f55cc2bd9b902066ca065f73e017b8f_s390x",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:c9cb503a6216553906461e897adbd3410b1cdf1876b56b0d6ce179f6851cfbbc_amd64",
+          "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:14dc3601abdef2e5334372ab553abb47300ca61245fc50193e48213a82211a45_amd64",
+          "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:4fbb6836a47696dde61e2235666f4d0d8b32ed63772958407c30385b741626da_ppc64le",
+          "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:e3a49a1c07604fa64a5970403841ea9cddec05e5d9b558c5681e3ade60ab38ea_s390x"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2243296",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2243296"
+        },
+        {
+          "category": "external",
+          "summary": "RHSB-2023-003",
+          "url": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2023-39325",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "https://access.redhat.com/security/cve/CVE-2023-44487",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-44487"
+        },
+        {
+          "category": "external",
+          "summary": "https://go.dev/issue/63417",
+          "url": "https://go.dev/issue/63417"
+        },
+        {
+          "category": "external",
+          "summary": "https://pkg.go.dev/vuln/GO-2023-2102",
+          "url": "https://pkg.go.dev/vuln/GO-2023-2102"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487",
+          "url": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487"
+        }
+      ],
+      "release_date": "2023-10-10T00:00:00+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2025-04-28T05:29:21+00:00",
+          "details": "Before applying this update, make sure all previously released errata relevant to your system have been applied.\n\nFor details on how to apply this update, refer to:\n\nhttps://access.redhat.com/articles/2789521\n\nFor supported configurations, refer to:\n\nhttps://access.redhat.com/articles/1548993",
+          "product_ids": [
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:1c95dcc53d4cc7c694e5a11f7b39b6476d90cf3708358a1cc65f72ec0d38c46c_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:54cc52c368304c72657c43fb82142a7a9a5160cc3a6f244052bfdd5261ea99fd_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:c3b6856a4d946ec48d8c60d15faf95123268b1b73bc1a01510fc40a04274ec06_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:5ecf105bc936d0c37346e1091af73bca69f9c07e226ccd87290a22ec1d37d1a3_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:6556cb524258d4066898583912e167c311d3f4224e002eda0d78c061addb4aa5_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:7c48e5f5655db34fa346aed3a7a7e8e109c0d4f40c820f109494daf81046d791_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:5e300275660b37e5017b2fd3f614adb2ae96d59e434ea931ce2778aa5f51fd06_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:6158d287db74defd81c382f5f2c3304ee730064bdc9823dee440dbb325b2e5c8_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:c7194cc27e4be27a21369eaf28b7481f0133db221a6f0781ffcb2d9ca947e0db_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:615a46aeac92682b400010a81afcc7b69cb506bee102c69dfd94d43423db1853_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:63db781d5e639ea19a72f2cde5d47dea7fe0afe5206e6ebe476052563eb6a3cd_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:862fed90f9699602ebd5858fc04377d87c3f30c826847f3e0a61d48c49e162f1_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:5f55baba4c52c19c4d28faf0cf5dee64720d6e49c8081ccd38574d7c2960a98b_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:b0d41dceb48071c537314247409226329f55cc2bd9b902066ca065f73e017b8f_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:c9cb503a6216553906461e897adbd3410b1cdf1876b56b0d6ce179f6851cfbbc_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:14dc3601abdef2e5334372ab553abb47300ca61245fc50193e48213a82211a45_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:4fbb6836a47696dde61e2235666f4d0d8b32ed63772958407c30385b741626da_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:e3a49a1c07604fa64a5970403841ea9cddec05e5d9b558c5681e3ade60ab38ea_s390x"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2025:4240"
+        },
+        {
+          "category": "workaround",
+          "details": "The default stream concurrency limit in golang is 250 streams (requests) per HTTP/2 connection. This value may be adjusted in the golang.org/x/net/http2 package using the Server.MaxConcurrentStreams setting and the ConfigureServer function which are available in golang.org/x/net/http2.",
+          "product_ids": [
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:1c95dcc53d4cc7c694e5a11f7b39b6476d90cf3708358a1cc65f72ec0d38c46c_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:54cc52c368304c72657c43fb82142a7a9a5160cc3a6f244052bfdd5261ea99fd_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:c3b6856a4d946ec48d8c60d15faf95123268b1b73bc1a01510fc40a04274ec06_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:5ecf105bc936d0c37346e1091af73bca69f9c07e226ccd87290a22ec1d37d1a3_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:6556cb524258d4066898583912e167c311d3f4224e002eda0d78c061addb4aa5_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:7c48e5f5655db34fa346aed3a7a7e8e109c0d4f40c820f109494daf81046d791_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:5e300275660b37e5017b2fd3f614adb2ae96d59e434ea931ce2778aa5f51fd06_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:6158d287db74defd81c382f5f2c3304ee730064bdc9823dee440dbb325b2e5c8_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:c7194cc27e4be27a21369eaf28b7481f0133db221a6f0781ffcb2d9ca947e0db_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:615a46aeac92682b400010a81afcc7b69cb506bee102c69dfd94d43423db1853_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:63db781d5e639ea19a72f2cde5d47dea7fe0afe5206e6ebe476052563eb6a3cd_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:862fed90f9699602ebd5858fc04377d87c3f30c826847f3e0a61d48c49e162f1_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:5f55baba4c52c19c4d28faf0cf5dee64720d6e49c8081ccd38574d7c2960a98b_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:b0d41dceb48071c537314247409226329f55cc2bd9b902066ca065f73e017b8f_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:c9cb503a6216553906461e897adbd3410b1cdf1876b56b0d6ce179f6851cfbbc_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:14dc3601abdef2e5334372ab553abb47300ca61245fc50193e48213a82211a45_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:4fbb6836a47696dde61e2235666f4d0d8b32ed63772958407c30385b741626da_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:e3a49a1c07604fa64a5970403841ea9cddec05e5d9b558c5681e3ade60ab38ea_s390x"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 7.5,
+            "baseSeverity": "HIGH",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:1c95dcc53d4cc7c694e5a11f7b39b6476d90cf3708358a1cc65f72ec0d38c46c_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:54cc52c368304c72657c43fb82142a7a9a5160cc3a6f244052bfdd5261ea99fd_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:c3b6856a4d946ec48d8c60d15faf95123268b1b73bc1a01510fc40a04274ec06_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:5ecf105bc936d0c37346e1091af73bca69f9c07e226ccd87290a22ec1d37d1a3_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:6556cb524258d4066898583912e167c311d3f4224e002eda0d78c061addb4aa5_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:7c48e5f5655db34fa346aed3a7a7e8e109c0d4f40c820f109494daf81046d791_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:5e300275660b37e5017b2fd3f614adb2ae96d59e434ea931ce2778aa5f51fd06_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:6158d287db74defd81c382f5f2c3304ee730064bdc9823dee440dbb325b2e5c8_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:c7194cc27e4be27a21369eaf28b7481f0133db221a6f0781ffcb2d9ca947e0db_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:615a46aeac92682b400010a81afcc7b69cb506bee102c69dfd94d43423db1853_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:63db781d5e639ea19a72f2cde5d47dea7fe0afe5206e6ebe476052563eb6a3cd_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:862fed90f9699602ebd5858fc04377d87c3f30c826847f3e0a61d48c49e162f1_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:5f55baba4c52c19c4d28faf0cf5dee64720d6e49c8081ccd38574d7c2960a98b_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:b0d41dceb48071c537314247409226329f55cc2bd9b902066ca065f73e017b8f_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:c9cb503a6216553906461e897adbd3410b1cdf1876b56b0d6ce179f6851cfbbc_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:14dc3601abdef2e5334372ab553abb47300ca61245fc50193e48213a82211a45_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:4fbb6836a47696dde61e2235666f4d0d8b32ed63772958407c30385b741626da_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:e3a49a1c07604fa64a5970403841ea9cddec05e5d9b558c5681e3ade60ab38ea_s390x"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Important"
+        }
+      ],
+      "title": "golang: net/http, x/net/http2: rapid stream resets can cause excessive work (CVE-2023-44487)"
+    },
+    {
+      "acknowledgments": [
+        {
+          "names": [
+            "Bartek Nowotarski"
+          ],
+          "organization": "nowotarski.info"
+        }
+      ],
+      "cve": "CVE-2023-45288",
+      "cwe": {
+        "id": "CWE-400",
+        "name": "Uncontrolled Resource Consumption"
+      },
+      "discovery_date": "2024-03-06T00:00:00+00:00",
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2268273"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A vulnerability was discovered with the implementation of the HTTP/2 protocol in the Go programming language. There were insufficient limitations on the amount of CONTINUATION frames sent within a single stream. An attacker could potentially exploit this to cause a Denial of Service (DoS) attack.",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "golang: net/http, x/net/http2: unlimited number of CONTINUATION frames causes DoS",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "other",
+          "text": "Red Hat rates the security impact of this vulnerability as Important due to the worst case scenario resulting in a denial of service. It is simple to exploit, could significantly impact availability, and there is not a suitable mitigation for all use cases. Once an attack has ended, the system should return to normal operations on its own.\n\nThis vulnerability only impacts servers which have HTTP/2 enabled. It stems from an imperfect definition of the protocol. As the Go programming language is widely utilized across nearly every major Red Hat offering, a full listing of impacted packages will not be provided. Therefore, the \u201cAffected Packages and Issued Red Hat Security Errata\u201d section contains a simplified list of what offerings need to remediate this vulnerability. Every impacted offering has at least one representative component listed, but potentially not all of them. Rest assured that Red Hat is committed to remediating this vulnerability across our entire portfolio.\n\nMany components are rated as Low impact due to configurations which reduce the attack surface or  significantly increase the difficulty of exploitation. A summary of these scenarios are:\n* The container includes a package that provides a vulnerable webserver, but it is not used or running during operation\n* HTTP/2 is disabled by default and is not supported\n* Only a client implementation is provided, which is not vulnerable\n* A vulnerable module (either golang.org/net/http or golang.org/x/net/http2) is included, but disabled\n* Access to a vulnerable server is restricted within the container (loopback only connections)\n* Golang is available in the container but is not used\n\n\nWithin the Red Hat OpenShift Container Platform, the majority of vulnerable components are not externally accessible. This means an attacker must already have access to a container within your environment to exploit this vulnerability. However, the ose-hyperkube (openshift-enterprise-hyperkube) container is externally accessible, so there are less barriers to exploitation. Fixes for this specific container are already available.\n\nWithin Red Hat Ansible Automation Platform, the impacted component is Receptor. The impact has been reduced to Low as the vulnerable code is present, but not utilized. There are three potential exposures within this component:\n* Receptor utilizes QUIC a UDP based protocol which does not run over HTTP/2\n* Receptor utilizes the x/net/ipv4 and ipv6 packages, both of which are not affected",
+          "title": "Statement"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:1c95dcc53d4cc7c694e5a11f7b39b6476d90cf3708358a1cc65f72ec0d38c46c_ppc64le",
+          "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:54cc52c368304c72657c43fb82142a7a9a5160cc3a6f244052bfdd5261ea99fd_amd64",
+          "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:c3b6856a4d946ec48d8c60d15faf95123268b1b73bc1a01510fc40a04274ec06_s390x",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:5ecf105bc936d0c37346e1091af73bca69f9c07e226ccd87290a22ec1d37d1a3_ppc64le",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:6556cb524258d4066898583912e167c311d3f4224e002eda0d78c061addb4aa5_s390x",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:7c48e5f5655db34fa346aed3a7a7e8e109c0d4f40c820f109494daf81046d791_amd64",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:5e300275660b37e5017b2fd3f614adb2ae96d59e434ea931ce2778aa5f51fd06_ppc64le",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:6158d287db74defd81c382f5f2c3304ee730064bdc9823dee440dbb325b2e5c8_amd64",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:c7194cc27e4be27a21369eaf28b7481f0133db221a6f0781ffcb2d9ca947e0db_s390x",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:615a46aeac92682b400010a81afcc7b69cb506bee102c69dfd94d43423db1853_ppc64le",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:63db781d5e639ea19a72f2cde5d47dea7fe0afe5206e6ebe476052563eb6a3cd_amd64",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:862fed90f9699602ebd5858fc04377d87c3f30c826847f3e0a61d48c49e162f1_s390x",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:5f55baba4c52c19c4d28faf0cf5dee64720d6e49c8081ccd38574d7c2960a98b_ppc64le",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:b0d41dceb48071c537314247409226329f55cc2bd9b902066ca065f73e017b8f_s390x",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:c9cb503a6216553906461e897adbd3410b1cdf1876b56b0d6ce179f6851cfbbc_amd64",
+          "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:14dc3601abdef2e5334372ab553abb47300ca61245fc50193e48213a82211a45_amd64",
+          "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:4fbb6836a47696dde61e2235666f4d0d8b32ed63772958407c30385b741626da_ppc64le",
+          "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:e3a49a1c07604fa64a5970403841ea9cddec05e5d9b558c5681e3ade60ab38ea_s390x"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-45288"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2268273",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2268273"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2023-45288",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-45288"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2023-45288",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-45288"
+        },
+        {
+          "category": "external",
+          "summary": "https://nowotarski.info/http2-continuation-flood/",
+          "url": "https://nowotarski.info/http2-continuation-flood/"
+        },
+        {
+          "category": "external",
+          "summary": "https://pkg.go.dev/vuln/GO-2024-2687",
+          "url": "https://pkg.go.dev/vuln/GO-2024-2687"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.kb.cert.org/vuls/id/421644",
+          "url": "https://www.kb.cert.org/vuls/id/421644"
+        }
+      ],
+      "release_date": "2024-04-03T00:00:00+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2025-04-28T05:29:21+00:00",
+          "details": "Before applying this update, make sure all previously released errata relevant to your system have been applied.\n\nFor details on how to apply this update, refer to:\n\nhttps://access.redhat.com/articles/2789521\n\nFor supported configurations, refer to:\n\nhttps://access.redhat.com/articles/1548993",
+          "product_ids": [
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:1c95dcc53d4cc7c694e5a11f7b39b6476d90cf3708358a1cc65f72ec0d38c46c_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:54cc52c368304c72657c43fb82142a7a9a5160cc3a6f244052bfdd5261ea99fd_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:c3b6856a4d946ec48d8c60d15faf95123268b1b73bc1a01510fc40a04274ec06_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:5ecf105bc936d0c37346e1091af73bca69f9c07e226ccd87290a22ec1d37d1a3_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:6556cb524258d4066898583912e167c311d3f4224e002eda0d78c061addb4aa5_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:7c48e5f5655db34fa346aed3a7a7e8e109c0d4f40c820f109494daf81046d791_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:5e300275660b37e5017b2fd3f614adb2ae96d59e434ea931ce2778aa5f51fd06_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:6158d287db74defd81c382f5f2c3304ee730064bdc9823dee440dbb325b2e5c8_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:c7194cc27e4be27a21369eaf28b7481f0133db221a6f0781ffcb2d9ca947e0db_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:615a46aeac92682b400010a81afcc7b69cb506bee102c69dfd94d43423db1853_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:63db781d5e639ea19a72f2cde5d47dea7fe0afe5206e6ebe476052563eb6a3cd_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:862fed90f9699602ebd5858fc04377d87c3f30c826847f3e0a61d48c49e162f1_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:5f55baba4c52c19c4d28faf0cf5dee64720d6e49c8081ccd38574d7c2960a98b_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:b0d41dceb48071c537314247409226329f55cc2bd9b902066ca065f73e017b8f_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:c9cb503a6216553906461e897adbd3410b1cdf1876b56b0d6ce179f6851cfbbc_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:14dc3601abdef2e5334372ab553abb47300ca61245fc50193e48213a82211a45_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:4fbb6836a47696dde61e2235666f4d0d8b32ed63772958407c30385b741626da_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:e3a49a1c07604fa64a5970403841ea9cddec05e5d9b558c5681e3ade60ab38ea_s390x"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2025:4240"
+        },
+        {
+          "category": "workaround",
+          "details": "In some environments where http/2 support is not required, it may be possible to disable this feature to reduce risk.",
+          "product_ids": [
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:1c95dcc53d4cc7c694e5a11f7b39b6476d90cf3708358a1cc65f72ec0d38c46c_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:54cc52c368304c72657c43fb82142a7a9a5160cc3a6f244052bfdd5261ea99fd_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:c3b6856a4d946ec48d8c60d15faf95123268b1b73bc1a01510fc40a04274ec06_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:5ecf105bc936d0c37346e1091af73bca69f9c07e226ccd87290a22ec1d37d1a3_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:6556cb524258d4066898583912e167c311d3f4224e002eda0d78c061addb4aa5_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:7c48e5f5655db34fa346aed3a7a7e8e109c0d4f40c820f109494daf81046d791_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:5e300275660b37e5017b2fd3f614adb2ae96d59e434ea931ce2778aa5f51fd06_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:6158d287db74defd81c382f5f2c3304ee730064bdc9823dee440dbb325b2e5c8_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:c7194cc27e4be27a21369eaf28b7481f0133db221a6f0781ffcb2d9ca947e0db_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:615a46aeac92682b400010a81afcc7b69cb506bee102c69dfd94d43423db1853_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:63db781d5e639ea19a72f2cde5d47dea7fe0afe5206e6ebe476052563eb6a3cd_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:862fed90f9699602ebd5858fc04377d87c3f30c826847f3e0a61d48c49e162f1_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:5f55baba4c52c19c4d28faf0cf5dee64720d6e49c8081ccd38574d7c2960a98b_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:b0d41dceb48071c537314247409226329f55cc2bd9b902066ca065f73e017b8f_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:c9cb503a6216553906461e897adbd3410b1cdf1876b56b0d6ce179f6851cfbbc_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:14dc3601abdef2e5334372ab553abb47300ca61245fc50193e48213a82211a45_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:4fbb6836a47696dde61e2235666f4d0d8b32ed63772958407c30385b741626da_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:e3a49a1c07604fa64a5970403841ea9cddec05e5d9b558c5681e3ade60ab38ea_s390x"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 7.5,
+            "baseSeverity": "HIGH",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:1c95dcc53d4cc7c694e5a11f7b39b6476d90cf3708358a1cc65f72ec0d38c46c_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:54cc52c368304c72657c43fb82142a7a9a5160cc3a6f244052bfdd5261ea99fd_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:c3b6856a4d946ec48d8c60d15faf95123268b1b73bc1a01510fc40a04274ec06_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:5ecf105bc936d0c37346e1091af73bca69f9c07e226ccd87290a22ec1d37d1a3_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:6556cb524258d4066898583912e167c311d3f4224e002eda0d78c061addb4aa5_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:7c48e5f5655db34fa346aed3a7a7e8e109c0d4f40c820f109494daf81046d791_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:5e300275660b37e5017b2fd3f614adb2ae96d59e434ea931ce2778aa5f51fd06_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:6158d287db74defd81c382f5f2c3304ee730064bdc9823dee440dbb325b2e5c8_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:c7194cc27e4be27a21369eaf28b7481f0133db221a6f0781ffcb2d9ca947e0db_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:615a46aeac92682b400010a81afcc7b69cb506bee102c69dfd94d43423db1853_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:63db781d5e639ea19a72f2cde5d47dea7fe0afe5206e6ebe476052563eb6a3cd_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:862fed90f9699602ebd5858fc04377d87c3f30c826847f3e0a61d48c49e162f1_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:5f55baba4c52c19c4d28faf0cf5dee64720d6e49c8081ccd38574d7c2960a98b_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:b0d41dceb48071c537314247409226329f55cc2bd9b902066ca065f73e017b8f_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:c9cb503a6216553906461e897adbd3410b1cdf1876b56b0d6ce179f6851cfbbc_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:14dc3601abdef2e5334372ab553abb47300ca61245fc50193e48213a82211a45_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:4fbb6836a47696dde61e2235666f4d0d8b32ed63772958407c30385b741626da_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:e3a49a1c07604fa64a5970403841ea9cddec05e5d9b558c5681e3ade60ab38ea_s390x"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Important"
+        }
+      ],
+      "title": "golang: net/http, x/net/http2: unlimited number of CONTINUATION frames causes DoS"
+    },
+    {
+      "cve": "CVE-2024-24789",
+      "cwe": {
+        "id": "CWE-20",
+        "name": "Improper Input Validation"
+      },
+      "discovery_date": "2024-06-17T00:00:00+00:00",
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2292668"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A flaw was found in Golang. The ZIP implementation of the Go language archive/zip library behaves differently than the rest of the ZIP file format implementations. When handling ZIP files with a corrupted central directory record, the library skips over the invalid record and processes the next valid one. This flaw allows a malicious user to access hidden information or files inside maliciously crafted ZIP files.",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "golang: archive/zip: Incorrect handling of certain ZIP files",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "other",
+          "text": "Within regulated environments, a combination of the following controls acts as a significant barrier to successfully exploiting a CWE-20: Improper Input Validation vulnerability and therefore downgrades the severity of this particular CVE from Moderate to Low.\n\nRed Hat enforces the principle of least functionality, ensuring that only essential features, services, and ports are enabled. This minimizes the number of components that could be affected by input validation vulnerabilities. Security testing and evaluation standards are implemented within the environment to rigorously test input validation mechanisms during the development lifecycle, while static code analysis identifies potential input validation vulnerabilities by default. Process isolation ensures that processes handling potentially malicious or unvalidated inputs run in isolated environments by separating execution domains for each process. Malicious code protections, such as IPS/IDS and antimalware solutions, help detect and mitigate malicious payloads stemming from input validation vulnerabilities. Finally, robust input validation and error-handling mechanisms ensure all user inputs are thoroughly validated, preventing improperly validated inputs from causing system instability, exposing sensitive data, or escalating risks further.",
+          "title": "Statement"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:1c95dcc53d4cc7c694e5a11f7b39b6476d90cf3708358a1cc65f72ec0d38c46c_ppc64le",
+          "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:54cc52c368304c72657c43fb82142a7a9a5160cc3a6f244052bfdd5261ea99fd_amd64",
+          "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:c3b6856a4d946ec48d8c60d15faf95123268b1b73bc1a01510fc40a04274ec06_s390x",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:5ecf105bc936d0c37346e1091af73bca69f9c07e226ccd87290a22ec1d37d1a3_ppc64le",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:6556cb524258d4066898583912e167c311d3f4224e002eda0d78c061addb4aa5_s390x",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:7c48e5f5655db34fa346aed3a7a7e8e109c0d4f40c820f109494daf81046d791_amd64",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:5e300275660b37e5017b2fd3f614adb2ae96d59e434ea931ce2778aa5f51fd06_ppc64le",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:6158d287db74defd81c382f5f2c3304ee730064bdc9823dee440dbb325b2e5c8_amd64",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:c7194cc27e4be27a21369eaf28b7481f0133db221a6f0781ffcb2d9ca947e0db_s390x",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:615a46aeac92682b400010a81afcc7b69cb506bee102c69dfd94d43423db1853_ppc64le",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:63db781d5e639ea19a72f2cde5d47dea7fe0afe5206e6ebe476052563eb6a3cd_amd64",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:862fed90f9699602ebd5858fc04377d87c3f30c826847f3e0a61d48c49e162f1_s390x",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:5f55baba4c52c19c4d28faf0cf5dee64720d6e49c8081ccd38574d7c2960a98b_ppc64le",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:b0d41dceb48071c537314247409226329f55cc2bd9b902066ca065f73e017b8f_s390x",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:c9cb503a6216553906461e897adbd3410b1cdf1876b56b0d6ce179f6851cfbbc_amd64",
+          "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:14dc3601abdef2e5334372ab553abb47300ca61245fc50193e48213a82211a45_amd64",
+          "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:4fbb6836a47696dde61e2235666f4d0d8b32ed63772958407c30385b741626da_ppc64le",
+          "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:e3a49a1c07604fa64a5970403841ea9cddec05e5d9b558c5681e3ade60ab38ea_s390x"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2024-24789"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2292668",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2292668"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2024-24789",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2024-24789"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2024-24789",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-24789"
+        }
+      ],
+      "release_date": "2024-06-04T00:00:00+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2025-04-28T05:29:21+00:00",
+          "details": "Before applying this update, make sure all previously released errata relevant to your system have been applied.\n\nFor details on how to apply this update, refer to:\n\nhttps://access.redhat.com/articles/2789521\n\nFor supported configurations, refer to:\n\nhttps://access.redhat.com/articles/1548993",
+          "product_ids": [
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:1c95dcc53d4cc7c694e5a11f7b39b6476d90cf3708358a1cc65f72ec0d38c46c_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:54cc52c368304c72657c43fb82142a7a9a5160cc3a6f244052bfdd5261ea99fd_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:c3b6856a4d946ec48d8c60d15faf95123268b1b73bc1a01510fc40a04274ec06_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:5ecf105bc936d0c37346e1091af73bca69f9c07e226ccd87290a22ec1d37d1a3_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:6556cb524258d4066898583912e167c311d3f4224e002eda0d78c061addb4aa5_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:7c48e5f5655db34fa346aed3a7a7e8e109c0d4f40c820f109494daf81046d791_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:5e300275660b37e5017b2fd3f614adb2ae96d59e434ea931ce2778aa5f51fd06_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:6158d287db74defd81c382f5f2c3304ee730064bdc9823dee440dbb325b2e5c8_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:c7194cc27e4be27a21369eaf28b7481f0133db221a6f0781ffcb2d9ca947e0db_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:615a46aeac92682b400010a81afcc7b69cb506bee102c69dfd94d43423db1853_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:63db781d5e639ea19a72f2cde5d47dea7fe0afe5206e6ebe476052563eb6a3cd_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:862fed90f9699602ebd5858fc04377d87c3f30c826847f3e0a61d48c49e162f1_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:5f55baba4c52c19c4d28faf0cf5dee64720d6e49c8081ccd38574d7c2960a98b_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:b0d41dceb48071c537314247409226329f55cc2bd9b902066ca065f73e017b8f_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:c9cb503a6216553906461e897adbd3410b1cdf1876b56b0d6ce179f6851cfbbc_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:14dc3601abdef2e5334372ab553abb47300ca61245fc50193e48213a82211a45_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:4fbb6836a47696dde61e2235666f4d0d8b32ed63772958407c30385b741626da_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:e3a49a1c07604fa64a5970403841ea9cddec05e5d9b558c5681e3ade60ab38ea_s390x"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2025:4240"
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "NONE",
+            "baseScore": 7.5,
+            "baseSeverity": "HIGH",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "HIGH",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+            "version": "3.1"
+          },
+          "products": [
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:1c95dcc53d4cc7c694e5a11f7b39b6476d90cf3708358a1cc65f72ec0d38c46c_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:54cc52c368304c72657c43fb82142a7a9a5160cc3a6f244052bfdd5261ea99fd_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:c3b6856a4d946ec48d8c60d15faf95123268b1b73bc1a01510fc40a04274ec06_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:5ecf105bc936d0c37346e1091af73bca69f9c07e226ccd87290a22ec1d37d1a3_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:6556cb524258d4066898583912e167c311d3f4224e002eda0d78c061addb4aa5_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:7c48e5f5655db34fa346aed3a7a7e8e109c0d4f40c820f109494daf81046d791_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:5e300275660b37e5017b2fd3f614adb2ae96d59e434ea931ce2778aa5f51fd06_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:6158d287db74defd81c382f5f2c3304ee730064bdc9823dee440dbb325b2e5c8_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:c7194cc27e4be27a21369eaf28b7481f0133db221a6f0781ffcb2d9ca947e0db_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:615a46aeac92682b400010a81afcc7b69cb506bee102c69dfd94d43423db1853_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:63db781d5e639ea19a72f2cde5d47dea7fe0afe5206e6ebe476052563eb6a3cd_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:862fed90f9699602ebd5858fc04377d87c3f30c826847f3e0a61d48c49e162f1_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:5f55baba4c52c19c4d28faf0cf5dee64720d6e49c8081ccd38574d7c2960a98b_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:b0d41dceb48071c537314247409226329f55cc2bd9b902066ca065f73e017b8f_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:c9cb503a6216553906461e897adbd3410b1cdf1876b56b0d6ce179f6851cfbbc_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:14dc3601abdef2e5334372ab553abb47300ca61245fc50193e48213a82211a45_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:4fbb6836a47696dde61e2235666f4d0d8b32ed63772958407c30385b741626da_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:e3a49a1c07604fa64a5970403841ea9cddec05e5d9b558c5681e3ade60ab38ea_s390x"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Moderate"
+        }
+      ],
+      "title": "golang: archive/zip: Incorrect handling of certain ZIP files"
+    },
+    {
+      "cve": "CVE-2024-24790",
+      "cwe": {
+        "id": "CWE-115",
+        "name": "Misinterpretation of Input"
+      },
+      "discovery_date": "2024-06-17T00:00:00+00:00",
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2292787"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A flaw was found in the Go language standard library net/netip. The method Is*() (IsPrivate(), IsPublic(), etc) doesn't behave properly when working with IPv6 mapped to IPv4 addresses. The unexpected behavior can lead to integrity and confidentiality issues, specifically when these methods are used to control access to resources or data.",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "golang: net/netip: Unexpected behavior from Is methods for IPv4-mapped IPv6 addresses",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "other",
+          "text": "This CVE has been marked as moderate as for our products a network-based attack vector is simply impossible when it comes to golang code,apart from that as per CVE flaw analysis reported by golang, this only affects integrity and confidentiality and has no effect on availability, hence CVSS has been marked as such.\n\nWithin regulated environments, a combination of the following controls acts as a significant barrier to successfully exploiting a CWE-115: Misinterpretation of Input vulnerability and therefore downgrades the severity of this particular CVE from Moderate to Low.\n\nControls such as input validation and error handling mitigate input misinterpretation risks by enforcing strict validation rules and secure error management. Error handling ensures inputs are validated against predefined formats, preventing malformed data from being misinterpreted. Techniques like strong typing, allow listing, and proper encoding reduce the likelihood of injection attacks and unintended code execution. Input validation also ensures that errors do not expose sensitive system details or cause unpredictable behavior. Secure error handling prevents information leakage through detailed error messages while preserving system stability under malformed input conditions. Together, these controls reduce the attack surface by maintaining consistent input processing and preventing exploitable system states, strengthening the overall security posture.",
+          "title": "Statement"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:1c95dcc53d4cc7c694e5a11f7b39b6476d90cf3708358a1cc65f72ec0d38c46c_ppc64le",
+          "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:54cc52c368304c72657c43fb82142a7a9a5160cc3a6f244052bfdd5261ea99fd_amd64",
+          "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:c3b6856a4d946ec48d8c60d15faf95123268b1b73bc1a01510fc40a04274ec06_s390x",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:5ecf105bc936d0c37346e1091af73bca69f9c07e226ccd87290a22ec1d37d1a3_ppc64le",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:6556cb524258d4066898583912e167c311d3f4224e002eda0d78c061addb4aa5_s390x",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:7c48e5f5655db34fa346aed3a7a7e8e109c0d4f40c820f109494daf81046d791_amd64",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:5e300275660b37e5017b2fd3f614adb2ae96d59e434ea931ce2778aa5f51fd06_ppc64le",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:6158d287db74defd81c382f5f2c3304ee730064bdc9823dee440dbb325b2e5c8_amd64",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:c7194cc27e4be27a21369eaf28b7481f0133db221a6f0781ffcb2d9ca947e0db_s390x",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:615a46aeac92682b400010a81afcc7b69cb506bee102c69dfd94d43423db1853_ppc64le",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:63db781d5e639ea19a72f2cde5d47dea7fe0afe5206e6ebe476052563eb6a3cd_amd64",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:862fed90f9699602ebd5858fc04377d87c3f30c826847f3e0a61d48c49e162f1_s390x",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:5f55baba4c52c19c4d28faf0cf5dee64720d6e49c8081ccd38574d7c2960a98b_ppc64le",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:b0d41dceb48071c537314247409226329f55cc2bd9b902066ca065f73e017b8f_s390x",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:c9cb503a6216553906461e897adbd3410b1cdf1876b56b0d6ce179f6851cfbbc_amd64",
+          "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:14dc3601abdef2e5334372ab553abb47300ca61245fc50193e48213a82211a45_amd64",
+          "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:4fbb6836a47696dde61e2235666f4d0d8b32ed63772958407c30385b741626da_ppc64le",
+          "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:e3a49a1c07604fa64a5970403841ea9cddec05e5d9b558c5681e3ade60ab38ea_s390x"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2024-24790"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2292787",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2292787"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2024-24790",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2024-24790"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2024-24790",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-24790"
+        }
+      ],
+      "release_date": "2024-06-04T00:00:00+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2025-04-28T05:29:21+00:00",
+          "details": "Before applying this update, make sure all previously released errata relevant to your system have been applied.\n\nFor details on how to apply this update, refer to:\n\nhttps://access.redhat.com/articles/2789521\n\nFor supported configurations, refer to:\n\nhttps://access.redhat.com/articles/1548993",
+          "product_ids": [
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:1c95dcc53d4cc7c694e5a11f7b39b6476d90cf3708358a1cc65f72ec0d38c46c_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:54cc52c368304c72657c43fb82142a7a9a5160cc3a6f244052bfdd5261ea99fd_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:c3b6856a4d946ec48d8c60d15faf95123268b1b73bc1a01510fc40a04274ec06_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:5ecf105bc936d0c37346e1091af73bca69f9c07e226ccd87290a22ec1d37d1a3_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:6556cb524258d4066898583912e167c311d3f4224e002eda0d78c061addb4aa5_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:7c48e5f5655db34fa346aed3a7a7e8e109c0d4f40c820f109494daf81046d791_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:5e300275660b37e5017b2fd3f614adb2ae96d59e434ea931ce2778aa5f51fd06_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:6158d287db74defd81c382f5f2c3304ee730064bdc9823dee440dbb325b2e5c8_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:c7194cc27e4be27a21369eaf28b7481f0133db221a6f0781ffcb2d9ca947e0db_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:615a46aeac92682b400010a81afcc7b69cb506bee102c69dfd94d43423db1853_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:63db781d5e639ea19a72f2cde5d47dea7fe0afe5206e6ebe476052563eb6a3cd_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:862fed90f9699602ebd5858fc04377d87c3f30c826847f3e0a61d48c49e162f1_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:5f55baba4c52c19c4d28faf0cf5dee64720d6e49c8081ccd38574d7c2960a98b_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:b0d41dceb48071c537314247409226329f55cc2bd9b902066ca065f73e017b8f_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:c9cb503a6216553906461e897adbd3410b1cdf1876b56b0d6ce179f6851cfbbc_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:14dc3601abdef2e5334372ab553abb47300ca61245fc50193e48213a82211a45_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:4fbb6836a47696dde61e2235666f4d0d8b32ed63772958407c30385b741626da_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:e3a49a1c07604fa64a5970403841ea9cddec05e5d9b558c5681e3ade60ab38ea_s390x"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2025:4240"
+        },
+        {
+          "category": "workaround",
+          "details": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base or stability.",
+          "product_ids": [
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:1c95dcc53d4cc7c694e5a11f7b39b6476d90cf3708358a1cc65f72ec0d38c46c_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:54cc52c368304c72657c43fb82142a7a9a5160cc3a6f244052bfdd5261ea99fd_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:c3b6856a4d946ec48d8c60d15faf95123268b1b73bc1a01510fc40a04274ec06_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:5ecf105bc936d0c37346e1091af73bca69f9c07e226ccd87290a22ec1d37d1a3_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:6556cb524258d4066898583912e167c311d3f4224e002eda0d78c061addb4aa5_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:7c48e5f5655db34fa346aed3a7a7e8e109c0d4f40c820f109494daf81046d791_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:5e300275660b37e5017b2fd3f614adb2ae96d59e434ea931ce2778aa5f51fd06_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:6158d287db74defd81c382f5f2c3304ee730064bdc9823dee440dbb325b2e5c8_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:c7194cc27e4be27a21369eaf28b7481f0133db221a6f0781ffcb2d9ca947e0db_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:615a46aeac92682b400010a81afcc7b69cb506bee102c69dfd94d43423db1853_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:63db781d5e639ea19a72f2cde5d47dea7fe0afe5206e6ebe476052563eb6a3cd_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:862fed90f9699602ebd5858fc04377d87c3f30c826847f3e0a61d48c49e162f1_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:5f55baba4c52c19c4d28faf0cf5dee64720d6e49c8081ccd38574d7c2960a98b_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:b0d41dceb48071c537314247409226329f55cc2bd9b902066ca065f73e017b8f_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:c9cb503a6216553906461e897adbd3410b1cdf1876b56b0d6ce179f6851cfbbc_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:14dc3601abdef2e5334372ab553abb47300ca61245fc50193e48213a82211a45_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:4fbb6836a47696dde61e2235666f4d0d8b32ed63772958407c30385b741626da_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:e3a49a1c07604fa64a5970403841ea9cddec05e5d9b558c5681e3ade60ab38ea_s390x"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "HIGH",
+            "attackVector": "LOCAL",
+            "availabilityImpact": "NONE",
+            "baseScore": 6.7,
+            "baseSeverity": "MEDIUM",
+            "confidentialityImpact": "HIGH",
+            "integrityImpact": "HIGH",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+            "version": "3.1"
+          },
+          "products": [
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:1c95dcc53d4cc7c694e5a11f7b39b6476d90cf3708358a1cc65f72ec0d38c46c_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:54cc52c368304c72657c43fb82142a7a9a5160cc3a6f244052bfdd5261ea99fd_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:c3b6856a4d946ec48d8c60d15faf95123268b1b73bc1a01510fc40a04274ec06_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:5ecf105bc936d0c37346e1091af73bca69f9c07e226ccd87290a22ec1d37d1a3_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:6556cb524258d4066898583912e167c311d3f4224e002eda0d78c061addb4aa5_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:7c48e5f5655db34fa346aed3a7a7e8e109c0d4f40c820f109494daf81046d791_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:5e300275660b37e5017b2fd3f614adb2ae96d59e434ea931ce2778aa5f51fd06_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:6158d287db74defd81c382f5f2c3304ee730064bdc9823dee440dbb325b2e5c8_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:c7194cc27e4be27a21369eaf28b7481f0133db221a6f0781ffcb2d9ca947e0db_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:615a46aeac92682b400010a81afcc7b69cb506bee102c69dfd94d43423db1853_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:63db781d5e639ea19a72f2cde5d47dea7fe0afe5206e6ebe476052563eb6a3cd_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:862fed90f9699602ebd5858fc04377d87c3f30c826847f3e0a61d48c49e162f1_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:5f55baba4c52c19c4d28faf0cf5dee64720d6e49c8081ccd38574d7c2960a98b_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:b0d41dceb48071c537314247409226329f55cc2bd9b902066ca065f73e017b8f_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:c9cb503a6216553906461e897adbd3410b1cdf1876b56b0d6ce179f6851cfbbc_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:14dc3601abdef2e5334372ab553abb47300ca61245fc50193e48213a82211a45_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:4fbb6836a47696dde61e2235666f4d0d8b32ed63772958407c30385b741626da_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:e3a49a1c07604fa64a5970403841ea9cddec05e5d9b558c5681e3ade60ab38ea_s390x"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Moderate"
+        }
+      ],
+      "title": "golang: net/netip: Unexpected behavior from Is methods for IPv4-mapped IPv6 addresses"
+    },
+    {
+      "cve": "CVE-2024-34156",
+      "cwe": {
+        "id": "CWE-674",
+        "name": "Uncontrolled Recursion"
+      },
+      "discovery_date": "2024-09-06T21:20:09.377905+00:00",
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2310528"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A flaw was found in the encoding/gob package of the Golang standard library. Calling Decoder.Decoding, a message that contains deeply nested structures, can cause a panic due to stack exhaustion. This is a follow-up to CVE-2022-30635.",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "encoding/gob: golang: Calling Decoder.Decode on a message which contains deeply nested structures can cause a panic due to stack exhaustion",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "other",
+          "text": "This vulnerability in Go's `encoding/gob` package is of high severity because it exposes applications to potential Denial of Service (DoS) attacks through stack exhaustion. Since `gob` relies on recursive function calls to decode nested structures, an attacker could exploit this by sending crafted messages with excessively deep nesting, causing the application to panic due to stack overflow. This risk is particularly important in scenarios where untrusted or external input is processed, as it can lead to system unavailability or crashes, undermining the reliability and availability of services.",
+          "title": "Statement"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:1c95dcc53d4cc7c694e5a11f7b39b6476d90cf3708358a1cc65f72ec0d38c46c_ppc64le",
+          "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:54cc52c368304c72657c43fb82142a7a9a5160cc3a6f244052bfdd5261ea99fd_amd64",
+          "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:c3b6856a4d946ec48d8c60d15faf95123268b1b73bc1a01510fc40a04274ec06_s390x",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:5ecf105bc936d0c37346e1091af73bca69f9c07e226ccd87290a22ec1d37d1a3_ppc64le",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:6556cb524258d4066898583912e167c311d3f4224e002eda0d78c061addb4aa5_s390x",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:7c48e5f5655db34fa346aed3a7a7e8e109c0d4f40c820f109494daf81046d791_amd64",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:5e300275660b37e5017b2fd3f614adb2ae96d59e434ea931ce2778aa5f51fd06_ppc64le",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:6158d287db74defd81c382f5f2c3304ee730064bdc9823dee440dbb325b2e5c8_amd64",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:c7194cc27e4be27a21369eaf28b7481f0133db221a6f0781ffcb2d9ca947e0db_s390x",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:615a46aeac92682b400010a81afcc7b69cb506bee102c69dfd94d43423db1853_ppc64le",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:63db781d5e639ea19a72f2cde5d47dea7fe0afe5206e6ebe476052563eb6a3cd_amd64",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:862fed90f9699602ebd5858fc04377d87c3f30c826847f3e0a61d48c49e162f1_s390x",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:5f55baba4c52c19c4d28faf0cf5dee64720d6e49c8081ccd38574d7c2960a98b_ppc64le",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:b0d41dceb48071c537314247409226329f55cc2bd9b902066ca065f73e017b8f_s390x",
+          "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:c9cb503a6216553906461e897adbd3410b1cdf1876b56b0d6ce179f6851cfbbc_amd64",
+          "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:14dc3601abdef2e5334372ab553abb47300ca61245fc50193e48213a82211a45_amd64",
+          "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:4fbb6836a47696dde61e2235666f4d0d8b32ed63772958407c30385b741626da_ppc64le",
+          "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:e3a49a1c07604fa64a5970403841ea9cddec05e5d9b558c5681e3ade60ab38ea_s390x"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2024-34156"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2310528",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2310528"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2024-34156",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2024-34156"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2024-34156",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-34156"
+        },
+        {
+          "category": "external",
+          "summary": "https://go.dev/cl/611239",
+          "url": "https://go.dev/cl/611239"
+        },
+        {
+          "category": "external",
+          "summary": "https://go.dev/issue/69139",
+          "url": "https://go.dev/issue/69139"
+        },
+        {
+          "category": "external",
+          "summary": "https://groups.google.com/g/golang-dev/c/S9POB9NCTdk",
+          "url": "https://groups.google.com/g/golang-dev/c/S9POB9NCTdk"
+        },
+        {
+          "category": "external",
+          "summary": "https://pkg.go.dev/vuln/GO-2024-3106",
+          "url": "https://pkg.go.dev/vuln/GO-2024-3106"
+        }
+      ],
+      "release_date": "2024-09-06T21:15:12.020000+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2025-04-28T05:29:21+00:00",
+          "details": "Before applying this update, make sure all previously released errata relevant to your system have been applied.\n\nFor details on how to apply this update, refer to:\n\nhttps://access.redhat.com/articles/2789521\n\nFor supported configurations, refer to:\n\nhttps://access.redhat.com/articles/1548993",
+          "product_ids": [
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:1c95dcc53d4cc7c694e5a11f7b39b6476d90cf3708358a1cc65f72ec0d38c46c_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:54cc52c368304c72657c43fb82142a7a9a5160cc3a6f244052bfdd5261ea99fd_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:c3b6856a4d946ec48d8c60d15faf95123268b1b73bc1a01510fc40a04274ec06_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:5ecf105bc936d0c37346e1091af73bca69f9c07e226ccd87290a22ec1d37d1a3_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:6556cb524258d4066898583912e167c311d3f4224e002eda0d78c061addb4aa5_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:7c48e5f5655db34fa346aed3a7a7e8e109c0d4f40c820f109494daf81046d791_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:5e300275660b37e5017b2fd3f614adb2ae96d59e434ea931ce2778aa5f51fd06_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:6158d287db74defd81c382f5f2c3304ee730064bdc9823dee440dbb325b2e5c8_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:c7194cc27e4be27a21369eaf28b7481f0133db221a6f0781ffcb2d9ca947e0db_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:615a46aeac92682b400010a81afcc7b69cb506bee102c69dfd94d43423db1853_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:63db781d5e639ea19a72f2cde5d47dea7fe0afe5206e6ebe476052563eb6a3cd_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:862fed90f9699602ebd5858fc04377d87c3f30c826847f3e0a61d48c49e162f1_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:5f55baba4c52c19c4d28faf0cf5dee64720d6e49c8081ccd38574d7c2960a98b_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:b0d41dceb48071c537314247409226329f55cc2bd9b902066ca065f73e017b8f_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:c9cb503a6216553906461e897adbd3410b1cdf1876b56b0d6ce179f6851cfbbc_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:14dc3601abdef2e5334372ab553abb47300ca61245fc50193e48213a82211a45_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:4fbb6836a47696dde61e2235666f4d0d8b32ed63772958407c30385b741626da_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:e3a49a1c07604fa64a5970403841ea9cddec05e5d9b558c5681e3ade60ab38ea_s390x"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2025:4240"
+        },
+        {
+          "category": "workaround",
+          "details": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base or stability.",
+          "product_ids": [
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:1c95dcc53d4cc7c694e5a11f7b39b6476d90cf3708358a1cc65f72ec0d38c46c_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:54cc52c368304c72657c43fb82142a7a9a5160cc3a6f244052bfdd5261ea99fd_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:c3b6856a4d946ec48d8c60d15faf95123268b1b73bc1a01510fc40a04274ec06_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:5ecf105bc936d0c37346e1091af73bca69f9c07e226ccd87290a22ec1d37d1a3_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:6556cb524258d4066898583912e167c311d3f4224e002eda0d78c061addb4aa5_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:7c48e5f5655db34fa346aed3a7a7e8e109c0d4f40c820f109494daf81046d791_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:5e300275660b37e5017b2fd3f614adb2ae96d59e434ea931ce2778aa5f51fd06_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:6158d287db74defd81c382f5f2c3304ee730064bdc9823dee440dbb325b2e5c8_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:c7194cc27e4be27a21369eaf28b7481f0133db221a6f0781ffcb2d9ca947e0db_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:615a46aeac92682b400010a81afcc7b69cb506bee102c69dfd94d43423db1853_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:63db781d5e639ea19a72f2cde5d47dea7fe0afe5206e6ebe476052563eb6a3cd_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:862fed90f9699602ebd5858fc04377d87c3f30c826847f3e0a61d48c49e162f1_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:5f55baba4c52c19c4d28faf0cf5dee64720d6e49c8081ccd38574d7c2960a98b_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:b0d41dceb48071c537314247409226329f55cc2bd9b902066ca065f73e017b8f_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:c9cb503a6216553906461e897adbd3410b1cdf1876b56b0d6ce179f6851cfbbc_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:14dc3601abdef2e5334372ab553abb47300ca61245fc50193e48213a82211a45_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:4fbb6836a47696dde61e2235666f4d0d8b32ed63772958407c30385b741626da_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:e3a49a1c07604fa64a5970403841ea9cddec05e5d9b558c5681e3ade60ab38ea_s390x"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 7.5,
+            "baseSeverity": "HIGH",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:1c95dcc53d4cc7c694e5a11f7b39b6476d90cf3708358a1cc65f72ec0d38c46c_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:54cc52c368304c72657c43fb82142a7a9a5160cc3a6f244052bfdd5261ea99fd_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/keepalived-rhel9@sha256:c3b6856a4d946ec48d8c60d15faf95123268b1b73bc1a01510fc40a04274ec06_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:5ecf105bc936d0c37346e1091af73bca69f9c07e226ccd87290a22ec1d37d1a3_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:6556cb524258d4066898583912e167c311d3f4224e002eda0d78c061addb4aa5_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-dashboard-rhel9@sha256:7c48e5f5655db34fa346aed3a7a7e8e109c0d4f40c820f109494daf81046d791_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:5e300275660b37e5017b2fd3f614adb2ae96d59e434ea931ce2778aa5f51fd06_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:6158d287db74defd81c382f5f2c3304ee730064bdc9823dee440dbb325b2e5c8_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-6-rhel9@sha256:c7194cc27e4be27a21369eaf28b7481f0133db221a6f0781ffcb2d9ca947e0db_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:615a46aeac92682b400010a81afcc7b69cb506bee102c69dfd94d43423db1853_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:63db781d5e639ea19a72f2cde5d47dea7fe0afe5206e6ebe476052563eb6a3cd_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-haproxy-rhel9@sha256:862fed90f9699602ebd5858fc04377d87c3f30c826847f3e0a61d48c49e162f1_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:5f55baba4c52c19c4d28faf0cf5dee64720d6e49c8081ccd38574d7c2960a98b_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:b0d41dceb48071c537314247409226329f55cc2bd9b902066ca065f73e017b8f_s390x",
+            "9Base-RHCEPH-6.1-Tools:rhceph/rhceph-promtail-rhel9@sha256:c9cb503a6216553906461e897adbd3410b1cdf1876b56b0d6ce179f6851cfbbc_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:14dc3601abdef2e5334372ab553abb47300ca61245fc50193e48213a82211a45_amd64",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:4fbb6836a47696dde61e2235666f4d0d8b32ed63772958407c30385b741626da_ppc64le",
+            "9Base-RHCEPH-6.1-Tools:rhceph/snmp-notifier-rhel9@sha256:e3a49a1c07604fa64a5970403841ea9cddec05e5d9b558c5681e3ade60ab38ea_s390x"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Important"
+        }
+      ],
+      "title": "encoding/gob: golang: Calling Decoder.Decode on a message which contains deeply nested structures can cause a panic due to stack exhaustion"
+    }
+  ]
+}

@@ -1,0 +1,1386 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "namespace": "https://access.redhat.com/security/updates/classification/",
+      "text": "Important"
+    },
+    "category": "csaf_security_advisory",
+    "csaf_version": "2.0",
+    "distribution": {
+      "text": "Copyright \u00a9 Red Hat, Inc. All rights reserved.",
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "en",
+    "notes": [
+      {
+        "category": "summary",
+        "text": "An update is now available for Red Hat OpenShift GitOps 1.9.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+        "title": "Topic"
+      },
+      {
+        "category": "general",
+        "text": "An update is now available for Red Hat OpenShift GitOps 1.9.\n\nSecurity Fix(es):\n\n* golang: net/http, x/net/http2: rapid stream resets can cause excessive work (Rapid Reset Attack) (CVE-2023-39325)\n\n* HTTP/2: Multiple HTTP/2 enabled web servers are vulnerable to a DDoS attack (Rapid Reset Attack) (CVE-2023-44487)\n\nA Red Hat Security Bulletin which addresses further details about the Rapid Reset flaw is available in the References section.\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+        "title": "Details"
+      },
+      {
+        "category": "legal_disclaimer",
+        "text": "This content is licensed under the Creative Commons Attribution 4.0 International License (https://creativecommons.org/licenses/by/4.0/). If you distribute this content, or a modified version of it, you must provide attribution to Red Hat Inc. and provide a link to the original.",
+        "title": "Terms of Use"
+      }
+    ],
+    "publisher": {
+      "category": "vendor",
+      "contact_details": "https://access.redhat.com/security/team/contact/",
+      "issuing_authority": "Red Hat Product Security is responsible for vulnerability handling across all Red Hat products and services.",
+      "name": "Red Hat Product Security",
+      "namespace": "https://www.redhat.com"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "https://access.redhat.com/errata/RHSA-2023:7345",
+        "url": "https://access.redhat.com/errata/RHSA-2023:7345"
+      },
+      {
+        "category": "external",
+        "summary": "https://access.redhat.com/security/updates/classification/#important",
+        "url": "https://access.redhat.com/security/updates/classification/#important"
+      },
+      {
+        "category": "external",
+        "summary": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003",
+        "url": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003"
+      },
+      {
+        "category": "external",
+        "summary": "https://docs.openshift.com/gitops/1.9/understanding_openshift_gitops/about-redhat-openshift-gitops.html",
+        "url": "https://docs.openshift.com/gitops/1.9/understanding_openshift_gitops/about-redhat-openshift-gitops.html"
+      },
+      {
+        "category": "external",
+        "summary": "2242803",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2242803"
+      },
+      {
+        "category": "external",
+        "summary": "2243296",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2243296"
+      },
+      {
+        "category": "self",
+        "summary": "Canonical URL",
+        "url": "https://security.access.redhat.com/data/csaf/v2/advisories/2023/rhsa-2023_7345.json"
+      }
+    ],
+    "title": "Red Hat Security Advisory: Red Hat OpenShift GitOps v1.9.3 security update",
+    "tracking": {
+      "current_release_date": "2025-07-01T14:21:23+00:00",
+      "generator": {
+        "date": "2025-07-01T14:21:23+00:00",
+        "engine": {
+          "name": "Red Hat SDEngine",
+          "version": "4.6.3"
+        }
+      },
+      "id": "RHSA-2023:7345",
+      "initial_release_date": "2023-11-20T08:34:18+00:00",
+      "revision_history": [
+        {
+          "date": "2023-11-20T08:34:18+00:00",
+          "number": "1",
+          "summary": "Initial version"
+        },
+        {
+          "date": "2023-11-20T08:34:18+00:00",
+          "number": "2",
+          "summary": "Last updated version"
+        },
+        {
+          "date": "2025-07-01T14:21:23+00:00",
+          "number": "3",
+          "summary": "Last generated version"
+        }
+      ],
+      "status": "final",
+      "version": "3"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_name",
+                "name": "Red Hat OpenShift GitOps 1.9",
+                "product": {
+                  "name": "Red Hat OpenShift GitOps 1.9",
+                  "product_id": "8Base-GitOps-1.9",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift_gitops:1.9::el9"
+                  }
+                }
+              }
+            ],
+            "category": "product_family",
+            "name": "Red Hat OpenShift GitOps"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/argocd-rhel8@sha256:fbd5576fa614602b26677e91136d0c9c4722e0eb09672e3784ebdfe71737d3bd_amd64",
+                "product": {
+                  "name": "openshift-gitops-1/argocd-rhel8@sha256:fbd5576fa614602b26677e91136d0c9c4722e0eb09672e3784ebdfe71737d3bd_amd64",
+                  "product_id": "openshift-gitops-1/argocd-rhel8@sha256:fbd5576fa614602b26677e91136d0c9c4722e0eb09672e3784ebdfe71737d3bd_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/argocd-rhel8@sha256:fbd5576fa614602b26677e91136d0c9c4722e0eb09672e3784ebdfe71737d3bd?arch=amd64&repository_url=registry.redhat.io/openshift-gitops-1/argocd-rhel8&tag=v1.9.3-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/argo-rollouts-rhel8@sha256:08c50b13b7fd04f3756250ce727f75f9d8da1bf0dbb27fd2f1206850d9e7d0fc_amd64",
+                "product": {
+                  "name": "openshift-gitops-1/argo-rollouts-rhel8@sha256:08c50b13b7fd04f3756250ce727f75f9d8da1bf0dbb27fd2f1206850d9e7d0fc_amd64",
+                  "product_id": "openshift-gitops-1/argo-rollouts-rhel8@sha256:08c50b13b7fd04f3756250ce727f75f9d8da1bf0dbb27fd2f1206850d9e7d0fc_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/argo-rollouts-rhel8@sha256:08c50b13b7fd04f3756250ce727f75f9d8da1bf0dbb27fd2f1206850d9e7d0fc?arch=amd64&repository_url=registry.redhat.io/openshift-gitops-1/argo-rollouts-rhel8&tag=v1.9.3-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/console-plugin-rhel8@sha256:eb9abd40236e7752cd8b5d215ff8619d73e1fd5ff6abd0884409dcd442fb4eaf_amd64",
+                "product": {
+                  "name": "openshift-gitops-1/console-plugin-rhel8@sha256:eb9abd40236e7752cd8b5d215ff8619d73e1fd5ff6abd0884409dcd442fb4eaf_amd64",
+                  "product_id": "openshift-gitops-1/console-plugin-rhel8@sha256:eb9abd40236e7752cd8b5d215ff8619d73e1fd5ff6abd0884409dcd442fb4eaf_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/console-plugin-rhel8@sha256:eb9abd40236e7752cd8b5d215ff8619d73e1fd5ff6abd0884409dcd442fb4eaf?arch=amd64&repository_url=registry.redhat.io/openshift-gitops-1/console-plugin-rhel8&tag=v1.9.3-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/gitops-rhel8@sha256:97acdfe9b2fba3a37f01e91efb4074eadcec204414ae7f2c0a426b71af60288c_amd64",
+                "product": {
+                  "name": "openshift-gitops-1/gitops-rhel8@sha256:97acdfe9b2fba3a37f01e91efb4074eadcec204414ae7f2c0a426b71af60288c_amd64",
+                  "product_id": "openshift-gitops-1/gitops-rhel8@sha256:97acdfe9b2fba3a37f01e91efb4074eadcec204414ae7f2c0a426b71af60288c_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/gitops-rhel8@sha256:97acdfe9b2fba3a37f01e91efb4074eadcec204414ae7f2c0a426b71af60288c?arch=amd64&repository_url=registry.redhat.io/openshift-gitops-1/gitops-rhel8&tag=v1.9.3-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/dex-rhel8@sha256:2c5390ab43937ee0f089f56bd64752aa7d477d713d2eabf17fa7a48b3244e573_amd64",
+                "product": {
+                  "name": "openshift-gitops-1/dex-rhel8@sha256:2c5390ab43937ee0f089f56bd64752aa7d477d713d2eabf17fa7a48b3244e573_amd64",
+                  "product_id": "openshift-gitops-1/dex-rhel8@sha256:2c5390ab43937ee0f089f56bd64752aa7d477d713d2eabf17fa7a48b3244e573_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/dex-rhel8@sha256:2c5390ab43937ee0f089f56bd64752aa7d477d713d2eabf17fa7a48b3244e573?arch=amd64&repository_url=registry.redhat.io/openshift-gitops-1/dex-rhel8&tag=v1.9.3-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/kam-delivery-rhel8@sha256:1c546c5cdafd6ca78c3f5cb51d76bdc1c139fdbeee3eae0799a2550920cd31a1_amd64",
+                "product": {
+                  "name": "openshift-gitops-1/kam-delivery-rhel8@sha256:1c546c5cdafd6ca78c3f5cb51d76bdc1c139fdbeee3eae0799a2550920cd31a1_amd64",
+                  "product_id": "openshift-gitops-1/kam-delivery-rhel8@sha256:1c546c5cdafd6ca78c3f5cb51d76bdc1c139fdbeee3eae0799a2550920cd31a1_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/kam-delivery-rhel8@sha256:1c546c5cdafd6ca78c3f5cb51d76bdc1c139fdbeee3eae0799a2550920cd31a1?arch=amd64&repository_url=registry.redhat.io/openshift-gitops-1/kam-delivery-rhel8&tag=v1.9.3-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/must-gather-rhel8@sha256:b8ff5a1de115b5760c281f59a32831a3a6b949d65a15689d591da6849b297ee9_amd64",
+                "product": {
+                  "name": "openshift-gitops-1/must-gather-rhel8@sha256:b8ff5a1de115b5760c281f59a32831a3a6b949d65a15689d591da6849b297ee9_amd64",
+                  "product_id": "openshift-gitops-1/must-gather-rhel8@sha256:b8ff5a1de115b5760c281f59a32831a3a6b949d65a15689d591da6849b297ee9_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/must-gather-rhel8@sha256:b8ff5a1de115b5760c281f59a32831a3a6b949d65a15689d591da6849b297ee9?arch=amd64&repository_url=registry.redhat.io/openshift-gitops-1/must-gather-rhel8&tag=v1.9.3-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/gitops-operator-bundle@sha256:d8725149c57d5de6c5c10d472cfd54721e8f8bf12e66e34c0311103a835a3081_amd64",
+                "product": {
+                  "name": "openshift-gitops-1/gitops-operator-bundle@sha256:d8725149c57d5de6c5c10d472cfd54721e8f8bf12e66e34c0311103a835a3081_amd64",
+                  "product_id": "openshift-gitops-1/gitops-operator-bundle@sha256:d8725149c57d5de6c5c10d472cfd54721e8f8bf12e66e34c0311103a835a3081_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/gitops-operator-bundle@sha256:d8725149c57d5de6c5c10d472cfd54721e8f8bf12e66e34c0311103a835a3081?arch=amd64&repository_url=registry.redhat.io/openshift-gitops-1/gitops-operator-bundle&tag=v1.9.3-6"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/gitops-rhel8-operator@sha256:d491c7c8525393b4dc8277fae5639ee41ae4d6bbada83a212742e9683877f0b0_amd64",
+                "product": {
+                  "name": "openshift-gitops-1/gitops-rhel8-operator@sha256:d491c7c8525393b4dc8277fae5639ee41ae4d6bbada83a212742e9683877f0b0_amd64",
+                  "product_id": "openshift-gitops-1/gitops-rhel8-operator@sha256:d491c7c8525393b4dc8277fae5639ee41ae4d6bbada83a212742e9683877f0b0_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/gitops-rhel8-operator@sha256:d491c7c8525393b4dc8277fae5639ee41ae4d6bbada83a212742e9683877f0b0?arch=amd64&repository_url=registry.redhat.io/openshift-gitops-1/gitops-rhel8-operator&tag=v1.9.3-5"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "amd64"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/argocd-rhel8@sha256:e432172e252f278ffe9d1e8bcf6c89c81cbef76e3755eb7b9f3d5ec4622a63e0_s390x",
+                "product": {
+                  "name": "openshift-gitops-1/argocd-rhel8@sha256:e432172e252f278ffe9d1e8bcf6c89c81cbef76e3755eb7b9f3d5ec4622a63e0_s390x",
+                  "product_id": "openshift-gitops-1/argocd-rhel8@sha256:e432172e252f278ffe9d1e8bcf6c89c81cbef76e3755eb7b9f3d5ec4622a63e0_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/argocd-rhel8@sha256:e432172e252f278ffe9d1e8bcf6c89c81cbef76e3755eb7b9f3d5ec4622a63e0?arch=s390x&repository_url=registry.redhat.io/openshift-gitops-1/argocd-rhel8&tag=v1.9.3-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/argo-rollouts-rhel8@sha256:b830502f20de70c8fc7f77a6c58409c00f6db79224f306f5f667fadfca59bd84_s390x",
+                "product": {
+                  "name": "openshift-gitops-1/argo-rollouts-rhel8@sha256:b830502f20de70c8fc7f77a6c58409c00f6db79224f306f5f667fadfca59bd84_s390x",
+                  "product_id": "openshift-gitops-1/argo-rollouts-rhel8@sha256:b830502f20de70c8fc7f77a6c58409c00f6db79224f306f5f667fadfca59bd84_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/argo-rollouts-rhel8@sha256:b830502f20de70c8fc7f77a6c58409c00f6db79224f306f5f667fadfca59bd84?arch=s390x&repository_url=registry.redhat.io/openshift-gitops-1/argo-rollouts-rhel8&tag=v1.9.3-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/console-plugin-rhel8@sha256:84dee8a0455dca910bab7407bb8bc3151f788ae991aa9c7d9380e8c7c1a4014c_s390x",
+                "product": {
+                  "name": "openshift-gitops-1/console-plugin-rhel8@sha256:84dee8a0455dca910bab7407bb8bc3151f788ae991aa9c7d9380e8c7c1a4014c_s390x",
+                  "product_id": "openshift-gitops-1/console-plugin-rhel8@sha256:84dee8a0455dca910bab7407bb8bc3151f788ae991aa9c7d9380e8c7c1a4014c_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/console-plugin-rhel8@sha256:84dee8a0455dca910bab7407bb8bc3151f788ae991aa9c7d9380e8c7c1a4014c?arch=s390x&repository_url=registry.redhat.io/openshift-gitops-1/console-plugin-rhel8&tag=v1.9.3-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/gitops-rhel8@sha256:585361fa372d675855cb517e0305339f9856fecc7b1f89b31ad33bca3f9836b8_s390x",
+                "product": {
+                  "name": "openshift-gitops-1/gitops-rhel8@sha256:585361fa372d675855cb517e0305339f9856fecc7b1f89b31ad33bca3f9836b8_s390x",
+                  "product_id": "openshift-gitops-1/gitops-rhel8@sha256:585361fa372d675855cb517e0305339f9856fecc7b1f89b31ad33bca3f9836b8_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/gitops-rhel8@sha256:585361fa372d675855cb517e0305339f9856fecc7b1f89b31ad33bca3f9836b8?arch=s390x&repository_url=registry.redhat.io/openshift-gitops-1/gitops-rhel8&tag=v1.9.3-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/dex-rhel8@sha256:ae805dd6858d45e042b335240e450c5f5635546381f2cf755b4d0049f80e4bbd_s390x",
+                "product": {
+                  "name": "openshift-gitops-1/dex-rhel8@sha256:ae805dd6858d45e042b335240e450c5f5635546381f2cf755b4d0049f80e4bbd_s390x",
+                  "product_id": "openshift-gitops-1/dex-rhel8@sha256:ae805dd6858d45e042b335240e450c5f5635546381f2cf755b4d0049f80e4bbd_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/dex-rhel8@sha256:ae805dd6858d45e042b335240e450c5f5635546381f2cf755b4d0049f80e4bbd?arch=s390x&repository_url=registry.redhat.io/openshift-gitops-1/dex-rhel8&tag=v1.9.3-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/kam-delivery-rhel8@sha256:b6864990dd11208362570ff7642baf33d96690a9547ddb71403f5deb5578a761_s390x",
+                "product": {
+                  "name": "openshift-gitops-1/kam-delivery-rhel8@sha256:b6864990dd11208362570ff7642baf33d96690a9547ddb71403f5deb5578a761_s390x",
+                  "product_id": "openshift-gitops-1/kam-delivery-rhel8@sha256:b6864990dd11208362570ff7642baf33d96690a9547ddb71403f5deb5578a761_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/kam-delivery-rhel8@sha256:b6864990dd11208362570ff7642baf33d96690a9547ddb71403f5deb5578a761?arch=s390x&repository_url=registry.redhat.io/openshift-gitops-1/kam-delivery-rhel8&tag=v1.9.3-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/must-gather-rhel8@sha256:399cd150882466cd9e301ea92e899b802980825082c7a5d0a780a81903af0fce_s390x",
+                "product": {
+                  "name": "openshift-gitops-1/must-gather-rhel8@sha256:399cd150882466cd9e301ea92e899b802980825082c7a5d0a780a81903af0fce_s390x",
+                  "product_id": "openshift-gitops-1/must-gather-rhel8@sha256:399cd150882466cd9e301ea92e899b802980825082c7a5d0a780a81903af0fce_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/must-gather-rhel8@sha256:399cd150882466cd9e301ea92e899b802980825082c7a5d0a780a81903af0fce?arch=s390x&repository_url=registry.redhat.io/openshift-gitops-1/must-gather-rhel8&tag=v1.9.3-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/gitops-rhel8-operator@sha256:02bc04eaa379108c8cf99da5d89a4e8305ccb3c3921037c9b160d639c5c4de03_s390x",
+                "product": {
+                  "name": "openshift-gitops-1/gitops-rhel8-operator@sha256:02bc04eaa379108c8cf99da5d89a4e8305ccb3c3921037c9b160d639c5c4de03_s390x",
+                  "product_id": "openshift-gitops-1/gitops-rhel8-operator@sha256:02bc04eaa379108c8cf99da5d89a4e8305ccb3c3921037c9b160d639c5c4de03_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/gitops-rhel8-operator@sha256:02bc04eaa379108c8cf99da5d89a4e8305ccb3c3921037c9b160d639c5c4de03?arch=s390x&repository_url=registry.redhat.io/openshift-gitops-1/gitops-rhel8-operator&tag=v1.9.3-5"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "s390x"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/argocd-rhel8@sha256:dd7e218067771217c00df8b4ed7b94faaa70f31596d8a8da796a1115f694fbfc_ppc64le",
+                "product": {
+                  "name": "openshift-gitops-1/argocd-rhel8@sha256:dd7e218067771217c00df8b4ed7b94faaa70f31596d8a8da796a1115f694fbfc_ppc64le",
+                  "product_id": "openshift-gitops-1/argocd-rhel8@sha256:dd7e218067771217c00df8b4ed7b94faaa70f31596d8a8da796a1115f694fbfc_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/argocd-rhel8@sha256:dd7e218067771217c00df8b4ed7b94faaa70f31596d8a8da796a1115f694fbfc?arch=ppc64le&repository_url=registry.redhat.io/openshift-gitops-1/argocd-rhel8&tag=v1.9.3-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/argo-rollouts-rhel8@sha256:9afedd1e7109a88fbe381846a6a0a206b24ba3e62dd699aa750d4b7f28505080_ppc64le",
+                "product": {
+                  "name": "openshift-gitops-1/argo-rollouts-rhel8@sha256:9afedd1e7109a88fbe381846a6a0a206b24ba3e62dd699aa750d4b7f28505080_ppc64le",
+                  "product_id": "openshift-gitops-1/argo-rollouts-rhel8@sha256:9afedd1e7109a88fbe381846a6a0a206b24ba3e62dd699aa750d4b7f28505080_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/argo-rollouts-rhel8@sha256:9afedd1e7109a88fbe381846a6a0a206b24ba3e62dd699aa750d4b7f28505080?arch=ppc64le&repository_url=registry.redhat.io/openshift-gitops-1/argo-rollouts-rhel8&tag=v1.9.3-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/console-plugin-rhel8@sha256:21bff8ab1b76db1507a96432d49df4e537ed66d1fed1c96434bde10bfdd62059_ppc64le",
+                "product": {
+                  "name": "openshift-gitops-1/console-plugin-rhel8@sha256:21bff8ab1b76db1507a96432d49df4e537ed66d1fed1c96434bde10bfdd62059_ppc64le",
+                  "product_id": "openshift-gitops-1/console-plugin-rhel8@sha256:21bff8ab1b76db1507a96432d49df4e537ed66d1fed1c96434bde10bfdd62059_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/console-plugin-rhel8@sha256:21bff8ab1b76db1507a96432d49df4e537ed66d1fed1c96434bde10bfdd62059?arch=ppc64le&repository_url=registry.redhat.io/openshift-gitops-1/console-plugin-rhel8&tag=v1.9.3-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/gitops-rhel8@sha256:21f03d5337d4177a908f63ce3558bc130a045fc45c6f6a4d2783de4e4b555e21_ppc64le",
+                "product": {
+                  "name": "openshift-gitops-1/gitops-rhel8@sha256:21f03d5337d4177a908f63ce3558bc130a045fc45c6f6a4d2783de4e4b555e21_ppc64le",
+                  "product_id": "openshift-gitops-1/gitops-rhel8@sha256:21f03d5337d4177a908f63ce3558bc130a045fc45c6f6a4d2783de4e4b555e21_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/gitops-rhel8@sha256:21f03d5337d4177a908f63ce3558bc130a045fc45c6f6a4d2783de4e4b555e21?arch=ppc64le&repository_url=registry.redhat.io/openshift-gitops-1/gitops-rhel8&tag=v1.9.3-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/dex-rhel8@sha256:14b1e455f6ba59777aec0298b64a21cf40d89429dcbc3dd59ad2f30c649d6f5f_ppc64le",
+                "product": {
+                  "name": "openshift-gitops-1/dex-rhel8@sha256:14b1e455f6ba59777aec0298b64a21cf40d89429dcbc3dd59ad2f30c649d6f5f_ppc64le",
+                  "product_id": "openshift-gitops-1/dex-rhel8@sha256:14b1e455f6ba59777aec0298b64a21cf40d89429dcbc3dd59ad2f30c649d6f5f_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/dex-rhel8@sha256:14b1e455f6ba59777aec0298b64a21cf40d89429dcbc3dd59ad2f30c649d6f5f?arch=ppc64le&repository_url=registry.redhat.io/openshift-gitops-1/dex-rhel8&tag=v1.9.3-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/kam-delivery-rhel8@sha256:6bdef15c447107069382c76cbf89faccbc116ec62c9be9231b0a8edc0e63c0a5_ppc64le",
+                "product": {
+                  "name": "openshift-gitops-1/kam-delivery-rhel8@sha256:6bdef15c447107069382c76cbf89faccbc116ec62c9be9231b0a8edc0e63c0a5_ppc64le",
+                  "product_id": "openshift-gitops-1/kam-delivery-rhel8@sha256:6bdef15c447107069382c76cbf89faccbc116ec62c9be9231b0a8edc0e63c0a5_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/kam-delivery-rhel8@sha256:6bdef15c447107069382c76cbf89faccbc116ec62c9be9231b0a8edc0e63c0a5?arch=ppc64le&repository_url=registry.redhat.io/openshift-gitops-1/kam-delivery-rhel8&tag=v1.9.3-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/must-gather-rhel8@sha256:847b14b3fae4d48b588174564b5a17177c141a8d4155442c146f4828642b86cc_ppc64le",
+                "product": {
+                  "name": "openshift-gitops-1/must-gather-rhel8@sha256:847b14b3fae4d48b588174564b5a17177c141a8d4155442c146f4828642b86cc_ppc64le",
+                  "product_id": "openshift-gitops-1/must-gather-rhel8@sha256:847b14b3fae4d48b588174564b5a17177c141a8d4155442c146f4828642b86cc_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/must-gather-rhel8@sha256:847b14b3fae4d48b588174564b5a17177c141a8d4155442c146f4828642b86cc?arch=ppc64le&repository_url=registry.redhat.io/openshift-gitops-1/must-gather-rhel8&tag=v1.9.3-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/gitops-rhel8-operator@sha256:79f9227088dee48a79afd14732087c23ea0c6869c0dd167dac94365b225592ec_ppc64le",
+                "product": {
+                  "name": "openshift-gitops-1/gitops-rhel8-operator@sha256:79f9227088dee48a79afd14732087c23ea0c6869c0dd167dac94365b225592ec_ppc64le",
+                  "product_id": "openshift-gitops-1/gitops-rhel8-operator@sha256:79f9227088dee48a79afd14732087c23ea0c6869c0dd167dac94365b225592ec_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/gitops-rhel8-operator@sha256:79f9227088dee48a79afd14732087c23ea0c6869c0dd167dac94365b225592ec?arch=ppc64le&repository_url=registry.redhat.io/openshift-gitops-1/gitops-rhel8-operator&tag=v1.9.3-5"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "ppc64le"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/argocd-rhel8@sha256:bd8aa96326b5c5e649634489941e19bc17cbe04bfeb00d1b362d7afe98277594_arm64",
+                "product": {
+                  "name": "openshift-gitops-1/argocd-rhel8@sha256:bd8aa96326b5c5e649634489941e19bc17cbe04bfeb00d1b362d7afe98277594_arm64",
+                  "product_id": "openshift-gitops-1/argocd-rhel8@sha256:bd8aa96326b5c5e649634489941e19bc17cbe04bfeb00d1b362d7afe98277594_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/argocd-rhel8@sha256:bd8aa96326b5c5e649634489941e19bc17cbe04bfeb00d1b362d7afe98277594?arch=arm64&repository_url=registry.redhat.io/openshift-gitops-1/argocd-rhel8&tag=v1.9.3-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/argo-rollouts-rhel8@sha256:5dda4516e7dd63cc711cd18e0569cdac873c2a3ae3bf41fd7645384e1aea0952_arm64",
+                "product": {
+                  "name": "openshift-gitops-1/argo-rollouts-rhel8@sha256:5dda4516e7dd63cc711cd18e0569cdac873c2a3ae3bf41fd7645384e1aea0952_arm64",
+                  "product_id": "openshift-gitops-1/argo-rollouts-rhel8@sha256:5dda4516e7dd63cc711cd18e0569cdac873c2a3ae3bf41fd7645384e1aea0952_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/argo-rollouts-rhel8@sha256:5dda4516e7dd63cc711cd18e0569cdac873c2a3ae3bf41fd7645384e1aea0952?arch=arm64&repository_url=registry.redhat.io/openshift-gitops-1/argo-rollouts-rhel8&tag=v1.9.3-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/console-plugin-rhel8@sha256:7c05fd1be9aa7427e565544975f7f85d4600c7eabfd22ff4f07e057e566496eb_arm64",
+                "product": {
+                  "name": "openshift-gitops-1/console-plugin-rhel8@sha256:7c05fd1be9aa7427e565544975f7f85d4600c7eabfd22ff4f07e057e566496eb_arm64",
+                  "product_id": "openshift-gitops-1/console-plugin-rhel8@sha256:7c05fd1be9aa7427e565544975f7f85d4600c7eabfd22ff4f07e057e566496eb_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/console-plugin-rhel8@sha256:7c05fd1be9aa7427e565544975f7f85d4600c7eabfd22ff4f07e057e566496eb?arch=arm64&repository_url=registry.redhat.io/openshift-gitops-1/console-plugin-rhel8&tag=v1.9.3-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/gitops-rhel8@sha256:1e4441c4b21af05b97b4f4d5fdae767721ecc645a43f63611d18d3de87498805_arm64",
+                "product": {
+                  "name": "openshift-gitops-1/gitops-rhel8@sha256:1e4441c4b21af05b97b4f4d5fdae767721ecc645a43f63611d18d3de87498805_arm64",
+                  "product_id": "openshift-gitops-1/gitops-rhel8@sha256:1e4441c4b21af05b97b4f4d5fdae767721ecc645a43f63611d18d3de87498805_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/gitops-rhel8@sha256:1e4441c4b21af05b97b4f4d5fdae767721ecc645a43f63611d18d3de87498805?arch=arm64&repository_url=registry.redhat.io/openshift-gitops-1/gitops-rhel8&tag=v1.9.3-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/dex-rhel8@sha256:f58dc92bdffd95385a51ecdff7677b49cc85b0a7718ca5f69301e6711a9bf04c_arm64",
+                "product": {
+                  "name": "openshift-gitops-1/dex-rhel8@sha256:f58dc92bdffd95385a51ecdff7677b49cc85b0a7718ca5f69301e6711a9bf04c_arm64",
+                  "product_id": "openshift-gitops-1/dex-rhel8@sha256:f58dc92bdffd95385a51ecdff7677b49cc85b0a7718ca5f69301e6711a9bf04c_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/dex-rhel8@sha256:f58dc92bdffd95385a51ecdff7677b49cc85b0a7718ca5f69301e6711a9bf04c?arch=arm64&repository_url=registry.redhat.io/openshift-gitops-1/dex-rhel8&tag=v1.9.3-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/kam-delivery-rhel8@sha256:9903bb78e5d0cc39d314e9bdaecf902ac4d24bee3f11b7658caaa381253c81c1_arm64",
+                "product": {
+                  "name": "openshift-gitops-1/kam-delivery-rhel8@sha256:9903bb78e5d0cc39d314e9bdaecf902ac4d24bee3f11b7658caaa381253c81c1_arm64",
+                  "product_id": "openshift-gitops-1/kam-delivery-rhel8@sha256:9903bb78e5d0cc39d314e9bdaecf902ac4d24bee3f11b7658caaa381253c81c1_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/kam-delivery-rhel8@sha256:9903bb78e5d0cc39d314e9bdaecf902ac4d24bee3f11b7658caaa381253c81c1?arch=arm64&repository_url=registry.redhat.io/openshift-gitops-1/kam-delivery-rhel8&tag=v1.9.3-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/must-gather-rhel8@sha256:3eb502b1ef4886e5300c5cac0252f9000f1c71bb6c5f1a93758d01d36654be7e_arm64",
+                "product": {
+                  "name": "openshift-gitops-1/must-gather-rhel8@sha256:3eb502b1ef4886e5300c5cac0252f9000f1c71bb6c5f1a93758d01d36654be7e_arm64",
+                  "product_id": "openshift-gitops-1/must-gather-rhel8@sha256:3eb502b1ef4886e5300c5cac0252f9000f1c71bb6c5f1a93758d01d36654be7e_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/must-gather-rhel8@sha256:3eb502b1ef4886e5300c5cac0252f9000f1c71bb6c5f1a93758d01d36654be7e?arch=arm64&repository_url=registry.redhat.io/openshift-gitops-1/must-gather-rhel8&tag=v1.9.3-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-gitops-1/gitops-rhel8-operator@sha256:32da9518faee368da0902ba87c1ed95a03e75ea344a31c9af19a96a436a6ddf3_arm64",
+                "product": {
+                  "name": "openshift-gitops-1/gitops-rhel8-operator@sha256:32da9518faee368da0902ba87c1ed95a03e75ea344a31c9af19a96a436a6ddf3_arm64",
+                  "product_id": "openshift-gitops-1/gitops-rhel8-operator@sha256:32da9518faee368da0902ba87c1ed95a03e75ea344a31c9af19a96a436a6ddf3_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/gitops-rhel8-operator@sha256:32da9518faee368da0902ba87c1ed95a03e75ea344a31c9af19a96a436a6ddf3?arch=arm64&repository_url=registry.redhat.io/openshift-gitops-1/gitops-rhel8-operator&tag=v1.9.3-5"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "arm64"
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      }
+    ],
+    "relationships": [
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/argo-rollouts-rhel8@sha256:08c50b13b7fd04f3756250ce727f75f9d8da1bf0dbb27fd2f1206850d9e7d0fc_amd64 as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:08c50b13b7fd04f3756250ce727f75f9d8da1bf0dbb27fd2f1206850d9e7d0fc_amd64"
+        },
+        "product_reference": "openshift-gitops-1/argo-rollouts-rhel8@sha256:08c50b13b7fd04f3756250ce727f75f9d8da1bf0dbb27fd2f1206850d9e7d0fc_amd64",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/argo-rollouts-rhel8@sha256:5dda4516e7dd63cc711cd18e0569cdac873c2a3ae3bf41fd7645384e1aea0952_arm64 as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:5dda4516e7dd63cc711cd18e0569cdac873c2a3ae3bf41fd7645384e1aea0952_arm64"
+        },
+        "product_reference": "openshift-gitops-1/argo-rollouts-rhel8@sha256:5dda4516e7dd63cc711cd18e0569cdac873c2a3ae3bf41fd7645384e1aea0952_arm64",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/argo-rollouts-rhel8@sha256:9afedd1e7109a88fbe381846a6a0a206b24ba3e62dd699aa750d4b7f28505080_ppc64le as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:9afedd1e7109a88fbe381846a6a0a206b24ba3e62dd699aa750d4b7f28505080_ppc64le"
+        },
+        "product_reference": "openshift-gitops-1/argo-rollouts-rhel8@sha256:9afedd1e7109a88fbe381846a6a0a206b24ba3e62dd699aa750d4b7f28505080_ppc64le",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/argo-rollouts-rhel8@sha256:b830502f20de70c8fc7f77a6c58409c00f6db79224f306f5f667fadfca59bd84_s390x as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:b830502f20de70c8fc7f77a6c58409c00f6db79224f306f5f667fadfca59bd84_s390x"
+        },
+        "product_reference": "openshift-gitops-1/argo-rollouts-rhel8@sha256:b830502f20de70c8fc7f77a6c58409c00f6db79224f306f5f667fadfca59bd84_s390x",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/argocd-rhel8@sha256:bd8aa96326b5c5e649634489941e19bc17cbe04bfeb00d1b362d7afe98277594_arm64 as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:bd8aa96326b5c5e649634489941e19bc17cbe04bfeb00d1b362d7afe98277594_arm64"
+        },
+        "product_reference": "openshift-gitops-1/argocd-rhel8@sha256:bd8aa96326b5c5e649634489941e19bc17cbe04bfeb00d1b362d7afe98277594_arm64",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/argocd-rhel8@sha256:dd7e218067771217c00df8b4ed7b94faaa70f31596d8a8da796a1115f694fbfc_ppc64le as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:dd7e218067771217c00df8b4ed7b94faaa70f31596d8a8da796a1115f694fbfc_ppc64le"
+        },
+        "product_reference": "openshift-gitops-1/argocd-rhel8@sha256:dd7e218067771217c00df8b4ed7b94faaa70f31596d8a8da796a1115f694fbfc_ppc64le",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/argocd-rhel8@sha256:e432172e252f278ffe9d1e8bcf6c89c81cbef76e3755eb7b9f3d5ec4622a63e0_s390x as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:e432172e252f278ffe9d1e8bcf6c89c81cbef76e3755eb7b9f3d5ec4622a63e0_s390x"
+        },
+        "product_reference": "openshift-gitops-1/argocd-rhel8@sha256:e432172e252f278ffe9d1e8bcf6c89c81cbef76e3755eb7b9f3d5ec4622a63e0_s390x",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/argocd-rhel8@sha256:fbd5576fa614602b26677e91136d0c9c4722e0eb09672e3784ebdfe71737d3bd_amd64 as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:fbd5576fa614602b26677e91136d0c9c4722e0eb09672e3784ebdfe71737d3bd_amd64"
+        },
+        "product_reference": "openshift-gitops-1/argocd-rhel8@sha256:fbd5576fa614602b26677e91136d0c9c4722e0eb09672e3784ebdfe71737d3bd_amd64",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/console-plugin-rhel8@sha256:21bff8ab1b76db1507a96432d49df4e537ed66d1fed1c96434bde10bfdd62059_ppc64le as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:21bff8ab1b76db1507a96432d49df4e537ed66d1fed1c96434bde10bfdd62059_ppc64le"
+        },
+        "product_reference": "openshift-gitops-1/console-plugin-rhel8@sha256:21bff8ab1b76db1507a96432d49df4e537ed66d1fed1c96434bde10bfdd62059_ppc64le",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/console-plugin-rhel8@sha256:7c05fd1be9aa7427e565544975f7f85d4600c7eabfd22ff4f07e057e566496eb_arm64 as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:7c05fd1be9aa7427e565544975f7f85d4600c7eabfd22ff4f07e057e566496eb_arm64"
+        },
+        "product_reference": "openshift-gitops-1/console-plugin-rhel8@sha256:7c05fd1be9aa7427e565544975f7f85d4600c7eabfd22ff4f07e057e566496eb_arm64",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/console-plugin-rhel8@sha256:84dee8a0455dca910bab7407bb8bc3151f788ae991aa9c7d9380e8c7c1a4014c_s390x as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:84dee8a0455dca910bab7407bb8bc3151f788ae991aa9c7d9380e8c7c1a4014c_s390x"
+        },
+        "product_reference": "openshift-gitops-1/console-plugin-rhel8@sha256:84dee8a0455dca910bab7407bb8bc3151f788ae991aa9c7d9380e8c7c1a4014c_s390x",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/console-plugin-rhel8@sha256:eb9abd40236e7752cd8b5d215ff8619d73e1fd5ff6abd0884409dcd442fb4eaf_amd64 as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:eb9abd40236e7752cd8b5d215ff8619d73e1fd5ff6abd0884409dcd442fb4eaf_amd64"
+        },
+        "product_reference": "openshift-gitops-1/console-plugin-rhel8@sha256:eb9abd40236e7752cd8b5d215ff8619d73e1fd5ff6abd0884409dcd442fb4eaf_amd64",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/dex-rhel8@sha256:14b1e455f6ba59777aec0298b64a21cf40d89429dcbc3dd59ad2f30c649d6f5f_ppc64le as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:14b1e455f6ba59777aec0298b64a21cf40d89429dcbc3dd59ad2f30c649d6f5f_ppc64le"
+        },
+        "product_reference": "openshift-gitops-1/dex-rhel8@sha256:14b1e455f6ba59777aec0298b64a21cf40d89429dcbc3dd59ad2f30c649d6f5f_ppc64le",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/dex-rhel8@sha256:2c5390ab43937ee0f089f56bd64752aa7d477d713d2eabf17fa7a48b3244e573_amd64 as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:2c5390ab43937ee0f089f56bd64752aa7d477d713d2eabf17fa7a48b3244e573_amd64"
+        },
+        "product_reference": "openshift-gitops-1/dex-rhel8@sha256:2c5390ab43937ee0f089f56bd64752aa7d477d713d2eabf17fa7a48b3244e573_amd64",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/dex-rhel8@sha256:ae805dd6858d45e042b335240e450c5f5635546381f2cf755b4d0049f80e4bbd_s390x as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:ae805dd6858d45e042b335240e450c5f5635546381f2cf755b4d0049f80e4bbd_s390x"
+        },
+        "product_reference": "openshift-gitops-1/dex-rhel8@sha256:ae805dd6858d45e042b335240e450c5f5635546381f2cf755b4d0049f80e4bbd_s390x",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/dex-rhel8@sha256:f58dc92bdffd95385a51ecdff7677b49cc85b0a7718ca5f69301e6711a9bf04c_arm64 as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:f58dc92bdffd95385a51ecdff7677b49cc85b0a7718ca5f69301e6711a9bf04c_arm64"
+        },
+        "product_reference": "openshift-gitops-1/dex-rhel8@sha256:f58dc92bdffd95385a51ecdff7677b49cc85b0a7718ca5f69301e6711a9bf04c_arm64",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/gitops-operator-bundle@sha256:d8725149c57d5de6c5c10d472cfd54721e8f8bf12e66e34c0311103a835a3081_amd64 as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/gitops-operator-bundle@sha256:d8725149c57d5de6c5c10d472cfd54721e8f8bf12e66e34c0311103a835a3081_amd64"
+        },
+        "product_reference": "openshift-gitops-1/gitops-operator-bundle@sha256:d8725149c57d5de6c5c10d472cfd54721e8f8bf12e66e34c0311103a835a3081_amd64",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/gitops-rhel8-operator@sha256:02bc04eaa379108c8cf99da5d89a4e8305ccb3c3921037c9b160d639c5c4de03_s390x as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:02bc04eaa379108c8cf99da5d89a4e8305ccb3c3921037c9b160d639c5c4de03_s390x"
+        },
+        "product_reference": "openshift-gitops-1/gitops-rhel8-operator@sha256:02bc04eaa379108c8cf99da5d89a4e8305ccb3c3921037c9b160d639c5c4de03_s390x",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/gitops-rhel8-operator@sha256:32da9518faee368da0902ba87c1ed95a03e75ea344a31c9af19a96a436a6ddf3_arm64 as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:32da9518faee368da0902ba87c1ed95a03e75ea344a31c9af19a96a436a6ddf3_arm64"
+        },
+        "product_reference": "openshift-gitops-1/gitops-rhel8-operator@sha256:32da9518faee368da0902ba87c1ed95a03e75ea344a31c9af19a96a436a6ddf3_arm64",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/gitops-rhel8-operator@sha256:79f9227088dee48a79afd14732087c23ea0c6869c0dd167dac94365b225592ec_ppc64le as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:79f9227088dee48a79afd14732087c23ea0c6869c0dd167dac94365b225592ec_ppc64le"
+        },
+        "product_reference": "openshift-gitops-1/gitops-rhel8-operator@sha256:79f9227088dee48a79afd14732087c23ea0c6869c0dd167dac94365b225592ec_ppc64le",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/gitops-rhel8-operator@sha256:d491c7c8525393b4dc8277fae5639ee41ae4d6bbada83a212742e9683877f0b0_amd64 as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:d491c7c8525393b4dc8277fae5639ee41ae4d6bbada83a212742e9683877f0b0_amd64"
+        },
+        "product_reference": "openshift-gitops-1/gitops-rhel8-operator@sha256:d491c7c8525393b4dc8277fae5639ee41ae4d6bbada83a212742e9683877f0b0_amd64",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/gitops-rhel8@sha256:1e4441c4b21af05b97b4f4d5fdae767721ecc645a43f63611d18d3de87498805_arm64 as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:1e4441c4b21af05b97b4f4d5fdae767721ecc645a43f63611d18d3de87498805_arm64"
+        },
+        "product_reference": "openshift-gitops-1/gitops-rhel8@sha256:1e4441c4b21af05b97b4f4d5fdae767721ecc645a43f63611d18d3de87498805_arm64",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/gitops-rhel8@sha256:21f03d5337d4177a908f63ce3558bc130a045fc45c6f6a4d2783de4e4b555e21_ppc64le as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:21f03d5337d4177a908f63ce3558bc130a045fc45c6f6a4d2783de4e4b555e21_ppc64le"
+        },
+        "product_reference": "openshift-gitops-1/gitops-rhel8@sha256:21f03d5337d4177a908f63ce3558bc130a045fc45c6f6a4d2783de4e4b555e21_ppc64le",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/gitops-rhel8@sha256:585361fa372d675855cb517e0305339f9856fecc7b1f89b31ad33bca3f9836b8_s390x as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:585361fa372d675855cb517e0305339f9856fecc7b1f89b31ad33bca3f9836b8_s390x"
+        },
+        "product_reference": "openshift-gitops-1/gitops-rhel8@sha256:585361fa372d675855cb517e0305339f9856fecc7b1f89b31ad33bca3f9836b8_s390x",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/gitops-rhel8@sha256:97acdfe9b2fba3a37f01e91efb4074eadcec204414ae7f2c0a426b71af60288c_amd64 as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:97acdfe9b2fba3a37f01e91efb4074eadcec204414ae7f2c0a426b71af60288c_amd64"
+        },
+        "product_reference": "openshift-gitops-1/gitops-rhel8@sha256:97acdfe9b2fba3a37f01e91efb4074eadcec204414ae7f2c0a426b71af60288c_amd64",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/kam-delivery-rhel8@sha256:1c546c5cdafd6ca78c3f5cb51d76bdc1c139fdbeee3eae0799a2550920cd31a1_amd64 as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:1c546c5cdafd6ca78c3f5cb51d76bdc1c139fdbeee3eae0799a2550920cd31a1_amd64"
+        },
+        "product_reference": "openshift-gitops-1/kam-delivery-rhel8@sha256:1c546c5cdafd6ca78c3f5cb51d76bdc1c139fdbeee3eae0799a2550920cd31a1_amd64",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/kam-delivery-rhel8@sha256:6bdef15c447107069382c76cbf89faccbc116ec62c9be9231b0a8edc0e63c0a5_ppc64le as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:6bdef15c447107069382c76cbf89faccbc116ec62c9be9231b0a8edc0e63c0a5_ppc64le"
+        },
+        "product_reference": "openshift-gitops-1/kam-delivery-rhel8@sha256:6bdef15c447107069382c76cbf89faccbc116ec62c9be9231b0a8edc0e63c0a5_ppc64le",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/kam-delivery-rhel8@sha256:9903bb78e5d0cc39d314e9bdaecf902ac4d24bee3f11b7658caaa381253c81c1_arm64 as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:9903bb78e5d0cc39d314e9bdaecf902ac4d24bee3f11b7658caaa381253c81c1_arm64"
+        },
+        "product_reference": "openshift-gitops-1/kam-delivery-rhel8@sha256:9903bb78e5d0cc39d314e9bdaecf902ac4d24bee3f11b7658caaa381253c81c1_arm64",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/kam-delivery-rhel8@sha256:b6864990dd11208362570ff7642baf33d96690a9547ddb71403f5deb5578a761_s390x as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:b6864990dd11208362570ff7642baf33d96690a9547ddb71403f5deb5578a761_s390x"
+        },
+        "product_reference": "openshift-gitops-1/kam-delivery-rhel8@sha256:b6864990dd11208362570ff7642baf33d96690a9547ddb71403f5deb5578a761_s390x",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/must-gather-rhel8@sha256:399cd150882466cd9e301ea92e899b802980825082c7a5d0a780a81903af0fce_s390x as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:399cd150882466cd9e301ea92e899b802980825082c7a5d0a780a81903af0fce_s390x"
+        },
+        "product_reference": "openshift-gitops-1/must-gather-rhel8@sha256:399cd150882466cd9e301ea92e899b802980825082c7a5d0a780a81903af0fce_s390x",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/must-gather-rhel8@sha256:3eb502b1ef4886e5300c5cac0252f9000f1c71bb6c5f1a93758d01d36654be7e_arm64 as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:3eb502b1ef4886e5300c5cac0252f9000f1c71bb6c5f1a93758d01d36654be7e_arm64"
+        },
+        "product_reference": "openshift-gitops-1/must-gather-rhel8@sha256:3eb502b1ef4886e5300c5cac0252f9000f1c71bb6c5f1a93758d01d36654be7e_arm64",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/must-gather-rhel8@sha256:847b14b3fae4d48b588174564b5a17177c141a8d4155442c146f4828642b86cc_ppc64le as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:847b14b3fae4d48b588174564b5a17177c141a8d4155442c146f4828642b86cc_ppc64le"
+        },
+        "product_reference": "openshift-gitops-1/must-gather-rhel8@sha256:847b14b3fae4d48b588174564b5a17177c141a8d4155442c146f4828642b86cc_ppc64le",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-gitops-1/must-gather-rhel8@sha256:b8ff5a1de115b5760c281f59a32831a3a6b949d65a15689d591da6849b297ee9_amd64 as a component of Red Hat OpenShift GitOps 1.9",
+          "product_id": "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:b8ff5a1de115b5760c281f59a32831a3a6b949d65a15689d591da6849b297ee9_amd64"
+        },
+        "product_reference": "openshift-gitops-1/must-gather-rhel8@sha256:b8ff5a1de115b5760c281f59a32831a3a6b949d65a15689d591da6849b297ee9_amd64",
+        "relates_to_product_reference": "8Base-GitOps-1.9"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2023-39325",
+      "cwe": {
+        "id": "CWE-400",
+        "name": "Uncontrolled Resource Consumption"
+      },
+      "discovery_date": "2023-10-10T00:00:00+00:00",
+      "flags": [
+        {
+          "label": "vulnerable_code_not_present",
+          "product_ids": [
+            "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:21bff8ab1b76db1507a96432d49df4e537ed66d1fed1c96434bde10bfdd62059_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:7c05fd1be9aa7427e565544975f7f85d4600c7eabfd22ff4f07e057e566496eb_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:84dee8a0455dca910bab7407bb8bc3151f788ae991aa9c7d9380e8c7c1a4014c_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:eb9abd40236e7752cd8b5d215ff8619d73e1fd5ff6abd0884409dcd442fb4eaf_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-operator-bundle@sha256:d8725149c57d5de6c5c10d472cfd54721e8f8bf12e66e34c0311103a835a3081_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:399cd150882466cd9e301ea92e899b802980825082c7a5d0a780a81903af0fce_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:3eb502b1ef4886e5300c5cac0252f9000f1c71bb6c5f1a93758d01d36654be7e_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:847b14b3fae4d48b588174564b5a17177c141a8d4155442c146f4828642b86cc_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:b8ff5a1de115b5760c281f59a32831a3a6b949d65a15689d591da6849b297ee9_amd64"
+          ]
+        }
+      ],
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2243296"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A flaw was found in handling multiplexed streams in the HTTP/2 protocol. A client can repeatedly make a request for a new multiplex stream and immediately send an RST_STREAM frame to cancel it. This creates extra work for the server setting up and tearing down the streams while not hitting any server-side limit for the maximum number of active streams per connection, resulting in a denial of service due to server resource consumption. Red Hat has rated the severity of this flaw as 'Important' as the US Cybersecurity and Infrastructure Security Agency (CISA) declared this vulnerability an active exploit.\r\n\r\nCVE-2023-39325 was assigned for the `Rapid Reset Attack` in the Go language packages.",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "golang: net/http, x/net/http2: rapid stream resets can cause excessive work (CVE-2023-44487)",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "other",
+          "text": "This CVE is related to CVE-2023-44487.\n\nThe majority of RHEL utilities are not long-running applications; instead, they are command-line tools. These tools utilize Golang package as build-time dependency, which is why they are classified as having a \"Moderate\" level of impact.",
+          "title": "Statement"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:08c50b13b7fd04f3756250ce727f75f9d8da1bf0dbb27fd2f1206850d9e7d0fc_amd64",
+          "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:5dda4516e7dd63cc711cd18e0569cdac873c2a3ae3bf41fd7645384e1aea0952_arm64",
+          "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:9afedd1e7109a88fbe381846a6a0a206b24ba3e62dd699aa750d4b7f28505080_ppc64le",
+          "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:b830502f20de70c8fc7f77a6c58409c00f6db79224f306f5f667fadfca59bd84_s390x",
+          "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:bd8aa96326b5c5e649634489941e19bc17cbe04bfeb00d1b362d7afe98277594_arm64",
+          "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:dd7e218067771217c00df8b4ed7b94faaa70f31596d8a8da796a1115f694fbfc_ppc64le",
+          "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:e432172e252f278ffe9d1e8bcf6c89c81cbef76e3755eb7b9f3d5ec4622a63e0_s390x",
+          "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:fbd5576fa614602b26677e91136d0c9c4722e0eb09672e3784ebdfe71737d3bd_amd64",
+          "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:14b1e455f6ba59777aec0298b64a21cf40d89429dcbc3dd59ad2f30c649d6f5f_ppc64le",
+          "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:2c5390ab43937ee0f089f56bd64752aa7d477d713d2eabf17fa7a48b3244e573_amd64",
+          "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:ae805dd6858d45e042b335240e450c5f5635546381f2cf755b4d0049f80e4bbd_s390x",
+          "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:f58dc92bdffd95385a51ecdff7677b49cc85b0a7718ca5f69301e6711a9bf04c_arm64",
+          "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:02bc04eaa379108c8cf99da5d89a4e8305ccb3c3921037c9b160d639c5c4de03_s390x",
+          "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:32da9518faee368da0902ba87c1ed95a03e75ea344a31c9af19a96a436a6ddf3_arm64",
+          "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:79f9227088dee48a79afd14732087c23ea0c6869c0dd167dac94365b225592ec_ppc64le",
+          "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:d491c7c8525393b4dc8277fae5639ee41ae4d6bbada83a212742e9683877f0b0_amd64",
+          "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:1e4441c4b21af05b97b4f4d5fdae767721ecc645a43f63611d18d3de87498805_arm64",
+          "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:21f03d5337d4177a908f63ce3558bc130a045fc45c6f6a4d2783de4e4b555e21_ppc64le",
+          "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:585361fa372d675855cb517e0305339f9856fecc7b1f89b31ad33bca3f9836b8_s390x",
+          "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:97acdfe9b2fba3a37f01e91efb4074eadcec204414ae7f2c0a426b71af60288c_amd64",
+          "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:1c546c5cdafd6ca78c3f5cb51d76bdc1c139fdbeee3eae0799a2550920cd31a1_amd64",
+          "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:6bdef15c447107069382c76cbf89faccbc116ec62c9be9231b0a8edc0e63c0a5_ppc64le",
+          "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:9903bb78e5d0cc39d314e9bdaecf902ac4d24bee3f11b7658caaa381253c81c1_arm64",
+          "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:b6864990dd11208362570ff7642baf33d96690a9547ddb71403f5deb5578a761_s390x"
+        ],
+        "known_not_affected": [
+          "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:21bff8ab1b76db1507a96432d49df4e537ed66d1fed1c96434bde10bfdd62059_ppc64le",
+          "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:7c05fd1be9aa7427e565544975f7f85d4600c7eabfd22ff4f07e057e566496eb_arm64",
+          "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:84dee8a0455dca910bab7407bb8bc3151f788ae991aa9c7d9380e8c7c1a4014c_s390x",
+          "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:eb9abd40236e7752cd8b5d215ff8619d73e1fd5ff6abd0884409dcd442fb4eaf_amd64",
+          "8Base-GitOps-1.9:openshift-gitops-1/gitops-operator-bundle@sha256:d8725149c57d5de6c5c10d472cfd54721e8f8bf12e66e34c0311103a835a3081_amd64",
+          "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:399cd150882466cd9e301ea92e899b802980825082c7a5d0a780a81903af0fce_s390x",
+          "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:3eb502b1ef4886e5300c5cac0252f9000f1c71bb6c5f1a93758d01d36654be7e_arm64",
+          "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:847b14b3fae4d48b588174564b5a17177c141a8d4155442c146f4828642b86cc_ppc64le",
+          "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:b8ff5a1de115b5760c281f59a32831a3a6b949d65a15689d591da6849b297ee9_amd64"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2243296",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2243296"
+        },
+        {
+          "category": "external",
+          "summary": "RHSB-2023-003",
+          "url": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2023-39325",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "https://access.redhat.com/security/cve/CVE-2023-44487",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-44487"
+        },
+        {
+          "category": "external",
+          "summary": "https://go.dev/issue/63417",
+          "url": "https://go.dev/issue/63417"
+        },
+        {
+          "category": "external",
+          "summary": "https://pkg.go.dev/vuln/GO-2023-2102",
+          "url": "https://pkg.go.dev/vuln/GO-2023-2102"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487",
+          "url": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487"
+        }
+      ],
+      "release_date": "2023-10-10T00:00:00+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2023-11-20T08:34:18+00:00",
+          "details": "Before applying this update, make sure all previously released errata relevant to your system have been applied.\n\nFor details on how to apply this update, refer to:\n\nhttps://access.redhat.com/articles/11258",
+          "product_ids": [
+            "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:08c50b13b7fd04f3756250ce727f75f9d8da1bf0dbb27fd2f1206850d9e7d0fc_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:5dda4516e7dd63cc711cd18e0569cdac873c2a3ae3bf41fd7645384e1aea0952_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:9afedd1e7109a88fbe381846a6a0a206b24ba3e62dd699aa750d4b7f28505080_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:b830502f20de70c8fc7f77a6c58409c00f6db79224f306f5f667fadfca59bd84_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:bd8aa96326b5c5e649634489941e19bc17cbe04bfeb00d1b362d7afe98277594_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:dd7e218067771217c00df8b4ed7b94faaa70f31596d8a8da796a1115f694fbfc_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:e432172e252f278ffe9d1e8bcf6c89c81cbef76e3755eb7b9f3d5ec4622a63e0_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:fbd5576fa614602b26677e91136d0c9c4722e0eb09672e3784ebdfe71737d3bd_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:14b1e455f6ba59777aec0298b64a21cf40d89429dcbc3dd59ad2f30c649d6f5f_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:2c5390ab43937ee0f089f56bd64752aa7d477d713d2eabf17fa7a48b3244e573_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:ae805dd6858d45e042b335240e450c5f5635546381f2cf755b4d0049f80e4bbd_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:f58dc92bdffd95385a51ecdff7677b49cc85b0a7718ca5f69301e6711a9bf04c_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:02bc04eaa379108c8cf99da5d89a4e8305ccb3c3921037c9b160d639c5c4de03_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:32da9518faee368da0902ba87c1ed95a03e75ea344a31c9af19a96a436a6ddf3_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:79f9227088dee48a79afd14732087c23ea0c6869c0dd167dac94365b225592ec_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:d491c7c8525393b4dc8277fae5639ee41ae4d6bbada83a212742e9683877f0b0_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:1e4441c4b21af05b97b4f4d5fdae767721ecc645a43f63611d18d3de87498805_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:21f03d5337d4177a908f63ce3558bc130a045fc45c6f6a4d2783de4e4b555e21_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:585361fa372d675855cb517e0305339f9856fecc7b1f89b31ad33bca3f9836b8_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:97acdfe9b2fba3a37f01e91efb4074eadcec204414ae7f2c0a426b71af60288c_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:1c546c5cdafd6ca78c3f5cb51d76bdc1c139fdbeee3eae0799a2550920cd31a1_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:6bdef15c447107069382c76cbf89faccbc116ec62c9be9231b0a8edc0e63c0a5_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:9903bb78e5d0cc39d314e9bdaecf902ac4d24bee3f11b7658caaa381253c81c1_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:b6864990dd11208362570ff7642baf33d96690a9547ddb71403f5deb5578a761_s390x"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2023:7345"
+        },
+        {
+          "category": "workaround",
+          "details": "The default stream concurrency limit in golang is 250 streams (requests) per HTTP/2 connection. This value may be adjusted in the golang.org/x/net/http2 package using the Server.MaxConcurrentStreams setting and the ConfigureServer function which are available in golang.org/x/net/http2.",
+          "product_ids": [
+            "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:08c50b13b7fd04f3756250ce727f75f9d8da1bf0dbb27fd2f1206850d9e7d0fc_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:5dda4516e7dd63cc711cd18e0569cdac873c2a3ae3bf41fd7645384e1aea0952_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:9afedd1e7109a88fbe381846a6a0a206b24ba3e62dd699aa750d4b7f28505080_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:b830502f20de70c8fc7f77a6c58409c00f6db79224f306f5f667fadfca59bd84_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:bd8aa96326b5c5e649634489941e19bc17cbe04bfeb00d1b362d7afe98277594_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:dd7e218067771217c00df8b4ed7b94faaa70f31596d8a8da796a1115f694fbfc_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:e432172e252f278ffe9d1e8bcf6c89c81cbef76e3755eb7b9f3d5ec4622a63e0_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:fbd5576fa614602b26677e91136d0c9c4722e0eb09672e3784ebdfe71737d3bd_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:21bff8ab1b76db1507a96432d49df4e537ed66d1fed1c96434bde10bfdd62059_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:7c05fd1be9aa7427e565544975f7f85d4600c7eabfd22ff4f07e057e566496eb_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:84dee8a0455dca910bab7407bb8bc3151f788ae991aa9c7d9380e8c7c1a4014c_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:eb9abd40236e7752cd8b5d215ff8619d73e1fd5ff6abd0884409dcd442fb4eaf_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:14b1e455f6ba59777aec0298b64a21cf40d89429dcbc3dd59ad2f30c649d6f5f_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:2c5390ab43937ee0f089f56bd64752aa7d477d713d2eabf17fa7a48b3244e573_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:ae805dd6858d45e042b335240e450c5f5635546381f2cf755b4d0049f80e4bbd_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:f58dc92bdffd95385a51ecdff7677b49cc85b0a7718ca5f69301e6711a9bf04c_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-operator-bundle@sha256:d8725149c57d5de6c5c10d472cfd54721e8f8bf12e66e34c0311103a835a3081_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:02bc04eaa379108c8cf99da5d89a4e8305ccb3c3921037c9b160d639c5c4de03_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:32da9518faee368da0902ba87c1ed95a03e75ea344a31c9af19a96a436a6ddf3_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:79f9227088dee48a79afd14732087c23ea0c6869c0dd167dac94365b225592ec_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:d491c7c8525393b4dc8277fae5639ee41ae4d6bbada83a212742e9683877f0b0_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:1e4441c4b21af05b97b4f4d5fdae767721ecc645a43f63611d18d3de87498805_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:21f03d5337d4177a908f63ce3558bc130a045fc45c6f6a4d2783de4e4b555e21_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:585361fa372d675855cb517e0305339f9856fecc7b1f89b31ad33bca3f9836b8_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:97acdfe9b2fba3a37f01e91efb4074eadcec204414ae7f2c0a426b71af60288c_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:1c546c5cdafd6ca78c3f5cb51d76bdc1c139fdbeee3eae0799a2550920cd31a1_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:6bdef15c447107069382c76cbf89faccbc116ec62c9be9231b0a8edc0e63c0a5_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:9903bb78e5d0cc39d314e9bdaecf902ac4d24bee3f11b7658caaa381253c81c1_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:b6864990dd11208362570ff7642baf33d96690a9547ddb71403f5deb5578a761_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:399cd150882466cd9e301ea92e899b802980825082c7a5d0a780a81903af0fce_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:3eb502b1ef4886e5300c5cac0252f9000f1c71bb6c5f1a93758d01d36654be7e_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:847b14b3fae4d48b588174564b5a17177c141a8d4155442c146f4828642b86cc_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:b8ff5a1de115b5760c281f59a32831a3a6b949d65a15689d591da6849b297ee9_amd64"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 7.5,
+            "baseSeverity": "HIGH",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:08c50b13b7fd04f3756250ce727f75f9d8da1bf0dbb27fd2f1206850d9e7d0fc_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:5dda4516e7dd63cc711cd18e0569cdac873c2a3ae3bf41fd7645384e1aea0952_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:9afedd1e7109a88fbe381846a6a0a206b24ba3e62dd699aa750d4b7f28505080_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:b830502f20de70c8fc7f77a6c58409c00f6db79224f306f5f667fadfca59bd84_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:bd8aa96326b5c5e649634489941e19bc17cbe04bfeb00d1b362d7afe98277594_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:dd7e218067771217c00df8b4ed7b94faaa70f31596d8a8da796a1115f694fbfc_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:e432172e252f278ffe9d1e8bcf6c89c81cbef76e3755eb7b9f3d5ec4622a63e0_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:fbd5576fa614602b26677e91136d0c9c4722e0eb09672e3784ebdfe71737d3bd_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:21bff8ab1b76db1507a96432d49df4e537ed66d1fed1c96434bde10bfdd62059_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:7c05fd1be9aa7427e565544975f7f85d4600c7eabfd22ff4f07e057e566496eb_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:84dee8a0455dca910bab7407bb8bc3151f788ae991aa9c7d9380e8c7c1a4014c_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:eb9abd40236e7752cd8b5d215ff8619d73e1fd5ff6abd0884409dcd442fb4eaf_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:14b1e455f6ba59777aec0298b64a21cf40d89429dcbc3dd59ad2f30c649d6f5f_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:2c5390ab43937ee0f089f56bd64752aa7d477d713d2eabf17fa7a48b3244e573_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:ae805dd6858d45e042b335240e450c5f5635546381f2cf755b4d0049f80e4bbd_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:f58dc92bdffd95385a51ecdff7677b49cc85b0a7718ca5f69301e6711a9bf04c_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-operator-bundle@sha256:d8725149c57d5de6c5c10d472cfd54721e8f8bf12e66e34c0311103a835a3081_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:02bc04eaa379108c8cf99da5d89a4e8305ccb3c3921037c9b160d639c5c4de03_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:32da9518faee368da0902ba87c1ed95a03e75ea344a31c9af19a96a436a6ddf3_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:79f9227088dee48a79afd14732087c23ea0c6869c0dd167dac94365b225592ec_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:d491c7c8525393b4dc8277fae5639ee41ae4d6bbada83a212742e9683877f0b0_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:1e4441c4b21af05b97b4f4d5fdae767721ecc645a43f63611d18d3de87498805_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:21f03d5337d4177a908f63ce3558bc130a045fc45c6f6a4d2783de4e4b555e21_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:585361fa372d675855cb517e0305339f9856fecc7b1f89b31ad33bca3f9836b8_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:97acdfe9b2fba3a37f01e91efb4074eadcec204414ae7f2c0a426b71af60288c_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:1c546c5cdafd6ca78c3f5cb51d76bdc1c139fdbeee3eae0799a2550920cd31a1_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:6bdef15c447107069382c76cbf89faccbc116ec62c9be9231b0a8edc0e63c0a5_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:9903bb78e5d0cc39d314e9bdaecf902ac4d24bee3f11b7658caaa381253c81c1_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:b6864990dd11208362570ff7642baf33d96690a9547ddb71403f5deb5578a761_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:399cd150882466cd9e301ea92e899b802980825082c7a5d0a780a81903af0fce_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:3eb502b1ef4886e5300c5cac0252f9000f1c71bb6c5f1a93758d01d36654be7e_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:847b14b3fae4d48b588174564b5a17177c141a8d4155442c146f4828642b86cc_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:b8ff5a1de115b5760c281f59a32831a3a6b949d65a15689d591da6849b297ee9_amd64"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Important"
+        }
+      ],
+      "title": "golang: net/http, x/net/http2: rapid stream resets can cause excessive work (CVE-2023-44487)"
+    },
+    {
+      "cve": "CVE-2023-44487",
+      "cwe": {
+        "id": "CWE-400",
+        "name": "Uncontrolled Resource Consumption"
+      },
+      "discovery_date": "2023-10-09T00:00:00+00:00",
+      "flags": [
+        {
+          "label": "vulnerable_code_not_present",
+          "product_ids": [
+            "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:21bff8ab1b76db1507a96432d49df4e537ed66d1fed1c96434bde10bfdd62059_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:7c05fd1be9aa7427e565544975f7f85d4600c7eabfd22ff4f07e057e566496eb_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:84dee8a0455dca910bab7407bb8bc3151f788ae991aa9c7d9380e8c7c1a4014c_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:eb9abd40236e7752cd8b5d215ff8619d73e1fd5ff6abd0884409dcd442fb4eaf_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-operator-bundle@sha256:d8725149c57d5de6c5c10d472cfd54721e8f8bf12e66e34c0311103a835a3081_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:399cd150882466cd9e301ea92e899b802980825082c7a5d0a780a81903af0fce_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:3eb502b1ef4886e5300c5cac0252f9000f1c71bb6c5f1a93758d01d36654be7e_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:847b14b3fae4d48b588174564b5a17177c141a8d4155442c146f4828642b86cc_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:b8ff5a1de115b5760c281f59a32831a3a6b949d65a15689d591da6849b297ee9_amd64"
+          ]
+        }
+      ],
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2242803"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A flaw was found in handling multiplexed streams in the HTTP/2 protocol. A client can repeatedly make a request for a new multiplex stream and immediately send an RST_STREAM frame to cancel it. This creates extra work for the server setting up and tearing down the streams while not hitting any server-side limit for the maximum number of active streams per connection, resulting in a denial of service due to server resource consumption. Red Hat has rated the severity of this flaw as 'Important' as the US Cybersecurity and Infrastructure Security Agency (CISA) declared this vulnerability an active exploit.\r\n\r\nCVE-2023-39325 was assigned for the Rapid Reset Attack in the Go language packages.\r\n\r\nSecurity Bulletin\r\nhttps://access.redhat.com/security/vulnerabilities/RHSB-2023-003",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "HTTP/2: Multiple HTTP/2 enabled web servers are vulnerable to a DDoS attack (Rapid Reset Attack)",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "other",
+          "text": "NGINX has been marked as Moderate Impact because, for performance and resource consumption reasons, NGINX limits the number of concurrent streams to a default of 128. In addition, to optimally balance network and server performance, NGINX allows the client to persist HTTP connections for up to 1000 requests by default using an HTTP keepalive.\n\nThe majority of RHEL utilities are not long-running applications; instead, they are command-line tools. These tools utilize Golang package as build-time dependency, which is why they are classified as having a \"Moderate\" level of impact.\n\nrhc component is no longer impacted by CVE-2023-44487 & CVE-2023-39325.",
+          "title": "Statement"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:08c50b13b7fd04f3756250ce727f75f9d8da1bf0dbb27fd2f1206850d9e7d0fc_amd64",
+          "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:5dda4516e7dd63cc711cd18e0569cdac873c2a3ae3bf41fd7645384e1aea0952_arm64",
+          "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:9afedd1e7109a88fbe381846a6a0a206b24ba3e62dd699aa750d4b7f28505080_ppc64le",
+          "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:b830502f20de70c8fc7f77a6c58409c00f6db79224f306f5f667fadfca59bd84_s390x",
+          "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:bd8aa96326b5c5e649634489941e19bc17cbe04bfeb00d1b362d7afe98277594_arm64",
+          "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:dd7e218067771217c00df8b4ed7b94faaa70f31596d8a8da796a1115f694fbfc_ppc64le",
+          "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:e432172e252f278ffe9d1e8bcf6c89c81cbef76e3755eb7b9f3d5ec4622a63e0_s390x",
+          "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:fbd5576fa614602b26677e91136d0c9c4722e0eb09672e3784ebdfe71737d3bd_amd64",
+          "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:14b1e455f6ba59777aec0298b64a21cf40d89429dcbc3dd59ad2f30c649d6f5f_ppc64le",
+          "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:2c5390ab43937ee0f089f56bd64752aa7d477d713d2eabf17fa7a48b3244e573_amd64",
+          "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:ae805dd6858d45e042b335240e450c5f5635546381f2cf755b4d0049f80e4bbd_s390x",
+          "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:f58dc92bdffd95385a51ecdff7677b49cc85b0a7718ca5f69301e6711a9bf04c_arm64",
+          "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:02bc04eaa379108c8cf99da5d89a4e8305ccb3c3921037c9b160d639c5c4de03_s390x",
+          "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:32da9518faee368da0902ba87c1ed95a03e75ea344a31c9af19a96a436a6ddf3_arm64",
+          "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:79f9227088dee48a79afd14732087c23ea0c6869c0dd167dac94365b225592ec_ppc64le",
+          "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:d491c7c8525393b4dc8277fae5639ee41ae4d6bbada83a212742e9683877f0b0_amd64",
+          "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:1e4441c4b21af05b97b4f4d5fdae767721ecc645a43f63611d18d3de87498805_arm64",
+          "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:21f03d5337d4177a908f63ce3558bc130a045fc45c6f6a4d2783de4e4b555e21_ppc64le",
+          "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:585361fa372d675855cb517e0305339f9856fecc7b1f89b31ad33bca3f9836b8_s390x",
+          "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:97acdfe9b2fba3a37f01e91efb4074eadcec204414ae7f2c0a426b71af60288c_amd64",
+          "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:1c546c5cdafd6ca78c3f5cb51d76bdc1c139fdbeee3eae0799a2550920cd31a1_amd64",
+          "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:6bdef15c447107069382c76cbf89faccbc116ec62c9be9231b0a8edc0e63c0a5_ppc64le",
+          "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:9903bb78e5d0cc39d314e9bdaecf902ac4d24bee3f11b7658caaa381253c81c1_arm64",
+          "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:b6864990dd11208362570ff7642baf33d96690a9547ddb71403f5deb5578a761_s390x"
+        ],
+        "known_not_affected": [
+          "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:21bff8ab1b76db1507a96432d49df4e537ed66d1fed1c96434bde10bfdd62059_ppc64le",
+          "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:7c05fd1be9aa7427e565544975f7f85d4600c7eabfd22ff4f07e057e566496eb_arm64",
+          "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:84dee8a0455dca910bab7407bb8bc3151f788ae991aa9c7d9380e8c7c1a4014c_s390x",
+          "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:eb9abd40236e7752cd8b5d215ff8619d73e1fd5ff6abd0884409dcd442fb4eaf_amd64",
+          "8Base-GitOps-1.9:openshift-gitops-1/gitops-operator-bundle@sha256:d8725149c57d5de6c5c10d472cfd54721e8f8bf12e66e34c0311103a835a3081_amd64",
+          "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:399cd150882466cd9e301ea92e899b802980825082c7a5d0a780a81903af0fce_s390x",
+          "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:3eb502b1ef4886e5300c5cac0252f9000f1c71bb6c5f1a93758d01d36654be7e_arm64",
+          "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:847b14b3fae4d48b588174564b5a17177c141a8d4155442c146f4828642b86cc_ppc64le",
+          "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:b8ff5a1de115b5760c281f59a32831a3a6b949d65a15689d591da6849b297ee9_amd64"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-44487"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2242803",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2242803"
+        },
+        {
+          "category": "external",
+          "summary": "RHSB-2023-003",
+          "url": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2023-44487",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-44487"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2023-44487",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-44487"
+        },
+        {
+          "category": "external",
+          "summary": "https://github.com/dotnet/announcements/issues/277",
+          "url": "https://github.com/dotnet/announcements/issues/277"
+        },
+        {
+          "category": "external",
+          "summary": "https://pkg.go.dev/vuln/GO-2023-2102",
+          "url": "https://pkg.go.dev/vuln/GO-2023-2102"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487",
+          "url": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.nginx.com/blog/http-2-rapid-reset-attack-impacting-f5-nginx-products/",
+          "url": "https://www.nginx.com/blog/http-2-rapid-reset-attack-impacting-f5-nginx-products/"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "release_date": "2023-10-10T00:00:00+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2023-11-20T08:34:18+00:00",
+          "details": "Before applying this update, make sure all previously released errata relevant to your system have been applied.\n\nFor details on how to apply this update, refer to:\n\nhttps://access.redhat.com/articles/11258",
+          "product_ids": [
+            "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:08c50b13b7fd04f3756250ce727f75f9d8da1bf0dbb27fd2f1206850d9e7d0fc_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:5dda4516e7dd63cc711cd18e0569cdac873c2a3ae3bf41fd7645384e1aea0952_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:9afedd1e7109a88fbe381846a6a0a206b24ba3e62dd699aa750d4b7f28505080_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:b830502f20de70c8fc7f77a6c58409c00f6db79224f306f5f667fadfca59bd84_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:bd8aa96326b5c5e649634489941e19bc17cbe04bfeb00d1b362d7afe98277594_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:dd7e218067771217c00df8b4ed7b94faaa70f31596d8a8da796a1115f694fbfc_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:e432172e252f278ffe9d1e8bcf6c89c81cbef76e3755eb7b9f3d5ec4622a63e0_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:fbd5576fa614602b26677e91136d0c9c4722e0eb09672e3784ebdfe71737d3bd_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:14b1e455f6ba59777aec0298b64a21cf40d89429dcbc3dd59ad2f30c649d6f5f_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:2c5390ab43937ee0f089f56bd64752aa7d477d713d2eabf17fa7a48b3244e573_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:ae805dd6858d45e042b335240e450c5f5635546381f2cf755b4d0049f80e4bbd_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:f58dc92bdffd95385a51ecdff7677b49cc85b0a7718ca5f69301e6711a9bf04c_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:02bc04eaa379108c8cf99da5d89a4e8305ccb3c3921037c9b160d639c5c4de03_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:32da9518faee368da0902ba87c1ed95a03e75ea344a31c9af19a96a436a6ddf3_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:79f9227088dee48a79afd14732087c23ea0c6869c0dd167dac94365b225592ec_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:d491c7c8525393b4dc8277fae5639ee41ae4d6bbada83a212742e9683877f0b0_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:1e4441c4b21af05b97b4f4d5fdae767721ecc645a43f63611d18d3de87498805_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:21f03d5337d4177a908f63ce3558bc130a045fc45c6f6a4d2783de4e4b555e21_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:585361fa372d675855cb517e0305339f9856fecc7b1f89b31ad33bca3f9836b8_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:97acdfe9b2fba3a37f01e91efb4074eadcec204414ae7f2c0a426b71af60288c_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:1c546c5cdafd6ca78c3f5cb51d76bdc1c139fdbeee3eae0799a2550920cd31a1_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:6bdef15c447107069382c76cbf89faccbc116ec62c9be9231b0a8edc0e63c0a5_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:9903bb78e5d0cc39d314e9bdaecf902ac4d24bee3f11b7658caaa381253c81c1_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:b6864990dd11208362570ff7642baf33d96690a9547ddb71403f5deb5578a761_s390x"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2023:7345"
+        },
+        {
+          "category": "workaround",
+          "details": "Users are strongly urged to update their software as soon as fixes are available. \nThere are several mitigation approaches for this flaw. \n\n1. If circumstances permit, users may disable http2 endpoints to circumvent the flaw altogether until a fix is available.\n2. IP-based blocking or flood protection and rate control tools may be used at network endpoints to filter incoming traffic.\n3. Several package specific mitigations are also available. \n     a. nginx: https://www.nginx.com/blog/http-2-rapid-reset-attack-impacting-f5-nginx-products/\n     b. netty: https://github.com/netty/netty/security/advisories/GHSA-xpw8-rcwv-8f8p\n     c. haproxy: https://www.haproxy.com/blog/haproxy-is-not-affected-by-the-http-2-rapid-reset-attack-cve-2023-44487\n     d. nghttp2: https://github.com/nghttp2/nghttp2/security/advisories/GHSA-vx74-f528-fxqg\n     e. golang: The default stream concurrency limit in golang is 250 streams (requests) per HTTP/2 connection. This value may be adjusted in the golang.org/x/net/http2 package using the Server.MaxConcurrentStreams setting and the ConfigureServer function which are available in golang.org/x/net/http2.",
+          "product_ids": [
+            "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:08c50b13b7fd04f3756250ce727f75f9d8da1bf0dbb27fd2f1206850d9e7d0fc_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:5dda4516e7dd63cc711cd18e0569cdac873c2a3ae3bf41fd7645384e1aea0952_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:9afedd1e7109a88fbe381846a6a0a206b24ba3e62dd699aa750d4b7f28505080_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:b830502f20de70c8fc7f77a6c58409c00f6db79224f306f5f667fadfca59bd84_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:bd8aa96326b5c5e649634489941e19bc17cbe04bfeb00d1b362d7afe98277594_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:dd7e218067771217c00df8b4ed7b94faaa70f31596d8a8da796a1115f694fbfc_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:e432172e252f278ffe9d1e8bcf6c89c81cbef76e3755eb7b9f3d5ec4622a63e0_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:fbd5576fa614602b26677e91136d0c9c4722e0eb09672e3784ebdfe71737d3bd_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:21bff8ab1b76db1507a96432d49df4e537ed66d1fed1c96434bde10bfdd62059_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:7c05fd1be9aa7427e565544975f7f85d4600c7eabfd22ff4f07e057e566496eb_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:84dee8a0455dca910bab7407bb8bc3151f788ae991aa9c7d9380e8c7c1a4014c_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:eb9abd40236e7752cd8b5d215ff8619d73e1fd5ff6abd0884409dcd442fb4eaf_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:14b1e455f6ba59777aec0298b64a21cf40d89429dcbc3dd59ad2f30c649d6f5f_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:2c5390ab43937ee0f089f56bd64752aa7d477d713d2eabf17fa7a48b3244e573_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:ae805dd6858d45e042b335240e450c5f5635546381f2cf755b4d0049f80e4bbd_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:f58dc92bdffd95385a51ecdff7677b49cc85b0a7718ca5f69301e6711a9bf04c_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-operator-bundle@sha256:d8725149c57d5de6c5c10d472cfd54721e8f8bf12e66e34c0311103a835a3081_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:02bc04eaa379108c8cf99da5d89a4e8305ccb3c3921037c9b160d639c5c4de03_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:32da9518faee368da0902ba87c1ed95a03e75ea344a31c9af19a96a436a6ddf3_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:79f9227088dee48a79afd14732087c23ea0c6869c0dd167dac94365b225592ec_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:d491c7c8525393b4dc8277fae5639ee41ae4d6bbada83a212742e9683877f0b0_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:1e4441c4b21af05b97b4f4d5fdae767721ecc645a43f63611d18d3de87498805_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:21f03d5337d4177a908f63ce3558bc130a045fc45c6f6a4d2783de4e4b555e21_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:585361fa372d675855cb517e0305339f9856fecc7b1f89b31ad33bca3f9836b8_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:97acdfe9b2fba3a37f01e91efb4074eadcec204414ae7f2c0a426b71af60288c_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:1c546c5cdafd6ca78c3f5cb51d76bdc1c139fdbeee3eae0799a2550920cd31a1_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:6bdef15c447107069382c76cbf89faccbc116ec62c9be9231b0a8edc0e63c0a5_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:9903bb78e5d0cc39d314e9bdaecf902ac4d24bee3f11b7658caaa381253c81c1_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:b6864990dd11208362570ff7642baf33d96690a9547ddb71403f5deb5578a761_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:399cd150882466cd9e301ea92e899b802980825082c7a5d0a780a81903af0fce_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:3eb502b1ef4886e5300c5cac0252f9000f1c71bb6c5f1a93758d01d36654be7e_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:847b14b3fae4d48b588174564b5a17177c141a8d4155442c146f4828642b86cc_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:b8ff5a1de115b5760c281f59a32831a3a6b949d65a15689d591da6849b297ee9_amd64"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 7.5,
+            "baseSeverity": "HIGH",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:08c50b13b7fd04f3756250ce727f75f9d8da1bf0dbb27fd2f1206850d9e7d0fc_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:5dda4516e7dd63cc711cd18e0569cdac873c2a3ae3bf41fd7645384e1aea0952_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:9afedd1e7109a88fbe381846a6a0a206b24ba3e62dd699aa750d4b7f28505080_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/argo-rollouts-rhel8@sha256:b830502f20de70c8fc7f77a6c58409c00f6db79224f306f5f667fadfca59bd84_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:bd8aa96326b5c5e649634489941e19bc17cbe04bfeb00d1b362d7afe98277594_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:dd7e218067771217c00df8b4ed7b94faaa70f31596d8a8da796a1115f694fbfc_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:e432172e252f278ffe9d1e8bcf6c89c81cbef76e3755eb7b9f3d5ec4622a63e0_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/argocd-rhel8@sha256:fbd5576fa614602b26677e91136d0c9c4722e0eb09672e3784ebdfe71737d3bd_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:21bff8ab1b76db1507a96432d49df4e537ed66d1fed1c96434bde10bfdd62059_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:7c05fd1be9aa7427e565544975f7f85d4600c7eabfd22ff4f07e057e566496eb_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:84dee8a0455dca910bab7407bb8bc3151f788ae991aa9c7d9380e8c7c1a4014c_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/console-plugin-rhel8@sha256:eb9abd40236e7752cd8b5d215ff8619d73e1fd5ff6abd0884409dcd442fb4eaf_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:14b1e455f6ba59777aec0298b64a21cf40d89429dcbc3dd59ad2f30c649d6f5f_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:2c5390ab43937ee0f089f56bd64752aa7d477d713d2eabf17fa7a48b3244e573_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:ae805dd6858d45e042b335240e450c5f5635546381f2cf755b4d0049f80e4bbd_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/dex-rhel8@sha256:f58dc92bdffd95385a51ecdff7677b49cc85b0a7718ca5f69301e6711a9bf04c_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-operator-bundle@sha256:d8725149c57d5de6c5c10d472cfd54721e8f8bf12e66e34c0311103a835a3081_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:02bc04eaa379108c8cf99da5d89a4e8305ccb3c3921037c9b160d639c5c4de03_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:32da9518faee368da0902ba87c1ed95a03e75ea344a31c9af19a96a436a6ddf3_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:79f9227088dee48a79afd14732087c23ea0c6869c0dd167dac94365b225592ec_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8-operator@sha256:d491c7c8525393b4dc8277fae5639ee41ae4d6bbada83a212742e9683877f0b0_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:1e4441c4b21af05b97b4f4d5fdae767721ecc645a43f63611d18d3de87498805_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:21f03d5337d4177a908f63ce3558bc130a045fc45c6f6a4d2783de4e4b555e21_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:585361fa372d675855cb517e0305339f9856fecc7b1f89b31ad33bca3f9836b8_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/gitops-rhel8@sha256:97acdfe9b2fba3a37f01e91efb4074eadcec204414ae7f2c0a426b71af60288c_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:1c546c5cdafd6ca78c3f5cb51d76bdc1c139fdbeee3eae0799a2550920cd31a1_amd64",
+            "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:6bdef15c447107069382c76cbf89faccbc116ec62c9be9231b0a8edc0e63c0a5_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:9903bb78e5d0cc39d314e9bdaecf902ac4d24bee3f11b7658caaa381253c81c1_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/kam-delivery-rhel8@sha256:b6864990dd11208362570ff7642baf33d96690a9547ddb71403f5deb5578a761_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:399cd150882466cd9e301ea92e899b802980825082c7a5d0a780a81903af0fce_s390x",
+            "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:3eb502b1ef4886e5300c5cac0252f9000f1c71bb6c5f1a93758d01d36654be7e_arm64",
+            "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:847b14b3fae4d48b588174564b5a17177c141a8d4155442c146f4828642b86cc_ppc64le",
+            "8Base-GitOps-1.9:openshift-gitops-1/must-gather-rhel8@sha256:b8ff5a1de115b5760c281f59a32831a3a6b949d65a15689d591da6849b297ee9_amd64"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "exploit_status",
+          "date": "2023-10-10T00:00:00+00:00",
+          "details": "CISA: https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "category": "impact",
+          "details": "Important"
+        }
+      ],
+      "title": "HTTP/2: Multiple HTTP/2 enabled web servers are vulnerable to a DDoS attack (Rapid Reset Attack)"
+    }
+  ]
+}

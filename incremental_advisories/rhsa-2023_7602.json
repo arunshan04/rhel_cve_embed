@@ -1,0 +1,779 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "namespace": "https://access.redhat.com/security/updates/classification/",
+      "text": "Important"
+    },
+    "category": "csaf_security_advisory",
+    "csaf_version": "2.0",
+    "distribution": {
+      "text": "Copyright \u00a9 Red Hat, Inc. All rights reserved.",
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "en",
+    "notes": [
+      {
+        "category": "summary",
+        "text": "Red Hat OpenShift Container Platform release 4.13.25 is now available with updates to packages and images that fix several bugs.\n\nThis release includes a security update for Red Hat OpenShift Container Platform 4.13.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+        "title": "Topic"
+      },
+      {
+        "category": "general",
+        "text": "Red Hat OpenShift Container Platform is Red Hat's cloud computing Kubernetes application platform solution designed for on-premise or private cloud deployments.\n\nThis advisory contains the RPM packages for Red Hat OpenShift Container Platform 4.13.25. See the following advisory for the container images for this release:\n\nhttps://access.redhat.com/errata/RHSA-2023:7604\n\nSecurity Fix(es):\n\n* golang: net/http, x/net/http2: rapid stream resets can cause excessive work (Rapid Reset Attack) (CVE-2023-39325)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAll OpenShift Container Platform 4.13 users are advised to upgrade to these updated packages and images when they are available in the appropriate release channel. To check for available updates, use the OpenShift CLI (oc) or web console. Instructions for upgrading a cluster are available at https://docs.openshift.com/container-platform/4.13/updating/updating-cluster-cli.html",
+        "title": "Details"
+      },
+      {
+        "category": "legal_disclaimer",
+        "text": "This content is licensed under the Creative Commons Attribution 4.0 International License (https://creativecommons.org/licenses/by/4.0/). If you distribute this content, or a modified version of it, you must provide attribution to Red Hat Inc. and provide a link to the original.",
+        "title": "Terms of Use"
+      }
+    ],
+    "publisher": {
+      "category": "vendor",
+      "contact_details": "https://access.redhat.com/security/team/contact/",
+      "issuing_authority": "Red Hat Product Security is responsible for vulnerability handling across all Red Hat products and services.",
+      "name": "Red Hat Product Security",
+      "namespace": "https://www.redhat.com"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "https://access.redhat.com/errata/RHSA-2023:7602",
+        "url": "https://access.redhat.com/errata/RHSA-2023:7602"
+      },
+      {
+        "category": "external",
+        "summary": "https://access.redhat.com/security/updates/classification/#important",
+        "url": "https://access.redhat.com/security/updates/classification/#important"
+      },
+      {
+        "category": "external",
+        "summary": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003",
+        "url": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003"
+      },
+      {
+        "category": "external",
+        "summary": "2243296",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2243296"
+      },
+      {
+        "category": "self",
+        "summary": "Canonical URL",
+        "url": "https://security.access.redhat.com/data/csaf/v2/advisories/2023/rhsa-2023_7602.json"
+      }
+    ],
+    "title": "Red Hat Security Advisory: OpenShift Container Platform 4.13.25 security and extras update",
+    "tracking": {
+      "current_release_date": "2025-07-01T14:21:59+00:00",
+      "generator": {
+        "date": "2025-07-01T14:21:59+00:00",
+        "engine": {
+          "name": "Red Hat SDEngine",
+          "version": "4.6.3"
+        }
+      },
+      "id": "RHSA-2023:7602",
+      "initial_release_date": "2023-12-06T00:16:04+00:00",
+      "revision_history": [
+        {
+          "date": "2023-12-06T00:16:04+00:00",
+          "number": "1",
+          "summary": "Initial version"
+        },
+        {
+          "date": "2023-12-06T00:16:04+00:00",
+          "number": "2",
+          "summary": "Last updated version"
+        },
+        {
+          "date": "2025-07-01T14:21:59+00:00",
+          "number": "3",
+          "summary": "Last generated version"
+        }
+      ],
+      "status": "final",
+      "version": "3"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_name",
+                "name": "Red Hat OpenShift Container Platform 4.13",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.13",
+                  "product_id": "8Base-RHOSE-4.13",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:4.13::el8"
+                  }
+                }
+              }
+            ],
+            "category": "product_family",
+            "name": "Red Hat OpenShift Enterprise"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-egress-dns-proxy@sha256:5a1bbd8b982cb7845cc35ab4072fefa671294f9ba9c9beaed304e5965ef9aa5b_ppc64le",
+                "product": {
+                  "name": "openshift4/ose-egress-dns-proxy@sha256:5a1bbd8b982cb7845cc35ab4072fefa671294f9ba9c9beaed304e5965ef9aa5b_ppc64le",
+                  "product_id": "openshift4/ose-egress-dns-proxy@sha256:5a1bbd8b982cb7845cc35ab4072fefa671294f9ba9c9beaed304e5965ef9aa5b_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-egress-dns-proxy@sha256:5a1bbd8b982cb7845cc35ab4072fefa671294f9ba9c9beaed304e5965ef9aa5b?arch=ppc64le&repository_url=registry.redhat.io/openshift4/ose-egress-dns-proxy&tag=v4.13.0-202311282007.p0.g0465934.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:97980eeba34e1639af0abfbbcff93fa3d06cb3df3b09ae3f7e042f86e75f109b_ppc64le",
+                "product": {
+                  "name": "openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:97980eeba34e1639af0abfbbcff93fa3d06cb3df3b09ae3f7e042f86e75f109b_ppc64le",
+                  "product_id": "openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:97980eeba34e1639af0abfbbcff93fa3d06cb3df3b09ae3f7e042f86e75f109b_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-openshift-proxy-pull-test-rhel8@sha256:97980eeba34e1639af0abfbbcff93fa3d06cb3df3b09ae3f7e042f86e75f109b?arch=ppc64le&repository_url=registry.redhat.io/openshift4/ose-openshift-proxy-pull-test-rhel8&tag=v4.13.0-202311270950.p0.ge42108b.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-sriov-dp-admission-controller@sha256:da72430cc6b36cb1a1f37c34cff0732bd3f5c867146521cf834a306c92992e47_ppc64le",
+                "product": {
+                  "name": "openshift4/ose-sriov-dp-admission-controller@sha256:da72430cc6b36cb1a1f37c34cff0732bd3f5c867146521cf834a306c92992e47_ppc64le",
+                  "product_id": "openshift4/ose-sriov-dp-admission-controller@sha256:da72430cc6b36cb1a1f37c34cff0732bd3f5c867146521cf834a306c92992e47_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-sriov-dp-admission-controller@sha256:da72430cc6b36cb1a1f37c34cff0732bd3f5c867146521cf834a306c92992e47?arch=ppc64le&repository_url=registry.redhat.io/openshift4/ose-sriov-dp-admission-controller&tag=v4.13.0-202311231731.p0.g1b5cdd2.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-sriov-network-config-daemon@sha256:bb98d675b56c7e929044db871e7243bc5da16e62ac8c3338b0b420e0dccbcdef_ppc64le",
+                "product": {
+                  "name": "openshift4/ose-sriov-network-config-daemon@sha256:bb98d675b56c7e929044db871e7243bc5da16e62ac8c3338b0b420e0dccbcdef_ppc64le",
+                  "product_id": "openshift4/ose-sriov-network-config-daemon@sha256:bb98d675b56c7e929044db871e7243bc5da16e62ac8c3338b0b420e0dccbcdef_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-sriov-network-config-daemon@sha256:bb98d675b56c7e929044db871e7243bc5da16e62ac8c3338b0b420e0dccbcdef?arch=ppc64le&repository_url=registry.redhat.io/openshift4/ose-sriov-network-config-daemon&tag=v4.13.0-202311230949.p0.g105ae66.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-sriov-network-operator@sha256:0c998da62cdf956ab7a9dbd0aa2e3a0b7853e093c7e6885acf8f62af1c5085e0_ppc64le",
+                "product": {
+                  "name": "openshift4/ose-sriov-network-operator@sha256:0c998da62cdf956ab7a9dbd0aa2e3a0b7853e093c7e6885acf8f62af1c5085e0_ppc64le",
+                  "product_id": "openshift4/ose-sriov-network-operator@sha256:0c998da62cdf956ab7a9dbd0aa2e3a0b7853e093c7e6885acf8f62af1c5085e0_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-sriov-network-operator@sha256:0c998da62cdf956ab7a9dbd0aa2e3a0b7853e093c7e6885acf8f62af1c5085e0?arch=ppc64le&repository_url=registry.redhat.io/openshift4/ose-sriov-network-operator&tag=v4.13.0-202311231731.p0.g105ae66.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-sriov-network-webhook@sha256:d37a1d918d24d132879c7d4e2aa26438bd7a609f7f19370f24800f44a8186446_ppc64le",
+                "product": {
+                  "name": "openshift4/ose-sriov-network-webhook@sha256:d37a1d918d24d132879c7d4e2aa26438bd7a609f7f19370f24800f44a8186446_ppc64le",
+                  "product_id": "openshift4/ose-sriov-network-webhook@sha256:d37a1d918d24d132879c7d4e2aa26438bd7a609f7f19370f24800f44a8186446_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-sriov-network-webhook@sha256:d37a1d918d24d132879c7d4e2aa26438bd7a609f7f19370f24800f44a8186446?arch=ppc64le&repository_url=registry.redhat.io/openshift4/ose-sriov-network-webhook&tag=v4.13.0-202311230949.p0.g105ae66.assembly.stream"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "ppc64le"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-egress-dns-proxy@sha256:e6c238ac6ce7c41c4ddcf1af529973e9c25146e01451980b167f151906e6feb9_amd64",
+                "product": {
+                  "name": "openshift4/ose-egress-dns-proxy@sha256:e6c238ac6ce7c41c4ddcf1af529973e9c25146e01451980b167f151906e6feb9_amd64",
+                  "product_id": "openshift4/ose-egress-dns-proxy@sha256:e6c238ac6ce7c41c4ddcf1af529973e9c25146e01451980b167f151906e6feb9_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-egress-dns-proxy@sha256:e6c238ac6ce7c41c4ddcf1af529973e9c25146e01451980b167f151906e6feb9?arch=amd64&repository_url=registry.redhat.io/openshift4/ose-egress-dns-proxy&tag=v4.13.0-202311282007.p0.g0465934.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:39a904fca958a3a5aaabf123d2e6d0dbec88c35936a0ac77991f165ac31ecb7d_amd64",
+                "product": {
+                  "name": "openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:39a904fca958a3a5aaabf123d2e6d0dbec88c35936a0ac77991f165ac31ecb7d_amd64",
+                  "product_id": "openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:39a904fca958a3a5aaabf123d2e6d0dbec88c35936a0ac77991f165ac31ecb7d_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-openshift-proxy-pull-test-rhel8@sha256:39a904fca958a3a5aaabf123d2e6d0dbec88c35936a0ac77991f165ac31ecb7d?arch=amd64&repository_url=registry.redhat.io/openshift4/ose-openshift-proxy-pull-test-rhel8&tag=v4.13.0-202311270950.p0.ge42108b.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-sriov-dp-admission-controller@sha256:1a24b512d3611d1c318b47c703cbfe3d4005bc3c6dd6139a78075979ad3dcdd4_amd64",
+                "product": {
+                  "name": "openshift4/ose-sriov-dp-admission-controller@sha256:1a24b512d3611d1c318b47c703cbfe3d4005bc3c6dd6139a78075979ad3dcdd4_amd64",
+                  "product_id": "openshift4/ose-sriov-dp-admission-controller@sha256:1a24b512d3611d1c318b47c703cbfe3d4005bc3c6dd6139a78075979ad3dcdd4_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-sriov-dp-admission-controller@sha256:1a24b512d3611d1c318b47c703cbfe3d4005bc3c6dd6139a78075979ad3dcdd4?arch=amd64&repository_url=registry.redhat.io/openshift4/ose-sriov-dp-admission-controller&tag=v4.13.0-202311231731.p0.g1b5cdd2.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-sriov-network-config-daemon@sha256:3c250a78235ea5ceae8826047cd4b52e29b6922c1d939041b8c8e907ffd95291_amd64",
+                "product": {
+                  "name": "openshift4/ose-sriov-network-config-daemon@sha256:3c250a78235ea5ceae8826047cd4b52e29b6922c1d939041b8c8e907ffd95291_amd64",
+                  "product_id": "openshift4/ose-sriov-network-config-daemon@sha256:3c250a78235ea5ceae8826047cd4b52e29b6922c1d939041b8c8e907ffd95291_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-sriov-network-config-daemon@sha256:3c250a78235ea5ceae8826047cd4b52e29b6922c1d939041b8c8e907ffd95291?arch=amd64&repository_url=registry.redhat.io/openshift4/ose-sriov-network-config-daemon&tag=v4.13.0-202311230949.p0.g105ae66.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-sriov-network-operator@sha256:b4f17c82dace3b04ee6fefe772aad5c5238be1e7f19fa627e35f05e8f44a7734_amd64",
+                "product": {
+                  "name": "openshift4/ose-sriov-network-operator@sha256:b4f17c82dace3b04ee6fefe772aad5c5238be1e7f19fa627e35f05e8f44a7734_amd64",
+                  "product_id": "openshift4/ose-sriov-network-operator@sha256:b4f17c82dace3b04ee6fefe772aad5c5238be1e7f19fa627e35f05e8f44a7734_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-sriov-network-operator@sha256:b4f17c82dace3b04ee6fefe772aad5c5238be1e7f19fa627e35f05e8f44a7734?arch=amd64&repository_url=registry.redhat.io/openshift4/ose-sriov-network-operator&tag=v4.13.0-202311231731.p0.g105ae66.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-sriov-network-webhook@sha256:390e4d22aa8c1fc05bfd2b4c80790896aff863f32aa98eb822852c8af01e9e25_amd64",
+                "product": {
+                  "name": "openshift4/ose-sriov-network-webhook@sha256:390e4d22aa8c1fc05bfd2b4c80790896aff863f32aa98eb822852c8af01e9e25_amd64",
+                  "product_id": "openshift4/ose-sriov-network-webhook@sha256:390e4d22aa8c1fc05bfd2b4c80790896aff863f32aa98eb822852c8af01e9e25_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-sriov-network-webhook@sha256:390e4d22aa8c1fc05bfd2b4c80790896aff863f32aa98eb822852c8af01e9e25?arch=amd64&repository_url=registry.redhat.io/openshift4/ose-sriov-network-webhook&tag=v4.13.0-202311230949.p0.g105ae66.assembly.stream"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "amd64"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-egress-dns-proxy@sha256:5996c624d7d6f83d68b9bba67f741ffc92278b341c59e6a4ee2070f572216f76_arm64",
+                "product": {
+                  "name": "openshift4/ose-egress-dns-proxy@sha256:5996c624d7d6f83d68b9bba67f741ffc92278b341c59e6a4ee2070f572216f76_arm64",
+                  "product_id": "openshift4/ose-egress-dns-proxy@sha256:5996c624d7d6f83d68b9bba67f741ffc92278b341c59e6a4ee2070f572216f76_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-egress-dns-proxy@sha256:5996c624d7d6f83d68b9bba67f741ffc92278b341c59e6a4ee2070f572216f76?arch=arm64&repository_url=registry.redhat.io/openshift4/ose-egress-dns-proxy&tag=v4.13.0-202311282007.p0.g0465934.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:3cdde61014e85721fe8c657d7ce835da41917f373fa11d3bdcfc923272fd64c8_arm64",
+                "product": {
+                  "name": "openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:3cdde61014e85721fe8c657d7ce835da41917f373fa11d3bdcfc923272fd64c8_arm64",
+                  "product_id": "openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:3cdde61014e85721fe8c657d7ce835da41917f373fa11d3bdcfc923272fd64c8_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-openshift-proxy-pull-test-rhel8@sha256:3cdde61014e85721fe8c657d7ce835da41917f373fa11d3bdcfc923272fd64c8?arch=arm64&repository_url=registry.redhat.io/openshift4/ose-openshift-proxy-pull-test-rhel8&tag=v4.13.0-202311270950.p0.ge42108b.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-sriov-dp-admission-controller@sha256:cb3daa4e346e3a87e1f95978c5602df689bbbbefcdb7d38879f6b007122037d4_arm64",
+                "product": {
+                  "name": "openshift4/ose-sriov-dp-admission-controller@sha256:cb3daa4e346e3a87e1f95978c5602df689bbbbefcdb7d38879f6b007122037d4_arm64",
+                  "product_id": "openshift4/ose-sriov-dp-admission-controller@sha256:cb3daa4e346e3a87e1f95978c5602df689bbbbefcdb7d38879f6b007122037d4_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-sriov-dp-admission-controller@sha256:cb3daa4e346e3a87e1f95978c5602df689bbbbefcdb7d38879f6b007122037d4?arch=arm64&repository_url=registry.redhat.io/openshift4/ose-sriov-dp-admission-controller&tag=v4.13.0-202311231731.p0.g1b5cdd2.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-sriov-network-config-daemon@sha256:ddb16b814c5699dd1aaed537c4dca85fcef43a3effd95c63630b16d6f031b84b_arm64",
+                "product": {
+                  "name": "openshift4/ose-sriov-network-config-daemon@sha256:ddb16b814c5699dd1aaed537c4dca85fcef43a3effd95c63630b16d6f031b84b_arm64",
+                  "product_id": "openshift4/ose-sriov-network-config-daemon@sha256:ddb16b814c5699dd1aaed537c4dca85fcef43a3effd95c63630b16d6f031b84b_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-sriov-network-config-daemon@sha256:ddb16b814c5699dd1aaed537c4dca85fcef43a3effd95c63630b16d6f031b84b?arch=arm64&repository_url=registry.redhat.io/openshift4/ose-sriov-network-config-daemon&tag=v4.13.0-202311230949.p0.g105ae66.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-sriov-network-operator@sha256:89ddf537c0f2e16810b4b10a1834c4c14207103991117e0b21740fc003f2ac06_arm64",
+                "product": {
+                  "name": "openshift4/ose-sriov-network-operator@sha256:89ddf537c0f2e16810b4b10a1834c4c14207103991117e0b21740fc003f2ac06_arm64",
+                  "product_id": "openshift4/ose-sriov-network-operator@sha256:89ddf537c0f2e16810b4b10a1834c4c14207103991117e0b21740fc003f2ac06_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-sriov-network-operator@sha256:89ddf537c0f2e16810b4b10a1834c4c14207103991117e0b21740fc003f2ac06?arch=arm64&repository_url=registry.redhat.io/openshift4/ose-sriov-network-operator&tag=v4.13.0-202311231731.p0.g105ae66.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-sriov-network-webhook@sha256:4429e92de0a15010210fecca5dd57e6d3437b3c68d8598fc318facf8c519caa4_arm64",
+                "product": {
+                  "name": "openshift4/ose-sriov-network-webhook@sha256:4429e92de0a15010210fecca5dd57e6d3437b3c68d8598fc318facf8c519caa4_arm64",
+                  "product_id": "openshift4/ose-sriov-network-webhook@sha256:4429e92de0a15010210fecca5dd57e6d3437b3c68d8598fc318facf8c519caa4_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-sriov-network-webhook@sha256:4429e92de0a15010210fecca5dd57e6d3437b3c68d8598fc318facf8c519caa4?arch=arm64&repository_url=registry.redhat.io/openshift4/ose-sriov-network-webhook&tag=v4.13.0-202311230949.p0.g105ae66.assembly.stream"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "arm64"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-egress-dns-proxy@sha256:6c19b0efdbaa0249e1c5a4cf22ecaec1733fac97c914a34a2558d870ad6d4a98_s390x",
+                "product": {
+                  "name": "openshift4/ose-egress-dns-proxy@sha256:6c19b0efdbaa0249e1c5a4cf22ecaec1733fac97c914a34a2558d870ad6d4a98_s390x",
+                  "product_id": "openshift4/ose-egress-dns-proxy@sha256:6c19b0efdbaa0249e1c5a4cf22ecaec1733fac97c914a34a2558d870ad6d4a98_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-egress-dns-proxy@sha256:6c19b0efdbaa0249e1c5a4cf22ecaec1733fac97c914a34a2558d870ad6d4a98?arch=s390x&repository_url=registry.redhat.io/openshift4/ose-egress-dns-proxy&tag=v4.13.0-202311282007.p0.g0465934.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:5fd316b3d9d7d48567cbbb856f6dabb9a3971ce87ca403146ef51b7a79695965_s390x",
+                "product": {
+                  "name": "openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:5fd316b3d9d7d48567cbbb856f6dabb9a3971ce87ca403146ef51b7a79695965_s390x",
+                  "product_id": "openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:5fd316b3d9d7d48567cbbb856f6dabb9a3971ce87ca403146ef51b7a79695965_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-openshift-proxy-pull-test-rhel8@sha256:5fd316b3d9d7d48567cbbb856f6dabb9a3971ce87ca403146ef51b7a79695965?arch=s390x&repository_url=registry.redhat.io/openshift4/ose-openshift-proxy-pull-test-rhel8&tag=v4.13.0-202311270950.p0.ge42108b.assembly.stream"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "s390x"
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      }
+    ],
+    "relationships": [
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-egress-dns-proxy@sha256:5996c624d7d6f83d68b9bba67f741ffc92278b341c59e6a4ee2070f572216f76_arm64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-egress-dns-proxy@sha256:5996c624d7d6f83d68b9bba67f741ffc92278b341c59e6a4ee2070f572216f76_arm64"
+        },
+        "product_reference": "openshift4/ose-egress-dns-proxy@sha256:5996c624d7d6f83d68b9bba67f741ffc92278b341c59e6a4ee2070f572216f76_arm64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-egress-dns-proxy@sha256:5a1bbd8b982cb7845cc35ab4072fefa671294f9ba9c9beaed304e5965ef9aa5b_ppc64le as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-egress-dns-proxy@sha256:5a1bbd8b982cb7845cc35ab4072fefa671294f9ba9c9beaed304e5965ef9aa5b_ppc64le"
+        },
+        "product_reference": "openshift4/ose-egress-dns-proxy@sha256:5a1bbd8b982cb7845cc35ab4072fefa671294f9ba9c9beaed304e5965ef9aa5b_ppc64le",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-egress-dns-proxy@sha256:6c19b0efdbaa0249e1c5a4cf22ecaec1733fac97c914a34a2558d870ad6d4a98_s390x as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-egress-dns-proxy@sha256:6c19b0efdbaa0249e1c5a4cf22ecaec1733fac97c914a34a2558d870ad6d4a98_s390x"
+        },
+        "product_reference": "openshift4/ose-egress-dns-proxy@sha256:6c19b0efdbaa0249e1c5a4cf22ecaec1733fac97c914a34a2558d870ad6d4a98_s390x",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-egress-dns-proxy@sha256:e6c238ac6ce7c41c4ddcf1af529973e9c25146e01451980b167f151906e6feb9_amd64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-egress-dns-proxy@sha256:e6c238ac6ce7c41c4ddcf1af529973e9c25146e01451980b167f151906e6feb9_amd64"
+        },
+        "product_reference": "openshift4/ose-egress-dns-proxy@sha256:e6c238ac6ce7c41c4ddcf1af529973e9c25146e01451980b167f151906e6feb9_amd64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:39a904fca958a3a5aaabf123d2e6d0dbec88c35936a0ac77991f165ac31ecb7d_amd64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:39a904fca958a3a5aaabf123d2e6d0dbec88c35936a0ac77991f165ac31ecb7d_amd64"
+        },
+        "product_reference": "openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:39a904fca958a3a5aaabf123d2e6d0dbec88c35936a0ac77991f165ac31ecb7d_amd64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:3cdde61014e85721fe8c657d7ce835da41917f373fa11d3bdcfc923272fd64c8_arm64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:3cdde61014e85721fe8c657d7ce835da41917f373fa11d3bdcfc923272fd64c8_arm64"
+        },
+        "product_reference": "openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:3cdde61014e85721fe8c657d7ce835da41917f373fa11d3bdcfc923272fd64c8_arm64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:5fd316b3d9d7d48567cbbb856f6dabb9a3971ce87ca403146ef51b7a79695965_s390x as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:5fd316b3d9d7d48567cbbb856f6dabb9a3971ce87ca403146ef51b7a79695965_s390x"
+        },
+        "product_reference": "openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:5fd316b3d9d7d48567cbbb856f6dabb9a3971ce87ca403146ef51b7a79695965_s390x",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:97980eeba34e1639af0abfbbcff93fa3d06cb3df3b09ae3f7e042f86e75f109b_ppc64le as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:97980eeba34e1639af0abfbbcff93fa3d06cb3df3b09ae3f7e042f86e75f109b_ppc64le"
+        },
+        "product_reference": "openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:97980eeba34e1639af0abfbbcff93fa3d06cb3df3b09ae3f7e042f86e75f109b_ppc64le",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-sriov-dp-admission-controller@sha256:1a24b512d3611d1c318b47c703cbfe3d4005bc3c6dd6139a78075979ad3dcdd4_amd64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-sriov-dp-admission-controller@sha256:1a24b512d3611d1c318b47c703cbfe3d4005bc3c6dd6139a78075979ad3dcdd4_amd64"
+        },
+        "product_reference": "openshift4/ose-sriov-dp-admission-controller@sha256:1a24b512d3611d1c318b47c703cbfe3d4005bc3c6dd6139a78075979ad3dcdd4_amd64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-sriov-dp-admission-controller@sha256:cb3daa4e346e3a87e1f95978c5602df689bbbbefcdb7d38879f6b007122037d4_arm64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-sriov-dp-admission-controller@sha256:cb3daa4e346e3a87e1f95978c5602df689bbbbefcdb7d38879f6b007122037d4_arm64"
+        },
+        "product_reference": "openshift4/ose-sriov-dp-admission-controller@sha256:cb3daa4e346e3a87e1f95978c5602df689bbbbefcdb7d38879f6b007122037d4_arm64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-sriov-dp-admission-controller@sha256:da72430cc6b36cb1a1f37c34cff0732bd3f5c867146521cf834a306c92992e47_ppc64le as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-sriov-dp-admission-controller@sha256:da72430cc6b36cb1a1f37c34cff0732bd3f5c867146521cf834a306c92992e47_ppc64le"
+        },
+        "product_reference": "openshift4/ose-sriov-dp-admission-controller@sha256:da72430cc6b36cb1a1f37c34cff0732bd3f5c867146521cf834a306c92992e47_ppc64le",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-sriov-network-config-daemon@sha256:3c250a78235ea5ceae8826047cd4b52e29b6922c1d939041b8c8e907ffd95291_amd64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-sriov-network-config-daemon@sha256:3c250a78235ea5ceae8826047cd4b52e29b6922c1d939041b8c8e907ffd95291_amd64"
+        },
+        "product_reference": "openshift4/ose-sriov-network-config-daemon@sha256:3c250a78235ea5ceae8826047cd4b52e29b6922c1d939041b8c8e907ffd95291_amd64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-sriov-network-config-daemon@sha256:bb98d675b56c7e929044db871e7243bc5da16e62ac8c3338b0b420e0dccbcdef_ppc64le as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-sriov-network-config-daemon@sha256:bb98d675b56c7e929044db871e7243bc5da16e62ac8c3338b0b420e0dccbcdef_ppc64le"
+        },
+        "product_reference": "openshift4/ose-sriov-network-config-daemon@sha256:bb98d675b56c7e929044db871e7243bc5da16e62ac8c3338b0b420e0dccbcdef_ppc64le",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-sriov-network-config-daemon@sha256:ddb16b814c5699dd1aaed537c4dca85fcef43a3effd95c63630b16d6f031b84b_arm64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-sriov-network-config-daemon@sha256:ddb16b814c5699dd1aaed537c4dca85fcef43a3effd95c63630b16d6f031b84b_arm64"
+        },
+        "product_reference": "openshift4/ose-sriov-network-config-daemon@sha256:ddb16b814c5699dd1aaed537c4dca85fcef43a3effd95c63630b16d6f031b84b_arm64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-sriov-network-operator@sha256:0c998da62cdf956ab7a9dbd0aa2e3a0b7853e093c7e6885acf8f62af1c5085e0_ppc64le as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-sriov-network-operator@sha256:0c998da62cdf956ab7a9dbd0aa2e3a0b7853e093c7e6885acf8f62af1c5085e0_ppc64le"
+        },
+        "product_reference": "openshift4/ose-sriov-network-operator@sha256:0c998da62cdf956ab7a9dbd0aa2e3a0b7853e093c7e6885acf8f62af1c5085e0_ppc64le",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-sriov-network-operator@sha256:89ddf537c0f2e16810b4b10a1834c4c14207103991117e0b21740fc003f2ac06_arm64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-sriov-network-operator@sha256:89ddf537c0f2e16810b4b10a1834c4c14207103991117e0b21740fc003f2ac06_arm64"
+        },
+        "product_reference": "openshift4/ose-sriov-network-operator@sha256:89ddf537c0f2e16810b4b10a1834c4c14207103991117e0b21740fc003f2ac06_arm64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-sriov-network-operator@sha256:b4f17c82dace3b04ee6fefe772aad5c5238be1e7f19fa627e35f05e8f44a7734_amd64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-sriov-network-operator@sha256:b4f17c82dace3b04ee6fefe772aad5c5238be1e7f19fa627e35f05e8f44a7734_amd64"
+        },
+        "product_reference": "openshift4/ose-sriov-network-operator@sha256:b4f17c82dace3b04ee6fefe772aad5c5238be1e7f19fa627e35f05e8f44a7734_amd64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-sriov-network-webhook@sha256:390e4d22aa8c1fc05bfd2b4c80790896aff863f32aa98eb822852c8af01e9e25_amd64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-sriov-network-webhook@sha256:390e4d22aa8c1fc05bfd2b4c80790896aff863f32aa98eb822852c8af01e9e25_amd64"
+        },
+        "product_reference": "openshift4/ose-sriov-network-webhook@sha256:390e4d22aa8c1fc05bfd2b4c80790896aff863f32aa98eb822852c8af01e9e25_amd64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-sriov-network-webhook@sha256:4429e92de0a15010210fecca5dd57e6d3437b3c68d8598fc318facf8c519caa4_arm64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-sriov-network-webhook@sha256:4429e92de0a15010210fecca5dd57e6d3437b3c68d8598fc318facf8c519caa4_arm64"
+        },
+        "product_reference": "openshift4/ose-sriov-network-webhook@sha256:4429e92de0a15010210fecca5dd57e6d3437b3c68d8598fc318facf8c519caa4_arm64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-sriov-network-webhook@sha256:d37a1d918d24d132879c7d4e2aa26438bd7a609f7f19370f24800f44a8186446_ppc64le as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-sriov-network-webhook@sha256:d37a1d918d24d132879c7d4e2aa26438bd7a609f7f19370f24800f44a8186446_ppc64le"
+        },
+        "product_reference": "openshift4/ose-sriov-network-webhook@sha256:d37a1d918d24d132879c7d4e2aa26438bd7a609f7f19370f24800f44a8186446_ppc64le",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2023-39325",
+      "cwe": {
+        "id": "CWE-400",
+        "name": "Uncontrolled Resource Consumption"
+      },
+      "discovery_date": "2023-10-10T00:00:00+00:00",
+      "flags": [
+        {
+          "label": "vulnerable_code_not_present",
+          "product_ids": [
+            "8Base-RHOSE-4.13:openshift4/ose-egress-dns-proxy@sha256:5996c624d7d6f83d68b9bba67f741ffc92278b341c59e6a4ee2070f572216f76_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-egress-dns-proxy@sha256:5a1bbd8b982cb7845cc35ab4072fefa671294f9ba9c9beaed304e5965ef9aa5b_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-egress-dns-proxy@sha256:6c19b0efdbaa0249e1c5a4cf22ecaec1733fac97c914a34a2558d870ad6d4a98_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-egress-dns-proxy@sha256:e6c238ac6ce7c41c4ddcf1af529973e9c25146e01451980b167f151906e6feb9_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:39a904fca958a3a5aaabf123d2e6d0dbec88c35936a0ac77991f165ac31ecb7d_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:3cdde61014e85721fe8c657d7ce835da41917f373fa11d3bdcfc923272fd64c8_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:5fd316b3d9d7d48567cbbb856f6dabb9a3971ce87ca403146ef51b7a79695965_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:97980eeba34e1639af0abfbbcff93fa3d06cb3df3b09ae3f7e042f86e75f109b_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-network-config-daemon@sha256:3c250a78235ea5ceae8826047cd4b52e29b6922c1d939041b8c8e907ffd95291_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-network-config-daemon@sha256:bb98d675b56c7e929044db871e7243bc5da16e62ac8c3338b0b420e0dccbcdef_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-network-config-daemon@sha256:ddb16b814c5699dd1aaed537c4dca85fcef43a3effd95c63630b16d6f031b84b_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-network-operator@sha256:0c998da62cdf956ab7a9dbd0aa2e3a0b7853e093c7e6885acf8f62af1c5085e0_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-network-operator@sha256:89ddf537c0f2e16810b4b10a1834c4c14207103991117e0b21740fc003f2ac06_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-network-operator@sha256:b4f17c82dace3b04ee6fefe772aad5c5238be1e7f19fa627e35f05e8f44a7734_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-network-webhook@sha256:390e4d22aa8c1fc05bfd2b4c80790896aff863f32aa98eb822852c8af01e9e25_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-network-webhook@sha256:4429e92de0a15010210fecca5dd57e6d3437b3c68d8598fc318facf8c519caa4_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-network-webhook@sha256:d37a1d918d24d132879c7d4e2aa26438bd7a609f7f19370f24800f44a8186446_ppc64le"
+          ]
+        }
+      ],
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2243296"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A flaw was found in handling multiplexed streams in the HTTP/2 protocol. A client can repeatedly make a request for a new multiplex stream and immediately send an RST_STREAM frame to cancel it. This creates extra work for the server setting up and tearing down the streams while not hitting any server-side limit for the maximum number of active streams per connection, resulting in a denial of service due to server resource consumption. Red Hat has rated the severity of this flaw as 'Important' as the US Cybersecurity and Infrastructure Security Agency (CISA) declared this vulnerability an active exploit.\r\n\r\nCVE-2023-39325 was assigned for the `Rapid Reset Attack` in the Go language packages.",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "golang: net/http, x/net/http2: rapid stream resets can cause excessive work (CVE-2023-44487)",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "other",
+          "text": "This CVE is related to CVE-2023-44487.\n\nThe majority of RHEL utilities are not long-running applications; instead, they are command-line tools. These tools utilize Golang package as build-time dependency, which is why they are classified as having a \"Moderate\" level of impact.",
+          "title": "Statement"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "8Base-RHOSE-4.13:openshift4/ose-sriov-dp-admission-controller@sha256:1a24b512d3611d1c318b47c703cbfe3d4005bc3c6dd6139a78075979ad3dcdd4_amd64",
+          "8Base-RHOSE-4.13:openshift4/ose-sriov-dp-admission-controller@sha256:cb3daa4e346e3a87e1f95978c5602df689bbbbefcdb7d38879f6b007122037d4_arm64",
+          "8Base-RHOSE-4.13:openshift4/ose-sriov-dp-admission-controller@sha256:da72430cc6b36cb1a1f37c34cff0732bd3f5c867146521cf834a306c92992e47_ppc64le"
+        ],
+        "known_not_affected": [
+          "8Base-RHOSE-4.13:openshift4/ose-egress-dns-proxy@sha256:5996c624d7d6f83d68b9bba67f741ffc92278b341c59e6a4ee2070f572216f76_arm64",
+          "8Base-RHOSE-4.13:openshift4/ose-egress-dns-proxy@sha256:5a1bbd8b982cb7845cc35ab4072fefa671294f9ba9c9beaed304e5965ef9aa5b_ppc64le",
+          "8Base-RHOSE-4.13:openshift4/ose-egress-dns-proxy@sha256:6c19b0efdbaa0249e1c5a4cf22ecaec1733fac97c914a34a2558d870ad6d4a98_s390x",
+          "8Base-RHOSE-4.13:openshift4/ose-egress-dns-proxy@sha256:e6c238ac6ce7c41c4ddcf1af529973e9c25146e01451980b167f151906e6feb9_amd64",
+          "8Base-RHOSE-4.13:openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:39a904fca958a3a5aaabf123d2e6d0dbec88c35936a0ac77991f165ac31ecb7d_amd64",
+          "8Base-RHOSE-4.13:openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:3cdde61014e85721fe8c657d7ce835da41917f373fa11d3bdcfc923272fd64c8_arm64",
+          "8Base-RHOSE-4.13:openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:5fd316b3d9d7d48567cbbb856f6dabb9a3971ce87ca403146ef51b7a79695965_s390x",
+          "8Base-RHOSE-4.13:openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:97980eeba34e1639af0abfbbcff93fa3d06cb3df3b09ae3f7e042f86e75f109b_ppc64le",
+          "8Base-RHOSE-4.13:openshift4/ose-sriov-network-config-daemon@sha256:3c250a78235ea5ceae8826047cd4b52e29b6922c1d939041b8c8e907ffd95291_amd64",
+          "8Base-RHOSE-4.13:openshift4/ose-sriov-network-config-daemon@sha256:bb98d675b56c7e929044db871e7243bc5da16e62ac8c3338b0b420e0dccbcdef_ppc64le",
+          "8Base-RHOSE-4.13:openshift4/ose-sriov-network-config-daemon@sha256:ddb16b814c5699dd1aaed537c4dca85fcef43a3effd95c63630b16d6f031b84b_arm64",
+          "8Base-RHOSE-4.13:openshift4/ose-sriov-network-operator@sha256:0c998da62cdf956ab7a9dbd0aa2e3a0b7853e093c7e6885acf8f62af1c5085e0_ppc64le",
+          "8Base-RHOSE-4.13:openshift4/ose-sriov-network-operator@sha256:89ddf537c0f2e16810b4b10a1834c4c14207103991117e0b21740fc003f2ac06_arm64",
+          "8Base-RHOSE-4.13:openshift4/ose-sriov-network-operator@sha256:b4f17c82dace3b04ee6fefe772aad5c5238be1e7f19fa627e35f05e8f44a7734_amd64",
+          "8Base-RHOSE-4.13:openshift4/ose-sriov-network-webhook@sha256:390e4d22aa8c1fc05bfd2b4c80790896aff863f32aa98eb822852c8af01e9e25_amd64",
+          "8Base-RHOSE-4.13:openshift4/ose-sriov-network-webhook@sha256:4429e92de0a15010210fecca5dd57e6d3437b3c68d8598fc318facf8c519caa4_arm64",
+          "8Base-RHOSE-4.13:openshift4/ose-sriov-network-webhook@sha256:d37a1d918d24d132879c7d4e2aa26438bd7a609f7f19370f24800f44a8186446_ppc64le"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2243296",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2243296"
+        },
+        {
+          "category": "external",
+          "summary": "RHSB-2023-003",
+          "url": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2023-39325",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "https://access.redhat.com/security/cve/CVE-2023-44487",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-44487"
+        },
+        {
+          "category": "external",
+          "summary": "https://go.dev/issue/63417",
+          "url": "https://go.dev/issue/63417"
+        },
+        {
+          "category": "external",
+          "summary": "https://pkg.go.dev/vuln/GO-2023-2102",
+          "url": "https://pkg.go.dev/vuln/GO-2023-2102"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487",
+          "url": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487"
+        }
+      ],
+      "release_date": "2023-10-10T00:00:00+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2023-12-06T00:16:04+00:00",
+          "details": "For OpenShift Container Platform 4.13 see the following documentation, which will be updated shortly for this release, for important instructions on how to upgrade your cluster and fully apply this asynchronous errata update:\n\nhttps://docs.openshift.com/container-platform/4.13/release_notes/ocp-4-13-release-notes.html",
+          "product_ids": [
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-dp-admission-controller@sha256:1a24b512d3611d1c318b47c703cbfe3d4005bc3c6dd6139a78075979ad3dcdd4_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-dp-admission-controller@sha256:cb3daa4e346e3a87e1f95978c5602df689bbbbefcdb7d38879f6b007122037d4_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-dp-admission-controller@sha256:da72430cc6b36cb1a1f37c34cff0732bd3f5c867146521cf834a306c92992e47_ppc64le"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2023:7602"
+        },
+        {
+          "category": "workaround",
+          "details": "The default stream concurrency limit in golang is 250 streams (requests) per HTTP/2 connection. This value may be adjusted in the golang.org/x/net/http2 package using the Server.MaxConcurrentStreams setting and the ConfigureServer function which are available in golang.org/x/net/http2.",
+          "product_ids": [
+            "8Base-RHOSE-4.13:openshift4/ose-egress-dns-proxy@sha256:5996c624d7d6f83d68b9bba67f741ffc92278b341c59e6a4ee2070f572216f76_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-egress-dns-proxy@sha256:5a1bbd8b982cb7845cc35ab4072fefa671294f9ba9c9beaed304e5965ef9aa5b_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-egress-dns-proxy@sha256:6c19b0efdbaa0249e1c5a4cf22ecaec1733fac97c914a34a2558d870ad6d4a98_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-egress-dns-proxy@sha256:e6c238ac6ce7c41c4ddcf1af529973e9c25146e01451980b167f151906e6feb9_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:39a904fca958a3a5aaabf123d2e6d0dbec88c35936a0ac77991f165ac31ecb7d_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:3cdde61014e85721fe8c657d7ce835da41917f373fa11d3bdcfc923272fd64c8_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:5fd316b3d9d7d48567cbbb856f6dabb9a3971ce87ca403146ef51b7a79695965_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:97980eeba34e1639af0abfbbcff93fa3d06cb3df3b09ae3f7e042f86e75f109b_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-dp-admission-controller@sha256:1a24b512d3611d1c318b47c703cbfe3d4005bc3c6dd6139a78075979ad3dcdd4_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-dp-admission-controller@sha256:cb3daa4e346e3a87e1f95978c5602df689bbbbefcdb7d38879f6b007122037d4_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-dp-admission-controller@sha256:da72430cc6b36cb1a1f37c34cff0732bd3f5c867146521cf834a306c92992e47_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-network-config-daemon@sha256:3c250a78235ea5ceae8826047cd4b52e29b6922c1d939041b8c8e907ffd95291_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-network-config-daemon@sha256:bb98d675b56c7e929044db871e7243bc5da16e62ac8c3338b0b420e0dccbcdef_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-network-config-daemon@sha256:ddb16b814c5699dd1aaed537c4dca85fcef43a3effd95c63630b16d6f031b84b_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-network-operator@sha256:0c998da62cdf956ab7a9dbd0aa2e3a0b7853e093c7e6885acf8f62af1c5085e0_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-network-operator@sha256:89ddf537c0f2e16810b4b10a1834c4c14207103991117e0b21740fc003f2ac06_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-network-operator@sha256:b4f17c82dace3b04ee6fefe772aad5c5238be1e7f19fa627e35f05e8f44a7734_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-network-webhook@sha256:390e4d22aa8c1fc05bfd2b4c80790896aff863f32aa98eb822852c8af01e9e25_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-network-webhook@sha256:4429e92de0a15010210fecca5dd57e6d3437b3c68d8598fc318facf8c519caa4_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-network-webhook@sha256:d37a1d918d24d132879c7d4e2aa26438bd7a609f7f19370f24800f44a8186446_ppc64le"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 7.5,
+            "baseSeverity": "HIGH",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "8Base-RHOSE-4.13:openshift4/ose-egress-dns-proxy@sha256:5996c624d7d6f83d68b9bba67f741ffc92278b341c59e6a4ee2070f572216f76_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-egress-dns-proxy@sha256:5a1bbd8b982cb7845cc35ab4072fefa671294f9ba9c9beaed304e5965ef9aa5b_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-egress-dns-proxy@sha256:6c19b0efdbaa0249e1c5a4cf22ecaec1733fac97c914a34a2558d870ad6d4a98_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-egress-dns-proxy@sha256:e6c238ac6ce7c41c4ddcf1af529973e9c25146e01451980b167f151906e6feb9_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:39a904fca958a3a5aaabf123d2e6d0dbec88c35936a0ac77991f165ac31ecb7d_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:3cdde61014e85721fe8c657d7ce835da41917f373fa11d3bdcfc923272fd64c8_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:5fd316b3d9d7d48567cbbb856f6dabb9a3971ce87ca403146ef51b7a79695965_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-openshift-proxy-pull-test-rhel8@sha256:97980eeba34e1639af0abfbbcff93fa3d06cb3df3b09ae3f7e042f86e75f109b_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-dp-admission-controller@sha256:1a24b512d3611d1c318b47c703cbfe3d4005bc3c6dd6139a78075979ad3dcdd4_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-dp-admission-controller@sha256:cb3daa4e346e3a87e1f95978c5602df689bbbbefcdb7d38879f6b007122037d4_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-dp-admission-controller@sha256:da72430cc6b36cb1a1f37c34cff0732bd3f5c867146521cf834a306c92992e47_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-network-config-daemon@sha256:3c250a78235ea5ceae8826047cd4b52e29b6922c1d939041b8c8e907ffd95291_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-network-config-daemon@sha256:bb98d675b56c7e929044db871e7243bc5da16e62ac8c3338b0b420e0dccbcdef_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-network-config-daemon@sha256:ddb16b814c5699dd1aaed537c4dca85fcef43a3effd95c63630b16d6f031b84b_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-network-operator@sha256:0c998da62cdf956ab7a9dbd0aa2e3a0b7853e093c7e6885acf8f62af1c5085e0_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-network-operator@sha256:89ddf537c0f2e16810b4b10a1834c4c14207103991117e0b21740fc003f2ac06_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-network-operator@sha256:b4f17c82dace3b04ee6fefe772aad5c5238be1e7f19fa627e35f05e8f44a7734_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-network-webhook@sha256:390e4d22aa8c1fc05bfd2b4c80790896aff863f32aa98eb822852c8af01e9e25_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-network-webhook@sha256:4429e92de0a15010210fecca5dd57e6d3437b3c68d8598fc318facf8c519caa4_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-sriov-network-webhook@sha256:d37a1d918d24d132879c7d4e2aa26438bd7a609f7f19370f24800f44a8186446_ppc64le"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Important"
+        }
+      ],
+      "title": "golang: net/http, x/net/http2: rapid stream resets can cause excessive work (CVE-2023-44487)"
+    }
+  ]
+}

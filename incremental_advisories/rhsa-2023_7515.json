@@ -1,0 +1,823 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "namespace": "https://access.redhat.com/security/updates/classification/",
+      "text": "Important"
+    },
+    "category": "csaf_security_advisory",
+    "csaf_version": "2.0",
+    "distribution": {
+      "text": "Copyright \u00a9 Red Hat, Inc. All rights reserved.",
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "en",
+    "notes": [
+      {
+        "category": "summary",
+        "text": "The components for Red Hat OpenShift for Windows Containers 9.0.0 are now available. This product release includes bug fixes and security updates for the following packages: windows-machine-config-operator and windows-machine-config-operator-bundle.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+        "title": "Topic"
+      },
+      {
+        "category": "general",
+        "text": "Red Hat OpenShift for Windows Containers allows you to deploy Windows container workloads running on Windows Server nodes.\n\nSecurity Fix(es):\n\n* golang: net/http, x/net/http2: rapid stream resets can cause excessive work (Rapid Reset Attack) (CVE-2023-39325)\n\nA Red Hat Security Bulletin which addresses further details about the Rapid Reset flaw is available in the References section.\n\n* kubernetes: Insufficient input sanitization on Windows nodes leads to privilege escalation (CVE-2023-3676) (CVE-2023-3955)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+        "title": "Details"
+      },
+      {
+        "category": "legal_disclaimer",
+        "text": "This content is licensed under the Creative Commons Attribution 4.0 International License (https://creativecommons.org/licenses/by/4.0/). If you distribute this content, or a modified version of it, you must provide attribution to Red Hat Inc. and provide a link to the original.",
+        "title": "Terms of Use"
+      }
+    ],
+    "publisher": {
+      "category": "vendor",
+      "contact_details": "https://access.redhat.com/security/team/contact/",
+      "issuing_authority": "Red Hat Product Security is responsible for vulnerability handling across all Red Hat products and services.",
+      "name": "Red Hat Product Security",
+      "namespace": "https://www.redhat.com"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "https://access.redhat.com/errata/RHSA-2023:7515",
+        "url": "https://access.redhat.com/errata/RHSA-2023:7515"
+      },
+      {
+        "category": "external",
+        "summary": "https://access.redhat.com/security/updates/classification/#important",
+        "url": "https://access.redhat.com/security/updates/classification/#important"
+      },
+      {
+        "category": "external",
+        "summary": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003",
+        "url": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003"
+      },
+      {
+        "category": "external",
+        "summary": "2227126",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2227126"
+      },
+      {
+        "category": "external",
+        "summary": "2227128",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2227128"
+      },
+      {
+        "category": "external",
+        "summary": "2243296",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2243296"
+      },
+      {
+        "category": "external",
+        "summary": "OCPBUGS-10222",
+        "url": "https://issues.redhat.com/browse/OCPBUGS-10222"
+      },
+      {
+        "category": "external",
+        "summary": "OCPBUGS-10437",
+        "url": "https://issues.redhat.com/browse/OCPBUGS-10437"
+      },
+      {
+        "category": "external",
+        "summary": "OCPBUGS-10572",
+        "url": "https://issues.redhat.com/browse/OCPBUGS-10572"
+      },
+      {
+        "category": "external",
+        "summary": "OCPBUGS-11259",
+        "url": "https://issues.redhat.com/browse/OCPBUGS-11259"
+      },
+      {
+        "category": "external",
+        "summary": "OCPBUGS-11306",
+        "url": "https://issues.redhat.com/browse/OCPBUGS-11306"
+      },
+      {
+        "category": "external",
+        "summary": "OCPBUGS-12971",
+        "url": "https://issues.redhat.com/browse/OCPBUGS-12971"
+      },
+      {
+        "category": "external",
+        "summary": "OCPBUGS-13244",
+        "url": "https://issues.redhat.com/browse/OCPBUGS-13244"
+      },
+      {
+        "category": "external",
+        "summary": "OCPBUGS-13780",
+        "url": "https://issues.redhat.com/browse/OCPBUGS-13780"
+      },
+      {
+        "category": "external",
+        "summary": "OCPBUGS-14700",
+        "url": "https://issues.redhat.com/browse/OCPBUGS-14700"
+      },
+      {
+        "category": "external",
+        "summary": "OCPBUGS-15461",
+        "url": "https://issues.redhat.com/browse/OCPBUGS-15461"
+      },
+      {
+        "category": "external",
+        "summary": "OCPBUGS-17528",
+        "url": "https://issues.redhat.com/browse/OCPBUGS-17528"
+      },
+      {
+        "category": "external",
+        "summary": "OCPBUGS-19040",
+        "url": "https://issues.redhat.com/browse/OCPBUGS-19040"
+      },
+      {
+        "category": "external",
+        "summary": "OCPBUGS-19949",
+        "url": "https://issues.redhat.com/browse/OCPBUGS-19949"
+      },
+      {
+        "category": "external",
+        "summary": "OCPBUGS-20054",
+        "url": "https://issues.redhat.com/browse/OCPBUGS-20054"
+      },
+      {
+        "category": "external",
+        "summary": "OCPBUGS-20067",
+        "url": "https://issues.redhat.com/browse/OCPBUGS-20067"
+      },
+      {
+        "category": "external",
+        "summary": "OCPBUGS-20191",
+        "url": "https://issues.redhat.com/browse/OCPBUGS-20191"
+      },
+      {
+        "category": "external",
+        "summary": "OCPBUGS-20664",
+        "url": "https://issues.redhat.com/browse/OCPBUGS-20664"
+      },
+      {
+        "category": "external",
+        "summary": "OCPBUGS-22328",
+        "url": "https://issues.redhat.com/browse/OCPBUGS-22328"
+      },
+      {
+        "category": "external",
+        "summary": "OCPBUGS-22711",
+        "url": "https://issues.redhat.com/browse/OCPBUGS-22711"
+      },
+      {
+        "category": "external",
+        "summary": "WINC-1001",
+        "url": "https://issues.redhat.com/browse/WINC-1001"
+      },
+      {
+        "category": "external",
+        "summary": "WINC-1003",
+        "url": "https://issues.redhat.com/browse/WINC-1003"
+      },
+      {
+        "category": "external",
+        "summary": "WINC-1004",
+        "url": "https://issues.redhat.com/browse/WINC-1004"
+      },
+      {
+        "category": "external",
+        "summary": "WINC-1010",
+        "url": "https://issues.redhat.com/browse/WINC-1010"
+      },
+      {
+        "category": "external",
+        "summary": "WINC-1023",
+        "url": "https://issues.redhat.com/browse/WINC-1023"
+      },
+      {
+        "category": "external",
+        "summary": "WINC-1025",
+        "url": "https://issues.redhat.com/browse/WINC-1025"
+      },
+      {
+        "category": "external",
+        "summary": "WINC-1033",
+        "url": "https://issues.redhat.com/browse/WINC-1033"
+      },
+      {
+        "category": "external",
+        "summary": "WINC-1035",
+        "url": "https://issues.redhat.com/browse/WINC-1035"
+      },
+      {
+        "category": "external",
+        "summary": "WINC-1037",
+        "url": "https://issues.redhat.com/browse/WINC-1037"
+      },
+      {
+        "category": "external",
+        "summary": "WINC-1040",
+        "url": "https://issues.redhat.com/browse/WINC-1040"
+      },
+      {
+        "category": "external",
+        "summary": "WINC-1043",
+        "url": "https://issues.redhat.com/browse/WINC-1043"
+      },
+      {
+        "category": "external",
+        "summary": "WINC-1090",
+        "url": "https://issues.redhat.com/browse/WINC-1090"
+      },
+      {
+        "category": "external",
+        "summary": "WINC-1092",
+        "url": "https://issues.redhat.com/browse/WINC-1092"
+      },
+      {
+        "category": "external",
+        "summary": "WINC-1098",
+        "url": "https://issues.redhat.com/browse/WINC-1098"
+      },
+      {
+        "category": "external",
+        "summary": "WINC-561",
+        "url": "https://issues.redhat.com/browse/WINC-561"
+      },
+      {
+        "category": "external",
+        "summary": "WINC-633",
+        "url": "https://issues.redhat.com/browse/WINC-633"
+      },
+      {
+        "category": "external",
+        "summary": "WINC-635",
+        "url": "https://issues.redhat.com/browse/WINC-635"
+      },
+      {
+        "category": "external",
+        "summary": "WINC-637",
+        "url": "https://issues.redhat.com/browse/WINC-637"
+      },
+      {
+        "category": "external",
+        "summary": "WINC-688",
+        "url": "https://issues.redhat.com/browse/WINC-688"
+      },
+      {
+        "category": "external",
+        "summary": "WINC-805",
+        "url": "https://issues.redhat.com/browse/WINC-805"
+      },
+      {
+        "category": "external",
+        "summary": "WINC-860",
+        "url": "https://issues.redhat.com/browse/WINC-860"
+      },
+      {
+        "category": "external",
+        "summary": "WINC-861",
+        "url": "https://issues.redhat.com/browse/WINC-861"
+      },
+      {
+        "category": "external",
+        "summary": "WINC-863",
+        "url": "https://issues.redhat.com/browse/WINC-863"
+      },
+      {
+        "category": "external",
+        "summary": "WINC-945",
+        "url": "https://issues.redhat.com/browse/WINC-945"
+      },
+      {
+        "category": "external",
+        "summary": "WINC-948",
+        "url": "https://issues.redhat.com/browse/WINC-948"
+      },
+      {
+        "category": "external",
+        "summary": "WINC-950",
+        "url": "https://issues.redhat.com/browse/WINC-950"
+      },
+      {
+        "category": "external",
+        "summary": "WINC-952",
+        "url": "https://issues.redhat.com/browse/WINC-952"
+      },
+      {
+        "category": "external",
+        "summary": "WINC-959",
+        "url": "https://issues.redhat.com/browse/WINC-959"
+      },
+      {
+        "category": "external",
+        "summary": "WINC-998",
+        "url": "https://issues.redhat.com/browse/WINC-998"
+      },
+      {
+        "category": "external",
+        "summary": "WINC-999",
+        "url": "https://issues.redhat.com/browse/WINC-999"
+      },
+      {
+        "category": "self",
+        "summary": "Canonical URL",
+        "url": "https://security.access.redhat.com/data/csaf/v2/advisories/2023/rhsa-2023_7515.json"
+      }
+    ],
+    "title": "Red Hat Security Advisory: Red Hat OpenShift for Windows Containers 9.0.0 security update",
+    "tracking": {
+      "current_release_date": "2025-07-01T14:21:32+00:00",
+      "generator": {
+        "date": "2025-07-01T14:21:32+00:00",
+        "engine": {
+          "name": "Red Hat SDEngine",
+          "version": "4.6.3"
+        }
+      },
+      "id": "RHSA-2023:7515",
+      "initial_release_date": "2023-11-27T16:08:33+00:00",
+      "revision_history": [
+        {
+          "date": "2023-11-27T16:08:33+00:00",
+          "number": "1",
+          "summary": "Initial version"
+        },
+        {
+          "date": "2023-11-27T16:08:33+00:00",
+          "number": "2",
+          "summary": "Last updated version"
+        },
+        {
+          "date": "2025-07-01T14:21:32+00:00",
+          "number": "3",
+          "summary": "Last generated version"
+        }
+      ],
+      "status": "final",
+      "version": "3"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_name",
+                "name": "Red Hat OpenShift Container Platform 4.14",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.14",
+                  "product_id": "9Base-RHOSE-4.14",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:4.14::el9"
+                  }
+                }
+              }
+            ],
+            "category": "product_family",
+            "name": "Red Hat OpenShift Enterprise"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "openshift4-wincw/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f_amd64",
+                "product": {
+                  "name": "openshift4-wincw/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f_amd64",
+                  "product_id": "openshift4-wincw/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f?arch=amd64&repository_url=registry.redhat.io/openshift4-wincw/windows-machine-config-operator-bundle&tag=v9.0.0-104"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f_amd64",
+                "product": {
+                  "name": "openshift4/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f_amd64",
+                  "product_id": "openshift4/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f?arch=amd64&repository_url=registry.redhat.io/openshift4/windows-machine-config-operator-bundle&tag=v9.0.0-104"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4-wincw/windows-machine-config-rhel9-operator@sha256:ae6b81b631c16ae515ef4adb40159669a8051a670d88d7b762ff56ae6e09031c_amd64",
+                "product": {
+                  "name": "openshift4-wincw/windows-machine-config-rhel9-operator@sha256:ae6b81b631c16ae515ef4adb40159669a8051a670d88d7b762ff56ae6e09031c_amd64",
+                  "product_id": "openshift4-wincw/windows-machine-config-rhel9-operator@sha256:ae6b81b631c16ae515ef4adb40159669a8051a670d88d7b762ff56ae6e09031c_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/windows-machine-config-rhel9-operator@sha256:ae6b81b631c16ae515ef4adb40159669a8051a670d88d7b762ff56ae6e09031c?arch=amd64&repository_url=registry.redhat.io/openshift4-wincw/windows-machine-config-rhel9-operator&tag=9.0.0-105"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "amd64"
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      }
+    ],
+    "relationships": [
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4-wincw/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f_amd64 as a component of Red Hat OpenShift Container Platform 4.14",
+          "product_id": "9Base-RHOSE-4.14:openshift4-wincw/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f_amd64"
+        },
+        "product_reference": "openshift4-wincw/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f_amd64",
+        "relates_to_product_reference": "9Base-RHOSE-4.14"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4-wincw/windows-machine-config-rhel9-operator@sha256:ae6b81b631c16ae515ef4adb40159669a8051a670d88d7b762ff56ae6e09031c_amd64 as a component of Red Hat OpenShift Container Platform 4.14",
+          "product_id": "9Base-RHOSE-4.14:openshift4-wincw/windows-machine-config-rhel9-operator@sha256:ae6b81b631c16ae515ef4adb40159669a8051a670d88d7b762ff56ae6e09031c_amd64"
+        },
+        "product_reference": "openshift4-wincw/windows-machine-config-rhel9-operator@sha256:ae6b81b631c16ae515ef4adb40159669a8051a670d88d7b762ff56ae6e09031c_amd64",
+        "relates_to_product_reference": "9Base-RHOSE-4.14"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f_amd64 as a component of Red Hat OpenShift Container Platform 4.14",
+          "product_id": "9Base-RHOSE-4.14:openshift4/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f_amd64"
+        },
+        "product_reference": "openshift4/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f_amd64",
+        "relates_to_product_reference": "9Base-RHOSE-4.14"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2023-3676",
+      "cwe": {
+        "id": "CWE-269",
+        "name": "Improper Privilege Management"
+      },
+      "discovery_date": "2023-07-28T00:00:00+00:00",
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2227126"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A vulnerability was found in Kubernetes. This flaw allows a user who can create pods on Windows nodes to escalate to admin privileges on those nodes.",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "kubernetes: Insufficient input sanitization on Windows nodes leads to privilege escalation",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "other",
+          "text": "Kubernetes clusters are only affected if they include Windows nodes. Any Kubernetes environment with Windows nodes is impacted. Run kubectl get nodes -l kubernetes.io/os=windows to see if any Windows nodes are in use.",
+          "title": "Statement"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "9Base-RHOSE-4.14:openshift4-wincw/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f_amd64",
+          "9Base-RHOSE-4.14:openshift4-wincw/windows-machine-config-rhel9-operator@sha256:ae6b81b631c16ae515ef4adb40159669a8051a670d88d7b762ff56ae6e09031c_amd64",
+          "9Base-RHOSE-4.14:openshift4/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f_amd64"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-3676"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2227126",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2227126"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2023-3676",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-3676"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2023-3676",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-3676"
+        }
+      ],
+      "release_date": "2023-08-23T13:00:00+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2023-11-27T16:08:33+00:00",
+          "details": "Before applying this update, make sure all previously released errata relevant to your system have been applied.\n\nFor details on how to apply this update, refer to:\n\nhttps://access.redhat.com/articles/11258",
+          "product_ids": [
+            "9Base-RHOSE-4.14:openshift4-wincw/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f_amd64",
+            "9Base-RHOSE-4.14:openshift4-wincw/windows-machine-config-rhel9-operator@sha256:ae6b81b631c16ae515ef4adb40159669a8051a670d88d7b762ff56ae6e09031c_amd64",
+            "9Base-RHOSE-4.14:openshift4/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f_amd64"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2023:7515"
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 8.8,
+            "baseSeverity": "HIGH",
+            "confidentialityImpact": "HIGH",
+            "integrityImpact": "HIGH",
+            "privilegesRequired": "LOW",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "9Base-RHOSE-4.14:openshift4-wincw/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f_amd64",
+            "9Base-RHOSE-4.14:openshift4-wincw/windows-machine-config-rhel9-operator@sha256:ae6b81b631c16ae515ef4adb40159669a8051a670d88d7b762ff56ae6e09031c_amd64",
+            "9Base-RHOSE-4.14:openshift4/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f_amd64"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Important"
+        }
+      ],
+      "title": "kubernetes: Insufficient input sanitization on Windows nodes leads to privilege escalation"
+    },
+    {
+      "cve": "CVE-2023-3955",
+      "cwe": {
+        "id": "CWE-269",
+        "name": "Improper Privilege Management"
+      },
+      "discovery_date": "2023-07-28T00:00:00+00:00",
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2227128"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A vulnerability was found in Kubernetes. This flaw allows a user who can create pods on Windows nodes to escalate to admin privileges on those nodes.",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "kubernetes: Insufficient input sanitization on Windows nodes leads to privilege escalation",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "other",
+          "text": "Kubernetes clusters are only affected if they include Windows nodes. Any Kubernetes environment with Windows nodes is impacted. Run kubectl get nodes -l kubernetes.io/os=windows to see if any Windows nodes are in use.",
+          "title": "Statement"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "9Base-RHOSE-4.14:openshift4-wincw/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f_amd64",
+          "9Base-RHOSE-4.14:openshift4-wincw/windows-machine-config-rhel9-operator@sha256:ae6b81b631c16ae515ef4adb40159669a8051a670d88d7b762ff56ae6e09031c_amd64",
+          "9Base-RHOSE-4.14:openshift4/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f_amd64"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-3955"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2227128",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2227128"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2023-3955",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-3955"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2023-3955",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-3955"
+        }
+      ],
+      "release_date": "2023-08-23T13:00:00+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2023-11-27T16:08:33+00:00",
+          "details": "Before applying this update, make sure all previously released errata relevant to your system have been applied.\n\nFor details on how to apply this update, refer to:\n\nhttps://access.redhat.com/articles/11258",
+          "product_ids": [
+            "9Base-RHOSE-4.14:openshift4-wincw/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f_amd64",
+            "9Base-RHOSE-4.14:openshift4-wincw/windows-machine-config-rhel9-operator@sha256:ae6b81b631c16ae515ef4adb40159669a8051a670d88d7b762ff56ae6e09031c_amd64",
+            "9Base-RHOSE-4.14:openshift4/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f_amd64"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2023:7515"
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 8.8,
+            "baseSeverity": "HIGH",
+            "confidentialityImpact": "HIGH",
+            "integrityImpact": "HIGH",
+            "privilegesRequired": "LOW",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "9Base-RHOSE-4.14:openshift4-wincw/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f_amd64",
+            "9Base-RHOSE-4.14:openshift4-wincw/windows-machine-config-rhel9-operator@sha256:ae6b81b631c16ae515ef4adb40159669a8051a670d88d7b762ff56ae6e09031c_amd64",
+            "9Base-RHOSE-4.14:openshift4/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f_amd64"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Important"
+        }
+      ],
+      "title": "kubernetes: Insufficient input sanitization on Windows nodes leads to privilege escalation"
+    },
+    {
+      "cve": "CVE-2023-39325",
+      "cwe": {
+        "id": "CWE-400",
+        "name": "Uncontrolled Resource Consumption"
+      },
+      "discovery_date": "2023-10-10T00:00:00+00:00",
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2243296"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A flaw was found in handling multiplexed streams in the HTTP/2 protocol. A client can repeatedly make a request for a new multiplex stream and immediately send an RST_STREAM frame to cancel it. This creates extra work for the server setting up and tearing down the streams while not hitting any server-side limit for the maximum number of active streams per connection, resulting in a denial of service due to server resource consumption. Red Hat has rated the severity of this flaw as 'Important' as the US Cybersecurity and Infrastructure Security Agency (CISA) declared this vulnerability an active exploit.\r\n\r\nCVE-2023-39325 was assigned for the `Rapid Reset Attack` in the Go language packages.",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "golang: net/http, x/net/http2: rapid stream resets can cause excessive work (CVE-2023-44487)",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "other",
+          "text": "This CVE is related to CVE-2023-44487.\n\nThe majority of RHEL utilities are not long-running applications; instead, they are command-line tools. These tools utilize Golang package as build-time dependency, which is why they are classified as having a \"Moderate\" level of impact.",
+          "title": "Statement"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "9Base-RHOSE-4.14:openshift4-wincw/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f_amd64",
+          "9Base-RHOSE-4.14:openshift4-wincw/windows-machine-config-rhel9-operator@sha256:ae6b81b631c16ae515ef4adb40159669a8051a670d88d7b762ff56ae6e09031c_amd64",
+          "9Base-RHOSE-4.14:openshift4/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f_amd64"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2243296",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2243296"
+        },
+        {
+          "category": "external",
+          "summary": "RHSB-2023-003",
+          "url": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2023-39325",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "https://access.redhat.com/security/cve/CVE-2023-44487",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-44487"
+        },
+        {
+          "category": "external",
+          "summary": "https://go.dev/issue/63417",
+          "url": "https://go.dev/issue/63417"
+        },
+        {
+          "category": "external",
+          "summary": "https://pkg.go.dev/vuln/GO-2023-2102",
+          "url": "https://pkg.go.dev/vuln/GO-2023-2102"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487",
+          "url": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487"
+        }
+      ],
+      "release_date": "2023-10-10T00:00:00+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2023-11-27T16:08:33+00:00",
+          "details": "Before applying this update, make sure all previously released errata relevant to your system have been applied.\n\nFor details on how to apply this update, refer to:\n\nhttps://access.redhat.com/articles/11258",
+          "product_ids": [
+            "9Base-RHOSE-4.14:openshift4-wincw/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f_amd64",
+            "9Base-RHOSE-4.14:openshift4-wincw/windows-machine-config-rhel9-operator@sha256:ae6b81b631c16ae515ef4adb40159669a8051a670d88d7b762ff56ae6e09031c_amd64",
+            "9Base-RHOSE-4.14:openshift4/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f_amd64"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2023:7515"
+        },
+        {
+          "category": "workaround",
+          "details": "The default stream concurrency limit in golang is 250 streams (requests) per HTTP/2 connection. This value may be adjusted in the golang.org/x/net/http2 package using the Server.MaxConcurrentStreams setting and the ConfigureServer function which are available in golang.org/x/net/http2.",
+          "product_ids": [
+            "9Base-RHOSE-4.14:openshift4-wincw/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f_amd64",
+            "9Base-RHOSE-4.14:openshift4-wincw/windows-machine-config-rhel9-operator@sha256:ae6b81b631c16ae515ef4adb40159669a8051a670d88d7b762ff56ae6e09031c_amd64",
+            "9Base-RHOSE-4.14:openshift4/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f_amd64"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 7.5,
+            "baseSeverity": "HIGH",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "9Base-RHOSE-4.14:openshift4-wincw/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f_amd64",
+            "9Base-RHOSE-4.14:openshift4-wincw/windows-machine-config-rhel9-operator@sha256:ae6b81b631c16ae515ef4adb40159669a8051a670d88d7b762ff56ae6e09031c_amd64",
+            "9Base-RHOSE-4.14:openshift4/windows-machine-config-operator-bundle@sha256:d45504b2b477258f723c3c91a353e1100c9679a67730911f87225da7dd76230f_amd64"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Important"
+        }
+      ],
+      "title": "golang: net/http, x/net/http2: rapid stream resets can cause excessive work (CVE-2023-44487)"
+    }
+  ]
+}

@@ -1,0 +1,536 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "namespace": "https://access.redhat.com/security/updates/classification/",
+      "text": "Important"
+    },
+    "category": "csaf_security_advisory",
+    "csaf_version": "2.0",
+    "distribution": {
+      "text": "Copyright \u00a9 Red Hat, Inc. All rights reserved.",
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "en",
+    "notes": [
+      {
+        "category": "summary",
+        "text": "cert-manager Operator for Red Hat OpenShift 1.11.5\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+        "title": "Topic"
+      },
+      {
+        "category": "general",
+        "text": "The cert-manager Operator for Red Hat OpenShift builds on top of Kubernetes, introducing certificate authorities and certificates as first-class resource types in the Kubernetes API. This makes it possible to provide certificates-as-a-service to developers working within your Kubernetes cluster.\n\nSecurity Fix(es):\n\n* golang: net/http, x/net/http2: rapid stream resets can cause excessive work (Rapid Reset Attack) (CVE-2023-39325)\n\nA Red Hat Security Bulletin which addresses further details about the Rapid Reset flaw is available in the References section.\n\n* golang: crypto/tls: slow verification of certificate chains containing large RSA keys (CVE-2023-29409)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+        "title": "Details"
+      },
+      {
+        "category": "legal_disclaimer",
+        "text": "This content is licensed under the Creative Commons Attribution 4.0 International License (https://creativecommons.org/licenses/by/4.0/). If you distribute this content, or a modified version of it, you must provide attribution to Red Hat Inc. and provide a link to the original.",
+        "title": "Terms of Use"
+      }
+    ],
+    "publisher": {
+      "category": "vendor",
+      "contact_details": "https://access.redhat.com/security/team/contact/",
+      "issuing_authority": "Red Hat Product Security is responsible for vulnerability handling across all Red Hat products and services.",
+      "name": "Red Hat Product Security",
+      "namespace": "https://www.redhat.com"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "https://access.redhat.com/errata/RHSA-2023:6279",
+        "url": "https://access.redhat.com/errata/RHSA-2023:6279"
+      },
+      {
+        "category": "external",
+        "summary": "https://access.redhat.com/security/updates/classification/#important",
+        "url": "https://access.redhat.com/security/updates/classification/#important"
+      },
+      {
+        "category": "external",
+        "summary": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003",
+        "url": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003"
+      },
+      {
+        "category": "external",
+        "summary": "2228743",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2228743"
+      },
+      {
+        "category": "external",
+        "summary": "2243296",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2243296"
+      },
+      {
+        "category": "external",
+        "summary": "CM-180",
+        "url": "https://issues.redhat.com/browse/CM-180"
+      },
+      {
+        "category": "external",
+        "summary": "CM-214",
+        "url": "https://issues.redhat.com/browse/CM-214"
+      },
+      {
+        "category": "self",
+        "summary": "Canonical URL",
+        "url": "https://security.access.redhat.com/data/csaf/v2/advisories/2023/rhsa-2023_6279.json"
+      }
+    ],
+    "title": "Red Hat Security Advisory: cert-manager Operator for Red Hat OpenShift 1.11.5",
+    "tracking": {
+      "current_release_date": "2025-07-01T14:20:37+00:00",
+      "generator": {
+        "date": "2025-07-01T14:20:37+00:00",
+        "engine": {
+          "name": "Red Hat SDEngine",
+          "version": "4.6.3"
+        }
+      },
+      "id": "RHSA-2023:6279",
+      "initial_release_date": "2023-11-15T01:08:30+00:00",
+      "revision_history": [
+        {
+          "date": "2023-11-15T01:08:30+00:00",
+          "number": "1",
+          "summary": "Initial version"
+        },
+        {
+          "date": "2023-11-15T01:08:30+00:00",
+          "number": "2",
+          "summary": "Last updated version"
+        },
+        {
+          "date": "2025-07-01T14:20:37+00:00",
+          "number": "3",
+          "summary": "Last generated version"
+        }
+      ],
+      "status": "final",
+      "version": "3"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_name",
+                "name": "Cert Manager support for Red Hat OpenShift release",
+                "product": {
+                  "name": "Cert Manager support for Red Hat OpenShift release",
+                  "product_id": "9Base-CERT-MANAGER-1.11",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:cert_manager:1.11::el9"
+                  }
+                }
+              }
+            ],
+            "category": "product_family",
+            "name": "Cert Manager support for Red Hat OpenShift"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "cert-manager/cert-manager-operator-bundle@sha256:dc15fb6d2a50e2802d93f35a3ace7304e0472edf3a3c08a432e602ce9232d741_amd64",
+                "product": {
+                  "name": "cert-manager/cert-manager-operator-bundle@sha256:dc15fb6d2a50e2802d93f35a3ace7304e0472edf3a3c08a432e602ce9232d741_amd64",
+                  "product_id": "cert-manager/cert-manager-operator-bundle@sha256:dc15fb6d2a50e2802d93f35a3ace7304e0472edf3a3c08a432e602ce9232d741_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/cert-manager-operator-bundle@sha256:dc15fb6d2a50e2802d93f35a3ace7304e0472edf3a3c08a432e602ce9232d741?arch=amd64&repository_url=registry.redhat.io/cert-manager/cert-manager-operator-bundle&tag=v1.11.5-6"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "cert-manager/cert-manager-operator-rhel9@sha256:768ab23c17b2b3394e63d7180a964291b53968ed456fe00ffacba0681cc8600c_amd64",
+                "product": {
+                  "name": "cert-manager/cert-manager-operator-rhel9@sha256:768ab23c17b2b3394e63d7180a964291b53968ed456fe00ffacba0681cc8600c_amd64",
+                  "product_id": "cert-manager/cert-manager-operator-rhel9@sha256:768ab23c17b2b3394e63d7180a964291b53968ed456fe00ffacba0681cc8600c_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/cert-manager-operator-rhel9@sha256:768ab23c17b2b3394e63d7180a964291b53968ed456fe00ffacba0681cc8600c?arch=amd64&repository_url=registry.redhat.io/cert-manager/cert-manager-operator-rhel9&tag=v1.11.5-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "cert-manager/jetstack-cert-manager-acmesolver-rhel9@sha256:0e97ef32756520c784389d89d15bf2f3990c064494904dbed1b7b5f4f30a0641_amd64",
+                "product": {
+                  "name": "cert-manager/jetstack-cert-manager-acmesolver-rhel9@sha256:0e97ef32756520c784389d89d15bf2f3990c064494904dbed1b7b5f4f30a0641_amd64",
+                  "product_id": "cert-manager/jetstack-cert-manager-acmesolver-rhel9@sha256:0e97ef32756520c784389d89d15bf2f3990c064494904dbed1b7b5f4f30a0641_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/jetstack-cert-manager-acmesolver-rhel9@sha256:0e97ef32756520c784389d89d15bf2f3990c064494904dbed1b7b5f4f30a0641?arch=amd64&repository_url=registry.redhat.io/cert-manager/jetstack-cert-manager-acmesolver-rhel9&tag=v1.11.5-4"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "cert-manager/jetstack-cert-manager-rhel9@sha256:adafda1401b765f40a2f9ab109e88e7949f2387bf99b7ea317bf26638399b817_amd64",
+                "product": {
+                  "name": "cert-manager/jetstack-cert-manager-rhel9@sha256:adafda1401b765f40a2f9ab109e88e7949f2387bf99b7ea317bf26638399b817_amd64",
+                  "product_id": "cert-manager/jetstack-cert-manager-rhel9@sha256:adafda1401b765f40a2f9ab109e88e7949f2387bf99b7ea317bf26638399b817_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/jetstack-cert-manager-rhel9@sha256:adafda1401b765f40a2f9ab109e88e7949f2387bf99b7ea317bf26638399b817?arch=amd64&repository_url=registry.redhat.io/cert-manager/jetstack-cert-manager-rhel9&tag=v1.11.5-4"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "amd64"
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      }
+    ],
+    "relationships": [
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "cert-manager/cert-manager-operator-bundle@sha256:dc15fb6d2a50e2802d93f35a3ace7304e0472edf3a3c08a432e602ce9232d741_amd64 as a component of Cert Manager support for Red Hat OpenShift release",
+          "product_id": "9Base-CERT-MANAGER-1.11:cert-manager/cert-manager-operator-bundle@sha256:dc15fb6d2a50e2802d93f35a3ace7304e0472edf3a3c08a432e602ce9232d741_amd64"
+        },
+        "product_reference": "cert-manager/cert-manager-operator-bundle@sha256:dc15fb6d2a50e2802d93f35a3ace7304e0472edf3a3c08a432e602ce9232d741_amd64",
+        "relates_to_product_reference": "9Base-CERT-MANAGER-1.11"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "cert-manager/cert-manager-operator-rhel9@sha256:768ab23c17b2b3394e63d7180a964291b53968ed456fe00ffacba0681cc8600c_amd64 as a component of Cert Manager support for Red Hat OpenShift release",
+          "product_id": "9Base-CERT-MANAGER-1.11:cert-manager/cert-manager-operator-rhel9@sha256:768ab23c17b2b3394e63d7180a964291b53968ed456fe00ffacba0681cc8600c_amd64"
+        },
+        "product_reference": "cert-manager/cert-manager-operator-rhel9@sha256:768ab23c17b2b3394e63d7180a964291b53968ed456fe00ffacba0681cc8600c_amd64",
+        "relates_to_product_reference": "9Base-CERT-MANAGER-1.11"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "cert-manager/jetstack-cert-manager-acmesolver-rhel9@sha256:0e97ef32756520c784389d89d15bf2f3990c064494904dbed1b7b5f4f30a0641_amd64 as a component of Cert Manager support for Red Hat OpenShift release",
+          "product_id": "9Base-CERT-MANAGER-1.11:cert-manager/jetstack-cert-manager-acmesolver-rhel9@sha256:0e97ef32756520c784389d89d15bf2f3990c064494904dbed1b7b5f4f30a0641_amd64"
+        },
+        "product_reference": "cert-manager/jetstack-cert-manager-acmesolver-rhel9@sha256:0e97ef32756520c784389d89d15bf2f3990c064494904dbed1b7b5f4f30a0641_amd64",
+        "relates_to_product_reference": "9Base-CERT-MANAGER-1.11"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "cert-manager/jetstack-cert-manager-rhel9@sha256:adafda1401b765f40a2f9ab109e88e7949f2387bf99b7ea317bf26638399b817_amd64 as a component of Cert Manager support for Red Hat OpenShift release",
+          "product_id": "9Base-CERT-MANAGER-1.11:cert-manager/jetstack-cert-manager-rhel9@sha256:adafda1401b765f40a2f9ab109e88e7949f2387bf99b7ea317bf26638399b817_amd64"
+        },
+        "product_reference": "cert-manager/jetstack-cert-manager-rhel9@sha256:adafda1401b765f40a2f9ab109e88e7949f2387bf99b7ea317bf26638399b817_amd64",
+        "relates_to_product_reference": "9Base-CERT-MANAGER-1.11"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2023-29409",
+      "cwe": {
+        "id": "CWE-400",
+        "name": "Uncontrolled Resource Consumption"
+      },
+      "discovery_date": "2023-08-03T00:00:00+00:00",
+      "flags": [
+        {
+          "label": "vulnerable_code_not_present",
+          "product_ids": [
+            "9Base-CERT-MANAGER-1.11:cert-manager/cert-manager-operator-bundle@sha256:dc15fb6d2a50e2802d93f35a3ace7304e0472edf3a3c08a432e602ce9232d741_amd64",
+            "9Base-CERT-MANAGER-1.11:cert-manager/jetstack-cert-manager-acmesolver-rhel9@sha256:0e97ef32756520c784389d89d15bf2f3990c064494904dbed1b7b5f4f30a0641_amd64",
+            "9Base-CERT-MANAGER-1.11:cert-manager/jetstack-cert-manager-rhel9@sha256:adafda1401b765f40a2f9ab109e88e7949f2387bf99b7ea317bf26638399b817_amd64"
+          ]
+        }
+      ],
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2228743"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A denial of service vulnerability was found in the Golang Go package caused by an uncontrolled resource consumption flaw. By persuading a victim to use a specially crafted certificate with large RSA keys, a remote attacker can cause a client/server to expend significant CPU time verifying signatures, resulting in a denial of service condition.",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "golang: crypto/tls: slow verification of certificate chains containing large RSA keys",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "other",
+          "text": "Within regulated environments, a combination of the following controls acts as a significant barrier to successfully exploiting a CWE-400: Uncontrolled Resource Consumption vulnerability and therefore downgrades the severity of this particular CVE from Moderate to Low.\n\nRed Hat restricts access to all platform information by default, granting access only after successful hard token-based multi-factor authentication (MFA) and enforcing least privilege to ensure only authorized roles can execute or modify code. The environment employs malicious code protections, including IDS/IPS and antimalware tools to detect threats and monitor resource usage, helping prevent uncontrolled consumption that could lead to system failure. Additional safeguards, such as web application firewalls and load-balancing strategies, protect against resource exhaustion and performance degradation. Event logs are centrally collected, correlated, and analyzed to support monitoring, alerting, and retention, aiding in the detection of abnormal behavior and potential denial-of-service (DoS) conditions. Static code analysis and peer reviews enforce strong input validation and error handling, reducing the likelihood of input-based DoS attacks.",
+          "title": "Statement"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "9Base-CERT-MANAGER-1.11:cert-manager/cert-manager-operator-rhel9@sha256:768ab23c17b2b3394e63d7180a964291b53968ed456fe00ffacba0681cc8600c_amd64"
+        ],
+        "known_not_affected": [
+          "9Base-CERT-MANAGER-1.11:cert-manager/cert-manager-operator-bundle@sha256:dc15fb6d2a50e2802d93f35a3ace7304e0472edf3a3c08a432e602ce9232d741_amd64",
+          "9Base-CERT-MANAGER-1.11:cert-manager/jetstack-cert-manager-acmesolver-rhel9@sha256:0e97ef32756520c784389d89d15bf2f3990c064494904dbed1b7b5f4f30a0641_amd64",
+          "9Base-CERT-MANAGER-1.11:cert-manager/jetstack-cert-manager-rhel9@sha256:adafda1401b765f40a2f9ab109e88e7949f2387bf99b7ea317bf26638399b817_amd64"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-29409"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2228743",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2228743"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2023-29409",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-29409"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2023-29409",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-29409"
+        },
+        {
+          "category": "external",
+          "summary": "https://go.dev/cl/515257",
+          "url": "https://go.dev/cl/515257"
+        },
+        {
+          "category": "external",
+          "summary": "https://go.dev/issue/61460",
+          "url": "https://go.dev/issue/61460"
+        },
+        {
+          "category": "external",
+          "summary": "https://groups.google.com/g/golang-announce/c/X0b6CsSAaYI/m/Efv5DbZ9AwAJ",
+          "url": "https://groups.google.com/g/golang-announce/c/X0b6CsSAaYI/m/Efv5DbZ9AwAJ"
+        },
+        {
+          "category": "external",
+          "summary": "https://pkg.go.dev/vuln/GO-2023-1987",
+          "url": "https://pkg.go.dev/vuln/GO-2023-1987"
+        }
+      ],
+      "release_date": "2023-08-02T00:00:00+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2023-11-15T01:08:30+00:00",
+          "details": "Before applying this update, make sure all previously released errata\nrelevant to your system have been applied.\n\nFor details on how to apply this update, refer to:\n\nhttps://access.redhat.com/articles/11258",
+          "product_ids": [
+            "9Base-CERT-MANAGER-1.11:cert-manager/cert-manager-operator-rhel9@sha256:768ab23c17b2b3394e63d7180a964291b53968ed456fe00ffacba0681cc8600c_amd64"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2023:6279"
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "LOW",
+            "baseScore": 5.3,
+            "baseSeverity": "MEDIUM",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "version": "3.1"
+          },
+          "products": [
+            "9Base-CERT-MANAGER-1.11:cert-manager/cert-manager-operator-bundle@sha256:dc15fb6d2a50e2802d93f35a3ace7304e0472edf3a3c08a432e602ce9232d741_amd64",
+            "9Base-CERT-MANAGER-1.11:cert-manager/cert-manager-operator-rhel9@sha256:768ab23c17b2b3394e63d7180a964291b53968ed456fe00ffacba0681cc8600c_amd64",
+            "9Base-CERT-MANAGER-1.11:cert-manager/jetstack-cert-manager-acmesolver-rhel9@sha256:0e97ef32756520c784389d89d15bf2f3990c064494904dbed1b7b5f4f30a0641_amd64",
+            "9Base-CERT-MANAGER-1.11:cert-manager/jetstack-cert-manager-rhel9@sha256:adafda1401b765f40a2f9ab109e88e7949f2387bf99b7ea317bf26638399b817_amd64"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Moderate"
+        }
+      ],
+      "title": "golang: crypto/tls: slow verification of certificate chains containing large RSA keys"
+    },
+    {
+      "cve": "CVE-2023-39325",
+      "cwe": {
+        "id": "CWE-400",
+        "name": "Uncontrolled Resource Consumption"
+      },
+      "discovery_date": "2023-10-10T00:00:00+00:00",
+      "flags": [
+        {
+          "label": "vulnerable_code_not_present",
+          "product_ids": [
+            "9Base-CERT-MANAGER-1.11:cert-manager/cert-manager-operator-bundle@sha256:dc15fb6d2a50e2802d93f35a3ace7304e0472edf3a3c08a432e602ce9232d741_amd64",
+            "9Base-CERT-MANAGER-1.11:cert-manager/jetstack-cert-manager-acmesolver-rhel9@sha256:0e97ef32756520c784389d89d15bf2f3990c064494904dbed1b7b5f4f30a0641_amd64"
+          ]
+        }
+      ],
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2243296"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A flaw was found in handling multiplexed streams in the HTTP/2 protocol. A client can repeatedly make a request for a new multiplex stream and immediately send an RST_STREAM frame to cancel it. This creates extra work for the server setting up and tearing down the streams while not hitting any server-side limit for the maximum number of active streams per connection, resulting in a denial of service due to server resource consumption. Red Hat has rated the severity of this flaw as 'Important' as the US Cybersecurity and Infrastructure Security Agency (CISA) declared this vulnerability an active exploit.\r\n\r\nCVE-2023-39325 was assigned for the `Rapid Reset Attack` in the Go language packages.",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "golang: net/http, x/net/http2: rapid stream resets can cause excessive work (CVE-2023-44487)",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "other",
+          "text": "This CVE is related to CVE-2023-44487.\n\nThe majority of RHEL utilities are not long-running applications; instead, they are command-line tools. These tools utilize Golang package as build-time dependency, which is why they are classified as having a \"Moderate\" level of impact.",
+          "title": "Statement"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "9Base-CERT-MANAGER-1.11:cert-manager/cert-manager-operator-rhel9@sha256:768ab23c17b2b3394e63d7180a964291b53968ed456fe00ffacba0681cc8600c_amd64",
+          "9Base-CERT-MANAGER-1.11:cert-manager/jetstack-cert-manager-rhel9@sha256:adafda1401b765f40a2f9ab109e88e7949f2387bf99b7ea317bf26638399b817_amd64"
+        ],
+        "known_not_affected": [
+          "9Base-CERT-MANAGER-1.11:cert-manager/cert-manager-operator-bundle@sha256:dc15fb6d2a50e2802d93f35a3ace7304e0472edf3a3c08a432e602ce9232d741_amd64",
+          "9Base-CERT-MANAGER-1.11:cert-manager/jetstack-cert-manager-acmesolver-rhel9@sha256:0e97ef32756520c784389d89d15bf2f3990c064494904dbed1b7b5f4f30a0641_amd64"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2243296",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2243296"
+        },
+        {
+          "category": "external",
+          "summary": "RHSB-2023-003",
+          "url": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2023-39325",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "https://access.redhat.com/security/cve/CVE-2023-44487",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-44487"
+        },
+        {
+          "category": "external",
+          "summary": "https://go.dev/issue/63417",
+          "url": "https://go.dev/issue/63417"
+        },
+        {
+          "category": "external",
+          "summary": "https://pkg.go.dev/vuln/GO-2023-2102",
+          "url": "https://pkg.go.dev/vuln/GO-2023-2102"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487",
+          "url": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487"
+        }
+      ],
+      "release_date": "2023-10-10T00:00:00+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2023-11-15T01:08:30+00:00",
+          "details": "Before applying this update, make sure all previously released errata\nrelevant to your system have been applied.\n\nFor details on how to apply this update, refer to:\n\nhttps://access.redhat.com/articles/11258",
+          "product_ids": [
+            "9Base-CERT-MANAGER-1.11:cert-manager/cert-manager-operator-rhel9@sha256:768ab23c17b2b3394e63d7180a964291b53968ed456fe00ffacba0681cc8600c_amd64",
+            "9Base-CERT-MANAGER-1.11:cert-manager/jetstack-cert-manager-rhel9@sha256:adafda1401b765f40a2f9ab109e88e7949f2387bf99b7ea317bf26638399b817_amd64"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2023:6279"
+        },
+        {
+          "category": "workaround",
+          "details": "The default stream concurrency limit in golang is 250 streams (requests) per HTTP/2 connection. This value may be adjusted in the golang.org/x/net/http2 package using the Server.MaxConcurrentStreams setting and the ConfigureServer function which are available in golang.org/x/net/http2.",
+          "product_ids": [
+            "9Base-CERT-MANAGER-1.11:cert-manager/cert-manager-operator-bundle@sha256:dc15fb6d2a50e2802d93f35a3ace7304e0472edf3a3c08a432e602ce9232d741_amd64",
+            "9Base-CERT-MANAGER-1.11:cert-manager/cert-manager-operator-rhel9@sha256:768ab23c17b2b3394e63d7180a964291b53968ed456fe00ffacba0681cc8600c_amd64",
+            "9Base-CERT-MANAGER-1.11:cert-manager/jetstack-cert-manager-acmesolver-rhel9@sha256:0e97ef32756520c784389d89d15bf2f3990c064494904dbed1b7b5f4f30a0641_amd64",
+            "9Base-CERT-MANAGER-1.11:cert-manager/jetstack-cert-manager-rhel9@sha256:adafda1401b765f40a2f9ab109e88e7949f2387bf99b7ea317bf26638399b817_amd64"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 7.5,
+            "baseSeverity": "HIGH",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "9Base-CERT-MANAGER-1.11:cert-manager/cert-manager-operator-bundle@sha256:dc15fb6d2a50e2802d93f35a3ace7304e0472edf3a3c08a432e602ce9232d741_amd64",
+            "9Base-CERT-MANAGER-1.11:cert-manager/cert-manager-operator-rhel9@sha256:768ab23c17b2b3394e63d7180a964291b53968ed456fe00ffacba0681cc8600c_amd64",
+            "9Base-CERT-MANAGER-1.11:cert-manager/jetstack-cert-manager-acmesolver-rhel9@sha256:0e97ef32756520c784389d89d15bf2f3990c064494904dbed1b7b5f4f30a0641_amd64",
+            "9Base-CERT-MANAGER-1.11:cert-manager/jetstack-cert-manager-rhel9@sha256:adafda1401b765f40a2f9ab109e88e7949f2387bf99b7ea317bf26638399b817_amd64"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Important"
+        }
+      ],
+      "title": "golang: net/http, x/net/http2: rapid stream resets can cause excessive work (CVE-2023-44487)"
+    }
+  ]
+}

@@ -1,0 +1,2129 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "namespace": "https://access.redhat.com/security/updates/classification/",
+      "text": "Important"
+    },
+    "category": "csaf_security_advisory",
+    "csaf_version": "2.0",
+    "distribution": {
+      "text": "Copyright \u00a9 Red Hat, Inc. All rights reserved.",
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "en",
+    "notes": [
+      {
+        "category": "summary",
+        "text": "OpenShift API for Data Protection (OADP) 1.3.0 is now available.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+        "title": "Topic"
+      },
+      {
+        "category": "general",
+        "text": "OpenShift API for Data Protection (OADP) enables you to back up and restore application resources, persistent volume data, and internal container images to external backup storage. OADP enables both file system-based and snapshot-based backups for persistent volumes.\n\nSecurity Fix(es):\n\n* golang: net/http, x/net/http2: rapid stream resets can cause excessive work (CVE-2023-44487) (CVE-2023-39325)\n\n* HTTP/2: Multiple HTTP/2 enabled web servers are vulnerable to a DDoS attack (Rapid Reset Attack) (CVE-2023-44487)\n\n* opentelemetry: DoS vulnerability in otelhttp (CVE-2023-45142)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+        "title": "Details"
+      },
+      {
+        "category": "legal_disclaimer",
+        "text": "This content is licensed under the Creative Commons Attribution 4.0 International License (https://creativecommons.org/licenses/by/4.0/). If you distribute this content, or a modified version of it, you must provide attribution to Red Hat Inc. and provide a link to the original.",
+        "title": "Terms of Use"
+      }
+    ],
+    "publisher": {
+      "category": "vendor",
+      "contact_details": "https://access.redhat.com/security/team/contact/",
+      "issuing_authority": "Red Hat Product Security is responsible for vulnerability handling across all Red Hat products and services.",
+      "name": "Red Hat Product Security",
+      "namespace": "https://www.redhat.com"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "https://access.redhat.com/errata/RHSA-2023:7555",
+        "url": "https://access.redhat.com/errata/RHSA-2023:7555"
+      },
+      {
+        "category": "external",
+        "summary": "https://access.redhat.com/security/updates/classification/#important",
+        "url": "https://access.redhat.com/security/updates/classification/#important"
+      },
+      {
+        "category": "external",
+        "summary": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003",
+        "url": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003"
+      },
+      {
+        "category": "external",
+        "summary": "2242803",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2242803"
+      },
+      {
+        "category": "external",
+        "summary": "2243296",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2243296"
+      },
+      {
+        "category": "external",
+        "summary": "2245180",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2245180"
+      },
+      {
+        "category": "external",
+        "summary": "OADP-1167",
+        "url": "https://issues.redhat.com/browse/OADP-1167"
+      },
+      {
+        "category": "external",
+        "summary": "OADP-2308",
+        "url": "https://issues.redhat.com/browse/OADP-2308"
+      },
+      {
+        "category": "external",
+        "summary": "OADP-2360",
+        "url": "https://issues.redhat.com/browse/OADP-2360"
+      },
+      {
+        "category": "external",
+        "summary": "OADP-2450",
+        "url": "https://issues.redhat.com/browse/OADP-2450"
+      },
+      {
+        "category": "external",
+        "summary": "OADP-2607",
+        "url": "https://issues.redhat.com/browse/OADP-2607"
+      },
+      {
+        "category": "external",
+        "summary": "OADP-2635",
+        "url": "https://issues.redhat.com/browse/OADP-2635"
+      },
+      {
+        "category": "external",
+        "summary": "OADP-2679",
+        "url": "https://issues.redhat.com/browse/OADP-2679"
+      },
+      {
+        "category": "external",
+        "summary": "OADP-2680",
+        "url": "https://issues.redhat.com/browse/OADP-2680"
+      },
+      {
+        "category": "external",
+        "summary": "OADP-2681",
+        "url": "https://issues.redhat.com/browse/OADP-2681"
+      },
+      {
+        "category": "external",
+        "summary": "OADP-2686",
+        "url": "https://issues.redhat.com/browse/OADP-2686"
+      },
+      {
+        "category": "external",
+        "summary": "OADP-2688",
+        "url": "https://issues.redhat.com/browse/OADP-2688"
+      },
+      {
+        "category": "external",
+        "summary": "OADP-2696",
+        "url": "https://issues.redhat.com/browse/OADP-2696"
+      },
+      {
+        "category": "external",
+        "summary": "OADP-2717",
+        "url": "https://issues.redhat.com/browse/OADP-2717"
+      },
+      {
+        "category": "external",
+        "summary": "OADP-2721",
+        "url": "https://issues.redhat.com/browse/OADP-2721"
+      },
+      {
+        "category": "external",
+        "summary": "OADP-2741",
+        "url": "https://issues.redhat.com/browse/OADP-2741"
+      },
+      {
+        "category": "external",
+        "summary": "OADP-2742",
+        "url": "https://issues.redhat.com/browse/OADP-2742"
+      },
+      {
+        "category": "external",
+        "summary": "OADP-2774",
+        "url": "https://issues.redhat.com/browse/OADP-2774"
+      },
+      {
+        "category": "external",
+        "summary": "OADP-2790",
+        "url": "https://issues.redhat.com/browse/OADP-2790"
+      },
+      {
+        "category": "external",
+        "summary": "OADP-2796",
+        "url": "https://issues.redhat.com/browse/OADP-2796"
+      },
+      {
+        "category": "external",
+        "summary": "OADP-2819",
+        "url": "https://issues.redhat.com/browse/OADP-2819"
+      },
+      {
+        "category": "external",
+        "summary": "OADP-2856",
+        "url": "https://issues.redhat.com/browse/OADP-2856"
+      },
+      {
+        "category": "external",
+        "summary": "OADP-2862",
+        "url": "https://issues.redhat.com/browse/OADP-2862"
+      },
+      {
+        "category": "external",
+        "summary": "OADP-2921",
+        "url": "https://issues.redhat.com/browse/OADP-2921"
+      },
+      {
+        "category": "external",
+        "summary": "OADP-2959",
+        "url": "https://issues.redhat.com/browse/OADP-2959"
+      },
+      {
+        "category": "external",
+        "summary": "OADP-2981",
+        "url": "https://issues.redhat.com/browse/OADP-2981"
+      },
+      {
+        "category": "external",
+        "summary": "OADP-2983",
+        "url": "https://issues.redhat.com/browse/OADP-2983"
+      },
+      {
+        "category": "external",
+        "summary": "OADP-3053",
+        "url": "https://issues.redhat.com/browse/OADP-3053"
+      },
+      {
+        "category": "external",
+        "summary": "OADP-3054",
+        "url": "https://issues.redhat.com/browse/OADP-3054"
+      },
+      {
+        "category": "external",
+        "summary": "OADP-446",
+        "url": "https://issues.redhat.com/browse/OADP-446"
+      },
+      {
+        "category": "self",
+        "summary": "Canonical URL",
+        "url": "https://security.access.redhat.com/data/csaf/v2/advisories/2023/rhsa-2023_7555.json"
+      }
+    ],
+    "title": "Red Hat Security Advisory: OpenShift API for Data Protection (OADP) 1.3.0 security update",
+    "tracking": {
+      "current_release_date": "2025-07-01T14:21:29+00:00",
+      "generator": {
+        "date": "2025-07-01T14:21:29+00:00",
+        "engine": {
+          "name": "Red Hat SDEngine",
+          "version": "4.6.3"
+        }
+      },
+      "id": "RHSA-2023:7555",
+      "initial_release_date": "2023-11-28T18:50:01+00:00",
+      "revision_history": [
+        {
+          "date": "2023-11-28T18:50:01+00:00",
+          "number": "1",
+          "summary": "Initial version"
+        },
+        {
+          "date": "2023-11-28T18:50:01+00:00",
+          "number": "2",
+          "summary": "Last updated version"
+        },
+        {
+          "date": "2025-07-01T14:21:29+00:00",
+          "number": "3",
+          "summary": "Last generated version"
+        }
+      ],
+      "status": "final",
+      "version": "3"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_name",
+                "name": "9Base-OADP-1.3",
+                "product": {
+                  "name": "9Base-OADP-1.3",
+                  "product_id": "9Base-OADP-1.3",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift_api_data_protection:1.3::el9"
+                  }
+                }
+              }
+            ],
+            "category": "product_family",
+            "name": "OpenShift API for Data Protection"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:f68841818eebf6fd794a4766fcaddacc7476b02e5248a25db45ee325b9dbd682_s390x",
+                "product": {
+                  "name": "oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:f68841818eebf6fd794a4766fcaddacc7476b02e5248a25db45ee325b9dbd682_s390x",
+                  "product_id": "oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:f68841818eebf6fd794a4766fcaddacc7476b02e5248a25db45ee325b9dbd682_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-kubevirt-velero-plugin-rhel9@sha256:f68841818eebf6fd794a4766fcaddacc7476b02e5248a25db45ee325b9dbd682?arch=s390x&repository_url=registry.redhat.io/oadp/oadp-kubevirt-velero-plugin-rhel9&tag=1.3.0-29"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-mustgather-rhel9@sha256:8fb3cce0033e3de7fc67e764de96773eec18f4184cd5f9ddf4b0cd2b2d953220_s390x",
+                "product": {
+                  "name": "oadp/oadp-mustgather-rhel9@sha256:8fb3cce0033e3de7fc67e764de96773eec18f4184cd5f9ddf4b0cd2b2d953220_s390x",
+                  "product_id": "oadp/oadp-mustgather-rhel9@sha256:8fb3cce0033e3de7fc67e764de96773eec18f4184cd5f9ddf4b0cd2b2d953220_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-mustgather-rhel9@sha256:8fb3cce0033e3de7fc67e764de96773eec18f4184cd5f9ddf4b0cd2b2d953220?arch=s390x&repository_url=registry.redhat.io/oadp/oadp-mustgather-rhel9&tag=1.3.0-138"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-operator-bundle@sha256:3059a1db6a7041bad8c656287d8fcafc478ac15656fe95d030e9bafa967e8d9a_s390x",
+                "product": {
+                  "name": "oadp/oadp-operator-bundle@sha256:3059a1db6a7041bad8c656287d8fcafc478ac15656fe95d030e9bafa967e8d9a_s390x",
+                  "product_id": "oadp/oadp-operator-bundle@sha256:3059a1db6a7041bad8c656287d8fcafc478ac15656fe95d030e9bafa967e8d9a_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-operator-bundle@sha256:3059a1db6a7041bad8c656287d8fcafc478ac15656fe95d030e9bafa967e8d9a?arch=s390x&repository_url=registry.redhat.io/oadp/oadp-operator-bundle&tag=1.3.0-156"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-rhel9-operator@sha256:063111faad5ce211e11c5eb2d61559d0b9a89178cdf86377e38599e7232d55d2_s390x",
+                "product": {
+                  "name": "oadp/oadp-rhel9-operator@sha256:063111faad5ce211e11c5eb2d61559d0b9a89178cdf86377e38599e7232d55d2_s390x",
+                  "product_id": "oadp/oadp-rhel9-operator@sha256:063111faad5ce211e11c5eb2d61559d0b9a89178cdf86377e38599e7232d55d2_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-rhel9-operator@sha256:063111faad5ce211e11c5eb2d61559d0b9a89178cdf86377e38599e7232d55d2?arch=s390x&repository_url=registry.redhat.io/oadp/oadp-rhel9-operator&tag=1.3.0-97"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-velero-rhel9@sha256:492ce9081642ee43dd2de20b68f48c687bab9b23efcb6a77648f9a341687a818_s390x",
+                "product": {
+                  "name": "oadp/oadp-velero-rhel9@sha256:492ce9081642ee43dd2de20b68f48c687bab9b23efcb6a77648f9a341687a818_s390x",
+                  "product_id": "oadp/oadp-velero-rhel9@sha256:492ce9081642ee43dd2de20b68f48c687bab9b23efcb6a77648f9a341687a818_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-velero-rhel9@sha256:492ce9081642ee43dd2de20b68f48c687bab9b23efcb6a77648f9a341687a818?arch=s390x&repository_url=registry.redhat.io/oadp/oadp-velero-rhel9&tag=1.3.0-50"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-velero-plugin-rhel9@sha256:71ab195206354afe71631bace4c1754d13e7f9584d84b88513f45ba9e751ed24_s390x",
+                "product": {
+                  "name": "oadp/oadp-velero-plugin-rhel9@sha256:71ab195206354afe71631bace4c1754d13e7f9584d84b88513f45ba9e751ed24_s390x",
+                  "product_id": "oadp/oadp-velero-plugin-rhel9@sha256:71ab195206354afe71631bace4c1754d13e7f9584d84b88513f45ba9e751ed24_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-velero-plugin-rhel9@sha256:71ab195206354afe71631bace4c1754d13e7f9584d84b88513f45ba9e751ed24?arch=s390x&repository_url=registry.redhat.io/oadp/oadp-velero-plugin-rhel9&tag=1.3.0-32"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-velero-plugin-for-aws-rhel9@sha256:24a009a20c555e5da425a4127ac944907db6a70e733bfd7d4009406430d2e615_s390x",
+                "product": {
+                  "name": "oadp/oadp-velero-plugin-for-aws-rhel9@sha256:24a009a20c555e5da425a4127ac944907db6a70e733bfd7d4009406430d2e615_s390x",
+                  "product_id": "oadp/oadp-velero-plugin-for-aws-rhel9@sha256:24a009a20c555e5da425a4127ac944907db6a70e733bfd7d4009406430d2e615_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-velero-plugin-for-aws-rhel9@sha256:24a009a20c555e5da425a4127ac944907db6a70e733bfd7d4009406430d2e615?arch=s390x&repository_url=registry.redhat.io/oadp/oadp-velero-plugin-for-aws-rhel9&tag=1.3.0-29"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-velero-plugin-for-csi-rhel9@sha256:6b59f2d1dea625fc1e14275083542986e3d53fdb1dc1d934e3f1f2fa2c90fd5a_s390x",
+                "product": {
+                  "name": "oadp/oadp-velero-plugin-for-csi-rhel9@sha256:6b59f2d1dea625fc1e14275083542986e3d53fdb1dc1d934e3f1f2fa2c90fd5a_s390x",
+                  "product_id": "oadp/oadp-velero-plugin-for-csi-rhel9@sha256:6b59f2d1dea625fc1e14275083542986e3d53fdb1dc1d934e3f1f2fa2c90fd5a_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-velero-plugin-for-csi-rhel9@sha256:6b59f2d1dea625fc1e14275083542986e3d53fdb1dc1d934e3f1f2fa2c90fd5a?arch=s390x&repository_url=registry.redhat.io/oadp/oadp-velero-plugin-for-csi-rhel9&tag=1.3.0-34"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:5d7cb76f4424c2208d9aee8368b960137d69d173caf88c1c5c63b1880374550b_s390x",
+                "product": {
+                  "name": "oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:5d7cb76f4424c2208d9aee8368b960137d69d173caf88c1c5c63b1880374550b_s390x",
+                  "product_id": "oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:5d7cb76f4424c2208d9aee8368b960137d69d173caf88c1c5c63b1880374550b_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-velero-plugin-for-gcp-rhel9@sha256:5d7cb76f4424c2208d9aee8368b960137d69d173caf88c1c5c63b1880374550b?arch=s390x&repository_url=registry.redhat.io/oadp/oadp-velero-plugin-for-gcp-rhel9&tag=1.3.0-29"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:e48934c0a05ff02fc498679a66b4f93242a10686b973c98925006517ed1c3c59_s390x",
+                "product": {
+                  "name": "oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:e48934c0a05ff02fc498679a66b4f93242a10686b973c98925006517ed1c3c59_s390x",
+                  "product_id": "oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:e48934c0a05ff02fc498679a66b4f93242a10686b973c98925006517ed1c3c59_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:e48934c0a05ff02fc498679a66b4f93242a10686b973c98925006517ed1c3c59?arch=s390x&repository_url=registry.redhat.io/oadp/oadp-velero-plugin-for-microsoft-azure-rhel9&tag=1.3.0-30"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-velero-restic-restore-helper-rhel9@sha256:a47a609eb3c1a6f881592a3c080a413541c4682d60993c33f944f690095e99c7_s390x",
+                "product": {
+                  "name": "oadp/oadp-velero-restic-restore-helper-rhel9@sha256:a47a609eb3c1a6f881592a3c080a413541c4682d60993c33f944f690095e99c7_s390x",
+                  "product_id": "oadp/oadp-velero-restic-restore-helper-rhel9@sha256:a47a609eb3c1a6f881592a3c080a413541c4682d60993c33f944f690095e99c7_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-velero-restic-restore-helper-rhel9@sha256:a47a609eb3c1a6f881592a3c080a413541c4682d60993c33f944f690095e99c7?arch=s390x&repository_url=registry.redhat.io/oadp/oadp-velero-restic-restore-helper-rhel9&tag=1.3.0-45"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "s390x"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:5b149e2f215085f5b969bde093fcac250682d48ccd2d1e671d55e945e02c5c24_arm64",
+                "product": {
+                  "name": "oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:5b149e2f215085f5b969bde093fcac250682d48ccd2d1e671d55e945e02c5c24_arm64",
+                  "product_id": "oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:5b149e2f215085f5b969bde093fcac250682d48ccd2d1e671d55e945e02c5c24_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-kubevirt-velero-plugin-rhel9@sha256:5b149e2f215085f5b969bde093fcac250682d48ccd2d1e671d55e945e02c5c24?arch=arm64&repository_url=registry.redhat.io/oadp/oadp-kubevirt-velero-plugin-rhel9&tag=1.3.0-29"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-mustgather-rhel9@sha256:474ed76e1544436e6708c029329f4cebc72efdcfb2e2df751c3cd917224a8e4a_arm64",
+                "product": {
+                  "name": "oadp/oadp-mustgather-rhel9@sha256:474ed76e1544436e6708c029329f4cebc72efdcfb2e2df751c3cd917224a8e4a_arm64",
+                  "product_id": "oadp/oadp-mustgather-rhel9@sha256:474ed76e1544436e6708c029329f4cebc72efdcfb2e2df751c3cd917224a8e4a_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-mustgather-rhel9@sha256:474ed76e1544436e6708c029329f4cebc72efdcfb2e2df751c3cd917224a8e4a?arch=arm64&repository_url=registry.redhat.io/oadp/oadp-mustgather-rhel9&tag=1.3.0-138"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-operator-bundle@sha256:50e6ff903856253916602dbb2e2fc5d0a2cf013fb710af1fb618c09aed30d09d_arm64",
+                "product": {
+                  "name": "oadp/oadp-operator-bundle@sha256:50e6ff903856253916602dbb2e2fc5d0a2cf013fb710af1fb618c09aed30d09d_arm64",
+                  "product_id": "oadp/oadp-operator-bundle@sha256:50e6ff903856253916602dbb2e2fc5d0a2cf013fb710af1fb618c09aed30d09d_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-operator-bundle@sha256:50e6ff903856253916602dbb2e2fc5d0a2cf013fb710af1fb618c09aed30d09d?arch=arm64&repository_url=registry.redhat.io/oadp/oadp-operator-bundle&tag=1.3.0-156"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-rhel9-operator@sha256:d6361b290e08f9bfc22d902587206ef81ebdf9e8234475e7b846bb165c6029ba_arm64",
+                "product": {
+                  "name": "oadp/oadp-rhel9-operator@sha256:d6361b290e08f9bfc22d902587206ef81ebdf9e8234475e7b846bb165c6029ba_arm64",
+                  "product_id": "oadp/oadp-rhel9-operator@sha256:d6361b290e08f9bfc22d902587206ef81ebdf9e8234475e7b846bb165c6029ba_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-rhel9-operator@sha256:d6361b290e08f9bfc22d902587206ef81ebdf9e8234475e7b846bb165c6029ba?arch=arm64&repository_url=registry.redhat.io/oadp/oadp-rhel9-operator&tag=1.3.0-97"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-velero-rhel9@sha256:197a2a9ccf5939ffc38a2e81868ccddd908a79f713f72c06e56bcb34c7dd0ca7_arm64",
+                "product": {
+                  "name": "oadp/oadp-velero-rhel9@sha256:197a2a9ccf5939ffc38a2e81868ccddd908a79f713f72c06e56bcb34c7dd0ca7_arm64",
+                  "product_id": "oadp/oadp-velero-rhel9@sha256:197a2a9ccf5939ffc38a2e81868ccddd908a79f713f72c06e56bcb34c7dd0ca7_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-velero-rhel9@sha256:197a2a9ccf5939ffc38a2e81868ccddd908a79f713f72c06e56bcb34c7dd0ca7?arch=arm64&repository_url=registry.redhat.io/oadp/oadp-velero-rhel9&tag=1.3.0-50"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-velero-plugin-rhel9@sha256:bcc35ddbe11badbbf7fc900dbe53bd2ef3f51d867c5a64f59b7d43d1c5e801a6_arm64",
+                "product": {
+                  "name": "oadp/oadp-velero-plugin-rhel9@sha256:bcc35ddbe11badbbf7fc900dbe53bd2ef3f51d867c5a64f59b7d43d1c5e801a6_arm64",
+                  "product_id": "oadp/oadp-velero-plugin-rhel9@sha256:bcc35ddbe11badbbf7fc900dbe53bd2ef3f51d867c5a64f59b7d43d1c5e801a6_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-velero-plugin-rhel9@sha256:bcc35ddbe11badbbf7fc900dbe53bd2ef3f51d867c5a64f59b7d43d1c5e801a6?arch=arm64&repository_url=registry.redhat.io/oadp/oadp-velero-plugin-rhel9&tag=1.3.0-32"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-velero-plugin-for-aws-rhel9@sha256:be8c3101ff144d717007d7871457df69e1158c993c8b4fe5deac7294b939e3ee_arm64",
+                "product": {
+                  "name": "oadp/oadp-velero-plugin-for-aws-rhel9@sha256:be8c3101ff144d717007d7871457df69e1158c993c8b4fe5deac7294b939e3ee_arm64",
+                  "product_id": "oadp/oadp-velero-plugin-for-aws-rhel9@sha256:be8c3101ff144d717007d7871457df69e1158c993c8b4fe5deac7294b939e3ee_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-velero-plugin-for-aws-rhel9@sha256:be8c3101ff144d717007d7871457df69e1158c993c8b4fe5deac7294b939e3ee?arch=arm64&repository_url=registry.redhat.io/oadp/oadp-velero-plugin-for-aws-rhel9&tag=1.3.0-29"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-velero-plugin-for-csi-rhel9@sha256:2a9f38ceaf22ef7d06a072b6a590a63ad7169f9e5936ca81236723cae5f679e5_arm64",
+                "product": {
+                  "name": "oadp/oadp-velero-plugin-for-csi-rhel9@sha256:2a9f38ceaf22ef7d06a072b6a590a63ad7169f9e5936ca81236723cae5f679e5_arm64",
+                  "product_id": "oadp/oadp-velero-plugin-for-csi-rhel9@sha256:2a9f38ceaf22ef7d06a072b6a590a63ad7169f9e5936ca81236723cae5f679e5_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-velero-plugin-for-csi-rhel9@sha256:2a9f38ceaf22ef7d06a072b6a590a63ad7169f9e5936ca81236723cae5f679e5?arch=arm64&repository_url=registry.redhat.io/oadp/oadp-velero-plugin-for-csi-rhel9&tag=1.3.0-34"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:f950bddfb84693a35c98df847c1ccf486a4c480207f50b6836b0d0da1cce9e05_arm64",
+                "product": {
+                  "name": "oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:f950bddfb84693a35c98df847c1ccf486a4c480207f50b6836b0d0da1cce9e05_arm64",
+                  "product_id": "oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:f950bddfb84693a35c98df847c1ccf486a4c480207f50b6836b0d0da1cce9e05_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-velero-plugin-for-gcp-rhel9@sha256:f950bddfb84693a35c98df847c1ccf486a4c480207f50b6836b0d0da1cce9e05?arch=arm64&repository_url=registry.redhat.io/oadp/oadp-velero-plugin-for-gcp-rhel9&tag=1.3.0-29"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:b5da27f7e78679e2d191f4f95da9fed16c6771471fe7fa1cad3eaf5c84c58e74_arm64",
+                "product": {
+                  "name": "oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:b5da27f7e78679e2d191f4f95da9fed16c6771471fe7fa1cad3eaf5c84c58e74_arm64",
+                  "product_id": "oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:b5da27f7e78679e2d191f4f95da9fed16c6771471fe7fa1cad3eaf5c84c58e74_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:b5da27f7e78679e2d191f4f95da9fed16c6771471fe7fa1cad3eaf5c84c58e74?arch=arm64&repository_url=registry.redhat.io/oadp/oadp-velero-plugin-for-microsoft-azure-rhel9&tag=1.3.0-30"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-velero-restic-restore-helper-rhel9@sha256:61f301f44a2b26dd73897046cdd9e511eaee0f026092aeb8c2b0c57a4cf3fb59_arm64",
+                "product": {
+                  "name": "oadp/oadp-velero-restic-restore-helper-rhel9@sha256:61f301f44a2b26dd73897046cdd9e511eaee0f026092aeb8c2b0c57a4cf3fb59_arm64",
+                  "product_id": "oadp/oadp-velero-restic-restore-helper-rhel9@sha256:61f301f44a2b26dd73897046cdd9e511eaee0f026092aeb8c2b0c57a4cf3fb59_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-velero-restic-restore-helper-rhel9@sha256:61f301f44a2b26dd73897046cdd9e511eaee0f026092aeb8c2b0c57a4cf3fb59?arch=arm64&repository_url=registry.redhat.io/oadp/oadp-velero-restic-restore-helper-rhel9&tag=1.3.0-45"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "arm64"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:3970a66b4525a97ef6ee39fea1570f7b81b0529b281d05d5bad82e2c2261b00d_amd64",
+                "product": {
+                  "name": "oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:3970a66b4525a97ef6ee39fea1570f7b81b0529b281d05d5bad82e2c2261b00d_amd64",
+                  "product_id": "oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:3970a66b4525a97ef6ee39fea1570f7b81b0529b281d05d5bad82e2c2261b00d_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-kubevirt-velero-plugin-rhel9@sha256:3970a66b4525a97ef6ee39fea1570f7b81b0529b281d05d5bad82e2c2261b00d?arch=amd64&repository_url=registry.redhat.io/oadp/oadp-kubevirt-velero-plugin-rhel9&tag=1.3.0-29"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-mustgather-rhel9@sha256:1979b2e3a393a936063792a4dbdc52a429b3015a5c661dea9041954aba46c567_amd64",
+                "product": {
+                  "name": "oadp/oadp-mustgather-rhel9@sha256:1979b2e3a393a936063792a4dbdc52a429b3015a5c661dea9041954aba46c567_amd64",
+                  "product_id": "oadp/oadp-mustgather-rhel9@sha256:1979b2e3a393a936063792a4dbdc52a429b3015a5c661dea9041954aba46c567_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-mustgather-rhel9@sha256:1979b2e3a393a936063792a4dbdc52a429b3015a5c661dea9041954aba46c567?arch=amd64&repository_url=registry.redhat.io/oadp/oadp-mustgather-rhel9&tag=1.3.0-138"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-operator-bundle@sha256:4cde7e9b893b3a9b5c6eccb5496701d1601046cc1487f94d28bed3b0538e9957_amd64",
+                "product": {
+                  "name": "oadp/oadp-operator-bundle@sha256:4cde7e9b893b3a9b5c6eccb5496701d1601046cc1487f94d28bed3b0538e9957_amd64",
+                  "product_id": "oadp/oadp-operator-bundle@sha256:4cde7e9b893b3a9b5c6eccb5496701d1601046cc1487f94d28bed3b0538e9957_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-operator-bundle@sha256:4cde7e9b893b3a9b5c6eccb5496701d1601046cc1487f94d28bed3b0538e9957?arch=amd64&repository_url=registry.redhat.io/oadp/oadp-operator-bundle&tag=1.3.0-156"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-rhel9-operator@sha256:a4995bf30e14bcc454a978199f4b6b9fbdcb5668dd80ebaa05cd8b4d64486856_amd64",
+                "product": {
+                  "name": "oadp/oadp-rhel9-operator@sha256:a4995bf30e14bcc454a978199f4b6b9fbdcb5668dd80ebaa05cd8b4d64486856_amd64",
+                  "product_id": "oadp/oadp-rhel9-operator@sha256:a4995bf30e14bcc454a978199f4b6b9fbdcb5668dd80ebaa05cd8b4d64486856_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-rhel9-operator@sha256:a4995bf30e14bcc454a978199f4b6b9fbdcb5668dd80ebaa05cd8b4d64486856?arch=amd64&repository_url=registry.redhat.io/oadp/oadp-rhel9-operator&tag=1.3.0-97"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-velero-rhel9@sha256:35705ecc01555ec8b6deda36aca73d4a1eb0fdee12ce66f6109cbfe46a9a89b9_amd64",
+                "product": {
+                  "name": "oadp/oadp-velero-rhel9@sha256:35705ecc01555ec8b6deda36aca73d4a1eb0fdee12ce66f6109cbfe46a9a89b9_amd64",
+                  "product_id": "oadp/oadp-velero-rhel9@sha256:35705ecc01555ec8b6deda36aca73d4a1eb0fdee12ce66f6109cbfe46a9a89b9_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-velero-rhel9@sha256:35705ecc01555ec8b6deda36aca73d4a1eb0fdee12ce66f6109cbfe46a9a89b9?arch=amd64&repository_url=registry.redhat.io/oadp/oadp-velero-rhel9&tag=1.3.0-50"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-velero-plugin-rhel9@sha256:01918f08d522dcf429dfbdab99dfc0c57aa84a5073b084c5f83b6ab6dca805c3_amd64",
+                "product": {
+                  "name": "oadp/oadp-velero-plugin-rhel9@sha256:01918f08d522dcf429dfbdab99dfc0c57aa84a5073b084c5f83b6ab6dca805c3_amd64",
+                  "product_id": "oadp/oadp-velero-plugin-rhel9@sha256:01918f08d522dcf429dfbdab99dfc0c57aa84a5073b084c5f83b6ab6dca805c3_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-velero-plugin-rhel9@sha256:01918f08d522dcf429dfbdab99dfc0c57aa84a5073b084c5f83b6ab6dca805c3?arch=amd64&repository_url=registry.redhat.io/oadp/oadp-velero-plugin-rhel9&tag=1.3.0-32"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-velero-plugin-for-aws-rhel9@sha256:486c3b2f1e8a16986309966473aab35a7aaaf490a25c151ab534a7c029ebd3f1_amd64",
+                "product": {
+                  "name": "oadp/oadp-velero-plugin-for-aws-rhel9@sha256:486c3b2f1e8a16986309966473aab35a7aaaf490a25c151ab534a7c029ebd3f1_amd64",
+                  "product_id": "oadp/oadp-velero-plugin-for-aws-rhel9@sha256:486c3b2f1e8a16986309966473aab35a7aaaf490a25c151ab534a7c029ebd3f1_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-velero-plugin-for-aws-rhel9@sha256:486c3b2f1e8a16986309966473aab35a7aaaf490a25c151ab534a7c029ebd3f1?arch=amd64&repository_url=registry.redhat.io/oadp/oadp-velero-plugin-for-aws-rhel9&tag=1.3.0-29"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-velero-plugin-for-csi-rhel9@sha256:857e46130a3b0be6d76d45531518e44e59d3a10cfe635fd602b1e28c1d9f5ee8_amd64",
+                "product": {
+                  "name": "oadp/oadp-velero-plugin-for-csi-rhel9@sha256:857e46130a3b0be6d76d45531518e44e59d3a10cfe635fd602b1e28c1d9f5ee8_amd64",
+                  "product_id": "oadp/oadp-velero-plugin-for-csi-rhel9@sha256:857e46130a3b0be6d76d45531518e44e59d3a10cfe635fd602b1e28c1d9f5ee8_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-velero-plugin-for-csi-rhel9@sha256:857e46130a3b0be6d76d45531518e44e59d3a10cfe635fd602b1e28c1d9f5ee8?arch=amd64&repository_url=registry.redhat.io/oadp/oadp-velero-plugin-for-csi-rhel9&tag=1.3.0-34"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:702008d74a7ed324d1da2ac20e2358504bb04d6708d2703a7ea65414450f201d_amd64",
+                "product": {
+                  "name": "oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:702008d74a7ed324d1da2ac20e2358504bb04d6708d2703a7ea65414450f201d_amd64",
+                  "product_id": "oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:702008d74a7ed324d1da2ac20e2358504bb04d6708d2703a7ea65414450f201d_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-velero-plugin-for-gcp-rhel9@sha256:702008d74a7ed324d1da2ac20e2358504bb04d6708d2703a7ea65414450f201d?arch=amd64&repository_url=registry.redhat.io/oadp/oadp-velero-plugin-for-gcp-rhel9&tag=1.3.0-29"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:62db24300066a4f25fadc6f9f2e38d5ed52053932084524021b98ade564b8a5f_amd64",
+                "product": {
+                  "name": "oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:62db24300066a4f25fadc6f9f2e38d5ed52053932084524021b98ade564b8a5f_amd64",
+                  "product_id": "oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:62db24300066a4f25fadc6f9f2e38d5ed52053932084524021b98ade564b8a5f_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:62db24300066a4f25fadc6f9f2e38d5ed52053932084524021b98ade564b8a5f?arch=amd64&repository_url=registry.redhat.io/oadp/oadp-velero-plugin-for-microsoft-azure-rhel9&tag=1.3.0-30"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-velero-restic-restore-helper-rhel9@sha256:e76d891b2cd11cbc1e7f033e3ec03e560759785d6cac10b07899413e4ebd4393_amd64",
+                "product": {
+                  "name": "oadp/oadp-velero-restic-restore-helper-rhel9@sha256:e76d891b2cd11cbc1e7f033e3ec03e560759785d6cac10b07899413e4ebd4393_amd64",
+                  "product_id": "oadp/oadp-velero-restic-restore-helper-rhel9@sha256:e76d891b2cd11cbc1e7f033e3ec03e560759785d6cac10b07899413e4ebd4393_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-velero-restic-restore-helper-rhel9@sha256:e76d891b2cd11cbc1e7f033e3ec03e560759785d6cac10b07899413e4ebd4393?arch=amd64&repository_url=registry.redhat.io/oadp/oadp-velero-restic-restore-helper-rhel9&tag=1.3.0-45"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "amd64"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:0d0b1ab0e8c287286f19ce71d9aacba69510826347f4dda5e0ff7a2be0ef6c88_ppc64le",
+                "product": {
+                  "name": "oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:0d0b1ab0e8c287286f19ce71d9aacba69510826347f4dda5e0ff7a2be0ef6c88_ppc64le",
+                  "product_id": "oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:0d0b1ab0e8c287286f19ce71d9aacba69510826347f4dda5e0ff7a2be0ef6c88_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-kubevirt-velero-plugin-rhel9@sha256:0d0b1ab0e8c287286f19ce71d9aacba69510826347f4dda5e0ff7a2be0ef6c88?arch=ppc64le&repository_url=registry.redhat.io/oadp/oadp-kubevirt-velero-plugin-rhel9&tag=1.3.0-29"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-mustgather-rhel9@sha256:71ae5ff534f4f67cf99dedc3c21b247a3e88749fad856249e7ad746518671667_ppc64le",
+                "product": {
+                  "name": "oadp/oadp-mustgather-rhel9@sha256:71ae5ff534f4f67cf99dedc3c21b247a3e88749fad856249e7ad746518671667_ppc64le",
+                  "product_id": "oadp/oadp-mustgather-rhel9@sha256:71ae5ff534f4f67cf99dedc3c21b247a3e88749fad856249e7ad746518671667_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-mustgather-rhel9@sha256:71ae5ff534f4f67cf99dedc3c21b247a3e88749fad856249e7ad746518671667?arch=ppc64le&repository_url=registry.redhat.io/oadp/oadp-mustgather-rhel9&tag=1.3.0-138"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-operator-bundle@sha256:27778b1cea8867d0e5a1dd400fa4e605161fbaf7fa1e9eeacd63522bfd1cf5d6_ppc64le",
+                "product": {
+                  "name": "oadp/oadp-operator-bundle@sha256:27778b1cea8867d0e5a1dd400fa4e605161fbaf7fa1e9eeacd63522bfd1cf5d6_ppc64le",
+                  "product_id": "oadp/oadp-operator-bundle@sha256:27778b1cea8867d0e5a1dd400fa4e605161fbaf7fa1e9eeacd63522bfd1cf5d6_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-operator-bundle@sha256:27778b1cea8867d0e5a1dd400fa4e605161fbaf7fa1e9eeacd63522bfd1cf5d6?arch=ppc64le&repository_url=registry.redhat.io/oadp/oadp-operator-bundle&tag=1.3.0-156"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-rhel9-operator@sha256:e1cb117c57176aaa30641b849a95a23e737215e15f1be784f73870c1f2be02fd_ppc64le",
+                "product": {
+                  "name": "oadp/oadp-rhel9-operator@sha256:e1cb117c57176aaa30641b849a95a23e737215e15f1be784f73870c1f2be02fd_ppc64le",
+                  "product_id": "oadp/oadp-rhel9-operator@sha256:e1cb117c57176aaa30641b849a95a23e737215e15f1be784f73870c1f2be02fd_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-rhel9-operator@sha256:e1cb117c57176aaa30641b849a95a23e737215e15f1be784f73870c1f2be02fd?arch=ppc64le&repository_url=registry.redhat.io/oadp/oadp-rhel9-operator&tag=1.3.0-97"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-velero-rhel9@sha256:79578a4ab2c7904e2d337be50b9f63afd7c0c39ca10abee7fd9b13e6f481656b_ppc64le",
+                "product": {
+                  "name": "oadp/oadp-velero-rhel9@sha256:79578a4ab2c7904e2d337be50b9f63afd7c0c39ca10abee7fd9b13e6f481656b_ppc64le",
+                  "product_id": "oadp/oadp-velero-rhel9@sha256:79578a4ab2c7904e2d337be50b9f63afd7c0c39ca10abee7fd9b13e6f481656b_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-velero-rhel9@sha256:79578a4ab2c7904e2d337be50b9f63afd7c0c39ca10abee7fd9b13e6f481656b?arch=ppc64le&repository_url=registry.redhat.io/oadp/oadp-velero-rhel9&tag=1.3.0-50"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-velero-plugin-rhel9@sha256:befbf80f9941cb94914184c8459853b9575a795d39d827c40593de06a67bc6a0_ppc64le",
+                "product": {
+                  "name": "oadp/oadp-velero-plugin-rhel9@sha256:befbf80f9941cb94914184c8459853b9575a795d39d827c40593de06a67bc6a0_ppc64le",
+                  "product_id": "oadp/oadp-velero-plugin-rhel9@sha256:befbf80f9941cb94914184c8459853b9575a795d39d827c40593de06a67bc6a0_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-velero-plugin-rhel9@sha256:befbf80f9941cb94914184c8459853b9575a795d39d827c40593de06a67bc6a0?arch=ppc64le&repository_url=registry.redhat.io/oadp/oadp-velero-plugin-rhel9&tag=1.3.0-32"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-velero-plugin-for-aws-rhel9@sha256:a355c4029f781a38c9d0878fcfae79191751aafe63a88d0f7b00df66520fac6c_ppc64le",
+                "product": {
+                  "name": "oadp/oadp-velero-plugin-for-aws-rhel9@sha256:a355c4029f781a38c9d0878fcfae79191751aafe63a88d0f7b00df66520fac6c_ppc64le",
+                  "product_id": "oadp/oadp-velero-plugin-for-aws-rhel9@sha256:a355c4029f781a38c9d0878fcfae79191751aafe63a88d0f7b00df66520fac6c_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-velero-plugin-for-aws-rhel9@sha256:a355c4029f781a38c9d0878fcfae79191751aafe63a88d0f7b00df66520fac6c?arch=ppc64le&repository_url=registry.redhat.io/oadp/oadp-velero-plugin-for-aws-rhel9&tag=1.3.0-29"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-velero-plugin-for-csi-rhel9@sha256:0e82ac7f8380539bbc82507e7ef55d9a97d79eaeb8c3c0ada81e6dddd29b19eb_ppc64le",
+                "product": {
+                  "name": "oadp/oadp-velero-plugin-for-csi-rhel9@sha256:0e82ac7f8380539bbc82507e7ef55d9a97d79eaeb8c3c0ada81e6dddd29b19eb_ppc64le",
+                  "product_id": "oadp/oadp-velero-plugin-for-csi-rhel9@sha256:0e82ac7f8380539bbc82507e7ef55d9a97d79eaeb8c3c0ada81e6dddd29b19eb_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-velero-plugin-for-csi-rhel9@sha256:0e82ac7f8380539bbc82507e7ef55d9a97d79eaeb8c3c0ada81e6dddd29b19eb?arch=ppc64le&repository_url=registry.redhat.io/oadp/oadp-velero-plugin-for-csi-rhel9&tag=1.3.0-34"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:d8772fc1fb3f4597dc0e0c0de6986cd0954a61ae67830d01a1e3e7ecfef0fb22_ppc64le",
+                "product": {
+                  "name": "oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:d8772fc1fb3f4597dc0e0c0de6986cd0954a61ae67830d01a1e3e7ecfef0fb22_ppc64le",
+                  "product_id": "oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:d8772fc1fb3f4597dc0e0c0de6986cd0954a61ae67830d01a1e3e7ecfef0fb22_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-velero-plugin-for-gcp-rhel9@sha256:d8772fc1fb3f4597dc0e0c0de6986cd0954a61ae67830d01a1e3e7ecfef0fb22?arch=ppc64le&repository_url=registry.redhat.io/oadp/oadp-velero-plugin-for-gcp-rhel9&tag=1.3.0-29"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:1016fe7844ac9bf28c07b8c0d74acdf62854d2bed8319047e557973569d44bbc_ppc64le",
+                "product": {
+                  "name": "oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:1016fe7844ac9bf28c07b8c0d74acdf62854d2bed8319047e557973569d44bbc_ppc64le",
+                  "product_id": "oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:1016fe7844ac9bf28c07b8c0d74acdf62854d2bed8319047e557973569d44bbc_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:1016fe7844ac9bf28c07b8c0d74acdf62854d2bed8319047e557973569d44bbc?arch=ppc64le&repository_url=registry.redhat.io/oadp/oadp-velero-plugin-for-microsoft-azure-rhel9&tag=1.3.0-30"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "oadp/oadp-velero-restic-restore-helper-rhel9@sha256:0a37b41f0311547a307509c968071bf6449e48c42e8cdf2544e4378ac7359903_ppc64le",
+                "product": {
+                  "name": "oadp/oadp-velero-restic-restore-helper-rhel9@sha256:0a37b41f0311547a307509c968071bf6449e48c42e8cdf2544e4378ac7359903_ppc64le",
+                  "product_id": "oadp/oadp-velero-restic-restore-helper-rhel9@sha256:0a37b41f0311547a307509c968071bf6449e48c42e8cdf2544e4378ac7359903_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/oadp-velero-restic-restore-helper-rhel9@sha256:0a37b41f0311547a307509c968071bf6449e48c42e8cdf2544e4378ac7359903?arch=ppc64le&repository_url=registry.redhat.io/oadp/oadp-velero-restic-restore-helper-rhel9&tag=1.3.0-45"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "ppc64le"
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      }
+    ],
+    "relationships": [
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:0d0b1ab0e8c287286f19ce71d9aacba69510826347f4dda5e0ff7a2be0ef6c88_ppc64le as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:0d0b1ab0e8c287286f19ce71d9aacba69510826347f4dda5e0ff7a2be0ef6c88_ppc64le"
+        },
+        "product_reference": "oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:0d0b1ab0e8c287286f19ce71d9aacba69510826347f4dda5e0ff7a2be0ef6c88_ppc64le",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:3970a66b4525a97ef6ee39fea1570f7b81b0529b281d05d5bad82e2c2261b00d_amd64 as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:3970a66b4525a97ef6ee39fea1570f7b81b0529b281d05d5bad82e2c2261b00d_amd64"
+        },
+        "product_reference": "oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:3970a66b4525a97ef6ee39fea1570f7b81b0529b281d05d5bad82e2c2261b00d_amd64",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:5b149e2f215085f5b969bde093fcac250682d48ccd2d1e671d55e945e02c5c24_arm64 as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:5b149e2f215085f5b969bde093fcac250682d48ccd2d1e671d55e945e02c5c24_arm64"
+        },
+        "product_reference": "oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:5b149e2f215085f5b969bde093fcac250682d48ccd2d1e671d55e945e02c5c24_arm64",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:f68841818eebf6fd794a4766fcaddacc7476b02e5248a25db45ee325b9dbd682_s390x as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:f68841818eebf6fd794a4766fcaddacc7476b02e5248a25db45ee325b9dbd682_s390x"
+        },
+        "product_reference": "oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:f68841818eebf6fd794a4766fcaddacc7476b02e5248a25db45ee325b9dbd682_s390x",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-mustgather-rhel9@sha256:1979b2e3a393a936063792a4dbdc52a429b3015a5c661dea9041954aba46c567_amd64 as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:1979b2e3a393a936063792a4dbdc52a429b3015a5c661dea9041954aba46c567_amd64"
+        },
+        "product_reference": "oadp/oadp-mustgather-rhel9@sha256:1979b2e3a393a936063792a4dbdc52a429b3015a5c661dea9041954aba46c567_amd64",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-mustgather-rhel9@sha256:474ed76e1544436e6708c029329f4cebc72efdcfb2e2df751c3cd917224a8e4a_arm64 as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:474ed76e1544436e6708c029329f4cebc72efdcfb2e2df751c3cd917224a8e4a_arm64"
+        },
+        "product_reference": "oadp/oadp-mustgather-rhel9@sha256:474ed76e1544436e6708c029329f4cebc72efdcfb2e2df751c3cd917224a8e4a_arm64",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-mustgather-rhel9@sha256:71ae5ff534f4f67cf99dedc3c21b247a3e88749fad856249e7ad746518671667_ppc64le as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:71ae5ff534f4f67cf99dedc3c21b247a3e88749fad856249e7ad746518671667_ppc64le"
+        },
+        "product_reference": "oadp/oadp-mustgather-rhel9@sha256:71ae5ff534f4f67cf99dedc3c21b247a3e88749fad856249e7ad746518671667_ppc64le",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-mustgather-rhel9@sha256:8fb3cce0033e3de7fc67e764de96773eec18f4184cd5f9ddf4b0cd2b2d953220_s390x as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:8fb3cce0033e3de7fc67e764de96773eec18f4184cd5f9ddf4b0cd2b2d953220_s390x"
+        },
+        "product_reference": "oadp/oadp-mustgather-rhel9@sha256:8fb3cce0033e3de7fc67e764de96773eec18f4184cd5f9ddf4b0cd2b2d953220_s390x",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-operator-bundle@sha256:27778b1cea8867d0e5a1dd400fa4e605161fbaf7fa1e9eeacd63522bfd1cf5d6_ppc64le as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:27778b1cea8867d0e5a1dd400fa4e605161fbaf7fa1e9eeacd63522bfd1cf5d6_ppc64le"
+        },
+        "product_reference": "oadp/oadp-operator-bundle@sha256:27778b1cea8867d0e5a1dd400fa4e605161fbaf7fa1e9eeacd63522bfd1cf5d6_ppc64le",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-operator-bundle@sha256:3059a1db6a7041bad8c656287d8fcafc478ac15656fe95d030e9bafa967e8d9a_s390x as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:3059a1db6a7041bad8c656287d8fcafc478ac15656fe95d030e9bafa967e8d9a_s390x"
+        },
+        "product_reference": "oadp/oadp-operator-bundle@sha256:3059a1db6a7041bad8c656287d8fcafc478ac15656fe95d030e9bafa967e8d9a_s390x",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-operator-bundle@sha256:4cde7e9b893b3a9b5c6eccb5496701d1601046cc1487f94d28bed3b0538e9957_amd64 as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:4cde7e9b893b3a9b5c6eccb5496701d1601046cc1487f94d28bed3b0538e9957_amd64"
+        },
+        "product_reference": "oadp/oadp-operator-bundle@sha256:4cde7e9b893b3a9b5c6eccb5496701d1601046cc1487f94d28bed3b0538e9957_amd64",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-operator-bundle@sha256:50e6ff903856253916602dbb2e2fc5d0a2cf013fb710af1fb618c09aed30d09d_arm64 as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:50e6ff903856253916602dbb2e2fc5d0a2cf013fb710af1fb618c09aed30d09d_arm64"
+        },
+        "product_reference": "oadp/oadp-operator-bundle@sha256:50e6ff903856253916602dbb2e2fc5d0a2cf013fb710af1fb618c09aed30d09d_arm64",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-rhel9-operator@sha256:063111faad5ce211e11c5eb2d61559d0b9a89178cdf86377e38599e7232d55d2_s390x as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:063111faad5ce211e11c5eb2d61559d0b9a89178cdf86377e38599e7232d55d2_s390x"
+        },
+        "product_reference": "oadp/oadp-rhel9-operator@sha256:063111faad5ce211e11c5eb2d61559d0b9a89178cdf86377e38599e7232d55d2_s390x",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-rhel9-operator@sha256:a4995bf30e14bcc454a978199f4b6b9fbdcb5668dd80ebaa05cd8b4d64486856_amd64 as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:a4995bf30e14bcc454a978199f4b6b9fbdcb5668dd80ebaa05cd8b4d64486856_amd64"
+        },
+        "product_reference": "oadp/oadp-rhel9-operator@sha256:a4995bf30e14bcc454a978199f4b6b9fbdcb5668dd80ebaa05cd8b4d64486856_amd64",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-rhel9-operator@sha256:d6361b290e08f9bfc22d902587206ef81ebdf9e8234475e7b846bb165c6029ba_arm64 as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:d6361b290e08f9bfc22d902587206ef81ebdf9e8234475e7b846bb165c6029ba_arm64"
+        },
+        "product_reference": "oadp/oadp-rhel9-operator@sha256:d6361b290e08f9bfc22d902587206ef81ebdf9e8234475e7b846bb165c6029ba_arm64",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-rhel9-operator@sha256:e1cb117c57176aaa30641b849a95a23e737215e15f1be784f73870c1f2be02fd_ppc64le as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:e1cb117c57176aaa30641b849a95a23e737215e15f1be784f73870c1f2be02fd_ppc64le"
+        },
+        "product_reference": "oadp/oadp-rhel9-operator@sha256:e1cb117c57176aaa30641b849a95a23e737215e15f1be784f73870c1f2be02fd_ppc64le",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-velero-plugin-for-aws-rhel9@sha256:24a009a20c555e5da425a4127ac944907db6a70e733bfd7d4009406430d2e615_s390x as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:24a009a20c555e5da425a4127ac944907db6a70e733bfd7d4009406430d2e615_s390x"
+        },
+        "product_reference": "oadp/oadp-velero-plugin-for-aws-rhel9@sha256:24a009a20c555e5da425a4127ac944907db6a70e733bfd7d4009406430d2e615_s390x",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-velero-plugin-for-aws-rhel9@sha256:486c3b2f1e8a16986309966473aab35a7aaaf490a25c151ab534a7c029ebd3f1_amd64 as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:486c3b2f1e8a16986309966473aab35a7aaaf490a25c151ab534a7c029ebd3f1_amd64"
+        },
+        "product_reference": "oadp/oadp-velero-plugin-for-aws-rhel9@sha256:486c3b2f1e8a16986309966473aab35a7aaaf490a25c151ab534a7c029ebd3f1_amd64",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-velero-plugin-for-aws-rhel9@sha256:a355c4029f781a38c9d0878fcfae79191751aafe63a88d0f7b00df66520fac6c_ppc64le as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:a355c4029f781a38c9d0878fcfae79191751aafe63a88d0f7b00df66520fac6c_ppc64le"
+        },
+        "product_reference": "oadp/oadp-velero-plugin-for-aws-rhel9@sha256:a355c4029f781a38c9d0878fcfae79191751aafe63a88d0f7b00df66520fac6c_ppc64le",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-velero-plugin-for-aws-rhel9@sha256:be8c3101ff144d717007d7871457df69e1158c993c8b4fe5deac7294b939e3ee_arm64 as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:be8c3101ff144d717007d7871457df69e1158c993c8b4fe5deac7294b939e3ee_arm64"
+        },
+        "product_reference": "oadp/oadp-velero-plugin-for-aws-rhel9@sha256:be8c3101ff144d717007d7871457df69e1158c993c8b4fe5deac7294b939e3ee_arm64",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-velero-plugin-for-csi-rhel9@sha256:0e82ac7f8380539bbc82507e7ef55d9a97d79eaeb8c3c0ada81e6dddd29b19eb_ppc64le as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:0e82ac7f8380539bbc82507e7ef55d9a97d79eaeb8c3c0ada81e6dddd29b19eb_ppc64le"
+        },
+        "product_reference": "oadp/oadp-velero-plugin-for-csi-rhel9@sha256:0e82ac7f8380539bbc82507e7ef55d9a97d79eaeb8c3c0ada81e6dddd29b19eb_ppc64le",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-velero-plugin-for-csi-rhel9@sha256:2a9f38ceaf22ef7d06a072b6a590a63ad7169f9e5936ca81236723cae5f679e5_arm64 as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:2a9f38ceaf22ef7d06a072b6a590a63ad7169f9e5936ca81236723cae5f679e5_arm64"
+        },
+        "product_reference": "oadp/oadp-velero-plugin-for-csi-rhel9@sha256:2a9f38ceaf22ef7d06a072b6a590a63ad7169f9e5936ca81236723cae5f679e5_arm64",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-velero-plugin-for-csi-rhel9@sha256:6b59f2d1dea625fc1e14275083542986e3d53fdb1dc1d934e3f1f2fa2c90fd5a_s390x as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:6b59f2d1dea625fc1e14275083542986e3d53fdb1dc1d934e3f1f2fa2c90fd5a_s390x"
+        },
+        "product_reference": "oadp/oadp-velero-plugin-for-csi-rhel9@sha256:6b59f2d1dea625fc1e14275083542986e3d53fdb1dc1d934e3f1f2fa2c90fd5a_s390x",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-velero-plugin-for-csi-rhel9@sha256:857e46130a3b0be6d76d45531518e44e59d3a10cfe635fd602b1e28c1d9f5ee8_amd64 as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:857e46130a3b0be6d76d45531518e44e59d3a10cfe635fd602b1e28c1d9f5ee8_amd64"
+        },
+        "product_reference": "oadp/oadp-velero-plugin-for-csi-rhel9@sha256:857e46130a3b0be6d76d45531518e44e59d3a10cfe635fd602b1e28c1d9f5ee8_amd64",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:5d7cb76f4424c2208d9aee8368b960137d69d173caf88c1c5c63b1880374550b_s390x as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:5d7cb76f4424c2208d9aee8368b960137d69d173caf88c1c5c63b1880374550b_s390x"
+        },
+        "product_reference": "oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:5d7cb76f4424c2208d9aee8368b960137d69d173caf88c1c5c63b1880374550b_s390x",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:702008d74a7ed324d1da2ac20e2358504bb04d6708d2703a7ea65414450f201d_amd64 as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:702008d74a7ed324d1da2ac20e2358504bb04d6708d2703a7ea65414450f201d_amd64"
+        },
+        "product_reference": "oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:702008d74a7ed324d1da2ac20e2358504bb04d6708d2703a7ea65414450f201d_amd64",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:d8772fc1fb3f4597dc0e0c0de6986cd0954a61ae67830d01a1e3e7ecfef0fb22_ppc64le as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:d8772fc1fb3f4597dc0e0c0de6986cd0954a61ae67830d01a1e3e7ecfef0fb22_ppc64le"
+        },
+        "product_reference": "oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:d8772fc1fb3f4597dc0e0c0de6986cd0954a61ae67830d01a1e3e7ecfef0fb22_ppc64le",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:f950bddfb84693a35c98df847c1ccf486a4c480207f50b6836b0d0da1cce9e05_arm64 as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:f950bddfb84693a35c98df847c1ccf486a4c480207f50b6836b0d0da1cce9e05_arm64"
+        },
+        "product_reference": "oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:f950bddfb84693a35c98df847c1ccf486a4c480207f50b6836b0d0da1cce9e05_arm64",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:1016fe7844ac9bf28c07b8c0d74acdf62854d2bed8319047e557973569d44bbc_ppc64le as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:1016fe7844ac9bf28c07b8c0d74acdf62854d2bed8319047e557973569d44bbc_ppc64le"
+        },
+        "product_reference": "oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:1016fe7844ac9bf28c07b8c0d74acdf62854d2bed8319047e557973569d44bbc_ppc64le",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:62db24300066a4f25fadc6f9f2e38d5ed52053932084524021b98ade564b8a5f_amd64 as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:62db24300066a4f25fadc6f9f2e38d5ed52053932084524021b98ade564b8a5f_amd64"
+        },
+        "product_reference": "oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:62db24300066a4f25fadc6f9f2e38d5ed52053932084524021b98ade564b8a5f_amd64",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:b5da27f7e78679e2d191f4f95da9fed16c6771471fe7fa1cad3eaf5c84c58e74_arm64 as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:b5da27f7e78679e2d191f4f95da9fed16c6771471fe7fa1cad3eaf5c84c58e74_arm64"
+        },
+        "product_reference": "oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:b5da27f7e78679e2d191f4f95da9fed16c6771471fe7fa1cad3eaf5c84c58e74_arm64",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:e48934c0a05ff02fc498679a66b4f93242a10686b973c98925006517ed1c3c59_s390x as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:e48934c0a05ff02fc498679a66b4f93242a10686b973c98925006517ed1c3c59_s390x"
+        },
+        "product_reference": "oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:e48934c0a05ff02fc498679a66b4f93242a10686b973c98925006517ed1c3c59_s390x",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-velero-plugin-rhel9@sha256:01918f08d522dcf429dfbdab99dfc0c57aa84a5073b084c5f83b6ab6dca805c3_amd64 as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:01918f08d522dcf429dfbdab99dfc0c57aa84a5073b084c5f83b6ab6dca805c3_amd64"
+        },
+        "product_reference": "oadp/oadp-velero-plugin-rhel9@sha256:01918f08d522dcf429dfbdab99dfc0c57aa84a5073b084c5f83b6ab6dca805c3_amd64",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-velero-plugin-rhel9@sha256:71ab195206354afe71631bace4c1754d13e7f9584d84b88513f45ba9e751ed24_s390x as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:71ab195206354afe71631bace4c1754d13e7f9584d84b88513f45ba9e751ed24_s390x"
+        },
+        "product_reference": "oadp/oadp-velero-plugin-rhel9@sha256:71ab195206354afe71631bace4c1754d13e7f9584d84b88513f45ba9e751ed24_s390x",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-velero-plugin-rhel9@sha256:bcc35ddbe11badbbf7fc900dbe53bd2ef3f51d867c5a64f59b7d43d1c5e801a6_arm64 as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:bcc35ddbe11badbbf7fc900dbe53bd2ef3f51d867c5a64f59b7d43d1c5e801a6_arm64"
+        },
+        "product_reference": "oadp/oadp-velero-plugin-rhel9@sha256:bcc35ddbe11badbbf7fc900dbe53bd2ef3f51d867c5a64f59b7d43d1c5e801a6_arm64",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-velero-plugin-rhel9@sha256:befbf80f9941cb94914184c8459853b9575a795d39d827c40593de06a67bc6a0_ppc64le as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:befbf80f9941cb94914184c8459853b9575a795d39d827c40593de06a67bc6a0_ppc64le"
+        },
+        "product_reference": "oadp/oadp-velero-plugin-rhel9@sha256:befbf80f9941cb94914184c8459853b9575a795d39d827c40593de06a67bc6a0_ppc64le",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-velero-restic-restore-helper-rhel9@sha256:0a37b41f0311547a307509c968071bf6449e48c42e8cdf2544e4378ac7359903_ppc64le as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:0a37b41f0311547a307509c968071bf6449e48c42e8cdf2544e4378ac7359903_ppc64le"
+        },
+        "product_reference": "oadp/oadp-velero-restic-restore-helper-rhel9@sha256:0a37b41f0311547a307509c968071bf6449e48c42e8cdf2544e4378ac7359903_ppc64le",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-velero-restic-restore-helper-rhel9@sha256:61f301f44a2b26dd73897046cdd9e511eaee0f026092aeb8c2b0c57a4cf3fb59_arm64 as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:61f301f44a2b26dd73897046cdd9e511eaee0f026092aeb8c2b0c57a4cf3fb59_arm64"
+        },
+        "product_reference": "oadp/oadp-velero-restic-restore-helper-rhel9@sha256:61f301f44a2b26dd73897046cdd9e511eaee0f026092aeb8c2b0c57a4cf3fb59_arm64",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-velero-restic-restore-helper-rhel9@sha256:a47a609eb3c1a6f881592a3c080a413541c4682d60993c33f944f690095e99c7_s390x as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:a47a609eb3c1a6f881592a3c080a413541c4682d60993c33f944f690095e99c7_s390x"
+        },
+        "product_reference": "oadp/oadp-velero-restic-restore-helper-rhel9@sha256:a47a609eb3c1a6f881592a3c080a413541c4682d60993c33f944f690095e99c7_s390x",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-velero-restic-restore-helper-rhel9@sha256:e76d891b2cd11cbc1e7f033e3ec03e560759785d6cac10b07899413e4ebd4393_amd64 as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:e76d891b2cd11cbc1e7f033e3ec03e560759785d6cac10b07899413e4ebd4393_amd64"
+        },
+        "product_reference": "oadp/oadp-velero-restic-restore-helper-rhel9@sha256:e76d891b2cd11cbc1e7f033e3ec03e560759785d6cac10b07899413e4ebd4393_amd64",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-velero-rhel9@sha256:197a2a9ccf5939ffc38a2e81868ccddd908a79f713f72c06e56bcb34c7dd0ca7_arm64 as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:197a2a9ccf5939ffc38a2e81868ccddd908a79f713f72c06e56bcb34c7dd0ca7_arm64"
+        },
+        "product_reference": "oadp/oadp-velero-rhel9@sha256:197a2a9ccf5939ffc38a2e81868ccddd908a79f713f72c06e56bcb34c7dd0ca7_arm64",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-velero-rhel9@sha256:35705ecc01555ec8b6deda36aca73d4a1eb0fdee12ce66f6109cbfe46a9a89b9_amd64 as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:35705ecc01555ec8b6deda36aca73d4a1eb0fdee12ce66f6109cbfe46a9a89b9_amd64"
+        },
+        "product_reference": "oadp/oadp-velero-rhel9@sha256:35705ecc01555ec8b6deda36aca73d4a1eb0fdee12ce66f6109cbfe46a9a89b9_amd64",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-velero-rhel9@sha256:492ce9081642ee43dd2de20b68f48c687bab9b23efcb6a77648f9a341687a818_s390x as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:492ce9081642ee43dd2de20b68f48c687bab9b23efcb6a77648f9a341687a818_s390x"
+        },
+        "product_reference": "oadp/oadp-velero-rhel9@sha256:492ce9081642ee43dd2de20b68f48c687bab9b23efcb6a77648f9a341687a818_s390x",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "oadp/oadp-velero-rhel9@sha256:79578a4ab2c7904e2d337be50b9f63afd7c0c39ca10abee7fd9b13e6f481656b_ppc64le as a component of 9Base-OADP-1.3",
+          "product_id": "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:79578a4ab2c7904e2d337be50b9f63afd7c0c39ca10abee7fd9b13e6f481656b_ppc64le"
+        },
+        "product_reference": "oadp/oadp-velero-rhel9@sha256:79578a4ab2c7904e2d337be50b9f63afd7c0c39ca10abee7fd9b13e6f481656b_ppc64le",
+        "relates_to_product_reference": "9Base-OADP-1.3"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2023-39325",
+      "cwe": {
+        "id": "CWE-400",
+        "name": "Uncontrolled Resource Consumption"
+      },
+      "discovery_date": "2023-10-10T00:00:00+00:00",
+      "flags": [
+        {
+          "label": "vulnerable_code_not_present",
+          "product_ids": [
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:1979b2e3a393a936063792a4dbdc52a429b3015a5c661dea9041954aba46c567_amd64",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:474ed76e1544436e6708c029329f4cebc72efdcfb2e2df751c3cd917224a8e4a_arm64",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:71ae5ff534f4f67cf99dedc3c21b247a3e88749fad856249e7ad746518671667_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:8fb3cce0033e3de7fc67e764de96773eec18f4184cd5f9ddf4b0cd2b2d953220_s390x",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:27778b1cea8867d0e5a1dd400fa4e605161fbaf7fa1e9eeacd63522bfd1cf5d6_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:3059a1db6a7041bad8c656287d8fcafc478ac15656fe95d030e9bafa967e8d9a_s390x",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:4cde7e9b893b3a9b5c6eccb5496701d1601046cc1487f94d28bed3b0538e9957_amd64",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:50e6ff903856253916602dbb2e2fc5d0a2cf013fb710af1fb618c09aed30d09d_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:0a37b41f0311547a307509c968071bf6449e48c42e8cdf2544e4378ac7359903_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:61f301f44a2b26dd73897046cdd9e511eaee0f026092aeb8c2b0c57a4cf3fb59_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:a47a609eb3c1a6f881592a3c080a413541c4682d60993c33f944f690095e99c7_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:e76d891b2cd11cbc1e7f033e3ec03e560759785d6cac10b07899413e4ebd4393_amd64"
+          ]
+        }
+      ],
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2243296"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A flaw was found in handling multiplexed streams in the HTTP/2 protocol. A client can repeatedly make a request for a new multiplex stream and immediately send an RST_STREAM frame to cancel it. This creates extra work for the server setting up and tearing down the streams while not hitting any server-side limit for the maximum number of active streams per connection, resulting in a denial of service due to server resource consumption. Red Hat has rated the severity of this flaw as 'Important' as the US Cybersecurity and Infrastructure Security Agency (CISA) declared this vulnerability an active exploit.\r\n\r\nCVE-2023-39325 was assigned for the `Rapid Reset Attack` in the Go language packages.",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "golang: net/http, x/net/http2: rapid stream resets can cause excessive work (CVE-2023-44487)",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "other",
+          "text": "This CVE is related to CVE-2023-44487.\n\nThe majority of RHEL utilities are not long-running applications; instead, they are command-line tools. These tools utilize Golang package as build-time dependency, which is why they are classified as having a \"Moderate\" level of impact.",
+          "title": "Statement"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:0d0b1ab0e8c287286f19ce71d9aacba69510826347f4dda5e0ff7a2be0ef6c88_ppc64le",
+          "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:3970a66b4525a97ef6ee39fea1570f7b81b0529b281d05d5bad82e2c2261b00d_amd64",
+          "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:5b149e2f215085f5b969bde093fcac250682d48ccd2d1e671d55e945e02c5c24_arm64",
+          "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:f68841818eebf6fd794a4766fcaddacc7476b02e5248a25db45ee325b9dbd682_s390x",
+          "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:063111faad5ce211e11c5eb2d61559d0b9a89178cdf86377e38599e7232d55d2_s390x",
+          "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:a4995bf30e14bcc454a978199f4b6b9fbdcb5668dd80ebaa05cd8b4d64486856_amd64",
+          "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:d6361b290e08f9bfc22d902587206ef81ebdf9e8234475e7b846bb165c6029ba_arm64",
+          "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:e1cb117c57176aaa30641b849a95a23e737215e15f1be784f73870c1f2be02fd_ppc64le",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:24a009a20c555e5da425a4127ac944907db6a70e733bfd7d4009406430d2e615_s390x",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:486c3b2f1e8a16986309966473aab35a7aaaf490a25c151ab534a7c029ebd3f1_amd64",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:a355c4029f781a38c9d0878fcfae79191751aafe63a88d0f7b00df66520fac6c_ppc64le",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:be8c3101ff144d717007d7871457df69e1158c993c8b4fe5deac7294b939e3ee_arm64",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:0e82ac7f8380539bbc82507e7ef55d9a97d79eaeb8c3c0ada81e6dddd29b19eb_ppc64le",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:2a9f38ceaf22ef7d06a072b6a590a63ad7169f9e5936ca81236723cae5f679e5_arm64",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:6b59f2d1dea625fc1e14275083542986e3d53fdb1dc1d934e3f1f2fa2c90fd5a_s390x",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:857e46130a3b0be6d76d45531518e44e59d3a10cfe635fd602b1e28c1d9f5ee8_amd64",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:5d7cb76f4424c2208d9aee8368b960137d69d173caf88c1c5c63b1880374550b_s390x",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:702008d74a7ed324d1da2ac20e2358504bb04d6708d2703a7ea65414450f201d_amd64",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:d8772fc1fb3f4597dc0e0c0de6986cd0954a61ae67830d01a1e3e7ecfef0fb22_ppc64le",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:f950bddfb84693a35c98df847c1ccf486a4c480207f50b6836b0d0da1cce9e05_arm64",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:1016fe7844ac9bf28c07b8c0d74acdf62854d2bed8319047e557973569d44bbc_ppc64le",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:62db24300066a4f25fadc6f9f2e38d5ed52053932084524021b98ade564b8a5f_amd64",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:b5da27f7e78679e2d191f4f95da9fed16c6771471fe7fa1cad3eaf5c84c58e74_arm64",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:e48934c0a05ff02fc498679a66b4f93242a10686b973c98925006517ed1c3c59_s390x",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:01918f08d522dcf429dfbdab99dfc0c57aa84a5073b084c5f83b6ab6dca805c3_amd64",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:71ab195206354afe71631bace4c1754d13e7f9584d84b88513f45ba9e751ed24_s390x",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:bcc35ddbe11badbbf7fc900dbe53bd2ef3f51d867c5a64f59b7d43d1c5e801a6_arm64",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:befbf80f9941cb94914184c8459853b9575a795d39d827c40593de06a67bc6a0_ppc64le",
+          "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:197a2a9ccf5939ffc38a2e81868ccddd908a79f713f72c06e56bcb34c7dd0ca7_arm64",
+          "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:35705ecc01555ec8b6deda36aca73d4a1eb0fdee12ce66f6109cbfe46a9a89b9_amd64",
+          "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:492ce9081642ee43dd2de20b68f48c687bab9b23efcb6a77648f9a341687a818_s390x",
+          "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:79578a4ab2c7904e2d337be50b9f63afd7c0c39ca10abee7fd9b13e6f481656b_ppc64le"
+        ],
+        "known_not_affected": [
+          "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:1979b2e3a393a936063792a4dbdc52a429b3015a5c661dea9041954aba46c567_amd64",
+          "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:474ed76e1544436e6708c029329f4cebc72efdcfb2e2df751c3cd917224a8e4a_arm64",
+          "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:71ae5ff534f4f67cf99dedc3c21b247a3e88749fad856249e7ad746518671667_ppc64le",
+          "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:8fb3cce0033e3de7fc67e764de96773eec18f4184cd5f9ddf4b0cd2b2d953220_s390x",
+          "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:27778b1cea8867d0e5a1dd400fa4e605161fbaf7fa1e9eeacd63522bfd1cf5d6_ppc64le",
+          "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:3059a1db6a7041bad8c656287d8fcafc478ac15656fe95d030e9bafa967e8d9a_s390x",
+          "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:4cde7e9b893b3a9b5c6eccb5496701d1601046cc1487f94d28bed3b0538e9957_amd64",
+          "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:50e6ff903856253916602dbb2e2fc5d0a2cf013fb710af1fb618c09aed30d09d_arm64",
+          "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:0a37b41f0311547a307509c968071bf6449e48c42e8cdf2544e4378ac7359903_ppc64le",
+          "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:61f301f44a2b26dd73897046cdd9e511eaee0f026092aeb8c2b0c57a4cf3fb59_arm64",
+          "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:a47a609eb3c1a6f881592a3c080a413541c4682d60993c33f944f690095e99c7_s390x",
+          "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:e76d891b2cd11cbc1e7f033e3ec03e560759785d6cac10b07899413e4ebd4393_amd64"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2243296",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2243296"
+        },
+        {
+          "category": "external",
+          "summary": "RHSB-2023-003",
+          "url": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2023-39325",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "https://access.redhat.com/security/cve/CVE-2023-44487",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-44487"
+        },
+        {
+          "category": "external",
+          "summary": "https://go.dev/issue/63417",
+          "url": "https://go.dev/issue/63417"
+        },
+        {
+          "category": "external",
+          "summary": "https://pkg.go.dev/vuln/GO-2023-2102",
+          "url": "https://pkg.go.dev/vuln/GO-2023-2102"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487",
+          "url": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487"
+        }
+      ],
+      "release_date": "2023-10-10T00:00:00+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2023-11-28T18:50:01+00:00",
+          "details": "For details on how to apply this update, which includes the changes described in this advisory, refer to:\n\nhttps://access.redhat.com/articles/11258",
+          "product_ids": [
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:0d0b1ab0e8c287286f19ce71d9aacba69510826347f4dda5e0ff7a2be0ef6c88_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:3970a66b4525a97ef6ee39fea1570f7b81b0529b281d05d5bad82e2c2261b00d_amd64",
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:5b149e2f215085f5b969bde093fcac250682d48ccd2d1e671d55e945e02c5c24_arm64",
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:f68841818eebf6fd794a4766fcaddacc7476b02e5248a25db45ee325b9dbd682_s390x",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:063111faad5ce211e11c5eb2d61559d0b9a89178cdf86377e38599e7232d55d2_s390x",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:a4995bf30e14bcc454a978199f4b6b9fbdcb5668dd80ebaa05cd8b4d64486856_amd64",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:d6361b290e08f9bfc22d902587206ef81ebdf9e8234475e7b846bb165c6029ba_arm64",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:e1cb117c57176aaa30641b849a95a23e737215e15f1be784f73870c1f2be02fd_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:24a009a20c555e5da425a4127ac944907db6a70e733bfd7d4009406430d2e615_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:486c3b2f1e8a16986309966473aab35a7aaaf490a25c151ab534a7c029ebd3f1_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:a355c4029f781a38c9d0878fcfae79191751aafe63a88d0f7b00df66520fac6c_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:be8c3101ff144d717007d7871457df69e1158c993c8b4fe5deac7294b939e3ee_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:0e82ac7f8380539bbc82507e7ef55d9a97d79eaeb8c3c0ada81e6dddd29b19eb_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:2a9f38ceaf22ef7d06a072b6a590a63ad7169f9e5936ca81236723cae5f679e5_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:6b59f2d1dea625fc1e14275083542986e3d53fdb1dc1d934e3f1f2fa2c90fd5a_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:857e46130a3b0be6d76d45531518e44e59d3a10cfe635fd602b1e28c1d9f5ee8_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:5d7cb76f4424c2208d9aee8368b960137d69d173caf88c1c5c63b1880374550b_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:702008d74a7ed324d1da2ac20e2358504bb04d6708d2703a7ea65414450f201d_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:d8772fc1fb3f4597dc0e0c0de6986cd0954a61ae67830d01a1e3e7ecfef0fb22_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:f950bddfb84693a35c98df847c1ccf486a4c480207f50b6836b0d0da1cce9e05_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:1016fe7844ac9bf28c07b8c0d74acdf62854d2bed8319047e557973569d44bbc_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:62db24300066a4f25fadc6f9f2e38d5ed52053932084524021b98ade564b8a5f_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:b5da27f7e78679e2d191f4f95da9fed16c6771471fe7fa1cad3eaf5c84c58e74_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:e48934c0a05ff02fc498679a66b4f93242a10686b973c98925006517ed1c3c59_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:01918f08d522dcf429dfbdab99dfc0c57aa84a5073b084c5f83b6ab6dca805c3_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:71ab195206354afe71631bace4c1754d13e7f9584d84b88513f45ba9e751ed24_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:bcc35ddbe11badbbf7fc900dbe53bd2ef3f51d867c5a64f59b7d43d1c5e801a6_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:befbf80f9941cb94914184c8459853b9575a795d39d827c40593de06a67bc6a0_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:197a2a9ccf5939ffc38a2e81868ccddd908a79f713f72c06e56bcb34c7dd0ca7_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:35705ecc01555ec8b6deda36aca73d4a1eb0fdee12ce66f6109cbfe46a9a89b9_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:492ce9081642ee43dd2de20b68f48c687bab9b23efcb6a77648f9a341687a818_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:79578a4ab2c7904e2d337be50b9f63afd7c0c39ca10abee7fd9b13e6f481656b_ppc64le"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2023:7555"
+        },
+        {
+          "category": "workaround",
+          "details": "The default stream concurrency limit in golang is 250 streams (requests) per HTTP/2 connection. This value may be adjusted in the golang.org/x/net/http2 package using the Server.MaxConcurrentStreams setting and the ConfigureServer function which are available in golang.org/x/net/http2.",
+          "product_ids": [
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:0d0b1ab0e8c287286f19ce71d9aacba69510826347f4dda5e0ff7a2be0ef6c88_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:3970a66b4525a97ef6ee39fea1570f7b81b0529b281d05d5bad82e2c2261b00d_amd64",
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:5b149e2f215085f5b969bde093fcac250682d48ccd2d1e671d55e945e02c5c24_arm64",
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:f68841818eebf6fd794a4766fcaddacc7476b02e5248a25db45ee325b9dbd682_s390x",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:1979b2e3a393a936063792a4dbdc52a429b3015a5c661dea9041954aba46c567_amd64",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:474ed76e1544436e6708c029329f4cebc72efdcfb2e2df751c3cd917224a8e4a_arm64",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:71ae5ff534f4f67cf99dedc3c21b247a3e88749fad856249e7ad746518671667_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:8fb3cce0033e3de7fc67e764de96773eec18f4184cd5f9ddf4b0cd2b2d953220_s390x",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:27778b1cea8867d0e5a1dd400fa4e605161fbaf7fa1e9eeacd63522bfd1cf5d6_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:3059a1db6a7041bad8c656287d8fcafc478ac15656fe95d030e9bafa967e8d9a_s390x",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:4cde7e9b893b3a9b5c6eccb5496701d1601046cc1487f94d28bed3b0538e9957_amd64",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:50e6ff903856253916602dbb2e2fc5d0a2cf013fb710af1fb618c09aed30d09d_arm64",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:063111faad5ce211e11c5eb2d61559d0b9a89178cdf86377e38599e7232d55d2_s390x",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:a4995bf30e14bcc454a978199f4b6b9fbdcb5668dd80ebaa05cd8b4d64486856_amd64",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:d6361b290e08f9bfc22d902587206ef81ebdf9e8234475e7b846bb165c6029ba_arm64",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:e1cb117c57176aaa30641b849a95a23e737215e15f1be784f73870c1f2be02fd_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:24a009a20c555e5da425a4127ac944907db6a70e733bfd7d4009406430d2e615_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:486c3b2f1e8a16986309966473aab35a7aaaf490a25c151ab534a7c029ebd3f1_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:a355c4029f781a38c9d0878fcfae79191751aafe63a88d0f7b00df66520fac6c_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:be8c3101ff144d717007d7871457df69e1158c993c8b4fe5deac7294b939e3ee_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:0e82ac7f8380539bbc82507e7ef55d9a97d79eaeb8c3c0ada81e6dddd29b19eb_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:2a9f38ceaf22ef7d06a072b6a590a63ad7169f9e5936ca81236723cae5f679e5_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:6b59f2d1dea625fc1e14275083542986e3d53fdb1dc1d934e3f1f2fa2c90fd5a_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:857e46130a3b0be6d76d45531518e44e59d3a10cfe635fd602b1e28c1d9f5ee8_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:5d7cb76f4424c2208d9aee8368b960137d69d173caf88c1c5c63b1880374550b_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:702008d74a7ed324d1da2ac20e2358504bb04d6708d2703a7ea65414450f201d_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:d8772fc1fb3f4597dc0e0c0de6986cd0954a61ae67830d01a1e3e7ecfef0fb22_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:f950bddfb84693a35c98df847c1ccf486a4c480207f50b6836b0d0da1cce9e05_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:1016fe7844ac9bf28c07b8c0d74acdf62854d2bed8319047e557973569d44bbc_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:62db24300066a4f25fadc6f9f2e38d5ed52053932084524021b98ade564b8a5f_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:b5da27f7e78679e2d191f4f95da9fed16c6771471fe7fa1cad3eaf5c84c58e74_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:e48934c0a05ff02fc498679a66b4f93242a10686b973c98925006517ed1c3c59_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:01918f08d522dcf429dfbdab99dfc0c57aa84a5073b084c5f83b6ab6dca805c3_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:71ab195206354afe71631bace4c1754d13e7f9584d84b88513f45ba9e751ed24_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:bcc35ddbe11badbbf7fc900dbe53bd2ef3f51d867c5a64f59b7d43d1c5e801a6_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:befbf80f9941cb94914184c8459853b9575a795d39d827c40593de06a67bc6a0_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:0a37b41f0311547a307509c968071bf6449e48c42e8cdf2544e4378ac7359903_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:61f301f44a2b26dd73897046cdd9e511eaee0f026092aeb8c2b0c57a4cf3fb59_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:a47a609eb3c1a6f881592a3c080a413541c4682d60993c33f944f690095e99c7_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:e76d891b2cd11cbc1e7f033e3ec03e560759785d6cac10b07899413e4ebd4393_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:197a2a9ccf5939ffc38a2e81868ccddd908a79f713f72c06e56bcb34c7dd0ca7_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:35705ecc01555ec8b6deda36aca73d4a1eb0fdee12ce66f6109cbfe46a9a89b9_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:492ce9081642ee43dd2de20b68f48c687bab9b23efcb6a77648f9a341687a818_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:79578a4ab2c7904e2d337be50b9f63afd7c0c39ca10abee7fd9b13e6f481656b_ppc64le"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 7.5,
+            "baseSeverity": "HIGH",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:0d0b1ab0e8c287286f19ce71d9aacba69510826347f4dda5e0ff7a2be0ef6c88_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:3970a66b4525a97ef6ee39fea1570f7b81b0529b281d05d5bad82e2c2261b00d_amd64",
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:5b149e2f215085f5b969bde093fcac250682d48ccd2d1e671d55e945e02c5c24_arm64",
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:f68841818eebf6fd794a4766fcaddacc7476b02e5248a25db45ee325b9dbd682_s390x",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:1979b2e3a393a936063792a4dbdc52a429b3015a5c661dea9041954aba46c567_amd64",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:474ed76e1544436e6708c029329f4cebc72efdcfb2e2df751c3cd917224a8e4a_arm64",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:71ae5ff534f4f67cf99dedc3c21b247a3e88749fad856249e7ad746518671667_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:8fb3cce0033e3de7fc67e764de96773eec18f4184cd5f9ddf4b0cd2b2d953220_s390x",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:27778b1cea8867d0e5a1dd400fa4e605161fbaf7fa1e9eeacd63522bfd1cf5d6_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:3059a1db6a7041bad8c656287d8fcafc478ac15656fe95d030e9bafa967e8d9a_s390x",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:4cde7e9b893b3a9b5c6eccb5496701d1601046cc1487f94d28bed3b0538e9957_amd64",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:50e6ff903856253916602dbb2e2fc5d0a2cf013fb710af1fb618c09aed30d09d_arm64",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:063111faad5ce211e11c5eb2d61559d0b9a89178cdf86377e38599e7232d55d2_s390x",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:a4995bf30e14bcc454a978199f4b6b9fbdcb5668dd80ebaa05cd8b4d64486856_amd64",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:d6361b290e08f9bfc22d902587206ef81ebdf9e8234475e7b846bb165c6029ba_arm64",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:e1cb117c57176aaa30641b849a95a23e737215e15f1be784f73870c1f2be02fd_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:24a009a20c555e5da425a4127ac944907db6a70e733bfd7d4009406430d2e615_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:486c3b2f1e8a16986309966473aab35a7aaaf490a25c151ab534a7c029ebd3f1_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:a355c4029f781a38c9d0878fcfae79191751aafe63a88d0f7b00df66520fac6c_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:be8c3101ff144d717007d7871457df69e1158c993c8b4fe5deac7294b939e3ee_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:0e82ac7f8380539bbc82507e7ef55d9a97d79eaeb8c3c0ada81e6dddd29b19eb_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:2a9f38ceaf22ef7d06a072b6a590a63ad7169f9e5936ca81236723cae5f679e5_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:6b59f2d1dea625fc1e14275083542986e3d53fdb1dc1d934e3f1f2fa2c90fd5a_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:857e46130a3b0be6d76d45531518e44e59d3a10cfe635fd602b1e28c1d9f5ee8_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:5d7cb76f4424c2208d9aee8368b960137d69d173caf88c1c5c63b1880374550b_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:702008d74a7ed324d1da2ac20e2358504bb04d6708d2703a7ea65414450f201d_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:d8772fc1fb3f4597dc0e0c0de6986cd0954a61ae67830d01a1e3e7ecfef0fb22_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:f950bddfb84693a35c98df847c1ccf486a4c480207f50b6836b0d0da1cce9e05_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:1016fe7844ac9bf28c07b8c0d74acdf62854d2bed8319047e557973569d44bbc_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:62db24300066a4f25fadc6f9f2e38d5ed52053932084524021b98ade564b8a5f_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:b5da27f7e78679e2d191f4f95da9fed16c6771471fe7fa1cad3eaf5c84c58e74_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:e48934c0a05ff02fc498679a66b4f93242a10686b973c98925006517ed1c3c59_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:01918f08d522dcf429dfbdab99dfc0c57aa84a5073b084c5f83b6ab6dca805c3_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:71ab195206354afe71631bace4c1754d13e7f9584d84b88513f45ba9e751ed24_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:bcc35ddbe11badbbf7fc900dbe53bd2ef3f51d867c5a64f59b7d43d1c5e801a6_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:befbf80f9941cb94914184c8459853b9575a795d39d827c40593de06a67bc6a0_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:0a37b41f0311547a307509c968071bf6449e48c42e8cdf2544e4378ac7359903_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:61f301f44a2b26dd73897046cdd9e511eaee0f026092aeb8c2b0c57a4cf3fb59_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:a47a609eb3c1a6f881592a3c080a413541c4682d60993c33f944f690095e99c7_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:e76d891b2cd11cbc1e7f033e3ec03e560759785d6cac10b07899413e4ebd4393_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:197a2a9ccf5939ffc38a2e81868ccddd908a79f713f72c06e56bcb34c7dd0ca7_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:35705ecc01555ec8b6deda36aca73d4a1eb0fdee12ce66f6109cbfe46a9a89b9_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:492ce9081642ee43dd2de20b68f48c687bab9b23efcb6a77648f9a341687a818_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:79578a4ab2c7904e2d337be50b9f63afd7c0c39ca10abee7fd9b13e6f481656b_ppc64le"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Important"
+        }
+      ],
+      "title": "golang: net/http, x/net/http2: rapid stream resets can cause excessive work (CVE-2023-44487)"
+    },
+    {
+      "cve": "CVE-2023-44487",
+      "cwe": {
+        "id": "CWE-400",
+        "name": "Uncontrolled Resource Consumption"
+      },
+      "discovery_date": "2023-10-09T00:00:00+00:00",
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2242803"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A flaw was found in handling multiplexed streams in the HTTP/2 protocol. A client can repeatedly make a request for a new multiplex stream and immediately send an RST_STREAM frame to cancel it. This creates extra work for the server setting up and tearing down the streams while not hitting any server-side limit for the maximum number of active streams per connection, resulting in a denial of service due to server resource consumption. Red Hat has rated the severity of this flaw as 'Important' as the US Cybersecurity and Infrastructure Security Agency (CISA) declared this vulnerability an active exploit.\r\n\r\nCVE-2023-39325 was assigned for the Rapid Reset Attack in the Go language packages.\r\n\r\nSecurity Bulletin\r\nhttps://access.redhat.com/security/vulnerabilities/RHSB-2023-003",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "HTTP/2: Multiple HTTP/2 enabled web servers are vulnerable to a DDoS attack (Rapid Reset Attack)",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "other",
+          "text": "NGINX has been marked as Moderate Impact because, for performance and resource consumption reasons, NGINX limits the number of concurrent streams to a default of 128. In addition, to optimally balance network and server performance, NGINX allows the client to persist HTTP connections for up to 1000 requests by default using an HTTP keepalive.\n\nThe majority of RHEL utilities are not long-running applications; instead, they are command-line tools. These tools utilize Golang package as build-time dependency, which is why they are classified as having a \"Moderate\" level of impact.\n\nrhc component is no longer impacted by CVE-2023-44487 & CVE-2023-39325.",
+          "title": "Statement"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:0d0b1ab0e8c287286f19ce71d9aacba69510826347f4dda5e0ff7a2be0ef6c88_ppc64le",
+          "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:3970a66b4525a97ef6ee39fea1570f7b81b0529b281d05d5bad82e2c2261b00d_amd64",
+          "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:5b149e2f215085f5b969bde093fcac250682d48ccd2d1e671d55e945e02c5c24_arm64",
+          "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:f68841818eebf6fd794a4766fcaddacc7476b02e5248a25db45ee325b9dbd682_s390x",
+          "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:1979b2e3a393a936063792a4dbdc52a429b3015a5c661dea9041954aba46c567_amd64",
+          "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:474ed76e1544436e6708c029329f4cebc72efdcfb2e2df751c3cd917224a8e4a_arm64",
+          "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:71ae5ff534f4f67cf99dedc3c21b247a3e88749fad856249e7ad746518671667_ppc64le",
+          "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:8fb3cce0033e3de7fc67e764de96773eec18f4184cd5f9ddf4b0cd2b2d953220_s390x",
+          "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:27778b1cea8867d0e5a1dd400fa4e605161fbaf7fa1e9eeacd63522bfd1cf5d6_ppc64le",
+          "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:3059a1db6a7041bad8c656287d8fcafc478ac15656fe95d030e9bafa967e8d9a_s390x",
+          "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:4cde7e9b893b3a9b5c6eccb5496701d1601046cc1487f94d28bed3b0538e9957_amd64",
+          "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:50e6ff903856253916602dbb2e2fc5d0a2cf013fb710af1fb618c09aed30d09d_arm64",
+          "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:063111faad5ce211e11c5eb2d61559d0b9a89178cdf86377e38599e7232d55d2_s390x",
+          "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:a4995bf30e14bcc454a978199f4b6b9fbdcb5668dd80ebaa05cd8b4d64486856_amd64",
+          "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:d6361b290e08f9bfc22d902587206ef81ebdf9e8234475e7b846bb165c6029ba_arm64",
+          "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:e1cb117c57176aaa30641b849a95a23e737215e15f1be784f73870c1f2be02fd_ppc64le",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:24a009a20c555e5da425a4127ac944907db6a70e733bfd7d4009406430d2e615_s390x",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:486c3b2f1e8a16986309966473aab35a7aaaf490a25c151ab534a7c029ebd3f1_amd64",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:a355c4029f781a38c9d0878fcfae79191751aafe63a88d0f7b00df66520fac6c_ppc64le",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:be8c3101ff144d717007d7871457df69e1158c993c8b4fe5deac7294b939e3ee_arm64",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:0e82ac7f8380539bbc82507e7ef55d9a97d79eaeb8c3c0ada81e6dddd29b19eb_ppc64le",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:2a9f38ceaf22ef7d06a072b6a590a63ad7169f9e5936ca81236723cae5f679e5_arm64",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:6b59f2d1dea625fc1e14275083542986e3d53fdb1dc1d934e3f1f2fa2c90fd5a_s390x",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:857e46130a3b0be6d76d45531518e44e59d3a10cfe635fd602b1e28c1d9f5ee8_amd64",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:5d7cb76f4424c2208d9aee8368b960137d69d173caf88c1c5c63b1880374550b_s390x",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:702008d74a7ed324d1da2ac20e2358504bb04d6708d2703a7ea65414450f201d_amd64",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:d8772fc1fb3f4597dc0e0c0de6986cd0954a61ae67830d01a1e3e7ecfef0fb22_ppc64le",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:f950bddfb84693a35c98df847c1ccf486a4c480207f50b6836b0d0da1cce9e05_arm64",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:1016fe7844ac9bf28c07b8c0d74acdf62854d2bed8319047e557973569d44bbc_ppc64le",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:62db24300066a4f25fadc6f9f2e38d5ed52053932084524021b98ade564b8a5f_amd64",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:b5da27f7e78679e2d191f4f95da9fed16c6771471fe7fa1cad3eaf5c84c58e74_arm64",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:e48934c0a05ff02fc498679a66b4f93242a10686b973c98925006517ed1c3c59_s390x",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:01918f08d522dcf429dfbdab99dfc0c57aa84a5073b084c5f83b6ab6dca805c3_amd64",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:71ab195206354afe71631bace4c1754d13e7f9584d84b88513f45ba9e751ed24_s390x",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:bcc35ddbe11badbbf7fc900dbe53bd2ef3f51d867c5a64f59b7d43d1c5e801a6_arm64",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:befbf80f9941cb94914184c8459853b9575a795d39d827c40593de06a67bc6a0_ppc64le",
+          "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:0a37b41f0311547a307509c968071bf6449e48c42e8cdf2544e4378ac7359903_ppc64le",
+          "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:61f301f44a2b26dd73897046cdd9e511eaee0f026092aeb8c2b0c57a4cf3fb59_arm64",
+          "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:a47a609eb3c1a6f881592a3c080a413541c4682d60993c33f944f690095e99c7_s390x",
+          "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:e76d891b2cd11cbc1e7f033e3ec03e560759785d6cac10b07899413e4ebd4393_amd64",
+          "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:197a2a9ccf5939ffc38a2e81868ccddd908a79f713f72c06e56bcb34c7dd0ca7_arm64",
+          "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:35705ecc01555ec8b6deda36aca73d4a1eb0fdee12ce66f6109cbfe46a9a89b9_amd64",
+          "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:492ce9081642ee43dd2de20b68f48c687bab9b23efcb6a77648f9a341687a818_s390x",
+          "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:79578a4ab2c7904e2d337be50b9f63afd7c0c39ca10abee7fd9b13e6f481656b_ppc64le"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-44487"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2242803",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2242803"
+        },
+        {
+          "category": "external",
+          "summary": "RHSB-2023-003",
+          "url": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2023-44487",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-44487"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2023-44487",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-44487"
+        },
+        {
+          "category": "external",
+          "summary": "https://github.com/dotnet/announcements/issues/277",
+          "url": "https://github.com/dotnet/announcements/issues/277"
+        },
+        {
+          "category": "external",
+          "summary": "https://pkg.go.dev/vuln/GO-2023-2102",
+          "url": "https://pkg.go.dev/vuln/GO-2023-2102"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487",
+          "url": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.nginx.com/blog/http-2-rapid-reset-attack-impacting-f5-nginx-products/",
+          "url": "https://www.nginx.com/blog/http-2-rapid-reset-attack-impacting-f5-nginx-products/"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "release_date": "2023-10-10T00:00:00+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2023-11-28T18:50:01+00:00",
+          "details": "For details on how to apply this update, which includes the changes described in this advisory, refer to:\n\nhttps://access.redhat.com/articles/11258",
+          "product_ids": [
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:0d0b1ab0e8c287286f19ce71d9aacba69510826347f4dda5e0ff7a2be0ef6c88_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:3970a66b4525a97ef6ee39fea1570f7b81b0529b281d05d5bad82e2c2261b00d_amd64",
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:5b149e2f215085f5b969bde093fcac250682d48ccd2d1e671d55e945e02c5c24_arm64",
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:f68841818eebf6fd794a4766fcaddacc7476b02e5248a25db45ee325b9dbd682_s390x",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:1979b2e3a393a936063792a4dbdc52a429b3015a5c661dea9041954aba46c567_amd64",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:474ed76e1544436e6708c029329f4cebc72efdcfb2e2df751c3cd917224a8e4a_arm64",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:71ae5ff534f4f67cf99dedc3c21b247a3e88749fad856249e7ad746518671667_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:8fb3cce0033e3de7fc67e764de96773eec18f4184cd5f9ddf4b0cd2b2d953220_s390x",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:27778b1cea8867d0e5a1dd400fa4e605161fbaf7fa1e9eeacd63522bfd1cf5d6_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:3059a1db6a7041bad8c656287d8fcafc478ac15656fe95d030e9bafa967e8d9a_s390x",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:4cde7e9b893b3a9b5c6eccb5496701d1601046cc1487f94d28bed3b0538e9957_amd64",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:50e6ff903856253916602dbb2e2fc5d0a2cf013fb710af1fb618c09aed30d09d_arm64",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:063111faad5ce211e11c5eb2d61559d0b9a89178cdf86377e38599e7232d55d2_s390x",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:a4995bf30e14bcc454a978199f4b6b9fbdcb5668dd80ebaa05cd8b4d64486856_amd64",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:d6361b290e08f9bfc22d902587206ef81ebdf9e8234475e7b846bb165c6029ba_arm64",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:e1cb117c57176aaa30641b849a95a23e737215e15f1be784f73870c1f2be02fd_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:24a009a20c555e5da425a4127ac944907db6a70e733bfd7d4009406430d2e615_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:486c3b2f1e8a16986309966473aab35a7aaaf490a25c151ab534a7c029ebd3f1_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:a355c4029f781a38c9d0878fcfae79191751aafe63a88d0f7b00df66520fac6c_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:be8c3101ff144d717007d7871457df69e1158c993c8b4fe5deac7294b939e3ee_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:0e82ac7f8380539bbc82507e7ef55d9a97d79eaeb8c3c0ada81e6dddd29b19eb_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:2a9f38ceaf22ef7d06a072b6a590a63ad7169f9e5936ca81236723cae5f679e5_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:6b59f2d1dea625fc1e14275083542986e3d53fdb1dc1d934e3f1f2fa2c90fd5a_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:857e46130a3b0be6d76d45531518e44e59d3a10cfe635fd602b1e28c1d9f5ee8_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:5d7cb76f4424c2208d9aee8368b960137d69d173caf88c1c5c63b1880374550b_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:702008d74a7ed324d1da2ac20e2358504bb04d6708d2703a7ea65414450f201d_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:d8772fc1fb3f4597dc0e0c0de6986cd0954a61ae67830d01a1e3e7ecfef0fb22_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:f950bddfb84693a35c98df847c1ccf486a4c480207f50b6836b0d0da1cce9e05_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:1016fe7844ac9bf28c07b8c0d74acdf62854d2bed8319047e557973569d44bbc_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:62db24300066a4f25fadc6f9f2e38d5ed52053932084524021b98ade564b8a5f_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:b5da27f7e78679e2d191f4f95da9fed16c6771471fe7fa1cad3eaf5c84c58e74_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:e48934c0a05ff02fc498679a66b4f93242a10686b973c98925006517ed1c3c59_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:01918f08d522dcf429dfbdab99dfc0c57aa84a5073b084c5f83b6ab6dca805c3_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:71ab195206354afe71631bace4c1754d13e7f9584d84b88513f45ba9e751ed24_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:bcc35ddbe11badbbf7fc900dbe53bd2ef3f51d867c5a64f59b7d43d1c5e801a6_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:befbf80f9941cb94914184c8459853b9575a795d39d827c40593de06a67bc6a0_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:0a37b41f0311547a307509c968071bf6449e48c42e8cdf2544e4378ac7359903_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:61f301f44a2b26dd73897046cdd9e511eaee0f026092aeb8c2b0c57a4cf3fb59_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:a47a609eb3c1a6f881592a3c080a413541c4682d60993c33f944f690095e99c7_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:e76d891b2cd11cbc1e7f033e3ec03e560759785d6cac10b07899413e4ebd4393_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:197a2a9ccf5939ffc38a2e81868ccddd908a79f713f72c06e56bcb34c7dd0ca7_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:35705ecc01555ec8b6deda36aca73d4a1eb0fdee12ce66f6109cbfe46a9a89b9_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:492ce9081642ee43dd2de20b68f48c687bab9b23efcb6a77648f9a341687a818_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:79578a4ab2c7904e2d337be50b9f63afd7c0c39ca10abee7fd9b13e6f481656b_ppc64le"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2023:7555"
+        },
+        {
+          "category": "workaround",
+          "details": "Users are strongly urged to update their software as soon as fixes are available. \nThere are several mitigation approaches for this flaw. \n\n1. If circumstances permit, users may disable http2 endpoints to circumvent the flaw altogether until a fix is available.\n2. IP-based blocking or flood protection and rate control tools may be used at network endpoints to filter incoming traffic.\n3. Several package specific mitigations are also available. \n     a. nginx: https://www.nginx.com/blog/http-2-rapid-reset-attack-impacting-f5-nginx-products/\n     b. netty: https://github.com/netty/netty/security/advisories/GHSA-xpw8-rcwv-8f8p\n     c. haproxy: https://www.haproxy.com/blog/haproxy-is-not-affected-by-the-http-2-rapid-reset-attack-cve-2023-44487\n     d. nghttp2: https://github.com/nghttp2/nghttp2/security/advisories/GHSA-vx74-f528-fxqg\n     e. golang: The default stream concurrency limit in golang is 250 streams (requests) per HTTP/2 connection. This value may be adjusted in the golang.org/x/net/http2 package using the Server.MaxConcurrentStreams setting and the ConfigureServer function which are available in golang.org/x/net/http2.",
+          "product_ids": [
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:0d0b1ab0e8c287286f19ce71d9aacba69510826347f4dda5e0ff7a2be0ef6c88_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:3970a66b4525a97ef6ee39fea1570f7b81b0529b281d05d5bad82e2c2261b00d_amd64",
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:5b149e2f215085f5b969bde093fcac250682d48ccd2d1e671d55e945e02c5c24_arm64",
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:f68841818eebf6fd794a4766fcaddacc7476b02e5248a25db45ee325b9dbd682_s390x",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:1979b2e3a393a936063792a4dbdc52a429b3015a5c661dea9041954aba46c567_amd64",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:474ed76e1544436e6708c029329f4cebc72efdcfb2e2df751c3cd917224a8e4a_arm64",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:71ae5ff534f4f67cf99dedc3c21b247a3e88749fad856249e7ad746518671667_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:8fb3cce0033e3de7fc67e764de96773eec18f4184cd5f9ddf4b0cd2b2d953220_s390x",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:27778b1cea8867d0e5a1dd400fa4e605161fbaf7fa1e9eeacd63522bfd1cf5d6_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:3059a1db6a7041bad8c656287d8fcafc478ac15656fe95d030e9bafa967e8d9a_s390x",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:4cde7e9b893b3a9b5c6eccb5496701d1601046cc1487f94d28bed3b0538e9957_amd64",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:50e6ff903856253916602dbb2e2fc5d0a2cf013fb710af1fb618c09aed30d09d_arm64",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:063111faad5ce211e11c5eb2d61559d0b9a89178cdf86377e38599e7232d55d2_s390x",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:a4995bf30e14bcc454a978199f4b6b9fbdcb5668dd80ebaa05cd8b4d64486856_amd64",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:d6361b290e08f9bfc22d902587206ef81ebdf9e8234475e7b846bb165c6029ba_arm64",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:e1cb117c57176aaa30641b849a95a23e737215e15f1be784f73870c1f2be02fd_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:24a009a20c555e5da425a4127ac944907db6a70e733bfd7d4009406430d2e615_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:486c3b2f1e8a16986309966473aab35a7aaaf490a25c151ab534a7c029ebd3f1_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:a355c4029f781a38c9d0878fcfae79191751aafe63a88d0f7b00df66520fac6c_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:be8c3101ff144d717007d7871457df69e1158c993c8b4fe5deac7294b939e3ee_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:0e82ac7f8380539bbc82507e7ef55d9a97d79eaeb8c3c0ada81e6dddd29b19eb_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:2a9f38ceaf22ef7d06a072b6a590a63ad7169f9e5936ca81236723cae5f679e5_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:6b59f2d1dea625fc1e14275083542986e3d53fdb1dc1d934e3f1f2fa2c90fd5a_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:857e46130a3b0be6d76d45531518e44e59d3a10cfe635fd602b1e28c1d9f5ee8_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:5d7cb76f4424c2208d9aee8368b960137d69d173caf88c1c5c63b1880374550b_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:702008d74a7ed324d1da2ac20e2358504bb04d6708d2703a7ea65414450f201d_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:d8772fc1fb3f4597dc0e0c0de6986cd0954a61ae67830d01a1e3e7ecfef0fb22_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:f950bddfb84693a35c98df847c1ccf486a4c480207f50b6836b0d0da1cce9e05_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:1016fe7844ac9bf28c07b8c0d74acdf62854d2bed8319047e557973569d44bbc_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:62db24300066a4f25fadc6f9f2e38d5ed52053932084524021b98ade564b8a5f_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:b5da27f7e78679e2d191f4f95da9fed16c6771471fe7fa1cad3eaf5c84c58e74_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:e48934c0a05ff02fc498679a66b4f93242a10686b973c98925006517ed1c3c59_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:01918f08d522dcf429dfbdab99dfc0c57aa84a5073b084c5f83b6ab6dca805c3_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:71ab195206354afe71631bace4c1754d13e7f9584d84b88513f45ba9e751ed24_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:bcc35ddbe11badbbf7fc900dbe53bd2ef3f51d867c5a64f59b7d43d1c5e801a6_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:befbf80f9941cb94914184c8459853b9575a795d39d827c40593de06a67bc6a0_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:0a37b41f0311547a307509c968071bf6449e48c42e8cdf2544e4378ac7359903_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:61f301f44a2b26dd73897046cdd9e511eaee0f026092aeb8c2b0c57a4cf3fb59_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:a47a609eb3c1a6f881592a3c080a413541c4682d60993c33f944f690095e99c7_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:e76d891b2cd11cbc1e7f033e3ec03e560759785d6cac10b07899413e4ebd4393_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:197a2a9ccf5939ffc38a2e81868ccddd908a79f713f72c06e56bcb34c7dd0ca7_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:35705ecc01555ec8b6deda36aca73d4a1eb0fdee12ce66f6109cbfe46a9a89b9_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:492ce9081642ee43dd2de20b68f48c687bab9b23efcb6a77648f9a341687a818_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:79578a4ab2c7904e2d337be50b9f63afd7c0c39ca10abee7fd9b13e6f481656b_ppc64le"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 7.5,
+            "baseSeverity": "HIGH",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:0d0b1ab0e8c287286f19ce71d9aacba69510826347f4dda5e0ff7a2be0ef6c88_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:3970a66b4525a97ef6ee39fea1570f7b81b0529b281d05d5bad82e2c2261b00d_amd64",
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:5b149e2f215085f5b969bde093fcac250682d48ccd2d1e671d55e945e02c5c24_arm64",
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:f68841818eebf6fd794a4766fcaddacc7476b02e5248a25db45ee325b9dbd682_s390x",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:1979b2e3a393a936063792a4dbdc52a429b3015a5c661dea9041954aba46c567_amd64",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:474ed76e1544436e6708c029329f4cebc72efdcfb2e2df751c3cd917224a8e4a_arm64",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:71ae5ff534f4f67cf99dedc3c21b247a3e88749fad856249e7ad746518671667_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:8fb3cce0033e3de7fc67e764de96773eec18f4184cd5f9ddf4b0cd2b2d953220_s390x",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:27778b1cea8867d0e5a1dd400fa4e605161fbaf7fa1e9eeacd63522bfd1cf5d6_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:3059a1db6a7041bad8c656287d8fcafc478ac15656fe95d030e9bafa967e8d9a_s390x",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:4cde7e9b893b3a9b5c6eccb5496701d1601046cc1487f94d28bed3b0538e9957_amd64",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:50e6ff903856253916602dbb2e2fc5d0a2cf013fb710af1fb618c09aed30d09d_arm64",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:063111faad5ce211e11c5eb2d61559d0b9a89178cdf86377e38599e7232d55d2_s390x",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:a4995bf30e14bcc454a978199f4b6b9fbdcb5668dd80ebaa05cd8b4d64486856_amd64",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:d6361b290e08f9bfc22d902587206ef81ebdf9e8234475e7b846bb165c6029ba_arm64",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:e1cb117c57176aaa30641b849a95a23e737215e15f1be784f73870c1f2be02fd_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:24a009a20c555e5da425a4127ac944907db6a70e733bfd7d4009406430d2e615_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:486c3b2f1e8a16986309966473aab35a7aaaf490a25c151ab534a7c029ebd3f1_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:a355c4029f781a38c9d0878fcfae79191751aafe63a88d0f7b00df66520fac6c_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:be8c3101ff144d717007d7871457df69e1158c993c8b4fe5deac7294b939e3ee_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:0e82ac7f8380539bbc82507e7ef55d9a97d79eaeb8c3c0ada81e6dddd29b19eb_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:2a9f38ceaf22ef7d06a072b6a590a63ad7169f9e5936ca81236723cae5f679e5_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:6b59f2d1dea625fc1e14275083542986e3d53fdb1dc1d934e3f1f2fa2c90fd5a_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:857e46130a3b0be6d76d45531518e44e59d3a10cfe635fd602b1e28c1d9f5ee8_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:5d7cb76f4424c2208d9aee8368b960137d69d173caf88c1c5c63b1880374550b_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:702008d74a7ed324d1da2ac20e2358504bb04d6708d2703a7ea65414450f201d_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:d8772fc1fb3f4597dc0e0c0de6986cd0954a61ae67830d01a1e3e7ecfef0fb22_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:f950bddfb84693a35c98df847c1ccf486a4c480207f50b6836b0d0da1cce9e05_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:1016fe7844ac9bf28c07b8c0d74acdf62854d2bed8319047e557973569d44bbc_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:62db24300066a4f25fadc6f9f2e38d5ed52053932084524021b98ade564b8a5f_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:b5da27f7e78679e2d191f4f95da9fed16c6771471fe7fa1cad3eaf5c84c58e74_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:e48934c0a05ff02fc498679a66b4f93242a10686b973c98925006517ed1c3c59_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:01918f08d522dcf429dfbdab99dfc0c57aa84a5073b084c5f83b6ab6dca805c3_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:71ab195206354afe71631bace4c1754d13e7f9584d84b88513f45ba9e751ed24_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:bcc35ddbe11badbbf7fc900dbe53bd2ef3f51d867c5a64f59b7d43d1c5e801a6_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:befbf80f9941cb94914184c8459853b9575a795d39d827c40593de06a67bc6a0_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:0a37b41f0311547a307509c968071bf6449e48c42e8cdf2544e4378ac7359903_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:61f301f44a2b26dd73897046cdd9e511eaee0f026092aeb8c2b0c57a4cf3fb59_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:a47a609eb3c1a6f881592a3c080a413541c4682d60993c33f944f690095e99c7_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:e76d891b2cd11cbc1e7f033e3ec03e560759785d6cac10b07899413e4ebd4393_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:197a2a9ccf5939ffc38a2e81868ccddd908a79f713f72c06e56bcb34c7dd0ca7_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:35705ecc01555ec8b6deda36aca73d4a1eb0fdee12ce66f6109cbfe46a9a89b9_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:492ce9081642ee43dd2de20b68f48c687bab9b23efcb6a77648f9a341687a818_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:79578a4ab2c7904e2d337be50b9f63afd7c0c39ca10abee7fd9b13e6f481656b_ppc64le"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "exploit_status",
+          "date": "2023-10-10T00:00:00+00:00",
+          "details": "CISA: https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "category": "impact",
+          "details": "Important"
+        }
+      ],
+      "title": "HTTP/2: Multiple HTTP/2 enabled web servers are vulnerable to a DDoS attack (Rapid Reset Attack)"
+    },
+    {
+      "cve": "CVE-2023-45142",
+      "cwe": {
+        "id": "CWE-770",
+        "name": "Allocation of Resources Without Limits or Throttling"
+      },
+      "discovery_date": "2023-10-19T00:00:00+00:00",
+      "flags": [
+        {
+          "label": "vulnerable_code_not_present",
+          "product_ids": [
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:0d0b1ab0e8c287286f19ce71d9aacba69510826347f4dda5e0ff7a2be0ef6c88_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:3970a66b4525a97ef6ee39fea1570f7b81b0529b281d05d5bad82e2c2261b00d_amd64",
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:5b149e2f215085f5b969bde093fcac250682d48ccd2d1e671d55e945e02c5c24_arm64",
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:f68841818eebf6fd794a4766fcaddacc7476b02e5248a25db45ee325b9dbd682_s390x",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:27778b1cea8867d0e5a1dd400fa4e605161fbaf7fa1e9eeacd63522bfd1cf5d6_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:3059a1db6a7041bad8c656287d8fcafc478ac15656fe95d030e9bafa967e8d9a_s390x",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:4cde7e9b893b3a9b5c6eccb5496701d1601046cc1487f94d28bed3b0538e9957_amd64",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:50e6ff903856253916602dbb2e2fc5d0a2cf013fb710af1fb618c09aed30d09d_arm64",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:063111faad5ce211e11c5eb2d61559d0b9a89178cdf86377e38599e7232d55d2_s390x",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:a4995bf30e14bcc454a978199f4b6b9fbdcb5668dd80ebaa05cd8b4d64486856_amd64",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:d6361b290e08f9bfc22d902587206ef81ebdf9e8234475e7b846bb165c6029ba_arm64",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:e1cb117c57176aaa30641b849a95a23e737215e15f1be784f73870c1f2be02fd_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:24a009a20c555e5da425a4127ac944907db6a70e733bfd7d4009406430d2e615_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:486c3b2f1e8a16986309966473aab35a7aaaf490a25c151ab534a7c029ebd3f1_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:a355c4029f781a38c9d0878fcfae79191751aafe63a88d0f7b00df66520fac6c_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:be8c3101ff144d717007d7871457df69e1158c993c8b4fe5deac7294b939e3ee_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:5d7cb76f4424c2208d9aee8368b960137d69d173caf88c1c5c63b1880374550b_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:702008d74a7ed324d1da2ac20e2358504bb04d6708d2703a7ea65414450f201d_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:d8772fc1fb3f4597dc0e0c0de6986cd0954a61ae67830d01a1e3e7ecfef0fb22_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:f950bddfb84693a35c98df847c1ccf486a4c480207f50b6836b0d0da1cce9e05_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:1016fe7844ac9bf28c07b8c0d74acdf62854d2bed8319047e557973569d44bbc_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:62db24300066a4f25fadc6f9f2e38d5ed52053932084524021b98ade564b8a5f_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:b5da27f7e78679e2d191f4f95da9fed16c6771471fe7fa1cad3eaf5c84c58e74_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:e48934c0a05ff02fc498679a66b4f93242a10686b973c98925006517ed1c3c59_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:01918f08d522dcf429dfbdab99dfc0c57aa84a5073b084c5f83b6ab6dca805c3_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:71ab195206354afe71631bace4c1754d13e7f9584d84b88513f45ba9e751ed24_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:bcc35ddbe11badbbf7fc900dbe53bd2ef3f51d867c5a64f59b7d43d1c5e801a6_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:befbf80f9941cb94914184c8459853b9575a795d39d827c40593de06a67bc6a0_ppc64le"
+          ]
+        }
+      ],
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2245180"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A memory leak was found in the otelhttp handler of open-telemetry. This flaw allows a remote, unauthenticated attacker to exhaust the server's memory by sending many malicious requests, affecting the availability.",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "opentelemetry: DoS vulnerability in otelhttp",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "other",
+          "text": "While no authentication is required, there are a significant number of non-default factors which prevent widespread exploitation of this flaw. For a service to be affected, all of the following must be true:\n* The go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp package must be in use\n* Configured a metrics pipeline which uses the otelhttp.NewHandler wrapper function\n* No filtering of unknown HTTP methods or user agents at a higher level (such as Content Delivery Network/Load Balancer/etc...)\n\nDue to the limited attack surface, Red Hat Product Security rates the impact as Moderate.",
+          "title": "Statement"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:1979b2e3a393a936063792a4dbdc52a429b3015a5c661dea9041954aba46c567_amd64",
+          "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:474ed76e1544436e6708c029329f4cebc72efdcfb2e2df751c3cd917224a8e4a_arm64",
+          "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:71ae5ff534f4f67cf99dedc3c21b247a3e88749fad856249e7ad746518671667_ppc64le",
+          "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:8fb3cce0033e3de7fc67e764de96773eec18f4184cd5f9ddf4b0cd2b2d953220_s390x",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:0e82ac7f8380539bbc82507e7ef55d9a97d79eaeb8c3c0ada81e6dddd29b19eb_ppc64le",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:2a9f38ceaf22ef7d06a072b6a590a63ad7169f9e5936ca81236723cae5f679e5_arm64",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:6b59f2d1dea625fc1e14275083542986e3d53fdb1dc1d934e3f1f2fa2c90fd5a_s390x",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:857e46130a3b0be6d76d45531518e44e59d3a10cfe635fd602b1e28c1d9f5ee8_amd64",
+          "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:0a37b41f0311547a307509c968071bf6449e48c42e8cdf2544e4378ac7359903_ppc64le",
+          "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:61f301f44a2b26dd73897046cdd9e511eaee0f026092aeb8c2b0c57a4cf3fb59_arm64",
+          "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:a47a609eb3c1a6f881592a3c080a413541c4682d60993c33f944f690095e99c7_s390x",
+          "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:e76d891b2cd11cbc1e7f033e3ec03e560759785d6cac10b07899413e4ebd4393_amd64",
+          "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:197a2a9ccf5939ffc38a2e81868ccddd908a79f713f72c06e56bcb34c7dd0ca7_arm64",
+          "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:35705ecc01555ec8b6deda36aca73d4a1eb0fdee12ce66f6109cbfe46a9a89b9_amd64",
+          "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:492ce9081642ee43dd2de20b68f48c687bab9b23efcb6a77648f9a341687a818_s390x",
+          "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:79578a4ab2c7904e2d337be50b9f63afd7c0c39ca10abee7fd9b13e6f481656b_ppc64le"
+        ],
+        "known_not_affected": [
+          "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:0d0b1ab0e8c287286f19ce71d9aacba69510826347f4dda5e0ff7a2be0ef6c88_ppc64le",
+          "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:3970a66b4525a97ef6ee39fea1570f7b81b0529b281d05d5bad82e2c2261b00d_amd64",
+          "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:5b149e2f215085f5b969bde093fcac250682d48ccd2d1e671d55e945e02c5c24_arm64",
+          "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:f68841818eebf6fd794a4766fcaddacc7476b02e5248a25db45ee325b9dbd682_s390x",
+          "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:27778b1cea8867d0e5a1dd400fa4e605161fbaf7fa1e9eeacd63522bfd1cf5d6_ppc64le",
+          "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:3059a1db6a7041bad8c656287d8fcafc478ac15656fe95d030e9bafa967e8d9a_s390x",
+          "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:4cde7e9b893b3a9b5c6eccb5496701d1601046cc1487f94d28bed3b0538e9957_amd64",
+          "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:50e6ff903856253916602dbb2e2fc5d0a2cf013fb710af1fb618c09aed30d09d_arm64",
+          "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:063111faad5ce211e11c5eb2d61559d0b9a89178cdf86377e38599e7232d55d2_s390x",
+          "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:a4995bf30e14bcc454a978199f4b6b9fbdcb5668dd80ebaa05cd8b4d64486856_amd64",
+          "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:d6361b290e08f9bfc22d902587206ef81ebdf9e8234475e7b846bb165c6029ba_arm64",
+          "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:e1cb117c57176aaa30641b849a95a23e737215e15f1be784f73870c1f2be02fd_ppc64le",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:24a009a20c555e5da425a4127ac944907db6a70e733bfd7d4009406430d2e615_s390x",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:486c3b2f1e8a16986309966473aab35a7aaaf490a25c151ab534a7c029ebd3f1_amd64",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:a355c4029f781a38c9d0878fcfae79191751aafe63a88d0f7b00df66520fac6c_ppc64le",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:be8c3101ff144d717007d7871457df69e1158c993c8b4fe5deac7294b939e3ee_arm64",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:5d7cb76f4424c2208d9aee8368b960137d69d173caf88c1c5c63b1880374550b_s390x",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:702008d74a7ed324d1da2ac20e2358504bb04d6708d2703a7ea65414450f201d_amd64",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:d8772fc1fb3f4597dc0e0c0de6986cd0954a61ae67830d01a1e3e7ecfef0fb22_ppc64le",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:f950bddfb84693a35c98df847c1ccf486a4c480207f50b6836b0d0da1cce9e05_arm64",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:1016fe7844ac9bf28c07b8c0d74acdf62854d2bed8319047e557973569d44bbc_ppc64le",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:62db24300066a4f25fadc6f9f2e38d5ed52053932084524021b98ade564b8a5f_amd64",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:b5da27f7e78679e2d191f4f95da9fed16c6771471fe7fa1cad3eaf5c84c58e74_arm64",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:e48934c0a05ff02fc498679a66b4f93242a10686b973c98925006517ed1c3c59_s390x",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:01918f08d522dcf429dfbdab99dfc0c57aa84a5073b084c5f83b6ab6dca805c3_amd64",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:71ab195206354afe71631bace4c1754d13e7f9584d84b88513f45ba9e751ed24_s390x",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:bcc35ddbe11badbbf7fc900dbe53bd2ef3f51d867c5a64f59b7d43d1c5e801a6_arm64",
+          "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:befbf80f9941cb94914184c8459853b9575a795d39d827c40593de06a67bc6a0_ppc64le"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-45142"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2245180",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2245180"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2023-45142",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-45142"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2023-45142",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-45142"
+        },
+        {
+          "category": "external",
+          "summary": "https://github.com/open-telemetry/opentelemetry-go-contrib/security/advisories/GHSA-rcjv-mgp8-qvmr",
+          "url": "https://github.com/open-telemetry/opentelemetry-go-contrib/security/advisories/GHSA-rcjv-mgp8-qvmr"
+        }
+      ],
+      "release_date": "2023-10-12T00:00:00+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2023-11-28T18:50:01+00:00",
+          "details": "For details on how to apply this update, which includes the changes described in this advisory, refer to:\n\nhttps://access.redhat.com/articles/11258",
+          "product_ids": [
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:1979b2e3a393a936063792a4dbdc52a429b3015a5c661dea9041954aba46c567_amd64",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:474ed76e1544436e6708c029329f4cebc72efdcfb2e2df751c3cd917224a8e4a_arm64",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:71ae5ff534f4f67cf99dedc3c21b247a3e88749fad856249e7ad746518671667_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:8fb3cce0033e3de7fc67e764de96773eec18f4184cd5f9ddf4b0cd2b2d953220_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:0e82ac7f8380539bbc82507e7ef55d9a97d79eaeb8c3c0ada81e6dddd29b19eb_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:2a9f38ceaf22ef7d06a072b6a590a63ad7169f9e5936ca81236723cae5f679e5_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:6b59f2d1dea625fc1e14275083542986e3d53fdb1dc1d934e3f1f2fa2c90fd5a_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:857e46130a3b0be6d76d45531518e44e59d3a10cfe635fd602b1e28c1d9f5ee8_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:0a37b41f0311547a307509c968071bf6449e48c42e8cdf2544e4378ac7359903_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:61f301f44a2b26dd73897046cdd9e511eaee0f026092aeb8c2b0c57a4cf3fb59_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:a47a609eb3c1a6f881592a3c080a413541c4682d60993c33f944f690095e99c7_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:e76d891b2cd11cbc1e7f033e3ec03e560759785d6cac10b07899413e4ebd4393_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:197a2a9ccf5939ffc38a2e81868ccddd908a79f713f72c06e56bcb34c7dd0ca7_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:35705ecc01555ec8b6deda36aca73d4a1eb0fdee12ce66f6109cbfe46a9a89b9_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:492ce9081642ee43dd2de20b68f48c687bab9b23efcb6a77648f9a341687a818_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:79578a4ab2c7904e2d337be50b9f63afd7c0c39ca10abee7fd9b13e6f481656b_ppc64le"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2023:7555"
+        },
+        {
+          "category": "workaround",
+          "details": "As a workaround to stop being affected otelhttp.WithFilter() can be used.\n\nFor convenience and safe usage of this library, it should by default mark with the label unknown non-standard HTTP methods and User agents to show that such requests were made but do not increase cardinality. In case someone wants to stay with the current behavior, library API should allow to enable it.\n\nThe other possibility is to disable HTTP metrics instrumentation by passing otelhttp.WithMeterProvider option with noop.NewMeterProvider.",
+          "product_ids": [
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:0d0b1ab0e8c287286f19ce71d9aacba69510826347f4dda5e0ff7a2be0ef6c88_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:3970a66b4525a97ef6ee39fea1570f7b81b0529b281d05d5bad82e2c2261b00d_amd64",
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:5b149e2f215085f5b969bde093fcac250682d48ccd2d1e671d55e945e02c5c24_arm64",
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:f68841818eebf6fd794a4766fcaddacc7476b02e5248a25db45ee325b9dbd682_s390x",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:1979b2e3a393a936063792a4dbdc52a429b3015a5c661dea9041954aba46c567_amd64",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:474ed76e1544436e6708c029329f4cebc72efdcfb2e2df751c3cd917224a8e4a_arm64",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:71ae5ff534f4f67cf99dedc3c21b247a3e88749fad856249e7ad746518671667_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:8fb3cce0033e3de7fc67e764de96773eec18f4184cd5f9ddf4b0cd2b2d953220_s390x",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:27778b1cea8867d0e5a1dd400fa4e605161fbaf7fa1e9eeacd63522bfd1cf5d6_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:3059a1db6a7041bad8c656287d8fcafc478ac15656fe95d030e9bafa967e8d9a_s390x",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:4cde7e9b893b3a9b5c6eccb5496701d1601046cc1487f94d28bed3b0538e9957_amd64",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:50e6ff903856253916602dbb2e2fc5d0a2cf013fb710af1fb618c09aed30d09d_arm64",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:063111faad5ce211e11c5eb2d61559d0b9a89178cdf86377e38599e7232d55d2_s390x",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:a4995bf30e14bcc454a978199f4b6b9fbdcb5668dd80ebaa05cd8b4d64486856_amd64",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:d6361b290e08f9bfc22d902587206ef81ebdf9e8234475e7b846bb165c6029ba_arm64",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:e1cb117c57176aaa30641b849a95a23e737215e15f1be784f73870c1f2be02fd_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:24a009a20c555e5da425a4127ac944907db6a70e733bfd7d4009406430d2e615_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:486c3b2f1e8a16986309966473aab35a7aaaf490a25c151ab534a7c029ebd3f1_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:a355c4029f781a38c9d0878fcfae79191751aafe63a88d0f7b00df66520fac6c_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:be8c3101ff144d717007d7871457df69e1158c993c8b4fe5deac7294b939e3ee_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:0e82ac7f8380539bbc82507e7ef55d9a97d79eaeb8c3c0ada81e6dddd29b19eb_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:2a9f38ceaf22ef7d06a072b6a590a63ad7169f9e5936ca81236723cae5f679e5_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:6b59f2d1dea625fc1e14275083542986e3d53fdb1dc1d934e3f1f2fa2c90fd5a_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:857e46130a3b0be6d76d45531518e44e59d3a10cfe635fd602b1e28c1d9f5ee8_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:5d7cb76f4424c2208d9aee8368b960137d69d173caf88c1c5c63b1880374550b_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:702008d74a7ed324d1da2ac20e2358504bb04d6708d2703a7ea65414450f201d_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:d8772fc1fb3f4597dc0e0c0de6986cd0954a61ae67830d01a1e3e7ecfef0fb22_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:f950bddfb84693a35c98df847c1ccf486a4c480207f50b6836b0d0da1cce9e05_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:1016fe7844ac9bf28c07b8c0d74acdf62854d2bed8319047e557973569d44bbc_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:62db24300066a4f25fadc6f9f2e38d5ed52053932084524021b98ade564b8a5f_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:b5da27f7e78679e2d191f4f95da9fed16c6771471fe7fa1cad3eaf5c84c58e74_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:e48934c0a05ff02fc498679a66b4f93242a10686b973c98925006517ed1c3c59_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:01918f08d522dcf429dfbdab99dfc0c57aa84a5073b084c5f83b6ab6dca805c3_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:71ab195206354afe71631bace4c1754d13e7f9584d84b88513f45ba9e751ed24_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:bcc35ddbe11badbbf7fc900dbe53bd2ef3f51d867c5a64f59b7d43d1c5e801a6_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:befbf80f9941cb94914184c8459853b9575a795d39d827c40593de06a67bc6a0_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:0a37b41f0311547a307509c968071bf6449e48c42e8cdf2544e4378ac7359903_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:61f301f44a2b26dd73897046cdd9e511eaee0f026092aeb8c2b0c57a4cf3fb59_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:a47a609eb3c1a6f881592a3c080a413541c4682d60993c33f944f690095e99c7_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:e76d891b2cd11cbc1e7f033e3ec03e560759785d6cac10b07899413e4ebd4393_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:197a2a9ccf5939ffc38a2e81868ccddd908a79f713f72c06e56bcb34c7dd0ca7_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:35705ecc01555ec8b6deda36aca73d4a1eb0fdee12ce66f6109cbfe46a9a89b9_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:492ce9081642ee43dd2de20b68f48c687bab9b23efcb6a77648f9a341687a818_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:79578a4ab2c7904e2d337be50b9f63afd7c0c39ca10abee7fd9b13e6f481656b_ppc64le"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 7.5,
+            "baseSeverity": "HIGH",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:0d0b1ab0e8c287286f19ce71d9aacba69510826347f4dda5e0ff7a2be0ef6c88_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:3970a66b4525a97ef6ee39fea1570f7b81b0529b281d05d5bad82e2c2261b00d_amd64",
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:5b149e2f215085f5b969bde093fcac250682d48ccd2d1e671d55e945e02c5c24_arm64",
+            "9Base-OADP-1.3:oadp/oadp-kubevirt-velero-plugin-rhel9@sha256:f68841818eebf6fd794a4766fcaddacc7476b02e5248a25db45ee325b9dbd682_s390x",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:1979b2e3a393a936063792a4dbdc52a429b3015a5c661dea9041954aba46c567_amd64",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:474ed76e1544436e6708c029329f4cebc72efdcfb2e2df751c3cd917224a8e4a_arm64",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:71ae5ff534f4f67cf99dedc3c21b247a3e88749fad856249e7ad746518671667_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-mustgather-rhel9@sha256:8fb3cce0033e3de7fc67e764de96773eec18f4184cd5f9ddf4b0cd2b2d953220_s390x",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:27778b1cea8867d0e5a1dd400fa4e605161fbaf7fa1e9eeacd63522bfd1cf5d6_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:3059a1db6a7041bad8c656287d8fcafc478ac15656fe95d030e9bafa967e8d9a_s390x",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:4cde7e9b893b3a9b5c6eccb5496701d1601046cc1487f94d28bed3b0538e9957_amd64",
+            "9Base-OADP-1.3:oadp/oadp-operator-bundle@sha256:50e6ff903856253916602dbb2e2fc5d0a2cf013fb710af1fb618c09aed30d09d_arm64",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:063111faad5ce211e11c5eb2d61559d0b9a89178cdf86377e38599e7232d55d2_s390x",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:a4995bf30e14bcc454a978199f4b6b9fbdcb5668dd80ebaa05cd8b4d64486856_amd64",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:d6361b290e08f9bfc22d902587206ef81ebdf9e8234475e7b846bb165c6029ba_arm64",
+            "9Base-OADP-1.3:oadp/oadp-rhel9-operator@sha256:e1cb117c57176aaa30641b849a95a23e737215e15f1be784f73870c1f2be02fd_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:24a009a20c555e5da425a4127ac944907db6a70e733bfd7d4009406430d2e615_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:486c3b2f1e8a16986309966473aab35a7aaaf490a25c151ab534a7c029ebd3f1_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:a355c4029f781a38c9d0878fcfae79191751aafe63a88d0f7b00df66520fac6c_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-aws-rhel9@sha256:be8c3101ff144d717007d7871457df69e1158c993c8b4fe5deac7294b939e3ee_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:0e82ac7f8380539bbc82507e7ef55d9a97d79eaeb8c3c0ada81e6dddd29b19eb_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:2a9f38ceaf22ef7d06a072b6a590a63ad7169f9e5936ca81236723cae5f679e5_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:6b59f2d1dea625fc1e14275083542986e3d53fdb1dc1d934e3f1f2fa2c90fd5a_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-csi-rhel9@sha256:857e46130a3b0be6d76d45531518e44e59d3a10cfe635fd602b1e28c1d9f5ee8_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:5d7cb76f4424c2208d9aee8368b960137d69d173caf88c1c5c63b1880374550b_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:702008d74a7ed324d1da2ac20e2358504bb04d6708d2703a7ea65414450f201d_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:d8772fc1fb3f4597dc0e0c0de6986cd0954a61ae67830d01a1e3e7ecfef0fb22_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-gcp-rhel9@sha256:f950bddfb84693a35c98df847c1ccf486a4c480207f50b6836b0d0da1cce9e05_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:1016fe7844ac9bf28c07b8c0d74acdf62854d2bed8319047e557973569d44bbc_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:62db24300066a4f25fadc6f9f2e38d5ed52053932084524021b98ade564b8a5f_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:b5da27f7e78679e2d191f4f95da9fed16c6771471fe7fa1cad3eaf5c84c58e74_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-for-microsoft-azure-rhel9@sha256:e48934c0a05ff02fc498679a66b4f93242a10686b973c98925006517ed1c3c59_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:01918f08d522dcf429dfbdab99dfc0c57aa84a5073b084c5f83b6ab6dca805c3_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:71ab195206354afe71631bace4c1754d13e7f9584d84b88513f45ba9e751ed24_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:bcc35ddbe11badbbf7fc900dbe53bd2ef3f51d867c5a64f59b7d43d1c5e801a6_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-plugin-rhel9@sha256:befbf80f9941cb94914184c8459853b9575a795d39d827c40593de06a67bc6a0_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:0a37b41f0311547a307509c968071bf6449e48c42e8cdf2544e4378ac7359903_ppc64le",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:61f301f44a2b26dd73897046cdd9e511eaee0f026092aeb8c2b0c57a4cf3fb59_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:a47a609eb3c1a6f881592a3c080a413541c4682d60993c33f944f690095e99c7_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-restic-restore-helper-rhel9@sha256:e76d891b2cd11cbc1e7f033e3ec03e560759785d6cac10b07899413e4ebd4393_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:197a2a9ccf5939ffc38a2e81868ccddd908a79f713f72c06e56bcb34c7dd0ca7_arm64",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:35705ecc01555ec8b6deda36aca73d4a1eb0fdee12ce66f6109cbfe46a9a89b9_amd64",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:492ce9081642ee43dd2de20b68f48c687bab9b23efcb6a77648f9a341687a818_s390x",
+            "9Base-OADP-1.3:oadp/oadp-velero-rhel9@sha256:79578a4ab2c7904e2d337be50b9f63afd7c0c39ca10abee7fd9b13e6f481656b_ppc64le"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Moderate"
+        }
+      ],
+      "title": "opentelemetry: DoS vulnerability in otelhttp"
+    }
+  ]
+}

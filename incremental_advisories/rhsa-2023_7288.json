@@ -1,0 +1,1358 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "namespace": "https://access.redhat.com/security/updates/classification/",
+      "text": "Important"
+    },
+    "category": "csaf_security_advisory",
+    "csaf_version": "2.0",
+    "distribution": {
+      "text": "Copyright \u00a9 Red Hat, Inc. All rights reserved.",
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "en",
+    "notes": [
+      {
+        "category": "summary",
+        "text": "An update for Openshift Jenkins is now available for Red Hat Product OCP Tools 4.14. \n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+        "title": "Topic"
+      },
+      {
+        "category": "general",
+        "text": "Jenkins is a continuous integration server that monitors executions of repeated jobs, such as building a software project or jobs run by cron.\n\nSecurity Fix(es):\n\n* golang: net/http, x/net/http2: rapid stream resets can cause excessive work (Rapid Reset Attack) (CVE-2023-39325)\n\n* HTTP/2: Multiple HTTP/2 enabled web servers are vulnerable to a DDoS attack (Rapid Reset Attack) (CVE-2023-44487)\n\nA Red Hat Security Bulletin which addresses further details about the Rapid Reset flaw is available in the References section.\n\n* snakeyaml: Denial of Service due to missing nested depth limitation for collections (CVE-2022-25857)\n\n* maven-shared-utils: Command injection via Commandline class (CVE-2022-29599)\n\n* apache-commons-text: variable interpolation RCE (CVE-2022-42889)\n\n* jenkins-2-plugins/script-security: Sandbox bypass vulnerability in Script Security Plugin (CVE-2023-24422)\n\n* jenkins-2-plugins/JUnit: Stored XSS vulnerability in JUnit Plugin (CVE-2023-25761)\n\n* jenkins-2-plugins/pipeline-build-step: Stored XSS vulnerability in Pipeline: Build Step Plugin (CVE-2023-25762)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+        "title": "Details"
+      },
+      {
+        "category": "legal_disclaimer",
+        "text": "This content is licensed under the Creative Commons Attribution 4.0 International License (https://creativecommons.org/licenses/by/4.0/). If you distribute this content, or a modified version of it, you must provide attribution to Red Hat Inc. and provide a link to the original.",
+        "title": "Terms of Use"
+      }
+    ],
+    "publisher": {
+      "category": "vendor",
+      "contact_details": "https://access.redhat.com/security/team/contact/",
+      "issuing_authority": "Red Hat Product Security is responsible for vulnerability handling across all Red Hat products and services.",
+      "name": "Red Hat Product Security",
+      "namespace": "https://www.redhat.com"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "https://access.redhat.com/errata/RHSA-2023:7288",
+        "url": "https://access.redhat.com/errata/RHSA-2023:7288"
+      },
+      {
+        "category": "external",
+        "summary": "https://access.redhat.com/security/updates/classification/#important",
+        "url": "https://access.redhat.com/security/updates/classification/#important"
+      },
+      {
+        "category": "external",
+        "summary": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003",
+        "url": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003"
+      },
+      {
+        "category": "external",
+        "summary": "2066479",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2066479"
+      },
+      {
+        "category": "external",
+        "summary": "2126789",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2126789"
+      },
+      {
+        "category": "external",
+        "summary": "2135435",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2135435"
+      },
+      {
+        "category": "external",
+        "summary": "2164278",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2164278"
+      },
+      {
+        "category": "external",
+        "summary": "2170039",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2170039"
+      },
+      {
+        "category": "external",
+        "summary": "2170041",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2170041"
+      },
+      {
+        "category": "external",
+        "summary": "2242803",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2242803"
+      },
+      {
+        "category": "external",
+        "summary": "2243296",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2243296"
+      },
+      {
+        "category": "self",
+        "summary": "Canonical URL",
+        "url": "https://security.access.redhat.com/data/csaf/v2/advisories/2023/rhsa-2023_7288.json"
+      }
+    ],
+    "title": "Red Hat Security Advisory: Red Hat Product OCP Tools 4.14 Openshift Jenkins security update",
+    "tracking": {
+      "current_release_date": "2025-07-01T14:21:29+00:00",
+      "generator": {
+        "date": "2025-07-01T14:21:29+00:00",
+        "engine": {
+          "name": "Red Hat SDEngine",
+          "version": "4.6.3"
+        }
+      },
+      "id": "RHSA-2023:7288",
+      "initial_release_date": "2023-11-16T05:58:26+00:00",
+      "revision_history": [
+        {
+          "date": "2023-11-16T05:58:26+00:00",
+          "number": "1",
+          "summary": "Initial version"
+        },
+        {
+          "date": "2023-11-16T05:58:26+00:00",
+          "number": "2",
+          "summary": "Last updated version"
+        },
+        {
+          "date": "2025-07-01T14:21:29+00:00",
+          "number": "3",
+          "summary": "Last generated version"
+        }
+      ],
+      "status": "final",
+      "version": "3"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_name",
+                "name": "OpenShift Developer Tools and Services for OCP 4.14",
+                "product": {
+                  "name": "OpenShift Developer Tools and Services for OCP 4.14",
+                  "product_id": "8Base-OCP-Tools-4.14",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:ocp_tools:4.14::el8"
+                  }
+                }
+              }
+            ],
+            "category": "product_family",
+            "name": "OpenShift Jenkins"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "jenkins-0:2.414.3.1699356615-3.el8.src",
+                "product": {
+                  "name": "jenkins-0:2.414.3.1699356615-3.el8.src",
+                  "product_id": "jenkins-0:2.414.3.1699356615-3.el8.src",
+                  "product_identification_helper": {
+                    "purl": "pkg:rpm/redhat/jenkins@2.414.3.1699356615-3.el8?arch=src"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "jenkins-2-plugins-0:4.14.1699356715-1.el8.src",
+                "product": {
+                  "name": "jenkins-2-plugins-0:4.14.1699356715-1.el8.src",
+                  "product_id": "jenkins-2-plugins-0:4.14.1699356715-1.el8.src",
+                  "product_identification_helper": {
+                    "purl": "pkg:rpm/redhat/jenkins-2-plugins@4.14.1699356715-1.el8?arch=src"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "src"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "jenkins-0:2.414.3.1699356615-3.el8.noarch",
+                "product": {
+                  "name": "jenkins-0:2.414.3.1699356615-3.el8.noarch",
+                  "product_id": "jenkins-0:2.414.3.1699356615-3.el8.noarch",
+                  "product_identification_helper": {
+                    "purl": "pkg:rpm/redhat/jenkins@2.414.3.1699356615-3.el8?arch=noarch"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch",
+                "product": {
+                  "name": "jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch",
+                  "product_id": "jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch",
+                  "product_identification_helper": {
+                    "purl": "pkg:rpm/redhat/jenkins-2-plugins@4.14.1699356715-1.el8?arch=noarch"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "noarch"
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      }
+    ],
+    "relationships": [
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "jenkins-0:2.414.3.1699356615-3.el8.noarch as a component of OpenShift Developer Tools and Services for OCP 4.14",
+          "product_id": "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.noarch"
+        },
+        "product_reference": "jenkins-0:2.414.3.1699356615-3.el8.noarch",
+        "relates_to_product_reference": "8Base-OCP-Tools-4.14"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "jenkins-0:2.414.3.1699356615-3.el8.src as a component of OpenShift Developer Tools and Services for OCP 4.14",
+          "product_id": "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.src"
+        },
+        "product_reference": "jenkins-0:2.414.3.1699356615-3.el8.src",
+        "relates_to_product_reference": "8Base-OCP-Tools-4.14"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch as a component of OpenShift Developer Tools and Services for OCP 4.14",
+          "product_id": "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch"
+        },
+        "product_reference": "jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch",
+        "relates_to_product_reference": "8Base-OCP-Tools-4.14"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "jenkins-2-plugins-0:4.14.1699356715-1.el8.src as a component of OpenShift Developer Tools and Services for OCP 4.14",
+          "product_id": "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.src"
+        },
+        "product_reference": "jenkins-2-plugins-0:4.14.1699356715-1.el8.src",
+        "relates_to_product_reference": "8Base-OCP-Tools-4.14"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2022-25857",
+      "cwe": {
+        "id": "CWE-400",
+        "name": "Uncontrolled Resource Consumption"
+      },
+      "discovery_date": "2022-09-14T00:00:00+00:00",
+      "flags": [
+        {
+          "label": "vulnerable_code_not_present",
+          "product_ids": [
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.src"
+          ]
+        }
+      ],
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2126789"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A flaw was found in the org.yaml.snakeyaml package. This flaw allows an attacker to cause a denial of service (DoS) due to missing nested depth limitation for collections.",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "snakeyaml: Denial of Service due to missing nested depth limitation for collections",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "other",
+          "text": "For RHEL-8 it's downgraded to moderate because \"snakeyaml\" itself in RHEL 8 or RHEL-9 isn't shipped and \"prometheus-jmx-exporter\" is needed as build dependency. And it's not directly exploitable, hence severity marked as moderate.\nRed Hat Integration and AMQ products are not vulnerable to this flaw, so their severity has been lowered to moderate.\nRed Hat Single Sign-On uses snakeyaml from liquibase-core and is only used when performing migrations and would require administrator privileges to execute, hence severity marked as Low.\nRed Hat Fuse 7 is now in Maintenance Support Phase and details about its fix should be present soon. However, Red Hat Fuse Online (Syndesis) does will not contain the fix for this flaw.",
+          "title": "Statement"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch",
+          "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.src"
+        ],
+        "known_not_affected": [
+          "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.noarch",
+          "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.src"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2022-25857"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2126789",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2126789"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2022-25857",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2022-25857"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2022-25857",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-25857"
+        },
+        {
+          "category": "external",
+          "summary": "https://bitbucket.org/snakeyaml/snakeyaml/issues/525",
+          "url": "https://bitbucket.org/snakeyaml/snakeyaml/issues/525"
+        }
+      ],
+      "release_date": "2022-08-30T00:00:00+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2023-11-16T05:58:26+00:00",
+          "details": "Before applying this update, make sure all previously released errata relevant to your system have been applied.\n\nFor details on how to apply this update, refer to:\n\nhttps://access.redhat.com/articles/11258",
+          "product_ids": [
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.src"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2023:7288"
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 7.5,
+            "baseSeverity": "HIGH",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.src",
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.src"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Important"
+        }
+      ],
+      "title": "snakeyaml: Denial of Service due to missing nested depth limitation for collections"
+    },
+    {
+      "cve": "CVE-2022-29599",
+      "cwe": {
+        "id": "CWE-77",
+        "name": "Improper Neutralization of Special Elements used in a Command ('Command Injection')"
+      },
+      "discovery_date": "2022-03-15T00:00:00+00:00",
+      "flags": [
+        {
+          "label": "vulnerable_code_not_present",
+          "product_ids": [
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.src"
+          ]
+        }
+      ],
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2066479"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A flaw was found in the maven-shared-utils package. This issue allows a Command Injection due to improper escaping, allowing a shell injection attack.",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "maven-shared-utils: Command injection via Commandline class",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "other",
+          "text": "Red Hat Satellite ships Candlepin component, which uses the Tomcatjss module from the RHEL AppStream repository. In turn, Tomcatjss relies on Maven, which itself depends on affected Apache Maven Shared Utils. Due to the fact that Satellite does not directly use Apache Maven Shared Utils, or expose it in its code, it is considered not affected by the flaw. Satellite customers can resolve the security warning by updating to the fixed Apache Maven Shared Utils through the updated Maven module, which is available in the RHEL 8 AppStream repository. It's worth noting that this solution applies solely to RHEL 8, which supports modules exclusively, and it is not applicable to earlier versions including RHEL 7.",
+          "title": "Statement"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch",
+          "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.src"
+        ],
+        "known_not_affected": [
+          "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.noarch",
+          "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.src"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2022-29599"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2066479",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2066479"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2022-29599",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2022-29599"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2022-29599",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-29599"
+        }
+      ],
+      "release_date": "2020-05-29T00:00:00+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2023-11-16T05:58:26+00:00",
+          "details": "Before applying this update, make sure all previously released errata relevant to your system have been applied.\n\nFor details on how to apply this update, refer to:\n\nhttps://access.redhat.com/articles/11258",
+          "product_ids": [
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.src"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2023:7288"
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 9.8,
+            "baseSeverity": "CRITICAL",
+            "confidentialityImpact": "HIGH",
+            "integrityImpact": "HIGH",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.src",
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.src"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Important"
+        }
+      ],
+      "title": "maven-shared-utils: Command injection via Commandline class"
+    },
+    {
+      "cve": "CVE-2022-42889",
+      "cwe": {
+        "id": "CWE-1188",
+        "name": "Initialization of a Resource with an Insecure Default"
+      },
+      "discovery_date": "2022-10-15T00:00:00+00:00",
+      "flags": [
+        {
+          "label": "vulnerable_code_not_present",
+          "product_ids": [
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.src"
+          ]
+        }
+      ],
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2135435"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A flaw was found in Apache Commons Text packages 1.5 through 1.9.  The affected versions allow an attacker to benefit from a variable interpolation process contained in Apache Commons Text, which can cause properties to be dynamically defined. Server applications are vulnerable to remote code execution (RCE) and unintentional contact with untrusted remote servers.",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "apache-commons-text: variable interpolation RCE",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "other",
+          "text": "In order to carry successful exploitation of this vulnerability, the following conditions must be in place on the affected target:\n  - Usage of specific methods that interpolate the variables as described in the flaw\n  - Usage of external input for those methods\n  - Usage of that external input has to be unsanitized/no \"allow list\"/etc.\n\nThe following products have *Low* impact because they have maven references to the affected package but do not ship it nor use the code:\n- Red Hat EAP Expansion Pack (EAP-XP)\n- Red Hat Camel-K\n- Red Hat Camel-Quarkus\n\nRed Hat Satellite ships Candlepin that embeds Apache Commons Text, however, it is not vulnerable to the flaw since the library has not been exposed in the product code. In Candlepin, the Commons Text is being pulled for the Liquibase and ActiveMQ Artemis libraries as a dependency. Red Hat Product Security has evaluated and rated the impact of the flaw as Low for Satellite since there was no harm identified to the confidentiality, integrity, or availability of systems.\n\n- The OCP has a *Moderate* impact because the affected library is a third-party library in the OCP jenkins-2-plugin component which reduces the possibilities of successful exploitation.\n- The OCP-4.8 is affected by this CVE and is in an extended life phase. For versions of products in the Extended Life Phase, Red Hat will provide limited ongoing technical support. No bug fixes, security fixes, hardware enablement or root-cause analysis will be available during this phase, and support will be provided on existing installations only.",
+          "title": "Statement"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch",
+          "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.src"
+        ],
+        "known_not_affected": [
+          "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.noarch",
+          "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.src"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2022-42889"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2135435",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2135435"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2022-42889",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2022-42889"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2022-42889",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-42889"
+        },
+        {
+          "category": "external",
+          "summary": "https://blogs.apache.org/security/entry/cve-2022-42889",
+          "url": "https://blogs.apache.org/security/entry/cve-2022-42889"
+        },
+        {
+          "category": "external",
+          "summary": "https://lists.apache.org/thread/n2bd4vdsgkqh2tm14l1wyc3jyol7s1om",
+          "url": "https://lists.apache.org/thread/n2bd4vdsgkqh2tm14l1wyc3jyol7s1om"
+        },
+        {
+          "category": "external",
+          "summary": "https://seclists.org/oss-sec/2022/q4/22",
+          "url": "https://seclists.org/oss-sec/2022/q4/22"
+        }
+      ],
+      "release_date": "2022-10-13T00:00:00+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2023-11-16T05:58:26+00:00",
+          "details": "Before applying this update, make sure all previously released errata relevant to your system have been applied.\n\nFor details on how to apply this update, refer to:\n\nhttps://access.redhat.com/articles/11258",
+          "product_ids": [
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.src"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2023:7288"
+        },
+        {
+          "category": "workaround",
+          "details": "This flaw may be avoided by ensuring that any external inputs used with the Commons-Text lookup methods are sanitized properly. Untrusted input should always be thoroughly sanitized before using in any potentially risky situations.",
+          "product_ids": [
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.src",
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.src"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 9.8,
+            "baseSeverity": "CRITICAL",
+            "confidentialityImpact": "HIGH",
+            "integrityImpact": "HIGH",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.src",
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.src"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Moderate"
+        }
+      ],
+      "title": "apache-commons-text: variable interpolation RCE"
+    },
+    {
+      "cve": "CVE-2023-24422",
+      "cwe": {
+        "id": "CWE-20",
+        "name": "Improper Input Validation"
+      },
+      "discovery_date": "2023-01-25T00:00:00+00:00",
+      "flags": [
+        {
+          "label": "vulnerable_code_not_present",
+          "product_ids": [
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.src"
+          ]
+        }
+      ],
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2164278"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A flaw was found in the script-security Jenkins Plugin. In affected versions of the script-security plugin, property assignments performed implicitly by the Groovy language runtime when invoking map constructors were not intercepted by the sandbox. This vulnerability allows attackers with permission to define and run sandboxed scripts, including Pipelines, to bypass the sandbox protection and execute arbitrary code in the context of the Jenkins controller JVM.",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "jenkins-2-plugins/script-security: Sandbox bypass vulnerability in Script Security Plugin",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "other",
+          "text": "OpenShift 3.11 is already in the ELS support model phase. The Jenkins components are out of scope of the ELS support; hence OpenShift 3.11 Jenkins component is marked in this CVE as out of support scope.",
+          "title": "Statement"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch",
+          "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.src"
+        ],
+        "known_not_affected": [
+          "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.noarch",
+          "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.src"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-24422"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2164278",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2164278"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2023-24422",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-24422"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2023-24422",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-24422"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.jenkins.io/security/advisory/2023-01-24/#SECURITY-3016",
+          "url": "https://www.jenkins.io/security/advisory/2023-01-24/#SECURITY-3016"
+        }
+      ],
+      "release_date": "2023-01-24T00:00:00+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2023-11-16T05:58:26+00:00",
+          "details": "Before applying this update, make sure all previously released errata relevant to your system have been applied.\n\nFor details on how to apply this update, refer to:\n\nhttps://access.redhat.com/articles/11258",
+          "product_ids": [
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.src"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2023:7288"
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 8.8,
+            "baseSeverity": "HIGH",
+            "confidentialityImpact": "HIGH",
+            "integrityImpact": "HIGH",
+            "privilegesRequired": "LOW",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.src",
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.src"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Important"
+        }
+      ],
+      "title": "jenkins-2-plugins/script-security: Sandbox bypass vulnerability in Script Security Plugin"
+    },
+    {
+      "cve": "CVE-2023-25761",
+      "cwe": {
+        "id": "CWE-79",
+        "name": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+      },
+      "discovery_date": "2023-02-15T00:00:00+00:00",
+      "flags": [
+        {
+          "label": "vulnerable_code_not_present",
+          "product_ids": [
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.src"
+          ]
+        }
+      ],
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2170039"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A flaw was found in the Jenkins JUnit plugin. The affected versions of the JUnit Plugin do not escape test case class names in JavaScript expressions, resulting in a stored cross-site scripting (XSS) vulnerability. This may allow an attacker to control test case class names in the JUnit resources processed by the plugin.",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "jenkins-2-plugins/JUnit: Stored XSS vulnerability in JUnit Plugin",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "other",
+          "text": "OpenShift 3.11 is already in the ELS support model phase. The Jenkins components are out of scope of the ELS support, therefore, the OpenShift 3.11 Jenkins component is marked as out of support scope in this CVE.",
+          "title": "Statement"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch",
+          "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.src"
+        ],
+        "known_not_affected": [
+          "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.noarch",
+          "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.src"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-25761"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2170039",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2170039"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2023-25761",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-25761"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2023-25761",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-25761"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.jenkins.io/security/advisory/2023-02-15/#SECURITY-3032",
+          "url": "https://www.jenkins.io/security/advisory/2023-02-15/#SECURITY-3032"
+        }
+      ],
+      "release_date": "2023-02-15T00:00:00+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2023-11-16T05:58:26+00:00",
+          "details": "Before applying this update, make sure all previously released errata relevant to your system have been applied.\n\nFor details on how to apply this update, refer to:\n\nhttps://access.redhat.com/articles/11258",
+          "product_ids": [
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.src"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2023:7288"
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "NONE",
+            "baseScore": 5.4,
+            "baseSeverity": "MEDIUM",
+            "confidentialityImpact": "LOW",
+            "integrityImpact": "LOW",
+            "privilegesRequired": "LOW",
+            "scope": "CHANGED",
+            "userInteraction": "REQUIRED",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+            "version": "3.1"
+          },
+          "products": [
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.src",
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.src"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Moderate"
+        }
+      ],
+      "title": "jenkins-2-plugins/JUnit: Stored XSS vulnerability in JUnit Plugin"
+    },
+    {
+      "cve": "CVE-2023-25762",
+      "cwe": {
+        "id": "CWE-79",
+        "name": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+      },
+      "discovery_date": "2023-02-15T00:00:00+00:00",
+      "flags": [
+        {
+          "label": "vulnerable_code_not_present",
+          "product_ids": [
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.src"
+          ]
+        }
+      ],
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2170041"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A flaw was found in the Jenkins pipeline-build-step plugin. Affected versions of the pipeline-build-step plugin do not escape job names in a JavaScript expression used in the Pipeline Snippet Generator. This can result in a stored cross-site scripting (XSS) vulnerability that may allow attackers to control job names.",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "jenkins-2-plugins/pipeline-build-step: Stored XSS vulnerability in Pipeline: Build Step Plugin",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "other",
+          "text": "OpenShift 3.11 is already in the ELS support model phase. The Jenkins components are out of scope of the ELS support, therefore, the OpenShift 3.11 Jenkins component is marked as out of support scope in this CVE.",
+          "title": "Statement"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch",
+          "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.src"
+        ],
+        "known_not_affected": [
+          "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.noarch",
+          "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.src"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-25762"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2170041",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2170041"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2023-25762",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-25762"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2023-25762",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-25762"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.jenkins.io/security/advisory/2023-02-15/#SECURITY-3019",
+          "url": "https://www.jenkins.io/security/advisory/2023-02-15/#SECURITY-3019"
+        }
+      ],
+      "release_date": "2023-02-15T00:00:00+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2023-11-16T05:58:26+00:00",
+          "details": "Before applying this update, make sure all previously released errata relevant to your system have been applied.\n\nFor details on how to apply this update, refer to:\n\nhttps://access.redhat.com/articles/11258",
+          "product_ids": [
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.src"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2023:7288"
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "NONE",
+            "baseScore": 5.4,
+            "baseSeverity": "MEDIUM",
+            "confidentialityImpact": "LOW",
+            "integrityImpact": "LOW",
+            "privilegesRequired": "LOW",
+            "scope": "CHANGED",
+            "userInteraction": "REQUIRED",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+            "version": "3.1"
+          },
+          "products": [
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.src",
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.src"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Moderate"
+        }
+      ],
+      "title": "jenkins-2-plugins/pipeline-build-step: Stored XSS vulnerability in Pipeline: Build Step Plugin"
+    },
+    {
+      "cve": "CVE-2023-39325",
+      "cwe": {
+        "id": "CWE-400",
+        "name": "Uncontrolled Resource Consumption"
+      },
+      "discovery_date": "2023-10-10T00:00:00+00:00",
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2243296"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A flaw was found in handling multiplexed streams in the HTTP/2 protocol. A client can repeatedly make a request for a new multiplex stream and immediately send an RST_STREAM frame to cancel it. This creates extra work for the server setting up and tearing down the streams while not hitting any server-side limit for the maximum number of active streams per connection, resulting in a denial of service due to server resource consumption. Red Hat has rated the severity of this flaw as 'Important' as the US Cybersecurity and Infrastructure Security Agency (CISA) declared this vulnerability an active exploit.\r\n\r\nCVE-2023-39325 was assigned for the `Rapid Reset Attack` in the Go language packages.",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "golang: net/http, x/net/http2: rapid stream resets can cause excessive work (CVE-2023-44487)",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "other",
+          "text": "This CVE is related to CVE-2023-44487.\n\nThe majority of RHEL utilities are not long-running applications; instead, they are command-line tools. These tools utilize Golang package as build-time dependency, which is why they are classified as having a \"Moderate\" level of impact.",
+          "title": "Statement"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.noarch",
+          "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.src",
+          "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch",
+          "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.src"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2243296",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2243296"
+        },
+        {
+          "category": "external",
+          "summary": "RHSB-2023-003",
+          "url": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2023-39325",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "https://access.redhat.com/security/cve/CVE-2023-44487",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-44487"
+        },
+        {
+          "category": "external",
+          "summary": "https://go.dev/issue/63417",
+          "url": "https://go.dev/issue/63417"
+        },
+        {
+          "category": "external",
+          "summary": "https://pkg.go.dev/vuln/GO-2023-2102",
+          "url": "https://pkg.go.dev/vuln/GO-2023-2102"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487",
+          "url": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487"
+        }
+      ],
+      "release_date": "2023-10-10T00:00:00+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2023-11-16T05:58:26+00:00",
+          "details": "Before applying this update, make sure all previously released errata relevant to your system have been applied.\n\nFor details on how to apply this update, refer to:\n\nhttps://access.redhat.com/articles/11258",
+          "product_ids": [
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.src",
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.src"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2023:7288"
+        },
+        {
+          "category": "workaround",
+          "details": "The default stream concurrency limit in golang is 250 streams (requests) per HTTP/2 connection. This value may be adjusted in the golang.org/x/net/http2 package using the Server.MaxConcurrentStreams setting and the ConfigureServer function which are available in golang.org/x/net/http2.",
+          "product_ids": [
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.src",
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.src"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 7.5,
+            "baseSeverity": "HIGH",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.src",
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.src"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Important"
+        }
+      ],
+      "title": "golang: net/http, x/net/http2: rapid stream resets can cause excessive work (CVE-2023-44487)"
+    },
+    {
+      "cve": "CVE-2023-44487",
+      "cwe": {
+        "id": "CWE-400",
+        "name": "Uncontrolled Resource Consumption"
+      },
+      "discovery_date": "2023-10-09T00:00:00+00:00",
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2242803"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A flaw was found in handling multiplexed streams in the HTTP/2 protocol. A client can repeatedly make a request for a new multiplex stream and immediately send an RST_STREAM frame to cancel it. This creates extra work for the server setting up and tearing down the streams while not hitting any server-side limit for the maximum number of active streams per connection, resulting in a denial of service due to server resource consumption. Red Hat has rated the severity of this flaw as 'Important' as the US Cybersecurity and Infrastructure Security Agency (CISA) declared this vulnerability an active exploit.\r\n\r\nCVE-2023-39325 was assigned for the Rapid Reset Attack in the Go language packages.\r\n\r\nSecurity Bulletin\r\nhttps://access.redhat.com/security/vulnerabilities/RHSB-2023-003",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "HTTP/2: Multiple HTTP/2 enabled web servers are vulnerable to a DDoS attack (Rapid Reset Attack)",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "other",
+          "text": "NGINX has been marked as Moderate Impact because, for performance and resource consumption reasons, NGINX limits the number of concurrent streams to a default of 128. In addition, to optimally balance network and server performance, NGINX allows the client to persist HTTP connections for up to 1000 requests by default using an HTTP keepalive.\n\nThe majority of RHEL utilities are not long-running applications; instead, they are command-line tools. These tools utilize Golang package as build-time dependency, which is why they are classified as having a \"Moderate\" level of impact.\n\nrhc component is no longer impacted by CVE-2023-44487 & CVE-2023-39325.",
+          "title": "Statement"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.noarch",
+          "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.src",
+          "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch",
+          "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.src"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-44487"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2242803",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2242803"
+        },
+        {
+          "category": "external",
+          "summary": "RHSB-2023-003",
+          "url": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2023-44487",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-44487"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2023-44487",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-44487"
+        },
+        {
+          "category": "external",
+          "summary": "https://github.com/dotnet/announcements/issues/277",
+          "url": "https://github.com/dotnet/announcements/issues/277"
+        },
+        {
+          "category": "external",
+          "summary": "https://pkg.go.dev/vuln/GO-2023-2102",
+          "url": "https://pkg.go.dev/vuln/GO-2023-2102"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487",
+          "url": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.nginx.com/blog/http-2-rapid-reset-attack-impacting-f5-nginx-products/",
+          "url": "https://www.nginx.com/blog/http-2-rapid-reset-attack-impacting-f5-nginx-products/"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "release_date": "2023-10-10T00:00:00+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2023-11-16T05:58:26+00:00",
+          "details": "Before applying this update, make sure all previously released errata relevant to your system have been applied.\n\nFor details on how to apply this update, refer to:\n\nhttps://access.redhat.com/articles/11258",
+          "product_ids": [
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.src",
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.src"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2023:7288"
+        },
+        {
+          "category": "workaround",
+          "details": "Users are strongly urged to update their software as soon as fixes are available. \nThere are several mitigation approaches for this flaw. \n\n1. If circumstances permit, users may disable http2 endpoints to circumvent the flaw altogether until a fix is available.\n2. IP-based blocking or flood protection and rate control tools may be used at network endpoints to filter incoming traffic.\n3. Several package specific mitigations are also available. \n     a. nginx: https://www.nginx.com/blog/http-2-rapid-reset-attack-impacting-f5-nginx-products/\n     b. netty: https://github.com/netty/netty/security/advisories/GHSA-xpw8-rcwv-8f8p\n     c. haproxy: https://www.haproxy.com/blog/haproxy-is-not-affected-by-the-http-2-rapid-reset-attack-cve-2023-44487\n     d. nghttp2: https://github.com/nghttp2/nghttp2/security/advisories/GHSA-vx74-f528-fxqg\n     e. golang: The default stream concurrency limit in golang is 250 streams (requests) per HTTP/2 connection. This value may be adjusted in the golang.org/x/net/http2 package using the Server.MaxConcurrentStreams setting and the ConfigureServer function which are available in golang.org/x/net/http2.",
+          "product_ids": [
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.src",
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.src"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 7.5,
+            "baseSeverity": "HIGH",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-0:2.414.3.1699356615-3.el8.src",
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.noarch",
+            "8Base-OCP-Tools-4.14:jenkins-2-plugins-0:4.14.1699356715-1.el8.src"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "exploit_status",
+          "date": "2023-10-10T00:00:00+00:00",
+          "details": "CISA: https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "category": "impact",
+          "details": "Important"
+        }
+      ],
+      "title": "HTTP/2: Multiple HTTP/2 enabled web servers are vulnerable to a DDoS attack (Rapid Reset Attack)"
+    }
+  ]
+}

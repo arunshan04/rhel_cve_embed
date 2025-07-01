@@ -1,0 +1,754 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "namespace": "https://access.redhat.com/security/updates/classification/",
+      "text": "Important"
+    },
+    "category": "csaf_security_advisory",
+    "csaf_version": "2.0",
+    "distribution": {
+      "text": "Copyright \u00a9 Red Hat, Inc. All rights reserved.",
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "en",
+    "notes": [
+      {
+        "category": "summary",
+        "text": "An update for Openshift Jenkins is now available for Red Hat Product OCP \nTools 4.18. Red Hat Product Security has rated this update as having a \nsecurity impact of important.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a \ndetailed severity rating, is available for each vulnerability from the CVE \nlink(s) in the References section.",
+        "title": "Topic"
+      },
+      {
+        "category": "general",
+        "text": "Jenkins is a continuous integration server that monitors executions of \nrepeated jobs, such as building a software project or jobs run by cron.\n\nSecurity Fix(es):\n\n* jenkins-2-plugins: Potential DoS via stack exhaustion (incomplete fix for\nCVE-2023-1370) (CVE-2024-57699)\n* jenkins: CVE-2025-22228: Spring Security BCryptPasswordEncoder does not\nenforce maximum password length (CVE-2025-22228)\n* jenkins: Jetty HTTP/2 Header List Size Vulnerability (CVE-2025-1948)\n* jenkins: jackson-core Potential StackoverflowError (CVE-2025-52999)\n* jenkins-2-plugins: jackson-core Potential StackoverflowError\n(CVE-2025-52999)\n\nFor more details about the security issue(s), including the impact, a CVSS \nscore, acknowledgments, and other related information, refer to the CVE \npage listed in the References section.",
+        "title": "Details"
+      },
+      {
+        "category": "legal_disclaimer",
+        "text": "This content is licensed under the Creative Commons Attribution 4.0 International License (https://creativecommons.org/licenses/by/4.0/). If you distribute this content, or a modified version of it, you must provide attribution to Red Hat Inc. and provide a link to the original.",
+        "title": "Terms of Use"
+      }
+    ],
+    "publisher": {
+      "category": "vendor",
+      "contact_details": "https://access.redhat.com/security/team/contact/",
+      "issuing_authority": "Red Hat Product Security is responsible for vulnerability handling across all Red Hat products and services.",
+      "name": "Red Hat Product Security",
+      "namespace": "https://www.redhat.com"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "https://access.redhat.com/errata/RHSA-2025:10092",
+        "url": "https://access.redhat.com/errata/RHSA-2025:10092"
+      },
+      {
+        "category": "external",
+        "summary": "https://access.redhat.com/security/updates/classification/#important",
+        "url": "https://access.redhat.com/security/updates/classification/#important"
+      },
+      {
+        "category": "external",
+        "summary": "2344073",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2344073"
+      },
+      {
+        "category": "external",
+        "summary": "2353507",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2353507"
+      },
+      {
+        "category": "external",
+        "summary": "2365137",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2365137"
+      },
+      {
+        "category": "external",
+        "summary": "2374804",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2374804"
+      },
+      {
+        "category": "self",
+        "summary": "Canonical URL",
+        "url": "https://security.access.redhat.com/data/csaf/v2/advisories/2025/rhsa-2025_10092.json"
+      }
+    ],
+    "title": "Red Hat Security Advisory: Red Hat Product OCP Tools 4.18 OpenShift Jenkins security update",
+    "tracking": {
+      "current_release_date": "2025-07-01T14:40:45+00:00",
+      "generator": {
+        "date": "2025-07-01T14:40:45+00:00",
+        "engine": {
+          "name": "Red Hat SDEngine",
+          "version": "4.6.3"
+        }
+      },
+      "id": "RHSA-2025:10092",
+      "initial_release_date": "2025-07-01T13:48:03+00:00",
+      "revision_history": [
+        {
+          "date": "2025-07-01T13:48:03+00:00",
+          "number": "1",
+          "summary": "Initial version"
+        },
+        {
+          "date": "2025-07-01T13:48:03+00:00",
+          "number": "2",
+          "summary": "Last updated version"
+        },
+        {
+          "date": "2025-07-01T14:40:45+00:00",
+          "number": "3",
+          "summary": "Last generated version"
+        }
+      ],
+      "status": "final",
+      "version": "3"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_name",
+                "name": "OpenShift Developer Tools and Services for OCP 4.18",
+                "product": {
+                  "name": "OpenShift Developer Tools and Services for OCP 4.18",
+                  "product_id": "9Base-OCP-Tools-4.18",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:ocp_tools:4.18::el9"
+                  }
+                }
+              }
+            ],
+            "category": "product_family",
+            "name": "OpenShift Jenkins"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "jenkins-0:2.504.2.1750846524-3.el9.src",
+                "product": {
+                  "name": "jenkins-0:2.504.2.1750846524-3.el9.src",
+                  "product_id": "jenkins-0:2.504.2.1750846524-3.el9.src",
+                  "product_identification_helper": {
+                    "purl": "pkg:rpm/redhat/jenkins@2.504.2.1750846524-3.el9?arch=src"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "jenkins-2-plugins-0:4.18.1750846854-1.el9.src",
+                "product": {
+                  "name": "jenkins-2-plugins-0:4.18.1750846854-1.el9.src",
+                  "product_id": "jenkins-2-plugins-0:4.18.1750846854-1.el9.src",
+                  "product_identification_helper": {
+                    "purl": "pkg:rpm/redhat/jenkins-2-plugins@4.18.1750846854-1.el9?arch=src"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "src"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "jenkins-0:2.504.2.1750846524-3.el9.noarch",
+                "product": {
+                  "name": "jenkins-0:2.504.2.1750846524-3.el9.noarch",
+                  "product_id": "jenkins-0:2.504.2.1750846524-3.el9.noarch",
+                  "product_identification_helper": {
+                    "purl": "pkg:rpm/redhat/jenkins@2.504.2.1750846524-3.el9?arch=noarch"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "jenkins-2-plugins-0:4.18.1750846854-1.el9.noarch",
+                "product": {
+                  "name": "jenkins-2-plugins-0:4.18.1750846854-1.el9.noarch",
+                  "product_id": "jenkins-2-plugins-0:4.18.1750846854-1.el9.noarch",
+                  "product_identification_helper": {
+                    "purl": "pkg:rpm/redhat/jenkins-2-plugins@4.18.1750846854-1.el9?arch=noarch"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "noarch"
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      }
+    ],
+    "relationships": [
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "jenkins-0:2.504.2.1750846524-3.el9.noarch as a component of OpenShift Developer Tools and Services for OCP 4.18",
+          "product_id": "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.noarch"
+        },
+        "product_reference": "jenkins-0:2.504.2.1750846524-3.el9.noarch",
+        "relates_to_product_reference": "9Base-OCP-Tools-4.18"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "jenkins-0:2.504.2.1750846524-3.el9.src as a component of OpenShift Developer Tools and Services for OCP 4.18",
+          "product_id": "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.src"
+        },
+        "product_reference": "jenkins-0:2.504.2.1750846524-3.el9.src",
+        "relates_to_product_reference": "9Base-OCP-Tools-4.18"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "jenkins-2-plugins-0:4.18.1750846854-1.el9.noarch as a component of OpenShift Developer Tools and Services for OCP 4.18",
+          "product_id": "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.noarch"
+        },
+        "product_reference": "jenkins-2-plugins-0:4.18.1750846854-1.el9.noarch",
+        "relates_to_product_reference": "9Base-OCP-Tools-4.18"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "jenkins-2-plugins-0:4.18.1750846854-1.el9.src as a component of OpenShift Developer Tools and Services for OCP 4.18",
+          "product_id": "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.src"
+        },
+        "product_reference": "jenkins-2-plugins-0:4.18.1750846854-1.el9.src",
+        "relates_to_product_reference": "9Base-OCP-Tools-4.18"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2024-57699",
+      "cwe": {
+        "id": "CWE-674",
+        "name": "Uncontrolled Recursion"
+      },
+      "discovery_date": "2025-02-05T22:01:26.352808+00:00",
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2344073"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A flaw was found in the JSON-smart library. In affected versions, specially crafted JSON input may trigger stack exhaustion, potentially leading to an application crash or denial of service. This issue exists due to an incomplete fix for CVE-2023-1370.",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "json-smart: Potential DoS via stack exhaustion (incomplete fix for CVE-2023-1370)",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "other",
+          "text": "This issue exists because of an incomplete fix for CVE-2023-1370, therefore it only affects json-smart v2.5.0 through v2.5.1 (inclusive).",
+          "title": "Statement"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.noarch",
+          "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.src",
+          "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.noarch",
+          "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.src"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2024-57699"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2344073",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2344073"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2024-57699",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2024-57699"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2024-57699",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-57699"
+        },
+        {
+          "category": "external",
+          "summary": "https://github.com/TurtleLiu/Vul_PoC/tree/main/CVE-2024-57699",
+          "url": "https://github.com/TurtleLiu/Vul_PoC/tree/main/CVE-2024-57699"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/cve-2023-1370",
+          "url": "https://nvd.nist.gov/vuln/detail/cve-2023-1370"
+        }
+      ],
+      "release_date": "2025-02-05T00:00:00+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2025-07-01T13:48:03+00:00",
+          "details": "For details on how to apply this update, which includes the changes described in this advisory, refer to:\nhttps://access.redhat.com/articles/11258",
+          "product_ids": [
+            "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.noarch",
+            "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.src",
+            "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.noarch",
+            "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.src"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2025:10092"
+        },
+        {
+          "category": "workaround",
+          "details": "Red Hat Product Security does not have a recommended mitigation at this time.",
+          "product_ids": [
+            "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.noarch",
+            "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.src",
+            "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.noarch",
+            "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.src"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 7.5,
+            "baseSeverity": "HIGH",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.noarch",
+            "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.src",
+            "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.noarch",
+            "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.src"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Important"
+        }
+      ],
+      "title": "json-smart: Potential DoS via stack exhaustion (incomplete fix for CVE-2023-1370)"
+    },
+    {
+      "cve": "CVE-2025-1948",
+      "cwe": {
+        "id": "CWE-400",
+        "name": "Uncontrolled Resource Consumption"
+      },
+      "discovery_date": "2025-05-08T18:00:52.156301+00:00",
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2365137"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A flaw was found in Eclipse Jetty. This vulnerability allows denial of service attack via an HTTP/2 client specifying a very large value for the SETTINGS_MAX_HEADER_LIST_SIZE parameter.",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "jetty-http2-common: Jetty HTTP/2 Header List Size Vulnerability",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.noarch",
+          "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.src",
+          "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.noarch",
+          "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.src"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2025-1948"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2365137",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2365137"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2025-1948",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2025-1948"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2025-1948",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-1948"
+        },
+        {
+          "category": "external",
+          "summary": "https://github.com/jetty/jetty.project/security/advisories/GHSA-889j-63jv-qhr8",
+          "url": "https://github.com/jetty/jetty.project/security/advisories/GHSA-889j-63jv-qhr8"
+        },
+        {
+          "category": "external",
+          "summary": "https://gitlab.eclipse.org/security/cve-assignement/-/issues/56",
+          "url": "https://gitlab.eclipse.org/security/cve-assignement/-/issues/56"
+        }
+      ],
+      "release_date": "2025-05-08T17:48:40.831000+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2025-07-01T13:48:03+00:00",
+          "details": "For details on how to apply this update, which includes the changes described in this advisory, refer to:\nhttps://access.redhat.com/articles/11258",
+          "product_ids": [
+            "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.noarch",
+            "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.src",
+            "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.noarch",
+            "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.src"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2025:10092"
+        },
+        {
+          "category": "workaround",
+          "details": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base or stability.",
+          "product_ids": [
+            "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.noarch",
+            "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.src",
+            "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.noarch",
+            "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.src"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 7.5,
+            "baseSeverity": "HIGH",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.noarch",
+            "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.src",
+            "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.noarch",
+            "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.src"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Important"
+        }
+      ],
+      "title": "jetty-http2-common: Jetty HTTP/2 Header List Size Vulnerability"
+    },
+    {
+      "cve": "CVE-2025-22228",
+      "cwe": {
+        "id": "CWE-863",
+        "name": "Incorrect Authorization"
+      },
+      "discovery_date": "2025-03-20T06:00:45.196050+00:00",
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2353507"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A flaw was found in the spring-security-core password encoder. This vulnerability allows incorrect password matching via input manipulation.",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "spring-security-core: Spring Security BCryptPasswordEncoder does not enforce maximum password length",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.noarch",
+          "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.src",
+          "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.noarch",
+          "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.src"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2025-22228"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2353507",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2353507"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2025-22228",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2025-22228"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2025-22228",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-22228"
+        },
+        {
+          "category": "external",
+          "summary": "https://spring.io/security/cve-2025-22228",
+          "url": "https://spring.io/security/cve-2025-22228"
+        }
+      ],
+      "release_date": "2025-03-20T05:49:19.275000+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2025-07-01T13:48:03+00:00",
+          "details": "For details on how to apply this update, which includes the changes described in this advisory, refer to:\nhttps://access.redhat.com/articles/11258",
+          "product_ids": [
+            "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.noarch",
+            "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.src",
+            "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.noarch",
+            "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.src"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2025:10092"
+        },
+        {
+          "category": "workaround",
+          "details": "Red Hat Product Security does not have a recommended mitigation at this time.",
+          "product_ids": [
+            "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.noarch",
+            "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.src",
+            "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.noarch",
+            "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.src"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "HIGH",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "NONE",
+            "baseScore": 7.4,
+            "baseSeverity": "HIGH",
+            "confidentialityImpact": "HIGH",
+            "integrityImpact": "HIGH",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+            "version": "3.1"
+          },
+          "products": [
+            "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.noarch",
+            "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.src",
+            "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.noarch",
+            "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.src"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Important"
+        }
+      ],
+      "title": "spring-security-core: Spring Security BCryptPasswordEncoder does not enforce maximum password length"
+    },
+    {
+      "cve": "CVE-2025-52999",
+      "cwe": {
+        "id": "CWE-121",
+        "name": "Stack-based Buffer Overflow"
+      },
+      "discovery_date": "2025-06-25T18:00:54.693716+00:00",
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2374804"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A nested data handling flaw was found in Jackson Core. When parsing particularly deeply nested data structures, a StackoverflowError can occur.",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "com.fasterxml.jackson.core/jackson-core: jackson-core Potential StackoverflowError",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.noarch",
+          "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.src",
+          "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.noarch",
+          "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.src"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2025-52999"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2374804",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2374804"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2025-52999",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2025-52999"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2025-52999",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-52999"
+        },
+        {
+          "category": "external",
+          "summary": "https://github.com/FasterXML/jackson-core/pull/943",
+          "url": "https://github.com/FasterXML/jackson-core/pull/943"
+        },
+        {
+          "category": "external",
+          "summary": "https://github.com/FasterXML/jackson-core/security/advisories/GHSA-h46c-h94j-95f3",
+          "url": "https://github.com/FasterXML/jackson-core/security/advisories/GHSA-h46c-h94j-95f3"
+        }
+      ],
+      "release_date": "2025-06-25T17:02:57.428000+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2025-07-01T13:48:03+00:00",
+          "details": "For details on how to apply this update, which includes the changes described in this advisory, refer to:\nhttps://access.redhat.com/articles/11258",
+          "product_ids": [
+            "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.noarch",
+            "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.src",
+            "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.noarch",
+            "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.src"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2025:10092"
+        },
+        {
+          "category": "workaround",
+          "details": "To mitigate this vulnerability, the recommendation is to avoid parsing input files from untrusted sources that may have excessively deep nested data structures; anything with a depth over 1000.",
+          "product_ids": [
+            "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.noarch",
+            "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.src",
+            "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.noarch",
+            "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.src"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 7.5,
+            "baseSeverity": "HIGH",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.noarch",
+            "9Base-OCP-Tools-4.18:jenkins-0:2.504.2.1750846524-3.el9.src",
+            "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.noarch",
+            "9Base-OCP-Tools-4.18:jenkins-2-plugins-0:4.18.1750846854-1.el9.src"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Important"
+        }
+      ],
+      "title": "com.fasterxml.jackson.core/jackson-core: jackson-core Potential StackoverflowError"
+    }
+  ]
+}

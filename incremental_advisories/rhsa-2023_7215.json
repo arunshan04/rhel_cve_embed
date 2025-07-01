@@ -1,0 +1,1123 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "namespace": "https://access.redhat.com/security/updates/classification/",
+      "text": "Important"
+    },
+    "category": "csaf_security_advisory",
+    "csaf_version": "2.0",
+    "distribution": {
+      "text": "Copyright \u00a9 Red Hat, Inc. All rights reserved.",
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "en",
+    "notes": [
+      {
+        "category": "summary",
+        "text": "Red Hat OpenShift Service Mesh 2.2.12 Containers\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+        "title": "Topic"
+      },
+      {
+        "category": "general",
+        "text": "Red Hat OpenShift Service Mesh is Red Hat's distribution of the Istio service mesh project, tailored for installation into an OpenShift Container Platform installation.\n\nSecurity Fix(es):\n\n* golang: net/http, x/net/http2: rapid stream resets can cause excessive work (Rapid Reset Attack) (CVE-2023-39325)\n\n* HTTP/2: Multiple HTTP/2 enabled web servers are vulnerable to a DDoS attack (Rapid Reset Attack) (CVE-2023-44487)\n\nA Red Hat Security Bulletin which addresses further details about the Rapid Reset flaw is available in the References section.\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+        "title": "Details"
+      },
+      {
+        "category": "legal_disclaimer",
+        "text": "This content is licensed under the Creative Commons Attribution 4.0 International License (https://creativecommons.org/licenses/by/4.0/). If you distribute this content, or a modified version of it, you must provide attribution to Red Hat Inc. and provide a link to the original.",
+        "title": "Terms of Use"
+      }
+    ],
+    "publisher": {
+      "category": "vendor",
+      "contact_details": "https://access.redhat.com/security/team/contact/",
+      "issuing_authority": "Red Hat Product Security is responsible for vulnerability handling across all Red Hat products and services.",
+      "name": "Red Hat Product Security",
+      "namespace": "https://www.redhat.com"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "https://access.redhat.com/errata/RHSA-2023:7215",
+        "url": "https://access.redhat.com/errata/RHSA-2023:7215"
+      },
+      {
+        "category": "external",
+        "summary": "https://access.redhat.com/security/updates/classification/#important",
+        "url": "https://access.redhat.com/security/updates/classification/#important"
+      },
+      {
+        "category": "external",
+        "summary": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003",
+        "url": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003"
+      },
+      {
+        "category": "external",
+        "summary": "2242803",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2242803"
+      },
+      {
+        "category": "external",
+        "summary": "2243296",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2243296"
+      },
+      {
+        "category": "self",
+        "summary": "Canonical URL",
+        "url": "https://security.access.redhat.com/data/csaf/v2/advisories/2023/rhsa-2023_7215.json"
+      }
+    ],
+    "title": "Red Hat Security Advisory: Red Hat OpenShift Service Mesh Containers for 2.2.12",
+    "tracking": {
+      "current_release_date": "2025-07-01T14:21:21+00:00",
+      "generator": {
+        "date": "2025-07-01T14:21:21+00:00",
+        "engine": {
+          "name": "Red Hat SDEngine",
+          "version": "4.6.3"
+        }
+      },
+      "id": "RHSA-2023:7215",
+      "initial_release_date": "2023-11-15T00:16:31+00:00",
+      "revision_history": [
+        {
+          "date": "2023-11-15T00:16:31+00:00",
+          "number": "1",
+          "summary": "Initial version"
+        },
+        {
+          "date": "2023-11-15T00:16:31+00:00",
+          "number": "2",
+          "summary": "Last updated version"
+        },
+        {
+          "date": "2025-07-01T14:21:21+00:00",
+          "number": "3",
+          "summary": "Last generated version"
+        }
+      ],
+      "status": "final",
+      "version": "3"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_name",
+                "name": "RHOSSM 2.2 for RHEL 8",
+                "product": {
+                  "name": "RHOSSM 2.2 for RHEL 8",
+                  "product_id": "8Base-RHOSSM-2.2",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:service_mesh:2.2::el8"
+                  }
+                }
+              }
+            ],
+            "category": "product_family",
+            "name": "Red Hat OpenShift Service Mesh"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "openshift-service-mesh/istio-cni-rhel8@sha256:a0f0fcdf2d1be20c4b483d338803b4f968ed6a51ee842bae3f2539aaea660b36_amd64",
+                "product": {
+                  "name": "openshift-service-mesh/istio-cni-rhel8@sha256:a0f0fcdf2d1be20c4b483d338803b4f968ed6a51ee842bae3f2539aaea660b36_amd64",
+                  "product_id": "openshift-service-mesh/istio-cni-rhel8@sha256:a0f0fcdf2d1be20c4b483d338803b4f968ed6a51ee842bae3f2539aaea660b36_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/istio-cni-rhel8@sha256:a0f0fcdf2d1be20c4b483d338803b4f968ed6a51ee842bae3f2539aaea660b36?arch=amd64&repository_url=registry.redhat.io/openshift-service-mesh/istio-cni-rhel8&tag=2.2.12-2"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-service-mesh/grafana-rhel8@sha256:c9462389f5c148c9fa855aa54786ab28e0a522c2576e139f254c72f3135e824c_amd64",
+                "product": {
+                  "name": "openshift-service-mesh/grafana-rhel8@sha256:c9462389f5c148c9fa855aa54786ab28e0a522c2576e139f254c72f3135e824c_amd64",
+                  "product_id": "openshift-service-mesh/grafana-rhel8@sha256:c9462389f5c148c9fa855aa54786ab28e0a522c2576e139f254c72f3135e824c_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/grafana-rhel8@sha256:c9462389f5c148c9fa855aa54786ab28e0a522c2576e139f254c72f3135e824c?arch=amd64&repository_url=registry.redhat.io/openshift-service-mesh/grafana-rhel8&tag=2.2.12-1"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-service-mesh/kiali-rhel8@sha256:63ce7982aa4fe759dbe7acc497105da41f6426268678df4c8407ef7da94f5965_amd64",
+                "product": {
+                  "name": "openshift-service-mesh/kiali-rhel8@sha256:63ce7982aa4fe759dbe7acc497105da41f6426268678df4c8407ef7da94f5965_amd64",
+                  "product_id": "openshift-service-mesh/kiali-rhel8@sha256:63ce7982aa4fe759dbe7acc497105da41f6426268678df4c8407ef7da94f5965_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/kiali-rhel8@sha256:63ce7982aa4fe759dbe7acc497105da41f6426268678df4c8407ef7da94f5965?arch=amd64&repository_url=registry.redhat.io/openshift-service-mesh/kiali-rhel8&tag=1.48.11-1"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-service-mesh/istio-must-gather-rhel8@sha256:a3031870bd2199c28e754585b57363f953818bd20bf9ad04f5545e0eb4ae4793_amd64",
+                "product": {
+                  "name": "openshift-service-mesh/istio-must-gather-rhel8@sha256:a3031870bd2199c28e754585b57363f953818bd20bf9ad04f5545e0eb4ae4793_amd64",
+                  "product_id": "openshift-service-mesh/istio-must-gather-rhel8@sha256:a3031870bd2199c28e754585b57363f953818bd20bf9ad04f5545e0eb4ae4793_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/istio-must-gather-rhel8@sha256:a3031870bd2199c28e754585b57363f953818bd20bf9ad04f5545e0eb4ae4793?arch=amd64&repository_url=registry.redhat.io/openshift-service-mesh/istio-must-gather-rhel8&tag=2.2.12-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-service-mesh/pilot-rhel8@sha256:818fc5474a2bea0400b6b022cca31f522ea05b58bfa57fca1f6cb20efeb140f7_amd64",
+                "product": {
+                  "name": "openshift-service-mesh/pilot-rhel8@sha256:818fc5474a2bea0400b6b022cca31f522ea05b58bfa57fca1f6cb20efeb140f7_amd64",
+                  "product_id": "openshift-service-mesh/pilot-rhel8@sha256:818fc5474a2bea0400b6b022cca31f522ea05b58bfa57fca1f6cb20efeb140f7_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/pilot-rhel8@sha256:818fc5474a2bea0400b6b022cca31f522ea05b58bfa57fca1f6cb20efeb140f7?arch=amd64&repository_url=registry.redhat.io/openshift-service-mesh/pilot-rhel8&tag=2.2.12-2"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-service-mesh/prometheus-rhel8@sha256:dbcf658a5354b9b7d412826a77cfb0ce889c4704634f5d13325161021feff81e_amd64",
+                "product": {
+                  "name": "openshift-service-mesh/prometheus-rhel8@sha256:dbcf658a5354b9b7d412826a77cfb0ce889c4704634f5d13325161021feff81e_amd64",
+                  "product_id": "openshift-service-mesh/prometheus-rhel8@sha256:dbcf658a5354b9b7d412826a77cfb0ce889c4704634f5d13325161021feff81e_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/prometheus-rhel8@sha256:dbcf658a5354b9b7d412826a77cfb0ce889c4704634f5d13325161021feff81e?arch=amd64&repository_url=registry.redhat.io/openshift-service-mesh/prometheus-rhel8&tag=2.2.12-1"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-service-mesh/proxyv2-rhel8@sha256:4abe159e450801e062a3afceff661ab25dc57ea122ce58269b2f3566a55c8dc2_amd64",
+                "product": {
+                  "name": "openshift-service-mesh/proxyv2-rhel8@sha256:4abe159e450801e062a3afceff661ab25dc57ea122ce58269b2f3566a55c8dc2_amd64",
+                  "product_id": "openshift-service-mesh/proxyv2-rhel8@sha256:4abe159e450801e062a3afceff661ab25dc57ea122ce58269b2f3566a55c8dc2_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/proxyv2-rhel8@sha256:4abe159e450801e062a3afceff661ab25dc57ea122ce58269b2f3566a55c8dc2?arch=amd64&repository_url=registry.redhat.io/openshift-service-mesh/proxyv2-rhel8&tag=2.2.12-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-service-mesh/ratelimit-rhel8@sha256:8a5a8bc6a54cd64330926478ac29f568ac5c83cc9550852d439ccc4cbd0b5ab5_amd64",
+                "product": {
+                  "name": "openshift-service-mesh/ratelimit-rhel8@sha256:8a5a8bc6a54cd64330926478ac29f568ac5c83cc9550852d439ccc4cbd0b5ab5_amd64",
+                  "product_id": "openshift-service-mesh/ratelimit-rhel8@sha256:8a5a8bc6a54cd64330926478ac29f568ac5c83cc9550852d439ccc4cbd0b5ab5_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ratelimit-rhel8@sha256:8a5a8bc6a54cd64330926478ac29f568ac5c83cc9550852d439ccc4cbd0b5ab5?arch=amd64&repository_url=registry.redhat.io/openshift-service-mesh/ratelimit-rhel8&tag=2.2.12-1"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "amd64"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "openshift-service-mesh/istio-cni-rhel8@sha256:ef9adad3d6ccc52944aa6a7be7537a3fd2cef1984c09f4b57a32d5670903b679_ppc64le",
+                "product": {
+                  "name": "openshift-service-mesh/istio-cni-rhel8@sha256:ef9adad3d6ccc52944aa6a7be7537a3fd2cef1984c09f4b57a32d5670903b679_ppc64le",
+                  "product_id": "openshift-service-mesh/istio-cni-rhel8@sha256:ef9adad3d6ccc52944aa6a7be7537a3fd2cef1984c09f4b57a32d5670903b679_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/istio-cni-rhel8@sha256:ef9adad3d6ccc52944aa6a7be7537a3fd2cef1984c09f4b57a32d5670903b679?arch=ppc64le&repository_url=registry.redhat.io/openshift-service-mesh/istio-cni-rhel8&tag=2.2.12-2"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-service-mesh/grafana-rhel8@sha256:dcfa0e73a89d2ad273720c209dd94fe3b652c5606d196d4962a2f662ed834612_ppc64le",
+                "product": {
+                  "name": "openshift-service-mesh/grafana-rhel8@sha256:dcfa0e73a89d2ad273720c209dd94fe3b652c5606d196d4962a2f662ed834612_ppc64le",
+                  "product_id": "openshift-service-mesh/grafana-rhel8@sha256:dcfa0e73a89d2ad273720c209dd94fe3b652c5606d196d4962a2f662ed834612_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/grafana-rhel8@sha256:dcfa0e73a89d2ad273720c209dd94fe3b652c5606d196d4962a2f662ed834612?arch=ppc64le&repository_url=registry.redhat.io/openshift-service-mesh/grafana-rhel8&tag=2.2.12-1"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-service-mesh/kiali-rhel8@sha256:081d9b91f85a9fa135ddaf993b67ba01282205b5e87d31cffa1a9e659a430a61_ppc64le",
+                "product": {
+                  "name": "openshift-service-mesh/kiali-rhel8@sha256:081d9b91f85a9fa135ddaf993b67ba01282205b5e87d31cffa1a9e659a430a61_ppc64le",
+                  "product_id": "openshift-service-mesh/kiali-rhel8@sha256:081d9b91f85a9fa135ddaf993b67ba01282205b5e87d31cffa1a9e659a430a61_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/kiali-rhel8@sha256:081d9b91f85a9fa135ddaf993b67ba01282205b5e87d31cffa1a9e659a430a61?arch=ppc64le&repository_url=registry.redhat.io/openshift-service-mesh/kiali-rhel8&tag=1.48.11-1"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-service-mesh/istio-must-gather-rhel8@sha256:3061637ecdeac036dc9171f5b079daa0a4a193589161e90920c681abb27c5ce3_ppc64le",
+                "product": {
+                  "name": "openshift-service-mesh/istio-must-gather-rhel8@sha256:3061637ecdeac036dc9171f5b079daa0a4a193589161e90920c681abb27c5ce3_ppc64le",
+                  "product_id": "openshift-service-mesh/istio-must-gather-rhel8@sha256:3061637ecdeac036dc9171f5b079daa0a4a193589161e90920c681abb27c5ce3_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/istio-must-gather-rhel8@sha256:3061637ecdeac036dc9171f5b079daa0a4a193589161e90920c681abb27c5ce3?arch=ppc64le&repository_url=registry.redhat.io/openshift-service-mesh/istio-must-gather-rhel8&tag=2.2.12-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-service-mesh/pilot-rhel8@sha256:6851a60e3242789f67637d596959580c96fcd5221d71ad83e21ead53f0ba9856_ppc64le",
+                "product": {
+                  "name": "openshift-service-mesh/pilot-rhel8@sha256:6851a60e3242789f67637d596959580c96fcd5221d71ad83e21ead53f0ba9856_ppc64le",
+                  "product_id": "openshift-service-mesh/pilot-rhel8@sha256:6851a60e3242789f67637d596959580c96fcd5221d71ad83e21ead53f0ba9856_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/pilot-rhel8@sha256:6851a60e3242789f67637d596959580c96fcd5221d71ad83e21ead53f0ba9856?arch=ppc64le&repository_url=registry.redhat.io/openshift-service-mesh/pilot-rhel8&tag=2.2.12-2"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-service-mesh/prometheus-rhel8@sha256:b2e2fbd17082d59a1fbf9e55c04b767763d968747e232bfb4789376ed1bb08cc_ppc64le",
+                "product": {
+                  "name": "openshift-service-mesh/prometheus-rhel8@sha256:b2e2fbd17082d59a1fbf9e55c04b767763d968747e232bfb4789376ed1bb08cc_ppc64le",
+                  "product_id": "openshift-service-mesh/prometheus-rhel8@sha256:b2e2fbd17082d59a1fbf9e55c04b767763d968747e232bfb4789376ed1bb08cc_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/prometheus-rhel8@sha256:b2e2fbd17082d59a1fbf9e55c04b767763d968747e232bfb4789376ed1bb08cc?arch=ppc64le&repository_url=registry.redhat.io/openshift-service-mesh/prometheus-rhel8&tag=2.2.12-1"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-service-mesh/proxyv2-rhel8@sha256:208a5000e943fb68e2c2cfea0ac6223fdc6a43363b19fb3ac3e6c19326afa464_ppc64le",
+                "product": {
+                  "name": "openshift-service-mesh/proxyv2-rhel8@sha256:208a5000e943fb68e2c2cfea0ac6223fdc6a43363b19fb3ac3e6c19326afa464_ppc64le",
+                  "product_id": "openshift-service-mesh/proxyv2-rhel8@sha256:208a5000e943fb68e2c2cfea0ac6223fdc6a43363b19fb3ac3e6c19326afa464_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/proxyv2-rhel8@sha256:208a5000e943fb68e2c2cfea0ac6223fdc6a43363b19fb3ac3e6c19326afa464?arch=ppc64le&repository_url=registry.redhat.io/openshift-service-mesh/proxyv2-rhel8&tag=2.2.12-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-service-mesh/ratelimit-rhel8@sha256:cc5d972cb2ba30e147c76202dc315a08bdba41906f808e95d8b134bfe446fc89_ppc64le",
+                "product": {
+                  "name": "openshift-service-mesh/ratelimit-rhel8@sha256:cc5d972cb2ba30e147c76202dc315a08bdba41906f808e95d8b134bfe446fc89_ppc64le",
+                  "product_id": "openshift-service-mesh/ratelimit-rhel8@sha256:cc5d972cb2ba30e147c76202dc315a08bdba41906f808e95d8b134bfe446fc89_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ratelimit-rhel8@sha256:cc5d972cb2ba30e147c76202dc315a08bdba41906f808e95d8b134bfe446fc89?arch=ppc64le&repository_url=registry.redhat.io/openshift-service-mesh/ratelimit-rhel8&tag=2.2.12-1"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "ppc64le"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "openshift-service-mesh/istio-cni-rhel8@sha256:fcc2034b3448c92e1ac6c3848def79942238733d4acf03ae2e5a2b84be0c6545_s390x",
+                "product": {
+                  "name": "openshift-service-mesh/istio-cni-rhel8@sha256:fcc2034b3448c92e1ac6c3848def79942238733d4acf03ae2e5a2b84be0c6545_s390x",
+                  "product_id": "openshift-service-mesh/istio-cni-rhel8@sha256:fcc2034b3448c92e1ac6c3848def79942238733d4acf03ae2e5a2b84be0c6545_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/istio-cni-rhel8@sha256:fcc2034b3448c92e1ac6c3848def79942238733d4acf03ae2e5a2b84be0c6545?arch=s390x&repository_url=registry.redhat.io/openshift-service-mesh/istio-cni-rhel8&tag=2.2.12-2"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-service-mesh/grafana-rhel8@sha256:2ac0267f703527a6af7cf822ac8dc33f8e27a8784c2091c6894ea9d4faeff290_s390x",
+                "product": {
+                  "name": "openshift-service-mesh/grafana-rhel8@sha256:2ac0267f703527a6af7cf822ac8dc33f8e27a8784c2091c6894ea9d4faeff290_s390x",
+                  "product_id": "openshift-service-mesh/grafana-rhel8@sha256:2ac0267f703527a6af7cf822ac8dc33f8e27a8784c2091c6894ea9d4faeff290_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/grafana-rhel8@sha256:2ac0267f703527a6af7cf822ac8dc33f8e27a8784c2091c6894ea9d4faeff290?arch=s390x&repository_url=registry.redhat.io/openshift-service-mesh/grafana-rhel8&tag=2.2.12-1"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-service-mesh/kiali-rhel8@sha256:b426bab535c9417d2ed4951153ef03c06d95060a3378f8621b5eb3436995aa8e_s390x",
+                "product": {
+                  "name": "openshift-service-mesh/kiali-rhel8@sha256:b426bab535c9417d2ed4951153ef03c06d95060a3378f8621b5eb3436995aa8e_s390x",
+                  "product_id": "openshift-service-mesh/kiali-rhel8@sha256:b426bab535c9417d2ed4951153ef03c06d95060a3378f8621b5eb3436995aa8e_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/kiali-rhel8@sha256:b426bab535c9417d2ed4951153ef03c06d95060a3378f8621b5eb3436995aa8e?arch=s390x&repository_url=registry.redhat.io/openshift-service-mesh/kiali-rhel8&tag=1.48.11-1"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-service-mesh/istio-must-gather-rhel8@sha256:7834412d7ae6f8d1b4610a373245a675904f141534211e56657f47be68ff35a2_s390x",
+                "product": {
+                  "name": "openshift-service-mesh/istio-must-gather-rhel8@sha256:7834412d7ae6f8d1b4610a373245a675904f141534211e56657f47be68ff35a2_s390x",
+                  "product_id": "openshift-service-mesh/istio-must-gather-rhel8@sha256:7834412d7ae6f8d1b4610a373245a675904f141534211e56657f47be68ff35a2_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/istio-must-gather-rhel8@sha256:7834412d7ae6f8d1b4610a373245a675904f141534211e56657f47be68ff35a2?arch=s390x&repository_url=registry.redhat.io/openshift-service-mesh/istio-must-gather-rhel8&tag=2.2.12-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-service-mesh/pilot-rhel8@sha256:b654048f91103418e1c503a9b45b9890c868892e746218fb26a6768a842a6310_s390x",
+                "product": {
+                  "name": "openshift-service-mesh/pilot-rhel8@sha256:b654048f91103418e1c503a9b45b9890c868892e746218fb26a6768a842a6310_s390x",
+                  "product_id": "openshift-service-mesh/pilot-rhel8@sha256:b654048f91103418e1c503a9b45b9890c868892e746218fb26a6768a842a6310_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/pilot-rhel8@sha256:b654048f91103418e1c503a9b45b9890c868892e746218fb26a6768a842a6310?arch=s390x&repository_url=registry.redhat.io/openshift-service-mesh/pilot-rhel8&tag=2.2.12-2"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-service-mesh/prometheus-rhel8@sha256:681efb513c3eb27dce5e1225964fb1f076e7f5d5951ea0fcbf12ebe633df0602_s390x",
+                "product": {
+                  "name": "openshift-service-mesh/prometheus-rhel8@sha256:681efb513c3eb27dce5e1225964fb1f076e7f5d5951ea0fcbf12ebe633df0602_s390x",
+                  "product_id": "openshift-service-mesh/prometheus-rhel8@sha256:681efb513c3eb27dce5e1225964fb1f076e7f5d5951ea0fcbf12ebe633df0602_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/prometheus-rhel8@sha256:681efb513c3eb27dce5e1225964fb1f076e7f5d5951ea0fcbf12ebe633df0602?arch=s390x&repository_url=registry.redhat.io/openshift-service-mesh/prometheus-rhel8&tag=2.2.12-1"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-service-mesh/proxyv2-rhel8@sha256:7cc28d4baf68ca0902d7dc44d9fc2a9ac626268fd4320d17caa3f22cc08618c1_s390x",
+                "product": {
+                  "name": "openshift-service-mesh/proxyv2-rhel8@sha256:7cc28d4baf68ca0902d7dc44d9fc2a9ac626268fd4320d17caa3f22cc08618c1_s390x",
+                  "product_id": "openshift-service-mesh/proxyv2-rhel8@sha256:7cc28d4baf68ca0902d7dc44d9fc2a9ac626268fd4320d17caa3f22cc08618c1_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/proxyv2-rhel8@sha256:7cc28d4baf68ca0902d7dc44d9fc2a9ac626268fd4320d17caa3f22cc08618c1?arch=s390x&repository_url=registry.redhat.io/openshift-service-mesh/proxyv2-rhel8&tag=2.2.12-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift-service-mesh/ratelimit-rhel8@sha256:096bf95cdba671943bb9f7ec5f804201c1cf06607a164c7b76ef745c26c82d73_s390x",
+                "product": {
+                  "name": "openshift-service-mesh/ratelimit-rhel8@sha256:096bf95cdba671943bb9f7ec5f804201c1cf06607a164c7b76ef745c26c82d73_s390x",
+                  "product_id": "openshift-service-mesh/ratelimit-rhel8@sha256:096bf95cdba671943bb9f7ec5f804201c1cf06607a164c7b76ef745c26c82d73_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ratelimit-rhel8@sha256:096bf95cdba671943bb9f7ec5f804201c1cf06607a164c7b76ef745c26c82d73?arch=s390x&repository_url=registry.redhat.io/openshift-service-mesh/ratelimit-rhel8&tag=2.2.12-1"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "s390x"
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      }
+    ],
+    "relationships": [
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-service-mesh/grafana-rhel8@sha256:2ac0267f703527a6af7cf822ac8dc33f8e27a8784c2091c6894ea9d4faeff290_s390x as a component of RHOSSM 2.2 for RHEL 8",
+          "product_id": "8Base-RHOSSM-2.2:openshift-service-mesh/grafana-rhel8@sha256:2ac0267f703527a6af7cf822ac8dc33f8e27a8784c2091c6894ea9d4faeff290_s390x"
+        },
+        "product_reference": "openshift-service-mesh/grafana-rhel8@sha256:2ac0267f703527a6af7cf822ac8dc33f8e27a8784c2091c6894ea9d4faeff290_s390x",
+        "relates_to_product_reference": "8Base-RHOSSM-2.2"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-service-mesh/grafana-rhel8@sha256:c9462389f5c148c9fa855aa54786ab28e0a522c2576e139f254c72f3135e824c_amd64 as a component of RHOSSM 2.2 for RHEL 8",
+          "product_id": "8Base-RHOSSM-2.2:openshift-service-mesh/grafana-rhel8@sha256:c9462389f5c148c9fa855aa54786ab28e0a522c2576e139f254c72f3135e824c_amd64"
+        },
+        "product_reference": "openshift-service-mesh/grafana-rhel8@sha256:c9462389f5c148c9fa855aa54786ab28e0a522c2576e139f254c72f3135e824c_amd64",
+        "relates_to_product_reference": "8Base-RHOSSM-2.2"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-service-mesh/grafana-rhel8@sha256:dcfa0e73a89d2ad273720c209dd94fe3b652c5606d196d4962a2f662ed834612_ppc64le as a component of RHOSSM 2.2 for RHEL 8",
+          "product_id": "8Base-RHOSSM-2.2:openshift-service-mesh/grafana-rhel8@sha256:dcfa0e73a89d2ad273720c209dd94fe3b652c5606d196d4962a2f662ed834612_ppc64le"
+        },
+        "product_reference": "openshift-service-mesh/grafana-rhel8@sha256:dcfa0e73a89d2ad273720c209dd94fe3b652c5606d196d4962a2f662ed834612_ppc64le",
+        "relates_to_product_reference": "8Base-RHOSSM-2.2"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-service-mesh/istio-cni-rhel8@sha256:a0f0fcdf2d1be20c4b483d338803b4f968ed6a51ee842bae3f2539aaea660b36_amd64 as a component of RHOSSM 2.2 for RHEL 8",
+          "product_id": "8Base-RHOSSM-2.2:openshift-service-mesh/istio-cni-rhel8@sha256:a0f0fcdf2d1be20c4b483d338803b4f968ed6a51ee842bae3f2539aaea660b36_amd64"
+        },
+        "product_reference": "openshift-service-mesh/istio-cni-rhel8@sha256:a0f0fcdf2d1be20c4b483d338803b4f968ed6a51ee842bae3f2539aaea660b36_amd64",
+        "relates_to_product_reference": "8Base-RHOSSM-2.2"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-service-mesh/istio-cni-rhel8@sha256:ef9adad3d6ccc52944aa6a7be7537a3fd2cef1984c09f4b57a32d5670903b679_ppc64le as a component of RHOSSM 2.2 for RHEL 8",
+          "product_id": "8Base-RHOSSM-2.2:openshift-service-mesh/istio-cni-rhel8@sha256:ef9adad3d6ccc52944aa6a7be7537a3fd2cef1984c09f4b57a32d5670903b679_ppc64le"
+        },
+        "product_reference": "openshift-service-mesh/istio-cni-rhel8@sha256:ef9adad3d6ccc52944aa6a7be7537a3fd2cef1984c09f4b57a32d5670903b679_ppc64le",
+        "relates_to_product_reference": "8Base-RHOSSM-2.2"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-service-mesh/istio-cni-rhel8@sha256:fcc2034b3448c92e1ac6c3848def79942238733d4acf03ae2e5a2b84be0c6545_s390x as a component of RHOSSM 2.2 for RHEL 8",
+          "product_id": "8Base-RHOSSM-2.2:openshift-service-mesh/istio-cni-rhel8@sha256:fcc2034b3448c92e1ac6c3848def79942238733d4acf03ae2e5a2b84be0c6545_s390x"
+        },
+        "product_reference": "openshift-service-mesh/istio-cni-rhel8@sha256:fcc2034b3448c92e1ac6c3848def79942238733d4acf03ae2e5a2b84be0c6545_s390x",
+        "relates_to_product_reference": "8Base-RHOSSM-2.2"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-service-mesh/istio-must-gather-rhel8@sha256:3061637ecdeac036dc9171f5b079daa0a4a193589161e90920c681abb27c5ce3_ppc64le as a component of RHOSSM 2.2 for RHEL 8",
+          "product_id": "8Base-RHOSSM-2.2:openshift-service-mesh/istio-must-gather-rhel8@sha256:3061637ecdeac036dc9171f5b079daa0a4a193589161e90920c681abb27c5ce3_ppc64le"
+        },
+        "product_reference": "openshift-service-mesh/istio-must-gather-rhel8@sha256:3061637ecdeac036dc9171f5b079daa0a4a193589161e90920c681abb27c5ce3_ppc64le",
+        "relates_to_product_reference": "8Base-RHOSSM-2.2"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-service-mesh/istio-must-gather-rhel8@sha256:7834412d7ae6f8d1b4610a373245a675904f141534211e56657f47be68ff35a2_s390x as a component of RHOSSM 2.2 for RHEL 8",
+          "product_id": "8Base-RHOSSM-2.2:openshift-service-mesh/istio-must-gather-rhel8@sha256:7834412d7ae6f8d1b4610a373245a675904f141534211e56657f47be68ff35a2_s390x"
+        },
+        "product_reference": "openshift-service-mesh/istio-must-gather-rhel8@sha256:7834412d7ae6f8d1b4610a373245a675904f141534211e56657f47be68ff35a2_s390x",
+        "relates_to_product_reference": "8Base-RHOSSM-2.2"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-service-mesh/istio-must-gather-rhel8@sha256:a3031870bd2199c28e754585b57363f953818bd20bf9ad04f5545e0eb4ae4793_amd64 as a component of RHOSSM 2.2 for RHEL 8",
+          "product_id": "8Base-RHOSSM-2.2:openshift-service-mesh/istio-must-gather-rhel8@sha256:a3031870bd2199c28e754585b57363f953818bd20bf9ad04f5545e0eb4ae4793_amd64"
+        },
+        "product_reference": "openshift-service-mesh/istio-must-gather-rhel8@sha256:a3031870bd2199c28e754585b57363f953818bd20bf9ad04f5545e0eb4ae4793_amd64",
+        "relates_to_product_reference": "8Base-RHOSSM-2.2"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-service-mesh/kiali-rhel8@sha256:081d9b91f85a9fa135ddaf993b67ba01282205b5e87d31cffa1a9e659a430a61_ppc64le as a component of RHOSSM 2.2 for RHEL 8",
+          "product_id": "8Base-RHOSSM-2.2:openshift-service-mesh/kiali-rhel8@sha256:081d9b91f85a9fa135ddaf993b67ba01282205b5e87d31cffa1a9e659a430a61_ppc64le"
+        },
+        "product_reference": "openshift-service-mesh/kiali-rhel8@sha256:081d9b91f85a9fa135ddaf993b67ba01282205b5e87d31cffa1a9e659a430a61_ppc64le",
+        "relates_to_product_reference": "8Base-RHOSSM-2.2"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-service-mesh/kiali-rhel8@sha256:63ce7982aa4fe759dbe7acc497105da41f6426268678df4c8407ef7da94f5965_amd64 as a component of RHOSSM 2.2 for RHEL 8",
+          "product_id": "8Base-RHOSSM-2.2:openshift-service-mesh/kiali-rhel8@sha256:63ce7982aa4fe759dbe7acc497105da41f6426268678df4c8407ef7da94f5965_amd64"
+        },
+        "product_reference": "openshift-service-mesh/kiali-rhel8@sha256:63ce7982aa4fe759dbe7acc497105da41f6426268678df4c8407ef7da94f5965_amd64",
+        "relates_to_product_reference": "8Base-RHOSSM-2.2"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-service-mesh/kiali-rhel8@sha256:b426bab535c9417d2ed4951153ef03c06d95060a3378f8621b5eb3436995aa8e_s390x as a component of RHOSSM 2.2 for RHEL 8",
+          "product_id": "8Base-RHOSSM-2.2:openshift-service-mesh/kiali-rhel8@sha256:b426bab535c9417d2ed4951153ef03c06d95060a3378f8621b5eb3436995aa8e_s390x"
+        },
+        "product_reference": "openshift-service-mesh/kiali-rhel8@sha256:b426bab535c9417d2ed4951153ef03c06d95060a3378f8621b5eb3436995aa8e_s390x",
+        "relates_to_product_reference": "8Base-RHOSSM-2.2"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-service-mesh/pilot-rhel8@sha256:6851a60e3242789f67637d596959580c96fcd5221d71ad83e21ead53f0ba9856_ppc64le as a component of RHOSSM 2.2 for RHEL 8",
+          "product_id": "8Base-RHOSSM-2.2:openshift-service-mesh/pilot-rhel8@sha256:6851a60e3242789f67637d596959580c96fcd5221d71ad83e21ead53f0ba9856_ppc64le"
+        },
+        "product_reference": "openshift-service-mesh/pilot-rhel8@sha256:6851a60e3242789f67637d596959580c96fcd5221d71ad83e21ead53f0ba9856_ppc64le",
+        "relates_to_product_reference": "8Base-RHOSSM-2.2"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-service-mesh/pilot-rhel8@sha256:818fc5474a2bea0400b6b022cca31f522ea05b58bfa57fca1f6cb20efeb140f7_amd64 as a component of RHOSSM 2.2 for RHEL 8",
+          "product_id": "8Base-RHOSSM-2.2:openshift-service-mesh/pilot-rhel8@sha256:818fc5474a2bea0400b6b022cca31f522ea05b58bfa57fca1f6cb20efeb140f7_amd64"
+        },
+        "product_reference": "openshift-service-mesh/pilot-rhel8@sha256:818fc5474a2bea0400b6b022cca31f522ea05b58bfa57fca1f6cb20efeb140f7_amd64",
+        "relates_to_product_reference": "8Base-RHOSSM-2.2"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-service-mesh/pilot-rhel8@sha256:b654048f91103418e1c503a9b45b9890c868892e746218fb26a6768a842a6310_s390x as a component of RHOSSM 2.2 for RHEL 8",
+          "product_id": "8Base-RHOSSM-2.2:openshift-service-mesh/pilot-rhel8@sha256:b654048f91103418e1c503a9b45b9890c868892e746218fb26a6768a842a6310_s390x"
+        },
+        "product_reference": "openshift-service-mesh/pilot-rhel8@sha256:b654048f91103418e1c503a9b45b9890c868892e746218fb26a6768a842a6310_s390x",
+        "relates_to_product_reference": "8Base-RHOSSM-2.2"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-service-mesh/prometheus-rhel8@sha256:681efb513c3eb27dce5e1225964fb1f076e7f5d5951ea0fcbf12ebe633df0602_s390x as a component of RHOSSM 2.2 for RHEL 8",
+          "product_id": "8Base-RHOSSM-2.2:openshift-service-mesh/prometheus-rhel8@sha256:681efb513c3eb27dce5e1225964fb1f076e7f5d5951ea0fcbf12ebe633df0602_s390x"
+        },
+        "product_reference": "openshift-service-mesh/prometheus-rhel8@sha256:681efb513c3eb27dce5e1225964fb1f076e7f5d5951ea0fcbf12ebe633df0602_s390x",
+        "relates_to_product_reference": "8Base-RHOSSM-2.2"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-service-mesh/prometheus-rhel8@sha256:b2e2fbd17082d59a1fbf9e55c04b767763d968747e232bfb4789376ed1bb08cc_ppc64le as a component of RHOSSM 2.2 for RHEL 8",
+          "product_id": "8Base-RHOSSM-2.2:openshift-service-mesh/prometheus-rhel8@sha256:b2e2fbd17082d59a1fbf9e55c04b767763d968747e232bfb4789376ed1bb08cc_ppc64le"
+        },
+        "product_reference": "openshift-service-mesh/prometheus-rhel8@sha256:b2e2fbd17082d59a1fbf9e55c04b767763d968747e232bfb4789376ed1bb08cc_ppc64le",
+        "relates_to_product_reference": "8Base-RHOSSM-2.2"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-service-mesh/prometheus-rhel8@sha256:dbcf658a5354b9b7d412826a77cfb0ce889c4704634f5d13325161021feff81e_amd64 as a component of RHOSSM 2.2 for RHEL 8",
+          "product_id": "8Base-RHOSSM-2.2:openshift-service-mesh/prometheus-rhel8@sha256:dbcf658a5354b9b7d412826a77cfb0ce889c4704634f5d13325161021feff81e_amd64"
+        },
+        "product_reference": "openshift-service-mesh/prometheus-rhel8@sha256:dbcf658a5354b9b7d412826a77cfb0ce889c4704634f5d13325161021feff81e_amd64",
+        "relates_to_product_reference": "8Base-RHOSSM-2.2"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-service-mesh/proxyv2-rhel8@sha256:208a5000e943fb68e2c2cfea0ac6223fdc6a43363b19fb3ac3e6c19326afa464_ppc64le as a component of RHOSSM 2.2 for RHEL 8",
+          "product_id": "8Base-RHOSSM-2.2:openshift-service-mesh/proxyv2-rhel8@sha256:208a5000e943fb68e2c2cfea0ac6223fdc6a43363b19fb3ac3e6c19326afa464_ppc64le"
+        },
+        "product_reference": "openshift-service-mesh/proxyv2-rhel8@sha256:208a5000e943fb68e2c2cfea0ac6223fdc6a43363b19fb3ac3e6c19326afa464_ppc64le",
+        "relates_to_product_reference": "8Base-RHOSSM-2.2"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-service-mesh/proxyv2-rhel8@sha256:4abe159e450801e062a3afceff661ab25dc57ea122ce58269b2f3566a55c8dc2_amd64 as a component of RHOSSM 2.2 for RHEL 8",
+          "product_id": "8Base-RHOSSM-2.2:openshift-service-mesh/proxyv2-rhel8@sha256:4abe159e450801e062a3afceff661ab25dc57ea122ce58269b2f3566a55c8dc2_amd64"
+        },
+        "product_reference": "openshift-service-mesh/proxyv2-rhel8@sha256:4abe159e450801e062a3afceff661ab25dc57ea122ce58269b2f3566a55c8dc2_amd64",
+        "relates_to_product_reference": "8Base-RHOSSM-2.2"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-service-mesh/proxyv2-rhel8@sha256:7cc28d4baf68ca0902d7dc44d9fc2a9ac626268fd4320d17caa3f22cc08618c1_s390x as a component of RHOSSM 2.2 for RHEL 8",
+          "product_id": "8Base-RHOSSM-2.2:openshift-service-mesh/proxyv2-rhel8@sha256:7cc28d4baf68ca0902d7dc44d9fc2a9ac626268fd4320d17caa3f22cc08618c1_s390x"
+        },
+        "product_reference": "openshift-service-mesh/proxyv2-rhel8@sha256:7cc28d4baf68ca0902d7dc44d9fc2a9ac626268fd4320d17caa3f22cc08618c1_s390x",
+        "relates_to_product_reference": "8Base-RHOSSM-2.2"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-service-mesh/ratelimit-rhel8@sha256:096bf95cdba671943bb9f7ec5f804201c1cf06607a164c7b76ef745c26c82d73_s390x as a component of RHOSSM 2.2 for RHEL 8",
+          "product_id": "8Base-RHOSSM-2.2:openshift-service-mesh/ratelimit-rhel8@sha256:096bf95cdba671943bb9f7ec5f804201c1cf06607a164c7b76ef745c26c82d73_s390x"
+        },
+        "product_reference": "openshift-service-mesh/ratelimit-rhel8@sha256:096bf95cdba671943bb9f7ec5f804201c1cf06607a164c7b76ef745c26c82d73_s390x",
+        "relates_to_product_reference": "8Base-RHOSSM-2.2"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-service-mesh/ratelimit-rhel8@sha256:8a5a8bc6a54cd64330926478ac29f568ac5c83cc9550852d439ccc4cbd0b5ab5_amd64 as a component of RHOSSM 2.2 for RHEL 8",
+          "product_id": "8Base-RHOSSM-2.2:openshift-service-mesh/ratelimit-rhel8@sha256:8a5a8bc6a54cd64330926478ac29f568ac5c83cc9550852d439ccc4cbd0b5ab5_amd64"
+        },
+        "product_reference": "openshift-service-mesh/ratelimit-rhel8@sha256:8a5a8bc6a54cd64330926478ac29f568ac5c83cc9550852d439ccc4cbd0b5ab5_amd64",
+        "relates_to_product_reference": "8Base-RHOSSM-2.2"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift-service-mesh/ratelimit-rhel8@sha256:cc5d972cb2ba30e147c76202dc315a08bdba41906f808e95d8b134bfe446fc89_ppc64le as a component of RHOSSM 2.2 for RHEL 8",
+          "product_id": "8Base-RHOSSM-2.2:openshift-service-mesh/ratelimit-rhel8@sha256:cc5d972cb2ba30e147c76202dc315a08bdba41906f808e95d8b134bfe446fc89_ppc64le"
+        },
+        "product_reference": "openshift-service-mesh/ratelimit-rhel8@sha256:cc5d972cb2ba30e147c76202dc315a08bdba41906f808e95d8b134bfe446fc89_ppc64le",
+        "relates_to_product_reference": "8Base-RHOSSM-2.2"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2023-39325",
+      "cwe": {
+        "id": "CWE-400",
+        "name": "Uncontrolled Resource Consumption"
+      },
+      "discovery_date": "2023-10-10T00:00:00+00:00",
+      "flags": [
+        {
+          "label": "vulnerable_code_not_present",
+          "product_ids": [
+            "8Base-RHOSSM-2.2:openshift-service-mesh/grafana-rhel8@sha256:2ac0267f703527a6af7cf822ac8dc33f8e27a8784c2091c6894ea9d4faeff290_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/grafana-rhel8@sha256:c9462389f5c148c9fa855aa54786ab28e0a522c2576e139f254c72f3135e824c_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/grafana-rhel8@sha256:dcfa0e73a89d2ad273720c209dd94fe3b652c5606d196d4962a2f662ed834612_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-must-gather-rhel8@sha256:3061637ecdeac036dc9171f5b079daa0a4a193589161e90920c681abb27c5ce3_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-must-gather-rhel8@sha256:7834412d7ae6f8d1b4610a373245a675904f141534211e56657f47be68ff35a2_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-must-gather-rhel8@sha256:a3031870bd2199c28e754585b57363f953818bd20bf9ad04f5545e0eb4ae4793_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/kiali-rhel8@sha256:081d9b91f85a9fa135ddaf993b67ba01282205b5e87d31cffa1a9e659a430a61_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/kiali-rhel8@sha256:63ce7982aa4fe759dbe7acc497105da41f6426268678df4c8407ef7da94f5965_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/kiali-rhel8@sha256:b426bab535c9417d2ed4951153ef03c06d95060a3378f8621b5eb3436995aa8e_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/pilot-rhel8@sha256:6851a60e3242789f67637d596959580c96fcd5221d71ad83e21ead53f0ba9856_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/pilot-rhel8@sha256:818fc5474a2bea0400b6b022cca31f522ea05b58bfa57fca1f6cb20efeb140f7_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/pilot-rhel8@sha256:b654048f91103418e1c503a9b45b9890c868892e746218fb26a6768a842a6310_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/proxyv2-rhel8@sha256:208a5000e943fb68e2c2cfea0ac6223fdc6a43363b19fb3ac3e6c19326afa464_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/proxyv2-rhel8@sha256:4abe159e450801e062a3afceff661ab25dc57ea122ce58269b2f3566a55c8dc2_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/proxyv2-rhel8@sha256:7cc28d4baf68ca0902d7dc44d9fc2a9ac626268fd4320d17caa3f22cc08618c1_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/ratelimit-rhel8@sha256:096bf95cdba671943bb9f7ec5f804201c1cf06607a164c7b76ef745c26c82d73_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/ratelimit-rhel8@sha256:8a5a8bc6a54cd64330926478ac29f568ac5c83cc9550852d439ccc4cbd0b5ab5_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/ratelimit-rhel8@sha256:cc5d972cb2ba30e147c76202dc315a08bdba41906f808e95d8b134bfe446fc89_ppc64le"
+          ]
+        }
+      ],
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2243296"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A flaw was found in handling multiplexed streams in the HTTP/2 protocol. A client can repeatedly make a request for a new multiplex stream and immediately send an RST_STREAM frame to cancel it. This creates extra work for the server setting up and tearing down the streams while not hitting any server-side limit for the maximum number of active streams per connection, resulting in a denial of service due to server resource consumption. Red Hat has rated the severity of this flaw as 'Important' as the US Cybersecurity and Infrastructure Security Agency (CISA) declared this vulnerability an active exploit.\r\n\r\nCVE-2023-39325 was assigned for the `Rapid Reset Attack` in the Go language packages.",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "golang: net/http, x/net/http2: rapid stream resets can cause excessive work (CVE-2023-44487)",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "other",
+          "text": "This CVE is related to CVE-2023-44487.\n\nThe majority of RHEL utilities are not long-running applications; instead, they are command-line tools. These tools utilize Golang package as build-time dependency, which is why they are classified as having a \"Moderate\" level of impact.",
+          "title": "Statement"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "8Base-RHOSSM-2.2:openshift-service-mesh/istio-cni-rhel8@sha256:a0f0fcdf2d1be20c4b483d338803b4f968ed6a51ee842bae3f2539aaea660b36_amd64",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/istio-cni-rhel8@sha256:ef9adad3d6ccc52944aa6a7be7537a3fd2cef1984c09f4b57a32d5670903b679_ppc64le",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/istio-cni-rhel8@sha256:fcc2034b3448c92e1ac6c3848def79942238733d4acf03ae2e5a2b84be0c6545_s390x",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/prometheus-rhel8@sha256:681efb513c3eb27dce5e1225964fb1f076e7f5d5951ea0fcbf12ebe633df0602_s390x",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/prometheus-rhel8@sha256:b2e2fbd17082d59a1fbf9e55c04b767763d968747e232bfb4789376ed1bb08cc_ppc64le",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/prometheus-rhel8@sha256:dbcf658a5354b9b7d412826a77cfb0ce889c4704634f5d13325161021feff81e_amd64"
+        ],
+        "known_not_affected": [
+          "8Base-RHOSSM-2.2:openshift-service-mesh/grafana-rhel8@sha256:2ac0267f703527a6af7cf822ac8dc33f8e27a8784c2091c6894ea9d4faeff290_s390x",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/grafana-rhel8@sha256:c9462389f5c148c9fa855aa54786ab28e0a522c2576e139f254c72f3135e824c_amd64",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/grafana-rhel8@sha256:dcfa0e73a89d2ad273720c209dd94fe3b652c5606d196d4962a2f662ed834612_ppc64le",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/istio-must-gather-rhel8@sha256:3061637ecdeac036dc9171f5b079daa0a4a193589161e90920c681abb27c5ce3_ppc64le",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/istio-must-gather-rhel8@sha256:7834412d7ae6f8d1b4610a373245a675904f141534211e56657f47be68ff35a2_s390x",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/istio-must-gather-rhel8@sha256:a3031870bd2199c28e754585b57363f953818bd20bf9ad04f5545e0eb4ae4793_amd64",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/kiali-rhel8@sha256:081d9b91f85a9fa135ddaf993b67ba01282205b5e87d31cffa1a9e659a430a61_ppc64le",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/kiali-rhel8@sha256:63ce7982aa4fe759dbe7acc497105da41f6426268678df4c8407ef7da94f5965_amd64",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/kiali-rhel8@sha256:b426bab535c9417d2ed4951153ef03c06d95060a3378f8621b5eb3436995aa8e_s390x",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/pilot-rhel8@sha256:6851a60e3242789f67637d596959580c96fcd5221d71ad83e21ead53f0ba9856_ppc64le",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/pilot-rhel8@sha256:818fc5474a2bea0400b6b022cca31f522ea05b58bfa57fca1f6cb20efeb140f7_amd64",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/pilot-rhel8@sha256:b654048f91103418e1c503a9b45b9890c868892e746218fb26a6768a842a6310_s390x",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/proxyv2-rhel8@sha256:208a5000e943fb68e2c2cfea0ac6223fdc6a43363b19fb3ac3e6c19326afa464_ppc64le",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/proxyv2-rhel8@sha256:4abe159e450801e062a3afceff661ab25dc57ea122ce58269b2f3566a55c8dc2_amd64",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/proxyv2-rhel8@sha256:7cc28d4baf68ca0902d7dc44d9fc2a9ac626268fd4320d17caa3f22cc08618c1_s390x",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/ratelimit-rhel8@sha256:096bf95cdba671943bb9f7ec5f804201c1cf06607a164c7b76ef745c26c82d73_s390x",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/ratelimit-rhel8@sha256:8a5a8bc6a54cd64330926478ac29f568ac5c83cc9550852d439ccc4cbd0b5ab5_amd64",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/ratelimit-rhel8@sha256:cc5d972cb2ba30e147c76202dc315a08bdba41906f808e95d8b134bfe446fc89_ppc64le"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2243296",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2243296"
+        },
+        {
+          "category": "external",
+          "summary": "RHSB-2023-003",
+          "url": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2023-39325",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "https://access.redhat.com/security/cve/CVE-2023-44487",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-44487"
+        },
+        {
+          "category": "external",
+          "summary": "https://go.dev/issue/63417",
+          "url": "https://go.dev/issue/63417"
+        },
+        {
+          "category": "external",
+          "summary": "https://pkg.go.dev/vuln/GO-2023-2102",
+          "url": "https://pkg.go.dev/vuln/GO-2023-2102"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487",
+          "url": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487"
+        }
+      ],
+      "release_date": "2023-10-10T00:00:00+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2023-11-15T00:16:31+00:00",
+          "details": "Before applying this update, make sure all previously released errata\nrelevant to your system have been applied.\n\nFor details on how to apply this update, refer to:\n\nhttps://access.redhat.com/articles/11258",
+          "product_ids": [
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-cni-rhel8@sha256:a0f0fcdf2d1be20c4b483d338803b4f968ed6a51ee842bae3f2539aaea660b36_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-cni-rhel8@sha256:ef9adad3d6ccc52944aa6a7be7537a3fd2cef1984c09f4b57a32d5670903b679_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-cni-rhel8@sha256:fcc2034b3448c92e1ac6c3848def79942238733d4acf03ae2e5a2b84be0c6545_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/prometheus-rhel8@sha256:681efb513c3eb27dce5e1225964fb1f076e7f5d5951ea0fcbf12ebe633df0602_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/prometheus-rhel8@sha256:b2e2fbd17082d59a1fbf9e55c04b767763d968747e232bfb4789376ed1bb08cc_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/prometheus-rhel8@sha256:dbcf658a5354b9b7d412826a77cfb0ce889c4704634f5d13325161021feff81e_amd64"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2023:7215"
+        },
+        {
+          "category": "workaround",
+          "details": "The default stream concurrency limit in golang is 250 streams (requests) per HTTP/2 connection. This value may be adjusted in the golang.org/x/net/http2 package using the Server.MaxConcurrentStreams setting and the ConfigureServer function which are available in golang.org/x/net/http2.",
+          "product_ids": [
+            "8Base-RHOSSM-2.2:openshift-service-mesh/grafana-rhel8@sha256:2ac0267f703527a6af7cf822ac8dc33f8e27a8784c2091c6894ea9d4faeff290_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/grafana-rhel8@sha256:c9462389f5c148c9fa855aa54786ab28e0a522c2576e139f254c72f3135e824c_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/grafana-rhel8@sha256:dcfa0e73a89d2ad273720c209dd94fe3b652c5606d196d4962a2f662ed834612_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-cni-rhel8@sha256:a0f0fcdf2d1be20c4b483d338803b4f968ed6a51ee842bae3f2539aaea660b36_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-cni-rhel8@sha256:ef9adad3d6ccc52944aa6a7be7537a3fd2cef1984c09f4b57a32d5670903b679_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-cni-rhel8@sha256:fcc2034b3448c92e1ac6c3848def79942238733d4acf03ae2e5a2b84be0c6545_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-must-gather-rhel8@sha256:3061637ecdeac036dc9171f5b079daa0a4a193589161e90920c681abb27c5ce3_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-must-gather-rhel8@sha256:7834412d7ae6f8d1b4610a373245a675904f141534211e56657f47be68ff35a2_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-must-gather-rhel8@sha256:a3031870bd2199c28e754585b57363f953818bd20bf9ad04f5545e0eb4ae4793_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/kiali-rhel8@sha256:081d9b91f85a9fa135ddaf993b67ba01282205b5e87d31cffa1a9e659a430a61_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/kiali-rhel8@sha256:63ce7982aa4fe759dbe7acc497105da41f6426268678df4c8407ef7da94f5965_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/kiali-rhel8@sha256:b426bab535c9417d2ed4951153ef03c06d95060a3378f8621b5eb3436995aa8e_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/pilot-rhel8@sha256:6851a60e3242789f67637d596959580c96fcd5221d71ad83e21ead53f0ba9856_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/pilot-rhel8@sha256:818fc5474a2bea0400b6b022cca31f522ea05b58bfa57fca1f6cb20efeb140f7_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/pilot-rhel8@sha256:b654048f91103418e1c503a9b45b9890c868892e746218fb26a6768a842a6310_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/prometheus-rhel8@sha256:681efb513c3eb27dce5e1225964fb1f076e7f5d5951ea0fcbf12ebe633df0602_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/prometheus-rhel8@sha256:b2e2fbd17082d59a1fbf9e55c04b767763d968747e232bfb4789376ed1bb08cc_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/prometheus-rhel8@sha256:dbcf658a5354b9b7d412826a77cfb0ce889c4704634f5d13325161021feff81e_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/proxyv2-rhel8@sha256:208a5000e943fb68e2c2cfea0ac6223fdc6a43363b19fb3ac3e6c19326afa464_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/proxyv2-rhel8@sha256:4abe159e450801e062a3afceff661ab25dc57ea122ce58269b2f3566a55c8dc2_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/proxyv2-rhel8@sha256:7cc28d4baf68ca0902d7dc44d9fc2a9ac626268fd4320d17caa3f22cc08618c1_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/ratelimit-rhel8@sha256:096bf95cdba671943bb9f7ec5f804201c1cf06607a164c7b76ef745c26c82d73_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/ratelimit-rhel8@sha256:8a5a8bc6a54cd64330926478ac29f568ac5c83cc9550852d439ccc4cbd0b5ab5_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/ratelimit-rhel8@sha256:cc5d972cb2ba30e147c76202dc315a08bdba41906f808e95d8b134bfe446fc89_ppc64le"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 7.5,
+            "baseSeverity": "HIGH",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "8Base-RHOSSM-2.2:openshift-service-mesh/grafana-rhel8@sha256:2ac0267f703527a6af7cf822ac8dc33f8e27a8784c2091c6894ea9d4faeff290_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/grafana-rhel8@sha256:c9462389f5c148c9fa855aa54786ab28e0a522c2576e139f254c72f3135e824c_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/grafana-rhel8@sha256:dcfa0e73a89d2ad273720c209dd94fe3b652c5606d196d4962a2f662ed834612_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-cni-rhel8@sha256:a0f0fcdf2d1be20c4b483d338803b4f968ed6a51ee842bae3f2539aaea660b36_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-cni-rhel8@sha256:ef9adad3d6ccc52944aa6a7be7537a3fd2cef1984c09f4b57a32d5670903b679_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-cni-rhel8@sha256:fcc2034b3448c92e1ac6c3848def79942238733d4acf03ae2e5a2b84be0c6545_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-must-gather-rhel8@sha256:3061637ecdeac036dc9171f5b079daa0a4a193589161e90920c681abb27c5ce3_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-must-gather-rhel8@sha256:7834412d7ae6f8d1b4610a373245a675904f141534211e56657f47be68ff35a2_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-must-gather-rhel8@sha256:a3031870bd2199c28e754585b57363f953818bd20bf9ad04f5545e0eb4ae4793_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/kiali-rhel8@sha256:081d9b91f85a9fa135ddaf993b67ba01282205b5e87d31cffa1a9e659a430a61_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/kiali-rhel8@sha256:63ce7982aa4fe759dbe7acc497105da41f6426268678df4c8407ef7da94f5965_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/kiali-rhel8@sha256:b426bab535c9417d2ed4951153ef03c06d95060a3378f8621b5eb3436995aa8e_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/pilot-rhel8@sha256:6851a60e3242789f67637d596959580c96fcd5221d71ad83e21ead53f0ba9856_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/pilot-rhel8@sha256:818fc5474a2bea0400b6b022cca31f522ea05b58bfa57fca1f6cb20efeb140f7_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/pilot-rhel8@sha256:b654048f91103418e1c503a9b45b9890c868892e746218fb26a6768a842a6310_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/prometheus-rhel8@sha256:681efb513c3eb27dce5e1225964fb1f076e7f5d5951ea0fcbf12ebe633df0602_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/prometheus-rhel8@sha256:b2e2fbd17082d59a1fbf9e55c04b767763d968747e232bfb4789376ed1bb08cc_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/prometheus-rhel8@sha256:dbcf658a5354b9b7d412826a77cfb0ce889c4704634f5d13325161021feff81e_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/proxyv2-rhel8@sha256:208a5000e943fb68e2c2cfea0ac6223fdc6a43363b19fb3ac3e6c19326afa464_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/proxyv2-rhel8@sha256:4abe159e450801e062a3afceff661ab25dc57ea122ce58269b2f3566a55c8dc2_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/proxyv2-rhel8@sha256:7cc28d4baf68ca0902d7dc44d9fc2a9ac626268fd4320d17caa3f22cc08618c1_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/ratelimit-rhel8@sha256:096bf95cdba671943bb9f7ec5f804201c1cf06607a164c7b76ef745c26c82d73_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/ratelimit-rhel8@sha256:8a5a8bc6a54cd64330926478ac29f568ac5c83cc9550852d439ccc4cbd0b5ab5_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/ratelimit-rhel8@sha256:cc5d972cb2ba30e147c76202dc315a08bdba41906f808e95d8b134bfe446fc89_ppc64le"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Important"
+        }
+      ],
+      "title": "golang: net/http, x/net/http2: rapid stream resets can cause excessive work (CVE-2023-44487)"
+    },
+    {
+      "cve": "CVE-2023-44487",
+      "cwe": {
+        "id": "CWE-400",
+        "name": "Uncontrolled Resource Consumption"
+      },
+      "discovery_date": "2023-10-09T00:00:00+00:00",
+      "flags": [
+        {
+          "label": "vulnerable_code_not_present",
+          "product_ids": [
+            "8Base-RHOSSM-2.2:openshift-service-mesh/grafana-rhel8@sha256:2ac0267f703527a6af7cf822ac8dc33f8e27a8784c2091c6894ea9d4faeff290_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/grafana-rhel8@sha256:c9462389f5c148c9fa855aa54786ab28e0a522c2576e139f254c72f3135e824c_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/grafana-rhel8@sha256:dcfa0e73a89d2ad273720c209dd94fe3b652c5606d196d4962a2f662ed834612_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-cni-rhel8@sha256:a0f0fcdf2d1be20c4b483d338803b4f968ed6a51ee842bae3f2539aaea660b36_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-cni-rhel8@sha256:ef9adad3d6ccc52944aa6a7be7537a3fd2cef1984c09f4b57a32d5670903b679_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-cni-rhel8@sha256:fcc2034b3448c92e1ac6c3848def79942238733d4acf03ae2e5a2b84be0c6545_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-must-gather-rhel8@sha256:3061637ecdeac036dc9171f5b079daa0a4a193589161e90920c681abb27c5ce3_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-must-gather-rhel8@sha256:7834412d7ae6f8d1b4610a373245a675904f141534211e56657f47be68ff35a2_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-must-gather-rhel8@sha256:a3031870bd2199c28e754585b57363f953818bd20bf9ad04f5545e0eb4ae4793_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/kiali-rhel8@sha256:081d9b91f85a9fa135ddaf993b67ba01282205b5e87d31cffa1a9e659a430a61_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/kiali-rhel8@sha256:63ce7982aa4fe759dbe7acc497105da41f6426268678df4c8407ef7da94f5965_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/kiali-rhel8@sha256:b426bab535c9417d2ed4951153ef03c06d95060a3378f8621b5eb3436995aa8e_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/pilot-rhel8@sha256:6851a60e3242789f67637d596959580c96fcd5221d71ad83e21ead53f0ba9856_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/pilot-rhel8@sha256:818fc5474a2bea0400b6b022cca31f522ea05b58bfa57fca1f6cb20efeb140f7_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/pilot-rhel8@sha256:b654048f91103418e1c503a9b45b9890c868892e746218fb26a6768a842a6310_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/prometheus-rhel8@sha256:681efb513c3eb27dce5e1225964fb1f076e7f5d5951ea0fcbf12ebe633df0602_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/prometheus-rhel8@sha256:b2e2fbd17082d59a1fbf9e55c04b767763d968747e232bfb4789376ed1bb08cc_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/prometheus-rhel8@sha256:dbcf658a5354b9b7d412826a77cfb0ce889c4704634f5d13325161021feff81e_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/ratelimit-rhel8@sha256:096bf95cdba671943bb9f7ec5f804201c1cf06607a164c7b76ef745c26c82d73_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/ratelimit-rhel8@sha256:8a5a8bc6a54cd64330926478ac29f568ac5c83cc9550852d439ccc4cbd0b5ab5_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/ratelimit-rhel8@sha256:cc5d972cb2ba30e147c76202dc315a08bdba41906f808e95d8b134bfe446fc89_ppc64le"
+          ]
+        }
+      ],
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2242803"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A flaw was found in handling multiplexed streams in the HTTP/2 protocol. A client can repeatedly make a request for a new multiplex stream and immediately send an RST_STREAM frame to cancel it. This creates extra work for the server setting up and tearing down the streams while not hitting any server-side limit for the maximum number of active streams per connection, resulting in a denial of service due to server resource consumption. Red Hat has rated the severity of this flaw as 'Important' as the US Cybersecurity and Infrastructure Security Agency (CISA) declared this vulnerability an active exploit.\r\n\r\nCVE-2023-39325 was assigned for the Rapid Reset Attack in the Go language packages.\r\n\r\nSecurity Bulletin\r\nhttps://access.redhat.com/security/vulnerabilities/RHSB-2023-003",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "HTTP/2: Multiple HTTP/2 enabled web servers are vulnerable to a DDoS attack (Rapid Reset Attack)",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "other",
+          "text": "NGINX has been marked as Moderate Impact because, for performance and resource consumption reasons, NGINX limits the number of concurrent streams to a default of 128. In addition, to optimally balance network and server performance, NGINX allows the client to persist HTTP connections for up to 1000 requests by default using an HTTP keepalive.\n\nThe majority of RHEL utilities are not long-running applications; instead, they are command-line tools. These tools utilize Golang package as build-time dependency, which is why they are classified as having a \"Moderate\" level of impact.\n\nrhc component is no longer impacted by CVE-2023-44487 & CVE-2023-39325.",
+          "title": "Statement"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "8Base-RHOSSM-2.2:openshift-service-mesh/proxyv2-rhel8@sha256:208a5000e943fb68e2c2cfea0ac6223fdc6a43363b19fb3ac3e6c19326afa464_ppc64le",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/proxyv2-rhel8@sha256:4abe159e450801e062a3afceff661ab25dc57ea122ce58269b2f3566a55c8dc2_amd64",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/proxyv2-rhel8@sha256:7cc28d4baf68ca0902d7dc44d9fc2a9ac626268fd4320d17caa3f22cc08618c1_s390x"
+        ],
+        "known_not_affected": [
+          "8Base-RHOSSM-2.2:openshift-service-mesh/grafana-rhel8@sha256:2ac0267f703527a6af7cf822ac8dc33f8e27a8784c2091c6894ea9d4faeff290_s390x",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/grafana-rhel8@sha256:c9462389f5c148c9fa855aa54786ab28e0a522c2576e139f254c72f3135e824c_amd64",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/grafana-rhel8@sha256:dcfa0e73a89d2ad273720c209dd94fe3b652c5606d196d4962a2f662ed834612_ppc64le",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/istio-cni-rhel8@sha256:a0f0fcdf2d1be20c4b483d338803b4f968ed6a51ee842bae3f2539aaea660b36_amd64",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/istio-cni-rhel8@sha256:ef9adad3d6ccc52944aa6a7be7537a3fd2cef1984c09f4b57a32d5670903b679_ppc64le",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/istio-cni-rhel8@sha256:fcc2034b3448c92e1ac6c3848def79942238733d4acf03ae2e5a2b84be0c6545_s390x",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/istio-must-gather-rhel8@sha256:3061637ecdeac036dc9171f5b079daa0a4a193589161e90920c681abb27c5ce3_ppc64le",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/istio-must-gather-rhel8@sha256:7834412d7ae6f8d1b4610a373245a675904f141534211e56657f47be68ff35a2_s390x",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/istio-must-gather-rhel8@sha256:a3031870bd2199c28e754585b57363f953818bd20bf9ad04f5545e0eb4ae4793_amd64",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/kiali-rhel8@sha256:081d9b91f85a9fa135ddaf993b67ba01282205b5e87d31cffa1a9e659a430a61_ppc64le",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/kiali-rhel8@sha256:63ce7982aa4fe759dbe7acc497105da41f6426268678df4c8407ef7da94f5965_amd64",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/kiali-rhel8@sha256:b426bab535c9417d2ed4951153ef03c06d95060a3378f8621b5eb3436995aa8e_s390x",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/pilot-rhel8@sha256:6851a60e3242789f67637d596959580c96fcd5221d71ad83e21ead53f0ba9856_ppc64le",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/pilot-rhel8@sha256:818fc5474a2bea0400b6b022cca31f522ea05b58bfa57fca1f6cb20efeb140f7_amd64",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/pilot-rhel8@sha256:b654048f91103418e1c503a9b45b9890c868892e746218fb26a6768a842a6310_s390x",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/prometheus-rhel8@sha256:681efb513c3eb27dce5e1225964fb1f076e7f5d5951ea0fcbf12ebe633df0602_s390x",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/prometheus-rhel8@sha256:b2e2fbd17082d59a1fbf9e55c04b767763d968747e232bfb4789376ed1bb08cc_ppc64le",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/prometheus-rhel8@sha256:dbcf658a5354b9b7d412826a77cfb0ce889c4704634f5d13325161021feff81e_amd64",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/ratelimit-rhel8@sha256:096bf95cdba671943bb9f7ec5f804201c1cf06607a164c7b76ef745c26c82d73_s390x",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/ratelimit-rhel8@sha256:8a5a8bc6a54cd64330926478ac29f568ac5c83cc9550852d439ccc4cbd0b5ab5_amd64",
+          "8Base-RHOSSM-2.2:openshift-service-mesh/ratelimit-rhel8@sha256:cc5d972cb2ba30e147c76202dc315a08bdba41906f808e95d8b134bfe446fc89_ppc64le"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-44487"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2242803",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2242803"
+        },
+        {
+          "category": "external",
+          "summary": "RHSB-2023-003",
+          "url": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2023-44487",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-44487"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2023-44487",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-44487"
+        },
+        {
+          "category": "external",
+          "summary": "https://github.com/dotnet/announcements/issues/277",
+          "url": "https://github.com/dotnet/announcements/issues/277"
+        },
+        {
+          "category": "external",
+          "summary": "https://pkg.go.dev/vuln/GO-2023-2102",
+          "url": "https://pkg.go.dev/vuln/GO-2023-2102"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487",
+          "url": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.nginx.com/blog/http-2-rapid-reset-attack-impacting-f5-nginx-products/",
+          "url": "https://www.nginx.com/blog/http-2-rapid-reset-attack-impacting-f5-nginx-products/"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "release_date": "2023-10-10T00:00:00+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2023-11-15T00:16:31+00:00",
+          "details": "Before applying this update, make sure all previously released errata\nrelevant to your system have been applied.\n\nFor details on how to apply this update, refer to:\n\nhttps://access.redhat.com/articles/11258",
+          "product_ids": [
+            "8Base-RHOSSM-2.2:openshift-service-mesh/proxyv2-rhel8@sha256:208a5000e943fb68e2c2cfea0ac6223fdc6a43363b19fb3ac3e6c19326afa464_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/proxyv2-rhel8@sha256:4abe159e450801e062a3afceff661ab25dc57ea122ce58269b2f3566a55c8dc2_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/proxyv2-rhel8@sha256:7cc28d4baf68ca0902d7dc44d9fc2a9ac626268fd4320d17caa3f22cc08618c1_s390x"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2023:7215"
+        },
+        {
+          "category": "workaround",
+          "details": "Users are strongly urged to update their software as soon as fixes are available. \nThere are several mitigation approaches for this flaw. \n\n1. If circumstances permit, users may disable http2 endpoints to circumvent the flaw altogether until a fix is available.\n2. IP-based blocking or flood protection and rate control tools may be used at network endpoints to filter incoming traffic.\n3. Several package specific mitigations are also available. \n     a. nginx: https://www.nginx.com/blog/http-2-rapid-reset-attack-impacting-f5-nginx-products/\n     b. netty: https://github.com/netty/netty/security/advisories/GHSA-xpw8-rcwv-8f8p\n     c. haproxy: https://www.haproxy.com/blog/haproxy-is-not-affected-by-the-http-2-rapid-reset-attack-cve-2023-44487\n     d. nghttp2: https://github.com/nghttp2/nghttp2/security/advisories/GHSA-vx74-f528-fxqg\n     e. golang: The default stream concurrency limit in golang is 250 streams (requests) per HTTP/2 connection. This value may be adjusted in the golang.org/x/net/http2 package using the Server.MaxConcurrentStreams setting and the ConfigureServer function which are available in golang.org/x/net/http2.",
+          "product_ids": [
+            "8Base-RHOSSM-2.2:openshift-service-mesh/grafana-rhel8@sha256:2ac0267f703527a6af7cf822ac8dc33f8e27a8784c2091c6894ea9d4faeff290_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/grafana-rhel8@sha256:c9462389f5c148c9fa855aa54786ab28e0a522c2576e139f254c72f3135e824c_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/grafana-rhel8@sha256:dcfa0e73a89d2ad273720c209dd94fe3b652c5606d196d4962a2f662ed834612_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-cni-rhel8@sha256:a0f0fcdf2d1be20c4b483d338803b4f968ed6a51ee842bae3f2539aaea660b36_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-cni-rhel8@sha256:ef9adad3d6ccc52944aa6a7be7537a3fd2cef1984c09f4b57a32d5670903b679_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-cni-rhel8@sha256:fcc2034b3448c92e1ac6c3848def79942238733d4acf03ae2e5a2b84be0c6545_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-must-gather-rhel8@sha256:3061637ecdeac036dc9171f5b079daa0a4a193589161e90920c681abb27c5ce3_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-must-gather-rhel8@sha256:7834412d7ae6f8d1b4610a373245a675904f141534211e56657f47be68ff35a2_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-must-gather-rhel8@sha256:a3031870bd2199c28e754585b57363f953818bd20bf9ad04f5545e0eb4ae4793_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/kiali-rhel8@sha256:081d9b91f85a9fa135ddaf993b67ba01282205b5e87d31cffa1a9e659a430a61_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/kiali-rhel8@sha256:63ce7982aa4fe759dbe7acc497105da41f6426268678df4c8407ef7da94f5965_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/kiali-rhel8@sha256:b426bab535c9417d2ed4951153ef03c06d95060a3378f8621b5eb3436995aa8e_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/pilot-rhel8@sha256:6851a60e3242789f67637d596959580c96fcd5221d71ad83e21ead53f0ba9856_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/pilot-rhel8@sha256:818fc5474a2bea0400b6b022cca31f522ea05b58bfa57fca1f6cb20efeb140f7_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/pilot-rhel8@sha256:b654048f91103418e1c503a9b45b9890c868892e746218fb26a6768a842a6310_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/prometheus-rhel8@sha256:681efb513c3eb27dce5e1225964fb1f076e7f5d5951ea0fcbf12ebe633df0602_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/prometheus-rhel8@sha256:b2e2fbd17082d59a1fbf9e55c04b767763d968747e232bfb4789376ed1bb08cc_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/prometheus-rhel8@sha256:dbcf658a5354b9b7d412826a77cfb0ce889c4704634f5d13325161021feff81e_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/proxyv2-rhel8@sha256:208a5000e943fb68e2c2cfea0ac6223fdc6a43363b19fb3ac3e6c19326afa464_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/proxyv2-rhel8@sha256:4abe159e450801e062a3afceff661ab25dc57ea122ce58269b2f3566a55c8dc2_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/proxyv2-rhel8@sha256:7cc28d4baf68ca0902d7dc44d9fc2a9ac626268fd4320d17caa3f22cc08618c1_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/ratelimit-rhel8@sha256:096bf95cdba671943bb9f7ec5f804201c1cf06607a164c7b76ef745c26c82d73_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/ratelimit-rhel8@sha256:8a5a8bc6a54cd64330926478ac29f568ac5c83cc9550852d439ccc4cbd0b5ab5_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/ratelimit-rhel8@sha256:cc5d972cb2ba30e147c76202dc315a08bdba41906f808e95d8b134bfe446fc89_ppc64le"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 7.5,
+            "baseSeverity": "HIGH",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "8Base-RHOSSM-2.2:openshift-service-mesh/grafana-rhel8@sha256:2ac0267f703527a6af7cf822ac8dc33f8e27a8784c2091c6894ea9d4faeff290_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/grafana-rhel8@sha256:c9462389f5c148c9fa855aa54786ab28e0a522c2576e139f254c72f3135e824c_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/grafana-rhel8@sha256:dcfa0e73a89d2ad273720c209dd94fe3b652c5606d196d4962a2f662ed834612_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-cni-rhel8@sha256:a0f0fcdf2d1be20c4b483d338803b4f968ed6a51ee842bae3f2539aaea660b36_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-cni-rhel8@sha256:ef9adad3d6ccc52944aa6a7be7537a3fd2cef1984c09f4b57a32d5670903b679_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-cni-rhel8@sha256:fcc2034b3448c92e1ac6c3848def79942238733d4acf03ae2e5a2b84be0c6545_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-must-gather-rhel8@sha256:3061637ecdeac036dc9171f5b079daa0a4a193589161e90920c681abb27c5ce3_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-must-gather-rhel8@sha256:7834412d7ae6f8d1b4610a373245a675904f141534211e56657f47be68ff35a2_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/istio-must-gather-rhel8@sha256:a3031870bd2199c28e754585b57363f953818bd20bf9ad04f5545e0eb4ae4793_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/kiali-rhel8@sha256:081d9b91f85a9fa135ddaf993b67ba01282205b5e87d31cffa1a9e659a430a61_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/kiali-rhel8@sha256:63ce7982aa4fe759dbe7acc497105da41f6426268678df4c8407ef7da94f5965_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/kiali-rhel8@sha256:b426bab535c9417d2ed4951153ef03c06d95060a3378f8621b5eb3436995aa8e_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/pilot-rhel8@sha256:6851a60e3242789f67637d596959580c96fcd5221d71ad83e21ead53f0ba9856_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/pilot-rhel8@sha256:818fc5474a2bea0400b6b022cca31f522ea05b58bfa57fca1f6cb20efeb140f7_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/pilot-rhel8@sha256:b654048f91103418e1c503a9b45b9890c868892e746218fb26a6768a842a6310_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/prometheus-rhel8@sha256:681efb513c3eb27dce5e1225964fb1f076e7f5d5951ea0fcbf12ebe633df0602_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/prometheus-rhel8@sha256:b2e2fbd17082d59a1fbf9e55c04b767763d968747e232bfb4789376ed1bb08cc_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/prometheus-rhel8@sha256:dbcf658a5354b9b7d412826a77cfb0ce889c4704634f5d13325161021feff81e_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/proxyv2-rhel8@sha256:208a5000e943fb68e2c2cfea0ac6223fdc6a43363b19fb3ac3e6c19326afa464_ppc64le",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/proxyv2-rhel8@sha256:4abe159e450801e062a3afceff661ab25dc57ea122ce58269b2f3566a55c8dc2_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/proxyv2-rhel8@sha256:7cc28d4baf68ca0902d7dc44d9fc2a9ac626268fd4320d17caa3f22cc08618c1_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/ratelimit-rhel8@sha256:096bf95cdba671943bb9f7ec5f804201c1cf06607a164c7b76ef745c26c82d73_s390x",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/ratelimit-rhel8@sha256:8a5a8bc6a54cd64330926478ac29f568ac5c83cc9550852d439ccc4cbd0b5ab5_amd64",
+            "8Base-RHOSSM-2.2:openshift-service-mesh/ratelimit-rhel8@sha256:cc5d972cb2ba30e147c76202dc315a08bdba41906f808e95d8b134bfe446fc89_ppc64le"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "exploit_status",
+          "date": "2023-10-10T00:00:00+00:00",
+          "details": "CISA: https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "category": "impact",
+          "details": "Important"
+        }
+      ],
+      "title": "HTTP/2: Multiple HTTP/2 enabled web servers are vulnerable to a DDoS attack (Rapid Reset Attack)"
+    }
+  ]
+}

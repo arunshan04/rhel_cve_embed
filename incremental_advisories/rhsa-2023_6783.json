@@ -1,0 +1,505 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "namespace": "https://access.redhat.com/security/updates/classification/",
+      "text": "Important"
+    },
+    "category": "csaf_security_advisory",
+    "csaf_version": "2.0",
+    "distribution": {
+      "text": "Copyright \u00a9 Red Hat, Inc. All rights reserved.",
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "en",
+    "notes": [
+      {
+        "category": "summary",
+        "text": "This is an updated version of the Node Health Check Operator. This Operator is delivered by Red Hat Workload Availability.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+        "title": "Topic"
+      },
+      {
+        "category": "general",
+        "text": "You can use the Node Health Check Operator to deploy the Node Health Check controller. The controller identifies unhealthy nodes and uses the Self Node Remediation Operator to remediate the unhealthy nodes. \n\nSecurity Fix(es):\n\n* golang: net/http, x/net/http2: rapid stream resets can cause excessive work\n(CVE-2023-44487) (CVE-2023-39325)\n\n* HTTP/2: Multiple HTTP/2 enabled web servers are vulnerable to a DDoS attack\n(Rapid Reset Attack) (CVE-2023-44487)",
+        "title": "Details"
+      },
+      {
+        "category": "legal_disclaimer",
+        "text": "This content is licensed under the Creative Commons Attribution 4.0 International License (https://creativecommons.org/licenses/by/4.0/). If you distribute this content, or a modified version of it, you must provide attribution to Red Hat Inc. and provide a link to the original.",
+        "title": "Terms of Use"
+      }
+    ],
+    "publisher": {
+      "category": "vendor",
+      "contact_details": "https://access.redhat.com/security/team/contact/",
+      "issuing_authority": "Red Hat Product Security is responsible for vulnerability handling across all Red Hat products and services.",
+      "name": "Red Hat Product Security",
+      "namespace": "https://www.redhat.com"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "https://access.redhat.com/errata/RHSA-2023:6783",
+        "url": "https://access.redhat.com/errata/RHSA-2023:6783"
+      },
+      {
+        "category": "external",
+        "summary": "https://access.redhat.com/security/updates/classification/#important",
+        "url": "https://access.redhat.com/security/updates/classification/#important"
+      },
+      {
+        "category": "external",
+        "summary": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003",
+        "url": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003"
+      },
+      {
+        "category": "external",
+        "summary": "2242803",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2242803"
+      },
+      {
+        "category": "external",
+        "summary": "2243296",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2243296"
+      },
+      {
+        "category": "self",
+        "summary": "Canonical URL",
+        "url": "https://security.access.redhat.com/data/csaf/v2/advisories/2023/rhsa-2023_6783.json"
+      }
+    ],
+    "title": "Red Hat Security Advisory: Node Health Check Operator 0.4.1",
+    "tracking": {
+      "current_release_date": "2025-07-01T14:20:40+00:00",
+      "generator": {
+        "date": "2025-07-01T14:20:40+00:00",
+        "engine": {
+          "name": "Red Hat SDEngine",
+          "version": "4.6.3"
+        }
+      },
+      "id": "RHSA-2023:6783",
+      "initial_release_date": "2023-11-08T01:18:25+00:00",
+      "revision_history": [
+        {
+          "date": "2023-11-08T01:18:25+00:00",
+          "number": "1",
+          "summary": "Initial version"
+        },
+        {
+          "date": "2023-11-08T01:18:25+00:00",
+          "number": "2",
+          "summary": "Last updated version"
+        },
+        {
+          "date": "2025-07-01T14:20:40+00:00",
+          "number": "3",
+          "summary": "Last generated version"
+        }
+      ],
+      "status": "final",
+      "version": "3"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_name",
+                "name": "Node Healthcheck Operator 0.4 for RHEL 8",
+                "product": {
+                  "name": "Node Healthcheck Operator 0.4 for RHEL 8",
+                  "product_id": "8Base-NODE-HEALTHCHECK-OPERATOR-0.4",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:workload_availability_node_healthcheck:0.4::el8"
+                  }
+                }
+              }
+            ],
+            "category": "product_family",
+            "name": "Red Hat OpenShift Workload Availability"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "workload-availability/node-healthcheck-operator-bundle@sha256:151e7d9bc500b7252af46d0856e3e16559ff310a1d0efedcc5d914164bbdef55_amd64",
+                "product": {
+                  "name": "workload-availability/node-healthcheck-operator-bundle@sha256:151e7d9bc500b7252af46d0856e3e16559ff310a1d0efedcc5d914164bbdef55_amd64",
+                  "product_id": "workload-availability/node-healthcheck-operator-bundle@sha256:151e7d9bc500b7252af46d0856e3e16559ff310a1d0efedcc5d914164bbdef55_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/node-healthcheck-operator-bundle@sha256:151e7d9bc500b7252af46d0856e3e16559ff310a1d0efedcc5d914164bbdef55?arch=amd64&repository_url=registry.redhat.io/workload-availability/node-healthcheck-operator-bundle&tag=v0.4.1-44"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "workload-availability/node-healthcheck-rhel8-operator@sha256:1e69fca94c72373f8034b4914e113e23e418f2c1b227d7ea0c8af3dcb63187a6_amd64",
+                "product": {
+                  "name": "workload-availability/node-healthcheck-rhel8-operator@sha256:1e69fca94c72373f8034b4914e113e23e418f2c1b227d7ea0c8af3dcb63187a6_amd64",
+                  "product_id": "workload-availability/node-healthcheck-rhel8-operator@sha256:1e69fca94c72373f8034b4914e113e23e418f2c1b227d7ea0c8af3dcb63187a6_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/node-healthcheck-rhel8-operator@sha256:1e69fca94c72373f8034b4914e113e23e418f2c1b227d7ea0c8af3dcb63187a6?arch=amd64&repository_url=registry.redhat.io/workload-availability/node-healthcheck-rhel8-operator&tag=v0.4.1-44"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "workload-availability/node-remediation-console-rhel8@sha256:c4a6e43c9d96f8dbe743db5af83495d9350ef8ac45e3adbec0fbbc53db40502a_amd64",
+                "product": {
+                  "name": "workload-availability/node-remediation-console-rhel8@sha256:c4a6e43c9d96f8dbe743db5af83495d9350ef8ac45e3adbec0fbbc53db40502a_amd64",
+                  "product_id": "workload-availability/node-remediation-console-rhel8@sha256:c4a6e43c9d96f8dbe743db5af83495d9350ef8ac45e3adbec0fbbc53db40502a_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/node-remediation-console-rhel8@sha256:c4a6e43c9d96f8dbe743db5af83495d9350ef8ac45e3adbec0fbbc53db40502a?arch=amd64&repository_url=registry.redhat.io/workload-availability/node-remediation-console-rhel8&tag=v0.4.1-44"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "amd64"
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      }
+    ],
+    "relationships": [
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "workload-availability/node-healthcheck-operator-bundle@sha256:151e7d9bc500b7252af46d0856e3e16559ff310a1d0efedcc5d914164bbdef55_amd64 as a component of Node Healthcheck Operator 0.4 for RHEL 8",
+          "product_id": "8Base-NODE-HEALTHCHECK-OPERATOR-0.4:workload-availability/node-healthcheck-operator-bundle@sha256:151e7d9bc500b7252af46d0856e3e16559ff310a1d0efedcc5d914164bbdef55_amd64"
+        },
+        "product_reference": "workload-availability/node-healthcheck-operator-bundle@sha256:151e7d9bc500b7252af46d0856e3e16559ff310a1d0efedcc5d914164bbdef55_amd64",
+        "relates_to_product_reference": "8Base-NODE-HEALTHCHECK-OPERATOR-0.4"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "workload-availability/node-healthcheck-rhel8-operator@sha256:1e69fca94c72373f8034b4914e113e23e418f2c1b227d7ea0c8af3dcb63187a6_amd64 as a component of Node Healthcheck Operator 0.4 for RHEL 8",
+          "product_id": "8Base-NODE-HEALTHCHECK-OPERATOR-0.4:workload-availability/node-healthcheck-rhel8-operator@sha256:1e69fca94c72373f8034b4914e113e23e418f2c1b227d7ea0c8af3dcb63187a6_amd64"
+        },
+        "product_reference": "workload-availability/node-healthcheck-rhel8-operator@sha256:1e69fca94c72373f8034b4914e113e23e418f2c1b227d7ea0c8af3dcb63187a6_amd64",
+        "relates_to_product_reference": "8Base-NODE-HEALTHCHECK-OPERATOR-0.4"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "workload-availability/node-remediation-console-rhel8@sha256:c4a6e43c9d96f8dbe743db5af83495d9350ef8ac45e3adbec0fbbc53db40502a_amd64 as a component of Node Healthcheck Operator 0.4 for RHEL 8",
+          "product_id": "8Base-NODE-HEALTHCHECK-OPERATOR-0.4:workload-availability/node-remediation-console-rhel8@sha256:c4a6e43c9d96f8dbe743db5af83495d9350ef8ac45e3adbec0fbbc53db40502a_amd64"
+        },
+        "product_reference": "workload-availability/node-remediation-console-rhel8@sha256:c4a6e43c9d96f8dbe743db5af83495d9350ef8ac45e3adbec0fbbc53db40502a_amd64",
+        "relates_to_product_reference": "8Base-NODE-HEALTHCHECK-OPERATOR-0.4"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2023-39325",
+      "cwe": {
+        "id": "CWE-400",
+        "name": "Uncontrolled Resource Consumption"
+      },
+      "discovery_date": "2023-10-10T00:00:00+00:00",
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2243296"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A flaw was found in handling multiplexed streams in the HTTP/2 protocol. A client can repeatedly make a request for a new multiplex stream and immediately send an RST_STREAM frame to cancel it. This creates extra work for the server setting up and tearing down the streams while not hitting any server-side limit for the maximum number of active streams per connection, resulting in a denial of service due to server resource consumption. Red Hat has rated the severity of this flaw as 'Important' as the US Cybersecurity and Infrastructure Security Agency (CISA) declared this vulnerability an active exploit.\r\n\r\nCVE-2023-39325 was assigned for the `Rapid Reset Attack` in the Go language packages.",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "golang: net/http, x/net/http2: rapid stream resets can cause excessive work (CVE-2023-44487)",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "other",
+          "text": "This CVE is related to CVE-2023-44487.\n\nThe majority of RHEL utilities are not long-running applications; instead, they are command-line tools. These tools utilize Golang package as build-time dependency, which is why they are classified as having a \"Moderate\" level of impact.",
+          "title": "Statement"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "8Base-NODE-HEALTHCHECK-OPERATOR-0.4:workload-availability/node-healthcheck-operator-bundle@sha256:151e7d9bc500b7252af46d0856e3e16559ff310a1d0efedcc5d914164bbdef55_amd64",
+          "8Base-NODE-HEALTHCHECK-OPERATOR-0.4:workload-availability/node-healthcheck-rhel8-operator@sha256:1e69fca94c72373f8034b4914e113e23e418f2c1b227d7ea0c8af3dcb63187a6_amd64",
+          "8Base-NODE-HEALTHCHECK-OPERATOR-0.4:workload-availability/node-remediation-console-rhel8@sha256:c4a6e43c9d96f8dbe743db5af83495d9350ef8ac45e3adbec0fbbc53db40502a_amd64"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2243296",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2243296"
+        },
+        {
+          "category": "external",
+          "summary": "RHSB-2023-003",
+          "url": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2023-39325",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "https://access.redhat.com/security/cve/CVE-2023-44487",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-44487"
+        },
+        {
+          "category": "external",
+          "summary": "https://go.dev/issue/63417",
+          "url": "https://go.dev/issue/63417"
+        },
+        {
+          "category": "external",
+          "summary": "https://pkg.go.dev/vuln/GO-2023-2102",
+          "url": "https://pkg.go.dev/vuln/GO-2023-2102"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487",
+          "url": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487"
+        }
+      ],
+      "release_date": "2023-10-10T00:00:00+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2023-11-08T01:18:25+00:00",
+          "details": "Before applying this update, make sure all previously released errata\nrelevant to your system have been applied.\n\nFor details on how to apply this update, refer to:\n\nhttps://access.redhat.com/articles/11258",
+          "product_ids": [
+            "8Base-NODE-HEALTHCHECK-OPERATOR-0.4:workload-availability/node-healthcheck-operator-bundle@sha256:151e7d9bc500b7252af46d0856e3e16559ff310a1d0efedcc5d914164bbdef55_amd64",
+            "8Base-NODE-HEALTHCHECK-OPERATOR-0.4:workload-availability/node-healthcheck-rhel8-operator@sha256:1e69fca94c72373f8034b4914e113e23e418f2c1b227d7ea0c8af3dcb63187a6_amd64",
+            "8Base-NODE-HEALTHCHECK-OPERATOR-0.4:workload-availability/node-remediation-console-rhel8@sha256:c4a6e43c9d96f8dbe743db5af83495d9350ef8ac45e3adbec0fbbc53db40502a_amd64"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2023:6783"
+        },
+        {
+          "category": "workaround",
+          "details": "The default stream concurrency limit in golang is 250 streams (requests) per HTTP/2 connection. This value may be adjusted in the golang.org/x/net/http2 package using the Server.MaxConcurrentStreams setting and the ConfigureServer function which are available in golang.org/x/net/http2.",
+          "product_ids": [
+            "8Base-NODE-HEALTHCHECK-OPERATOR-0.4:workload-availability/node-healthcheck-operator-bundle@sha256:151e7d9bc500b7252af46d0856e3e16559ff310a1d0efedcc5d914164bbdef55_amd64",
+            "8Base-NODE-HEALTHCHECK-OPERATOR-0.4:workload-availability/node-healthcheck-rhel8-operator@sha256:1e69fca94c72373f8034b4914e113e23e418f2c1b227d7ea0c8af3dcb63187a6_amd64",
+            "8Base-NODE-HEALTHCHECK-OPERATOR-0.4:workload-availability/node-remediation-console-rhel8@sha256:c4a6e43c9d96f8dbe743db5af83495d9350ef8ac45e3adbec0fbbc53db40502a_amd64"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 7.5,
+            "baseSeverity": "HIGH",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "8Base-NODE-HEALTHCHECK-OPERATOR-0.4:workload-availability/node-healthcheck-operator-bundle@sha256:151e7d9bc500b7252af46d0856e3e16559ff310a1d0efedcc5d914164bbdef55_amd64",
+            "8Base-NODE-HEALTHCHECK-OPERATOR-0.4:workload-availability/node-healthcheck-rhel8-operator@sha256:1e69fca94c72373f8034b4914e113e23e418f2c1b227d7ea0c8af3dcb63187a6_amd64",
+            "8Base-NODE-HEALTHCHECK-OPERATOR-0.4:workload-availability/node-remediation-console-rhel8@sha256:c4a6e43c9d96f8dbe743db5af83495d9350ef8ac45e3adbec0fbbc53db40502a_amd64"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Important"
+        }
+      ],
+      "title": "golang: net/http, x/net/http2: rapid stream resets can cause excessive work (CVE-2023-44487)"
+    },
+    {
+      "cve": "CVE-2023-44487",
+      "cwe": {
+        "id": "CWE-400",
+        "name": "Uncontrolled Resource Consumption"
+      },
+      "discovery_date": "2023-10-09T00:00:00+00:00",
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2242803"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A flaw was found in handling multiplexed streams in the HTTP/2 protocol. A client can repeatedly make a request for a new multiplex stream and immediately send an RST_STREAM frame to cancel it. This creates extra work for the server setting up and tearing down the streams while not hitting any server-side limit for the maximum number of active streams per connection, resulting in a denial of service due to server resource consumption. Red Hat has rated the severity of this flaw as 'Important' as the US Cybersecurity and Infrastructure Security Agency (CISA) declared this vulnerability an active exploit.\r\n\r\nCVE-2023-39325 was assigned for the Rapid Reset Attack in the Go language packages.\r\n\r\nSecurity Bulletin\r\nhttps://access.redhat.com/security/vulnerabilities/RHSB-2023-003",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "HTTP/2: Multiple HTTP/2 enabled web servers are vulnerable to a DDoS attack (Rapid Reset Attack)",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "other",
+          "text": "NGINX has been marked as Moderate Impact because, for performance and resource consumption reasons, NGINX limits the number of concurrent streams to a default of 128. In addition, to optimally balance network and server performance, NGINX allows the client to persist HTTP connections for up to 1000 requests by default using an HTTP keepalive.\n\nThe majority of RHEL utilities are not long-running applications; instead, they are command-line tools. These tools utilize Golang package as build-time dependency, which is why they are classified as having a \"Moderate\" level of impact.\n\nrhc component is no longer impacted by CVE-2023-44487 & CVE-2023-39325.",
+          "title": "Statement"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "8Base-NODE-HEALTHCHECK-OPERATOR-0.4:workload-availability/node-healthcheck-operator-bundle@sha256:151e7d9bc500b7252af46d0856e3e16559ff310a1d0efedcc5d914164bbdef55_amd64",
+          "8Base-NODE-HEALTHCHECK-OPERATOR-0.4:workload-availability/node-healthcheck-rhel8-operator@sha256:1e69fca94c72373f8034b4914e113e23e418f2c1b227d7ea0c8af3dcb63187a6_amd64",
+          "8Base-NODE-HEALTHCHECK-OPERATOR-0.4:workload-availability/node-remediation-console-rhel8@sha256:c4a6e43c9d96f8dbe743db5af83495d9350ef8ac45e3adbec0fbbc53db40502a_amd64"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-44487"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2242803",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2242803"
+        },
+        {
+          "category": "external",
+          "summary": "RHSB-2023-003",
+          "url": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2023-44487",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-44487"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2023-44487",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-44487"
+        },
+        {
+          "category": "external",
+          "summary": "https://github.com/dotnet/announcements/issues/277",
+          "url": "https://github.com/dotnet/announcements/issues/277"
+        },
+        {
+          "category": "external",
+          "summary": "https://pkg.go.dev/vuln/GO-2023-2102",
+          "url": "https://pkg.go.dev/vuln/GO-2023-2102"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487",
+          "url": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.nginx.com/blog/http-2-rapid-reset-attack-impacting-f5-nginx-products/",
+          "url": "https://www.nginx.com/blog/http-2-rapid-reset-attack-impacting-f5-nginx-products/"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "release_date": "2023-10-10T00:00:00+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2023-11-08T01:18:25+00:00",
+          "details": "Before applying this update, make sure all previously released errata\nrelevant to your system have been applied.\n\nFor details on how to apply this update, refer to:\n\nhttps://access.redhat.com/articles/11258",
+          "product_ids": [
+            "8Base-NODE-HEALTHCHECK-OPERATOR-0.4:workload-availability/node-healthcheck-operator-bundle@sha256:151e7d9bc500b7252af46d0856e3e16559ff310a1d0efedcc5d914164bbdef55_amd64",
+            "8Base-NODE-HEALTHCHECK-OPERATOR-0.4:workload-availability/node-healthcheck-rhel8-operator@sha256:1e69fca94c72373f8034b4914e113e23e418f2c1b227d7ea0c8af3dcb63187a6_amd64",
+            "8Base-NODE-HEALTHCHECK-OPERATOR-0.4:workload-availability/node-remediation-console-rhel8@sha256:c4a6e43c9d96f8dbe743db5af83495d9350ef8ac45e3adbec0fbbc53db40502a_amd64"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2023:6783"
+        },
+        {
+          "category": "workaround",
+          "details": "Users are strongly urged to update their software as soon as fixes are available. \nThere are several mitigation approaches for this flaw. \n\n1. If circumstances permit, users may disable http2 endpoints to circumvent the flaw altogether until a fix is available.\n2. IP-based blocking or flood protection and rate control tools may be used at network endpoints to filter incoming traffic.\n3. Several package specific mitigations are also available. \n     a. nginx: https://www.nginx.com/blog/http-2-rapid-reset-attack-impacting-f5-nginx-products/\n     b. netty: https://github.com/netty/netty/security/advisories/GHSA-xpw8-rcwv-8f8p\n     c. haproxy: https://www.haproxy.com/blog/haproxy-is-not-affected-by-the-http-2-rapid-reset-attack-cve-2023-44487\n     d. nghttp2: https://github.com/nghttp2/nghttp2/security/advisories/GHSA-vx74-f528-fxqg\n     e. golang: The default stream concurrency limit in golang is 250 streams (requests) per HTTP/2 connection. This value may be adjusted in the golang.org/x/net/http2 package using the Server.MaxConcurrentStreams setting and the ConfigureServer function which are available in golang.org/x/net/http2.",
+          "product_ids": [
+            "8Base-NODE-HEALTHCHECK-OPERATOR-0.4:workload-availability/node-healthcheck-operator-bundle@sha256:151e7d9bc500b7252af46d0856e3e16559ff310a1d0efedcc5d914164bbdef55_amd64",
+            "8Base-NODE-HEALTHCHECK-OPERATOR-0.4:workload-availability/node-healthcheck-rhel8-operator@sha256:1e69fca94c72373f8034b4914e113e23e418f2c1b227d7ea0c8af3dcb63187a6_amd64",
+            "8Base-NODE-HEALTHCHECK-OPERATOR-0.4:workload-availability/node-remediation-console-rhel8@sha256:c4a6e43c9d96f8dbe743db5af83495d9350ef8ac45e3adbec0fbbc53db40502a_amd64"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 7.5,
+            "baseSeverity": "HIGH",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "8Base-NODE-HEALTHCHECK-OPERATOR-0.4:workload-availability/node-healthcheck-operator-bundle@sha256:151e7d9bc500b7252af46d0856e3e16559ff310a1d0efedcc5d914164bbdef55_amd64",
+            "8Base-NODE-HEALTHCHECK-OPERATOR-0.4:workload-availability/node-healthcheck-rhel8-operator@sha256:1e69fca94c72373f8034b4914e113e23e418f2c1b227d7ea0c8af3dcb63187a6_amd64",
+            "8Base-NODE-HEALTHCHECK-OPERATOR-0.4:workload-availability/node-remediation-console-rhel8@sha256:c4a6e43c9d96f8dbe743db5af83495d9350ef8ac45e3adbec0fbbc53db40502a_amd64"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "exploit_status",
+          "date": "2023-10-10T00:00:00+00:00",
+          "details": "CISA: https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "category": "impact",
+          "details": "Important"
+        }
+      ],
+      "title": "HTTP/2: Multiple HTTP/2 enabled web servers are vulnerable to a DDoS attack (Rapid Reset Attack)"
+    }
+  ]
+}

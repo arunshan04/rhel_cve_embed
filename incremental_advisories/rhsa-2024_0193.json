@@ -1,0 +1,2170 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "namespace": "https://access.redhat.com/security/updates/classification/",
+      "text": "Important"
+    },
+    "category": "csaf_security_advisory",
+    "csaf_version": "2.0",
+    "distribution": {
+      "text": "Copyright \u00a9 Red Hat, Inc. All rights reserved.",
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "en",
+    "notes": [
+      {
+        "category": "summary",
+        "text": "An update is now available for Red Hat OpenShift Container Platform 4.13.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+        "title": "Topic"
+      },
+      {
+        "category": "general",
+        "text": "Red Hat OpenShift Container Platform is Red Hat's cloud computing Kubernetes application platform solution designed for on-premise or private cloud deployments.\n\nThis advisory contains the container images for Red Hat OpenShift Container Platform 4.13.29. See the following advisory for the RPM packages for this release:\n\nhttps://access.redhat.com/errata/RHSA-2024:0195\n\nSpace precludes documenting all of the container images in this advisory. See the following Release Notes documentation, which will be updated shortly for this release, for details about these changes:\n\nhttps://docs.openshift.com/container-platform/4.13/release_notes/ocp-4-13-release-notes.html\n\nSecurity Fix(es):\n\n* golang: net/http, x/net/http2: rapid stream resets can cause excessive work (CVE-2023-44487) (CVE-2023-39325)\n\n* mongo-go-driver: specific cstrings input may not be properly validated (CVE-2021-20329)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+        "title": "Details"
+      },
+      {
+        "category": "legal_disclaimer",
+        "text": "This content is licensed under the Creative Commons Attribution 4.0 International License (https://creativecommons.org/licenses/by/4.0/). If you distribute this content, or a modified version of it, you must provide attribution to Red Hat Inc. and provide a link to the original.",
+        "title": "Terms of Use"
+      }
+    ],
+    "publisher": {
+      "category": "vendor",
+      "contact_details": "https://access.redhat.com/security/team/contact/",
+      "issuing_authority": "Red Hat Product Security is responsible for vulnerability handling across all Red Hat products and services.",
+      "name": "Red Hat Product Security",
+      "namespace": "https://www.redhat.com"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "https://access.redhat.com/errata/RHSA-2024:0193",
+        "url": "https://access.redhat.com/errata/RHSA-2024:0193"
+      },
+      {
+        "category": "external",
+        "summary": "https://access.redhat.com/security/updates/classification/#important",
+        "url": "https://access.redhat.com/security/updates/classification/#important"
+      },
+      {
+        "category": "external",
+        "summary": "1971033",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=1971033"
+      },
+      {
+        "category": "external",
+        "summary": "2243296",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2243296"
+      },
+      {
+        "category": "external",
+        "summary": "OCPBUGS-19658",
+        "url": "https://issues.redhat.com/browse/OCPBUGS-19658"
+      },
+      {
+        "category": "external",
+        "summary": "OCPBUGS-23483",
+        "url": "https://issues.redhat.com/browse/OCPBUGS-23483"
+      },
+      {
+        "category": "external",
+        "summary": "OCPBUGS-25988",
+        "url": "https://issues.redhat.com/browse/OCPBUGS-25988"
+      },
+      {
+        "category": "self",
+        "summary": "Canonical URL",
+        "url": "https://security.access.redhat.com/data/csaf/v2/advisories/2024/rhsa-2024_0193.json"
+      }
+    ],
+    "title": "Red Hat Security Advisory: OpenShift Container Platform 4.13.29 bug fix and security update",
+    "tracking": {
+      "current_release_date": "2025-07-01T14:23:01+00:00",
+      "generator": {
+        "date": "2025-07-01T14:23:01+00:00",
+        "engine": {
+          "name": "Red Hat SDEngine",
+          "version": "4.6.3"
+        }
+      },
+      "id": "RHSA-2024:0193",
+      "initial_release_date": "2024-01-17T09:48:09+00:00",
+      "revision_history": [
+        {
+          "date": "2024-01-17T09:48:09+00:00",
+          "number": "1",
+          "summary": "Initial version"
+        },
+        {
+          "date": "2024-01-17T09:48:09+00:00",
+          "number": "2",
+          "summary": "Last updated version"
+        },
+        {
+          "date": "2025-07-01T14:23:01+00:00",
+          "number": "3",
+          "summary": "Last generated version"
+        }
+      ],
+      "status": "final",
+      "version": "3"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_name",
+                "name": "Red Hat OpenShift Container Platform 4.13",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.13",
+                  "product_id": "8Base-RHOSE-4.13",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:4.13::el8"
+                  }
+                }
+              },
+              {
+                "category": "product_name",
+                "name": "Red Hat OpenShift Container Platform 4.13",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.13",
+                  "product_id": "9Base-RHOSE-4.13",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:4.13::el9"
+                  }
+                }
+              }
+            ],
+            "category": "product_family",
+            "name": "Red Hat OpenShift Enterprise"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-cluster-network-operator@sha256:abc6213b793b35a404eeec68d5667bd6e108879ee86a182fc6efe5efae463e1f_amd64",
+                "product": {
+                  "name": "openshift4/ose-cluster-network-operator@sha256:abc6213b793b35a404eeec68d5667bd6e108879ee86a182fc6efe5efae463e1f_amd64",
+                  "product_id": "openshift4/ose-cluster-network-operator@sha256:abc6213b793b35a404eeec68d5667bd6e108879ee86a182fc6efe5efae463e1f_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-cluster-network-operator@sha256:abc6213b793b35a404eeec68d5667bd6e108879ee86a182fc6efe5efae463e1f?arch=amd64&repository_url=registry.redhat.io/openshift4/ose-cluster-network-operator&tag=v4.13.0-202401082312.p0.g903a0e0.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/driver-toolkit-rhel9@sha256:1670b7ed6745cfab81e2f472e9e77834e0fb6dc792b017bccda1217403dc0247_amd64",
+                "product": {
+                  "name": "openshift4/driver-toolkit-rhel9@sha256:1670b7ed6745cfab81e2f472e9e77834e0fb6dc792b017bccda1217403dc0247_amd64",
+                  "product_id": "openshift4/driver-toolkit-rhel9@sha256:1670b7ed6745cfab81e2f472e9e77834e0fb6dc792b017bccda1217403dc0247_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/driver-toolkit-rhel9@sha256:1670b7ed6745cfab81e2f472e9e77834e0fb6dc792b017bccda1217403dc0247?arch=amd64&repository_url=registry.redhat.io/openshift4/driver-toolkit-rhel9&tag=v4.13.0-202401100933.p0.gd719bdc.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-ironic-machine-os-downloader-rhel9@sha256:7486da69bbcacaf43bea2cb8d681e556084aaccfd388e1ad4383cbba517d142b_amd64",
+                "product": {
+                  "name": "openshift4/ose-ironic-machine-os-downloader-rhel9@sha256:7486da69bbcacaf43bea2cb8d681e556084aaccfd388e1ad4383cbba517d142b_amd64",
+                  "product_id": "openshift4/ose-ironic-machine-os-downloader-rhel9@sha256:7486da69bbcacaf43bea2cb8d681e556084aaccfd388e1ad4383cbba517d142b_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-ironic-machine-os-downloader-rhel9@sha256:7486da69bbcacaf43bea2cb8d681e556084aaccfd388e1ad4383cbba517d142b?arch=amd64&repository_url=registry.redhat.io/openshift4/ose-ironic-machine-os-downloader-rhel9&tag=v4.13.0-202401100933.p0.gce29177.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-console@sha256:7c69be58deb42c078baaa9f8b4e90f327a38b79a3b00a24ddb104c6727fc8a7e_amd64",
+                "product": {
+                  "name": "openshift4/ose-console@sha256:7c69be58deb42c078baaa9f8b4e90f327a38b79a3b00a24ddb104c6727fc8a7e_amd64",
+                  "product_id": "openshift4/ose-console@sha256:7c69be58deb42c078baaa9f8b4e90f327a38b79a3b00a24ddb104c6727fc8a7e_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-console@sha256:7c69be58deb42c078baaa9f8b4e90f327a38b79a3b00a24ddb104c6727fc8a7e?arch=amd64&repository_url=registry.redhat.io/openshift4/ose-console&tag=v4.13.0-202401041553.p0.g071df39.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-hyperkube@sha256:c59ba2f520589740b92799483837a438208a352854391173e0a87c4e8c6906f9_amd64",
+                "product": {
+                  "name": "openshift4/ose-hyperkube@sha256:c59ba2f520589740b92799483837a438208a352854391173e0a87c4e8c6906f9_amd64",
+                  "product_id": "openshift4/ose-hyperkube@sha256:c59ba2f520589740b92799483837a438208a352854391173e0a87c4e8c6906f9_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-hyperkube@sha256:c59ba2f520589740b92799483837a438208a352854391173e0a87c4e8c6906f9?arch=amd64&repository_url=registry.redhat.io/openshift4/ose-hyperkube&tag=v4.13.0-202401041732.p0.g9ed7eae.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-pod@sha256:7a53f216d1969028e231cc54a6df6ae776c12f65866e6b223ced540f531e7963_amd64",
+                "product": {
+                  "name": "openshift4/ose-pod@sha256:7a53f216d1969028e231cc54a6df6ae776c12f65866e6b223ced540f531e7963_amd64",
+                  "product_id": "openshift4/ose-pod@sha256:7a53f216d1969028e231cc54a6df6ae776c12f65866e6b223ced540f531e7963_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-pod@sha256:7a53f216d1969028e231cc54a6df6ae776c12f65866e6b223ced540f531e7963?arch=amd64&repository_url=registry.redhat.io/openshift4/ose-pod&tag=v4.13.0-202401041732.p0.g9ed7eae.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-tests@sha256:a4084c4597803ebe3d1a226634d5322091855f0da34676a0538dd5ae21434bd0_amd64",
+                "product": {
+                  "name": "openshift4/ose-tests@sha256:a4084c4597803ebe3d1a226634d5322091855f0da34676a0538dd5ae21434bd0_amd64",
+                  "product_id": "openshift4/ose-tests@sha256:a4084c4597803ebe3d1a226634d5322091855f0da34676a0538dd5ae21434bd0_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-tests@sha256:a4084c4597803ebe3d1a226634d5322091855f0da34676a0538dd5ae21434bd0?arch=amd64&repository_url=registry.redhat.io/openshift4/ose-tests&tag=v4.13.0-202401100933.p0.g99b9d53.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-operator-lifecycle-manager@sha256:101373b564e354a6d420654c1338556e33acfc6a64f6d53e6c2bb6d03a9c6dbb_amd64",
+                "product": {
+                  "name": "openshift4/ose-operator-lifecycle-manager@sha256:101373b564e354a6d420654c1338556e33acfc6a64f6d53e6c2bb6d03a9c6dbb_amd64",
+                  "product_id": "openshift4/ose-operator-lifecycle-manager@sha256:101373b564e354a6d420654c1338556e33acfc6a64f6d53e6c2bb6d03a9c6dbb_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-operator-lifecycle-manager@sha256:101373b564e354a6d420654c1338556e33acfc6a64f6d53e6c2bb6d03a9c6dbb?arch=amd64&repository_url=registry.redhat.io/openshift4/ose-operator-lifecycle-manager&tag=v4.13.0-202401092010.p0.g2357f75.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-operator-registry@sha256:9eebd925df7317c2cecae7569d3484849e65e7eebfe4240abc82ab62644fdb47_amd64",
+                "product": {
+                  "name": "openshift4/ose-operator-registry@sha256:9eebd925df7317c2cecae7569d3484849e65e7eebfe4240abc82ab62644fdb47_amd64",
+                  "product_id": "openshift4/ose-operator-registry@sha256:9eebd925df7317c2cecae7569d3484849e65e7eebfe4240abc82ab62644fdb47_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-operator-registry@sha256:9eebd925df7317c2cecae7569d3484849e65e7eebfe4240abc82ab62644fdb47?arch=amd64&repository_url=registry.redhat.io/openshift4/ose-operator-registry&tag=v4.13.0-202401092010.p0.g2357f75.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-agent-installer-node-agent-rhel8@sha256:66d8c54aa10c766124c332a0203e717f7f8b120031b5933e977f5b12644dd11a_amd64",
+                "product": {
+                  "name": "openshift4/ose-agent-installer-node-agent-rhel8@sha256:66d8c54aa10c766124c332a0203e717f7f8b120031b5933e977f5b12644dd11a_amd64",
+                  "product_id": "openshift4/ose-agent-installer-node-agent-rhel8@sha256:66d8c54aa10c766124c332a0203e717f7f8b120031b5933e977f5b12644dd11a_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-agent-installer-node-agent-rhel8@sha256:66d8c54aa10c766124c332a0203e717f7f8b120031b5933e977f5b12644dd11a?arch=amd64&repository_url=registry.redhat.io/openshift4/ose-agent-installer-node-agent-rhel8&tag=v4.13.0-202401100933.p0.gc561104.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-aws-pod-identity-webhook-rhel8@sha256:7a895374b2289119947ac54b49c34c2abd44e7f108411b65a0181e9965d5205f_amd64",
+                "product": {
+                  "name": "openshift4/ose-aws-pod-identity-webhook-rhel8@sha256:7a895374b2289119947ac54b49c34c2abd44e7f108411b65a0181e9965d5205f_amd64",
+                  "product_id": "openshift4/ose-aws-pod-identity-webhook-rhel8@sha256:7a895374b2289119947ac54b49c34c2abd44e7f108411b65a0181e9965d5205f_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-aws-pod-identity-webhook-rhel8@sha256:7a895374b2289119947ac54b49c34c2abd44e7f108411b65a0181e9965d5205f?arch=amd64&repository_url=registry.redhat.io/openshift4/ose-aws-pod-identity-webhook-rhel8&tag=v4.13.0-202401042351.p0.g06140ab.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-machine-config-operator@sha256:1bf04c081f10010a77c3bbdf098b48f94333138c0ed614be39594ccbf2c11a7b_amd64",
+                "product": {
+                  "name": "openshift4/ose-machine-config-operator@sha256:1bf04c081f10010a77c3bbdf098b48f94333138c0ed614be39594ccbf2c11a7b_amd64",
+                  "product_id": "openshift4/ose-machine-config-operator@sha256:1bf04c081f10010a77c3bbdf098b48f94333138c0ed614be39594ccbf2c11a7b_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-machine-config-operator@sha256:1bf04c081f10010a77c3bbdf098b48f94333138c0ed614be39594ccbf2c11a7b?arch=amd64&repository_url=registry.redhat.io/openshift4/ose-machine-config-operator&tag=v4.13.0-202401090532.p0.g1d78dc8.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/network-tools-rhel8@sha256:db1d60dd61f746fdc09a73c6520a2e32590bfbd22417f8d379d6a72a3b7505b7_amd64",
+                "product": {
+                  "name": "openshift4/network-tools-rhel8@sha256:db1d60dd61f746fdc09a73c6520a2e32590bfbd22417f8d379d6a72a3b7505b7_amd64",
+                  "product_id": "openshift4/network-tools-rhel8@sha256:db1d60dd61f746fdc09a73c6520a2e32590bfbd22417f8d379d6a72a3b7505b7_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/network-tools-rhel8@sha256:db1d60dd61f746fdc09a73c6520a2e32590bfbd22417f8d379d6a72a3b7505b7?arch=amd64&repository_url=registry.redhat.io/openshift4/network-tools-rhel8&tag=v4.13.0-202401100933.p0.g073feda.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-ovn-kubernetes@sha256:afe287daf5bbcc2762d326a84bcf712c2f3818fb88a0f72cb2dbebcbb453c209_amd64",
+                "product": {
+                  "name": "openshift4/ose-ovn-kubernetes@sha256:afe287daf5bbcc2762d326a84bcf712c2f3818fb88a0f72cb2dbebcbb453c209_amd64",
+                  "product_id": "openshift4/ose-ovn-kubernetes@sha256:afe287daf5bbcc2762d326a84bcf712c2f3818fb88a0f72cb2dbebcbb453c209_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-ovn-kubernetes@sha256:afe287daf5bbcc2762d326a84bcf712c2f3818fb88a0f72cb2dbebcbb453c209?arch=amd64&repository_url=registry.redhat.io/openshift4/ose-ovn-kubernetes&tag=v4.13.0-202401100933.p0.g2eb8ec3.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-ovn-kubernetes-rhel9@sha256:afe287daf5bbcc2762d326a84bcf712c2f3818fb88a0f72cb2dbebcbb453c209_amd64",
+                "product": {
+                  "name": "openshift4/ose-ovn-kubernetes-rhel9@sha256:afe287daf5bbcc2762d326a84bcf712c2f3818fb88a0f72cb2dbebcbb453c209_amd64",
+                  "product_id": "openshift4/ose-ovn-kubernetes-rhel9@sha256:afe287daf5bbcc2762d326a84bcf712c2f3818fb88a0f72cb2dbebcbb453c209_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-ovn-kubernetes-rhel9@sha256:afe287daf5bbcc2762d326a84bcf712c2f3818fb88a0f72cb2dbebcbb453c209?arch=amd64&repository_url=registry.redhat.io/openshift4/ose-ovn-kubernetes-rhel9&tag=v4.13.0-202401100933.p0.g2eb8ec3.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-tools-rhel8@sha256:b21c1ec26ab2065396b220132715b383d86974941a9f7c59d079aaf16cfb24db_amd64",
+                "product": {
+                  "name": "openshift4/ose-tools-rhel8@sha256:b21c1ec26ab2065396b220132715b383d86974941a9f7c59d079aaf16cfb24db_amd64",
+                  "product_id": "openshift4/ose-tools-rhel8@sha256:b21c1ec26ab2065396b220132715b383d86974941a9f7c59d079aaf16cfb24db_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-tools-rhel8@sha256:b21c1ec26ab2065396b220132715b383d86974941a9f7c59d079aaf16cfb24db?arch=amd64&repository_url=registry.redhat.io/openshift4/ose-tools-rhel8&tag=v4.13.0-202401100933.p0.g7780c37.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:d87068e6d8dc13555d9d4073ece644733f1cd7e4b9b6a4fa4b4676339fc8e5de_amd64",
+                "product": {
+                  "name": "openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:d87068e6d8dc13555d9d4073ece644733f1cd7e4b9b6a4fa4b4676339fc8e5de_amd64",
+                  "product_id": "openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:d87068e6d8dc13555d9d4073ece644733f1cd7e4b9b6a4fa4b4676339fc8e5de_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-ovn-kubernetes-microshift-rhel9@sha256:d87068e6d8dc13555d9d4073ece644733f1cd7e4b9b6a4fa4b4676339fc8e5de?arch=amd64&repository_url=registry.redhat.io/openshift4/ose-ovn-kubernetes-microshift-rhel9&tag=v4.13.0-202401090351.p0.g2eb8ec3.assembly.stream"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "amd64"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-cluster-network-operator@sha256:434ad23d0d405b7e22456ed4b3f882b81ab77d5f35b6ef2db87c1374042e0a86_arm64",
+                "product": {
+                  "name": "openshift4/ose-cluster-network-operator@sha256:434ad23d0d405b7e22456ed4b3f882b81ab77d5f35b6ef2db87c1374042e0a86_arm64",
+                  "product_id": "openshift4/ose-cluster-network-operator@sha256:434ad23d0d405b7e22456ed4b3f882b81ab77d5f35b6ef2db87c1374042e0a86_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-cluster-network-operator@sha256:434ad23d0d405b7e22456ed4b3f882b81ab77d5f35b6ef2db87c1374042e0a86?arch=arm64&repository_url=registry.redhat.io/openshift4/ose-cluster-network-operator&tag=v4.13.0-202401082312.p0.g903a0e0.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/driver-toolkit-rhel9@sha256:fbe0e1f721cbc7db4f46191f2e96cd3e439d4de6af3e4c3656e90b32d6cb2da2_arm64",
+                "product": {
+                  "name": "openshift4/driver-toolkit-rhel9@sha256:fbe0e1f721cbc7db4f46191f2e96cd3e439d4de6af3e4c3656e90b32d6cb2da2_arm64",
+                  "product_id": "openshift4/driver-toolkit-rhel9@sha256:fbe0e1f721cbc7db4f46191f2e96cd3e439d4de6af3e4c3656e90b32d6cb2da2_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/driver-toolkit-rhel9@sha256:fbe0e1f721cbc7db4f46191f2e96cd3e439d4de6af3e4c3656e90b32d6cb2da2?arch=arm64&repository_url=registry.redhat.io/openshift4/driver-toolkit-rhel9&tag=v4.13.0-202401100933.p0.gd719bdc.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-ironic-machine-os-downloader-rhel9@sha256:5be223aa82849a0f6b14c3fd581ee34b065d439b601a0bb1bcc2659a258afb39_arm64",
+                "product": {
+                  "name": "openshift4/ose-ironic-machine-os-downloader-rhel9@sha256:5be223aa82849a0f6b14c3fd581ee34b065d439b601a0bb1bcc2659a258afb39_arm64",
+                  "product_id": "openshift4/ose-ironic-machine-os-downloader-rhel9@sha256:5be223aa82849a0f6b14c3fd581ee34b065d439b601a0bb1bcc2659a258afb39_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-ironic-machine-os-downloader-rhel9@sha256:5be223aa82849a0f6b14c3fd581ee34b065d439b601a0bb1bcc2659a258afb39?arch=arm64&repository_url=registry.redhat.io/openshift4/ose-ironic-machine-os-downloader-rhel9&tag=v4.13.0-202401100933.p0.gce29177.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-console@sha256:afab7d8212ee932132217b76ba99cee7c44369283634021f9c6c1956f83c4c98_arm64",
+                "product": {
+                  "name": "openshift4/ose-console@sha256:afab7d8212ee932132217b76ba99cee7c44369283634021f9c6c1956f83c4c98_arm64",
+                  "product_id": "openshift4/ose-console@sha256:afab7d8212ee932132217b76ba99cee7c44369283634021f9c6c1956f83c4c98_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-console@sha256:afab7d8212ee932132217b76ba99cee7c44369283634021f9c6c1956f83c4c98?arch=arm64&repository_url=registry.redhat.io/openshift4/ose-console&tag=v4.13.0-202401041553.p0.g071df39.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-hyperkube@sha256:bbdf4f84891e1774cca9e07037e17b40b09737a2bf7af8ad292ded95c3c458ff_arm64",
+                "product": {
+                  "name": "openshift4/ose-hyperkube@sha256:bbdf4f84891e1774cca9e07037e17b40b09737a2bf7af8ad292ded95c3c458ff_arm64",
+                  "product_id": "openshift4/ose-hyperkube@sha256:bbdf4f84891e1774cca9e07037e17b40b09737a2bf7af8ad292ded95c3c458ff_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-hyperkube@sha256:bbdf4f84891e1774cca9e07037e17b40b09737a2bf7af8ad292ded95c3c458ff?arch=arm64&repository_url=registry.redhat.io/openshift4/ose-hyperkube&tag=v4.13.0-202401041732.p0.g9ed7eae.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-pod@sha256:a8cbaef00c8a839000e49c55843474ef5020cc7ab2cf6aa2d10d05b8cf3fdd0a_arm64",
+                "product": {
+                  "name": "openshift4/ose-pod@sha256:a8cbaef00c8a839000e49c55843474ef5020cc7ab2cf6aa2d10d05b8cf3fdd0a_arm64",
+                  "product_id": "openshift4/ose-pod@sha256:a8cbaef00c8a839000e49c55843474ef5020cc7ab2cf6aa2d10d05b8cf3fdd0a_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-pod@sha256:a8cbaef00c8a839000e49c55843474ef5020cc7ab2cf6aa2d10d05b8cf3fdd0a?arch=arm64&repository_url=registry.redhat.io/openshift4/ose-pod&tag=v4.13.0-202401041732.p0.g9ed7eae.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-tests@sha256:b478437b4f3cdf52491b0c9fd85ec171752dc45415c165ab0e7103ea5bf55906_arm64",
+                "product": {
+                  "name": "openshift4/ose-tests@sha256:b478437b4f3cdf52491b0c9fd85ec171752dc45415c165ab0e7103ea5bf55906_arm64",
+                  "product_id": "openshift4/ose-tests@sha256:b478437b4f3cdf52491b0c9fd85ec171752dc45415c165ab0e7103ea5bf55906_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-tests@sha256:b478437b4f3cdf52491b0c9fd85ec171752dc45415c165ab0e7103ea5bf55906?arch=arm64&repository_url=registry.redhat.io/openshift4/ose-tests&tag=v4.13.0-202401100933.p0.g99b9d53.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-operator-lifecycle-manager@sha256:b380c6f0a092c12992b790b64b3118dfa3141753281b3cb65d718e27e01bca88_arm64",
+                "product": {
+                  "name": "openshift4/ose-operator-lifecycle-manager@sha256:b380c6f0a092c12992b790b64b3118dfa3141753281b3cb65d718e27e01bca88_arm64",
+                  "product_id": "openshift4/ose-operator-lifecycle-manager@sha256:b380c6f0a092c12992b790b64b3118dfa3141753281b3cb65d718e27e01bca88_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-operator-lifecycle-manager@sha256:b380c6f0a092c12992b790b64b3118dfa3141753281b3cb65d718e27e01bca88?arch=arm64&repository_url=registry.redhat.io/openshift4/ose-operator-lifecycle-manager&tag=v4.13.0-202401092010.p0.g2357f75.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-operator-registry@sha256:8955d2f48b0d837431f46a7d7a91f3217f3ce535c1d4b4cc81c22970cf0f05e6_arm64",
+                "product": {
+                  "name": "openshift4/ose-operator-registry@sha256:8955d2f48b0d837431f46a7d7a91f3217f3ce535c1d4b4cc81c22970cf0f05e6_arm64",
+                  "product_id": "openshift4/ose-operator-registry@sha256:8955d2f48b0d837431f46a7d7a91f3217f3ce535c1d4b4cc81c22970cf0f05e6_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-operator-registry@sha256:8955d2f48b0d837431f46a7d7a91f3217f3ce535c1d4b4cc81c22970cf0f05e6?arch=arm64&repository_url=registry.redhat.io/openshift4/ose-operator-registry&tag=v4.13.0-202401092010.p0.g2357f75.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-agent-installer-node-agent-rhel8@sha256:16e8bd6a4bfc6cac55541cbf038c475c54c8207ac82212766368d6df363967b0_arm64",
+                "product": {
+                  "name": "openshift4/ose-agent-installer-node-agent-rhel8@sha256:16e8bd6a4bfc6cac55541cbf038c475c54c8207ac82212766368d6df363967b0_arm64",
+                  "product_id": "openshift4/ose-agent-installer-node-agent-rhel8@sha256:16e8bd6a4bfc6cac55541cbf038c475c54c8207ac82212766368d6df363967b0_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-agent-installer-node-agent-rhel8@sha256:16e8bd6a4bfc6cac55541cbf038c475c54c8207ac82212766368d6df363967b0?arch=arm64&repository_url=registry.redhat.io/openshift4/ose-agent-installer-node-agent-rhel8&tag=v4.13.0-202401100933.p0.gc561104.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-aws-pod-identity-webhook-rhel8@sha256:f9fa6a423bc75e9864c2acef175a6cc5494d6175c70c9145c56b6eea5c953f2f_arm64",
+                "product": {
+                  "name": "openshift4/ose-aws-pod-identity-webhook-rhel8@sha256:f9fa6a423bc75e9864c2acef175a6cc5494d6175c70c9145c56b6eea5c953f2f_arm64",
+                  "product_id": "openshift4/ose-aws-pod-identity-webhook-rhel8@sha256:f9fa6a423bc75e9864c2acef175a6cc5494d6175c70c9145c56b6eea5c953f2f_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-aws-pod-identity-webhook-rhel8@sha256:f9fa6a423bc75e9864c2acef175a6cc5494d6175c70c9145c56b6eea5c953f2f?arch=arm64&repository_url=registry.redhat.io/openshift4/ose-aws-pod-identity-webhook-rhel8&tag=v4.13.0-202401042351.p0.g06140ab.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-machine-config-operator@sha256:b1207de1db941794219f728c3920b1b432113628d2e8fd2cc8f1b65598ff3082_arm64",
+                "product": {
+                  "name": "openshift4/ose-machine-config-operator@sha256:b1207de1db941794219f728c3920b1b432113628d2e8fd2cc8f1b65598ff3082_arm64",
+                  "product_id": "openshift4/ose-machine-config-operator@sha256:b1207de1db941794219f728c3920b1b432113628d2e8fd2cc8f1b65598ff3082_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-machine-config-operator@sha256:b1207de1db941794219f728c3920b1b432113628d2e8fd2cc8f1b65598ff3082?arch=arm64&repository_url=registry.redhat.io/openshift4/ose-machine-config-operator&tag=v4.13.0-202401090532.p0.g1d78dc8.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/network-tools-rhel8@sha256:cf3ee30fc23923f027f97f6611abd2eeb21164aa65697445664a6f860929f7e0_arm64",
+                "product": {
+                  "name": "openshift4/network-tools-rhel8@sha256:cf3ee30fc23923f027f97f6611abd2eeb21164aa65697445664a6f860929f7e0_arm64",
+                  "product_id": "openshift4/network-tools-rhel8@sha256:cf3ee30fc23923f027f97f6611abd2eeb21164aa65697445664a6f860929f7e0_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/network-tools-rhel8@sha256:cf3ee30fc23923f027f97f6611abd2eeb21164aa65697445664a6f860929f7e0?arch=arm64&repository_url=registry.redhat.io/openshift4/network-tools-rhel8&tag=v4.13.0-202401100933.p0.g073feda.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-ovn-kubernetes@sha256:64b4004e9af037ff3c1be4881e4d2893edfb76a01106bc355a0a93d56b701842_arm64",
+                "product": {
+                  "name": "openshift4/ose-ovn-kubernetes@sha256:64b4004e9af037ff3c1be4881e4d2893edfb76a01106bc355a0a93d56b701842_arm64",
+                  "product_id": "openshift4/ose-ovn-kubernetes@sha256:64b4004e9af037ff3c1be4881e4d2893edfb76a01106bc355a0a93d56b701842_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-ovn-kubernetes@sha256:64b4004e9af037ff3c1be4881e4d2893edfb76a01106bc355a0a93d56b701842?arch=arm64&repository_url=registry.redhat.io/openshift4/ose-ovn-kubernetes&tag=v4.13.0-202401100933.p0.g2eb8ec3.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-ovn-kubernetes-rhel9@sha256:64b4004e9af037ff3c1be4881e4d2893edfb76a01106bc355a0a93d56b701842_arm64",
+                "product": {
+                  "name": "openshift4/ose-ovn-kubernetes-rhel9@sha256:64b4004e9af037ff3c1be4881e4d2893edfb76a01106bc355a0a93d56b701842_arm64",
+                  "product_id": "openshift4/ose-ovn-kubernetes-rhel9@sha256:64b4004e9af037ff3c1be4881e4d2893edfb76a01106bc355a0a93d56b701842_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-ovn-kubernetes-rhel9@sha256:64b4004e9af037ff3c1be4881e4d2893edfb76a01106bc355a0a93d56b701842?arch=arm64&repository_url=registry.redhat.io/openshift4/ose-ovn-kubernetes-rhel9&tag=v4.13.0-202401100933.p0.g2eb8ec3.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-tools-rhel8@sha256:9494f1f3a59f31415a846395375396ea51ba4c541802d83879b5b1d331ca308f_arm64",
+                "product": {
+                  "name": "openshift4/ose-tools-rhel8@sha256:9494f1f3a59f31415a846395375396ea51ba4c541802d83879b5b1d331ca308f_arm64",
+                  "product_id": "openshift4/ose-tools-rhel8@sha256:9494f1f3a59f31415a846395375396ea51ba4c541802d83879b5b1d331ca308f_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-tools-rhel8@sha256:9494f1f3a59f31415a846395375396ea51ba4c541802d83879b5b1d331ca308f?arch=arm64&repository_url=registry.redhat.io/openshift4/ose-tools-rhel8&tag=v4.13.0-202401100933.p0.g7780c37.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:5e727715cdf8d52c95302d34bd6cd6bed6e22b48a1a77a060f264df30653b06f_arm64",
+                "product": {
+                  "name": "openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:5e727715cdf8d52c95302d34bd6cd6bed6e22b48a1a77a060f264df30653b06f_arm64",
+                  "product_id": "openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:5e727715cdf8d52c95302d34bd6cd6bed6e22b48a1a77a060f264df30653b06f_arm64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-ovn-kubernetes-microshift-rhel9@sha256:5e727715cdf8d52c95302d34bd6cd6bed6e22b48a1a77a060f264df30653b06f?arch=arm64&repository_url=registry.redhat.io/openshift4/ose-ovn-kubernetes-microshift-rhel9&tag=v4.13.0-202401090351.p0.g2eb8ec3.assembly.stream"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "arm64"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-cluster-network-operator@sha256:c7728b5165b2abdc9f63d3dd83c2894a9adc49a3e50a2c4c56662657c0e4562b_s390x",
+                "product": {
+                  "name": "openshift4/ose-cluster-network-operator@sha256:c7728b5165b2abdc9f63d3dd83c2894a9adc49a3e50a2c4c56662657c0e4562b_s390x",
+                  "product_id": "openshift4/ose-cluster-network-operator@sha256:c7728b5165b2abdc9f63d3dd83c2894a9adc49a3e50a2c4c56662657c0e4562b_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-cluster-network-operator@sha256:c7728b5165b2abdc9f63d3dd83c2894a9adc49a3e50a2c4c56662657c0e4562b?arch=s390x&repository_url=registry.redhat.io/openshift4/ose-cluster-network-operator&tag=v4.13.0-202401082312.p0.g903a0e0.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/driver-toolkit-rhel9@sha256:05d6234e1a633a3f4031c577c915da75cece186dcd270f89447a03f1fd250a1a_s390x",
+                "product": {
+                  "name": "openshift4/driver-toolkit-rhel9@sha256:05d6234e1a633a3f4031c577c915da75cece186dcd270f89447a03f1fd250a1a_s390x",
+                  "product_id": "openshift4/driver-toolkit-rhel9@sha256:05d6234e1a633a3f4031c577c915da75cece186dcd270f89447a03f1fd250a1a_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/driver-toolkit-rhel9@sha256:05d6234e1a633a3f4031c577c915da75cece186dcd270f89447a03f1fd250a1a?arch=s390x&repository_url=registry.redhat.io/openshift4/driver-toolkit-rhel9&tag=v4.13.0-202401100933.p0.gd719bdc.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-console@sha256:eeff56f6fe0956bbc6379bea152e65e6b98809db8e48022db5ef396094bfc25e_s390x",
+                "product": {
+                  "name": "openshift4/ose-console@sha256:eeff56f6fe0956bbc6379bea152e65e6b98809db8e48022db5ef396094bfc25e_s390x",
+                  "product_id": "openshift4/ose-console@sha256:eeff56f6fe0956bbc6379bea152e65e6b98809db8e48022db5ef396094bfc25e_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-console@sha256:eeff56f6fe0956bbc6379bea152e65e6b98809db8e48022db5ef396094bfc25e?arch=s390x&repository_url=registry.redhat.io/openshift4/ose-console&tag=v4.13.0-202401041553.p0.g071df39.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-hyperkube@sha256:474953b990b02f9f7141ef2316e6e4dfb654fa970be893bb11b0be4a6651003a_s390x",
+                "product": {
+                  "name": "openshift4/ose-hyperkube@sha256:474953b990b02f9f7141ef2316e6e4dfb654fa970be893bb11b0be4a6651003a_s390x",
+                  "product_id": "openshift4/ose-hyperkube@sha256:474953b990b02f9f7141ef2316e6e4dfb654fa970be893bb11b0be4a6651003a_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-hyperkube@sha256:474953b990b02f9f7141ef2316e6e4dfb654fa970be893bb11b0be4a6651003a?arch=s390x&repository_url=registry.redhat.io/openshift4/ose-hyperkube&tag=v4.13.0-202401041732.p0.g9ed7eae.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-pod@sha256:0f8f11ef796d5811303dd674d129b51b9e1209b984d6364a5f144135546195e3_s390x",
+                "product": {
+                  "name": "openshift4/ose-pod@sha256:0f8f11ef796d5811303dd674d129b51b9e1209b984d6364a5f144135546195e3_s390x",
+                  "product_id": "openshift4/ose-pod@sha256:0f8f11ef796d5811303dd674d129b51b9e1209b984d6364a5f144135546195e3_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-pod@sha256:0f8f11ef796d5811303dd674d129b51b9e1209b984d6364a5f144135546195e3?arch=s390x&repository_url=registry.redhat.io/openshift4/ose-pod&tag=v4.13.0-202401041732.p0.g9ed7eae.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-tests@sha256:7c4bd099e226d7bcaa446be037ba63ed0a58076c6cc428ad61160bea3d0b2304_s390x",
+                "product": {
+                  "name": "openshift4/ose-tests@sha256:7c4bd099e226d7bcaa446be037ba63ed0a58076c6cc428ad61160bea3d0b2304_s390x",
+                  "product_id": "openshift4/ose-tests@sha256:7c4bd099e226d7bcaa446be037ba63ed0a58076c6cc428ad61160bea3d0b2304_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-tests@sha256:7c4bd099e226d7bcaa446be037ba63ed0a58076c6cc428ad61160bea3d0b2304?arch=s390x&repository_url=registry.redhat.io/openshift4/ose-tests&tag=v4.13.0-202401100933.p0.g99b9d53.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-operator-lifecycle-manager@sha256:cb73249f2ebd7a06bcd473022dcaadfd6efa7be741ae372fff5c8c6dc584adb6_s390x",
+                "product": {
+                  "name": "openshift4/ose-operator-lifecycle-manager@sha256:cb73249f2ebd7a06bcd473022dcaadfd6efa7be741ae372fff5c8c6dc584adb6_s390x",
+                  "product_id": "openshift4/ose-operator-lifecycle-manager@sha256:cb73249f2ebd7a06bcd473022dcaadfd6efa7be741ae372fff5c8c6dc584adb6_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-operator-lifecycle-manager@sha256:cb73249f2ebd7a06bcd473022dcaadfd6efa7be741ae372fff5c8c6dc584adb6?arch=s390x&repository_url=registry.redhat.io/openshift4/ose-operator-lifecycle-manager&tag=v4.13.0-202401092010.p0.g2357f75.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-operator-registry@sha256:d8815fd567c4b8143e1a03c5398ce59ba8c00b63785d92ae268742bd5f55b53e_s390x",
+                "product": {
+                  "name": "openshift4/ose-operator-registry@sha256:d8815fd567c4b8143e1a03c5398ce59ba8c00b63785d92ae268742bd5f55b53e_s390x",
+                  "product_id": "openshift4/ose-operator-registry@sha256:d8815fd567c4b8143e1a03c5398ce59ba8c00b63785d92ae268742bd5f55b53e_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-operator-registry@sha256:d8815fd567c4b8143e1a03c5398ce59ba8c00b63785d92ae268742bd5f55b53e?arch=s390x&repository_url=registry.redhat.io/openshift4/ose-operator-registry&tag=v4.13.0-202401092010.p0.g2357f75.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-agent-installer-node-agent-rhel8@sha256:59b8105f8c827c6954f0ccb97321f851f387327ab7af6cea58d9fba71ceeac0b_s390x",
+                "product": {
+                  "name": "openshift4/ose-agent-installer-node-agent-rhel8@sha256:59b8105f8c827c6954f0ccb97321f851f387327ab7af6cea58d9fba71ceeac0b_s390x",
+                  "product_id": "openshift4/ose-agent-installer-node-agent-rhel8@sha256:59b8105f8c827c6954f0ccb97321f851f387327ab7af6cea58d9fba71ceeac0b_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-agent-installer-node-agent-rhel8@sha256:59b8105f8c827c6954f0ccb97321f851f387327ab7af6cea58d9fba71ceeac0b?arch=s390x&repository_url=registry.redhat.io/openshift4/ose-agent-installer-node-agent-rhel8&tag=v4.13.0-202401100933.p0.gc561104.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-machine-config-operator@sha256:8bdf00523bfc894c75c09fcf64201c4ab5aad4b6580a2ac554e0f446b99a4caf_s390x",
+                "product": {
+                  "name": "openshift4/ose-machine-config-operator@sha256:8bdf00523bfc894c75c09fcf64201c4ab5aad4b6580a2ac554e0f446b99a4caf_s390x",
+                  "product_id": "openshift4/ose-machine-config-operator@sha256:8bdf00523bfc894c75c09fcf64201c4ab5aad4b6580a2ac554e0f446b99a4caf_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-machine-config-operator@sha256:8bdf00523bfc894c75c09fcf64201c4ab5aad4b6580a2ac554e0f446b99a4caf?arch=s390x&repository_url=registry.redhat.io/openshift4/ose-machine-config-operator&tag=v4.13.0-202401090532.p0.g1d78dc8.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/network-tools-rhel8@sha256:473cce3ee81558458beb6778df4fad6024a75ff3ce212fbc9848d30732bfe0dd_s390x",
+                "product": {
+                  "name": "openshift4/network-tools-rhel8@sha256:473cce3ee81558458beb6778df4fad6024a75ff3ce212fbc9848d30732bfe0dd_s390x",
+                  "product_id": "openshift4/network-tools-rhel8@sha256:473cce3ee81558458beb6778df4fad6024a75ff3ce212fbc9848d30732bfe0dd_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/network-tools-rhel8@sha256:473cce3ee81558458beb6778df4fad6024a75ff3ce212fbc9848d30732bfe0dd?arch=s390x&repository_url=registry.redhat.io/openshift4/network-tools-rhel8&tag=v4.13.0-202401100933.p0.g073feda.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-ovn-kubernetes@sha256:321234a8c7571370282568e008bab4a21795b5bf0f44f12a6d16bf3544290a76_s390x",
+                "product": {
+                  "name": "openshift4/ose-ovn-kubernetes@sha256:321234a8c7571370282568e008bab4a21795b5bf0f44f12a6d16bf3544290a76_s390x",
+                  "product_id": "openshift4/ose-ovn-kubernetes@sha256:321234a8c7571370282568e008bab4a21795b5bf0f44f12a6d16bf3544290a76_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-ovn-kubernetes@sha256:321234a8c7571370282568e008bab4a21795b5bf0f44f12a6d16bf3544290a76?arch=s390x&repository_url=registry.redhat.io/openshift4/ose-ovn-kubernetes&tag=v4.13.0-202401100933.p0.g2eb8ec3.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-ovn-kubernetes-rhel9@sha256:321234a8c7571370282568e008bab4a21795b5bf0f44f12a6d16bf3544290a76_s390x",
+                "product": {
+                  "name": "openshift4/ose-ovn-kubernetes-rhel9@sha256:321234a8c7571370282568e008bab4a21795b5bf0f44f12a6d16bf3544290a76_s390x",
+                  "product_id": "openshift4/ose-ovn-kubernetes-rhel9@sha256:321234a8c7571370282568e008bab4a21795b5bf0f44f12a6d16bf3544290a76_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-ovn-kubernetes-rhel9@sha256:321234a8c7571370282568e008bab4a21795b5bf0f44f12a6d16bf3544290a76?arch=s390x&repository_url=registry.redhat.io/openshift4/ose-ovn-kubernetes-rhel9&tag=v4.13.0-202401100933.p0.g2eb8ec3.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-tools-rhel8@sha256:8f13c578cc8a0631a9a5de1cd88357045f3fb4766202e365c8022195cea4fb8e_s390x",
+                "product": {
+                  "name": "openshift4/ose-tools-rhel8@sha256:8f13c578cc8a0631a9a5de1cd88357045f3fb4766202e365c8022195cea4fb8e_s390x",
+                  "product_id": "openshift4/ose-tools-rhel8@sha256:8f13c578cc8a0631a9a5de1cd88357045f3fb4766202e365c8022195cea4fb8e_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-tools-rhel8@sha256:8f13c578cc8a0631a9a5de1cd88357045f3fb4766202e365c8022195cea4fb8e?arch=s390x&repository_url=registry.redhat.io/openshift4/ose-tools-rhel8&tag=v4.13.0-202401100933.p0.g7780c37.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:c5bf6c297ab451a47b9a40d1372313624f49578a63557035b486677bcb7df3e9_s390x",
+                "product": {
+                  "name": "openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:c5bf6c297ab451a47b9a40d1372313624f49578a63557035b486677bcb7df3e9_s390x",
+                  "product_id": "openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:c5bf6c297ab451a47b9a40d1372313624f49578a63557035b486677bcb7df3e9_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-ovn-kubernetes-microshift-rhel9@sha256:c5bf6c297ab451a47b9a40d1372313624f49578a63557035b486677bcb7df3e9?arch=s390x&repository_url=registry.redhat.io/openshift4/ose-ovn-kubernetes-microshift-rhel9&tag=v4.13.0-202401090351.p0.g2eb8ec3.assembly.stream"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "s390x"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-cluster-network-operator@sha256:637168d333dbd5970715b98f97946e85bc71485824c4dab2de82154efb8a472b_ppc64le",
+                "product": {
+                  "name": "openshift4/ose-cluster-network-operator@sha256:637168d333dbd5970715b98f97946e85bc71485824c4dab2de82154efb8a472b_ppc64le",
+                  "product_id": "openshift4/ose-cluster-network-operator@sha256:637168d333dbd5970715b98f97946e85bc71485824c4dab2de82154efb8a472b_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-cluster-network-operator@sha256:637168d333dbd5970715b98f97946e85bc71485824c4dab2de82154efb8a472b?arch=ppc64le&repository_url=registry.redhat.io/openshift4/ose-cluster-network-operator&tag=v4.13.0-202401082312.p0.g903a0e0.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/driver-toolkit-rhel9@sha256:f83f933fe00b8434456d7924e07f07a82ae38991270945fe96770982bdc414e7_ppc64le",
+                "product": {
+                  "name": "openshift4/driver-toolkit-rhel9@sha256:f83f933fe00b8434456d7924e07f07a82ae38991270945fe96770982bdc414e7_ppc64le",
+                  "product_id": "openshift4/driver-toolkit-rhel9@sha256:f83f933fe00b8434456d7924e07f07a82ae38991270945fe96770982bdc414e7_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/driver-toolkit-rhel9@sha256:f83f933fe00b8434456d7924e07f07a82ae38991270945fe96770982bdc414e7?arch=ppc64le&repository_url=registry.redhat.io/openshift4/driver-toolkit-rhel9&tag=v4.13.0-202401100933.p0.gd719bdc.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-console@sha256:483a932e552796c74a6ff394233710beb516f42c9b964fc13b3276f52cf4f7fe_ppc64le",
+                "product": {
+                  "name": "openshift4/ose-console@sha256:483a932e552796c74a6ff394233710beb516f42c9b964fc13b3276f52cf4f7fe_ppc64le",
+                  "product_id": "openshift4/ose-console@sha256:483a932e552796c74a6ff394233710beb516f42c9b964fc13b3276f52cf4f7fe_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-console@sha256:483a932e552796c74a6ff394233710beb516f42c9b964fc13b3276f52cf4f7fe?arch=ppc64le&repository_url=registry.redhat.io/openshift4/ose-console&tag=v4.13.0-202401041553.p0.g071df39.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-hyperkube@sha256:a3adda700381f8b2f22509e4ade1022d86244f2fc9d1f2d2158259ffedd3b516_ppc64le",
+                "product": {
+                  "name": "openshift4/ose-hyperkube@sha256:a3adda700381f8b2f22509e4ade1022d86244f2fc9d1f2d2158259ffedd3b516_ppc64le",
+                  "product_id": "openshift4/ose-hyperkube@sha256:a3adda700381f8b2f22509e4ade1022d86244f2fc9d1f2d2158259ffedd3b516_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-hyperkube@sha256:a3adda700381f8b2f22509e4ade1022d86244f2fc9d1f2d2158259ffedd3b516?arch=ppc64le&repository_url=registry.redhat.io/openshift4/ose-hyperkube&tag=v4.13.0-202401041732.p0.g9ed7eae.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-pod@sha256:75ac644f92e98c8e9616e2820aad3450b850a28112b152f79670db3379fb25b6_ppc64le",
+                "product": {
+                  "name": "openshift4/ose-pod@sha256:75ac644f92e98c8e9616e2820aad3450b850a28112b152f79670db3379fb25b6_ppc64le",
+                  "product_id": "openshift4/ose-pod@sha256:75ac644f92e98c8e9616e2820aad3450b850a28112b152f79670db3379fb25b6_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-pod@sha256:75ac644f92e98c8e9616e2820aad3450b850a28112b152f79670db3379fb25b6?arch=ppc64le&repository_url=registry.redhat.io/openshift4/ose-pod&tag=v4.13.0-202401041732.p0.g9ed7eae.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-tests@sha256:d5cc21b6082b532234a6f7c838618a94d200e290c85cff769f2407b29b92abb2_ppc64le",
+                "product": {
+                  "name": "openshift4/ose-tests@sha256:d5cc21b6082b532234a6f7c838618a94d200e290c85cff769f2407b29b92abb2_ppc64le",
+                  "product_id": "openshift4/ose-tests@sha256:d5cc21b6082b532234a6f7c838618a94d200e290c85cff769f2407b29b92abb2_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-tests@sha256:d5cc21b6082b532234a6f7c838618a94d200e290c85cff769f2407b29b92abb2?arch=ppc64le&repository_url=registry.redhat.io/openshift4/ose-tests&tag=v4.13.0-202401100933.p0.g99b9d53.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-operator-lifecycle-manager@sha256:00754781fdba3e206ac7187543c0c0833afdb8e765551a0316d7a66e8391e50f_ppc64le",
+                "product": {
+                  "name": "openshift4/ose-operator-lifecycle-manager@sha256:00754781fdba3e206ac7187543c0c0833afdb8e765551a0316d7a66e8391e50f_ppc64le",
+                  "product_id": "openshift4/ose-operator-lifecycle-manager@sha256:00754781fdba3e206ac7187543c0c0833afdb8e765551a0316d7a66e8391e50f_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-operator-lifecycle-manager@sha256:00754781fdba3e206ac7187543c0c0833afdb8e765551a0316d7a66e8391e50f?arch=ppc64le&repository_url=registry.redhat.io/openshift4/ose-operator-lifecycle-manager&tag=v4.13.0-202401092010.p0.g2357f75.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-operator-registry@sha256:be83a3c4b057d0a36e330c919f829de58c8bdd05f5dc11eaf85455fe9b0790b4_ppc64le",
+                "product": {
+                  "name": "openshift4/ose-operator-registry@sha256:be83a3c4b057d0a36e330c919f829de58c8bdd05f5dc11eaf85455fe9b0790b4_ppc64le",
+                  "product_id": "openshift4/ose-operator-registry@sha256:be83a3c4b057d0a36e330c919f829de58c8bdd05f5dc11eaf85455fe9b0790b4_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-operator-registry@sha256:be83a3c4b057d0a36e330c919f829de58c8bdd05f5dc11eaf85455fe9b0790b4?arch=ppc64le&repository_url=registry.redhat.io/openshift4/ose-operator-registry&tag=v4.13.0-202401092010.p0.g2357f75.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-agent-installer-node-agent-rhel8@sha256:b2e2bd59321c4301a2ee202090bf40b230ce7a1ee0871f9b0a30be9b37a8882d_ppc64le",
+                "product": {
+                  "name": "openshift4/ose-agent-installer-node-agent-rhel8@sha256:b2e2bd59321c4301a2ee202090bf40b230ce7a1ee0871f9b0a30be9b37a8882d_ppc64le",
+                  "product_id": "openshift4/ose-agent-installer-node-agent-rhel8@sha256:b2e2bd59321c4301a2ee202090bf40b230ce7a1ee0871f9b0a30be9b37a8882d_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-agent-installer-node-agent-rhel8@sha256:b2e2bd59321c4301a2ee202090bf40b230ce7a1ee0871f9b0a30be9b37a8882d?arch=ppc64le&repository_url=registry.redhat.io/openshift4/ose-agent-installer-node-agent-rhel8&tag=v4.13.0-202401100933.p0.gc561104.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-machine-config-operator@sha256:6445f27aac98ae77b4ae47e92cd44cdf69f92dae51e0cbdd4b1625c7e2188f9c_ppc64le",
+                "product": {
+                  "name": "openshift4/ose-machine-config-operator@sha256:6445f27aac98ae77b4ae47e92cd44cdf69f92dae51e0cbdd4b1625c7e2188f9c_ppc64le",
+                  "product_id": "openshift4/ose-machine-config-operator@sha256:6445f27aac98ae77b4ae47e92cd44cdf69f92dae51e0cbdd4b1625c7e2188f9c_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-machine-config-operator@sha256:6445f27aac98ae77b4ae47e92cd44cdf69f92dae51e0cbdd4b1625c7e2188f9c?arch=ppc64le&repository_url=registry.redhat.io/openshift4/ose-machine-config-operator&tag=v4.13.0-202401090532.p0.g1d78dc8.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/network-tools-rhel8@sha256:c401686e9a0c234f590cb505372ba94302b9a0e0b73867e39a0e12426ca6e6ff_ppc64le",
+                "product": {
+                  "name": "openshift4/network-tools-rhel8@sha256:c401686e9a0c234f590cb505372ba94302b9a0e0b73867e39a0e12426ca6e6ff_ppc64le",
+                  "product_id": "openshift4/network-tools-rhel8@sha256:c401686e9a0c234f590cb505372ba94302b9a0e0b73867e39a0e12426ca6e6ff_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/network-tools-rhel8@sha256:c401686e9a0c234f590cb505372ba94302b9a0e0b73867e39a0e12426ca6e6ff?arch=ppc64le&repository_url=registry.redhat.io/openshift4/network-tools-rhel8&tag=v4.13.0-202401100933.p0.g073feda.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-ovn-kubernetes@sha256:b1e9a7c0a5bc4645fc33c404732927bf288505b675c91ec8e4d2a06798630dc3_ppc64le",
+                "product": {
+                  "name": "openshift4/ose-ovn-kubernetes@sha256:b1e9a7c0a5bc4645fc33c404732927bf288505b675c91ec8e4d2a06798630dc3_ppc64le",
+                  "product_id": "openshift4/ose-ovn-kubernetes@sha256:b1e9a7c0a5bc4645fc33c404732927bf288505b675c91ec8e4d2a06798630dc3_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-ovn-kubernetes@sha256:b1e9a7c0a5bc4645fc33c404732927bf288505b675c91ec8e4d2a06798630dc3?arch=ppc64le&repository_url=registry.redhat.io/openshift4/ose-ovn-kubernetes&tag=v4.13.0-202401100933.p0.g2eb8ec3.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-ovn-kubernetes-rhel9@sha256:b1e9a7c0a5bc4645fc33c404732927bf288505b675c91ec8e4d2a06798630dc3_ppc64le",
+                "product": {
+                  "name": "openshift4/ose-ovn-kubernetes-rhel9@sha256:b1e9a7c0a5bc4645fc33c404732927bf288505b675c91ec8e4d2a06798630dc3_ppc64le",
+                  "product_id": "openshift4/ose-ovn-kubernetes-rhel9@sha256:b1e9a7c0a5bc4645fc33c404732927bf288505b675c91ec8e4d2a06798630dc3_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-ovn-kubernetes-rhel9@sha256:b1e9a7c0a5bc4645fc33c404732927bf288505b675c91ec8e4d2a06798630dc3?arch=ppc64le&repository_url=registry.redhat.io/openshift4/ose-ovn-kubernetes-rhel9&tag=v4.13.0-202401100933.p0.g2eb8ec3.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-tools-rhel8@sha256:8d14f86b472e43fbbafccf485ed173b7cda54ccb1971b3db0c0f06fac39f3146_ppc64le",
+                "product": {
+                  "name": "openshift4/ose-tools-rhel8@sha256:8d14f86b472e43fbbafccf485ed173b7cda54ccb1971b3db0c0f06fac39f3146_ppc64le",
+                  "product_id": "openshift4/ose-tools-rhel8@sha256:8d14f86b472e43fbbafccf485ed173b7cda54ccb1971b3db0c0f06fac39f3146_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-tools-rhel8@sha256:8d14f86b472e43fbbafccf485ed173b7cda54ccb1971b3db0c0f06fac39f3146?arch=ppc64le&repository_url=registry.redhat.io/openshift4/ose-tools-rhel8&tag=v4.13.0-202401100933.p0.g7780c37.assembly.stream"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:12be23429b3173f6183c822f3426a7c1871d8fa5dacfd03d6cb2ae8cd6dbaf63_ppc64le",
+                "product": {
+                  "name": "openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:12be23429b3173f6183c822f3426a7c1871d8fa5dacfd03d6cb2ae8cd6dbaf63_ppc64le",
+                  "product_id": "openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:12be23429b3173f6183c822f3426a7c1871d8fa5dacfd03d6cb2ae8cd6dbaf63_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ose-ovn-kubernetes-microshift-rhel9@sha256:12be23429b3173f6183c822f3426a7c1871d8fa5dacfd03d6cb2ae8cd6dbaf63?arch=ppc64le&repository_url=registry.redhat.io/openshift4/ose-ovn-kubernetes-microshift-rhel9&tag=v4.13.0-202401090351.p0.g2eb8ec3.assembly.stream"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "ppc64le"
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      }
+    ],
+    "relationships": [
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/network-tools-rhel8@sha256:473cce3ee81558458beb6778df4fad6024a75ff3ce212fbc9848d30732bfe0dd_s390x as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/network-tools-rhel8@sha256:473cce3ee81558458beb6778df4fad6024a75ff3ce212fbc9848d30732bfe0dd_s390x"
+        },
+        "product_reference": "openshift4/network-tools-rhel8@sha256:473cce3ee81558458beb6778df4fad6024a75ff3ce212fbc9848d30732bfe0dd_s390x",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/network-tools-rhel8@sha256:c401686e9a0c234f590cb505372ba94302b9a0e0b73867e39a0e12426ca6e6ff_ppc64le as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/network-tools-rhel8@sha256:c401686e9a0c234f590cb505372ba94302b9a0e0b73867e39a0e12426ca6e6ff_ppc64le"
+        },
+        "product_reference": "openshift4/network-tools-rhel8@sha256:c401686e9a0c234f590cb505372ba94302b9a0e0b73867e39a0e12426ca6e6ff_ppc64le",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/network-tools-rhel8@sha256:cf3ee30fc23923f027f97f6611abd2eeb21164aa65697445664a6f860929f7e0_arm64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/network-tools-rhel8@sha256:cf3ee30fc23923f027f97f6611abd2eeb21164aa65697445664a6f860929f7e0_arm64"
+        },
+        "product_reference": "openshift4/network-tools-rhel8@sha256:cf3ee30fc23923f027f97f6611abd2eeb21164aa65697445664a6f860929f7e0_arm64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/network-tools-rhel8@sha256:db1d60dd61f746fdc09a73c6520a2e32590bfbd22417f8d379d6a72a3b7505b7_amd64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/network-tools-rhel8@sha256:db1d60dd61f746fdc09a73c6520a2e32590bfbd22417f8d379d6a72a3b7505b7_amd64"
+        },
+        "product_reference": "openshift4/network-tools-rhel8@sha256:db1d60dd61f746fdc09a73c6520a2e32590bfbd22417f8d379d6a72a3b7505b7_amd64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-agent-installer-node-agent-rhel8@sha256:16e8bd6a4bfc6cac55541cbf038c475c54c8207ac82212766368d6df363967b0_arm64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-agent-installer-node-agent-rhel8@sha256:16e8bd6a4bfc6cac55541cbf038c475c54c8207ac82212766368d6df363967b0_arm64"
+        },
+        "product_reference": "openshift4/ose-agent-installer-node-agent-rhel8@sha256:16e8bd6a4bfc6cac55541cbf038c475c54c8207ac82212766368d6df363967b0_arm64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-agent-installer-node-agent-rhel8@sha256:59b8105f8c827c6954f0ccb97321f851f387327ab7af6cea58d9fba71ceeac0b_s390x as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-agent-installer-node-agent-rhel8@sha256:59b8105f8c827c6954f0ccb97321f851f387327ab7af6cea58d9fba71ceeac0b_s390x"
+        },
+        "product_reference": "openshift4/ose-agent-installer-node-agent-rhel8@sha256:59b8105f8c827c6954f0ccb97321f851f387327ab7af6cea58d9fba71ceeac0b_s390x",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-agent-installer-node-agent-rhel8@sha256:66d8c54aa10c766124c332a0203e717f7f8b120031b5933e977f5b12644dd11a_amd64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-agent-installer-node-agent-rhel8@sha256:66d8c54aa10c766124c332a0203e717f7f8b120031b5933e977f5b12644dd11a_amd64"
+        },
+        "product_reference": "openshift4/ose-agent-installer-node-agent-rhel8@sha256:66d8c54aa10c766124c332a0203e717f7f8b120031b5933e977f5b12644dd11a_amd64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-agent-installer-node-agent-rhel8@sha256:b2e2bd59321c4301a2ee202090bf40b230ce7a1ee0871f9b0a30be9b37a8882d_ppc64le as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-agent-installer-node-agent-rhel8@sha256:b2e2bd59321c4301a2ee202090bf40b230ce7a1ee0871f9b0a30be9b37a8882d_ppc64le"
+        },
+        "product_reference": "openshift4/ose-agent-installer-node-agent-rhel8@sha256:b2e2bd59321c4301a2ee202090bf40b230ce7a1ee0871f9b0a30be9b37a8882d_ppc64le",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-aws-pod-identity-webhook-rhel8@sha256:7a895374b2289119947ac54b49c34c2abd44e7f108411b65a0181e9965d5205f_amd64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-aws-pod-identity-webhook-rhel8@sha256:7a895374b2289119947ac54b49c34c2abd44e7f108411b65a0181e9965d5205f_amd64"
+        },
+        "product_reference": "openshift4/ose-aws-pod-identity-webhook-rhel8@sha256:7a895374b2289119947ac54b49c34c2abd44e7f108411b65a0181e9965d5205f_amd64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-aws-pod-identity-webhook-rhel8@sha256:f9fa6a423bc75e9864c2acef175a6cc5494d6175c70c9145c56b6eea5c953f2f_arm64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-aws-pod-identity-webhook-rhel8@sha256:f9fa6a423bc75e9864c2acef175a6cc5494d6175c70c9145c56b6eea5c953f2f_arm64"
+        },
+        "product_reference": "openshift4/ose-aws-pod-identity-webhook-rhel8@sha256:f9fa6a423bc75e9864c2acef175a6cc5494d6175c70c9145c56b6eea5c953f2f_arm64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-cluster-network-operator@sha256:434ad23d0d405b7e22456ed4b3f882b81ab77d5f35b6ef2db87c1374042e0a86_arm64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-cluster-network-operator@sha256:434ad23d0d405b7e22456ed4b3f882b81ab77d5f35b6ef2db87c1374042e0a86_arm64"
+        },
+        "product_reference": "openshift4/ose-cluster-network-operator@sha256:434ad23d0d405b7e22456ed4b3f882b81ab77d5f35b6ef2db87c1374042e0a86_arm64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-cluster-network-operator@sha256:637168d333dbd5970715b98f97946e85bc71485824c4dab2de82154efb8a472b_ppc64le as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-cluster-network-operator@sha256:637168d333dbd5970715b98f97946e85bc71485824c4dab2de82154efb8a472b_ppc64le"
+        },
+        "product_reference": "openshift4/ose-cluster-network-operator@sha256:637168d333dbd5970715b98f97946e85bc71485824c4dab2de82154efb8a472b_ppc64le",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-cluster-network-operator@sha256:abc6213b793b35a404eeec68d5667bd6e108879ee86a182fc6efe5efae463e1f_amd64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-cluster-network-operator@sha256:abc6213b793b35a404eeec68d5667bd6e108879ee86a182fc6efe5efae463e1f_amd64"
+        },
+        "product_reference": "openshift4/ose-cluster-network-operator@sha256:abc6213b793b35a404eeec68d5667bd6e108879ee86a182fc6efe5efae463e1f_amd64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-cluster-network-operator@sha256:c7728b5165b2abdc9f63d3dd83c2894a9adc49a3e50a2c4c56662657c0e4562b_s390x as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-cluster-network-operator@sha256:c7728b5165b2abdc9f63d3dd83c2894a9adc49a3e50a2c4c56662657c0e4562b_s390x"
+        },
+        "product_reference": "openshift4/ose-cluster-network-operator@sha256:c7728b5165b2abdc9f63d3dd83c2894a9adc49a3e50a2c4c56662657c0e4562b_s390x",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-console@sha256:483a932e552796c74a6ff394233710beb516f42c9b964fc13b3276f52cf4f7fe_ppc64le as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-console@sha256:483a932e552796c74a6ff394233710beb516f42c9b964fc13b3276f52cf4f7fe_ppc64le"
+        },
+        "product_reference": "openshift4/ose-console@sha256:483a932e552796c74a6ff394233710beb516f42c9b964fc13b3276f52cf4f7fe_ppc64le",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-console@sha256:7c69be58deb42c078baaa9f8b4e90f327a38b79a3b00a24ddb104c6727fc8a7e_amd64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-console@sha256:7c69be58deb42c078baaa9f8b4e90f327a38b79a3b00a24ddb104c6727fc8a7e_amd64"
+        },
+        "product_reference": "openshift4/ose-console@sha256:7c69be58deb42c078baaa9f8b4e90f327a38b79a3b00a24ddb104c6727fc8a7e_amd64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-console@sha256:afab7d8212ee932132217b76ba99cee7c44369283634021f9c6c1956f83c4c98_arm64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-console@sha256:afab7d8212ee932132217b76ba99cee7c44369283634021f9c6c1956f83c4c98_arm64"
+        },
+        "product_reference": "openshift4/ose-console@sha256:afab7d8212ee932132217b76ba99cee7c44369283634021f9c6c1956f83c4c98_arm64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-console@sha256:eeff56f6fe0956bbc6379bea152e65e6b98809db8e48022db5ef396094bfc25e_s390x as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-console@sha256:eeff56f6fe0956bbc6379bea152e65e6b98809db8e48022db5ef396094bfc25e_s390x"
+        },
+        "product_reference": "openshift4/ose-console@sha256:eeff56f6fe0956bbc6379bea152e65e6b98809db8e48022db5ef396094bfc25e_s390x",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-hyperkube@sha256:474953b990b02f9f7141ef2316e6e4dfb654fa970be893bb11b0be4a6651003a_s390x as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-hyperkube@sha256:474953b990b02f9f7141ef2316e6e4dfb654fa970be893bb11b0be4a6651003a_s390x"
+        },
+        "product_reference": "openshift4/ose-hyperkube@sha256:474953b990b02f9f7141ef2316e6e4dfb654fa970be893bb11b0be4a6651003a_s390x",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-hyperkube@sha256:a3adda700381f8b2f22509e4ade1022d86244f2fc9d1f2d2158259ffedd3b516_ppc64le as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-hyperkube@sha256:a3adda700381f8b2f22509e4ade1022d86244f2fc9d1f2d2158259ffedd3b516_ppc64le"
+        },
+        "product_reference": "openshift4/ose-hyperkube@sha256:a3adda700381f8b2f22509e4ade1022d86244f2fc9d1f2d2158259ffedd3b516_ppc64le",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-hyperkube@sha256:bbdf4f84891e1774cca9e07037e17b40b09737a2bf7af8ad292ded95c3c458ff_arm64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-hyperkube@sha256:bbdf4f84891e1774cca9e07037e17b40b09737a2bf7af8ad292ded95c3c458ff_arm64"
+        },
+        "product_reference": "openshift4/ose-hyperkube@sha256:bbdf4f84891e1774cca9e07037e17b40b09737a2bf7af8ad292ded95c3c458ff_arm64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-hyperkube@sha256:c59ba2f520589740b92799483837a438208a352854391173e0a87c4e8c6906f9_amd64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-hyperkube@sha256:c59ba2f520589740b92799483837a438208a352854391173e0a87c4e8c6906f9_amd64"
+        },
+        "product_reference": "openshift4/ose-hyperkube@sha256:c59ba2f520589740b92799483837a438208a352854391173e0a87c4e8c6906f9_amd64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-machine-config-operator@sha256:1bf04c081f10010a77c3bbdf098b48f94333138c0ed614be39594ccbf2c11a7b_amd64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-machine-config-operator@sha256:1bf04c081f10010a77c3bbdf098b48f94333138c0ed614be39594ccbf2c11a7b_amd64"
+        },
+        "product_reference": "openshift4/ose-machine-config-operator@sha256:1bf04c081f10010a77c3bbdf098b48f94333138c0ed614be39594ccbf2c11a7b_amd64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-machine-config-operator@sha256:6445f27aac98ae77b4ae47e92cd44cdf69f92dae51e0cbdd4b1625c7e2188f9c_ppc64le as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-machine-config-operator@sha256:6445f27aac98ae77b4ae47e92cd44cdf69f92dae51e0cbdd4b1625c7e2188f9c_ppc64le"
+        },
+        "product_reference": "openshift4/ose-machine-config-operator@sha256:6445f27aac98ae77b4ae47e92cd44cdf69f92dae51e0cbdd4b1625c7e2188f9c_ppc64le",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-machine-config-operator@sha256:8bdf00523bfc894c75c09fcf64201c4ab5aad4b6580a2ac554e0f446b99a4caf_s390x as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-machine-config-operator@sha256:8bdf00523bfc894c75c09fcf64201c4ab5aad4b6580a2ac554e0f446b99a4caf_s390x"
+        },
+        "product_reference": "openshift4/ose-machine-config-operator@sha256:8bdf00523bfc894c75c09fcf64201c4ab5aad4b6580a2ac554e0f446b99a4caf_s390x",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-machine-config-operator@sha256:b1207de1db941794219f728c3920b1b432113628d2e8fd2cc8f1b65598ff3082_arm64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-machine-config-operator@sha256:b1207de1db941794219f728c3920b1b432113628d2e8fd2cc8f1b65598ff3082_arm64"
+        },
+        "product_reference": "openshift4/ose-machine-config-operator@sha256:b1207de1db941794219f728c3920b1b432113628d2e8fd2cc8f1b65598ff3082_arm64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-operator-lifecycle-manager@sha256:00754781fdba3e206ac7187543c0c0833afdb8e765551a0316d7a66e8391e50f_ppc64le as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-operator-lifecycle-manager@sha256:00754781fdba3e206ac7187543c0c0833afdb8e765551a0316d7a66e8391e50f_ppc64le"
+        },
+        "product_reference": "openshift4/ose-operator-lifecycle-manager@sha256:00754781fdba3e206ac7187543c0c0833afdb8e765551a0316d7a66e8391e50f_ppc64le",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-operator-lifecycle-manager@sha256:101373b564e354a6d420654c1338556e33acfc6a64f6d53e6c2bb6d03a9c6dbb_amd64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-operator-lifecycle-manager@sha256:101373b564e354a6d420654c1338556e33acfc6a64f6d53e6c2bb6d03a9c6dbb_amd64"
+        },
+        "product_reference": "openshift4/ose-operator-lifecycle-manager@sha256:101373b564e354a6d420654c1338556e33acfc6a64f6d53e6c2bb6d03a9c6dbb_amd64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-operator-lifecycle-manager@sha256:b380c6f0a092c12992b790b64b3118dfa3141753281b3cb65d718e27e01bca88_arm64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-operator-lifecycle-manager@sha256:b380c6f0a092c12992b790b64b3118dfa3141753281b3cb65d718e27e01bca88_arm64"
+        },
+        "product_reference": "openshift4/ose-operator-lifecycle-manager@sha256:b380c6f0a092c12992b790b64b3118dfa3141753281b3cb65d718e27e01bca88_arm64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-operator-lifecycle-manager@sha256:cb73249f2ebd7a06bcd473022dcaadfd6efa7be741ae372fff5c8c6dc584adb6_s390x as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-operator-lifecycle-manager@sha256:cb73249f2ebd7a06bcd473022dcaadfd6efa7be741ae372fff5c8c6dc584adb6_s390x"
+        },
+        "product_reference": "openshift4/ose-operator-lifecycle-manager@sha256:cb73249f2ebd7a06bcd473022dcaadfd6efa7be741ae372fff5c8c6dc584adb6_s390x",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-operator-registry@sha256:8955d2f48b0d837431f46a7d7a91f3217f3ce535c1d4b4cc81c22970cf0f05e6_arm64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-operator-registry@sha256:8955d2f48b0d837431f46a7d7a91f3217f3ce535c1d4b4cc81c22970cf0f05e6_arm64"
+        },
+        "product_reference": "openshift4/ose-operator-registry@sha256:8955d2f48b0d837431f46a7d7a91f3217f3ce535c1d4b4cc81c22970cf0f05e6_arm64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-operator-registry@sha256:9eebd925df7317c2cecae7569d3484849e65e7eebfe4240abc82ab62644fdb47_amd64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-operator-registry@sha256:9eebd925df7317c2cecae7569d3484849e65e7eebfe4240abc82ab62644fdb47_amd64"
+        },
+        "product_reference": "openshift4/ose-operator-registry@sha256:9eebd925df7317c2cecae7569d3484849e65e7eebfe4240abc82ab62644fdb47_amd64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-operator-registry@sha256:be83a3c4b057d0a36e330c919f829de58c8bdd05f5dc11eaf85455fe9b0790b4_ppc64le as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-operator-registry@sha256:be83a3c4b057d0a36e330c919f829de58c8bdd05f5dc11eaf85455fe9b0790b4_ppc64le"
+        },
+        "product_reference": "openshift4/ose-operator-registry@sha256:be83a3c4b057d0a36e330c919f829de58c8bdd05f5dc11eaf85455fe9b0790b4_ppc64le",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-operator-registry@sha256:d8815fd567c4b8143e1a03c5398ce59ba8c00b63785d92ae268742bd5f55b53e_s390x as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-operator-registry@sha256:d8815fd567c4b8143e1a03c5398ce59ba8c00b63785d92ae268742bd5f55b53e_s390x"
+        },
+        "product_reference": "openshift4/ose-operator-registry@sha256:d8815fd567c4b8143e1a03c5398ce59ba8c00b63785d92ae268742bd5f55b53e_s390x",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-pod@sha256:0f8f11ef796d5811303dd674d129b51b9e1209b984d6364a5f144135546195e3_s390x as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-pod@sha256:0f8f11ef796d5811303dd674d129b51b9e1209b984d6364a5f144135546195e3_s390x"
+        },
+        "product_reference": "openshift4/ose-pod@sha256:0f8f11ef796d5811303dd674d129b51b9e1209b984d6364a5f144135546195e3_s390x",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-pod@sha256:75ac644f92e98c8e9616e2820aad3450b850a28112b152f79670db3379fb25b6_ppc64le as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-pod@sha256:75ac644f92e98c8e9616e2820aad3450b850a28112b152f79670db3379fb25b6_ppc64le"
+        },
+        "product_reference": "openshift4/ose-pod@sha256:75ac644f92e98c8e9616e2820aad3450b850a28112b152f79670db3379fb25b6_ppc64le",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-pod@sha256:7a53f216d1969028e231cc54a6df6ae776c12f65866e6b223ced540f531e7963_amd64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-pod@sha256:7a53f216d1969028e231cc54a6df6ae776c12f65866e6b223ced540f531e7963_amd64"
+        },
+        "product_reference": "openshift4/ose-pod@sha256:7a53f216d1969028e231cc54a6df6ae776c12f65866e6b223ced540f531e7963_amd64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-pod@sha256:a8cbaef00c8a839000e49c55843474ef5020cc7ab2cf6aa2d10d05b8cf3fdd0a_arm64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-pod@sha256:a8cbaef00c8a839000e49c55843474ef5020cc7ab2cf6aa2d10d05b8cf3fdd0a_arm64"
+        },
+        "product_reference": "openshift4/ose-pod@sha256:a8cbaef00c8a839000e49c55843474ef5020cc7ab2cf6aa2d10d05b8cf3fdd0a_arm64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-tests@sha256:7c4bd099e226d7bcaa446be037ba63ed0a58076c6cc428ad61160bea3d0b2304_s390x as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-tests@sha256:7c4bd099e226d7bcaa446be037ba63ed0a58076c6cc428ad61160bea3d0b2304_s390x"
+        },
+        "product_reference": "openshift4/ose-tests@sha256:7c4bd099e226d7bcaa446be037ba63ed0a58076c6cc428ad61160bea3d0b2304_s390x",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-tests@sha256:a4084c4597803ebe3d1a226634d5322091855f0da34676a0538dd5ae21434bd0_amd64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-tests@sha256:a4084c4597803ebe3d1a226634d5322091855f0da34676a0538dd5ae21434bd0_amd64"
+        },
+        "product_reference": "openshift4/ose-tests@sha256:a4084c4597803ebe3d1a226634d5322091855f0da34676a0538dd5ae21434bd0_amd64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-tests@sha256:b478437b4f3cdf52491b0c9fd85ec171752dc45415c165ab0e7103ea5bf55906_arm64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-tests@sha256:b478437b4f3cdf52491b0c9fd85ec171752dc45415c165ab0e7103ea5bf55906_arm64"
+        },
+        "product_reference": "openshift4/ose-tests@sha256:b478437b4f3cdf52491b0c9fd85ec171752dc45415c165ab0e7103ea5bf55906_arm64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-tests@sha256:d5cc21b6082b532234a6f7c838618a94d200e290c85cff769f2407b29b92abb2_ppc64le as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-tests@sha256:d5cc21b6082b532234a6f7c838618a94d200e290c85cff769f2407b29b92abb2_ppc64le"
+        },
+        "product_reference": "openshift4/ose-tests@sha256:d5cc21b6082b532234a6f7c838618a94d200e290c85cff769f2407b29b92abb2_ppc64le",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-tools-rhel8@sha256:8d14f86b472e43fbbafccf485ed173b7cda54ccb1971b3db0c0f06fac39f3146_ppc64le as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-tools-rhel8@sha256:8d14f86b472e43fbbafccf485ed173b7cda54ccb1971b3db0c0f06fac39f3146_ppc64le"
+        },
+        "product_reference": "openshift4/ose-tools-rhel8@sha256:8d14f86b472e43fbbafccf485ed173b7cda54ccb1971b3db0c0f06fac39f3146_ppc64le",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-tools-rhel8@sha256:8f13c578cc8a0631a9a5de1cd88357045f3fb4766202e365c8022195cea4fb8e_s390x as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-tools-rhel8@sha256:8f13c578cc8a0631a9a5de1cd88357045f3fb4766202e365c8022195cea4fb8e_s390x"
+        },
+        "product_reference": "openshift4/ose-tools-rhel8@sha256:8f13c578cc8a0631a9a5de1cd88357045f3fb4766202e365c8022195cea4fb8e_s390x",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-tools-rhel8@sha256:9494f1f3a59f31415a846395375396ea51ba4c541802d83879b5b1d331ca308f_arm64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-tools-rhel8@sha256:9494f1f3a59f31415a846395375396ea51ba4c541802d83879b5b1d331ca308f_arm64"
+        },
+        "product_reference": "openshift4/ose-tools-rhel8@sha256:9494f1f3a59f31415a846395375396ea51ba4c541802d83879b5b1d331ca308f_arm64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-tools-rhel8@sha256:b21c1ec26ab2065396b220132715b383d86974941a9f7c59d079aaf16cfb24db_amd64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "8Base-RHOSE-4.13:openshift4/ose-tools-rhel8@sha256:b21c1ec26ab2065396b220132715b383d86974941a9f7c59d079aaf16cfb24db_amd64"
+        },
+        "product_reference": "openshift4/ose-tools-rhel8@sha256:b21c1ec26ab2065396b220132715b383d86974941a9f7c59d079aaf16cfb24db_amd64",
+        "relates_to_product_reference": "8Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/driver-toolkit-rhel9@sha256:05d6234e1a633a3f4031c577c915da75cece186dcd270f89447a03f1fd250a1a_s390x as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "9Base-RHOSE-4.13:openshift4/driver-toolkit-rhel9@sha256:05d6234e1a633a3f4031c577c915da75cece186dcd270f89447a03f1fd250a1a_s390x"
+        },
+        "product_reference": "openshift4/driver-toolkit-rhel9@sha256:05d6234e1a633a3f4031c577c915da75cece186dcd270f89447a03f1fd250a1a_s390x",
+        "relates_to_product_reference": "9Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/driver-toolkit-rhel9@sha256:1670b7ed6745cfab81e2f472e9e77834e0fb6dc792b017bccda1217403dc0247_amd64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "9Base-RHOSE-4.13:openshift4/driver-toolkit-rhel9@sha256:1670b7ed6745cfab81e2f472e9e77834e0fb6dc792b017bccda1217403dc0247_amd64"
+        },
+        "product_reference": "openshift4/driver-toolkit-rhel9@sha256:1670b7ed6745cfab81e2f472e9e77834e0fb6dc792b017bccda1217403dc0247_amd64",
+        "relates_to_product_reference": "9Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/driver-toolkit-rhel9@sha256:f83f933fe00b8434456d7924e07f07a82ae38991270945fe96770982bdc414e7_ppc64le as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "9Base-RHOSE-4.13:openshift4/driver-toolkit-rhel9@sha256:f83f933fe00b8434456d7924e07f07a82ae38991270945fe96770982bdc414e7_ppc64le"
+        },
+        "product_reference": "openshift4/driver-toolkit-rhel9@sha256:f83f933fe00b8434456d7924e07f07a82ae38991270945fe96770982bdc414e7_ppc64le",
+        "relates_to_product_reference": "9Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/driver-toolkit-rhel9@sha256:fbe0e1f721cbc7db4f46191f2e96cd3e439d4de6af3e4c3656e90b32d6cb2da2_arm64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "9Base-RHOSE-4.13:openshift4/driver-toolkit-rhel9@sha256:fbe0e1f721cbc7db4f46191f2e96cd3e439d4de6af3e4c3656e90b32d6cb2da2_arm64"
+        },
+        "product_reference": "openshift4/driver-toolkit-rhel9@sha256:fbe0e1f721cbc7db4f46191f2e96cd3e439d4de6af3e4c3656e90b32d6cb2da2_arm64",
+        "relates_to_product_reference": "9Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-ironic-machine-os-downloader-rhel9@sha256:5be223aa82849a0f6b14c3fd581ee34b065d439b601a0bb1bcc2659a258afb39_arm64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "9Base-RHOSE-4.13:openshift4/ose-ironic-machine-os-downloader-rhel9@sha256:5be223aa82849a0f6b14c3fd581ee34b065d439b601a0bb1bcc2659a258afb39_arm64"
+        },
+        "product_reference": "openshift4/ose-ironic-machine-os-downloader-rhel9@sha256:5be223aa82849a0f6b14c3fd581ee34b065d439b601a0bb1bcc2659a258afb39_arm64",
+        "relates_to_product_reference": "9Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-ironic-machine-os-downloader-rhel9@sha256:7486da69bbcacaf43bea2cb8d681e556084aaccfd388e1ad4383cbba517d142b_amd64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "9Base-RHOSE-4.13:openshift4/ose-ironic-machine-os-downloader-rhel9@sha256:7486da69bbcacaf43bea2cb8d681e556084aaccfd388e1ad4383cbba517d142b_amd64"
+        },
+        "product_reference": "openshift4/ose-ironic-machine-os-downloader-rhel9@sha256:7486da69bbcacaf43bea2cb8d681e556084aaccfd388e1ad4383cbba517d142b_amd64",
+        "relates_to_product_reference": "9Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:12be23429b3173f6183c822f3426a7c1871d8fa5dacfd03d6cb2ae8cd6dbaf63_ppc64le as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:12be23429b3173f6183c822f3426a7c1871d8fa5dacfd03d6cb2ae8cd6dbaf63_ppc64le"
+        },
+        "product_reference": "openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:12be23429b3173f6183c822f3426a7c1871d8fa5dacfd03d6cb2ae8cd6dbaf63_ppc64le",
+        "relates_to_product_reference": "9Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:5e727715cdf8d52c95302d34bd6cd6bed6e22b48a1a77a060f264df30653b06f_arm64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:5e727715cdf8d52c95302d34bd6cd6bed6e22b48a1a77a060f264df30653b06f_arm64"
+        },
+        "product_reference": "openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:5e727715cdf8d52c95302d34bd6cd6bed6e22b48a1a77a060f264df30653b06f_arm64",
+        "relates_to_product_reference": "9Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:c5bf6c297ab451a47b9a40d1372313624f49578a63557035b486677bcb7df3e9_s390x as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:c5bf6c297ab451a47b9a40d1372313624f49578a63557035b486677bcb7df3e9_s390x"
+        },
+        "product_reference": "openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:c5bf6c297ab451a47b9a40d1372313624f49578a63557035b486677bcb7df3e9_s390x",
+        "relates_to_product_reference": "9Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:d87068e6d8dc13555d9d4073ece644733f1cd7e4b9b6a4fa4b4676339fc8e5de_amd64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:d87068e6d8dc13555d9d4073ece644733f1cd7e4b9b6a4fa4b4676339fc8e5de_amd64"
+        },
+        "product_reference": "openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:d87068e6d8dc13555d9d4073ece644733f1cd7e4b9b6a4fa4b4676339fc8e5de_amd64",
+        "relates_to_product_reference": "9Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-ovn-kubernetes-rhel9@sha256:321234a8c7571370282568e008bab4a21795b5bf0f44f12a6d16bf3544290a76_s390x as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-rhel9@sha256:321234a8c7571370282568e008bab4a21795b5bf0f44f12a6d16bf3544290a76_s390x"
+        },
+        "product_reference": "openshift4/ose-ovn-kubernetes-rhel9@sha256:321234a8c7571370282568e008bab4a21795b5bf0f44f12a6d16bf3544290a76_s390x",
+        "relates_to_product_reference": "9Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-ovn-kubernetes-rhel9@sha256:64b4004e9af037ff3c1be4881e4d2893edfb76a01106bc355a0a93d56b701842_arm64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-rhel9@sha256:64b4004e9af037ff3c1be4881e4d2893edfb76a01106bc355a0a93d56b701842_arm64"
+        },
+        "product_reference": "openshift4/ose-ovn-kubernetes-rhel9@sha256:64b4004e9af037ff3c1be4881e4d2893edfb76a01106bc355a0a93d56b701842_arm64",
+        "relates_to_product_reference": "9Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-ovn-kubernetes-rhel9@sha256:afe287daf5bbcc2762d326a84bcf712c2f3818fb88a0f72cb2dbebcbb453c209_amd64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-rhel9@sha256:afe287daf5bbcc2762d326a84bcf712c2f3818fb88a0f72cb2dbebcbb453c209_amd64"
+        },
+        "product_reference": "openshift4/ose-ovn-kubernetes-rhel9@sha256:afe287daf5bbcc2762d326a84bcf712c2f3818fb88a0f72cb2dbebcbb453c209_amd64",
+        "relates_to_product_reference": "9Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-ovn-kubernetes-rhel9@sha256:b1e9a7c0a5bc4645fc33c404732927bf288505b675c91ec8e4d2a06798630dc3_ppc64le as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-rhel9@sha256:b1e9a7c0a5bc4645fc33c404732927bf288505b675c91ec8e4d2a06798630dc3_ppc64le"
+        },
+        "product_reference": "openshift4/ose-ovn-kubernetes-rhel9@sha256:b1e9a7c0a5bc4645fc33c404732927bf288505b675c91ec8e4d2a06798630dc3_ppc64le",
+        "relates_to_product_reference": "9Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-ovn-kubernetes@sha256:321234a8c7571370282568e008bab4a21795b5bf0f44f12a6d16bf3544290a76_s390x as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes@sha256:321234a8c7571370282568e008bab4a21795b5bf0f44f12a6d16bf3544290a76_s390x"
+        },
+        "product_reference": "openshift4/ose-ovn-kubernetes@sha256:321234a8c7571370282568e008bab4a21795b5bf0f44f12a6d16bf3544290a76_s390x",
+        "relates_to_product_reference": "9Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-ovn-kubernetes@sha256:64b4004e9af037ff3c1be4881e4d2893edfb76a01106bc355a0a93d56b701842_arm64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes@sha256:64b4004e9af037ff3c1be4881e4d2893edfb76a01106bc355a0a93d56b701842_arm64"
+        },
+        "product_reference": "openshift4/ose-ovn-kubernetes@sha256:64b4004e9af037ff3c1be4881e4d2893edfb76a01106bc355a0a93d56b701842_arm64",
+        "relates_to_product_reference": "9Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-ovn-kubernetes@sha256:afe287daf5bbcc2762d326a84bcf712c2f3818fb88a0f72cb2dbebcbb453c209_amd64 as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes@sha256:afe287daf5bbcc2762d326a84bcf712c2f3818fb88a0f72cb2dbebcbb453c209_amd64"
+        },
+        "product_reference": "openshift4/ose-ovn-kubernetes@sha256:afe287daf5bbcc2762d326a84bcf712c2f3818fb88a0f72cb2dbebcbb453c209_amd64",
+        "relates_to_product_reference": "9Base-RHOSE-4.13"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "openshift4/ose-ovn-kubernetes@sha256:b1e9a7c0a5bc4645fc33c404732927bf288505b675c91ec8e4d2a06798630dc3_ppc64le as a component of Red Hat OpenShift Container Platform 4.13",
+          "product_id": "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes@sha256:b1e9a7c0a5bc4645fc33c404732927bf288505b675c91ec8e4d2a06798630dc3_ppc64le"
+        },
+        "product_reference": "openshift4/ose-ovn-kubernetes@sha256:b1e9a7c0a5bc4645fc33c404732927bf288505b675c91ec8e4d2a06798630dc3_ppc64le",
+        "relates_to_product_reference": "9Base-RHOSE-4.13"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2021-20329",
+      "cwe": {
+        "id": "CWE-20",
+        "name": "Improper Input Validation"
+      },
+      "discovery_date": "2021-06-10T00:00:00+00:00",
+      "flags": [
+        {
+          "label": "vulnerable_code_not_present",
+          "product_ids": [
+            "8Base-RHOSE-4.13:openshift4/network-tools-rhel8@sha256:473cce3ee81558458beb6778df4fad6024a75ff3ce212fbc9848d30732bfe0dd_s390x",
+            "8Base-RHOSE-4.13:openshift4/network-tools-rhel8@sha256:c401686e9a0c234f590cb505372ba94302b9a0e0b73867e39a0e12426ca6e6ff_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/network-tools-rhel8@sha256:cf3ee30fc23923f027f97f6611abd2eeb21164aa65697445664a6f860929f7e0_arm64",
+            "8Base-RHOSE-4.13:openshift4/network-tools-rhel8@sha256:db1d60dd61f746fdc09a73c6520a2e32590bfbd22417f8d379d6a72a3b7505b7_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-agent-installer-node-agent-rhel8@sha256:16e8bd6a4bfc6cac55541cbf038c475c54c8207ac82212766368d6df363967b0_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-agent-installer-node-agent-rhel8@sha256:59b8105f8c827c6954f0ccb97321f851f387327ab7af6cea58d9fba71ceeac0b_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-agent-installer-node-agent-rhel8@sha256:66d8c54aa10c766124c332a0203e717f7f8b120031b5933e977f5b12644dd11a_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-agent-installer-node-agent-rhel8@sha256:b2e2bd59321c4301a2ee202090bf40b230ce7a1ee0871f9b0a30be9b37a8882d_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-aws-pod-identity-webhook-rhel8@sha256:7a895374b2289119947ac54b49c34c2abd44e7f108411b65a0181e9965d5205f_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-aws-pod-identity-webhook-rhel8@sha256:f9fa6a423bc75e9864c2acef175a6cc5494d6175c70c9145c56b6eea5c953f2f_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-cluster-network-operator@sha256:434ad23d0d405b7e22456ed4b3f882b81ab77d5f35b6ef2db87c1374042e0a86_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-cluster-network-operator@sha256:637168d333dbd5970715b98f97946e85bc71485824c4dab2de82154efb8a472b_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-cluster-network-operator@sha256:abc6213b793b35a404eeec68d5667bd6e108879ee86a182fc6efe5efae463e1f_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-cluster-network-operator@sha256:c7728b5165b2abdc9f63d3dd83c2894a9adc49a3e50a2c4c56662657c0e4562b_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-console@sha256:483a932e552796c74a6ff394233710beb516f42c9b964fc13b3276f52cf4f7fe_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-console@sha256:7c69be58deb42c078baaa9f8b4e90f327a38b79a3b00a24ddb104c6727fc8a7e_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-console@sha256:afab7d8212ee932132217b76ba99cee7c44369283634021f9c6c1956f83c4c98_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-console@sha256:eeff56f6fe0956bbc6379bea152e65e6b98809db8e48022db5ef396094bfc25e_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-hyperkube@sha256:474953b990b02f9f7141ef2316e6e4dfb654fa970be893bb11b0be4a6651003a_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-hyperkube@sha256:a3adda700381f8b2f22509e4ade1022d86244f2fc9d1f2d2158259ffedd3b516_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-hyperkube@sha256:bbdf4f84891e1774cca9e07037e17b40b09737a2bf7af8ad292ded95c3c458ff_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-hyperkube@sha256:c59ba2f520589740b92799483837a438208a352854391173e0a87c4e8c6906f9_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-machine-config-operator@sha256:1bf04c081f10010a77c3bbdf098b48f94333138c0ed614be39594ccbf2c11a7b_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-machine-config-operator@sha256:6445f27aac98ae77b4ae47e92cd44cdf69f92dae51e0cbdd4b1625c7e2188f9c_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-machine-config-operator@sha256:8bdf00523bfc894c75c09fcf64201c4ab5aad4b6580a2ac554e0f446b99a4caf_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-machine-config-operator@sha256:b1207de1db941794219f728c3920b1b432113628d2e8fd2cc8f1b65598ff3082_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-registry@sha256:8955d2f48b0d837431f46a7d7a91f3217f3ce535c1d4b4cc81c22970cf0f05e6_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-registry@sha256:9eebd925df7317c2cecae7569d3484849e65e7eebfe4240abc82ab62644fdb47_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-registry@sha256:be83a3c4b057d0a36e330c919f829de58c8bdd05f5dc11eaf85455fe9b0790b4_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-registry@sha256:d8815fd567c4b8143e1a03c5398ce59ba8c00b63785d92ae268742bd5f55b53e_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-pod@sha256:0f8f11ef796d5811303dd674d129b51b9e1209b984d6364a5f144135546195e3_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-pod@sha256:75ac644f92e98c8e9616e2820aad3450b850a28112b152f79670db3379fb25b6_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-pod@sha256:7a53f216d1969028e231cc54a6df6ae776c12f65866e6b223ced540f531e7963_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-pod@sha256:a8cbaef00c8a839000e49c55843474ef5020cc7ab2cf6aa2d10d05b8cf3fdd0a_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-tests@sha256:7c4bd099e226d7bcaa446be037ba63ed0a58076c6cc428ad61160bea3d0b2304_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-tests@sha256:a4084c4597803ebe3d1a226634d5322091855f0da34676a0538dd5ae21434bd0_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-tests@sha256:b478437b4f3cdf52491b0c9fd85ec171752dc45415c165ab0e7103ea5bf55906_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-tests@sha256:d5cc21b6082b532234a6f7c838618a94d200e290c85cff769f2407b29b92abb2_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-tools-rhel8@sha256:8d14f86b472e43fbbafccf485ed173b7cda54ccb1971b3db0c0f06fac39f3146_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-tools-rhel8@sha256:8f13c578cc8a0631a9a5de1cd88357045f3fb4766202e365c8022195cea4fb8e_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-tools-rhel8@sha256:9494f1f3a59f31415a846395375396ea51ba4c541802d83879b5b1d331ca308f_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-tools-rhel8@sha256:b21c1ec26ab2065396b220132715b383d86974941a9f7c59d079aaf16cfb24db_amd64",
+            "9Base-RHOSE-4.13:openshift4/driver-toolkit-rhel9@sha256:05d6234e1a633a3f4031c577c915da75cece186dcd270f89447a03f1fd250a1a_s390x",
+            "9Base-RHOSE-4.13:openshift4/driver-toolkit-rhel9@sha256:1670b7ed6745cfab81e2f472e9e77834e0fb6dc792b017bccda1217403dc0247_amd64",
+            "9Base-RHOSE-4.13:openshift4/driver-toolkit-rhel9@sha256:f83f933fe00b8434456d7924e07f07a82ae38991270945fe96770982bdc414e7_ppc64le",
+            "9Base-RHOSE-4.13:openshift4/driver-toolkit-rhel9@sha256:fbe0e1f721cbc7db4f46191f2e96cd3e439d4de6af3e4c3656e90b32d6cb2da2_arm64",
+            "9Base-RHOSE-4.13:openshift4/ose-ironic-machine-os-downloader-rhel9@sha256:5be223aa82849a0f6b14c3fd581ee34b065d439b601a0bb1bcc2659a258afb39_arm64",
+            "9Base-RHOSE-4.13:openshift4/ose-ironic-machine-os-downloader-rhel9@sha256:7486da69bbcacaf43bea2cb8d681e556084aaccfd388e1ad4383cbba517d142b_amd64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:12be23429b3173f6183c822f3426a7c1871d8fa5dacfd03d6cb2ae8cd6dbaf63_ppc64le",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:5e727715cdf8d52c95302d34bd6cd6bed6e22b48a1a77a060f264df30653b06f_arm64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:c5bf6c297ab451a47b9a40d1372313624f49578a63557035b486677bcb7df3e9_s390x",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:d87068e6d8dc13555d9d4073ece644733f1cd7e4b9b6a4fa4b4676339fc8e5de_amd64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-rhel9@sha256:321234a8c7571370282568e008bab4a21795b5bf0f44f12a6d16bf3544290a76_s390x",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-rhel9@sha256:64b4004e9af037ff3c1be4881e4d2893edfb76a01106bc355a0a93d56b701842_arm64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-rhel9@sha256:afe287daf5bbcc2762d326a84bcf712c2f3818fb88a0f72cb2dbebcbb453c209_amd64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-rhel9@sha256:b1e9a7c0a5bc4645fc33c404732927bf288505b675c91ec8e4d2a06798630dc3_ppc64le",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes@sha256:321234a8c7571370282568e008bab4a21795b5bf0f44f12a6d16bf3544290a76_s390x",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes@sha256:64b4004e9af037ff3c1be4881e4d2893edfb76a01106bc355a0a93d56b701842_arm64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes@sha256:afe287daf5bbcc2762d326a84bcf712c2f3818fb88a0f72cb2dbebcbb453c209_amd64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes@sha256:b1e9a7c0a5bc4645fc33c404732927bf288505b675c91ec8e4d2a06798630dc3_ppc64le"
+          ]
+        }
+      ],
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "1971033"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A flaw was found in Mongo. Specific cstrings input may not be properly validated in the MongoDB Go Driver when marshaling Go objects into BSON. This flaw allows a malicious user to use a Go object with a specific string to inject additional fields into marshaled documents.",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "mongo-go-driver: specific cstrings input may not be properly validated",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "8Base-RHOSE-4.13:openshift4/ose-operator-lifecycle-manager@sha256:00754781fdba3e206ac7187543c0c0833afdb8e765551a0316d7a66e8391e50f_ppc64le",
+          "8Base-RHOSE-4.13:openshift4/ose-operator-lifecycle-manager@sha256:101373b564e354a6d420654c1338556e33acfc6a64f6d53e6c2bb6d03a9c6dbb_amd64",
+          "8Base-RHOSE-4.13:openshift4/ose-operator-lifecycle-manager@sha256:b380c6f0a092c12992b790b64b3118dfa3141753281b3cb65d718e27e01bca88_arm64",
+          "8Base-RHOSE-4.13:openshift4/ose-operator-lifecycle-manager@sha256:cb73249f2ebd7a06bcd473022dcaadfd6efa7be741ae372fff5c8c6dc584adb6_s390x"
+        ],
+        "known_not_affected": [
+          "8Base-RHOSE-4.13:openshift4/network-tools-rhel8@sha256:473cce3ee81558458beb6778df4fad6024a75ff3ce212fbc9848d30732bfe0dd_s390x",
+          "8Base-RHOSE-4.13:openshift4/network-tools-rhel8@sha256:c401686e9a0c234f590cb505372ba94302b9a0e0b73867e39a0e12426ca6e6ff_ppc64le",
+          "8Base-RHOSE-4.13:openshift4/network-tools-rhel8@sha256:cf3ee30fc23923f027f97f6611abd2eeb21164aa65697445664a6f860929f7e0_arm64",
+          "8Base-RHOSE-4.13:openshift4/network-tools-rhel8@sha256:db1d60dd61f746fdc09a73c6520a2e32590bfbd22417f8d379d6a72a3b7505b7_amd64",
+          "8Base-RHOSE-4.13:openshift4/ose-agent-installer-node-agent-rhel8@sha256:16e8bd6a4bfc6cac55541cbf038c475c54c8207ac82212766368d6df363967b0_arm64",
+          "8Base-RHOSE-4.13:openshift4/ose-agent-installer-node-agent-rhel8@sha256:59b8105f8c827c6954f0ccb97321f851f387327ab7af6cea58d9fba71ceeac0b_s390x",
+          "8Base-RHOSE-4.13:openshift4/ose-agent-installer-node-agent-rhel8@sha256:66d8c54aa10c766124c332a0203e717f7f8b120031b5933e977f5b12644dd11a_amd64",
+          "8Base-RHOSE-4.13:openshift4/ose-agent-installer-node-agent-rhel8@sha256:b2e2bd59321c4301a2ee202090bf40b230ce7a1ee0871f9b0a30be9b37a8882d_ppc64le",
+          "8Base-RHOSE-4.13:openshift4/ose-aws-pod-identity-webhook-rhel8@sha256:7a895374b2289119947ac54b49c34c2abd44e7f108411b65a0181e9965d5205f_amd64",
+          "8Base-RHOSE-4.13:openshift4/ose-aws-pod-identity-webhook-rhel8@sha256:f9fa6a423bc75e9864c2acef175a6cc5494d6175c70c9145c56b6eea5c953f2f_arm64",
+          "8Base-RHOSE-4.13:openshift4/ose-cluster-network-operator@sha256:434ad23d0d405b7e22456ed4b3f882b81ab77d5f35b6ef2db87c1374042e0a86_arm64",
+          "8Base-RHOSE-4.13:openshift4/ose-cluster-network-operator@sha256:637168d333dbd5970715b98f97946e85bc71485824c4dab2de82154efb8a472b_ppc64le",
+          "8Base-RHOSE-4.13:openshift4/ose-cluster-network-operator@sha256:abc6213b793b35a404eeec68d5667bd6e108879ee86a182fc6efe5efae463e1f_amd64",
+          "8Base-RHOSE-4.13:openshift4/ose-cluster-network-operator@sha256:c7728b5165b2abdc9f63d3dd83c2894a9adc49a3e50a2c4c56662657c0e4562b_s390x",
+          "8Base-RHOSE-4.13:openshift4/ose-console@sha256:483a932e552796c74a6ff394233710beb516f42c9b964fc13b3276f52cf4f7fe_ppc64le",
+          "8Base-RHOSE-4.13:openshift4/ose-console@sha256:7c69be58deb42c078baaa9f8b4e90f327a38b79a3b00a24ddb104c6727fc8a7e_amd64",
+          "8Base-RHOSE-4.13:openshift4/ose-console@sha256:afab7d8212ee932132217b76ba99cee7c44369283634021f9c6c1956f83c4c98_arm64",
+          "8Base-RHOSE-4.13:openshift4/ose-console@sha256:eeff56f6fe0956bbc6379bea152e65e6b98809db8e48022db5ef396094bfc25e_s390x",
+          "8Base-RHOSE-4.13:openshift4/ose-hyperkube@sha256:474953b990b02f9f7141ef2316e6e4dfb654fa970be893bb11b0be4a6651003a_s390x",
+          "8Base-RHOSE-4.13:openshift4/ose-hyperkube@sha256:a3adda700381f8b2f22509e4ade1022d86244f2fc9d1f2d2158259ffedd3b516_ppc64le",
+          "8Base-RHOSE-4.13:openshift4/ose-hyperkube@sha256:bbdf4f84891e1774cca9e07037e17b40b09737a2bf7af8ad292ded95c3c458ff_arm64",
+          "8Base-RHOSE-4.13:openshift4/ose-hyperkube@sha256:c59ba2f520589740b92799483837a438208a352854391173e0a87c4e8c6906f9_amd64",
+          "8Base-RHOSE-4.13:openshift4/ose-machine-config-operator@sha256:1bf04c081f10010a77c3bbdf098b48f94333138c0ed614be39594ccbf2c11a7b_amd64",
+          "8Base-RHOSE-4.13:openshift4/ose-machine-config-operator@sha256:6445f27aac98ae77b4ae47e92cd44cdf69f92dae51e0cbdd4b1625c7e2188f9c_ppc64le",
+          "8Base-RHOSE-4.13:openshift4/ose-machine-config-operator@sha256:8bdf00523bfc894c75c09fcf64201c4ab5aad4b6580a2ac554e0f446b99a4caf_s390x",
+          "8Base-RHOSE-4.13:openshift4/ose-machine-config-operator@sha256:b1207de1db941794219f728c3920b1b432113628d2e8fd2cc8f1b65598ff3082_arm64",
+          "8Base-RHOSE-4.13:openshift4/ose-operator-registry@sha256:8955d2f48b0d837431f46a7d7a91f3217f3ce535c1d4b4cc81c22970cf0f05e6_arm64",
+          "8Base-RHOSE-4.13:openshift4/ose-operator-registry@sha256:9eebd925df7317c2cecae7569d3484849e65e7eebfe4240abc82ab62644fdb47_amd64",
+          "8Base-RHOSE-4.13:openshift4/ose-operator-registry@sha256:be83a3c4b057d0a36e330c919f829de58c8bdd05f5dc11eaf85455fe9b0790b4_ppc64le",
+          "8Base-RHOSE-4.13:openshift4/ose-operator-registry@sha256:d8815fd567c4b8143e1a03c5398ce59ba8c00b63785d92ae268742bd5f55b53e_s390x",
+          "8Base-RHOSE-4.13:openshift4/ose-pod@sha256:0f8f11ef796d5811303dd674d129b51b9e1209b984d6364a5f144135546195e3_s390x",
+          "8Base-RHOSE-4.13:openshift4/ose-pod@sha256:75ac644f92e98c8e9616e2820aad3450b850a28112b152f79670db3379fb25b6_ppc64le",
+          "8Base-RHOSE-4.13:openshift4/ose-pod@sha256:7a53f216d1969028e231cc54a6df6ae776c12f65866e6b223ced540f531e7963_amd64",
+          "8Base-RHOSE-4.13:openshift4/ose-pod@sha256:a8cbaef00c8a839000e49c55843474ef5020cc7ab2cf6aa2d10d05b8cf3fdd0a_arm64",
+          "8Base-RHOSE-4.13:openshift4/ose-tests@sha256:7c4bd099e226d7bcaa446be037ba63ed0a58076c6cc428ad61160bea3d0b2304_s390x",
+          "8Base-RHOSE-4.13:openshift4/ose-tests@sha256:a4084c4597803ebe3d1a226634d5322091855f0da34676a0538dd5ae21434bd0_amd64",
+          "8Base-RHOSE-4.13:openshift4/ose-tests@sha256:b478437b4f3cdf52491b0c9fd85ec171752dc45415c165ab0e7103ea5bf55906_arm64",
+          "8Base-RHOSE-4.13:openshift4/ose-tests@sha256:d5cc21b6082b532234a6f7c838618a94d200e290c85cff769f2407b29b92abb2_ppc64le",
+          "8Base-RHOSE-4.13:openshift4/ose-tools-rhel8@sha256:8d14f86b472e43fbbafccf485ed173b7cda54ccb1971b3db0c0f06fac39f3146_ppc64le",
+          "8Base-RHOSE-4.13:openshift4/ose-tools-rhel8@sha256:8f13c578cc8a0631a9a5de1cd88357045f3fb4766202e365c8022195cea4fb8e_s390x",
+          "8Base-RHOSE-4.13:openshift4/ose-tools-rhel8@sha256:9494f1f3a59f31415a846395375396ea51ba4c541802d83879b5b1d331ca308f_arm64",
+          "8Base-RHOSE-4.13:openshift4/ose-tools-rhel8@sha256:b21c1ec26ab2065396b220132715b383d86974941a9f7c59d079aaf16cfb24db_amd64",
+          "9Base-RHOSE-4.13:openshift4/driver-toolkit-rhel9@sha256:05d6234e1a633a3f4031c577c915da75cece186dcd270f89447a03f1fd250a1a_s390x",
+          "9Base-RHOSE-4.13:openshift4/driver-toolkit-rhel9@sha256:1670b7ed6745cfab81e2f472e9e77834e0fb6dc792b017bccda1217403dc0247_amd64",
+          "9Base-RHOSE-4.13:openshift4/driver-toolkit-rhel9@sha256:f83f933fe00b8434456d7924e07f07a82ae38991270945fe96770982bdc414e7_ppc64le",
+          "9Base-RHOSE-4.13:openshift4/driver-toolkit-rhel9@sha256:fbe0e1f721cbc7db4f46191f2e96cd3e439d4de6af3e4c3656e90b32d6cb2da2_arm64",
+          "9Base-RHOSE-4.13:openshift4/ose-ironic-machine-os-downloader-rhel9@sha256:5be223aa82849a0f6b14c3fd581ee34b065d439b601a0bb1bcc2659a258afb39_arm64",
+          "9Base-RHOSE-4.13:openshift4/ose-ironic-machine-os-downloader-rhel9@sha256:7486da69bbcacaf43bea2cb8d681e556084aaccfd388e1ad4383cbba517d142b_amd64",
+          "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:12be23429b3173f6183c822f3426a7c1871d8fa5dacfd03d6cb2ae8cd6dbaf63_ppc64le",
+          "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:5e727715cdf8d52c95302d34bd6cd6bed6e22b48a1a77a060f264df30653b06f_arm64",
+          "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:c5bf6c297ab451a47b9a40d1372313624f49578a63557035b486677bcb7df3e9_s390x",
+          "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:d87068e6d8dc13555d9d4073ece644733f1cd7e4b9b6a4fa4b4676339fc8e5de_amd64",
+          "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-rhel9@sha256:321234a8c7571370282568e008bab4a21795b5bf0f44f12a6d16bf3544290a76_s390x",
+          "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-rhel9@sha256:64b4004e9af037ff3c1be4881e4d2893edfb76a01106bc355a0a93d56b701842_arm64",
+          "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-rhel9@sha256:afe287daf5bbcc2762d326a84bcf712c2f3818fb88a0f72cb2dbebcbb453c209_amd64",
+          "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-rhel9@sha256:b1e9a7c0a5bc4645fc33c404732927bf288505b675c91ec8e4d2a06798630dc3_ppc64le",
+          "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes@sha256:321234a8c7571370282568e008bab4a21795b5bf0f44f12a6d16bf3544290a76_s390x",
+          "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes@sha256:64b4004e9af037ff3c1be4881e4d2893edfb76a01106bc355a0a93d56b701842_arm64",
+          "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes@sha256:afe287daf5bbcc2762d326a84bcf712c2f3818fb88a0f72cb2dbebcbb453c209_amd64",
+          "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes@sha256:b1e9a7c0a5bc4645fc33c404732927bf288505b675c91ec8e4d2a06798630dc3_ppc64le"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2021-20329"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#1971033",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=1971033"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2021-20329",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2021-20329"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2021-20329",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-20329"
+        },
+        {
+          "category": "external",
+          "summary": "https://github.com/advisories/GHSA-f6mq-5m25-4r72",
+          "url": "https://github.com/advisories/GHSA-f6mq-5m25-4r72"
+        },
+        {
+          "category": "external",
+          "summary": "https://github.com/mongodb/mongo-go-driver/releases/tag/v1.5.1",
+          "url": "https://github.com/mongodb/mongo-go-driver/releases/tag/v1.5.1"
+        }
+      ],
+      "release_date": "2021-03-30T00:00:00+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2024-01-17T09:48:09+00:00",
+          "details": "For OpenShift Container Platform 4.13 see the following documentation, which will be updated shortly for this release, for important instructions on how to upgrade your cluster and fully apply this asynchronous errata update:\n\nhttps://docs.openshift.com/container-platform/4.13/release_notes/ocp-4-13-release-notes.html\n\nYou may download the oc tool and use it to inspect release image metadata for x86_64, s390x, ppc64le, and aarch64 architectures. The image digests may be found at https://quay.io/repository/openshift-release-dev/ocp-release?tab=tags.\n\n      The sha values for the release are\n\n      (For x86_64 architecture)\n      The image digest is sha256:9c4a4471bb93ab11d255925535ff719742cafa8ae06d622b870133787a72abc3\n\n      (For s390x architecture)\n      The image digest is sha256:80c287d6ee8baa959462ddb58f23c89cd4d37e54350813de09ef2b2704519057\n\n      (For ppc64le architecture)\n      The image digest is sha256:0b087b1c8f1af8c2339fd40c57e2b15d3bb5c4c761ed04b6e67dc3b9fff7be19\n\n      (For aarch64 architecture)\n      The image digest is sha256:e0c45710ebff1bcd72c694f3bac3de92074163aa1db4b7a03d1a81cb53b79888\n\nAll OpenShift Container Platform 4.13 users are advised to upgrade to these updated packages and images when they are available in the appropriate release channel. To check for available updates, use the OpenShift CLI (oc) or web console. Instructions for upgrading a cluster are available at https://docs.openshift.com/container-platform/4.13/updating/updating-cluster-cli.html",
+          "product_ids": [
+            "8Base-RHOSE-4.13:openshift4/ose-operator-lifecycle-manager@sha256:00754781fdba3e206ac7187543c0c0833afdb8e765551a0316d7a66e8391e50f_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-lifecycle-manager@sha256:101373b564e354a6d420654c1338556e33acfc6a64f6d53e6c2bb6d03a9c6dbb_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-lifecycle-manager@sha256:b380c6f0a092c12992b790b64b3118dfa3141753281b3cb65d718e27e01bca88_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-lifecycle-manager@sha256:cb73249f2ebd7a06bcd473022dcaadfd6efa7be741ae372fff5c8c6dc584adb6_s390x"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2024:0193"
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "NONE",
+            "baseScore": 6.5,
+            "baseSeverity": "MEDIUM",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "HIGH",
+            "privilegesRequired": "LOW",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+            "version": "3.1"
+          },
+          "products": [
+            "8Base-RHOSE-4.13:openshift4/network-tools-rhel8@sha256:473cce3ee81558458beb6778df4fad6024a75ff3ce212fbc9848d30732bfe0dd_s390x",
+            "8Base-RHOSE-4.13:openshift4/network-tools-rhel8@sha256:c401686e9a0c234f590cb505372ba94302b9a0e0b73867e39a0e12426ca6e6ff_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/network-tools-rhel8@sha256:cf3ee30fc23923f027f97f6611abd2eeb21164aa65697445664a6f860929f7e0_arm64",
+            "8Base-RHOSE-4.13:openshift4/network-tools-rhel8@sha256:db1d60dd61f746fdc09a73c6520a2e32590bfbd22417f8d379d6a72a3b7505b7_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-agent-installer-node-agent-rhel8@sha256:16e8bd6a4bfc6cac55541cbf038c475c54c8207ac82212766368d6df363967b0_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-agent-installer-node-agent-rhel8@sha256:59b8105f8c827c6954f0ccb97321f851f387327ab7af6cea58d9fba71ceeac0b_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-agent-installer-node-agent-rhel8@sha256:66d8c54aa10c766124c332a0203e717f7f8b120031b5933e977f5b12644dd11a_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-agent-installer-node-agent-rhel8@sha256:b2e2bd59321c4301a2ee202090bf40b230ce7a1ee0871f9b0a30be9b37a8882d_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-aws-pod-identity-webhook-rhel8@sha256:7a895374b2289119947ac54b49c34c2abd44e7f108411b65a0181e9965d5205f_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-aws-pod-identity-webhook-rhel8@sha256:f9fa6a423bc75e9864c2acef175a6cc5494d6175c70c9145c56b6eea5c953f2f_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-cluster-network-operator@sha256:434ad23d0d405b7e22456ed4b3f882b81ab77d5f35b6ef2db87c1374042e0a86_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-cluster-network-operator@sha256:637168d333dbd5970715b98f97946e85bc71485824c4dab2de82154efb8a472b_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-cluster-network-operator@sha256:abc6213b793b35a404eeec68d5667bd6e108879ee86a182fc6efe5efae463e1f_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-cluster-network-operator@sha256:c7728b5165b2abdc9f63d3dd83c2894a9adc49a3e50a2c4c56662657c0e4562b_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-console@sha256:483a932e552796c74a6ff394233710beb516f42c9b964fc13b3276f52cf4f7fe_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-console@sha256:7c69be58deb42c078baaa9f8b4e90f327a38b79a3b00a24ddb104c6727fc8a7e_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-console@sha256:afab7d8212ee932132217b76ba99cee7c44369283634021f9c6c1956f83c4c98_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-console@sha256:eeff56f6fe0956bbc6379bea152e65e6b98809db8e48022db5ef396094bfc25e_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-hyperkube@sha256:474953b990b02f9f7141ef2316e6e4dfb654fa970be893bb11b0be4a6651003a_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-hyperkube@sha256:a3adda700381f8b2f22509e4ade1022d86244f2fc9d1f2d2158259ffedd3b516_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-hyperkube@sha256:bbdf4f84891e1774cca9e07037e17b40b09737a2bf7af8ad292ded95c3c458ff_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-hyperkube@sha256:c59ba2f520589740b92799483837a438208a352854391173e0a87c4e8c6906f9_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-machine-config-operator@sha256:1bf04c081f10010a77c3bbdf098b48f94333138c0ed614be39594ccbf2c11a7b_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-machine-config-operator@sha256:6445f27aac98ae77b4ae47e92cd44cdf69f92dae51e0cbdd4b1625c7e2188f9c_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-machine-config-operator@sha256:8bdf00523bfc894c75c09fcf64201c4ab5aad4b6580a2ac554e0f446b99a4caf_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-machine-config-operator@sha256:b1207de1db941794219f728c3920b1b432113628d2e8fd2cc8f1b65598ff3082_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-lifecycle-manager@sha256:00754781fdba3e206ac7187543c0c0833afdb8e765551a0316d7a66e8391e50f_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-lifecycle-manager@sha256:101373b564e354a6d420654c1338556e33acfc6a64f6d53e6c2bb6d03a9c6dbb_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-lifecycle-manager@sha256:b380c6f0a092c12992b790b64b3118dfa3141753281b3cb65d718e27e01bca88_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-lifecycle-manager@sha256:cb73249f2ebd7a06bcd473022dcaadfd6efa7be741ae372fff5c8c6dc584adb6_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-registry@sha256:8955d2f48b0d837431f46a7d7a91f3217f3ce535c1d4b4cc81c22970cf0f05e6_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-registry@sha256:9eebd925df7317c2cecae7569d3484849e65e7eebfe4240abc82ab62644fdb47_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-registry@sha256:be83a3c4b057d0a36e330c919f829de58c8bdd05f5dc11eaf85455fe9b0790b4_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-registry@sha256:d8815fd567c4b8143e1a03c5398ce59ba8c00b63785d92ae268742bd5f55b53e_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-pod@sha256:0f8f11ef796d5811303dd674d129b51b9e1209b984d6364a5f144135546195e3_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-pod@sha256:75ac644f92e98c8e9616e2820aad3450b850a28112b152f79670db3379fb25b6_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-pod@sha256:7a53f216d1969028e231cc54a6df6ae776c12f65866e6b223ced540f531e7963_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-pod@sha256:a8cbaef00c8a839000e49c55843474ef5020cc7ab2cf6aa2d10d05b8cf3fdd0a_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-tests@sha256:7c4bd099e226d7bcaa446be037ba63ed0a58076c6cc428ad61160bea3d0b2304_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-tests@sha256:a4084c4597803ebe3d1a226634d5322091855f0da34676a0538dd5ae21434bd0_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-tests@sha256:b478437b4f3cdf52491b0c9fd85ec171752dc45415c165ab0e7103ea5bf55906_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-tests@sha256:d5cc21b6082b532234a6f7c838618a94d200e290c85cff769f2407b29b92abb2_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-tools-rhel8@sha256:8d14f86b472e43fbbafccf485ed173b7cda54ccb1971b3db0c0f06fac39f3146_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-tools-rhel8@sha256:8f13c578cc8a0631a9a5de1cd88357045f3fb4766202e365c8022195cea4fb8e_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-tools-rhel8@sha256:9494f1f3a59f31415a846395375396ea51ba4c541802d83879b5b1d331ca308f_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-tools-rhel8@sha256:b21c1ec26ab2065396b220132715b383d86974941a9f7c59d079aaf16cfb24db_amd64",
+            "9Base-RHOSE-4.13:openshift4/driver-toolkit-rhel9@sha256:05d6234e1a633a3f4031c577c915da75cece186dcd270f89447a03f1fd250a1a_s390x",
+            "9Base-RHOSE-4.13:openshift4/driver-toolkit-rhel9@sha256:1670b7ed6745cfab81e2f472e9e77834e0fb6dc792b017bccda1217403dc0247_amd64",
+            "9Base-RHOSE-4.13:openshift4/driver-toolkit-rhel9@sha256:f83f933fe00b8434456d7924e07f07a82ae38991270945fe96770982bdc414e7_ppc64le",
+            "9Base-RHOSE-4.13:openshift4/driver-toolkit-rhel9@sha256:fbe0e1f721cbc7db4f46191f2e96cd3e439d4de6af3e4c3656e90b32d6cb2da2_arm64",
+            "9Base-RHOSE-4.13:openshift4/ose-ironic-machine-os-downloader-rhel9@sha256:5be223aa82849a0f6b14c3fd581ee34b065d439b601a0bb1bcc2659a258afb39_arm64",
+            "9Base-RHOSE-4.13:openshift4/ose-ironic-machine-os-downloader-rhel9@sha256:7486da69bbcacaf43bea2cb8d681e556084aaccfd388e1ad4383cbba517d142b_amd64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:12be23429b3173f6183c822f3426a7c1871d8fa5dacfd03d6cb2ae8cd6dbaf63_ppc64le",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:5e727715cdf8d52c95302d34bd6cd6bed6e22b48a1a77a060f264df30653b06f_arm64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:c5bf6c297ab451a47b9a40d1372313624f49578a63557035b486677bcb7df3e9_s390x",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:d87068e6d8dc13555d9d4073ece644733f1cd7e4b9b6a4fa4b4676339fc8e5de_amd64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-rhel9@sha256:321234a8c7571370282568e008bab4a21795b5bf0f44f12a6d16bf3544290a76_s390x",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-rhel9@sha256:64b4004e9af037ff3c1be4881e4d2893edfb76a01106bc355a0a93d56b701842_arm64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-rhel9@sha256:afe287daf5bbcc2762d326a84bcf712c2f3818fb88a0f72cb2dbebcbb453c209_amd64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-rhel9@sha256:b1e9a7c0a5bc4645fc33c404732927bf288505b675c91ec8e4d2a06798630dc3_ppc64le",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes@sha256:321234a8c7571370282568e008bab4a21795b5bf0f44f12a6d16bf3544290a76_s390x",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes@sha256:64b4004e9af037ff3c1be4881e4d2893edfb76a01106bc355a0a93d56b701842_arm64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes@sha256:afe287daf5bbcc2762d326a84bcf712c2f3818fb88a0f72cb2dbebcbb453c209_amd64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes@sha256:b1e9a7c0a5bc4645fc33c404732927bf288505b675c91ec8e4d2a06798630dc3_ppc64le"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Moderate"
+        }
+      ],
+      "title": "mongo-go-driver: specific cstrings input may not be properly validated"
+    },
+    {
+      "cve": "CVE-2023-39325",
+      "cwe": {
+        "id": "CWE-400",
+        "name": "Uncontrolled Resource Consumption"
+      },
+      "discovery_date": "2023-10-10T00:00:00+00:00",
+      "flags": [
+        {
+          "label": "vulnerable_code_not_present",
+          "product_ids": [
+            "8Base-RHOSE-4.13:openshift4/network-tools-rhel8@sha256:473cce3ee81558458beb6778df4fad6024a75ff3ce212fbc9848d30732bfe0dd_s390x",
+            "8Base-RHOSE-4.13:openshift4/network-tools-rhel8@sha256:c401686e9a0c234f590cb505372ba94302b9a0e0b73867e39a0e12426ca6e6ff_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/network-tools-rhel8@sha256:cf3ee30fc23923f027f97f6611abd2eeb21164aa65697445664a6f860929f7e0_arm64",
+            "8Base-RHOSE-4.13:openshift4/network-tools-rhel8@sha256:db1d60dd61f746fdc09a73c6520a2e32590bfbd22417f8d379d6a72a3b7505b7_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-agent-installer-node-agent-rhel8@sha256:16e8bd6a4bfc6cac55541cbf038c475c54c8207ac82212766368d6df363967b0_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-agent-installer-node-agent-rhel8@sha256:59b8105f8c827c6954f0ccb97321f851f387327ab7af6cea58d9fba71ceeac0b_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-agent-installer-node-agent-rhel8@sha256:66d8c54aa10c766124c332a0203e717f7f8b120031b5933e977f5b12644dd11a_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-agent-installer-node-agent-rhel8@sha256:b2e2bd59321c4301a2ee202090bf40b230ce7a1ee0871f9b0a30be9b37a8882d_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-console@sha256:483a932e552796c74a6ff394233710beb516f42c9b964fc13b3276f52cf4f7fe_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-console@sha256:7c69be58deb42c078baaa9f8b4e90f327a38b79a3b00a24ddb104c6727fc8a7e_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-console@sha256:afab7d8212ee932132217b76ba99cee7c44369283634021f9c6c1956f83c4c98_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-console@sha256:eeff56f6fe0956bbc6379bea152e65e6b98809db8e48022db5ef396094bfc25e_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-hyperkube@sha256:474953b990b02f9f7141ef2316e6e4dfb654fa970be893bb11b0be4a6651003a_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-hyperkube@sha256:a3adda700381f8b2f22509e4ade1022d86244f2fc9d1f2d2158259ffedd3b516_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-hyperkube@sha256:bbdf4f84891e1774cca9e07037e17b40b09737a2bf7af8ad292ded95c3c458ff_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-hyperkube@sha256:c59ba2f520589740b92799483837a438208a352854391173e0a87c4e8c6906f9_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-machine-config-operator@sha256:1bf04c081f10010a77c3bbdf098b48f94333138c0ed614be39594ccbf2c11a7b_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-machine-config-operator@sha256:6445f27aac98ae77b4ae47e92cd44cdf69f92dae51e0cbdd4b1625c7e2188f9c_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-machine-config-operator@sha256:8bdf00523bfc894c75c09fcf64201c4ab5aad4b6580a2ac554e0f446b99a4caf_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-machine-config-operator@sha256:b1207de1db941794219f728c3920b1b432113628d2e8fd2cc8f1b65598ff3082_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-lifecycle-manager@sha256:00754781fdba3e206ac7187543c0c0833afdb8e765551a0316d7a66e8391e50f_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-lifecycle-manager@sha256:101373b564e354a6d420654c1338556e33acfc6a64f6d53e6c2bb6d03a9c6dbb_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-lifecycle-manager@sha256:b380c6f0a092c12992b790b64b3118dfa3141753281b3cb65d718e27e01bca88_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-lifecycle-manager@sha256:cb73249f2ebd7a06bcd473022dcaadfd6efa7be741ae372fff5c8c6dc584adb6_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-registry@sha256:8955d2f48b0d837431f46a7d7a91f3217f3ce535c1d4b4cc81c22970cf0f05e6_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-registry@sha256:9eebd925df7317c2cecae7569d3484849e65e7eebfe4240abc82ab62644fdb47_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-registry@sha256:be83a3c4b057d0a36e330c919f829de58c8bdd05f5dc11eaf85455fe9b0790b4_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-registry@sha256:d8815fd567c4b8143e1a03c5398ce59ba8c00b63785d92ae268742bd5f55b53e_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-pod@sha256:0f8f11ef796d5811303dd674d129b51b9e1209b984d6364a5f144135546195e3_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-pod@sha256:75ac644f92e98c8e9616e2820aad3450b850a28112b152f79670db3379fb25b6_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-pod@sha256:7a53f216d1969028e231cc54a6df6ae776c12f65866e6b223ced540f531e7963_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-pod@sha256:a8cbaef00c8a839000e49c55843474ef5020cc7ab2cf6aa2d10d05b8cf3fdd0a_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-tests@sha256:7c4bd099e226d7bcaa446be037ba63ed0a58076c6cc428ad61160bea3d0b2304_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-tests@sha256:a4084c4597803ebe3d1a226634d5322091855f0da34676a0538dd5ae21434bd0_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-tests@sha256:b478437b4f3cdf52491b0c9fd85ec171752dc45415c165ab0e7103ea5bf55906_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-tests@sha256:d5cc21b6082b532234a6f7c838618a94d200e290c85cff769f2407b29b92abb2_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-tools-rhel8@sha256:8d14f86b472e43fbbafccf485ed173b7cda54ccb1971b3db0c0f06fac39f3146_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-tools-rhel8@sha256:8f13c578cc8a0631a9a5de1cd88357045f3fb4766202e365c8022195cea4fb8e_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-tools-rhel8@sha256:9494f1f3a59f31415a846395375396ea51ba4c541802d83879b5b1d331ca308f_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-tools-rhel8@sha256:b21c1ec26ab2065396b220132715b383d86974941a9f7c59d079aaf16cfb24db_amd64",
+            "9Base-RHOSE-4.13:openshift4/driver-toolkit-rhel9@sha256:05d6234e1a633a3f4031c577c915da75cece186dcd270f89447a03f1fd250a1a_s390x",
+            "9Base-RHOSE-4.13:openshift4/driver-toolkit-rhel9@sha256:1670b7ed6745cfab81e2f472e9e77834e0fb6dc792b017bccda1217403dc0247_amd64",
+            "9Base-RHOSE-4.13:openshift4/driver-toolkit-rhel9@sha256:f83f933fe00b8434456d7924e07f07a82ae38991270945fe96770982bdc414e7_ppc64le",
+            "9Base-RHOSE-4.13:openshift4/driver-toolkit-rhel9@sha256:fbe0e1f721cbc7db4f46191f2e96cd3e439d4de6af3e4c3656e90b32d6cb2da2_arm64",
+            "9Base-RHOSE-4.13:openshift4/ose-ironic-machine-os-downloader-rhel9@sha256:5be223aa82849a0f6b14c3fd581ee34b065d439b601a0bb1bcc2659a258afb39_arm64",
+            "9Base-RHOSE-4.13:openshift4/ose-ironic-machine-os-downloader-rhel9@sha256:7486da69bbcacaf43bea2cb8d681e556084aaccfd388e1ad4383cbba517d142b_amd64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:12be23429b3173f6183c822f3426a7c1871d8fa5dacfd03d6cb2ae8cd6dbaf63_ppc64le",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:5e727715cdf8d52c95302d34bd6cd6bed6e22b48a1a77a060f264df30653b06f_arm64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:c5bf6c297ab451a47b9a40d1372313624f49578a63557035b486677bcb7df3e9_s390x",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:d87068e6d8dc13555d9d4073ece644733f1cd7e4b9b6a4fa4b4676339fc8e5de_amd64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-rhel9@sha256:321234a8c7571370282568e008bab4a21795b5bf0f44f12a6d16bf3544290a76_s390x",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-rhel9@sha256:64b4004e9af037ff3c1be4881e4d2893edfb76a01106bc355a0a93d56b701842_arm64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-rhel9@sha256:afe287daf5bbcc2762d326a84bcf712c2f3818fb88a0f72cb2dbebcbb453c209_amd64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-rhel9@sha256:b1e9a7c0a5bc4645fc33c404732927bf288505b675c91ec8e4d2a06798630dc3_ppc64le",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes@sha256:321234a8c7571370282568e008bab4a21795b5bf0f44f12a6d16bf3544290a76_s390x",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes@sha256:64b4004e9af037ff3c1be4881e4d2893edfb76a01106bc355a0a93d56b701842_arm64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes@sha256:afe287daf5bbcc2762d326a84bcf712c2f3818fb88a0f72cb2dbebcbb453c209_amd64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes@sha256:b1e9a7c0a5bc4645fc33c404732927bf288505b675c91ec8e4d2a06798630dc3_ppc64le"
+          ]
+        }
+      ],
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2243296"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A flaw was found in handling multiplexed streams in the HTTP/2 protocol. A client can repeatedly make a request for a new multiplex stream and immediately send an RST_STREAM frame to cancel it. This creates extra work for the server setting up and tearing down the streams while not hitting any server-side limit for the maximum number of active streams per connection, resulting in a denial of service due to server resource consumption. Red Hat has rated the severity of this flaw as 'Important' as the US Cybersecurity and Infrastructure Security Agency (CISA) declared this vulnerability an active exploit.\r\n\r\nCVE-2023-39325 was assigned for the `Rapid Reset Attack` in the Go language packages.",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "golang: net/http, x/net/http2: rapid stream resets can cause excessive work (CVE-2023-44487)",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "other",
+          "text": "This CVE is related to CVE-2023-44487.\n\nThe majority of RHEL utilities are not long-running applications; instead, they are command-line tools. These tools utilize Golang package as build-time dependency, which is why they are classified as having a \"Moderate\" level of impact.",
+          "title": "Statement"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "8Base-RHOSE-4.13:openshift4/ose-aws-pod-identity-webhook-rhel8@sha256:7a895374b2289119947ac54b49c34c2abd44e7f108411b65a0181e9965d5205f_amd64",
+          "8Base-RHOSE-4.13:openshift4/ose-aws-pod-identity-webhook-rhel8@sha256:f9fa6a423bc75e9864c2acef175a6cc5494d6175c70c9145c56b6eea5c953f2f_arm64",
+          "8Base-RHOSE-4.13:openshift4/ose-cluster-network-operator@sha256:434ad23d0d405b7e22456ed4b3f882b81ab77d5f35b6ef2db87c1374042e0a86_arm64",
+          "8Base-RHOSE-4.13:openshift4/ose-cluster-network-operator@sha256:637168d333dbd5970715b98f97946e85bc71485824c4dab2de82154efb8a472b_ppc64le",
+          "8Base-RHOSE-4.13:openshift4/ose-cluster-network-operator@sha256:abc6213b793b35a404eeec68d5667bd6e108879ee86a182fc6efe5efae463e1f_amd64",
+          "8Base-RHOSE-4.13:openshift4/ose-cluster-network-operator@sha256:c7728b5165b2abdc9f63d3dd83c2894a9adc49a3e50a2c4c56662657c0e4562b_s390x"
+        ],
+        "known_not_affected": [
+          "8Base-RHOSE-4.13:openshift4/network-tools-rhel8@sha256:473cce3ee81558458beb6778df4fad6024a75ff3ce212fbc9848d30732bfe0dd_s390x",
+          "8Base-RHOSE-4.13:openshift4/network-tools-rhel8@sha256:c401686e9a0c234f590cb505372ba94302b9a0e0b73867e39a0e12426ca6e6ff_ppc64le",
+          "8Base-RHOSE-4.13:openshift4/network-tools-rhel8@sha256:cf3ee30fc23923f027f97f6611abd2eeb21164aa65697445664a6f860929f7e0_arm64",
+          "8Base-RHOSE-4.13:openshift4/network-tools-rhel8@sha256:db1d60dd61f746fdc09a73c6520a2e32590bfbd22417f8d379d6a72a3b7505b7_amd64",
+          "8Base-RHOSE-4.13:openshift4/ose-agent-installer-node-agent-rhel8@sha256:16e8bd6a4bfc6cac55541cbf038c475c54c8207ac82212766368d6df363967b0_arm64",
+          "8Base-RHOSE-4.13:openshift4/ose-agent-installer-node-agent-rhel8@sha256:59b8105f8c827c6954f0ccb97321f851f387327ab7af6cea58d9fba71ceeac0b_s390x",
+          "8Base-RHOSE-4.13:openshift4/ose-agent-installer-node-agent-rhel8@sha256:66d8c54aa10c766124c332a0203e717f7f8b120031b5933e977f5b12644dd11a_amd64",
+          "8Base-RHOSE-4.13:openshift4/ose-agent-installer-node-agent-rhel8@sha256:b2e2bd59321c4301a2ee202090bf40b230ce7a1ee0871f9b0a30be9b37a8882d_ppc64le",
+          "8Base-RHOSE-4.13:openshift4/ose-console@sha256:483a932e552796c74a6ff394233710beb516f42c9b964fc13b3276f52cf4f7fe_ppc64le",
+          "8Base-RHOSE-4.13:openshift4/ose-console@sha256:7c69be58deb42c078baaa9f8b4e90f327a38b79a3b00a24ddb104c6727fc8a7e_amd64",
+          "8Base-RHOSE-4.13:openshift4/ose-console@sha256:afab7d8212ee932132217b76ba99cee7c44369283634021f9c6c1956f83c4c98_arm64",
+          "8Base-RHOSE-4.13:openshift4/ose-console@sha256:eeff56f6fe0956bbc6379bea152e65e6b98809db8e48022db5ef396094bfc25e_s390x",
+          "8Base-RHOSE-4.13:openshift4/ose-hyperkube@sha256:474953b990b02f9f7141ef2316e6e4dfb654fa970be893bb11b0be4a6651003a_s390x",
+          "8Base-RHOSE-4.13:openshift4/ose-hyperkube@sha256:a3adda700381f8b2f22509e4ade1022d86244f2fc9d1f2d2158259ffedd3b516_ppc64le",
+          "8Base-RHOSE-4.13:openshift4/ose-hyperkube@sha256:bbdf4f84891e1774cca9e07037e17b40b09737a2bf7af8ad292ded95c3c458ff_arm64",
+          "8Base-RHOSE-4.13:openshift4/ose-hyperkube@sha256:c59ba2f520589740b92799483837a438208a352854391173e0a87c4e8c6906f9_amd64",
+          "8Base-RHOSE-4.13:openshift4/ose-machine-config-operator@sha256:1bf04c081f10010a77c3bbdf098b48f94333138c0ed614be39594ccbf2c11a7b_amd64",
+          "8Base-RHOSE-4.13:openshift4/ose-machine-config-operator@sha256:6445f27aac98ae77b4ae47e92cd44cdf69f92dae51e0cbdd4b1625c7e2188f9c_ppc64le",
+          "8Base-RHOSE-4.13:openshift4/ose-machine-config-operator@sha256:8bdf00523bfc894c75c09fcf64201c4ab5aad4b6580a2ac554e0f446b99a4caf_s390x",
+          "8Base-RHOSE-4.13:openshift4/ose-machine-config-operator@sha256:b1207de1db941794219f728c3920b1b432113628d2e8fd2cc8f1b65598ff3082_arm64",
+          "8Base-RHOSE-4.13:openshift4/ose-operator-lifecycle-manager@sha256:00754781fdba3e206ac7187543c0c0833afdb8e765551a0316d7a66e8391e50f_ppc64le",
+          "8Base-RHOSE-4.13:openshift4/ose-operator-lifecycle-manager@sha256:101373b564e354a6d420654c1338556e33acfc6a64f6d53e6c2bb6d03a9c6dbb_amd64",
+          "8Base-RHOSE-4.13:openshift4/ose-operator-lifecycle-manager@sha256:b380c6f0a092c12992b790b64b3118dfa3141753281b3cb65d718e27e01bca88_arm64",
+          "8Base-RHOSE-4.13:openshift4/ose-operator-lifecycle-manager@sha256:cb73249f2ebd7a06bcd473022dcaadfd6efa7be741ae372fff5c8c6dc584adb6_s390x",
+          "8Base-RHOSE-4.13:openshift4/ose-operator-registry@sha256:8955d2f48b0d837431f46a7d7a91f3217f3ce535c1d4b4cc81c22970cf0f05e6_arm64",
+          "8Base-RHOSE-4.13:openshift4/ose-operator-registry@sha256:9eebd925df7317c2cecae7569d3484849e65e7eebfe4240abc82ab62644fdb47_amd64",
+          "8Base-RHOSE-4.13:openshift4/ose-operator-registry@sha256:be83a3c4b057d0a36e330c919f829de58c8bdd05f5dc11eaf85455fe9b0790b4_ppc64le",
+          "8Base-RHOSE-4.13:openshift4/ose-operator-registry@sha256:d8815fd567c4b8143e1a03c5398ce59ba8c00b63785d92ae268742bd5f55b53e_s390x",
+          "8Base-RHOSE-4.13:openshift4/ose-pod@sha256:0f8f11ef796d5811303dd674d129b51b9e1209b984d6364a5f144135546195e3_s390x",
+          "8Base-RHOSE-4.13:openshift4/ose-pod@sha256:75ac644f92e98c8e9616e2820aad3450b850a28112b152f79670db3379fb25b6_ppc64le",
+          "8Base-RHOSE-4.13:openshift4/ose-pod@sha256:7a53f216d1969028e231cc54a6df6ae776c12f65866e6b223ced540f531e7963_amd64",
+          "8Base-RHOSE-4.13:openshift4/ose-pod@sha256:a8cbaef00c8a839000e49c55843474ef5020cc7ab2cf6aa2d10d05b8cf3fdd0a_arm64",
+          "8Base-RHOSE-4.13:openshift4/ose-tests@sha256:7c4bd099e226d7bcaa446be037ba63ed0a58076c6cc428ad61160bea3d0b2304_s390x",
+          "8Base-RHOSE-4.13:openshift4/ose-tests@sha256:a4084c4597803ebe3d1a226634d5322091855f0da34676a0538dd5ae21434bd0_amd64",
+          "8Base-RHOSE-4.13:openshift4/ose-tests@sha256:b478437b4f3cdf52491b0c9fd85ec171752dc45415c165ab0e7103ea5bf55906_arm64",
+          "8Base-RHOSE-4.13:openshift4/ose-tests@sha256:d5cc21b6082b532234a6f7c838618a94d200e290c85cff769f2407b29b92abb2_ppc64le",
+          "8Base-RHOSE-4.13:openshift4/ose-tools-rhel8@sha256:8d14f86b472e43fbbafccf485ed173b7cda54ccb1971b3db0c0f06fac39f3146_ppc64le",
+          "8Base-RHOSE-4.13:openshift4/ose-tools-rhel8@sha256:8f13c578cc8a0631a9a5de1cd88357045f3fb4766202e365c8022195cea4fb8e_s390x",
+          "8Base-RHOSE-4.13:openshift4/ose-tools-rhel8@sha256:9494f1f3a59f31415a846395375396ea51ba4c541802d83879b5b1d331ca308f_arm64",
+          "8Base-RHOSE-4.13:openshift4/ose-tools-rhel8@sha256:b21c1ec26ab2065396b220132715b383d86974941a9f7c59d079aaf16cfb24db_amd64",
+          "9Base-RHOSE-4.13:openshift4/driver-toolkit-rhel9@sha256:05d6234e1a633a3f4031c577c915da75cece186dcd270f89447a03f1fd250a1a_s390x",
+          "9Base-RHOSE-4.13:openshift4/driver-toolkit-rhel9@sha256:1670b7ed6745cfab81e2f472e9e77834e0fb6dc792b017bccda1217403dc0247_amd64",
+          "9Base-RHOSE-4.13:openshift4/driver-toolkit-rhel9@sha256:f83f933fe00b8434456d7924e07f07a82ae38991270945fe96770982bdc414e7_ppc64le",
+          "9Base-RHOSE-4.13:openshift4/driver-toolkit-rhel9@sha256:fbe0e1f721cbc7db4f46191f2e96cd3e439d4de6af3e4c3656e90b32d6cb2da2_arm64",
+          "9Base-RHOSE-4.13:openshift4/ose-ironic-machine-os-downloader-rhel9@sha256:5be223aa82849a0f6b14c3fd581ee34b065d439b601a0bb1bcc2659a258afb39_arm64",
+          "9Base-RHOSE-4.13:openshift4/ose-ironic-machine-os-downloader-rhel9@sha256:7486da69bbcacaf43bea2cb8d681e556084aaccfd388e1ad4383cbba517d142b_amd64",
+          "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:12be23429b3173f6183c822f3426a7c1871d8fa5dacfd03d6cb2ae8cd6dbaf63_ppc64le",
+          "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:5e727715cdf8d52c95302d34bd6cd6bed6e22b48a1a77a060f264df30653b06f_arm64",
+          "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:c5bf6c297ab451a47b9a40d1372313624f49578a63557035b486677bcb7df3e9_s390x",
+          "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:d87068e6d8dc13555d9d4073ece644733f1cd7e4b9b6a4fa4b4676339fc8e5de_amd64",
+          "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-rhel9@sha256:321234a8c7571370282568e008bab4a21795b5bf0f44f12a6d16bf3544290a76_s390x",
+          "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-rhel9@sha256:64b4004e9af037ff3c1be4881e4d2893edfb76a01106bc355a0a93d56b701842_arm64",
+          "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-rhel9@sha256:afe287daf5bbcc2762d326a84bcf712c2f3818fb88a0f72cb2dbebcbb453c209_amd64",
+          "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-rhel9@sha256:b1e9a7c0a5bc4645fc33c404732927bf288505b675c91ec8e4d2a06798630dc3_ppc64le",
+          "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes@sha256:321234a8c7571370282568e008bab4a21795b5bf0f44f12a6d16bf3544290a76_s390x",
+          "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes@sha256:64b4004e9af037ff3c1be4881e4d2893edfb76a01106bc355a0a93d56b701842_arm64",
+          "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes@sha256:afe287daf5bbcc2762d326a84bcf712c2f3818fb88a0f72cb2dbebcbb453c209_amd64",
+          "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes@sha256:b1e9a7c0a5bc4645fc33c404732927bf288505b675c91ec8e4d2a06798630dc3_ppc64le"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2243296",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2243296"
+        },
+        {
+          "category": "external",
+          "summary": "RHSB-2023-003",
+          "url": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2023-39325",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "https://access.redhat.com/security/cve/CVE-2023-44487",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-44487"
+        },
+        {
+          "category": "external",
+          "summary": "https://go.dev/issue/63417",
+          "url": "https://go.dev/issue/63417"
+        },
+        {
+          "category": "external",
+          "summary": "https://pkg.go.dev/vuln/GO-2023-2102",
+          "url": "https://pkg.go.dev/vuln/GO-2023-2102"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487",
+          "url": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487"
+        }
+      ],
+      "release_date": "2023-10-10T00:00:00+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2024-01-17T09:48:09+00:00",
+          "details": "For OpenShift Container Platform 4.13 see the following documentation, which will be updated shortly for this release, for important instructions on how to upgrade your cluster and fully apply this asynchronous errata update:\n\nhttps://docs.openshift.com/container-platform/4.13/release_notes/ocp-4-13-release-notes.html\n\nYou may download the oc tool and use it to inspect release image metadata for x86_64, s390x, ppc64le, and aarch64 architectures. The image digests may be found at https://quay.io/repository/openshift-release-dev/ocp-release?tab=tags.\n\n      The sha values for the release are\n\n      (For x86_64 architecture)\n      The image digest is sha256:9c4a4471bb93ab11d255925535ff719742cafa8ae06d622b870133787a72abc3\n\n      (For s390x architecture)\n      The image digest is sha256:80c287d6ee8baa959462ddb58f23c89cd4d37e54350813de09ef2b2704519057\n\n      (For ppc64le architecture)\n      The image digest is sha256:0b087b1c8f1af8c2339fd40c57e2b15d3bb5c4c761ed04b6e67dc3b9fff7be19\n\n      (For aarch64 architecture)\n      The image digest is sha256:e0c45710ebff1bcd72c694f3bac3de92074163aa1db4b7a03d1a81cb53b79888\n\nAll OpenShift Container Platform 4.13 users are advised to upgrade to these updated packages and images when they are available in the appropriate release channel. To check for available updates, use the OpenShift CLI (oc) or web console. Instructions for upgrading a cluster are available at https://docs.openshift.com/container-platform/4.13/updating/updating-cluster-cli.html",
+          "product_ids": [
+            "8Base-RHOSE-4.13:openshift4/ose-aws-pod-identity-webhook-rhel8@sha256:7a895374b2289119947ac54b49c34c2abd44e7f108411b65a0181e9965d5205f_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-aws-pod-identity-webhook-rhel8@sha256:f9fa6a423bc75e9864c2acef175a6cc5494d6175c70c9145c56b6eea5c953f2f_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-cluster-network-operator@sha256:434ad23d0d405b7e22456ed4b3f882b81ab77d5f35b6ef2db87c1374042e0a86_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-cluster-network-operator@sha256:637168d333dbd5970715b98f97946e85bc71485824c4dab2de82154efb8a472b_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-cluster-network-operator@sha256:abc6213b793b35a404eeec68d5667bd6e108879ee86a182fc6efe5efae463e1f_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-cluster-network-operator@sha256:c7728b5165b2abdc9f63d3dd83c2894a9adc49a3e50a2c4c56662657c0e4562b_s390x"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2024:0193"
+        },
+        {
+          "category": "workaround",
+          "details": "The default stream concurrency limit in golang is 250 streams (requests) per HTTP/2 connection. This value may be adjusted in the golang.org/x/net/http2 package using the Server.MaxConcurrentStreams setting and the ConfigureServer function which are available in golang.org/x/net/http2.",
+          "product_ids": [
+            "8Base-RHOSE-4.13:openshift4/network-tools-rhel8@sha256:473cce3ee81558458beb6778df4fad6024a75ff3ce212fbc9848d30732bfe0dd_s390x",
+            "8Base-RHOSE-4.13:openshift4/network-tools-rhel8@sha256:c401686e9a0c234f590cb505372ba94302b9a0e0b73867e39a0e12426ca6e6ff_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/network-tools-rhel8@sha256:cf3ee30fc23923f027f97f6611abd2eeb21164aa65697445664a6f860929f7e0_arm64",
+            "8Base-RHOSE-4.13:openshift4/network-tools-rhel8@sha256:db1d60dd61f746fdc09a73c6520a2e32590bfbd22417f8d379d6a72a3b7505b7_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-agent-installer-node-agent-rhel8@sha256:16e8bd6a4bfc6cac55541cbf038c475c54c8207ac82212766368d6df363967b0_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-agent-installer-node-agent-rhel8@sha256:59b8105f8c827c6954f0ccb97321f851f387327ab7af6cea58d9fba71ceeac0b_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-agent-installer-node-agent-rhel8@sha256:66d8c54aa10c766124c332a0203e717f7f8b120031b5933e977f5b12644dd11a_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-agent-installer-node-agent-rhel8@sha256:b2e2bd59321c4301a2ee202090bf40b230ce7a1ee0871f9b0a30be9b37a8882d_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-aws-pod-identity-webhook-rhel8@sha256:7a895374b2289119947ac54b49c34c2abd44e7f108411b65a0181e9965d5205f_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-aws-pod-identity-webhook-rhel8@sha256:f9fa6a423bc75e9864c2acef175a6cc5494d6175c70c9145c56b6eea5c953f2f_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-cluster-network-operator@sha256:434ad23d0d405b7e22456ed4b3f882b81ab77d5f35b6ef2db87c1374042e0a86_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-cluster-network-operator@sha256:637168d333dbd5970715b98f97946e85bc71485824c4dab2de82154efb8a472b_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-cluster-network-operator@sha256:abc6213b793b35a404eeec68d5667bd6e108879ee86a182fc6efe5efae463e1f_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-cluster-network-operator@sha256:c7728b5165b2abdc9f63d3dd83c2894a9adc49a3e50a2c4c56662657c0e4562b_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-console@sha256:483a932e552796c74a6ff394233710beb516f42c9b964fc13b3276f52cf4f7fe_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-console@sha256:7c69be58deb42c078baaa9f8b4e90f327a38b79a3b00a24ddb104c6727fc8a7e_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-console@sha256:afab7d8212ee932132217b76ba99cee7c44369283634021f9c6c1956f83c4c98_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-console@sha256:eeff56f6fe0956bbc6379bea152e65e6b98809db8e48022db5ef396094bfc25e_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-hyperkube@sha256:474953b990b02f9f7141ef2316e6e4dfb654fa970be893bb11b0be4a6651003a_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-hyperkube@sha256:a3adda700381f8b2f22509e4ade1022d86244f2fc9d1f2d2158259ffedd3b516_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-hyperkube@sha256:bbdf4f84891e1774cca9e07037e17b40b09737a2bf7af8ad292ded95c3c458ff_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-hyperkube@sha256:c59ba2f520589740b92799483837a438208a352854391173e0a87c4e8c6906f9_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-machine-config-operator@sha256:1bf04c081f10010a77c3bbdf098b48f94333138c0ed614be39594ccbf2c11a7b_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-machine-config-operator@sha256:6445f27aac98ae77b4ae47e92cd44cdf69f92dae51e0cbdd4b1625c7e2188f9c_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-machine-config-operator@sha256:8bdf00523bfc894c75c09fcf64201c4ab5aad4b6580a2ac554e0f446b99a4caf_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-machine-config-operator@sha256:b1207de1db941794219f728c3920b1b432113628d2e8fd2cc8f1b65598ff3082_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-lifecycle-manager@sha256:00754781fdba3e206ac7187543c0c0833afdb8e765551a0316d7a66e8391e50f_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-lifecycle-manager@sha256:101373b564e354a6d420654c1338556e33acfc6a64f6d53e6c2bb6d03a9c6dbb_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-lifecycle-manager@sha256:b380c6f0a092c12992b790b64b3118dfa3141753281b3cb65d718e27e01bca88_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-lifecycle-manager@sha256:cb73249f2ebd7a06bcd473022dcaadfd6efa7be741ae372fff5c8c6dc584adb6_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-registry@sha256:8955d2f48b0d837431f46a7d7a91f3217f3ce535c1d4b4cc81c22970cf0f05e6_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-registry@sha256:9eebd925df7317c2cecae7569d3484849e65e7eebfe4240abc82ab62644fdb47_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-registry@sha256:be83a3c4b057d0a36e330c919f829de58c8bdd05f5dc11eaf85455fe9b0790b4_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-registry@sha256:d8815fd567c4b8143e1a03c5398ce59ba8c00b63785d92ae268742bd5f55b53e_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-pod@sha256:0f8f11ef796d5811303dd674d129b51b9e1209b984d6364a5f144135546195e3_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-pod@sha256:75ac644f92e98c8e9616e2820aad3450b850a28112b152f79670db3379fb25b6_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-pod@sha256:7a53f216d1969028e231cc54a6df6ae776c12f65866e6b223ced540f531e7963_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-pod@sha256:a8cbaef00c8a839000e49c55843474ef5020cc7ab2cf6aa2d10d05b8cf3fdd0a_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-tests@sha256:7c4bd099e226d7bcaa446be037ba63ed0a58076c6cc428ad61160bea3d0b2304_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-tests@sha256:a4084c4597803ebe3d1a226634d5322091855f0da34676a0538dd5ae21434bd0_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-tests@sha256:b478437b4f3cdf52491b0c9fd85ec171752dc45415c165ab0e7103ea5bf55906_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-tests@sha256:d5cc21b6082b532234a6f7c838618a94d200e290c85cff769f2407b29b92abb2_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-tools-rhel8@sha256:8d14f86b472e43fbbafccf485ed173b7cda54ccb1971b3db0c0f06fac39f3146_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-tools-rhel8@sha256:8f13c578cc8a0631a9a5de1cd88357045f3fb4766202e365c8022195cea4fb8e_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-tools-rhel8@sha256:9494f1f3a59f31415a846395375396ea51ba4c541802d83879b5b1d331ca308f_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-tools-rhel8@sha256:b21c1ec26ab2065396b220132715b383d86974941a9f7c59d079aaf16cfb24db_amd64",
+            "9Base-RHOSE-4.13:openshift4/driver-toolkit-rhel9@sha256:05d6234e1a633a3f4031c577c915da75cece186dcd270f89447a03f1fd250a1a_s390x",
+            "9Base-RHOSE-4.13:openshift4/driver-toolkit-rhel9@sha256:1670b7ed6745cfab81e2f472e9e77834e0fb6dc792b017bccda1217403dc0247_amd64",
+            "9Base-RHOSE-4.13:openshift4/driver-toolkit-rhel9@sha256:f83f933fe00b8434456d7924e07f07a82ae38991270945fe96770982bdc414e7_ppc64le",
+            "9Base-RHOSE-4.13:openshift4/driver-toolkit-rhel9@sha256:fbe0e1f721cbc7db4f46191f2e96cd3e439d4de6af3e4c3656e90b32d6cb2da2_arm64",
+            "9Base-RHOSE-4.13:openshift4/ose-ironic-machine-os-downloader-rhel9@sha256:5be223aa82849a0f6b14c3fd581ee34b065d439b601a0bb1bcc2659a258afb39_arm64",
+            "9Base-RHOSE-4.13:openshift4/ose-ironic-machine-os-downloader-rhel9@sha256:7486da69bbcacaf43bea2cb8d681e556084aaccfd388e1ad4383cbba517d142b_amd64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:12be23429b3173f6183c822f3426a7c1871d8fa5dacfd03d6cb2ae8cd6dbaf63_ppc64le",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:5e727715cdf8d52c95302d34bd6cd6bed6e22b48a1a77a060f264df30653b06f_arm64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:c5bf6c297ab451a47b9a40d1372313624f49578a63557035b486677bcb7df3e9_s390x",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:d87068e6d8dc13555d9d4073ece644733f1cd7e4b9b6a4fa4b4676339fc8e5de_amd64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-rhel9@sha256:321234a8c7571370282568e008bab4a21795b5bf0f44f12a6d16bf3544290a76_s390x",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-rhel9@sha256:64b4004e9af037ff3c1be4881e4d2893edfb76a01106bc355a0a93d56b701842_arm64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-rhel9@sha256:afe287daf5bbcc2762d326a84bcf712c2f3818fb88a0f72cb2dbebcbb453c209_amd64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-rhel9@sha256:b1e9a7c0a5bc4645fc33c404732927bf288505b675c91ec8e4d2a06798630dc3_ppc64le",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes@sha256:321234a8c7571370282568e008bab4a21795b5bf0f44f12a6d16bf3544290a76_s390x",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes@sha256:64b4004e9af037ff3c1be4881e4d2893edfb76a01106bc355a0a93d56b701842_arm64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes@sha256:afe287daf5bbcc2762d326a84bcf712c2f3818fb88a0f72cb2dbebcbb453c209_amd64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes@sha256:b1e9a7c0a5bc4645fc33c404732927bf288505b675c91ec8e4d2a06798630dc3_ppc64le"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 7.5,
+            "baseSeverity": "HIGH",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "8Base-RHOSE-4.13:openshift4/network-tools-rhel8@sha256:473cce3ee81558458beb6778df4fad6024a75ff3ce212fbc9848d30732bfe0dd_s390x",
+            "8Base-RHOSE-4.13:openshift4/network-tools-rhel8@sha256:c401686e9a0c234f590cb505372ba94302b9a0e0b73867e39a0e12426ca6e6ff_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/network-tools-rhel8@sha256:cf3ee30fc23923f027f97f6611abd2eeb21164aa65697445664a6f860929f7e0_arm64",
+            "8Base-RHOSE-4.13:openshift4/network-tools-rhel8@sha256:db1d60dd61f746fdc09a73c6520a2e32590bfbd22417f8d379d6a72a3b7505b7_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-agent-installer-node-agent-rhel8@sha256:16e8bd6a4bfc6cac55541cbf038c475c54c8207ac82212766368d6df363967b0_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-agent-installer-node-agent-rhel8@sha256:59b8105f8c827c6954f0ccb97321f851f387327ab7af6cea58d9fba71ceeac0b_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-agent-installer-node-agent-rhel8@sha256:66d8c54aa10c766124c332a0203e717f7f8b120031b5933e977f5b12644dd11a_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-agent-installer-node-agent-rhel8@sha256:b2e2bd59321c4301a2ee202090bf40b230ce7a1ee0871f9b0a30be9b37a8882d_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-aws-pod-identity-webhook-rhel8@sha256:7a895374b2289119947ac54b49c34c2abd44e7f108411b65a0181e9965d5205f_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-aws-pod-identity-webhook-rhel8@sha256:f9fa6a423bc75e9864c2acef175a6cc5494d6175c70c9145c56b6eea5c953f2f_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-cluster-network-operator@sha256:434ad23d0d405b7e22456ed4b3f882b81ab77d5f35b6ef2db87c1374042e0a86_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-cluster-network-operator@sha256:637168d333dbd5970715b98f97946e85bc71485824c4dab2de82154efb8a472b_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-cluster-network-operator@sha256:abc6213b793b35a404eeec68d5667bd6e108879ee86a182fc6efe5efae463e1f_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-cluster-network-operator@sha256:c7728b5165b2abdc9f63d3dd83c2894a9adc49a3e50a2c4c56662657c0e4562b_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-console@sha256:483a932e552796c74a6ff394233710beb516f42c9b964fc13b3276f52cf4f7fe_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-console@sha256:7c69be58deb42c078baaa9f8b4e90f327a38b79a3b00a24ddb104c6727fc8a7e_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-console@sha256:afab7d8212ee932132217b76ba99cee7c44369283634021f9c6c1956f83c4c98_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-console@sha256:eeff56f6fe0956bbc6379bea152e65e6b98809db8e48022db5ef396094bfc25e_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-hyperkube@sha256:474953b990b02f9f7141ef2316e6e4dfb654fa970be893bb11b0be4a6651003a_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-hyperkube@sha256:a3adda700381f8b2f22509e4ade1022d86244f2fc9d1f2d2158259ffedd3b516_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-hyperkube@sha256:bbdf4f84891e1774cca9e07037e17b40b09737a2bf7af8ad292ded95c3c458ff_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-hyperkube@sha256:c59ba2f520589740b92799483837a438208a352854391173e0a87c4e8c6906f9_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-machine-config-operator@sha256:1bf04c081f10010a77c3bbdf098b48f94333138c0ed614be39594ccbf2c11a7b_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-machine-config-operator@sha256:6445f27aac98ae77b4ae47e92cd44cdf69f92dae51e0cbdd4b1625c7e2188f9c_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-machine-config-operator@sha256:8bdf00523bfc894c75c09fcf64201c4ab5aad4b6580a2ac554e0f446b99a4caf_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-machine-config-operator@sha256:b1207de1db941794219f728c3920b1b432113628d2e8fd2cc8f1b65598ff3082_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-lifecycle-manager@sha256:00754781fdba3e206ac7187543c0c0833afdb8e765551a0316d7a66e8391e50f_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-lifecycle-manager@sha256:101373b564e354a6d420654c1338556e33acfc6a64f6d53e6c2bb6d03a9c6dbb_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-lifecycle-manager@sha256:b380c6f0a092c12992b790b64b3118dfa3141753281b3cb65d718e27e01bca88_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-lifecycle-manager@sha256:cb73249f2ebd7a06bcd473022dcaadfd6efa7be741ae372fff5c8c6dc584adb6_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-registry@sha256:8955d2f48b0d837431f46a7d7a91f3217f3ce535c1d4b4cc81c22970cf0f05e6_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-registry@sha256:9eebd925df7317c2cecae7569d3484849e65e7eebfe4240abc82ab62644fdb47_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-registry@sha256:be83a3c4b057d0a36e330c919f829de58c8bdd05f5dc11eaf85455fe9b0790b4_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-operator-registry@sha256:d8815fd567c4b8143e1a03c5398ce59ba8c00b63785d92ae268742bd5f55b53e_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-pod@sha256:0f8f11ef796d5811303dd674d129b51b9e1209b984d6364a5f144135546195e3_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-pod@sha256:75ac644f92e98c8e9616e2820aad3450b850a28112b152f79670db3379fb25b6_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-pod@sha256:7a53f216d1969028e231cc54a6df6ae776c12f65866e6b223ced540f531e7963_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-pod@sha256:a8cbaef00c8a839000e49c55843474ef5020cc7ab2cf6aa2d10d05b8cf3fdd0a_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-tests@sha256:7c4bd099e226d7bcaa446be037ba63ed0a58076c6cc428ad61160bea3d0b2304_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-tests@sha256:a4084c4597803ebe3d1a226634d5322091855f0da34676a0538dd5ae21434bd0_amd64",
+            "8Base-RHOSE-4.13:openshift4/ose-tests@sha256:b478437b4f3cdf52491b0c9fd85ec171752dc45415c165ab0e7103ea5bf55906_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-tests@sha256:d5cc21b6082b532234a6f7c838618a94d200e290c85cff769f2407b29b92abb2_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-tools-rhel8@sha256:8d14f86b472e43fbbafccf485ed173b7cda54ccb1971b3db0c0f06fac39f3146_ppc64le",
+            "8Base-RHOSE-4.13:openshift4/ose-tools-rhel8@sha256:8f13c578cc8a0631a9a5de1cd88357045f3fb4766202e365c8022195cea4fb8e_s390x",
+            "8Base-RHOSE-4.13:openshift4/ose-tools-rhel8@sha256:9494f1f3a59f31415a846395375396ea51ba4c541802d83879b5b1d331ca308f_arm64",
+            "8Base-RHOSE-4.13:openshift4/ose-tools-rhel8@sha256:b21c1ec26ab2065396b220132715b383d86974941a9f7c59d079aaf16cfb24db_amd64",
+            "9Base-RHOSE-4.13:openshift4/driver-toolkit-rhel9@sha256:05d6234e1a633a3f4031c577c915da75cece186dcd270f89447a03f1fd250a1a_s390x",
+            "9Base-RHOSE-4.13:openshift4/driver-toolkit-rhel9@sha256:1670b7ed6745cfab81e2f472e9e77834e0fb6dc792b017bccda1217403dc0247_amd64",
+            "9Base-RHOSE-4.13:openshift4/driver-toolkit-rhel9@sha256:f83f933fe00b8434456d7924e07f07a82ae38991270945fe96770982bdc414e7_ppc64le",
+            "9Base-RHOSE-4.13:openshift4/driver-toolkit-rhel9@sha256:fbe0e1f721cbc7db4f46191f2e96cd3e439d4de6af3e4c3656e90b32d6cb2da2_arm64",
+            "9Base-RHOSE-4.13:openshift4/ose-ironic-machine-os-downloader-rhel9@sha256:5be223aa82849a0f6b14c3fd581ee34b065d439b601a0bb1bcc2659a258afb39_arm64",
+            "9Base-RHOSE-4.13:openshift4/ose-ironic-machine-os-downloader-rhel9@sha256:7486da69bbcacaf43bea2cb8d681e556084aaccfd388e1ad4383cbba517d142b_amd64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:12be23429b3173f6183c822f3426a7c1871d8fa5dacfd03d6cb2ae8cd6dbaf63_ppc64le",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:5e727715cdf8d52c95302d34bd6cd6bed6e22b48a1a77a060f264df30653b06f_arm64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:c5bf6c297ab451a47b9a40d1372313624f49578a63557035b486677bcb7df3e9_s390x",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-microshift-rhel9@sha256:d87068e6d8dc13555d9d4073ece644733f1cd7e4b9b6a4fa4b4676339fc8e5de_amd64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-rhel9@sha256:321234a8c7571370282568e008bab4a21795b5bf0f44f12a6d16bf3544290a76_s390x",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-rhel9@sha256:64b4004e9af037ff3c1be4881e4d2893edfb76a01106bc355a0a93d56b701842_arm64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-rhel9@sha256:afe287daf5bbcc2762d326a84bcf712c2f3818fb88a0f72cb2dbebcbb453c209_amd64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes-rhel9@sha256:b1e9a7c0a5bc4645fc33c404732927bf288505b675c91ec8e4d2a06798630dc3_ppc64le",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes@sha256:321234a8c7571370282568e008bab4a21795b5bf0f44f12a6d16bf3544290a76_s390x",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes@sha256:64b4004e9af037ff3c1be4881e4d2893edfb76a01106bc355a0a93d56b701842_arm64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes@sha256:afe287daf5bbcc2762d326a84bcf712c2f3818fb88a0f72cb2dbebcbb453c209_amd64",
+            "9Base-RHOSE-4.13:openshift4/ose-ovn-kubernetes@sha256:b1e9a7c0a5bc4645fc33c404732927bf288505b675c91ec8e4d2a06798630dc3_ppc64le"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Important"
+        }
+      ],
+      "title": "golang: net/http, x/net/http2: rapid stream resets can cause excessive work (CVE-2023-44487)"
+    }
+  ]
+}

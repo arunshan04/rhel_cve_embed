@@ -1,0 +1,1096 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "namespace": "https://access.redhat.com/security/updates/classification/",
+      "text": "Important"
+    },
+    "category": "csaf_security_advisory",
+    "csaf_version": "2.0",
+    "distribution": {
+      "text": "Copyright \u00a9 Red Hat, Inc. All rights reserved.",
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "en",
+    "notes": [
+      {
+        "category": "summary",
+        "text": "Updated images are now available for Red Hat Advanced Cluster Security.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+        "title": "Topic"
+      },
+      {
+        "category": "general",
+        "text": "Updated images are now available for Red Hat Advanced Cluster Security.\n\nSecurity Fix(es):\n\n* golang: net/http, x/net/http2: rapid stream resets can cause excessive work (Rapid Reset Attack) (CVE-2023-39325)\n\nA Red Hat Security Bulletin which addresses further details about the Rapid Reset flaw is available in the References section.\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nThis release of RHACS 4.1 includes updates to RHEL base images and includes the following fixes:\n\n* All containers have been rebuilt and now include container CVE fixes for CVE-2023-44487: Flaw in handling multiplexed streams in the HTTP/2 protocol and CVE-2023-40217: Python 3 ssl.SSLSocket vulnerability.\n* The HTTP/2 functionality in the RHACS Operator webhook has been disabled to mitigate CVE-2023-44487.",
+        "title": "Details"
+      },
+      {
+        "category": "legal_disclaimer",
+        "text": "This content is licensed under the Creative Commons Attribution 4.0 International License (https://creativecommons.org/licenses/by/4.0/). If you distribute this content, or a modified version of it, you must provide attribution to Red Hat Inc. and provide a link to the original.",
+        "title": "Terms of Use"
+      }
+    ],
+    "publisher": {
+      "category": "vendor",
+      "contact_details": "https://access.redhat.com/security/team/contact/",
+      "issuing_authority": "Red Hat Product Security is responsible for vulnerability handling across all Red Hat products and services.",
+      "name": "Red Hat Product Security",
+      "namespace": "https://www.redhat.com"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "https://access.redhat.com/errata/RHSA-2023:6828",
+        "url": "https://access.redhat.com/errata/RHSA-2023:6828"
+      },
+      {
+        "category": "external",
+        "summary": "https://access.redhat.com/security/updates/classification/#important",
+        "url": "https://access.redhat.com/security/updates/classification/#important"
+      },
+      {
+        "category": "external",
+        "summary": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003",
+        "url": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003"
+      },
+      {
+        "category": "external",
+        "summary": "https://docs.openshift.com/acs/4.1/release_notes/41-release-notes.html",
+        "url": "https://docs.openshift.com/acs/4.1/release_notes/41-release-notes.html"
+      },
+      {
+        "category": "external",
+        "summary": "2243296",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2243296"
+      },
+      {
+        "category": "external",
+        "summary": "ROX-20391",
+        "url": "https://issues.redhat.com/browse/ROX-20391"
+      },
+      {
+        "category": "external",
+        "summary": "ROX-20542",
+        "url": "https://issues.redhat.com/browse/ROX-20542"
+      },
+      {
+        "category": "external",
+        "summary": "ROX-20682",
+        "url": "https://issues.redhat.com/browse/ROX-20682"
+      },
+      {
+        "category": "self",
+        "summary": "Canonical URL",
+        "url": "https://security.access.redhat.com/data/csaf/v2/advisories/2023/rhsa-2023_6828.json"
+      }
+    ],
+    "title": "Red Hat Security Advisory: ACS 4.1 enhancement update",
+    "tracking": {
+      "current_release_date": "2025-07-01T14:21:42+00:00",
+      "generator": {
+        "date": "2025-07-01T14:21:42+00:00",
+        "engine": {
+          "name": "Red Hat SDEngine",
+          "version": "4.6.3"
+        }
+      },
+      "id": "RHSA-2023:6828",
+      "initial_release_date": "2023-11-08T18:34:59+00:00",
+      "revision_history": [
+        {
+          "date": "2023-11-08T18:34:59+00:00",
+          "number": "1",
+          "summary": "Initial version"
+        },
+        {
+          "date": "2023-11-08T18:34:59+00:00",
+          "number": "2",
+          "summary": "Last updated version"
+        },
+        {
+          "date": "2025-07-01T14:21:42+00:00",
+          "number": "3",
+          "summary": "Last generated version"
+        }
+      ],
+      "status": "final",
+      "version": "3"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_name",
+                "name": "RHACS 4.1 for RHEL 8",
+                "product": {
+                  "name": "RHACS 4.1 for RHEL 8",
+                  "product_id": "8Base-RHACS-4.1",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:advanced_cluster_security:4.1::el8"
+                  }
+                }
+              }
+            ],
+            "category": "product_family",
+            "name": "Red Hat Advanced Cluster Security for Kubernetes"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-central-db-rhel8@sha256:7d1ba993b9e53c5826f7b41541bc057048ebab7f4f29a61a569d5c954c69d061_amd64",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-central-db-rhel8@sha256:7d1ba993b9e53c5826f7b41541bc057048ebab7f4f29a61a569d5c954c69d061_amd64",
+                  "product_id": "advanced-cluster-security/rhacs-central-db-rhel8@sha256:7d1ba993b9e53c5826f7b41541bc057048ebab7f4f29a61a569d5c954c69d061_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-central-db-rhel8@sha256:7d1ba993b9e53c5826f7b41541bc057048ebab7f4f29a61a569d5c954c69d061?arch=amd64&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-central-db-rhel8&tag=4.1.5-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-collector-rhel8@sha256:c40c2b4aaa6e4d06e96772cf76ff1366284833e36a0872df636f549b58085f0d_amd64",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-collector-rhel8@sha256:c40c2b4aaa6e4d06e96772cf76ff1366284833e36a0872df636f549b58085f0d_amd64",
+                  "product_id": "advanced-cluster-security/rhacs-collector-rhel8@sha256:c40c2b4aaa6e4d06e96772cf76ff1366284833e36a0872df636f549b58085f0d_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-collector-rhel8@sha256:c40c2b4aaa6e4d06e96772cf76ff1366284833e36a0872df636f549b58085f0d?arch=amd64&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-collector-rhel8&tag=4.1.5-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-collector-slim-rhel8@sha256:e36c72f1a70adc1e68c822304598992f902de116b44b1b08b50df4c9a46827fe_amd64",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-collector-slim-rhel8@sha256:e36c72f1a70adc1e68c822304598992f902de116b44b1b08b50df4c9a46827fe_amd64",
+                  "product_id": "advanced-cluster-security/rhacs-collector-slim-rhel8@sha256:e36c72f1a70adc1e68c822304598992f902de116b44b1b08b50df4c9a46827fe_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-collector-slim-rhel8@sha256:e36c72f1a70adc1e68c822304598992f902de116b44b1b08b50df4c9a46827fe?arch=amd64&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-collector-slim-rhel8&tag=4.1.5-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-main-rhel8@sha256:9d3e2bb44a4f866bd04efb8223d68f21b04855239d95d81b530f61c9f5e42bd1_amd64",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-main-rhel8@sha256:9d3e2bb44a4f866bd04efb8223d68f21b04855239d95d81b530f61c9f5e42bd1_amd64",
+                  "product_id": "advanced-cluster-security/rhacs-main-rhel8@sha256:9d3e2bb44a4f866bd04efb8223d68f21b04855239d95d81b530f61c9f5e42bd1_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-main-rhel8@sha256:9d3e2bb44a4f866bd04efb8223d68f21b04855239d95d81b530f61c9f5e42bd1?arch=amd64&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-main-rhel8&tag=4.1.5-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-operator-bundle@sha256:aafaa944201871ec15cead3aa77bbdd1da76f972f3a241b894e2254a6ec09595_amd64",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-operator-bundle@sha256:aafaa944201871ec15cead3aa77bbdd1da76f972f3a241b894e2254a6ec09595_amd64",
+                  "product_id": "advanced-cluster-security/rhacs-operator-bundle@sha256:aafaa944201871ec15cead3aa77bbdd1da76f972f3a241b894e2254a6ec09595_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-operator-bundle@sha256:aafaa944201871ec15cead3aa77bbdd1da76f972f3a241b894e2254a6ec09595?arch=amd64&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-operator-bundle&tag=4.1.5-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-rhel8-operator@sha256:b291129b5dfd95d707e4cf1007928c406de1f39020eef4e54d63b0ada33c6107_amd64",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-rhel8-operator@sha256:b291129b5dfd95d707e4cf1007928c406de1f39020eef4e54d63b0ada33c6107_amd64",
+                  "product_id": "advanced-cluster-security/rhacs-rhel8-operator@sha256:b291129b5dfd95d707e4cf1007928c406de1f39020eef4e54d63b0ada33c6107_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-rhel8-operator@sha256:b291129b5dfd95d707e4cf1007928c406de1f39020eef4e54d63b0ada33c6107?arch=amd64&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-rhel8-operator&tag=4.1.5-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-roxctl-rhel8@sha256:862ad7f71a230c22e97f618c930ce3f8cd080c75a9ebf00f8b7644f1564861a7_amd64",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-roxctl-rhel8@sha256:862ad7f71a230c22e97f618c930ce3f8cd080c75a9ebf00f8b7644f1564861a7_amd64",
+                  "product_id": "advanced-cluster-security/rhacs-roxctl-rhel8@sha256:862ad7f71a230c22e97f618c930ce3f8cd080c75a9ebf00f8b7644f1564861a7_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-roxctl-rhel8@sha256:862ad7f71a230c22e97f618c930ce3f8cd080c75a9ebf00f8b7644f1564861a7?arch=amd64&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-roxctl-rhel8&tag=4.1.5-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-scanner-rhel8@sha256:5d6f36aaca6e9f98500fcadda71eb617c852bf0d4f0b6a71b66a343b3ec41985_amd64",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-scanner-rhel8@sha256:5d6f36aaca6e9f98500fcadda71eb617c852bf0d4f0b6a71b66a343b3ec41985_amd64",
+                  "product_id": "advanced-cluster-security/rhacs-scanner-rhel8@sha256:5d6f36aaca6e9f98500fcadda71eb617c852bf0d4f0b6a71b66a343b3ec41985_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-scanner-rhel8@sha256:5d6f36aaca6e9f98500fcadda71eb617c852bf0d4f0b6a71b66a343b3ec41985?arch=amd64&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-scanner-rhel8&tag=4.1.5-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-scanner-db-rhel8@sha256:e08adbe1d71a9907658598547514c5b9c649f766faf14f6d912bfb0d97e6d434_amd64",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-scanner-db-rhel8@sha256:e08adbe1d71a9907658598547514c5b9c649f766faf14f6d912bfb0d97e6d434_amd64",
+                  "product_id": "advanced-cluster-security/rhacs-scanner-db-rhel8@sha256:e08adbe1d71a9907658598547514c5b9c649f766faf14f6d912bfb0d97e6d434_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-scanner-db-rhel8@sha256:e08adbe1d71a9907658598547514c5b9c649f766faf14f6d912bfb0d97e6d434?arch=amd64&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-scanner-db-rhel8&tag=4.1.5-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-scanner-db-slim-rhel8@sha256:edea8cd403c2fa9cd28706e806a5f6d9b78e8cdfa1c131eda6c2c4254d40c13e_amd64",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-scanner-db-slim-rhel8@sha256:edea8cd403c2fa9cd28706e806a5f6d9b78e8cdfa1c131eda6c2c4254d40c13e_amd64",
+                  "product_id": "advanced-cluster-security/rhacs-scanner-db-slim-rhel8@sha256:edea8cd403c2fa9cd28706e806a5f6d9b78e8cdfa1c131eda6c2c4254d40c13e_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-scanner-db-slim-rhel8@sha256:edea8cd403c2fa9cd28706e806a5f6d9b78e8cdfa1c131eda6c2c4254d40c13e?arch=amd64&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-scanner-db-slim-rhel8&tag=4.1.5-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-scanner-slim-rhel8@sha256:68748b6a1e1d1f0e4709361d087e28a6db3018191a7cd3e9ba631ddb9578757f_amd64",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-scanner-slim-rhel8@sha256:68748b6a1e1d1f0e4709361d087e28a6db3018191a7cd3e9ba631ddb9578757f_amd64",
+                  "product_id": "advanced-cluster-security/rhacs-scanner-slim-rhel8@sha256:68748b6a1e1d1f0e4709361d087e28a6db3018191a7cd3e9ba631ddb9578757f_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-scanner-slim-rhel8@sha256:68748b6a1e1d1f0e4709361d087e28a6db3018191a7cd3e9ba631ddb9578757f?arch=amd64&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-scanner-slim-rhel8&tag=4.1.5-3"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "amd64"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-central-db-rhel8@sha256:2eb39cd2031da836b306c5f1abd54e5ef05373f36829e9cd3b24f2f2955a8135_ppc64le",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-central-db-rhel8@sha256:2eb39cd2031da836b306c5f1abd54e5ef05373f36829e9cd3b24f2f2955a8135_ppc64le",
+                  "product_id": "advanced-cluster-security/rhacs-central-db-rhel8@sha256:2eb39cd2031da836b306c5f1abd54e5ef05373f36829e9cd3b24f2f2955a8135_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-central-db-rhel8@sha256:2eb39cd2031da836b306c5f1abd54e5ef05373f36829e9cd3b24f2f2955a8135?arch=ppc64le&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-central-db-rhel8&tag=4.1.5-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-collector-rhel8@sha256:64b1287daff111b974cce3df8134cb09d5a4974a37412564dc02bf93df35a4c6_ppc64le",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-collector-rhel8@sha256:64b1287daff111b974cce3df8134cb09d5a4974a37412564dc02bf93df35a4c6_ppc64le",
+                  "product_id": "advanced-cluster-security/rhacs-collector-rhel8@sha256:64b1287daff111b974cce3df8134cb09d5a4974a37412564dc02bf93df35a4c6_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-collector-rhel8@sha256:64b1287daff111b974cce3df8134cb09d5a4974a37412564dc02bf93df35a4c6?arch=ppc64le&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-collector-rhel8&tag=4.1.5-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-collector-slim-rhel8@sha256:f92dbf47b14e40ed15e8b1f9abae795e53682fbe7746a3f6cfd2f8c65fa8ac3c_ppc64le",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-collector-slim-rhel8@sha256:f92dbf47b14e40ed15e8b1f9abae795e53682fbe7746a3f6cfd2f8c65fa8ac3c_ppc64le",
+                  "product_id": "advanced-cluster-security/rhacs-collector-slim-rhel8@sha256:f92dbf47b14e40ed15e8b1f9abae795e53682fbe7746a3f6cfd2f8c65fa8ac3c_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-collector-slim-rhel8@sha256:f92dbf47b14e40ed15e8b1f9abae795e53682fbe7746a3f6cfd2f8c65fa8ac3c?arch=ppc64le&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-collector-slim-rhel8&tag=4.1.5-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-main-rhel8@sha256:165f94df366216d0684b323c872d968faa3fbb45723ddb6e35fb1e191000aa0e_ppc64le",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-main-rhel8@sha256:165f94df366216d0684b323c872d968faa3fbb45723ddb6e35fb1e191000aa0e_ppc64le",
+                  "product_id": "advanced-cluster-security/rhacs-main-rhel8@sha256:165f94df366216d0684b323c872d968faa3fbb45723ddb6e35fb1e191000aa0e_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-main-rhel8@sha256:165f94df366216d0684b323c872d968faa3fbb45723ddb6e35fb1e191000aa0e?arch=ppc64le&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-main-rhel8&tag=4.1.5-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-operator-bundle@sha256:51dc4946a777b0da34789ee31bfa64f09e2065a2b584a48539336603ae01004a_ppc64le",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-operator-bundle@sha256:51dc4946a777b0da34789ee31bfa64f09e2065a2b584a48539336603ae01004a_ppc64le",
+                  "product_id": "advanced-cluster-security/rhacs-operator-bundle@sha256:51dc4946a777b0da34789ee31bfa64f09e2065a2b584a48539336603ae01004a_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-operator-bundle@sha256:51dc4946a777b0da34789ee31bfa64f09e2065a2b584a48539336603ae01004a?arch=ppc64le&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-operator-bundle&tag=4.1.5-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-rhel8-operator@sha256:186eaa4cf4b8896cfe4141925f26f406cc0156c676b159745d0205f4ed857951_ppc64le",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-rhel8-operator@sha256:186eaa4cf4b8896cfe4141925f26f406cc0156c676b159745d0205f4ed857951_ppc64le",
+                  "product_id": "advanced-cluster-security/rhacs-rhel8-operator@sha256:186eaa4cf4b8896cfe4141925f26f406cc0156c676b159745d0205f4ed857951_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-rhel8-operator@sha256:186eaa4cf4b8896cfe4141925f26f406cc0156c676b159745d0205f4ed857951?arch=ppc64le&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-rhel8-operator&tag=4.1.5-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-roxctl-rhel8@sha256:cebe3e3c935995b9352b7e1b17f469f57917db4576d44d11d0ff4c37fe21948d_ppc64le",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-roxctl-rhel8@sha256:cebe3e3c935995b9352b7e1b17f469f57917db4576d44d11d0ff4c37fe21948d_ppc64le",
+                  "product_id": "advanced-cluster-security/rhacs-roxctl-rhel8@sha256:cebe3e3c935995b9352b7e1b17f469f57917db4576d44d11d0ff4c37fe21948d_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-roxctl-rhel8@sha256:cebe3e3c935995b9352b7e1b17f469f57917db4576d44d11d0ff4c37fe21948d?arch=ppc64le&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-roxctl-rhel8&tag=4.1.5-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-scanner-rhel8@sha256:6c3a5aba527996b157f3609735381f256c68c5b24363b2385f25558975806458_ppc64le",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-scanner-rhel8@sha256:6c3a5aba527996b157f3609735381f256c68c5b24363b2385f25558975806458_ppc64le",
+                  "product_id": "advanced-cluster-security/rhacs-scanner-rhel8@sha256:6c3a5aba527996b157f3609735381f256c68c5b24363b2385f25558975806458_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-scanner-rhel8@sha256:6c3a5aba527996b157f3609735381f256c68c5b24363b2385f25558975806458?arch=ppc64le&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-scanner-rhel8&tag=4.1.5-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-scanner-db-rhel8@sha256:53e85c3769970a2bba52913b2c1ed8e784daf84b42de6317dd66cfe76d1591d1_ppc64le",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-scanner-db-rhel8@sha256:53e85c3769970a2bba52913b2c1ed8e784daf84b42de6317dd66cfe76d1591d1_ppc64le",
+                  "product_id": "advanced-cluster-security/rhacs-scanner-db-rhel8@sha256:53e85c3769970a2bba52913b2c1ed8e784daf84b42de6317dd66cfe76d1591d1_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-scanner-db-rhel8@sha256:53e85c3769970a2bba52913b2c1ed8e784daf84b42de6317dd66cfe76d1591d1?arch=ppc64le&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-scanner-db-rhel8&tag=4.1.5-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-scanner-db-slim-rhel8@sha256:ffde60ef6348be1e34a9eee0f2b56583fb80ee54c3d19c20de6748daa8d701b1_ppc64le",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-scanner-db-slim-rhel8@sha256:ffde60ef6348be1e34a9eee0f2b56583fb80ee54c3d19c20de6748daa8d701b1_ppc64le",
+                  "product_id": "advanced-cluster-security/rhacs-scanner-db-slim-rhel8@sha256:ffde60ef6348be1e34a9eee0f2b56583fb80ee54c3d19c20de6748daa8d701b1_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-scanner-db-slim-rhel8@sha256:ffde60ef6348be1e34a9eee0f2b56583fb80ee54c3d19c20de6748daa8d701b1?arch=ppc64le&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-scanner-db-slim-rhel8&tag=4.1.5-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-scanner-slim-rhel8@sha256:b36d84b6fd8911dbecda16d8c8536ca0180e7ac51cc75a40882a6580d787b73f_ppc64le",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-scanner-slim-rhel8@sha256:b36d84b6fd8911dbecda16d8c8536ca0180e7ac51cc75a40882a6580d787b73f_ppc64le",
+                  "product_id": "advanced-cluster-security/rhacs-scanner-slim-rhel8@sha256:b36d84b6fd8911dbecda16d8c8536ca0180e7ac51cc75a40882a6580d787b73f_ppc64le",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-scanner-slim-rhel8@sha256:b36d84b6fd8911dbecda16d8c8536ca0180e7ac51cc75a40882a6580d787b73f?arch=ppc64le&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-scanner-slim-rhel8&tag=4.1.5-3"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "ppc64le"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-central-db-rhel8@sha256:225ef8caeff7d8e40d4ef1cec150a347091249c6116199a8b8cbbb2b657d40fb_s390x",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-central-db-rhel8@sha256:225ef8caeff7d8e40d4ef1cec150a347091249c6116199a8b8cbbb2b657d40fb_s390x",
+                  "product_id": "advanced-cluster-security/rhacs-central-db-rhel8@sha256:225ef8caeff7d8e40d4ef1cec150a347091249c6116199a8b8cbbb2b657d40fb_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-central-db-rhel8@sha256:225ef8caeff7d8e40d4ef1cec150a347091249c6116199a8b8cbbb2b657d40fb?arch=s390x&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-central-db-rhel8&tag=4.1.5-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-collector-rhel8@sha256:5aa8bd48817d3d52fe6d4d79cefa3c4b2a89716fcd96bac3a2c6dc11f663e470_s390x",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-collector-rhel8@sha256:5aa8bd48817d3d52fe6d4d79cefa3c4b2a89716fcd96bac3a2c6dc11f663e470_s390x",
+                  "product_id": "advanced-cluster-security/rhacs-collector-rhel8@sha256:5aa8bd48817d3d52fe6d4d79cefa3c4b2a89716fcd96bac3a2c6dc11f663e470_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-collector-rhel8@sha256:5aa8bd48817d3d52fe6d4d79cefa3c4b2a89716fcd96bac3a2c6dc11f663e470?arch=s390x&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-collector-rhel8&tag=4.1.5-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-collector-slim-rhel8@sha256:4b28c3fd75efed62f043c52a13f766c752799bf05500260ea46ba75b5d48bf7e_s390x",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-collector-slim-rhel8@sha256:4b28c3fd75efed62f043c52a13f766c752799bf05500260ea46ba75b5d48bf7e_s390x",
+                  "product_id": "advanced-cluster-security/rhacs-collector-slim-rhel8@sha256:4b28c3fd75efed62f043c52a13f766c752799bf05500260ea46ba75b5d48bf7e_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-collector-slim-rhel8@sha256:4b28c3fd75efed62f043c52a13f766c752799bf05500260ea46ba75b5d48bf7e?arch=s390x&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-collector-slim-rhel8&tag=4.1.5-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-main-rhel8@sha256:d273c4b9f0d02c2179ffbbf55e6fc260e797d1f4356dba2c536a77ed8c0b33dd_s390x",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-main-rhel8@sha256:d273c4b9f0d02c2179ffbbf55e6fc260e797d1f4356dba2c536a77ed8c0b33dd_s390x",
+                  "product_id": "advanced-cluster-security/rhacs-main-rhel8@sha256:d273c4b9f0d02c2179ffbbf55e6fc260e797d1f4356dba2c536a77ed8c0b33dd_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-main-rhel8@sha256:d273c4b9f0d02c2179ffbbf55e6fc260e797d1f4356dba2c536a77ed8c0b33dd?arch=s390x&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-main-rhel8&tag=4.1.5-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-operator-bundle@sha256:13565496a1f4cb80746d542fc13c9f024b811dfb7df84d2013bc79b5809622bc_s390x",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-operator-bundle@sha256:13565496a1f4cb80746d542fc13c9f024b811dfb7df84d2013bc79b5809622bc_s390x",
+                  "product_id": "advanced-cluster-security/rhacs-operator-bundle@sha256:13565496a1f4cb80746d542fc13c9f024b811dfb7df84d2013bc79b5809622bc_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-operator-bundle@sha256:13565496a1f4cb80746d542fc13c9f024b811dfb7df84d2013bc79b5809622bc?arch=s390x&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-operator-bundle&tag=4.1.5-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-rhel8-operator@sha256:5adc8bbbfe0514d877f1c4ec9bb30dbf039634c9adba729623e7a4f6843a31fb_s390x",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-rhel8-operator@sha256:5adc8bbbfe0514d877f1c4ec9bb30dbf039634c9adba729623e7a4f6843a31fb_s390x",
+                  "product_id": "advanced-cluster-security/rhacs-rhel8-operator@sha256:5adc8bbbfe0514d877f1c4ec9bb30dbf039634c9adba729623e7a4f6843a31fb_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-rhel8-operator@sha256:5adc8bbbfe0514d877f1c4ec9bb30dbf039634c9adba729623e7a4f6843a31fb?arch=s390x&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-rhel8-operator&tag=4.1.5-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-roxctl-rhel8@sha256:4eb0d285b528002f312db407dabec4dca4757d3759ac3a01ba422e607ddbc4d7_s390x",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-roxctl-rhel8@sha256:4eb0d285b528002f312db407dabec4dca4757d3759ac3a01ba422e607ddbc4d7_s390x",
+                  "product_id": "advanced-cluster-security/rhacs-roxctl-rhel8@sha256:4eb0d285b528002f312db407dabec4dca4757d3759ac3a01ba422e607ddbc4d7_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-roxctl-rhel8@sha256:4eb0d285b528002f312db407dabec4dca4757d3759ac3a01ba422e607ddbc4d7?arch=s390x&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-roxctl-rhel8&tag=4.1.5-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-scanner-rhel8@sha256:5ca23d8f43543d454e24ec10aeb2f00847b4a4e9eb3fe3495a77e11222c21969_s390x",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-scanner-rhel8@sha256:5ca23d8f43543d454e24ec10aeb2f00847b4a4e9eb3fe3495a77e11222c21969_s390x",
+                  "product_id": "advanced-cluster-security/rhacs-scanner-rhel8@sha256:5ca23d8f43543d454e24ec10aeb2f00847b4a4e9eb3fe3495a77e11222c21969_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-scanner-rhel8@sha256:5ca23d8f43543d454e24ec10aeb2f00847b4a4e9eb3fe3495a77e11222c21969?arch=s390x&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-scanner-rhel8&tag=4.1.5-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-scanner-db-rhel8@sha256:ed4a04c43fd03091f78f24df01631b5fb1e8ca79a51d075081d6c49038f14f82_s390x",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-scanner-db-rhel8@sha256:ed4a04c43fd03091f78f24df01631b5fb1e8ca79a51d075081d6c49038f14f82_s390x",
+                  "product_id": "advanced-cluster-security/rhacs-scanner-db-rhel8@sha256:ed4a04c43fd03091f78f24df01631b5fb1e8ca79a51d075081d6c49038f14f82_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-scanner-db-rhel8@sha256:ed4a04c43fd03091f78f24df01631b5fb1e8ca79a51d075081d6c49038f14f82?arch=s390x&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-scanner-db-rhel8&tag=4.1.5-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-scanner-db-slim-rhel8@sha256:36dbe96cd603b2da2f3a7fec55ea5132d704395d9ec01806306307f756bd1a13_s390x",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-scanner-db-slim-rhel8@sha256:36dbe96cd603b2da2f3a7fec55ea5132d704395d9ec01806306307f756bd1a13_s390x",
+                  "product_id": "advanced-cluster-security/rhacs-scanner-db-slim-rhel8@sha256:36dbe96cd603b2da2f3a7fec55ea5132d704395d9ec01806306307f756bd1a13_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-scanner-db-slim-rhel8@sha256:36dbe96cd603b2da2f3a7fec55ea5132d704395d9ec01806306307f756bd1a13?arch=s390x&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-scanner-db-slim-rhel8&tag=4.1.5-3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "advanced-cluster-security/rhacs-scanner-slim-rhel8@sha256:0a5861649885d7d224451a836a45a9e093b297df36e8f2f501208b33ac48511f_s390x",
+                "product": {
+                  "name": "advanced-cluster-security/rhacs-scanner-slim-rhel8@sha256:0a5861649885d7d224451a836a45a9e093b297df36e8f2f501208b33ac48511f_s390x",
+                  "product_id": "advanced-cluster-security/rhacs-scanner-slim-rhel8@sha256:0a5861649885d7d224451a836a45a9e093b297df36e8f2f501208b33ac48511f_s390x",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/rhacs-scanner-slim-rhel8@sha256:0a5861649885d7d224451a836a45a9e093b297df36e8f2f501208b33ac48511f?arch=s390x&repository_url=registry.redhat.io/advanced-cluster-security/rhacs-scanner-slim-rhel8&tag=4.1.5-3"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "s390x"
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      }
+    ],
+    "relationships": [
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-central-db-rhel8@sha256:225ef8caeff7d8e40d4ef1cec150a347091249c6116199a8b8cbbb2b657d40fb_s390x as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-central-db-rhel8@sha256:225ef8caeff7d8e40d4ef1cec150a347091249c6116199a8b8cbbb2b657d40fb_s390x"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-central-db-rhel8@sha256:225ef8caeff7d8e40d4ef1cec150a347091249c6116199a8b8cbbb2b657d40fb_s390x",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-central-db-rhel8@sha256:2eb39cd2031da836b306c5f1abd54e5ef05373f36829e9cd3b24f2f2955a8135_ppc64le as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-central-db-rhel8@sha256:2eb39cd2031da836b306c5f1abd54e5ef05373f36829e9cd3b24f2f2955a8135_ppc64le"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-central-db-rhel8@sha256:2eb39cd2031da836b306c5f1abd54e5ef05373f36829e9cd3b24f2f2955a8135_ppc64le",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-central-db-rhel8@sha256:7d1ba993b9e53c5826f7b41541bc057048ebab7f4f29a61a569d5c954c69d061_amd64 as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-central-db-rhel8@sha256:7d1ba993b9e53c5826f7b41541bc057048ebab7f4f29a61a569d5c954c69d061_amd64"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-central-db-rhel8@sha256:7d1ba993b9e53c5826f7b41541bc057048ebab7f4f29a61a569d5c954c69d061_amd64",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-collector-rhel8@sha256:5aa8bd48817d3d52fe6d4d79cefa3c4b2a89716fcd96bac3a2c6dc11f663e470_s390x as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-collector-rhel8@sha256:5aa8bd48817d3d52fe6d4d79cefa3c4b2a89716fcd96bac3a2c6dc11f663e470_s390x"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-collector-rhel8@sha256:5aa8bd48817d3d52fe6d4d79cefa3c4b2a89716fcd96bac3a2c6dc11f663e470_s390x",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-collector-rhel8@sha256:64b1287daff111b974cce3df8134cb09d5a4974a37412564dc02bf93df35a4c6_ppc64le as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-collector-rhel8@sha256:64b1287daff111b974cce3df8134cb09d5a4974a37412564dc02bf93df35a4c6_ppc64le"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-collector-rhel8@sha256:64b1287daff111b974cce3df8134cb09d5a4974a37412564dc02bf93df35a4c6_ppc64le",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-collector-rhel8@sha256:c40c2b4aaa6e4d06e96772cf76ff1366284833e36a0872df636f549b58085f0d_amd64 as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-collector-rhel8@sha256:c40c2b4aaa6e4d06e96772cf76ff1366284833e36a0872df636f549b58085f0d_amd64"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-collector-rhel8@sha256:c40c2b4aaa6e4d06e96772cf76ff1366284833e36a0872df636f549b58085f0d_amd64",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-collector-slim-rhel8@sha256:4b28c3fd75efed62f043c52a13f766c752799bf05500260ea46ba75b5d48bf7e_s390x as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-collector-slim-rhel8@sha256:4b28c3fd75efed62f043c52a13f766c752799bf05500260ea46ba75b5d48bf7e_s390x"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-collector-slim-rhel8@sha256:4b28c3fd75efed62f043c52a13f766c752799bf05500260ea46ba75b5d48bf7e_s390x",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-collector-slim-rhel8@sha256:e36c72f1a70adc1e68c822304598992f902de116b44b1b08b50df4c9a46827fe_amd64 as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-collector-slim-rhel8@sha256:e36c72f1a70adc1e68c822304598992f902de116b44b1b08b50df4c9a46827fe_amd64"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-collector-slim-rhel8@sha256:e36c72f1a70adc1e68c822304598992f902de116b44b1b08b50df4c9a46827fe_amd64",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-collector-slim-rhel8@sha256:f92dbf47b14e40ed15e8b1f9abae795e53682fbe7746a3f6cfd2f8c65fa8ac3c_ppc64le as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-collector-slim-rhel8@sha256:f92dbf47b14e40ed15e8b1f9abae795e53682fbe7746a3f6cfd2f8c65fa8ac3c_ppc64le"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-collector-slim-rhel8@sha256:f92dbf47b14e40ed15e8b1f9abae795e53682fbe7746a3f6cfd2f8c65fa8ac3c_ppc64le",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-main-rhel8@sha256:165f94df366216d0684b323c872d968faa3fbb45723ddb6e35fb1e191000aa0e_ppc64le as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-main-rhel8@sha256:165f94df366216d0684b323c872d968faa3fbb45723ddb6e35fb1e191000aa0e_ppc64le"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-main-rhel8@sha256:165f94df366216d0684b323c872d968faa3fbb45723ddb6e35fb1e191000aa0e_ppc64le",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-main-rhel8@sha256:9d3e2bb44a4f866bd04efb8223d68f21b04855239d95d81b530f61c9f5e42bd1_amd64 as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-main-rhel8@sha256:9d3e2bb44a4f866bd04efb8223d68f21b04855239d95d81b530f61c9f5e42bd1_amd64"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-main-rhel8@sha256:9d3e2bb44a4f866bd04efb8223d68f21b04855239d95d81b530f61c9f5e42bd1_amd64",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-main-rhel8@sha256:d273c4b9f0d02c2179ffbbf55e6fc260e797d1f4356dba2c536a77ed8c0b33dd_s390x as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-main-rhel8@sha256:d273c4b9f0d02c2179ffbbf55e6fc260e797d1f4356dba2c536a77ed8c0b33dd_s390x"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-main-rhel8@sha256:d273c4b9f0d02c2179ffbbf55e6fc260e797d1f4356dba2c536a77ed8c0b33dd_s390x",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-operator-bundle@sha256:13565496a1f4cb80746d542fc13c9f024b811dfb7df84d2013bc79b5809622bc_s390x as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-operator-bundle@sha256:13565496a1f4cb80746d542fc13c9f024b811dfb7df84d2013bc79b5809622bc_s390x"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-operator-bundle@sha256:13565496a1f4cb80746d542fc13c9f024b811dfb7df84d2013bc79b5809622bc_s390x",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-operator-bundle@sha256:51dc4946a777b0da34789ee31bfa64f09e2065a2b584a48539336603ae01004a_ppc64le as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-operator-bundle@sha256:51dc4946a777b0da34789ee31bfa64f09e2065a2b584a48539336603ae01004a_ppc64le"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-operator-bundle@sha256:51dc4946a777b0da34789ee31bfa64f09e2065a2b584a48539336603ae01004a_ppc64le",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-operator-bundle@sha256:aafaa944201871ec15cead3aa77bbdd1da76f972f3a241b894e2254a6ec09595_amd64 as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-operator-bundle@sha256:aafaa944201871ec15cead3aa77bbdd1da76f972f3a241b894e2254a6ec09595_amd64"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-operator-bundle@sha256:aafaa944201871ec15cead3aa77bbdd1da76f972f3a241b894e2254a6ec09595_amd64",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-rhel8-operator@sha256:186eaa4cf4b8896cfe4141925f26f406cc0156c676b159745d0205f4ed857951_ppc64le as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-rhel8-operator@sha256:186eaa4cf4b8896cfe4141925f26f406cc0156c676b159745d0205f4ed857951_ppc64le"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-rhel8-operator@sha256:186eaa4cf4b8896cfe4141925f26f406cc0156c676b159745d0205f4ed857951_ppc64le",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-rhel8-operator@sha256:5adc8bbbfe0514d877f1c4ec9bb30dbf039634c9adba729623e7a4f6843a31fb_s390x as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-rhel8-operator@sha256:5adc8bbbfe0514d877f1c4ec9bb30dbf039634c9adba729623e7a4f6843a31fb_s390x"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-rhel8-operator@sha256:5adc8bbbfe0514d877f1c4ec9bb30dbf039634c9adba729623e7a4f6843a31fb_s390x",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-rhel8-operator@sha256:b291129b5dfd95d707e4cf1007928c406de1f39020eef4e54d63b0ada33c6107_amd64 as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-rhel8-operator@sha256:b291129b5dfd95d707e4cf1007928c406de1f39020eef4e54d63b0ada33c6107_amd64"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-rhel8-operator@sha256:b291129b5dfd95d707e4cf1007928c406de1f39020eef4e54d63b0ada33c6107_amd64",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-roxctl-rhel8@sha256:4eb0d285b528002f312db407dabec4dca4757d3759ac3a01ba422e607ddbc4d7_s390x as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-roxctl-rhel8@sha256:4eb0d285b528002f312db407dabec4dca4757d3759ac3a01ba422e607ddbc4d7_s390x"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-roxctl-rhel8@sha256:4eb0d285b528002f312db407dabec4dca4757d3759ac3a01ba422e607ddbc4d7_s390x",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-roxctl-rhel8@sha256:862ad7f71a230c22e97f618c930ce3f8cd080c75a9ebf00f8b7644f1564861a7_amd64 as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-roxctl-rhel8@sha256:862ad7f71a230c22e97f618c930ce3f8cd080c75a9ebf00f8b7644f1564861a7_amd64"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-roxctl-rhel8@sha256:862ad7f71a230c22e97f618c930ce3f8cd080c75a9ebf00f8b7644f1564861a7_amd64",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-roxctl-rhel8@sha256:cebe3e3c935995b9352b7e1b17f469f57917db4576d44d11d0ff4c37fe21948d_ppc64le as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-roxctl-rhel8@sha256:cebe3e3c935995b9352b7e1b17f469f57917db4576d44d11d0ff4c37fe21948d_ppc64le"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-roxctl-rhel8@sha256:cebe3e3c935995b9352b7e1b17f469f57917db4576d44d11d0ff4c37fe21948d_ppc64le",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-scanner-db-rhel8@sha256:53e85c3769970a2bba52913b2c1ed8e784daf84b42de6317dd66cfe76d1591d1_ppc64le as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-db-rhel8@sha256:53e85c3769970a2bba52913b2c1ed8e784daf84b42de6317dd66cfe76d1591d1_ppc64le"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-scanner-db-rhel8@sha256:53e85c3769970a2bba52913b2c1ed8e784daf84b42de6317dd66cfe76d1591d1_ppc64le",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-scanner-db-rhel8@sha256:e08adbe1d71a9907658598547514c5b9c649f766faf14f6d912bfb0d97e6d434_amd64 as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-db-rhel8@sha256:e08adbe1d71a9907658598547514c5b9c649f766faf14f6d912bfb0d97e6d434_amd64"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-scanner-db-rhel8@sha256:e08adbe1d71a9907658598547514c5b9c649f766faf14f6d912bfb0d97e6d434_amd64",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-scanner-db-rhel8@sha256:ed4a04c43fd03091f78f24df01631b5fb1e8ca79a51d075081d6c49038f14f82_s390x as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-db-rhel8@sha256:ed4a04c43fd03091f78f24df01631b5fb1e8ca79a51d075081d6c49038f14f82_s390x"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-scanner-db-rhel8@sha256:ed4a04c43fd03091f78f24df01631b5fb1e8ca79a51d075081d6c49038f14f82_s390x",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-scanner-db-slim-rhel8@sha256:36dbe96cd603b2da2f3a7fec55ea5132d704395d9ec01806306307f756bd1a13_s390x as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-db-slim-rhel8@sha256:36dbe96cd603b2da2f3a7fec55ea5132d704395d9ec01806306307f756bd1a13_s390x"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-scanner-db-slim-rhel8@sha256:36dbe96cd603b2da2f3a7fec55ea5132d704395d9ec01806306307f756bd1a13_s390x",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-scanner-db-slim-rhel8@sha256:edea8cd403c2fa9cd28706e806a5f6d9b78e8cdfa1c131eda6c2c4254d40c13e_amd64 as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-db-slim-rhel8@sha256:edea8cd403c2fa9cd28706e806a5f6d9b78e8cdfa1c131eda6c2c4254d40c13e_amd64"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-scanner-db-slim-rhel8@sha256:edea8cd403c2fa9cd28706e806a5f6d9b78e8cdfa1c131eda6c2c4254d40c13e_amd64",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-scanner-db-slim-rhel8@sha256:ffde60ef6348be1e34a9eee0f2b56583fb80ee54c3d19c20de6748daa8d701b1_ppc64le as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-db-slim-rhel8@sha256:ffde60ef6348be1e34a9eee0f2b56583fb80ee54c3d19c20de6748daa8d701b1_ppc64le"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-scanner-db-slim-rhel8@sha256:ffde60ef6348be1e34a9eee0f2b56583fb80ee54c3d19c20de6748daa8d701b1_ppc64le",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-scanner-rhel8@sha256:5ca23d8f43543d454e24ec10aeb2f00847b4a4e9eb3fe3495a77e11222c21969_s390x as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-rhel8@sha256:5ca23d8f43543d454e24ec10aeb2f00847b4a4e9eb3fe3495a77e11222c21969_s390x"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-scanner-rhel8@sha256:5ca23d8f43543d454e24ec10aeb2f00847b4a4e9eb3fe3495a77e11222c21969_s390x",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-scanner-rhel8@sha256:5d6f36aaca6e9f98500fcadda71eb617c852bf0d4f0b6a71b66a343b3ec41985_amd64 as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-rhel8@sha256:5d6f36aaca6e9f98500fcadda71eb617c852bf0d4f0b6a71b66a343b3ec41985_amd64"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-scanner-rhel8@sha256:5d6f36aaca6e9f98500fcadda71eb617c852bf0d4f0b6a71b66a343b3ec41985_amd64",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-scanner-rhel8@sha256:6c3a5aba527996b157f3609735381f256c68c5b24363b2385f25558975806458_ppc64le as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-rhel8@sha256:6c3a5aba527996b157f3609735381f256c68c5b24363b2385f25558975806458_ppc64le"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-scanner-rhel8@sha256:6c3a5aba527996b157f3609735381f256c68c5b24363b2385f25558975806458_ppc64le",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-scanner-slim-rhel8@sha256:0a5861649885d7d224451a836a45a9e093b297df36e8f2f501208b33ac48511f_s390x as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-slim-rhel8@sha256:0a5861649885d7d224451a836a45a9e093b297df36e8f2f501208b33ac48511f_s390x"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-scanner-slim-rhel8@sha256:0a5861649885d7d224451a836a45a9e093b297df36e8f2f501208b33ac48511f_s390x",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-scanner-slim-rhel8@sha256:68748b6a1e1d1f0e4709361d087e28a6db3018191a7cd3e9ba631ddb9578757f_amd64 as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-slim-rhel8@sha256:68748b6a1e1d1f0e4709361d087e28a6db3018191a7cd3e9ba631ddb9578757f_amd64"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-scanner-slim-rhel8@sha256:68748b6a1e1d1f0e4709361d087e28a6db3018191a7cd3e9ba631ddb9578757f_amd64",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "advanced-cluster-security/rhacs-scanner-slim-rhel8@sha256:b36d84b6fd8911dbecda16d8c8536ca0180e7ac51cc75a40882a6580d787b73f_ppc64le as a component of RHACS 4.1 for RHEL 8",
+          "product_id": "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-slim-rhel8@sha256:b36d84b6fd8911dbecda16d8c8536ca0180e7ac51cc75a40882a6580d787b73f_ppc64le"
+        },
+        "product_reference": "advanced-cluster-security/rhacs-scanner-slim-rhel8@sha256:b36d84b6fd8911dbecda16d8c8536ca0180e7ac51cc75a40882a6580d787b73f_ppc64le",
+        "relates_to_product_reference": "8Base-RHACS-4.1"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2023-39325",
+      "cwe": {
+        "id": "CWE-400",
+        "name": "Uncontrolled Resource Consumption"
+      },
+      "discovery_date": "2023-10-10T00:00:00+00:00",
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2243296"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A flaw was found in handling multiplexed streams in the HTTP/2 protocol. A client can repeatedly make a request for a new multiplex stream and immediately send an RST_STREAM frame to cancel it. This creates extra work for the server setting up and tearing down the streams while not hitting any server-side limit for the maximum number of active streams per connection, resulting in a denial of service due to server resource consumption. Red Hat has rated the severity of this flaw as 'Important' as the US Cybersecurity and Infrastructure Security Agency (CISA) declared this vulnerability an active exploit.\r\n\r\nCVE-2023-39325 was assigned for the `Rapid Reset Attack` in the Go language packages.",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "golang: net/http, x/net/http2: rapid stream resets can cause excessive work (CVE-2023-44487)",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "other",
+          "text": "This CVE is related to CVE-2023-44487.\n\nThe majority of RHEL utilities are not long-running applications; instead, they are command-line tools. These tools utilize Golang package as build-time dependency, which is why they are classified as having a \"Moderate\" level of impact.",
+          "title": "Statement"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-central-db-rhel8@sha256:225ef8caeff7d8e40d4ef1cec150a347091249c6116199a8b8cbbb2b657d40fb_s390x",
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-central-db-rhel8@sha256:2eb39cd2031da836b306c5f1abd54e5ef05373f36829e9cd3b24f2f2955a8135_ppc64le",
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-central-db-rhel8@sha256:7d1ba993b9e53c5826f7b41541bc057048ebab7f4f29a61a569d5c954c69d061_amd64",
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-collector-rhel8@sha256:5aa8bd48817d3d52fe6d4d79cefa3c4b2a89716fcd96bac3a2c6dc11f663e470_s390x",
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-collector-rhel8@sha256:64b1287daff111b974cce3df8134cb09d5a4974a37412564dc02bf93df35a4c6_ppc64le",
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-collector-rhel8@sha256:c40c2b4aaa6e4d06e96772cf76ff1366284833e36a0872df636f549b58085f0d_amd64",
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-collector-slim-rhel8@sha256:4b28c3fd75efed62f043c52a13f766c752799bf05500260ea46ba75b5d48bf7e_s390x",
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-collector-slim-rhel8@sha256:e36c72f1a70adc1e68c822304598992f902de116b44b1b08b50df4c9a46827fe_amd64",
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-collector-slim-rhel8@sha256:f92dbf47b14e40ed15e8b1f9abae795e53682fbe7746a3f6cfd2f8c65fa8ac3c_ppc64le",
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-main-rhel8@sha256:165f94df366216d0684b323c872d968faa3fbb45723ddb6e35fb1e191000aa0e_ppc64le",
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-main-rhel8@sha256:9d3e2bb44a4f866bd04efb8223d68f21b04855239d95d81b530f61c9f5e42bd1_amd64",
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-main-rhel8@sha256:d273c4b9f0d02c2179ffbbf55e6fc260e797d1f4356dba2c536a77ed8c0b33dd_s390x",
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-operator-bundle@sha256:13565496a1f4cb80746d542fc13c9f024b811dfb7df84d2013bc79b5809622bc_s390x",
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-operator-bundle@sha256:51dc4946a777b0da34789ee31bfa64f09e2065a2b584a48539336603ae01004a_ppc64le",
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-operator-bundle@sha256:aafaa944201871ec15cead3aa77bbdd1da76f972f3a241b894e2254a6ec09595_amd64",
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-rhel8-operator@sha256:186eaa4cf4b8896cfe4141925f26f406cc0156c676b159745d0205f4ed857951_ppc64le",
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-rhel8-operator@sha256:5adc8bbbfe0514d877f1c4ec9bb30dbf039634c9adba729623e7a4f6843a31fb_s390x",
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-rhel8-operator@sha256:b291129b5dfd95d707e4cf1007928c406de1f39020eef4e54d63b0ada33c6107_amd64",
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-roxctl-rhel8@sha256:4eb0d285b528002f312db407dabec4dca4757d3759ac3a01ba422e607ddbc4d7_s390x",
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-roxctl-rhel8@sha256:862ad7f71a230c22e97f618c930ce3f8cd080c75a9ebf00f8b7644f1564861a7_amd64",
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-roxctl-rhel8@sha256:cebe3e3c935995b9352b7e1b17f469f57917db4576d44d11d0ff4c37fe21948d_ppc64le",
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-db-rhel8@sha256:53e85c3769970a2bba52913b2c1ed8e784daf84b42de6317dd66cfe76d1591d1_ppc64le",
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-db-rhel8@sha256:e08adbe1d71a9907658598547514c5b9c649f766faf14f6d912bfb0d97e6d434_amd64",
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-db-rhel8@sha256:ed4a04c43fd03091f78f24df01631b5fb1e8ca79a51d075081d6c49038f14f82_s390x",
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-db-slim-rhel8@sha256:36dbe96cd603b2da2f3a7fec55ea5132d704395d9ec01806306307f756bd1a13_s390x",
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-db-slim-rhel8@sha256:edea8cd403c2fa9cd28706e806a5f6d9b78e8cdfa1c131eda6c2c4254d40c13e_amd64",
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-db-slim-rhel8@sha256:ffde60ef6348be1e34a9eee0f2b56583fb80ee54c3d19c20de6748daa8d701b1_ppc64le",
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-rhel8@sha256:5ca23d8f43543d454e24ec10aeb2f00847b4a4e9eb3fe3495a77e11222c21969_s390x",
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-rhel8@sha256:5d6f36aaca6e9f98500fcadda71eb617c852bf0d4f0b6a71b66a343b3ec41985_amd64",
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-rhel8@sha256:6c3a5aba527996b157f3609735381f256c68c5b24363b2385f25558975806458_ppc64le",
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-slim-rhel8@sha256:0a5861649885d7d224451a836a45a9e093b297df36e8f2f501208b33ac48511f_s390x",
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-slim-rhel8@sha256:68748b6a1e1d1f0e4709361d087e28a6db3018191a7cd3e9ba631ddb9578757f_amd64",
+          "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-slim-rhel8@sha256:b36d84b6fd8911dbecda16d8c8536ca0180e7ac51cc75a40882a6580d787b73f_ppc64le"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2243296",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2243296"
+        },
+        {
+          "category": "external",
+          "summary": "RHSB-2023-003",
+          "url": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2023-39325",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "https://access.redhat.com/security/cve/CVE-2023-44487",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-44487"
+        },
+        {
+          "category": "external",
+          "summary": "https://go.dev/issue/63417",
+          "url": "https://go.dev/issue/63417"
+        },
+        {
+          "category": "external",
+          "summary": "https://pkg.go.dev/vuln/GO-2023-2102",
+          "url": "https://pkg.go.dev/vuln/GO-2023-2102"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487",
+          "url": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487"
+        }
+      ],
+      "release_date": "2023-10-10T00:00:00+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2023-11-08T18:34:59+00:00",
+          "details": "If you are using an earlier version of RHACS 4.1, you are advised to upgrade to patch release 4.1.5.",
+          "product_ids": [
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-central-db-rhel8@sha256:225ef8caeff7d8e40d4ef1cec150a347091249c6116199a8b8cbbb2b657d40fb_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-central-db-rhel8@sha256:2eb39cd2031da836b306c5f1abd54e5ef05373f36829e9cd3b24f2f2955a8135_ppc64le",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-central-db-rhel8@sha256:7d1ba993b9e53c5826f7b41541bc057048ebab7f4f29a61a569d5c954c69d061_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-collector-rhel8@sha256:5aa8bd48817d3d52fe6d4d79cefa3c4b2a89716fcd96bac3a2c6dc11f663e470_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-collector-rhel8@sha256:64b1287daff111b974cce3df8134cb09d5a4974a37412564dc02bf93df35a4c6_ppc64le",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-collector-rhel8@sha256:c40c2b4aaa6e4d06e96772cf76ff1366284833e36a0872df636f549b58085f0d_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-collector-slim-rhel8@sha256:4b28c3fd75efed62f043c52a13f766c752799bf05500260ea46ba75b5d48bf7e_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-collector-slim-rhel8@sha256:e36c72f1a70adc1e68c822304598992f902de116b44b1b08b50df4c9a46827fe_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-collector-slim-rhel8@sha256:f92dbf47b14e40ed15e8b1f9abae795e53682fbe7746a3f6cfd2f8c65fa8ac3c_ppc64le",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-main-rhel8@sha256:165f94df366216d0684b323c872d968faa3fbb45723ddb6e35fb1e191000aa0e_ppc64le",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-main-rhel8@sha256:9d3e2bb44a4f866bd04efb8223d68f21b04855239d95d81b530f61c9f5e42bd1_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-main-rhel8@sha256:d273c4b9f0d02c2179ffbbf55e6fc260e797d1f4356dba2c536a77ed8c0b33dd_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-operator-bundle@sha256:13565496a1f4cb80746d542fc13c9f024b811dfb7df84d2013bc79b5809622bc_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-operator-bundle@sha256:51dc4946a777b0da34789ee31bfa64f09e2065a2b584a48539336603ae01004a_ppc64le",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-operator-bundle@sha256:aafaa944201871ec15cead3aa77bbdd1da76f972f3a241b894e2254a6ec09595_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-rhel8-operator@sha256:186eaa4cf4b8896cfe4141925f26f406cc0156c676b159745d0205f4ed857951_ppc64le",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-rhel8-operator@sha256:5adc8bbbfe0514d877f1c4ec9bb30dbf039634c9adba729623e7a4f6843a31fb_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-rhel8-operator@sha256:b291129b5dfd95d707e4cf1007928c406de1f39020eef4e54d63b0ada33c6107_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-roxctl-rhel8@sha256:4eb0d285b528002f312db407dabec4dca4757d3759ac3a01ba422e607ddbc4d7_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-roxctl-rhel8@sha256:862ad7f71a230c22e97f618c930ce3f8cd080c75a9ebf00f8b7644f1564861a7_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-roxctl-rhel8@sha256:cebe3e3c935995b9352b7e1b17f469f57917db4576d44d11d0ff4c37fe21948d_ppc64le",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-db-rhel8@sha256:53e85c3769970a2bba52913b2c1ed8e784daf84b42de6317dd66cfe76d1591d1_ppc64le",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-db-rhel8@sha256:e08adbe1d71a9907658598547514c5b9c649f766faf14f6d912bfb0d97e6d434_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-db-rhel8@sha256:ed4a04c43fd03091f78f24df01631b5fb1e8ca79a51d075081d6c49038f14f82_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-db-slim-rhel8@sha256:36dbe96cd603b2da2f3a7fec55ea5132d704395d9ec01806306307f756bd1a13_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-db-slim-rhel8@sha256:edea8cd403c2fa9cd28706e806a5f6d9b78e8cdfa1c131eda6c2c4254d40c13e_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-db-slim-rhel8@sha256:ffde60ef6348be1e34a9eee0f2b56583fb80ee54c3d19c20de6748daa8d701b1_ppc64le",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-rhel8@sha256:5ca23d8f43543d454e24ec10aeb2f00847b4a4e9eb3fe3495a77e11222c21969_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-rhel8@sha256:5d6f36aaca6e9f98500fcadda71eb617c852bf0d4f0b6a71b66a343b3ec41985_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-rhel8@sha256:6c3a5aba527996b157f3609735381f256c68c5b24363b2385f25558975806458_ppc64le",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-slim-rhel8@sha256:0a5861649885d7d224451a836a45a9e093b297df36e8f2f501208b33ac48511f_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-slim-rhel8@sha256:68748b6a1e1d1f0e4709361d087e28a6db3018191a7cd3e9ba631ddb9578757f_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-slim-rhel8@sha256:b36d84b6fd8911dbecda16d8c8536ca0180e7ac51cc75a40882a6580d787b73f_ppc64le"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2023:6828"
+        },
+        {
+          "category": "workaround",
+          "details": "The default stream concurrency limit in golang is 250 streams (requests) per HTTP/2 connection. This value may be adjusted in the golang.org/x/net/http2 package using the Server.MaxConcurrentStreams setting and the ConfigureServer function which are available in golang.org/x/net/http2.",
+          "product_ids": [
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-central-db-rhel8@sha256:225ef8caeff7d8e40d4ef1cec150a347091249c6116199a8b8cbbb2b657d40fb_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-central-db-rhel8@sha256:2eb39cd2031da836b306c5f1abd54e5ef05373f36829e9cd3b24f2f2955a8135_ppc64le",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-central-db-rhel8@sha256:7d1ba993b9e53c5826f7b41541bc057048ebab7f4f29a61a569d5c954c69d061_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-collector-rhel8@sha256:5aa8bd48817d3d52fe6d4d79cefa3c4b2a89716fcd96bac3a2c6dc11f663e470_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-collector-rhel8@sha256:64b1287daff111b974cce3df8134cb09d5a4974a37412564dc02bf93df35a4c6_ppc64le",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-collector-rhel8@sha256:c40c2b4aaa6e4d06e96772cf76ff1366284833e36a0872df636f549b58085f0d_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-collector-slim-rhel8@sha256:4b28c3fd75efed62f043c52a13f766c752799bf05500260ea46ba75b5d48bf7e_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-collector-slim-rhel8@sha256:e36c72f1a70adc1e68c822304598992f902de116b44b1b08b50df4c9a46827fe_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-collector-slim-rhel8@sha256:f92dbf47b14e40ed15e8b1f9abae795e53682fbe7746a3f6cfd2f8c65fa8ac3c_ppc64le",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-main-rhel8@sha256:165f94df366216d0684b323c872d968faa3fbb45723ddb6e35fb1e191000aa0e_ppc64le",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-main-rhel8@sha256:9d3e2bb44a4f866bd04efb8223d68f21b04855239d95d81b530f61c9f5e42bd1_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-main-rhel8@sha256:d273c4b9f0d02c2179ffbbf55e6fc260e797d1f4356dba2c536a77ed8c0b33dd_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-operator-bundle@sha256:13565496a1f4cb80746d542fc13c9f024b811dfb7df84d2013bc79b5809622bc_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-operator-bundle@sha256:51dc4946a777b0da34789ee31bfa64f09e2065a2b584a48539336603ae01004a_ppc64le",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-operator-bundle@sha256:aafaa944201871ec15cead3aa77bbdd1da76f972f3a241b894e2254a6ec09595_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-rhel8-operator@sha256:186eaa4cf4b8896cfe4141925f26f406cc0156c676b159745d0205f4ed857951_ppc64le",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-rhel8-operator@sha256:5adc8bbbfe0514d877f1c4ec9bb30dbf039634c9adba729623e7a4f6843a31fb_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-rhel8-operator@sha256:b291129b5dfd95d707e4cf1007928c406de1f39020eef4e54d63b0ada33c6107_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-roxctl-rhel8@sha256:4eb0d285b528002f312db407dabec4dca4757d3759ac3a01ba422e607ddbc4d7_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-roxctl-rhel8@sha256:862ad7f71a230c22e97f618c930ce3f8cd080c75a9ebf00f8b7644f1564861a7_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-roxctl-rhel8@sha256:cebe3e3c935995b9352b7e1b17f469f57917db4576d44d11d0ff4c37fe21948d_ppc64le",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-db-rhel8@sha256:53e85c3769970a2bba52913b2c1ed8e784daf84b42de6317dd66cfe76d1591d1_ppc64le",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-db-rhel8@sha256:e08adbe1d71a9907658598547514c5b9c649f766faf14f6d912bfb0d97e6d434_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-db-rhel8@sha256:ed4a04c43fd03091f78f24df01631b5fb1e8ca79a51d075081d6c49038f14f82_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-db-slim-rhel8@sha256:36dbe96cd603b2da2f3a7fec55ea5132d704395d9ec01806306307f756bd1a13_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-db-slim-rhel8@sha256:edea8cd403c2fa9cd28706e806a5f6d9b78e8cdfa1c131eda6c2c4254d40c13e_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-db-slim-rhel8@sha256:ffde60ef6348be1e34a9eee0f2b56583fb80ee54c3d19c20de6748daa8d701b1_ppc64le",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-rhel8@sha256:5ca23d8f43543d454e24ec10aeb2f00847b4a4e9eb3fe3495a77e11222c21969_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-rhel8@sha256:5d6f36aaca6e9f98500fcadda71eb617c852bf0d4f0b6a71b66a343b3ec41985_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-rhel8@sha256:6c3a5aba527996b157f3609735381f256c68c5b24363b2385f25558975806458_ppc64le",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-slim-rhel8@sha256:0a5861649885d7d224451a836a45a9e093b297df36e8f2f501208b33ac48511f_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-slim-rhel8@sha256:68748b6a1e1d1f0e4709361d087e28a6db3018191a7cd3e9ba631ddb9578757f_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-slim-rhel8@sha256:b36d84b6fd8911dbecda16d8c8536ca0180e7ac51cc75a40882a6580d787b73f_ppc64le"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 7.5,
+            "baseSeverity": "HIGH",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-central-db-rhel8@sha256:225ef8caeff7d8e40d4ef1cec150a347091249c6116199a8b8cbbb2b657d40fb_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-central-db-rhel8@sha256:2eb39cd2031da836b306c5f1abd54e5ef05373f36829e9cd3b24f2f2955a8135_ppc64le",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-central-db-rhel8@sha256:7d1ba993b9e53c5826f7b41541bc057048ebab7f4f29a61a569d5c954c69d061_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-collector-rhel8@sha256:5aa8bd48817d3d52fe6d4d79cefa3c4b2a89716fcd96bac3a2c6dc11f663e470_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-collector-rhel8@sha256:64b1287daff111b974cce3df8134cb09d5a4974a37412564dc02bf93df35a4c6_ppc64le",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-collector-rhel8@sha256:c40c2b4aaa6e4d06e96772cf76ff1366284833e36a0872df636f549b58085f0d_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-collector-slim-rhel8@sha256:4b28c3fd75efed62f043c52a13f766c752799bf05500260ea46ba75b5d48bf7e_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-collector-slim-rhel8@sha256:e36c72f1a70adc1e68c822304598992f902de116b44b1b08b50df4c9a46827fe_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-collector-slim-rhel8@sha256:f92dbf47b14e40ed15e8b1f9abae795e53682fbe7746a3f6cfd2f8c65fa8ac3c_ppc64le",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-main-rhel8@sha256:165f94df366216d0684b323c872d968faa3fbb45723ddb6e35fb1e191000aa0e_ppc64le",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-main-rhel8@sha256:9d3e2bb44a4f866bd04efb8223d68f21b04855239d95d81b530f61c9f5e42bd1_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-main-rhel8@sha256:d273c4b9f0d02c2179ffbbf55e6fc260e797d1f4356dba2c536a77ed8c0b33dd_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-operator-bundle@sha256:13565496a1f4cb80746d542fc13c9f024b811dfb7df84d2013bc79b5809622bc_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-operator-bundle@sha256:51dc4946a777b0da34789ee31bfa64f09e2065a2b584a48539336603ae01004a_ppc64le",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-operator-bundle@sha256:aafaa944201871ec15cead3aa77bbdd1da76f972f3a241b894e2254a6ec09595_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-rhel8-operator@sha256:186eaa4cf4b8896cfe4141925f26f406cc0156c676b159745d0205f4ed857951_ppc64le",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-rhel8-operator@sha256:5adc8bbbfe0514d877f1c4ec9bb30dbf039634c9adba729623e7a4f6843a31fb_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-rhel8-operator@sha256:b291129b5dfd95d707e4cf1007928c406de1f39020eef4e54d63b0ada33c6107_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-roxctl-rhel8@sha256:4eb0d285b528002f312db407dabec4dca4757d3759ac3a01ba422e607ddbc4d7_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-roxctl-rhel8@sha256:862ad7f71a230c22e97f618c930ce3f8cd080c75a9ebf00f8b7644f1564861a7_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-roxctl-rhel8@sha256:cebe3e3c935995b9352b7e1b17f469f57917db4576d44d11d0ff4c37fe21948d_ppc64le",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-db-rhel8@sha256:53e85c3769970a2bba52913b2c1ed8e784daf84b42de6317dd66cfe76d1591d1_ppc64le",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-db-rhel8@sha256:e08adbe1d71a9907658598547514c5b9c649f766faf14f6d912bfb0d97e6d434_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-db-rhel8@sha256:ed4a04c43fd03091f78f24df01631b5fb1e8ca79a51d075081d6c49038f14f82_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-db-slim-rhel8@sha256:36dbe96cd603b2da2f3a7fec55ea5132d704395d9ec01806306307f756bd1a13_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-db-slim-rhel8@sha256:edea8cd403c2fa9cd28706e806a5f6d9b78e8cdfa1c131eda6c2c4254d40c13e_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-db-slim-rhel8@sha256:ffde60ef6348be1e34a9eee0f2b56583fb80ee54c3d19c20de6748daa8d701b1_ppc64le",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-rhel8@sha256:5ca23d8f43543d454e24ec10aeb2f00847b4a4e9eb3fe3495a77e11222c21969_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-rhel8@sha256:5d6f36aaca6e9f98500fcadda71eb617c852bf0d4f0b6a71b66a343b3ec41985_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-rhel8@sha256:6c3a5aba527996b157f3609735381f256c68c5b24363b2385f25558975806458_ppc64le",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-slim-rhel8@sha256:0a5861649885d7d224451a836a45a9e093b297df36e8f2f501208b33ac48511f_s390x",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-slim-rhel8@sha256:68748b6a1e1d1f0e4709361d087e28a6db3018191a7cd3e9ba631ddb9578757f_amd64",
+            "8Base-RHACS-4.1:advanced-cluster-security/rhacs-scanner-slim-rhel8@sha256:b36d84b6fd8911dbecda16d8c8536ca0180e7ac51cc75a40882a6580d787b73f_ppc64le"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Important"
+        }
+      ],
+      "title": "golang: net/http, x/net/http2: rapid stream resets can cause excessive work (CVE-2023-44487)"
+    }
+  ]
+}

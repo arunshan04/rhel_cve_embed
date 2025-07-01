@@ -1,0 +1,1323 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "namespace": "https://access.redhat.com/security/updates/classification/",
+      "text": "Important"
+    },
+    "category": "csaf_security_advisory",
+    "csaf_version": "2.0",
+    "distribution": {
+      "text": "Copyright \u00a9 Red Hat, Inc. All rights reserved.",
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "en",
+    "notes": [
+      {
+        "category": "summary",
+        "text": "Red Hat OpenShift Virtualization release 4.12.9 is now available with updates to packages and images that fix several bugs and add enhancements.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+        "title": "Topic"
+      },
+      {
+        "category": "general",
+        "text": "OpenShift Virtualization is Red Hat's virtualization solution designed for Red Hat OpenShift Container Platform.\n\nThis advisory contains OpenShift Virtualization 4.12.9 images.\n\nSecurity Fix(es):\n\n* golang: net/http, x/net/http2: rapid stream resets can cause excessive work (CVE-2023-44487) (CVE-2023-39325)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+        "title": "Details"
+      },
+      {
+        "category": "legal_disclaimer",
+        "text": "This content is licensed under the Creative Commons Attribution 4.0 International License (https://creativecommons.org/licenses/by/4.0/). If you distribute this content, or a modified version of it, you must provide attribution to Red Hat Inc. and provide a link to the original.",
+        "title": "Terms of Use"
+      }
+    ],
+    "publisher": {
+      "category": "vendor",
+      "contact_details": "https://access.redhat.com/security/team/contact/",
+      "issuing_authority": "Red Hat Product Security is responsible for vulnerability handling across all Red Hat products and services.",
+      "name": "Red Hat Product Security",
+      "namespace": "https://www.redhat.com"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "https://access.redhat.com/errata/RHSA-2024:0273",
+        "url": "https://access.redhat.com/errata/RHSA-2024:0273"
+      },
+      {
+        "category": "external",
+        "summary": "https://access.redhat.com/security/updates/classification/#important",
+        "url": "https://access.redhat.com/security/updates/classification/#important"
+      },
+      {
+        "category": "external",
+        "summary": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003",
+        "url": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003"
+      },
+      {
+        "category": "external",
+        "summary": "2243296",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2243296"
+      },
+      {
+        "category": "external",
+        "summary": "2247667",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2247667"
+      },
+      {
+        "category": "external",
+        "summary": "CNV-34790",
+        "url": "https://issues.redhat.com/browse/CNV-34790"
+      },
+      {
+        "category": "self",
+        "summary": "Canonical URL",
+        "url": "https://security.access.redhat.com/data/csaf/v2/advisories/2024/rhsa-2024_0273.json"
+      }
+    ],
+    "title": "Red Hat Security Advisory: OpenShift Virtualization 4.12.9 Images security and bug fix update",
+    "tracking": {
+      "current_release_date": "2025-07-01T14:22:48+00:00",
+      "generator": {
+        "date": "2025-07-01T14:22:48+00:00",
+        "engine": {
+          "name": "Red Hat SDEngine",
+          "version": "4.6.3"
+        }
+      },
+      "id": "RHSA-2024:0273",
+      "initial_release_date": "2024-01-17T08:29:36+00:00",
+      "revision_history": [
+        {
+          "date": "2024-01-17T08:29:36+00:00",
+          "number": "1",
+          "summary": "Initial version"
+        },
+        {
+          "date": "2024-01-17T08:29:36+00:00",
+          "number": "2",
+          "summary": "Last updated version"
+        },
+        {
+          "date": "2025-07-01T14:22:48+00:00",
+          "number": "3",
+          "summary": "Last generated version"
+        }
+      ],
+      "status": "final",
+      "version": "3"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_name",
+                "name": "CNV 4.12 for RHEL 8",
+                "product": {
+                  "name": "CNV 4.12 for RHEL 8",
+                  "product_id": "8Base-CNV-4.12",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:container_native_virtualization:4.12::el8"
+                  }
+                }
+              }
+            ],
+            "category": "product_family",
+            "name": "OpenShift Virtualization"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/bridge-marker@sha256:302f7b8ed01ed6fa7990507a8c8648af5a5607e6bb6dab8d8b2ce95c93c5a4d2_amd64",
+                "product": {
+                  "name": "container-native-virtualization/bridge-marker@sha256:302f7b8ed01ed6fa7990507a8c8648af5a5607e6bb6dab8d8b2ce95c93c5a4d2_amd64",
+                  "product_id": "container-native-virtualization/bridge-marker@sha256:302f7b8ed01ed6fa7990507a8c8648af5a5607e6bb6dab8d8b2ce95c93c5a4d2_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/bridge-marker@sha256:302f7b8ed01ed6fa7990507a8c8648af5a5607e6bb6dab8d8b2ce95c93c5a4d2?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/bridge-marker&tag=v4.12.9-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/cluster-network-addons-operator@sha256:0f32a09e0a6b9097102543b4a21c92d66679a7e9bd773b15d71fe4b1119f4579_amd64",
+                "product": {
+                  "name": "container-native-virtualization/cluster-network-addons-operator@sha256:0f32a09e0a6b9097102543b4a21c92d66679a7e9bd773b15d71fe4b1119f4579_amd64",
+                  "product_id": "container-native-virtualization/cluster-network-addons-operator@sha256:0f32a09e0a6b9097102543b4a21c92d66679a7e9bd773b15d71fe4b1119f4579_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/cluster-network-addons-operator@sha256:0f32a09e0a6b9097102543b4a21c92d66679a7e9bd773b15d71fe4b1119f4579?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/cluster-network-addons-operator&tag=v4.12.9-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/cnv-containernetworking-plugins@sha256:42eb5beab2327ff9263f3f43ab6b1fab8c8474676ff032823e3e9dc9af03ef15_amd64",
+                "product": {
+                  "name": "container-native-virtualization/cnv-containernetworking-plugins@sha256:42eb5beab2327ff9263f3f43ab6b1fab8c8474676ff032823e3e9dc9af03ef15_amd64",
+                  "product_id": "container-native-virtualization/cnv-containernetworking-plugins@sha256:42eb5beab2327ff9263f3f43ab6b1fab8c8474676ff032823e3e9dc9af03ef15_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/cnv-containernetworking-plugins@sha256:42eb5beab2327ff9263f3f43ab6b1fab8c8474676ff032823e3e9dc9af03ef15?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/cnv-containernetworking-plugins&tag=v4.12.9-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/cnv-must-gather-rhel8@sha256:7cc48d1e0ef5d3ed1287d3ece0ac306e3eac1eaf283fe354eee905f721cba7d4_amd64",
+                "product": {
+                  "name": "container-native-virtualization/cnv-must-gather-rhel8@sha256:7cc48d1e0ef5d3ed1287d3ece0ac306e3eac1eaf283fe354eee905f721cba7d4_amd64",
+                  "product_id": "container-native-virtualization/cnv-must-gather-rhel8@sha256:7cc48d1e0ef5d3ed1287d3ece0ac306e3eac1eaf283fe354eee905f721cba7d4_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/cnv-must-gather-rhel8@sha256:7cc48d1e0ef5d3ed1287d3ece0ac306e3eac1eaf283fe354eee905f721cba7d4?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/cnv-must-gather-rhel8&tag=v4.12.9-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/hco-bundle-registry@sha256:a8cc033664e7c193f3ed7369924d467ef6caa27e734f683fd5eda4aaeb3f5d71_amd64",
+                "product": {
+                  "name": "container-native-virtualization/hco-bundle-registry@sha256:a8cc033664e7c193f3ed7369924d467ef6caa27e734f683fd5eda4aaeb3f5d71_amd64",
+                  "product_id": "container-native-virtualization/hco-bundle-registry@sha256:a8cc033664e7c193f3ed7369924d467ef6caa27e734f683fd5eda4aaeb3f5d71_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/hco-bundle-registry@sha256:a8cc033664e7c193f3ed7369924d467ef6caa27e734f683fd5eda4aaeb3f5d71?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/hco-bundle-registry&tag=v4.12.9-49"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/hostpath-csi-driver@sha256:431eddb3927178f6a7b39b5b8937d4d39c7863bdfcd8227cd3e0b47af79c737d_amd64",
+                "product": {
+                  "name": "container-native-virtualization/hostpath-csi-driver@sha256:431eddb3927178f6a7b39b5b8937d4d39c7863bdfcd8227cd3e0b47af79c737d_amd64",
+                  "product_id": "container-native-virtualization/hostpath-csi-driver@sha256:431eddb3927178f6a7b39b5b8937d4d39c7863bdfcd8227cd3e0b47af79c737d_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/hostpath-csi-driver@sha256:431eddb3927178f6a7b39b5b8937d4d39c7863bdfcd8227cd3e0b47af79c737d?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/hostpath-csi-driver&tag=v4.12.9-4"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/hostpath-provisioner-rhel8@sha256:844491b180e24c24ce6a1fc49cbef5399fbc044c544dbcbdf6a31c30f77c3235_amd64",
+                "product": {
+                  "name": "container-native-virtualization/hostpath-provisioner-rhel8@sha256:844491b180e24c24ce6a1fc49cbef5399fbc044c544dbcbdf6a31c30f77c3235_amd64",
+                  "product_id": "container-native-virtualization/hostpath-provisioner-rhel8@sha256:844491b180e24c24ce6a1fc49cbef5399fbc044c544dbcbdf6a31c30f77c3235_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/hostpath-provisioner-rhel8@sha256:844491b180e24c24ce6a1fc49cbef5399fbc044c544dbcbdf6a31c30f77c3235?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/hostpath-provisioner-rhel8&tag=v4.12.9-4"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/hostpath-provisioner-rhel8-operator@sha256:3cef15dbedca3ebb5f8e3ec1443344aadedaded73c3900334d4230d6819d4fed_amd64",
+                "product": {
+                  "name": "container-native-virtualization/hostpath-provisioner-rhel8-operator@sha256:3cef15dbedca3ebb5f8e3ec1443344aadedaded73c3900334d4230d6819d4fed_amd64",
+                  "product_id": "container-native-virtualization/hostpath-provisioner-rhel8-operator@sha256:3cef15dbedca3ebb5f8e3ec1443344aadedaded73c3900334d4230d6819d4fed_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/hostpath-provisioner-rhel8-operator@sha256:3cef15dbedca3ebb5f8e3ec1443344aadedaded73c3900334d4230d6819d4fed?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/hostpath-provisioner-rhel8-operator&tag=v4.12.9-2"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/hyperconverged-cluster-operator@sha256:1c734396bbae0bd259cd3b5bdc1121323531d3a78ca5905d55ab14f092588104_amd64",
+                "product": {
+                  "name": "container-native-virtualization/hyperconverged-cluster-operator@sha256:1c734396bbae0bd259cd3b5bdc1121323531d3a78ca5905d55ab14f092588104_amd64",
+                  "product_id": "container-native-virtualization/hyperconverged-cluster-operator@sha256:1c734396bbae0bd259cd3b5bdc1121323531d3a78ca5905d55ab14f092588104_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/hyperconverged-cluster-operator@sha256:1c734396bbae0bd259cd3b5bdc1121323531d3a78ca5905d55ab14f092588104?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/hyperconverged-cluster-operator&tag=v4.12.9-6"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/hyperconverged-cluster-webhook-rhel8@sha256:045151b2e55c0ba748b1ffe23e33cd3a230208bbf1b66ec2d514d9a73d6899b8_amd64",
+                "product": {
+                  "name": "container-native-virtualization/hyperconverged-cluster-webhook-rhel8@sha256:045151b2e55c0ba748b1ffe23e33cd3a230208bbf1b66ec2d514d9a73d6899b8_amd64",
+                  "product_id": "container-native-virtualization/hyperconverged-cluster-webhook-rhel8@sha256:045151b2e55c0ba748b1ffe23e33cd3a230208bbf1b66ec2d514d9a73d6899b8_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/hyperconverged-cluster-webhook-rhel8@sha256:045151b2e55c0ba748b1ffe23e33cd3a230208bbf1b66ec2d514d9a73d6899b8?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/hyperconverged-cluster-webhook-rhel8&tag=v4.12.9-6"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/kubemacpool@sha256:e8f9d6d66f03ee04a617ccfbc89b9f45f005cffa72106168bd402925fc3b3a8a_amd64",
+                "product": {
+                  "name": "container-native-virtualization/kubemacpool@sha256:e8f9d6d66f03ee04a617ccfbc89b9f45f005cffa72106168bd402925fc3b3a8a_amd64",
+                  "product_id": "container-native-virtualization/kubemacpool@sha256:e8f9d6d66f03ee04a617ccfbc89b9f45f005cffa72106168bd402925fc3b3a8a_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/kubemacpool@sha256:e8f9d6d66f03ee04a617ccfbc89b9f45f005cffa72106168bd402925fc3b3a8a?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/kubemacpool&tag=v4.12.9-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/kubevirt-console-plugin@sha256:4b6cd3523f8368c82f4be0fba90118491a3c5330e4f082551a9924c5b96aa290_amd64",
+                "product": {
+                  "name": "container-native-virtualization/kubevirt-console-plugin@sha256:4b6cd3523f8368c82f4be0fba90118491a3c5330e4f082551a9924c5b96aa290_amd64",
+                  "product_id": "container-native-virtualization/kubevirt-console-plugin@sha256:4b6cd3523f8368c82f4be0fba90118491a3c5330e4f082551a9924c5b96aa290_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/kubevirt-console-plugin@sha256:4b6cd3523f8368c82f4be0fba90118491a3c5330e4f082551a9924c5b96aa290?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/kubevirt-console-plugin&tag=v4.12.9-2"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/kubevirt-ssp-operator@sha256:1efc679921cd7fe1f191064d88d84cc057ca908b2daab88208e64911fe483159_amd64",
+                "product": {
+                  "name": "container-native-virtualization/kubevirt-ssp-operator@sha256:1efc679921cd7fe1f191064d88d84cc057ca908b2daab88208e64911fe483159_amd64",
+                  "product_id": "container-native-virtualization/kubevirt-ssp-operator@sha256:1efc679921cd7fe1f191064d88d84cc057ca908b2daab88208e64911fe483159_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/kubevirt-ssp-operator@sha256:1efc679921cd7fe1f191064d88d84cc057ca908b2daab88208e64911fe483159?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/kubevirt-ssp-operator&tag=v4.12.9-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/kubevirt-tekton-tasks-cleanup-vm@sha256:fe19a7f39bb1b0da5f181391da7416a77280dd0c0492a1759de9f11fbced512a_amd64",
+                "product": {
+                  "name": "container-native-virtualization/kubevirt-tekton-tasks-cleanup-vm@sha256:fe19a7f39bb1b0da5f181391da7416a77280dd0c0492a1759de9f11fbced512a_amd64",
+                  "product_id": "container-native-virtualization/kubevirt-tekton-tasks-cleanup-vm@sha256:fe19a7f39bb1b0da5f181391da7416a77280dd0c0492a1759de9f11fbced512a_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/kubevirt-tekton-tasks-cleanup-vm@sha256:fe19a7f39bb1b0da5f181391da7416a77280dd0c0492a1759de9f11fbced512a?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/kubevirt-tekton-tasks-cleanup-vm&tag=v4.12.9-6"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/kubevirt-tekton-tasks-copy-template@sha256:810016684887e31612770417cc14633f923202d5dc6215fa256a8a5bee92597b_amd64",
+                "product": {
+                  "name": "container-native-virtualization/kubevirt-tekton-tasks-copy-template@sha256:810016684887e31612770417cc14633f923202d5dc6215fa256a8a5bee92597b_amd64",
+                  "product_id": "container-native-virtualization/kubevirt-tekton-tasks-copy-template@sha256:810016684887e31612770417cc14633f923202d5dc6215fa256a8a5bee92597b_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/kubevirt-tekton-tasks-copy-template@sha256:810016684887e31612770417cc14633f923202d5dc6215fa256a8a5bee92597b?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/kubevirt-tekton-tasks-copy-template&tag=v4.12.9-6"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/kubevirt-tekton-tasks-create-datavolume@sha256:944f1c609d14bdf705e3d76c7181f8e7ec25c309097aeafd843055f972b3aca5_amd64",
+                "product": {
+                  "name": "container-native-virtualization/kubevirt-tekton-tasks-create-datavolume@sha256:944f1c609d14bdf705e3d76c7181f8e7ec25c309097aeafd843055f972b3aca5_amd64",
+                  "product_id": "container-native-virtualization/kubevirt-tekton-tasks-create-datavolume@sha256:944f1c609d14bdf705e3d76c7181f8e7ec25c309097aeafd843055f972b3aca5_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/kubevirt-tekton-tasks-create-datavolume@sha256:944f1c609d14bdf705e3d76c7181f8e7ec25c309097aeafd843055f972b3aca5?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/kubevirt-tekton-tasks-create-datavolume&tag=v4.12.9-6"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/kubevirt-tekton-tasks-create-vm-from-template@sha256:8bd7f4eccdf2f54f7bf5b74a348c3a3eb2e7a75557f82b9f77db2b67dc1d6a24_amd64",
+                "product": {
+                  "name": "container-native-virtualization/kubevirt-tekton-tasks-create-vm-from-template@sha256:8bd7f4eccdf2f54f7bf5b74a348c3a3eb2e7a75557f82b9f77db2b67dc1d6a24_amd64",
+                  "product_id": "container-native-virtualization/kubevirt-tekton-tasks-create-vm-from-template@sha256:8bd7f4eccdf2f54f7bf5b74a348c3a3eb2e7a75557f82b9f77db2b67dc1d6a24_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/kubevirt-tekton-tasks-create-vm-from-template@sha256:8bd7f4eccdf2f54f7bf5b74a348c3a3eb2e7a75557f82b9f77db2b67dc1d6a24?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/kubevirt-tekton-tasks-create-vm-from-template&tag=v4.12.9-6"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/kubevirt-tekton-tasks-disk-virt-customize@sha256:4516d5b8ceda084f548d4f63d7597bf8094a73b81cbd37141ef530631cbb4ac9_amd64",
+                "product": {
+                  "name": "container-native-virtualization/kubevirt-tekton-tasks-disk-virt-customize@sha256:4516d5b8ceda084f548d4f63d7597bf8094a73b81cbd37141ef530631cbb4ac9_amd64",
+                  "product_id": "container-native-virtualization/kubevirt-tekton-tasks-disk-virt-customize@sha256:4516d5b8ceda084f548d4f63d7597bf8094a73b81cbd37141ef530631cbb4ac9_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/kubevirt-tekton-tasks-disk-virt-customize@sha256:4516d5b8ceda084f548d4f63d7597bf8094a73b81cbd37141ef530631cbb4ac9?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/kubevirt-tekton-tasks-disk-virt-customize&tag=v4.12.9-6"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/kubevirt-tekton-tasks-disk-virt-sysprep@sha256:223a95d2396f5f35fad5daab2f75b4c412020a03c7b7c117f1433f8f64509692_amd64",
+                "product": {
+                  "name": "container-native-virtualization/kubevirt-tekton-tasks-disk-virt-sysprep@sha256:223a95d2396f5f35fad5daab2f75b4c412020a03c7b7c117f1433f8f64509692_amd64",
+                  "product_id": "container-native-virtualization/kubevirt-tekton-tasks-disk-virt-sysprep@sha256:223a95d2396f5f35fad5daab2f75b4c412020a03c7b7c117f1433f8f64509692_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/kubevirt-tekton-tasks-disk-virt-sysprep@sha256:223a95d2396f5f35fad5daab2f75b4c412020a03c7b7c117f1433f8f64509692?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/kubevirt-tekton-tasks-disk-virt-sysprep&tag=v4.12.9-6"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/kubevirt-tekton-tasks-modify-vm-template@sha256:edf380ac51005edd536c828f1cb1b0d8a6795c68fffe5b4e0d545b83c10776b9_amd64",
+                "product": {
+                  "name": "container-native-virtualization/kubevirt-tekton-tasks-modify-vm-template@sha256:edf380ac51005edd536c828f1cb1b0d8a6795c68fffe5b4e0d545b83c10776b9_amd64",
+                  "product_id": "container-native-virtualization/kubevirt-tekton-tasks-modify-vm-template@sha256:edf380ac51005edd536c828f1cb1b0d8a6795c68fffe5b4e0d545b83c10776b9_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/kubevirt-tekton-tasks-modify-vm-template@sha256:edf380ac51005edd536c828f1cb1b0d8a6795c68fffe5b4e0d545b83c10776b9?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/kubevirt-tekton-tasks-modify-vm-template&tag=v4.12.9-6"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/kubevirt-tekton-tasks-operator@sha256:3e3a9796a01fb606528231603c17a253854f6db1fd1ac5d5132f846d7d264dcd_amd64",
+                "product": {
+                  "name": "container-native-virtualization/kubevirt-tekton-tasks-operator@sha256:3e3a9796a01fb606528231603c17a253854f6db1fd1ac5d5132f846d7d264dcd_amd64",
+                  "product_id": "container-native-virtualization/kubevirt-tekton-tasks-operator@sha256:3e3a9796a01fb606528231603c17a253854f6db1fd1ac5d5132f846d7d264dcd_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/kubevirt-tekton-tasks-operator@sha256:3e3a9796a01fb606528231603c17a253854f6db1fd1ac5d5132f846d7d264dcd?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/kubevirt-tekton-tasks-operator&tag=v4.12.9-4"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/kubevirt-tekton-tasks-wait-for-vmi-status@sha256:caf5a64456741e60557f87440cbdf9a61305da07e9b42726517ff72e1041e3bb_amd64",
+                "product": {
+                  "name": "container-native-virtualization/kubevirt-tekton-tasks-wait-for-vmi-status@sha256:caf5a64456741e60557f87440cbdf9a61305da07e9b42726517ff72e1041e3bb_amd64",
+                  "product_id": "container-native-virtualization/kubevirt-tekton-tasks-wait-for-vmi-status@sha256:caf5a64456741e60557f87440cbdf9a61305da07e9b42726517ff72e1041e3bb_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/kubevirt-tekton-tasks-wait-for-vmi-status@sha256:caf5a64456741e60557f87440cbdf9a61305da07e9b42726517ff72e1041e3bb?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/kubevirt-tekton-tasks-wait-for-vmi-status&tag=v4.12.9-6"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/kubevirt-template-validator@sha256:9a2ffe17b78578d7a2a43974d553cde190689a792fef3394dbaffc0503310db7_amd64",
+                "product": {
+                  "name": "container-native-virtualization/kubevirt-template-validator@sha256:9a2ffe17b78578d7a2a43974d553cde190689a792fef3394dbaffc0503310db7_amd64",
+                  "product_id": "container-native-virtualization/kubevirt-template-validator@sha256:9a2ffe17b78578d7a2a43974d553cde190689a792fef3394dbaffc0503310db7_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/kubevirt-template-validator@sha256:9a2ffe17b78578d7a2a43974d553cde190689a792fef3394dbaffc0503310db7?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/kubevirt-template-validator&tag=v4.12.9-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/libguestfs-tools@sha256:207b0b99175a8264c623fefc959780941da4f143762c1962686d8c31d7c7f0da_amd64",
+                "product": {
+                  "name": "container-native-virtualization/libguestfs-tools@sha256:207b0b99175a8264c623fefc959780941da4f143762c1962686d8c31d7c7f0da_amd64",
+                  "product_id": "container-native-virtualization/libguestfs-tools@sha256:207b0b99175a8264c623fefc959780941da4f143762c1962686d8c31d7c7f0da_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/libguestfs-tools@sha256:207b0b99175a8264c623fefc959780941da4f143762c1962686d8c31d7c7f0da?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/libguestfs-tools&tag=v4.12.9-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/ovs-cni-marker@sha256:1543ee3d9b3cc4f8037f6924d48613d1cbda112455e484654d3b4a6f97f3116a_amd64",
+                "product": {
+                  "name": "container-native-virtualization/ovs-cni-marker@sha256:1543ee3d9b3cc4f8037f6924d48613d1cbda112455e484654d3b4a6f97f3116a_amd64",
+                  "product_id": "container-native-virtualization/ovs-cni-marker@sha256:1543ee3d9b3cc4f8037f6924d48613d1cbda112455e484654d3b4a6f97f3116a_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ovs-cni-marker@sha256:1543ee3d9b3cc4f8037f6924d48613d1cbda112455e484654d3b4a6f97f3116a?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/ovs-cni-marker&tag=v4.12.9-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/ovs-cni-plugin@sha256:d943058669971f14a8e2a38387bc689ed1c0f8a34c749c2fbdab4122ff261bab_amd64",
+                "product": {
+                  "name": "container-native-virtualization/ovs-cni-plugin@sha256:d943058669971f14a8e2a38387bc689ed1c0f8a34c749c2fbdab4122ff261bab_amd64",
+                  "product_id": "container-native-virtualization/ovs-cni-plugin@sha256:d943058669971f14a8e2a38387bc689ed1c0f8a34c749c2fbdab4122ff261bab_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/ovs-cni-plugin@sha256:d943058669971f14a8e2a38387bc689ed1c0f8a34c749c2fbdab4122ff261bab?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/ovs-cni-plugin&tag=v4.12.9-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/virt-api@sha256:6331782585fd9c71d27d87fabf54583b56cbdb577c8826a97394956c08a2b457_amd64",
+                "product": {
+                  "name": "container-native-virtualization/virt-api@sha256:6331782585fd9c71d27d87fabf54583b56cbdb577c8826a97394956c08a2b457_amd64",
+                  "product_id": "container-native-virtualization/virt-api@sha256:6331782585fd9c71d27d87fabf54583b56cbdb577c8826a97394956c08a2b457_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/virt-api@sha256:6331782585fd9c71d27d87fabf54583b56cbdb577c8826a97394956c08a2b457?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/virt-api&tag=v4.12.9-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/virt-artifacts-server@sha256:24c3dd085416026c64c4c6ca89c9b3c61625137f61ea281d19c32aaec67924b0_amd64",
+                "product": {
+                  "name": "container-native-virtualization/virt-artifacts-server@sha256:24c3dd085416026c64c4c6ca89c9b3c61625137f61ea281d19c32aaec67924b0_amd64",
+                  "product_id": "container-native-virtualization/virt-artifacts-server@sha256:24c3dd085416026c64c4c6ca89c9b3c61625137f61ea281d19c32aaec67924b0_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/virt-artifacts-server@sha256:24c3dd085416026c64c4c6ca89c9b3c61625137f61ea281d19c32aaec67924b0?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/virt-artifacts-server&tag=v4.12.9-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/virt-cdi-apiserver@sha256:50e2478a24a64d2a7e46d699475646efd92455228fe8ebcf648bfcbfe4e15a7e_amd64",
+                "product": {
+                  "name": "container-native-virtualization/virt-cdi-apiserver@sha256:50e2478a24a64d2a7e46d699475646efd92455228fe8ebcf648bfcbfe4e15a7e_amd64",
+                  "product_id": "container-native-virtualization/virt-cdi-apiserver@sha256:50e2478a24a64d2a7e46d699475646efd92455228fe8ebcf648bfcbfe4e15a7e_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/virt-cdi-apiserver@sha256:50e2478a24a64d2a7e46d699475646efd92455228fe8ebcf648bfcbfe4e15a7e?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/virt-cdi-apiserver&tag=v4.12.9-4"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/virt-cdi-cloner@sha256:6bb47b354ad8d30ff0820feadb644724956b313fed70051633a8e05cda32eff3_amd64",
+                "product": {
+                  "name": "container-native-virtualization/virt-cdi-cloner@sha256:6bb47b354ad8d30ff0820feadb644724956b313fed70051633a8e05cda32eff3_amd64",
+                  "product_id": "container-native-virtualization/virt-cdi-cloner@sha256:6bb47b354ad8d30ff0820feadb644724956b313fed70051633a8e05cda32eff3_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/virt-cdi-cloner@sha256:6bb47b354ad8d30ff0820feadb644724956b313fed70051633a8e05cda32eff3?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/virt-cdi-cloner&tag=v4.12.9-4"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/virt-cdi-controller@sha256:4e5f797ff070d94646386c9feeaa03e157400d1dad201cf4bd134b6426dac319_amd64",
+                "product": {
+                  "name": "container-native-virtualization/virt-cdi-controller@sha256:4e5f797ff070d94646386c9feeaa03e157400d1dad201cf4bd134b6426dac319_amd64",
+                  "product_id": "container-native-virtualization/virt-cdi-controller@sha256:4e5f797ff070d94646386c9feeaa03e157400d1dad201cf4bd134b6426dac319_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/virt-cdi-controller@sha256:4e5f797ff070d94646386c9feeaa03e157400d1dad201cf4bd134b6426dac319?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/virt-cdi-controller&tag=v4.12.9-4"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/virt-cdi-importer@sha256:7d0811ccc983e9b875a7b9259654e22c98a645c41036a816d064ef84fea86eae_amd64",
+                "product": {
+                  "name": "container-native-virtualization/virt-cdi-importer@sha256:7d0811ccc983e9b875a7b9259654e22c98a645c41036a816d064ef84fea86eae_amd64",
+                  "product_id": "container-native-virtualization/virt-cdi-importer@sha256:7d0811ccc983e9b875a7b9259654e22c98a645c41036a816d064ef84fea86eae_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/virt-cdi-importer@sha256:7d0811ccc983e9b875a7b9259654e22c98a645c41036a816d064ef84fea86eae?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/virt-cdi-importer&tag=v4.12.9-4"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/virt-cdi-operator@sha256:a9489e302737cd6b453eb03e39c5d2f94fae6a25e3b42c73cd9c1a942ee72e5f_amd64",
+                "product": {
+                  "name": "container-native-virtualization/virt-cdi-operator@sha256:a9489e302737cd6b453eb03e39c5d2f94fae6a25e3b42c73cd9c1a942ee72e5f_amd64",
+                  "product_id": "container-native-virtualization/virt-cdi-operator@sha256:a9489e302737cd6b453eb03e39c5d2f94fae6a25e3b42c73cd9c1a942ee72e5f_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/virt-cdi-operator@sha256:a9489e302737cd6b453eb03e39c5d2f94fae6a25e3b42c73cd9c1a942ee72e5f?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/virt-cdi-operator&tag=v4.12.9-4"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/virt-cdi-uploadproxy@sha256:449ef03e2ec6b468ecdc37679d7057083bb50d3923af7e141b6c3b44f8a006df_amd64",
+                "product": {
+                  "name": "container-native-virtualization/virt-cdi-uploadproxy@sha256:449ef03e2ec6b468ecdc37679d7057083bb50d3923af7e141b6c3b44f8a006df_amd64",
+                  "product_id": "container-native-virtualization/virt-cdi-uploadproxy@sha256:449ef03e2ec6b468ecdc37679d7057083bb50d3923af7e141b6c3b44f8a006df_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/virt-cdi-uploadproxy@sha256:449ef03e2ec6b468ecdc37679d7057083bb50d3923af7e141b6c3b44f8a006df?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/virt-cdi-uploadproxy&tag=v4.12.9-4"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/virt-cdi-uploadserver@sha256:18d69db5be9c2acdc2c906c6103ca466e6d2001c97ccd8da5c70ba23b5366e59_amd64",
+                "product": {
+                  "name": "container-native-virtualization/virt-cdi-uploadserver@sha256:18d69db5be9c2acdc2c906c6103ca466e6d2001c97ccd8da5c70ba23b5366e59_amd64",
+                  "product_id": "container-native-virtualization/virt-cdi-uploadserver@sha256:18d69db5be9c2acdc2c906c6103ca466e6d2001c97ccd8da5c70ba23b5366e59_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/virt-cdi-uploadserver@sha256:18d69db5be9c2acdc2c906c6103ca466e6d2001c97ccd8da5c70ba23b5366e59?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/virt-cdi-uploadserver&tag=v4.12.9-4"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/virt-controller@sha256:1caaf37a802ecdea65dff964c292e31a33fa119928edb7b57c4de7657315a989_amd64",
+                "product": {
+                  "name": "container-native-virtualization/virt-controller@sha256:1caaf37a802ecdea65dff964c292e31a33fa119928edb7b57c4de7657315a989_amd64",
+                  "product_id": "container-native-virtualization/virt-controller@sha256:1caaf37a802ecdea65dff964c292e31a33fa119928edb7b57c4de7657315a989_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/virt-controller@sha256:1caaf37a802ecdea65dff964c292e31a33fa119928edb7b57c4de7657315a989?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/virt-controller&tag=v4.12.9-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/virt-exportproxy@sha256:b5834b9c826e7ea42600f350b3c4767a18f2c90d317f12d3f8956f201214a325_amd64",
+                "product": {
+                  "name": "container-native-virtualization/virt-exportproxy@sha256:b5834b9c826e7ea42600f350b3c4767a18f2c90d317f12d3f8956f201214a325_amd64",
+                  "product_id": "container-native-virtualization/virt-exportproxy@sha256:b5834b9c826e7ea42600f350b3c4767a18f2c90d317f12d3f8956f201214a325_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/virt-exportproxy@sha256:b5834b9c826e7ea42600f350b3c4767a18f2c90d317f12d3f8956f201214a325?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/virt-exportproxy&tag=v4.12.9-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/virt-exportserver@sha256:85c866c4d48e4347f39eb23528ec8f75a2db0a16e1c754463ae66706d03348ef_amd64",
+                "product": {
+                  "name": "container-native-virtualization/virt-exportserver@sha256:85c866c4d48e4347f39eb23528ec8f75a2db0a16e1c754463ae66706d03348ef_amd64",
+                  "product_id": "container-native-virtualization/virt-exportserver@sha256:85c866c4d48e4347f39eb23528ec8f75a2db0a16e1c754463ae66706d03348ef_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/virt-exportserver@sha256:85c866c4d48e4347f39eb23528ec8f75a2db0a16e1c754463ae66706d03348ef?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/virt-exportserver&tag=v4.12.9-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/virt-handler@sha256:15e827877db2eb730dd3705f8a675769fd6f1adc5c1b9a84d8e1522ff39d47b7_amd64",
+                "product": {
+                  "name": "container-native-virtualization/virt-handler@sha256:15e827877db2eb730dd3705f8a675769fd6f1adc5c1b9a84d8e1522ff39d47b7_amd64",
+                  "product_id": "container-native-virtualization/virt-handler@sha256:15e827877db2eb730dd3705f8a675769fd6f1adc5c1b9a84d8e1522ff39d47b7_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/virt-handler@sha256:15e827877db2eb730dd3705f8a675769fd6f1adc5c1b9a84d8e1522ff39d47b7?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/virt-handler&tag=v4.12.9-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/virtio-win@sha256:2ba15ef027ffef470e267cded5a3c087bd1942036920f85dbd06be68e4f59fb6_amd64",
+                "product": {
+                  "name": "container-native-virtualization/virtio-win@sha256:2ba15ef027ffef470e267cded5a3c087bd1942036920f85dbd06be68e4f59fb6_amd64",
+                  "product_id": "container-native-virtualization/virtio-win@sha256:2ba15ef027ffef470e267cded5a3c087bd1942036920f85dbd06be68e4f59fb6_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/virtio-win@sha256:2ba15ef027ffef470e267cded5a3c087bd1942036920f85dbd06be68e4f59fb6?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/virtio-win&tag=v4.12.9-2"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/virt-launcher@sha256:34d7b05082cf585793d90d0decc684992ad7c4d992493fea9dcba50ee4249bac_amd64",
+                "product": {
+                  "name": "container-native-virtualization/virt-launcher@sha256:34d7b05082cf585793d90d0decc684992ad7c4d992493fea9dcba50ee4249bac_amd64",
+                  "product_id": "container-native-virtualization/virt-launcher@sha256:34d7b05082cf585793d90d0decc684992ad7c4d992493fea9dcba50ee4249bac_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/virt-launcher@sha256:34d7b05082cf585793d90d0decc684992ad7c4d992493fea9dcba50ee4249bac?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/virt-launcher&tag=v4.12.9-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/virt-operator@sha256:92853ab2214f111023bf23c6ac33264736463e113d0813e1389e8ad89668deff_amd64",
+                "product": {
+                  "name": "container-native-virtualization/virt-operator@sha256:92853ab2214f111023bf23c6ac33264736463e113d0813e1389e8ad89668deff_amd64",
+                  "product_id": "container-native-virtualization/virt-operator@sha256:92853ab2214f111023bf23c6ac33264736463e113d0813e1389e8ad89668deff_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/virt-operator@sha256:92853ab2214f111023bf23c6ac33264736463e113d0813e1389e8ad89668deff?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/virt-operator&tag=v4.12.9-5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "container-native-virtualization/vm-network-latency-checkup@sha256:c8a0fe956d24ba21ef5ade499ffc860c40dda98c6fabed4e5d81ed3bebc8ac1c_amd64",
+                "product": {
+                  "name": "container-native-virtualization/vm-network-latency-checkup@sha256:c8a0fe956d24ba21ef5ade499ffc860c40dda98c6fabed4e5d81ed3bebc8ac1c_amd64",
+                  "product_id": "container-native-virtualization/vm-network-latency-checkup@sha256:c8a0fe956d24ba21ef5ade499ffc860c40dda98c6fabed4e5d81ed3bebc8ac1c_amd64",
+                  "product_identification_helper": {
+                    "purl": "pkg:oci/vm-network-latency-checkup@sha256:c8a0fe956d24ba21ef5ade499ffc860c40dda98c6fabed4e5d81ed3bebc8ac1c?arch=amd64&repository_url=registry.redhat.io/container-native-virtualization/vm-network-latency-checkup&tag=v4.12.9-3"
+                  }
+                }
+              }
+            ],
+            "category": "architecture",
+            "name": "amd64"
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      }
+    ],
+    "relationships": [
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/bridge-marker@sha256:302f7b8ed01ed6fa7990507a8c8648af5a5607e6bb6dab8d8b2ce95c93c5a4d2_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/bridge-marker@sha256:302f7b8ed01ed6fa7990507a8c8648af5a5607e6bb6dab8d8b2ce95c93c5a4d2_amd64"
+        },
+        "product_reference": "container-native-virtualization/bridge-marker@sha256:302f7b8ed01ed6fa7990507a8c8648af5a5607e6bb6dab8d8b2ce95c93c5a4d2_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/cluster-network-addons-operator@sha256:0f32a09e0a6b9097102543b4a21c92d66679a7e9bd773b15d71fe4b1119f4579_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/cluster-network-addons-operator@sha256:0f32a09e0a6b9097102543b4a21c92d66679a7e9bd773b15d71fe4b1119f4579_amd64"
+        },
+        "product_reference": "container-native-virtualization/cluster-network-addons-operator@sha256:0f32a09e0a6b9097102543b4a21c92d66679a7e9bd773b15d71fe4b1119f4579_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/cnv-containernetworking-plugins@sha256:42eb5beab2327ff9263f3f43ab6b1fab8c8474676ff032823e3e9dc9af03ef15_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/cnv-containernetworking-plugins@sha256:42eb5beab2327ff9263f3f43ab6b1fab8c8474676ff032823e3e9dc9af03ef15_amd64"
+        },
+        "product_reference": "container-native-virtualization/cnv-containernetworking-plugins@sha256:42eb5beab2327ff9263f3f43ab6b1fab8c8474676ff032823e3e9dc9af03ef15_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/cnv-must-gather-rhel8@sha256:7cc48d1e0ef5d3ed1287d3ece0ac306e3eac1eaf283fe354eee905f721cba7d4_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/cnv-must-gather-rhel8@sha256:7cc48d1e0ef5d3ed1287d3ece0ac306e3eac1eaf283fe354eee905f721cba7d4_amd64"
+        },
+        "product_reference": "container-native-virtualization/cnv-must-gather-rhel8@sha256:7cc48d1e0ef5d3ed1287d3ece0ac306e3eac1eaf283fe354eee905f721cba7d4_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/hco-bundle-registry@sha256:a8cc033664e7c193f3ed7369924d467ef6caa27e734f683fd5eda4aaeb3f5d71_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/hco-bundle-registry@sha256:a8cc033664e7c193f3ed7369924d467ef6caa27e734f683fd5eda4aaeb3f5d71_amd64"
+        },
+        "product_reference": "container-native-virtualization/hco-bundle-registry@sha256:a8cc033664e7c193f3ed7369924d467ef6caa27e734f683fd5eda4aaeb3f5d71_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/hostpath-csi-driver@sha256:431eddb3927178f6a7b39b5b8937d4d39c7863bdfcd8227cd3e0b47af79c737d_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/hostpath-csi-driver@sha256:431eddb3927178f6a7b39b5b8937d4d39c7863bdfcd8227cd3e0b47af79c737d_amd64"
+        },
+        "product_reference": "container-native-virtualization/hostpath-csi-driver@sha256:431eddb3927178f6a7b39b5b8937d4d39c7863bdfcd8227cd3e0b47af79c737d_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/hostpath-provisioner-rhel8-operator@sha256:3cef15dbedca3ebb5f8e3ec1443344aadedaded73c3900334d4230d6819d4fed_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/hostpath-provisioner-rhel8-operator@sha256:3cef15dbedca3ebb5f8e3ec1443344aadedaded73c3900334d4230d6819d4fed_amd64"
+        },
+        "product_reference": "container-native-virtualization/hostpath-provisioner-rhel8-operator@sha256:3cef15dbedca3ebb5f8e3ec1443344aadedaded73c3900334d4230d6819d4fed_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/hostpath-provisioner-rhel8@sha256:844491b180e24c24ce6a1fc49cbef5399fbc044c544dbcbdf6a31c30f77c3235_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/hostpath-provisioner-rhel8@sha256:844491b180e24c24ce6a1fc49cbef5399fbc044c544dbcbdf6a31c30f77c3235_amd64"
+        },
+        "product_reference": "container-native-virtualization/hostpath-provisioner-rhel8@sha256:844491b180e24c24ce6a1fc49cbef5399fbc044c544dbcbdf6a31c30f77c3235_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/hyperconverged-cluster-operator@sha256:1c734396bbae0bd259cd3b5bdc1121323531d3a78ca5905d55ab14f092588104_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/hyperconverged-cluster-operator@sha256:1c734396bbae0bd259cd3b5bdc1121323531d3a78ca5905d55ab14f092588104_amd64"
+        },
+        "product_reference": "container-native-virtualization/hyperconverged-cluster-operator@sha256:1c734396bbae0bd259cd3b5bdc1121323531d3a78ca5905d55ab14f092588104_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/hyperconverged-cluster-webhook-rhel8@sha256:045151b2e55c0ba748b1ffe23e33cd3a230208bbf1b66ec2d514d9a73d6899b8_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/hyperconverged-cluster-webhook-rhel8@sha256:045151b2e55c0ba748b1ffe23e33cd3a230208bbf1b66ec2d514d9a73d6899b8_amd64"
+        },
+        "product_reference": "container-native-virtualization/hyperconverged-cluster-webhook-rhel8@sha256:045151b2e55c0ba748b1ffe23e33cd3a230208bbf1b66ec2d514d9a73d6899b8_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/kubemacpool@sha256:e8f9d6d66f03ee04a617ccfbc89b9f45f005cffa72106168bd402925fc3b3a8a_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/kubemacpool@sha256:e8f9d6d66f03ee04a617ccfbc89b9f45f005cffa72106168bd402925fc3b3a8a_amd64"
+        },
+        "product_reference": "container-native-virtualization/kubemacpool@sha256:e8f9d6d66f03ee04a617ccfbc89b9f45f005cffa72106168bd402925fc3b3a8a_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/kubevirt-console-plugin@sha256:4b6cd3523f8368c82f4be0fba90118491a3c5330e4f082551a9924c5b96aa290_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/kubevirt-console-plugin@sha256:4b6cd3523f8368c82f4be0fba90118491a3c5330e4f082551a9924c5b96aa290_amd64"
+        },
+        "product_reference": "container-native-virtualization/kubevirt-console-plugin@sha256:4b6cd3523f8368c82f4be0fba90118491a3c5330e4f082551a9924c5b96aa290_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/kubevirt-ssp-operator@sha256:1efc679921cd7fe1f191064d88d84cc057ca908b2daab88208e64911fe483159_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/kubevirt-ssp-operator@sha256:1efc679921cd7fe1f191064d88d84cc057ca908b2daab88208e64911fe483159_amd64"
+        },
+        "product_reference": "container-native-virtualization/kubevirt-ssp-operator@sha256:1efc679921cd7fe1f191064d88d84cc057ca908b2daab88208e64911fe483159_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/kubevirt-tekton-tasks-cleanup-vm@sha256:fe19a7f39bb1b0da5f181391da7416a77280dd0c0492a1759de9f11fbced512a_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-cleanup-vm@sha256:fe19a7f39bb1b0da5f181391da7416a77280dd0c0492a1759de9f11fbced512a_amd64"
+        },
+        "product_reference": "container-native-virtualization/kubevirt-tekton-tasks-cleanup-vm@sha256:fe19a7f39bb1b0da5f181391da7416a77280dd0c0492a1759de9f11fbced512a_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/kubevirt-tekton-tasks-copy-template@sha256:810016684887e31612770417cc14633f923202d5dc6215fa256a8a5bee92597b_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-copy-template@sha256:810016684887e31612770417cc14633f923202d5dc6215fa256a8a5bee92597b_amd64"
+        },
+        "product_reference": "container-native-virtualization/kubevirt-tekton-tasks-copy-template@sha256:810016684887e31612770417cc14633f923202d5dc6215fa256a8a5bee92597b_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/kubevirt-tekton-tasks-create-datavolume@sha256:944f1c609d14bdf705e3d76c7181f8e7ec25c309097aeafd843055f972b3aca5_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-create-datavolume@sha256:944f1c609d14bdf705e3d76c7181f8e7ec25c309097aeafd843055f972b3aca5_amd64"
+        },
+        "product_reference": "container-native-virtualization/kubevirt-tekton-tasks-create-datavolume@sha256:944f1c609d14bdf705e3d76c7181f8e7ec25c309097aeafd843055f972b3aca5_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/kubevirt-tekton-tasks-create-vm-from-template@sha256:8bd7f4eccdf2f54f7bf5b74a348c3a3eb2e7a75557f82b9f77db2b67dc1d6a24_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-create-vm-from-template@sha256:8bd7f4eccdf2f54f7bf5b74a348c3a3eb2e7a75557f82b9f77db2b67dc1d6a24_amd64"
+        },
+        "product_reference": "container-native-virtualization/kubevirt-tekton-tasks-create-vm-from-template@sha256:8bd7f4eccdf2f54f7bf5b74a348c3a3eb2e7a75557f82b9f77db2b67dc1d6a24_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/kubevirt-tekton-tasks-disk-virt-customize@sha256:4516d5b8ceda084f548d4f63d7597bf8094a73b81cbd37141ef530631cbb4ac9_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-disk-virt-customize@sha256:4516d5b8ceda084f548d4f63d7597bf8094a73b81cbd37141ef530631cbb4ac9_amd64"
+        },
+        "product_reference": "container-native-virtualization/kubevirt-tekton-tasks-disk-virt-customize@sha256:4516d5b8ceda084f548d4f63d7597bf8094a73b81cbd37141ef530631cbb4ac9_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/kubevirt-tekton-tasks-disk-virt-sysprep@sha256:223a95d2396f5f35fad5daab2f75b4c412020a03c7b7c117f1433f8f64509692_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-disk-virt-sysprep@sha256:223a95d2396f5f35fad5daab2f75b4c412020a03c7b7c117f1433f8f64509692_amd64"
+        },
+        "product_reference": "container-native-virtualization/kubevirt-tekton-tasks-disk-virt-sysprep@sha256:223a95d2396f5f35fad5daab2f75b4c412020a03c7b7c117f1433f8f64509692_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/kubevirt-tekton-tasks-modify-vm-template@sha256:edf380ac51005edd536c828f1cb1b0d8a6795c68fffe5b4e0d545b83c10776b9_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-modify-vm-template@sha256:edf380ac51005edd536c828f1cb1b0d8a6795c68fffe5b4e0d545b83c10776b9_amd64"
+        },
+        "product_reference": "container-native-virtualization/kubevirt-tekton-tasks-modify-vm-template@sha256:edf380ac51005edd536c828f1cb1b0d8a6795c68fffe5b4e0d545b83c10776b9_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/kubevirt-tekton-tasks-operator@sha256:3e3a9796a01fb606528231603c17a253854f6db1fd1ac5d5132f846d7d264dcd_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-operator@sha256:3e3a9796a01fb606528231603c17a253854f6db1fd1ac5d5132f846d7d264dcd_amd64"
+        },
+        "product_reference": "container-native-virtualization/kubevirt-tekton-tasks-operator@sha256:3e3a9796a01fb606528231603c17a253854f6db1fd1ac5d5132f846d7d264dcd_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/kubevirt-tekton-tasks-wait-for-vmi-status@sha256:caf5a64456741e60557f87440cbdf9a61305da07e9b42726517ff72e1041e3bb_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-wait-for-vmi-status@sha256:caf5a64456741e60557f87440cbdf9a61305da07e9b42726517ff72e1041e3bb_amd64"
+        },
+        "product_reference": "container-native-virtualization/kubevirt-tekton-tasks-wait-for-vmi-status@sha256:caf5a64456741e60557f87440cbdf9a61305da07e9b42726517ff72e1041e3bb_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/kubevirt-template-validator@sha256:9a2ffe17b78578d7a2a43974d553cde190689a792fef3394dbaffc0503310db7_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/kubevirt-template-validator@sha256:9a2ffe17b78578d7a2a43974d553cde190689a792fef3394dbaffc0503310db7_amd64"
+        },
+        "product_reference": "container-native-virtualization/kubevirt-template-validator@sha256:9a2ffe17b78578d7a2a43974d553cde190689a792fef3394dbaffc0503310db7_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/libguestfs-tools@sha256:207b0b99175a8264c623fefc959780941da4f143762c1962686d8c31d7c7f0da_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/libguestfs-tools@sha256:207b0b99175a8264c623fefc959780941da4f143762c1962686d8c31d7c7f0da_amd64"
+        },
+        "product_reference": "container-native-virtualization/libguestfs-tools@sha256:207b0b99175a8264c623fefc959780941da4f143762c1962686d8c31d7c7f0da_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/ovs-cni-marker@sha256:1543ee3d9b3cc4f8037f6924d48613d1cbda112455e484654d3b4a6f97f3116a_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/ovs-cni-marker@sha256:1543ee3d9b3cc4f8037f6924d48613d1cbda112455e484654d3b4a6f97f3116a_amd64"
+        },
+        "product_reference": "container-native-virtualization/ovs-cni-marker@sha256:1543ee3d9b3cc4f8037f6924d48613d1cbda112455e484654d3b4a6f97f3116a_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/ovs-cni-plugin@sha256:d943058669971f14a8e2a38387bc689ed1c0f8a34c749c2fbdab4122ff261bab_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/ovs-cni-plugin@sha256:d943058669971f14a8e2a38387bc689ed1c0f8a34c749c2fbdab4122ff261bab_amd64"
+        },
+        "product_reference": "container-native-virtualization/ovs-cni-plugin@sha256:d943058669971f14a8e2a38387bc689ed1c0f8a34c749c2fbdab4122ff261bab_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/virt-api@sha256:6331782585fd9c71d27d87fabf54583b56cbdb577c8826a97394956c08a2b457_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/virt-api@sha256:6331782585fd9c71d27d87fabf54583b56cbdb577c8826a97394956c08a2b457_amd64"
+        },
+        "product_reference": "container-native-virtualization/virt-api@sha256:6331782585fd9c71d27d87fabf54583b56cbdb577c8826a97394956c08a2b457_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/virt-artifacts-server@sha256:24c3dd085416026c64c4c6ca89c9b3c61625137f61ea281d19c32aaec67924b0_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/virt-artifacts-server@sha256:24c3dd085416026c64c4c6ca89c9b3c61625137f61ea281d19c32aaec67924b0_amd64"
+        },
+        "product_reference": "container-native-virtualization/virt-artifacts-server@sha256:24c3dd085416026c64c4c6ca89c9b3c61625137f61ea281d19c32aaec67924b0_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/virt-cdi-apiserver@sha256:50e2478a24a64d2a7e46d699475646efd92455228fe8ebcf648bfcbfe4e15a7e_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/virt-cdi-apiserver@sha256:50e2478a24a64d2a7e46d699475646efd92455228fe8ebcf648bfcbfe4e15a7e_amd64"
+        },
+        "product_reference": "container-native-virtualization/virt-cdi-apiserver@sha256:50e2478a24a64d2a7e46d699475646efd92455228fe8ebcf648bfcbfe4e15a7e_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/virt-cdi-cloner@sha256:6bb47b354ad8d30ff0820feadb644724956b313fed70051633a8e05cda32eff3_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/virt-cdi-cloner@sha256:6bb47b354ad8d30ff0820feadb644724956b313fed70051633a8e05cda32eff3_amd64"
+        },
+        "product_reference": "container-native-virtualization/virt-cdi-cloner@sha256:6bb47b354ad8d30ff0820feadb644724956b313fed70051633a8e05cda32eff3_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/virt-cdi-controller@sha256:4e5f797ff070d94646386c9feeaa03e157400d1dad201cf4bd134b6426dac319_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/virt-cdi-controller@sha256:4e5f797ff070d94646386c9feeaa03e157400d1dad201cf4bd134b6426dac319_amd64"
+        },
+        "product_reference": "container-native-virtualization/virt-cdi-controller@sha256:4e5f797ff070d94646386c9feeaa03e157400d1dad201cf4bd134b6426dac319_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/virt-cdi-importer@sha256:7d0811ccc983e9b875a7b9259654e22c98a645c41036a816d064ef84fea86eae_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/virt-cdi-importer@sha256:7d0811ccc983e9b875a7b9259654e22c98a645c41036a816d064ef84fea86eae_amd64"
+        },
+        "product_reference": "container-native-virtualization/virt-cdi-importer@sha256:7d0811ccc983e9b875a7b9259654e22c98a645c41036a816d064ef84fea86eae_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/virt-cdi-operator@sha256:a9489e302737cd6b453eb03e39c5d2f94fae6a25e3b42c73cd9c1a942ee72e5f_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/virt-cdi-operator@sha256:a9489e302737cd6b453eb03e39c5d2f94fae6a25e3b42c73cd9c1a942ee72e5f_amd64"
+        },
+        "product_reference": "container-native-virtualization/virt-cdi-operator@sha256:a9489e302737cd6b453eb03e39c5d2f94fae6a25e3b42c73cd9c1a942ee72e5f_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/virt-cdi-uploadproxy@sha256:449ef03e2ec6b468ecdc37679d7057083bb50d3923af7e141b6c3b44f8a006df_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/virt-cdi-uploadproxy@sha256:449ef03e2ec6b468ecdc37679d7057083bb50d3923af7e141b6c3b44f8a006df_amd64"
+        },
+        "product_reference": "container-native-virtualization/virt-cdi-uploadproxy@sha256:449ef03e2ec6b468ecdc37679d7057083bb50d3923af7e141b6c3b44f8a006df_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/virt-cdi-uploadserver@sha256:18d69db5be9c2acdc2c906c6103ca466e6d2001c97ccd8da5c70ba23b5366e59_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/virt-cdi-uploadserver@sha256:18d69db5be9c2acdc2c906c6103ca466e6d2001c97ccd8da5c70ba23b5366e59_amd64"
+        },
+        "product_reference": "container-native-virtualization/virt-cdi-uploadserver@sha256:18d69db5be9c2acdc2c906c6103ca466e6d2001c97ccd8da5c70ba23b5366e59_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/virt-controller@sha256:1caaf37a802ecdea65dff964c292e31a33fa119928edb7b57c4de7657315a989_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/virt-controller@sha256:1caaf37a802ecdea65dff964c292e31a33fa119928edb7b57c4de7657315a989_amd64"
+        },
+        "product_reference": "container-native-virtualization/virt-controller@sha256:1caaf37a802ecdea65dff964c292e31a33fa119928edb7b57c4de7657315a989_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/virt-exportproxy@sha256:b5834b9c826e7ea42600f350b3c4767a18f2c90d317f12d3f8956f201214a325_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/virt-exportproxy@sha256:b5834b9c826e7ea42600f350b3c4767a18f2c90d317f12d3f8956f201214a325_amd64"
+        },
+        "product_reference": "container-native-virtualization/virt-exportproxy@sha256:b5834b9c826e7ea42600f350b3c4767a18f2c90d317f12d3f8956f201214a325_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/virt-exportserver@sha256:85c866c4d48e4347f39eb23528ec8f75a2db0a16e1c754463ae66706d03348ef_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/virt-exportserver@sha256:85c866c4d48e4347f39eb23528ec8f75a2db0a16e1c754463ae66706d03348ef_amd64"
+        },
+        "product_reference": "container-native-virtualization/virt-exportserver@sha256:85c866c4d48e4347f39eb23528ec8f75a2db0a16e1c754463ae66706d03348ef_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/virt-handler@sha256:15e827877db2eb730dd3705f8a675769fd6f1adc5c1b9a84d8e1522ff39d47b7_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/virt-handler@sha256:15e827877db2eb730dd3705f8a675769fd6f1adc5c1b9a84d8e1522ff39d47b7_amd64"
+        },
+        "product_reference": "container-native-virtualization/virt-handler@sha256:15e827877db2eb730dd3705f8a675769fd6f1adc5c1b9a84d8e1522ff39d47b7_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/virt-launcher@sha256:34d7b05082cf585793d90d0decc684992ad7c4d992493fea9dcba50ee4249bac_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/virt-launcher@sha256:34d7b05082cf585793d90d0decc684992ad7c4d992493fea9dcba50ee4249bac_amd64"
+        },
+        "product_reference": "container-native-virtualization/virt-launcher@sha256:34d7b05082cf585793d90d0decc684992ad7c4d992493fea9dcba50ee4249bac_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/virt-operator@sha256:92853ab2214f111023bf23c6ac33264736463e113d0813e1389e8ad89668deff_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/virt-operator@sha256:92853ab2214f111023bf23c6ac33264736463e113d0813e1389e8ad89668deff_amd64"
+        },
+        "product_reference": "container-native-virtualization/virt-operator@sha256:92853ab2214f111023bf23c6ac33264736463e113d0813e1389e8ad89668deff_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/virtio-win@sha256:2ba15ef027ffef470e267cded5a3c087bd1942036920f85dbd06be68e4f59fb6_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/virtio-win@sha256:2ba15ef027ffef470e267cded5a3c087bd1942036920f85dbd06be68e4f59fb6_amd64"
+        },
+        "product_reference": "container-native-virtualization/virtio-win@sha256:2ba15ef027ffef470e267cded5a3c087bd1942036920f85dbd06be68e4f59fb6_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      },
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "container-native-virtualization/vm-network-latency-checkup@sha256:c8a0fe956d24ba21ef5ade499ffc860c40dda98c6fabed4e5d81ed3bebc8ac1c_amd64 as a component of CNV 4.12 for RHEL 8",
+          "product_id": "8Base-CNV-4.12:container-native-virtualization/vm-network-latency-checkup@sha256:c8a0fe956d24ba21ef5ade499ffc860c40dda98c6fabed4e5d81ed3bebc8ac1c_amd64"
+        },
+        "product_reference": "container-native-virtualization/vm-network-latency-checkup@sha256:c8a0fe956d24ba21ef5ade499ffc860c40dda98c6fabed4e5d81ed3bebc8ac1c_amd64",
+        "relates_to_product_reference": "8Base-CNV-4.12"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2023-39325",
+      "cwe": {
+        "id": "CWE-400",
+        "name": "Uncontrolled Resource Consumption"
+      },
+      "discovery_date": "2023-10-10T00:00:00+00:00",
+      "flags": [
+        {
+          "label": "vulnerable_code_not_present",
+          "product_ids": [
+            "8Base-CNV-4.12:container-native-virtualization/cnv-containernetworking-plugins@sha256:42eb5beab2327ff9263f3f43ab6b1fab8c8474676ff032823e3e9dc9af03ef15_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/cnv-must-gather-rhel8@sha256:7cc48d1e0ef5d3ed1287d3ece0ac306e3eac1eaf283fe354eee905f721cba7d4_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/hco-bundle-registry@sha256:a8cc033664e7c193f3ed7369924d467ef6caa27e734f683fd5eda4aaeb3f5d71_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/hostpath-provisioner-rhel8@sha256:844491b180e24c24ce6a1fc49cbef5399fbc044c544dbcbdf6a31c30f77c3235_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-console-plugin@sha256:4b6cd3523f8368c82f4be0fba90118491a3c5330e4f082551a9924c5b96aa290_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-cleanup-vm@sha256:fe19a7f39bb1b0da5f181391da7416a77280dd0c0492a1759de9f11fbced512a_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-copy-template@sha256:810016684887e31612770417cc14633f923202d5dc6215fa256a8a5bee92597b_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-create-datavolume@sha256:944f1c609d14bdf705e3d76c7181f8e7ec25c309097aeafd843055f972b3aca5_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-create-vm-from-template@sha256:8bd7f4eccdf2f54f7bf5b74a348c3a3eb2e7a75557f82b9f77db2b67dc1d6a24_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-disk-virt-customize@sha256:4516d5b8ceda084f548d4f63d7597bf8094a73b81cbd37141ef530631cbb4ac9_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-disk-virt-sysprep@sha256:223a95d2396f5f35fad5daab2f75b4c412020a03c7b7c117f1433f8f64509692_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-modify-vm-template@sha256:edf380ac51005edd536c828f1cb1b0d8a6795c68fffe5b4e0d545b83c10776b9_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-wait-for-vmi-status@sha256:caf5a64456741e60557f87440cbdf9a61305da07e9b42726517ff72e1041e3bb_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-template-validator@sha256:9a2ffe17b78578d7a2a43974d553cde190689a792fef3394dbaffc0503310db7_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/libguestfs-tools@sha256:207b0b99175a8264c623fefc959780941da4f143762c1962686d8c31d7c7f0da_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/ovs-cni-plugin@sha256:d943058669971f14a8e2a38387bc689ed1c0f8a34c749c2fbdab4122ff261bab_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-api@sha256:6331782585fd9c71d27d87fabf54583b56cbdb577c8826a97394956c08a2b457_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-artifacts-server@sha256:24c3dd085416026c64c4c6ca89c9b3c61625137f61ea281d19c32aaec67924b0_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-cdi-apiserver@sha256:50e2478a24a64d2a7e46d699475646efd92455228fe8ebcf648bfcbfe4e15a7e_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-cdi-controller@sha256:4e5f797ff070d94646386c9feeaa03e157400d1dad201cf4bd134b6426dac319_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-cdi-importer@sha256:7d0811ccc983e9b875a7b9259654e22c98a645c41036a816d064ef84fea86eae_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-cdi-operator@sha256:a9489e302737cd6b453eb03e39c5d2f94fae6a25e3b42c73cd9c1a942ee72e5f_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-cdi-uploadproxy@sha256:449ef03e2ec6b468ecdc37679d7057083bb50d3923af7e141b6c3b44f8a006df_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-cdi-uploadserver@sha256:18d69db5be9c2acdc2c906c6103ca466e6d2001c97ccd8da5c70ba23b5366e59_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-controller@sha256:1caaf37a802ecdea65dff964c292e31a33fa119928edb7b57c4de7657315a989_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-exportproxy@sha256:b5834b9c826e7ea42600f350b3c4767a18f2c90d317f12d3f8956f201214a325_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-exportserver@sha256:85c866c4d48e4347f39eb23528ec8f75a2db0a16e1c754463ae66706d03348ef_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-handler@sha256:15e827877db2eb730dd3705f8a675769fd6f1adc5c1b9a84d8e1522ff39d47b7_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-launcher@sha256:34d7b05082cf585793d90d0decc684992ad7c4d992493fea9dcba50ee4249bac_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-operator@sha256:92853ab2214f111023bf23c6ac33264736463e113d0813e1389e8ad89668deff_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virtio-win@sha256:2ba15ef027ffef470e267cded5a3c087bd1942036920f85dbd06be68e4f59fb6_amd64"
+          ]
+        }
+      ],
+      "ids": [
+        {
+          "system_name": "Red Hat Bugzilla ID",
+          "text": "2243296"
+        }
+      ],
+      "notes": [
+        {
+          "category": "description",
+          "text": "A flaw was found in handling multiplexed streams in the HTTP/2 protocol. A client can repeatedly make a request for a new multiplex stream and immediately send an RST_STREAM frame to cancel it. This creates extra work for the server setting up and tearing down the streams while not hitting any server-side limit for the maximum number of active streams per connection, resulting in a denial of service due to server resource consumption. Red Hat has rated the severity of this flaw as 'Important' as the US Cybersecurity and Infrastructure Security Agency (CISA) declared this vulnerability an active exploit.\r\n\r\nCVE-2023-39325 was assigned for the `Rapid Reset Attack` in the Go language packages.",
+          "title": "Vulnerability description"
+        },
+        {
+          "category": "summary",
+          "text": "golang: net/http, x/net/http2: rapid stream resets can cause excessive work (CVE-2023-44487)",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "other",
+          "text": "This CVE is related to CVE-2023-44487.\n\nThe majority of RHEL utilities are not long-running applications; instead, they are command-line tools. These tools utilize Golang package as build-time dependency, which is why they are classified as having a \"Moderate\" level of impact.",
+          "title": "Statement"
+        },
+        {
+          "category": "general",
+          "text": "The CVSS score(s) listed for this vulnerability do not reflect the associated product's status, and are included for informational purposes to better understand the severity of this vulnerability.",
+          "title": "CVSS score applicability"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "8Base-CNV-4.12:container-native-virtualization/bridge-marker@sha256:302f7b8ed01ed6fa7990507a8c8648af5a5607e6bb6dab8d8b2ce95c93c5a4d2_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/cluster-network-addons-operator@sha256:0f32a09e0a6b9097102543b4a21c92d66679a7e9bd773b15d71fe4b1119f4579_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/hostpath-csi-driver@sha256:431eddb3927178f6a7b39b5b8937d4d39c7863bdfcd8227cd3e0b47af79c737d_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/hostpath-provisioner-rhel8-operator@sha256:3cef15dbedca3ebb5f8e3ec1443344aadedaded73c3900334d4230d6819d4fed_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/hyperconverged-cluster-operator@sha256:1c734396bbae0bd259cd3b5bdc1121323531d3a78ca5905d55ab14f092588104_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/hyperconverged-cluster-webhook-rhel8@sha256:045151b2e55c0ba748b1ffe23e33cd3a230208bbf1b66ec2d514d9a73d6899b8_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/kubemacpool@sha256:e8f9d6d66f03ee04a617ccfbc89b9f45f005cffa72106168bd402925fc3b3a8a_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/kubevirt-ssp-operator@sha256:1efc679921cd7fe1f191064d88d84cc057ca908b2daab88208e64911fe483159_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-operator@sha256:3e3a9796a01fb606528231603c17a253854f6db1fd1ac5d5132f846d7d264dcd_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/ovs-cni-marker@sha256:1543ee3d9b3cc4f8037f6924d48613d1cbda112455e484654d3b4a6f97f3116a_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/virt-cdi-cloner@sha256:6bb47b354ad8d30ff0820feadb644724956b313fed70051633a8e05cda32eff3_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/vm-network-latency-checkup@sha256:c8a0fe956d24ba21ef5ade499ffc860c40dda98c6fabed4e5d81ed3bebc8ac1c_amd64"
+        ],
+        "known_not_affected": [
+          "8Base-CNV-4.12:container-native-virtualization/cnv-containernetworking-plugins@sha256:42eb5beab2327ff9263f3f43ab6b1fab8c8474676ff032823e3e9dc9af03ef15_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/cnv-must-gather-rhel8@sha256:7cc48d1e0ef5d3ed1287d3ece0ac306e3eac1eaf283fe354eee905f721cba7d4_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/hco-bundle-registry@sha256:a8cc033664e7c193f3ed7369924d467ef6caa27e734f683fd5eda4aaeb3f5d71_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/hostpath-provisioner-rhel8@sha256:844491b180e24c24ce6a1fc49cbef5399fbc044c544dbcbdf6a31c30f77c3235_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/kubevirt-console-plugin@sha256:4b6cd3523f8368c82f4be0fba90118491a3c5330e4f082551a9924c5b96aa290_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-cleanup-vm@sha256:fe19a7f39bb1b0da5f181391da7416a77280dd0c0492a1759de9f11fbced512a_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-copy-template@sha256:810016684887e31612770417cc14633f923202d5dc6215fa256a8a5bee92597b_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-create-datavolume@sha256:944f1c609d14bdf705e3d76c7181f8e7ec25c309097aeafd843055f972b3aca5_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-create-vm-from-template@sha256:8bd7f4eccdf2f54f7bf5b74a348c3a3eb2e7a75557f82b9f77db2b67dc1d6a24_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-disk-virt-customize@sha256:4516d5b8ceda084f548d4f63d7597bf8094a73b81cbd37141ef530631cbb4ac9_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-disk-virt-sysprep@sha256:223a95d2396f5f35fad5daab2f75b4c412020a03c7b7c117f1433f8f64509692_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-modify-vm-template@sha256:edf380ac51005edd536c828f1cb1b0d8a6795c68fffe5b4e0d545b83c10776b9_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-wait-for-vmi-status@sha256:caf5a64456741e60557f87440cbdf9a61305da07e9b42726517ff72e1041e3bb_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/kubevirt-template-validator@sha256:9a2ffe17b78578d7a2a43974d553cde190689a792fef3394dbaffc0503310db7_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/libguestfs-tools@sha256:207b0b99175a8264c623fefc959780941da4f143762c1962686d8c31d7c7f0da_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/ovs-cni-plugin@sha256:d943058669971f14a8e2a38387bc689ed1c0f8a34c749c2fbdab4122ff261bab_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/virt-api@sha256:6331782585fd9c71d27d87fabf54583b56cbdb577c8826a97394956c08a2b457_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/virt-artifacts-server@sha256:24c3dd085416026c64c4c6ca89c9b3c61625137f61ea281d19c32aaec67924b0_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/virt-cdi-apiserver@sha256:50e2478a24a64d2a7e46d699475646efd92455228fe8ebcf648bfcbfe4e15a7e_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/virt-cdi-controller@sha256:4e5f797ff070d94646386c9feeaa03e157400d1dad201cf4bd134b6426dac319_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/virt-cdi-importer@sha256:7d0811ccc983e9b875a7b9259654e22c98a645c41036a816d064ef84fea86eae_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/virt-cdi-operator@sha256:a9489e302737cd6b453eb03e39c5d2f94fae6a25e3b42c73cd9c1a942ee72e5f_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/virt-cdi-uploadproxy@sha256:449ef03e2ec6b468ecdc37679d7057083bb50d3923af7e141b6c3b44f8a006df_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/virt-cdi-uploadserver@sha256:18d69db5be9c2acdc2c906c6103ca466e6d2001c97ccd8da5c70ba23b5366e59_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/virt-controller@sha256:1caaf37a802ecdea65dff964c292e31a33fa119928edb7b57c4de7657315a989_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/virt-exportproxy@sha256:b5834b9c826e7ea42600f350b3c4767a18f2c90d317f12d3f8956f201214a325_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/virt-exportserver@sha256:85c866c4d48e4347f39eb23528ec8f75a2db0a16e1c754463ae66706d03348ef_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/virt-handler@sha256:15e827877db2eb730dd3705f8a675769fd6f1adc5c1b9a84d8e1522ff39d47b7_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/virt-launcher@sha256:34d7b05082cf585793d90d0decc684992ad7c4d992493fea9dcba50ee4249bac_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/virt-operator@sha256:92853ab2214f111023bf23c6ac33264736463e113d0813e1389e8ad89668deff_amd64",
+          "8Base-CNV-4.12:container-native-virtualization/virtio-win@sha256:2ba15ef027ffef470e267cded5a3c087bd1942036920f85dbd06be68e4f59fb6_amd64"
+        ]
+      },
+      "references": [
+        {
+          "category": "self",
+          "summary": "Canonical URL",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "RHBZ#2243296",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2243296"
+        },
+        {
+          "category": "external",
+          "summary": "RHSB-2023-003",
+          "url": "https://access.redhat.com/security/vulnerabilities/RHSB-2023-003"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cve.org/CVERecord?id=CVE-2023-39325",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325"
+        },
+        {
+          "category": "external",
+          "summary": "https://access.redhat.com/security/cve/CVE-2023-44487",
+          "url": "https://access.redhat.com/security/cve/CVE-2023-44487"
+        },
+        {
+          "category": "external",
+          "summary": "https://go.dev/issue/63417",
+          "url": "https://go.dev/issue/63417"
+        },
+        {
+          "category": "external",
+          "summary": "https://pkg.go.dev/vuln/GO-2023-2102",
+          "url": "https://pkg.go.dev/vuln/GO-2023-2102"
+        },
+        {
+          "category": "external",
+          "summary": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487",
+          "url": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487"
+        }
+      ],
+      "release_date": "2023-10-10T00:00:00+00:00",
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2024-01-17T08:29:36+00:00",
+          "details": "For details on how to apply this update, which includes the changes described in this advisory, refer to:\n\nhttps://access.redhat.com/articles/11258",
+          "product_ids": [
+            "8Base-CNV-4.12:container-native-virtualization/bridge-marker@sha256:302f7b8ed01ed6fa7990507a8c8648af5a5607e6bb6dab8d8b2ce95c93c5a4d2_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/cluster-network-addons-operator@sha256:0f32a09e0a6b9097102543b4a21c92d66679a7e9bd773b15d71fe4b1119f4579_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/hostpath-csi-driver@sha256:431eddb3927178f6a7b39b5b8937d4d39c7863bdfcd8227cd3e0b47af79c737d_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/hostpath-provisioner-rhel8-operator@sha256:3cef15dbedca3ebb5f8e3ec1443344aadedaded73c3900334d4230d6819d4fed_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/hyperconverged-cluster-operator@sha256:1c734396bbae0bd259cd3b5bdc1121323531d3a78ca5905d55ab14f092588104_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/hyperconverged-cluster-webhook-rhel8@sha256:045151b2e55c0ba748b1ffe23e33cd3a230208bbf1b66ec2d514d9a73d6899b8_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubemacpool@sha256:e8f9d6d66f03ee04a617ccfbc89b9f45f005cffa72106168bd402925fc3b3a8a_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-ssp-operator@sha256:1efc679921cd7fe1f191064d88d84cc057ca908b2daab88208e64911fe483159_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-operator@sha256:3e3a9796a01fb606528231603c17a253854f6db1fd1ac5d5132f846d7d264dcd_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/ovs-cni-marker@sha256:1543ee3d9b3cc4f8037f6924d48613d1cbda112455e484654d3b4a6f97f3116a_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-cdi-cloner@sha256:6bb47b354ad8d30ff0820feadb644724956b313fed70051633a8e05cda32eff3_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/vm-network-latency-checkup@sha256:c8a0fe956d24ba21ef5ade499ffc860c40dda98c6fabed4e5d81ed3bebc8ac1c_amd64"
+          ],
+          "restart_required": {
+            "category": "none"
+          },
+          "url": "https://access.redhat.com/errata/RHSA-2024:0273"
+        },
+        {
+          "category": "workaround",
+          "details": "The default stream concurrency limit in golang is 250 streams (requests) per HTTP/2 connection. This value may be adjusted in the golang.org/x/net/http2 package using the Server.MaxConcurrentStreams setting and the ConfigureServer function which are available in golang.org/x/net/http2.",
+          "product_ids": [
+            "8Base-CNV-4.12:container-native-virtualization/bridge-marker@sha256:302f7b8ed01ed6fa7990507a8c8648af5a5607e6bb6dab8d8b2ce95c93c5a4d2_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/cluster-network-addons-operator@sha256:0f32a09e0a6b9097102543b4a21c92d66679a7e9bd773b15d71fe4b1119f4579_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/cnv-containernetworking-plugins@sha256:42eb5beab2327ff9263f3f43ab6b1fab8c8474676ff032823e3e9dc9af03ef15_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/cnv-must-gather-rhel8@sha256:7cc48d1e0ef5d3ed1287d3ece0ac306e3eac1eaf283fe354eee905f721cba7d4_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/hco-bundle-registry@sha256:a8cc033664e7c193f3ed7369924d467ef6caa27e734f683fd5eda4aaeb3f5d71_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/hostpath-csi-driver@sha256:431eddb3927178f6a7b39b5b8937d4d39c7863bdfcd8227cd3e0b47af79c737d_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/hostpath-provisioner-rhel8-operator@sha256:3cef15dbedca3ebb5f8e3ec1443344aadedaded73c3900334d4230d6819d4fed_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/hostpath-provisioner-rhel8@sha256:844491b180e24c24ce6a1fc49cbef5399fbc044c544dbcbdf6a31c30f77c3235_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/hyperconverged-cluster-operator@sha256:1c734396bbae0bd259cd3b5bdc1121323531d3a78ca5905d55ab14f092588104_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/hyperconverged-cluster-webhook-rhel8@sha256:045151b2e55c0ba748b1ffe23e33cd3a230208bbf1b66ec2d514d9a73d6899b8_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubemacpool@sha256:e8f9d6d66f03ee04a617ccfbc89b9f45f005cffa72106168bd402925fc3b3a8a_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-console-plugin@sha256:4b6cd3523f8368c82f4be0fba90118491a3c5330e4f082551a9924c5b96aa290_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-ssp-operator@sha256:1efc679921cd7fe1f191064d88d84cc057ca908b2daab88208e64911fe483159_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-cleanup-vm@sha256:fe19a7f39bb1b0da5f181391da7416a77280dd0c0492a1759de9f11fbced512a_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-copy-template@sha256:810016684887e31612770417cc14633f923202d5dc6215fa256a8a5bee92597b_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-create-datavolume@sha256:944f1c609d14bdf705e3d76c7181f8e7ec25c309097aeafd843055f972b3aca5_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-create-vm-from-template@sha256:8bd7f4eccdf2f54f7bf5b74a348c3a3eb2e7a75557f82b9f77db2b67dc1d6a24_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-disk-virt-customize@sha256:4516d5b8ceda084f548d4f63d7597bf8094a73b81cbd37141ef530631cbb4ac9_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-disk-virt-sysprep@sha256:223a95d2396f5f35fad5daab2f75b4c412020a03c7b7c117f1433f8f64509692_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-modify-vm-template@sha256:edf380ac51005edd536c828f1cb1b0d8a6795c68fffe5b4e0d545b83c10776b9_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-operator@sha256:3e3a9796a01fb606528231603c17a253854f6db1fd1ac5d5132f846d7d264dcd_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-wait-for-vmi-status@sha256:caf5a64456741e60557f87440cbdf9a61305da07e9b42726517ff72e1041e3bb_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-template-validator@sha256:9a2ffe17b78578d7a2a43974d553cde190689a792fef3394dbaffc0503310db7_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/libguestfs-tools@sha256:207b0b99175a8264c623fefc959780941da4f143762c1962686d8c31d7c7f0da_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/ovs-cni-marker@sha256:1543ee3d9b3cc4f8037f6924d48613d1cbda112455e484654d3b4a6f97f3116a_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/ovs-cni-plugin@sha256:d943058669971f14a8e2a38387bc689ed1c0f8a34c749c2fbdab4122ff261bab_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-api@sha256:6331782585fd9c71d27d87fabf54583b56cbdb577c8826a97394956c08a2b457_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-artifacts-server@sha256:24c3dd085416026c64c4c6ca89c9b3c61625137f61ea281d19c32aaec67924b0_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-cdi-apiserver@sha256:50e2478a24a64d2a7e46d699475646efd92455228fe8ebcf648bfcbfe4e15a7e_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-cdi-cloner@sha256:6bb47b354ad8d30ff0820feadb644724956b313fed70051633a8e05cda32eff3_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-cdi-controller@sha256:4e5f797ff070d94646386c9feeaa03e157400d1dad201cf4bd134b6426dac319_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-cdi-importer@sha256:7d0811ccc983e9b875a7b9259654e22c98a645c41036a816d064ef84fea86eae_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-cdi-operator@sha256:a9489e302737cd6b453eb03e39c5d2f94fae6a25e3b42c73cd9c1a942ee72e5f_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-cdi-uploadproxy@sha256:449ef03e2ec6b468ecdc37679d7057083bb50d3923af7e141b6c3b44f8a006df_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-cdi-uploadserver@sha256:18d69db5be9c2acdc2c906c6103ca466e6d2001c97ccd8da5c70ba23b5366e59_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-controller@sha256:1caaf37a802ecdea65dff964c292e31a33fa119928edb7b57c4de7657315a989_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-exportproxy@sha256:b5834b9c826e7ea42600f350b3c4767a18f2c90d317f12d3f8956f201214a325_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-exportserver@sha256:85c866c4d48e4347f39eb23528ec8f75a2db0a16e1c754463ae66706d03348ef_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-handler@sha256:15e827877db2eb730dd3705f8a675769fd6f1adc5c1b9a84d8e1522ff39d47b7_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-launcher@sha256:34d7b05082cf585793d90d0decc684992ad7c4d992493fea9dcba50ee4249bac_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-operator@sha256:92853ab2214f111023bf23c6ac33264736463e113d0813e1389e8ad89668deff_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virtio-win@sha256:2ba15ef027ffef470e267cded5a3c087bd1942036920f85dbd06be68e4f59fb6_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/vm-network-latency-checkup@sha256:c8a0fe956d24ba21ef5ade499ffc860c40dda98c6fabed4e5d81ed3bebc8ac1c_amd64"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 7.5,
+            "baseSeverity": "HIGH",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "8Base-CNV-4.12:container-native-virtualization/bridge-marker@sha256:302f7b8ed01ed6fa7990507a8c8648af5a5607e6bb6dab8d8b2ce95c93c5a4d2_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/cluster-network-addons-operator@sha256:0f32a09e0a6b9097102543b4a21c92d66679a7e9bd773b15d71fe4b1119f4579_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/cnv-containernetworking-plugins@sha256:42eb5beab2327ff9263f3f43ab6b1fab8c8474676ff032823e3e9dc9af03ef15_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/cnv-must-gather-rhel8@sha256:7cc48d1e0ef5d3ed1287d3ece0ac306e3eac1eaf283fe354eee905f721cba7d4_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/hco-bundle-registry@sha256:a8cc033664e7c193f3ed7369924d467ef6caa27e734f683fd5eda4aaeb3f5d71_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/hostpath-csi-driver@sha256:431eddb3927178f6a7b39b5b8937d4d39c7863bdfcd8227cd3e0b47af79c737d_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/hostpath-provisioner-rhel8-operator@sha256:3cef15dbedca3ebb5f8e3ec1443344aadedaded73c3900334d4230d6819d4fed_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/hostpath-provisioner-rhel8@sha256:844491b180e24c24ce6a1fc49cbef5399fbc044c544dbcbdf6a31c30f77c3235_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/hyperconverged-cluster-operator@sha256:1c734396bbae0bd259cd3b5bdc1121323531d3a78ca5905d55ab14f092588104_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/hyperconverged-cluster-webhook-rhel8@sha256:045151b2e55c0ba748b1ffe23e33cd3a230208bbf1b66ec2d514d9a73d6899b8_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubemacpool@sha256:e8f9d6d66f03ee04a617ccfbc89b9f45f005cffa72106168bd402925fc3b3a8a_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-console-plugin@sha256:4b6cd3523f8368c82f4be0fba90118491a3c5330e4f082551a9924c5b96aa290_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-ssp-operator@sha256:1efc679921cd7fe1f191064d88d84cc057ca908b2daab88208e64911fe483159_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-cleanup-vm@sha256:fe19a7f39bb1b0da5f181391da7416a77280dd0c0492a1759de9f11fbced512a_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-copy-template@sha256:810016684887e31612770417cc14633f923202d5dc6215fa256a8a5bee92597b_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-create-datavolume@sha256:944f1c609d14bdf705e3d76c7181f8e7ec25c309097aeafd843055f972b3aca5_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-create-vm-from-template@sha256:8bd7f4eccdf2f54f7bf5b74a348c3a3eb2e7a75557f82b9f77db2b67dc1d6a24_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-disk-virt-customize@sha256:4516d5b8ceda084f548d4f63d7597bf8094a73b81cbd37141ef530631cbb4ac9_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-disk-virt-sysprep@sha256:223a95d2396f5f35fad5daab2f75b4c412020a03c7b7c117f1433f8f64509692_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-modify-vm-template@sha256:edf380ac51005edd536c828f1cb1b0d8a6795c68fffe5b4e0d545b83c10776b9_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-operator@sha256:3e3a9796a01fb606528231603c17a253854f6db1fd1ac5d5132f846d7d264dcd_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-tekton-tasks-wait-for-vmi-status@sha256:caf5a64456741e60557f87440cbdf9a61305da07e9b42726517ff72e1041e3bb_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/kubevirt-template-validator@sha256:9a2ffe17b78578d7a2a43974d553cde190689a792fef3394dbaffc0503310db7_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/libguestfs-tools@sha256:207b0b99175a8264c623fefc959780941da4f143762c1962686d8c31d7c7f0da_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/ovs-cni-marker@sha256:1543ee3d9b3cc4f8037f6924d48613d1cbda112455e484654d3b4a6f97f3116a_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/ovs-cni-plugin@sha256:d943058669971f14a8e2a38387bc689ed1c0f8a34c749c2fbdab4122ff261bab_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-api@sha256:6331782585fd9c71d27d87fabf54583b56cbdb577c8826a97394956c08a2b457_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-artifacts-server@sha256:24c3dd085416026c64c4c6ca89c9b3c61625137f61ea281d19c32aaec67924b0_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-cdi-apiserver@sha256:50e2478a24a64d2a7e46d699475646efd92455228fe8ebcf648bfcbfe4e15a7e_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-cdi-cloner@sha256:6bb47b354ad8d30ff0820feadb644724956b313fed70051633a8e05cda32eff3_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-cdi-controller@sha256:4e5f797ff070d94646386c9feeaa03e157400d1dad201cf4bd134b6426dac319_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-cdi-importer@sha256:7d0811ccc983e9b875a7b9259654e22c98a645c41036a816d064ef84fea86eae_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-cdi-operator@sha256:a9489e302737cd6b453eb03e39c5d2f94fae6a25e3b42c73cd9c1a942ee72e5f_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-cdi-uploadproxy@sha256:449ef03e2ec6b468ecdc37679d7057083bb50d3923af7e141b6c3b44f8a006df_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-cdi-uploadserver@sha256:18d69db5be9c2acdc2c906c6103ca466e6d2001c97ccd8da5c70ba23b5366e59_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-controller@sha256:1caaf37a802ecdea65dff964c292e31a33fa119928edb7b57c4de7657315a989_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-exportproxy@sha256:b5834b9c826e7ea42600f350b3c4767a18f2c90d317f12d3f8956f201214a325_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-exportserver@sha256:85c866c4d48e4347f39eb23528ec8f75a2db0a16e1c754463ae66706d03348ef_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-handler@sha256:15e827877db2eb730dd3705f8a675769fd6f1adc5c1b9a84d8e1522ff39d47b7_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-launcher@sha256:34d7b05082cf585793d90d0decc684992ad7c4d992493fea9dcba50ee4249bac_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virt-operator@sha256:92853ab2214f111023bf23c6ac33264736463e113d0813e1389e8ad89668deff_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/virtio-win@sha256:2ba15ef027ffef470e267cded5a3c087bd1942036920f85dbd06be68e4f59fb6_amd64",
+            "8Base-CNV-4.12:container-native-virtualization/vm-network-latency-checkup@sha256:c8a0fe956d24ba21ef5ade499ffc860c40dda98c6fabed4e5d81ed3bebc8ac1c_amd64"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Important"
+        }
+      ],
+      "title": "golang: net/http, x/net/http2: rapid stream resets can cause excessive work (CVE-2023-44487)"
+    }
+  ]
+}
